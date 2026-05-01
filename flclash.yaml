@@ -3,6 +3,19 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
+- name: '🇵🇰 [G] [TG] SNI: www.m.vk.ru [#РКП] t.me/rjsxrd'
+  type: vless
+  server: 111.88.146.74
+  port: 25462
+  uuid: b58a4390-6aba-451a-8010-61916ebe6bb3
+  udp: true
+  network: tcp
+  tls: true
+  servername: www.m.vk.ru
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: PKfGbpZj-i7I76rfgEDgJIsXZ_TqE0B2ntNN6g3qTXI
+    short-id: 9a694cfa8ebd15
 - name: '🇷🇺 [G] [TG] SNI: login.vk.ru [#РКП] t.me/rjsxrd'
   type: vless
   server: 141.98.191.78
@@ -16,6 +29,20 @@ proxies:
   reality-opts:
     public-key: wpLAX1ax15YI3H8kmmE8PH6S4vCjAwE2gYw6hG6QIh4
     short-id: a0
+- name: 🇺🇸 [G] [TG] тлс✅ US
+  type: vless
+  server: 63.141.128.22
+  port: 443
+  uuid: b8b01773-36b1-4b49-9bd0-6249f52345b4
+  udp: true
+  network: ws
+  tls: true
+  servername: MiSty-tooth-78cA.FoboGAH414-e7B.WoRKERs.DEv
+  client-fingerprint: chrome
+  ws-opts:
+    path: /eyJqdW5rIjoiTkNUaFg0ZnJNUjhhcyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=?ed=2560
+    headers:
+      Host: misty-tooth-78ca.fobogah414-e7b.workers.dev
 - name: '🇷🇺 [G] [TG] SNI: stats.vk-portal.net [#РКП] t.me/rjsxrd'
   type: vless
   server: 37.9.13.174
@@ -54,20 +81,6 @@ proxies:
     path: /
     headers:
       Host: fr.navid.my
-- name: 🇩🇪 Germany | 🌐 | [IPv6] [SNI-RU] www.vk.com [G] [TG]
-  type: vless
-  server: 185.219.84.151
-  port: 8443
-  uuid: 229b1518-a97a-4f48-929f-d3b5f44cf1cf
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: www.vk.com
-  client-fingerprint: qq
-  reality-opts:
-    public-key: JyOAyE57dfDPGdsOz9BTPdBOKbQ9bhtZw50IzbRVZy0
-    short-id: ''
 - name: 🇮🇪 [G] [TG] 🌐 Anycast-IP | [IPv6] [SNI-RU] m.ok.ru t.me/rjsxrd
   type: vless
   server: de.choppervpn.com
@@ -83,6 +96,20 @@ proxies:
     short-id: ba8068688563
   grpc-opts:
     grpc-service-name: ''
+- name: 🇩🇪 Germany | 🌐 | [IPv6] [SNI-RU] www.vk.com [G] [TG]
+  type: vless
+  server: 185.219.84.151
+  port: 8443
+  uuid: 229b1518-a97a-4f48-929f-d3b5f44cf1cf
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: www.vk.com
+  client-fingerprint: qq
+  reality-opts:
+    public-key: JyOAyE57dfDPGdsOz9BTPdBOKbQ9bhtZw50IzbRVZy0
+    short-id: ''
 - name: 🇳🇱 0309 [G] [TG]
   type: vless
   server: 64.188.58.186
@@ -153,6 +180,20 @@ proxies:
   reality-opts:
     public-key: gYLRvAfMAg-ZYgdtA2F_rgV151csPl9z6AJTbwhqz0w
     short-id: e9fe5a1007079dae
+- name: 🇰🇿 [G] [TG] Kazakhstan | 🌐 | [IPv6] [*CIDR] t.me/rjsxrd
+  type: vless
+  server: 82.115.43.177
+  port: 443
+  uuid: f189684b-6213-4c0d-a2e3-cb8860f5d4c5
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: hls-svod.itunes.apple.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 9WnuH4KUb9-cCqbApq4bVLDhrqhPbpnd5eTn14bGciA
+    short-id: b7031d292d5d
 - name: 🇵🇱 Poland [SNI-RU] eh.vk.com [G] [TG]
   type: vless
   server: 45.138.16.62
@@ -166,19 +207,6 @@ proxies:
   reality-opts:
     public-key: GzQr6fDhigtRAr0n2Y7Nk3snhdytYyOvaYo9zYe1Xn4
     short-id: b3a1cc510a2001c6
-- name: '🇵🇰 [G] [TG] SNI: www.m.vk.ru [#РКП] t.me/rjsxrd'
-  type: vless
-  server: 111.88.146.74
-  port: 25462
-  uuid: b58a4390-6aba-451a-8010-61916ebe6bb3
-  udp: true
-  network: tcp
-  tls: true
-  servername: www.m.vk.ru
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: PKfGbpZj-i7I76rfgEDgJIsXZ_TqE0B2ntNN6g3qTXI
-    short-id: 9a694cfa8ebd15
 - name: 🇪🇪 Estonia | 🌐 | [IPv6] [SNI-RU] yandex.ru [G] [TG]
   type: vless
   server: 185.252.177.190
@@ -220,20 +248,6 @@ proxies:
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
     short-id: ''
-- name: 🇰🇿 [G] [TG] Kazakhstan | 🌐 | [IPv6] [*CIDR] t.me/rjsxrd
-  type: vless
-  server: 82.115.43.177
-  port: 443
-  uuid: f189684b-6213-4c0d-a2e3-cb8860f5d4c5
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: hls-svod.itunes.apple.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 9WnuH4KUb9-cCqbApq4bVLDhrqhPbpnd5eTn14bGciA
-    short-id: b7031d292d5d
 - name: 🇦🇪 [OpenRay]  AE-20 t.me/rjsxrd [G] [TG]
   type: vless
   server: 132.243.112.200
@@ -248,6 +262,19 @@ proxies:
   reality-opts:
     public-key: 6eN2NciEaZis5J4muRRqpfLQ1OglI3A8lNSTmAGo6Do
     short-id: 3c6fc84d
+- name: 🇳🇱 [G] [TG] Нидерланды | 🥭🔥 www.ozon.ru t.me/rjsxrd t.me/rjsxrd
+  type: vless
+  server: 144.124.253.4
+  port: 8443
+  uuid: 1cb91b20-49cc-59ff-8393-91808a4deede
+  udp: true
+  network: tcp
+  tls: true
+  servername: www.ozon.ru
+  client-fingerprint: random
+  reality-opts:
+    public-key: bVhVy1hZY_iw-sljlaeVbTBBa6SPvMm0Kg0tCC8CKHM
+    short-id: ffffffffff
 - name: 🇫🇮 United States [*CIDR] [G] [TG]
   type: vless
   server: 150.241.103.62
@@ -350,24 +377,26 @@ proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
+  - '🇵🇰 [G] [TG] SNI: www.m.vk.ru [#РКП] t.me/rjsxrd'
   - '🇷🇺 [G] [TG] SNI: login.vk.ru [#РКП] t.me/rjsxrd'
+  - 🇺🇸 [G] [TG] тлс✅ US
   - '🇷🇺 [G] [TG] SNI: stats.vk-portal.net [#РКП] t.me/rjsxrd'
   - 🇷🇺 [G] [TG]
   - 🇫🇷 Strasbourg 🔵🟠  NavidVPN WS [G] [TG]
-  - 🇩🇪 Germany | 🌐 | [IPv6] [SNI-RU] www.vk.com [G] [TG]
   - 🇮🇪 [G] [TG] 🌐 Anycast-IP | [IPv6] [SNI-RU] m.ok.ru t.me/rjsxrd
+  - 🇩🇪 Germany | 🌐 | [IPv6] [SNI-RU] www.vk.com [G] [TG]
   - 🇳🇱 0309 [G] [TG]
   - 🇫🇷 [G] [TG]
   - 🇨🇭 [620ms [G] [TG]
   - '🇵🇱 [VL] Нидерланды #11182 | РосТуннель t.me/rjsxrd [G] [TG]'
   - 🇸🇪 Latvia [*CIDR] [G] [TG]
+  - 🇰🇿 [G] [TG] Kazakhstan | 🌐 | [IPv6] [*CIDR] t.me/rjsxrd
   - 🇵🇱 Poland [SNI-RU] eh.vk.com [G] [TG]
-  - '🇵🇰 [G] [TG] SNI: www.m.vk.ru [#РКП] t.me/rjsxrd'
   - 🇪🇪 Estonia | 🌐 | [IPv6] [SNI-RU] yandex.ru [G] [TG]
   - 🇳🇱 [650ms [G] [TG]
   - 🇷🇺 [TG] Germany | 🌐 | [IPv6] [*CIDR] t.me/rjsxrd
-  - 🇰🇿 [G] [TG] Kazakhstan | 🌐 | [IPv6] [*CIDR] t.me/rjsxrd
   - 🇦🇪 [OpenRay]  AE-20 t.me/rjsxrd [G] [TG]
+  - 🇳🇱 [G] [TG] Нидерланды | 🥭🔥 www.ozon.ru t.me/rjsxrd t.me/rjsxrd
   - 🇫🇮 United States [*CIDR] [G] [TG]
   - 🇷🇺  [G] [TG]
   - '🇳🇱 2889. VLESS | SNI: stats.vk-portal.net | TG: @wlrustg | Thanks: @rkp_channel
@@ -383,24 +412,26 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
+  - '🇵🇰 [G] [TG] SNI: www.m.vk.ru [#РКП] t.me/rjsxrd'
   - '🇷🇺 [G] [TG] SNI: login.vk.ru [#РКП] t.me/rjsxrd'
+  - 🇺🇸 [G] [TG] тлс✅ US
   - '🇷🇺 [G] [TG] SNI: stats.vk-portal.net [#РКП] t.me/rjsxrd'
   - 🇷🇺 [G] [TG]
   - 🇫🇷 Strasbourg 🔵🟠  NavidVPN WS [G] [TG]
-  - 🇩🇪 Germany | 🌐 | [IPv6] [SNI-RU] www.vk.com [G] [TG]
   - 🇮🇪 [G] [TG] 🌐 Anycast-IP | [IPv6] [SNI-RU] m.ok.ru t.me/rjsxrd
+  - 🇩🇪 Germany | 🌐 | [IPv6] [SNI-RU] www.vk.com [G] [TG]
   - 🇳🇱 0309 [G] [TG]
   - 🇫🇷 [G] [TG]
   - 🇨🇭 [620ms [G] [TG]
   - '🇵🇱 [VL] Нидерланды #11182 | РосТуннель t.me/rjsxrd [G] [TG]'
   - 🇸🇪 Latvia [*CIDR] [G] [TG]
+  - 🇰🇿 [G] [TG] Kazakhstan | 🌐 | [IPv6] [*CIDR] t.me/rjsxrd
   - 🇵🇱 Poland [SNI-RU] eh.vk.com [G] [TG]
-  - '🇵🇰 [G] [TG] SNI: www.m.vk.ru [#РКП] t.me/rjsxrd'
   - 🇪🇪 Estonia | 🌐 | [IPv6] [SNI-RU] yandex.ru [G] [TG]
   - 🇳🇱 [650ms [G] [TG]
   - 🇷🇺 [TG] Germany | 🌐 | [IPv6] [*CIDR] t.me/rjsxrd
-  - 🇰🇿 [G] [TG] Kazakhstan | 🌐 | [IPv6] [*CIDR] t.me/rjsxrd
   - 🇦🇪 [OpenRay]  AE-20 t.me/rjsxrd [G] [TG]
+  - 🇳🇱 [G] [TG] Нидерланды | 🥭🔥 www.ozon.ru t.me/rjsxrd t.me/rjsxrd
   - 🇫🇮 United States [*CIDR] [G] [TG]
   - 🇷🇺  [G] [TG]
   - '🇳🇱 2889. VLESS | SNI: stats.vk-portal.net | TG: @wlrustg | Thanks: @rkp_channel
