@@ -40,45 +40,18 @@ proxies:
   flow: xtls-rprx-vision
   servername: nlety.ksnodes.net
   client-fingerprint: chrome
-- name: 🇬🇧 [G] [TG] тлс✅ >>@oneclickvpnkeys::GB
+- name: 🇩🇰 🔘 T.me/V2HUBIR | Join Now ✅️
   type: vless
-  server: 130.78.219.82
-  port: 443
-  uuid: b6ce8a51-19b9-4979-91ba-b4298c26d5fc
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: ukos2.ksnodes.net
-  client-fingerprint: chrome
-- name: 🇮🇷 [G] [TG] тлс✅ IR_681_@Surfboardv2ray
-  type: vless
-  server: 78.158.166.180
-  port: 2096
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  server: 45.148.31.0
+  port: 15855
+  uuid: e4fc4761-154f-490e-bbaa-b4fa193f1073
   udp: true
   network: ws
-  tls: true
-  servername: sni.jpmj.dev
-  client-fingerprint: chrome
+  tls: false
   ws-opts:
-    path: /?ed=2560
+    path: /
     headers:
-      Host: sni.jpmj.dev
-- name: 🇩🇪 [G] [TG] тлс✅ @filembad
-  type: vless
-  server: 185.158.133.138
-  port: 2096
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  network: ws
-  tls: true
-  servername: sni.111000.indevs.in
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?telegram@wangcai2=
-    headers:
-      Host: sni.111000.indevs.in
+      Host: 45.148.31.0
 - name: 🇳🇱 [G] [TG]
   type: vless
   server: 2.26.96.173
@@ -107,6 +80,20 @@ proxies:
     path: /
     headers:
       Host: sni.111000.v6.navy
+- name: 🇦🇪 [G] [TG] 🎈31@oneclickvpnkeys
+  type: vless
+  server: 132.243.112.201
+  port: 443
+  uuid: 8ef19221-6d5e-4bce-baa1-7c043eae3309
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: stats.vk-portal.net
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 6eN2NciEaZis5J4muRRqpfLQ1OglI3A8lNSTmAGo6Do
+    short-id: 3c6fc84d
 - name: 🇳🇱 [G] 🏳️ ShatakVPN 941168
   type: vless
   server: 72.56.34.155
@@ -121,6 +108,17 @@ proxies:
   reality-opts:
     public-key: wAYsJ6RJXFy94w_WaTIhp1ZfCePAPoZmP27RarvUqXg
     short-id: 2344766a270a6298
+- name: 🇷🇺 [G] [TG] 🎈@oneclickvpnkeys
+  type: vless
+  server: cl-eu-1.edgeflux.ru
+  port: 52006
+  uuid: 75807638-6f19-0bb8-ae08-38492ee85c88
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: cl-eu-1.edgeflux.ru
+  client-fingerprint: chrome
 - name: 🇺🇸 [G] [TG]
   type: vless
   server: 38.114.103.54
@@ -135,6 +133,19 @@ proxies:
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
     short-id: 6ba85179e30d4fc2
+- name: 🇳🇱 [G] 🎈34@oneclickvpnkeys
+  type: vless
+  server: 45.15.129.17
+  port: 443
+  uuid: c42a39d3-e7a1-4b87-a7f3-be7e3704c996
+  udp: true
+  network: tcp
+  tls: true
+  servername: www.oracle.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: kGW3p-dzpbVQnV8IM5T63UqRYu2MvI9Yl5K1GLJxWkY
+    short-id: '77'
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -142,13 +153,14 @@ proxy-groups:
   - 🇱🇹 [G] [TG]
   - 🇫🇷 [G] [TG] Strasbourg 🔵🟠  NavidVPN WS
   - 🇦🇪 [G] [TG] тлс✅ 🌞8@oneclickvpnkeys
-  - 🇬🇧 [G] [TG] тлс✅ >>@oneclickvpnkeys::GB
-  - 🇮🇷 [G] [TG] тлс✅ IR_681_@Surfboardv2ray
-  - 🇩🇪 [G] [TG] тлс✅ @filembad
+  - 🇩🇰 🔘 T.me/V2HUBIR | Join Now ✅️
   - 🇳🇱 [G] [TG]
   - 🇺🇸 [G] [TG] тлс✅ 🔥Join+Telegram:@Farah_VPN🟣
+  - 🇦🇪 [G] [TG] 🎈31@oneclickvpnkeys
   - 🇳🇱 [G] 🏳️ ShatakVPN 941168
+  - 🇷🇺 [G] [TG] 🎈@oneclickvpnkeys
   - 🇺🇸 [G] [TG]
+  - 🇳🇱 [G] 🎈34@oneclickvpnkeys
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 80
@@ -157,11 +169,9 @@ proxy-groups:
   proxies:
   - 🇫🇷 [G] [TG] Strasbourg 🔵🟠  NavidVPN WS
   - 🇦🇪 [G] [TG] тлс✅ 🌞8@oneclickvpnkeys
-  - 🇬🇧 [G] [TG] тлс✅ >>@oneclickvpnkeys::GB
-  - 🇮🇷 [G] [TG] тлс✅ IR_681_@Surfboardv2ray
-  - 🇩🇪 [G] [TG] тлс✅ @filembad
   - 🇳🇱 [G] [TG]
   - 🇺🇸 [G] [TG] тлс✅ 🔥Join+Telegram:@Farah_VPN🟣
+  - 🇦🇪 [G] [TG] 🎈31@oneclickvpnkeys
   - 🇺🇸 [G] [TG]
   url: https://www.gstatic.com/generate_204
   interval: 300
@@ -174,12 +184,13 @@ proxy-groups:
   - 🇱🇹 [G] [TG]
   - 🇫🇷 [G] [TG] Strasbourg 🔵🟠  NavidVPN WS
   - 🇦🇪 [G] [TG] тлс✅ 🌞8@oneclickvpnkeys
-  - 🇬🇧 [G] [TG] тлс✅ >>@oneclickvpnkeys::GB
-  - 🇮🇷 [G] [TG] тлс✅ IR_681_@Surfboardv2ray
-  - 🇩🇪 [G] [TG] тлс✅ @filembad
+  - 🇩🇰 🔘 T.me/V2HUBIR | Join Now ✅️
   - 🇳🇱 [G] [TG]
   - 🇺🇸 [G] [TG] тлс✅ 🔥Join+Telegram:@Farah_VPN🟣
+  - 🇦🇪 [G] [TG] 🎈31@oneclickvpnkeys
   - 🇳🇱 [G] 🏳️ ShatakVPN 941168
+  - 🇷🇺 [G] [TG] 🎈@oneclickvpnkeys
   - 🇺🇸 [G] [TG]
+  - 🇳🇱 [G] 🎈34@oneclickvpnkeys
 rules:
 - MATCH,PROXY
