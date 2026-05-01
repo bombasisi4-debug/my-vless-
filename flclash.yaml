@@ -2,69 +2,11 @@ mixed-port: 7890
 allow-lan: false
 mode: rule
 log-level: info
-proxies:
-- name: 🇺🇸 US🇺🇸 [G] [TG]
-  type: vless
-  server: 63.141.128.22
-  port: 443
-  uuid: b8b01773-36b1-4b49-9bd0-6249f52345b4
-  udp: true
-  network: ws
-  tls: true
-  servername: MiSty-tooth-78cA.FoboGAH414-e7B.WoRKERs.DEv
-  client-fingerprint: chrome
-  ws-opts:
-    path: /eyJqdW5rIjoiTkNUaFg0ZnJNUjhhcyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=?ed=2560
-    headers:
-      Host: misty-tooth-78ca.fobogah414-e7b.workers.dev
-- name: 🇬🇧 Telegram:@config_proxy [G] [TG]
-  type: vless
-  server: 57.128.183.82
-  port: 8443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  network: ws
-  tls: true
-  servername: sni.111000.indevs.in
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&telegram🇨🇳+@wangcai2
-    headers:
-      Host: sni.111000.indevs.in
-- name: 🇱🇹 🇱🇹 Литва 2 [G] [TG]
-  type: vless
-  server: 93.115.25.201
-  port: 443
-  uuid: d428091c-e6eb-48f9-9a07-b44eb886ac90
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: li1.dendibase.org
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: xI4ByyrKnvI7bBGwY2ndAe4oPWs_X_6mgXqcT6zn7QA
-    short-id: '534673474586'
-- name: 🇫🇷 FR🇫🇷 [G] [TG]
-  type: vless
-  server: 152.228.162.19
-  port: 80
-  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: 152.228.162.19
+proxies: []
 proxy-groups:
 - name: AUTO
   type: url-test
-  proxies:
-  - 🇺🇸 US🇺🇸 [G] [TG]
-  - 🇬🇧 Telegram:@config_proxy [G] [TG]
-  - 🇱🇹 🇱🇹 Литва 2 [G] [TG]
-  - 🇫🇷 FR🇫🇷 [G] [TG]
+  proxies: []
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 80
@@ -72,9 +14,5 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 US🇺🇸 [G] [TG]
-  - 🇬🇧 Telegram:@config_proxy [G] [TG]
-  - 🇱🇹 🇱🇹 Литва 2 [G] [TG]
-  - 🇫🇷 FR🇫🇷 [G] [TG]
 rules:
 - MATCH,PROXY
