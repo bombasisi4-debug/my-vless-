@@ -40,7 +40,7 @@ proxies:
   reality-opts:
     public-key: aFsY-EZjSNTomlAFShKwQIQMJ5pHiZQXXJpWvcz8WkQ
     short-id: 0858af97f4e7324d
-- name: 🇪🇺 [G] UniGates-сава
+- name: 🇪🇺 [G] UniGates-сава 👥
   type: vless
   server: 89.125.199.10
   port: 443
@@ -54,6 +54,33 @@ proxies:
   reality-opts:
     public-key: Kf_v8HvINYp9W4fW2_a5hvBE04DZ79NYzux3qjEh9j0
     short-id: 2a26ec9dd0640bbc
+- name: 🇷🇺 [G] [TG] Россия | 🥭🔥 login.vk.ru 👥
+  type: vless
+  server: 141.98.191.78
+  port: 443
+  uuid: 69a2af58-d74a-44ca-864a-e09b493f4274
+  udp: true
+  network: xhttp
+  tls: true
+  servername: login.vk.ru
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: wpLAX1ax15YI3H8kmmE8PH6S4vCjAwE2gYw6hG6QIh4
+    short-id: a0
+- name: 🇪🇪 [G] [TG]  👥
+  type: vless
+  server: 89.208.230.199
+  port: 8443
+  uuid: b6ce8a51-19b9-4979-91ba-b4298c26d5fc
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: api-maps.yandex.ru
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: mAu8QDi3pbmMCFg9kKC-ZBIHdtnXeCuZt3VnAw6vlH4
+    short-id: ad7dab462a323acb
 - name: 🇪🇪 [G] [TG] Estonia, Tallinn | [BL]
   type: vless
   server: eeshka.api.dznn.net
@@ -262,6 +289,34 @@ proxies:
   reality-opts:
     public-key: aFsY-EZjSNTomlAFShKwQIQMJ5pHiZQXXJpWvcz8WkQ
     short-id: 0858af97f4e7324d
+- name: 🇪🇺 [G] [TG] Обход LTE 1
+  type: vless
+  server: 157.22.231.43
+  port: 9443
+  uuid: 0baa7fcd-20d2-4cdb-9e62-f213226eee53
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: www.vk.ru
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 82EUNQglruwkub0OfdFYh_iJFCR9Mck8JRFzhEH8GCs
+    short-id: '52'
+- name: 🇳🇱 [G] [TG] Direct-1
+  type: vless
+  server: 152.70.58.201
+  port: 443
+  uuid: 8892e34a-339b-4526-b88d-cf68c516231c
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: www.microsoft.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: Hg_ivwbClYmR-SEHdoGgq4yEk6ltbjS5c4yiQRa4_28
+    short-id: abc123
 - name: 🇯🇵 [G] [TG] Japan, Chiyoda City | [BL]
   type: vless
   server: web.sapochi.ru
@@ -288,6 +343,20 @@ proxies:
   reality-opts:
     public-key: o5VKcEfjPXonAjUJYSk2Rznv0wHjkFEHlVZtcUwVsQE
     short-id: 5ed6
+- name: 🇵🇱 Польша#2 👥
+  type: vless
+  server: 89.125.27.104
+  port: 8443
+  uuid: 735c25c3-5f25-4b83-9daa-f6782c3476d0
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: epp.genproc.gov.ru
+  client-fingerprint: random
+  reality-opts:
+    public-key: PxY-9YJXY6Yz8ZlHt1JfSgpj6bgD__eswdhqhpPqVU4
+    short-id: 1ca9a200
 - name: 🇳🇱 [G] [TG] The Netherlands, Eindhoven | 🌐 | [IPv6] | [BL]
   type: vless
   server: 198.105.112.43
@@ -366,7 +435,7 @@ proxies:
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
     headers:
       Host: sni.latonyamadeline.ndjp.net
-- name: 🇵🇱 [G] [TG] Польша
+- name: 🇵🇱 [G] [TG] Польша 👥
   type: vless
   server: 89.125.27.104
   port: 443
@@ -405,6 +474,20 @@ proxies:
   flow: xtls-rprx-vision
   servername: r1.mizulina.top
   client-fingerprint: edge
+- name: 🇦🇹 [G] [TG] Austria, Vienna | [BL]
+  type: vless
+  server: web.pyatnica.pro
+  port: 2053
+  uuid: 5570943f-6cc3-4a8a-bee3-d15a2b2f53a0
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: web.pyatnica.pro
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: nN0yOjtfONIcmjurY2SwM1DMkugK5unIWZVnpgYnQCk
+    short-id: 9f0e2c6b4833757f
 - name: 🇳🇱 [G] The Netherlands, Amsterdam | [BL]
   type: vless
   server: web.riraro.ru
@@ -525,7 +608,9 @@ proxy-groups:
   - 🇷🇺 [G] [TG] тлс✅ Россия [🏳️LTE
   - 🇷🇺 [G] [TG] Russia [*CIDR] VK 👥
   - 🇸🇪 [TG] Sweden, Stockholm | [BL]
-  - 🇪🇺 [G] UniGates-сава
+  - 🇪🇺 [G] UniGates-сава 👥
+  - 🇷🇺 [G] [TG] Россия | 🥭🔥 login.vk.ru 👥
+  - 🇪🇪 [G] [TG]  👥
   - 🇪🇪 [G] [TG] Estonia, Tallinn | [BL]
   - '🇷🇺 [G] 💦 15 - VLESS - Clean IP : 443'
   - '🇳🇱 [G] [TG] тлс✅ 💦 30 - VLESS - Clean IP : 8443'
@@ -541,17 +626,21 @@ proxy-groups:
   - 🇩🇪 [G] [TG] тлс✅ 🌐سرور
   - 🇱🇹 [G] [TG] Lithuania, Vilnius | [BL]
   - 🇩🇪 [G] [TG] Germany, Frankfurt am Main (Innenstadt I) | [BL]
+  - 🇪🇺 [G] [TG] Обход LTE 1
+  - 🇳🇱 [G] [TG] Direct-1
   - 🇯🇵 [G] [TG] Japan, Chiyoda City | [BL]
   - 🇬🇧 [G] [TG] 20224d08
+  - 🇵🇱 Польша#2 👥
   - 🇳🇱 [G] [TG] The Netherlands, Eindhoven | 🌐 | [IPv6] | [BL]
   - 🇵🇱 [G] [TG] Poland, Warsaw | [BL]
   - 🇷🇺 [G] Russia, Moscow | [BL]
   - 🇨🇭 [G] [TG] Switzerland, Geneva | [BL]
   - 🇧🇸 [G] [TG] Эщкерия | 🔐 | 🥭🔥 ads.x5.ru
   - 🇩🇪 [G] [TG] тлс✅ 🌐 Anycast-IP | [IPv6] | [BL]
-  - 🇵🇱 [G] [TG] Польша
+  - 🇵🇱 [G] [TG] Польша 👥
   - 🇰🇿 [G] [TG] Kazakhstan, Pavlodar | [BL]
   - 🇬🇪 [G] [TG] тлс✅ Georgia, Tbilisi | 🌐 | [BL]
+  - 🇦🇹 [G] [TG] Austria, Vienna | [BL]
   - 🇳🇱 [G] The Netherlands, Amsterdam | [BL]
   - 🇩🇪 [G] тлс✅ Germany, Frankfurt am Main | [BL]
   - 🇬🇧 [G] [TG] United Kingdom, London | [BL]
@@ -579,6 +668,7 @@ proxy-groups:
   - 🇩🇪 [G] [TG] тлс✅ 🌐سرور
   - 🇱🇹 [G] [TG] Lithuania, Vilnius | [BL]
   - 🇩🇪 [G] [TG] Germany, Frankfurt am Main (Innenstadt I) | [BL]
+  - 🇳🇱 [G] [TG] Direct-1
   - 🇯🇵 [G] [TG] Japan, Chiyoda City | [BL]
   - 🇬🇧 [G] [TG] 20224d08
   - 🇳🇱 [G] [TG] The Netherlands, Eindhoven | 🌐 | [IPv6] | [BL]
@@ -586,9 +676,10 @@ proxy-groups:
   - 🇨🇭 [G] [TG] Switzerland, Geneva | [BL]
   - 🇧🇸 [G] [TG] Эщкерия | 🔐 | 🥭🔥 ads.x5.ru
   - 🇩🇪 [G] [TG] тлс✅ 🌐 Anycast-IP | [IPv6] | [BL]
-  - 🇵🇱 [G] [TG] Польша
+  - 🇵🇱 [G] [TG] Польша 👥
   - 🇰🇿 [G] [TG] Kazakhstan, Pavlodar | [BL]
   - 🇬🇪 [G] [TG] тлс✅ Georgia, Tbilisi | 🌐 | [BL]
+  - 🇦🇹 [G] [TG] Austria, Vienna | [BL]
   - 🇬🇧 [G] [TG] United Kingdom, London | [BL]
   - 🇫🇷 [G] [TG] France, Paris | [BL]
   - 🇵🇱 [G] [TG] тлс✅ Польша | 🌐 | 🔐 [🏳️LTE
@@ -604,7 +695,9 @@ proxy-groups:
   - 🇷🇺 [G] [TG] тлс✅ Россия [🏳️LTE
   - 🇷🇺 [G] [TG] Russia [*CIDR] VK 👥
   - 🇸🇪 [TG] Sweden, Stockholm | [BL]
-  - 🇪🇺 [G] UniGates-сава
+  - 🇪🇺 [G] UniGates-сава 👥
+  - 🇷🇺 [G] [TG] Россия | 🥭🔥 login.vk.ru 👥
+  - 🇪🇪 [G] [TG]  👥
   - 🇪🇪 [G] [TG] Estonia, Tallinn | [BL]
   - '🇷🇺 [G] 💦 15 - VLESS - Clean IP : 443'
   - '🇳🇱 [G] [TG] тлс✅ 💦 30 - VLESS - Clean IP : 8443'
@@ -620,17 +713,21 @@ proxy-groups:
   - 🇩🇪 [G] [TG] тлс✅ 🌐سرور
   - 🇱🇹 [G] [TG] Lithuania, Vilnius | [BL]
   - 🇩🇪 [G] [TG] Germany, Frankfurt am Main (Innenstadt I) | [BL]
+  - 🇪🇺 [G] [TG] Обход LTE 1
+  - 🇳🇱 [G] [TG] Direct-1
   - 🇯🇵 [G] [TG] Japan, Chiyoda City | [BL]
   - 🇬🇧 [G] [TG] 20224d08
+  - 🇵🇱 Польша#2 👥
   - 🇳🇱 [G] [TG] The Netherlands, Eindhoven | 🌐 | [IPv6] | [BL]
   - 🇵🇱 [G] [TG] Poland, Warsaw | [BL]
   - 🇷🇺 [G] Russia, Moscow | [BL]
   - 🇨🇭 [G] [TG] Switzerland, Geneva | [BL]
   - 🇧🇸 [G] [TG] Эщкерия | 🔐 | 🥭🔥 ads.x5.ru
   - 🇩🇪 [G] [TG] тлс✅ 🌐 Anycast-IP | [IPv6] | [BL]
-  - 🇵🇱 [G] [TG] Польша
+  - 🇵🇱 [G] [TG] Польша 👥
   - 🇰🇿 [G] [TG] Kazakhstan, Pavlodar | [BL]
   - 🇬🇪 [G] [TG] тлс✅ Georgia, Tbilisi | 🌐 | [BL]
+  - 🇦🇹 [G] [TG] Austria, Vienna | [BL]
   - 🇳🇱 [G] The Netherlands, Amsterdam | [BL]
   - 🇩🇪 [G] тлс✅ Germany, Frankfurt am Main | [BL]
   - 🇬🇧 [G] [TG] United Kingdom, London | [BL]
