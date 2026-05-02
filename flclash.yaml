@@ -3,112 +3,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇹 [G] [TG]
-  type: vless
-  server: 144.31.129.174
-  port: 443
-  uuid: 8a03fb9c-acf0-0280-a4ef-30fd1f32966d
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: s3-ru-central-1.rucdn777.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: sYDQC1RUZKqtJau7wrl-i5yAYy613d9e72FRGAwvYUM
-    short-id: ''
-- name: 🇫🇷 [G] [TG] Strasbourg 🔵🟠  NavidVPN WS
-  type: vless
-  server: fr.navid.my
-  port: 47664
-  uuid: 332b3cc2-21dc-4ffa-9ab7-7d46a665b5fe
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: fr.navid.my
-- name: 🇦🇪 [G] [TG] тлс✅ 🌞8@oneclickvpnkeys
-  type: vless
-  server: 31.59.39.125
-  port: 443
-  uuid: b6ce8a51-19b9-4979-91ba-b4298c26d5fc
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: nlety.ksnodes.net
-  client-fingerprint: chrome
-- name: 🇩🇰 🔘 T.me/V2HUBIR | Join Now ✅️
-  type: vless
-  server: 45.148.31.0
-  port: 15855
-  uuid: e4fc4761-154f-490e-bbaa-b4fa193f1073
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 45.148.31.0
-- name: 🇳🇱 [G] [TG]
-  type: vless
-  server: 2.26.96.173
-  port: 8443
-  uuid: b27ab9aa-a525-4deb-a1fd-6d16c9614612
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: yandex.net
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: 6ba85179e30d4fc2
-- name: 🇺🇸 [G] [TG] тлс✅ 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: 160.153.1.211
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  network: ws
-  tls: true
-  servername: sni.111000.v6.navy
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: sni.111000.v6.navy
-- name: 🇦🇪 [G] [TG] 🎈31@oneclickvpnkeys
-  type: vless
-  server: 132.243.112.201
-  port: 443
-  uuid: 8ef19221-6d5e-4bce-baa1-7c043eae3309
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: stats.vk-portal.net
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 6eN2NciEaZis5J4muRRqpfLQ1OglI3A8lNSTmAGo6Do
-    short-id: 3c6fc84d
-- name: 🇳🇱 [G] 🏳️ ShatakVPN 941168
-  type: vless
-  server: 72.56.34.155
-  port: 9443
-  uuid: 4649d681-7f26-4959-a3f2-02eb8866230f
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: yahoo.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: wAYsJ6RJXFy94w_WaTIhp1ZfCePAPoZmP27RarvUqXg
-    short-id: 2344766a270a6298
-- name: 🇷🇺 [G] [TG] 🎈@oneclickvpnkeys
+- name: 🇫🇮 [G] [TG] тлс✅ Finland, Helsinki | 🌐 | [IPv6] | [BL] 👥
   type: vless
   server: cl-eu-1.edgeflux.ru
   port: 52006
@@ -119,60 +14,150 @@ proxies:
   flow: xtls-rprx-vision
   servername: cl-eu-1.edgeflux.ru
   client-fingerprint: chrome
-- name: 🇺🇸 [G] [TG]
+- name: 🇫🇮 [G] [TG] тлс✅ Finland, Helsinki | 🌐 | [BL] 👥
   type: vless
-  server: 38.114.103.54
-  port: 8443
-  uuid: b27ab9aa-a525-4deb-a1fd-6d16c9614612
+  server: 87.228.94.9
+  port: 52006
+  uuid: 75807638-6f19-0bb8-ae08-38492ee85c88
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: yandex.net
+  servername: cl-eu-1.edgeflux.ru
   client-fingerprint: chrome
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: 6ba85179e30d4fc2
-- name: 🇳🇱 [G] 🎈34@oneclickvpnkeys
+- name: 🇩🇪 [G] [TG] тлс✅ Germany, Frankfurt am Main | [BL]
   type: vless
-  server: 45.15.129.17
+  server: 212.95.39.25.vhub.pro
   port: 443
-  uuid: c42a39d3-e7a1-4b87-a7f3-be7e3704c996
+  uuid: 32bfe5f3-a406-48e3-bad9-932945bd0bc1
+  udp: true
+  network: grpc
+  tls: true
+  servername: 212.95.39.25.vhub.pro
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: /sequre/grpc/
+- name: 🇳🇱 [G] [TG] The Netherlands, Amsterdam | [BL]
+  type: vless
+  server: 5.255.109.93
+  port: 443
+  uuid: dacb3f31-8251-47af-a963-8bdb0d9a16b1
   udp: true
   network: tcp
   tls: true
-  servername: www.oracle.com
+  flow: xtls-rprx-vision
+  servername: addons.mozilla.org
   client-fingerprint: chrome
   reality-opts:
-    public-key: kGW3p-dzpbVQnV8IM5T63UqRYu2MvI9Yl5K1GLJxWkY
-    short-id: '77'
+    public-key: tVyj7_ief3PBOwG3uC9i_XXKGRXiTJJ6XkrkEOZepDc
+    short-id: 3c88b649989ffa95
+- name: 🇨🇭 [G] [TG] Switzerland, Bern | 🌐 | [BL]
+  type: vless
+  server: lol-che-0001.api.neuralrelay.stream
+  port: 443
+  uuid: f189684b-6213-4c0d-a2e3-cb8860f5d4c5
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: hls-svod.itunes.apple.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 9WnuH4KUb9-cCqbApq4bVLDhrqhPbpnd5eTn14bGciA
+    short-id: f7
+- name: 🇦🇹 🌐 Anycast-IP | [IPv6] | [BL]
+  type: vless
+  server: 152.53.66.208
+  port: 443
+  uuid: 60f08b02-9a8e-4dbb-8ab2-0f631a01232c
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: avstrianoda.normbot.ru
+  client-fingerprint: qq
+  reality-opts:
+    public-key: pgG2grngQEtOFJImLfz0AEm-O2IodM2jCY4aMCYQI1U
+    short-id: 6aa2d2e950441a9a
+- name: 🇫🇷 [G] France, Aubervilliers | 🌐 | [IPv6] | [BL]
+  type: vless
+  server: 45.92.218.65
+  port: 7443
+  uuid: b375b840-8ac0-4d37-98c0-44ab85fd7127
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: chat.deepseek.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI
+    short-id: be0ce047
+- name: 🇷🇺 [G] Russia, Moscow (Vostochnyy administrativnyy okrug) | [BL]
+  type: vless
+  server: 7qqrbome80g.country-26.de-nfast.com
+  port: 443
+  uuid: 4b481152-ba7f-4445-8cc0-d33d58546e23
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: tradingview.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: -tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw
+    short-id: '50'
+- name: 🇩🇪 [G] Germany, Frankfurt am Main | 🌐 | [IPv6] | [BL]
+  type: vless
+  server: 89.106.85.2
+  port: 443
+  uuid: 2112303e-6580-40c5-adeb-885b6e7c3517
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: 89.106.85.2
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8
+    short-id: 1ed136481e0ede74
+- name: 🇺🇸 [G] United States, Dover | [BL]
+  type: vless
+  server: 166.1.89.21
+  port: 443
+  uuid: e69d5f8a-2629-45ac-889b-981983209933
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: www.apple.com
+  client-fingerprint: qq
+  reality-opts:
+    public-key: PxiVEKI3dp1UpqzpgnD31-Wl4MFiHjTI23ylGFn5Slg
+    short-id: '111111'
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇱🇹 [G] [TG]
-  - 🇫🇷 [G] [TG] Strasbourg 🔵🟠  NavidVPN WS
-  - 🇦🇪 [G] [TG] тлс✅ 🌞8@oneclickvpnkeys
-  - 🇩🇰 🔘 T.me/V2HUBIR | Join Now ✅️
-  - 🇳🇱 [G] [TG]
-  - 🇺🇸 [G] [TG] тлс✅ 🔥Join+Telegram:@Farah_VPN🟣
-  - 🇦🇪 [G] [TG] 🎈31@oneclickvpnkeys
-  - 🇳🇱 [G] 🏳️ ShatakVPN 941168
-  - 🇷🇺 [G] [TG] 🎈@oneclickvpnkeys
-  - 🇺🇸 [G] [TG]
-  - 🇳🇱 [G] 🎈34@oneclickvpnkeys
+  - 🇫🇮 [G] [TG] тлс✅ Finland, Helsinki | 🌐 | [IPv6] | [BL] 👥
+  - 🇫🇮 [G] [TG] тлс✅ Finland, Helsinki | 🌐 | [BL] 👥
+  - 🇩🇪 [G] [TG] тлс✅ Germany, Frankfurt am Main | [BL]
+  - 🇳🇱 [G] [TG] The Netherlands, Amsterdam | [BL]
+  - 🇨🇭 [G] [TG] Switzerland, Bern | 🌐 | [BL]
+  - 🇦🇹 🌐 Anycast-IP | [IPv6] | [BL]
+  - 🇫🇷 [G] France, Aubervilliers | 🌐 | [IPv6] | [BL]
+  - 🇷🇺 [G] Russia, Moscow (Vostochnyy administrativnyy okrug) | [BL]
+  - 🇩🇪 [G] Germany, Frankfurt am Main | 🌐 | [IPv6] | [BL]
+  - 🇺🇸 [G] United States, Dover | [BL]
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 80
 - name: AI & TG
   type: url-test
   proxies:
-  - 🇫🇷 [G] [TG] Strasbourg 🔵🟠  NavidVPN WS
-  - 🇦🇪 [G] [TG] тлс✅ 🌞8@oneclickvpnkeys
-  - 🇳🇱 [G] [TG]
-  - 🇺🇸 [G] [TG] тлс✅ 🔥Join+Telegram:@Farah_VPN🟣
-  - 🇦🇪 [G] [TG] 🎈31@oneclickvpnkeys
-  - 🇺🇸 [G] [TG]
+  - 🇩🇪 [G] [TG] тлс✅ Germany, Frankfurt am Main | [BL]
+  - 🇳🇱 [G] [TG] The Netherlands, Amsterdam | [BL]
+  - 🇨🇭 [G] [TG] Switzerland, Bern | 🌐 | [BL]
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 80
@@ -181,16 +166,15 @@ proxy-groups:
   proxies:
   - AUTO
   - AI & TG
-  - 🇱🇹 [G] [TG]
-  - 🇫🇷 [G] [TG] Strasbourg 🔵🟠  NavidVPN WS
-  - 🇦🇪 [G] [TG] тлс✅ 🌞8@oneclickvpnkeys
-  - 🇩🇰 🔘 T.me/V2HUBIR | Join Now ✅️
-  - 🇳🇱 [G] [TG]
-  - 🇺🇸 [G] [TG] тлс✅ 🔥Join+Telegram:@Farah_VPN🟣
-  - 🇦🇪 [G] [TG] 🎈31@oneclickvpnkeys
-  - 🇳🇱 [G] 🏳️ ShatakVPN 941168
-  - 🇷🇺 [G] [TG] 🎈@oneclickvpnkeys
-  - 🇺🇸 [G] [TG]
-  - 🇳🇱 [G] 🎈34@oneclickvpnkeys
+  - 🇫🇮 [G] [TG] тлс✅ Finland, Helsinki | 🌐 | [IPv6] | [BL] 👥
+  - 🇫🇮 [G] [TG] тлс✅ Finland, Helsinki | 🌐 | [BL] 👥
+  - 🇩🇪 [G] [TG] тлс✅ Germany, Frankfurt am Main | [BL]
+  - 🇳🇱 [G] [TG] The Netherlands, Amsterdam | [BL]
+  - 🇨🇭 [G] [TG] Switzerland, Bern | 🌐 | [BL]
+  - 🇦🇹 🌐 Anycast-IP | [IPv6] | [BL]
+  - 🇫🇷 [G] France, Aubervilliers | 🌐 | [IPv6] | [BL]
+  - 🇷🇺 [G] Russia, Moscow (Vostochnyy administrativnyy okrug) | [BL]
+  - 🇩🇪 [G] Germany, Frankfurt am Main | 🌐 | [IPv6] | [BL]
+  - 🇺🇸 [G] United States, Dover | [BL]
 rules:
 - MATCH,PROXY
