@@ -1,0 +1,1208 @@
+{
+  "log": {
+    "level": "warn",
+    "timestamp": true
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "google",
+        "address": "tls://8.8.8.8"
+      }
+    ]
+  },
+  "inbounds": [
+    {
+      "type": "mixed",
+      "tag": "mixed-in",
+      "listen": "127.0.0.1",
+      "listen_port": 7890
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🇷🇺 [G] Russia [*CIDR] VK 👥",
+      "server": "web.gukpayk.ru",
+      "server_port": 2053,
+      "uuid": "5570943f-6cc3-4a8a-bee3-d15a2b2f53a0",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "web.gukpayk.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "aFsY-EZjSNTomlAFShKwQIQMJ5pHiZQXXJpWvcz8WkQ",
+          "short_id": "0858af97f4e7324d"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 [G] [TG] тлс✅ Россия [🏳️LTE",
+      "server": "80.93.187.210",
+      "server_port": 52006,
+      "uuid": "75807638-6f19-07d0-ae08-38492ee85c88",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "80.93.187.210",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 [G] [TG] Finland | 🌐 | [IPv6] [*CIDR] VK 👥",
+      "server": "api-no-cache.dropmefile.net",
+      "server_port": 443,
+      "uuid": "b6ce8a51-19b9-4979-91ba-b4298c26d5fc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "api-no-cache.dropmefile.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc-tunnel"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 [G] [TG] тлс✅ Poland [*CIDR] VK",
+      "server": "s1.ws.listwhite.cc",
+      "server_port": 443,
+      "uuid": "b11c8d06-96bf-2040-908d-8663f919e399",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "s1.ws.listwhite.cc",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/upload/session",
+        "headers": {
+          "Host": "s1.ws.listwhite.cc"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 [G] [TG] Россия | 🥭🔥 login.vk.ru 👥",
+      "server": "141.98.191.78",
+      "server_port": 443,
+      "uuid": "a2415a12-3f92-4636-9823-9828d3ceb818",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "login.vk.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "wpLAX1ax15YI3H8kmmE8PH6S4vCjAwE2gYw6hG6QIh4",
+          "short_id": "a0"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇺 [G] [TG] UniGates-сава",
+      "server": "89.125.199.10",
+      "server_port": 443,
+      "uuid": "fb7d0e0d-0e4e-45ab-9198-e290be0e2285",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.intel.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Kf_v8HvINYp9W4fW2_a5hvBE04DZ79NYzux3qjEh9j0",
+          "short_id": "2a26ec9dd0640bbc"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 [G] [TG] тлс✅ 💦 15 - VLESS - Clean IP : 443",
+      "server": "193.9.49.6",
+      "server_port": 443,
+      "uuid": "051ada2d-dfd9-4108-a66d-01f96dcdccc8",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "wiNTeR-wINd-90a7.nABareV274.WORKeRS.DEv",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiQ3BQN2pIZ3YiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyI1LjE4Ny43LjIyMCJdfQ==?ed=2560",
+        "headers": {
+          "Host": "winter-wind-90a7.nabarev274.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 [G] [TG] Finland, Helsinki | 🌐 | [IPv6] | [BL] 👥",
+      "server": "cl-eu-1.edgeflux.ru",
+      "server_port": 52006,
+      "uuid": "75807638-6f19-0bb8-ae08-38492ee85c88",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "cl-eu-1.edgeflux.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 [G] Russia, Moscow | [BL]",
+      "server": "147.45.219.228.muslimtr.ru",
+      "server_port": 443,
+      "uuid": "322ffd77-9adc-4e10-8302-a8bcc14555a0",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "gateway.icloud.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-ZIDWF9CykNoZYNpO6Vi7BdDyZl_hJUYxuIRmPnuxBk",
+          "short_id": "c6118398"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 [G] [TG] тлс✅ Нидерланды | 🌐 | 🔐 [🏳️LTE",
+      "server": "cluster-europe-1.firstvideocdn.ru",
+      "server_port": 52006,
+      "uuid": "75807638-6f19-1f40-ae08-38492ee85c88",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "cluster-europe-1.firstvideocdn.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 Russia | TG: @HardVpn_robot",
+      "server": "213.171.26.10",
+      "server_port": 3443,
+      "uuid": "39ff8a27-433a-4105-96e6-0c35408d17e9",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "max.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "XqH-gNEL9eJfr1pglaI8WU3OvE654_5duXYBS35UXlM",
+          "short_id": "abcdef0123456789"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 [G] [TG] тлс✅ 💦 29 - VLESS - Clean IP : 8443",
+      "server": "188.42.145.214",
+      "server_port": 8443,
+      "uuid": "051ada2d-dfd9-4108-a66d-01f96dcdccc8",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "wInter-wInd-90a7.NAbareV274.woRKeRS.Dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiMFdFc3FmdjlVS2Z4IiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsiNS4xODcuNy4yMjAiXX0=?ed=2560",
+        "headers": {
+          "Host": "winter-wind-90a7.nabarev274.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 [G] [TG] France, Paris | [BL]",
+      "server": "web.37-z.ru",
+      "server_port": 2053,
+      "uuid": "5570943f-6cc3-4a8a-bee3-d15a2b2f53a0",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "web.37-z.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "aFsY-EZjSNTomlAFShKwQIQMJ5pHiZQXXJpWvcz8WkQ",
+          "short_id": "0858af97f4e7324d"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 [G] [TG] Direct-1",
+      "server": "152.70.58.201",
+      "server_port": 443,
+      "uuid": "8892e34a-339b-4526-b88d-cf68c516231c",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.microsoft.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Hg_ivwbClYmR-SEHdoGgq4yEk6ltbjS5c4yiQRa4_28",
+          "short_id": "abc123"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 [G] [TG] тлс✅ Germany, Frankfurt am Main | [BL]",
+      "server": "de1.mehab.me",
+      "server_port": 443,
+      "uuid": "5733bd25-ba0f-4ed0-8055-f5bef685da94",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "de1.mehab.me",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 [G] [TG] [ 👥",
+      "server": "109.120.191.5",
+      "server_port": 443,
+      "uuid": "b6ce8a51-19b9-4979-91ba-b4298c26d5fc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "api-staging.dropmefile.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc-tunnel"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 [G] [TG] Германия | 🌐 | 🔐 [🏳️LTE 👥",
+      "server": "cl-de-2.edgeflux.ru",
+      "server_port": 52006,
+      "uuid": "75807638-6f19-01f4-ae08-38492ee85c88",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "cl-de-2.edgeflux.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 [G] [TG] Poland, Warsaw | [BL]",
+      "server": "45.138.16.62",
+      "server_port": 30086,
+      "uuid": "a5554072-0d6d-4b9a-93b1-9c8726fc2c0b",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "grpc",
+        "service_name": "gprc"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 [G] [TG] The Netherlands, Dronten | [BL] 👥",
+      "server": "nl-in.api.dznn.net",
+      "server_port": 443,
+      "uuid": "b11c8d06-96bf-01f4-908d-8663f919e399",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "nl-in.api.dznn.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "9F7JxyyP-TNLt0dY2xOB0_34I8W0xXIpFY7rZ7-L0Gg",
+          "short_id": "0a6ba2716a409da6"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 [G] [TG] The Netherlands, Amsterdam | [BL]",
+      "server": "150.251.145.135",
+      "server_port": 2066,
+      "uuid": "7c71bca8-1f80-435a-bb2d-0ad130d6d4f7",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "u4lNvUk5pLZGl0XN-QK4xQgPQBhoJiMkOP2XZoQ99GA",
+          "short_id": "d18f4e"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 [G] [TG] Польша | 🌐 | 🔐 [🏳️LTE",
+      "server": "144.31.4.166",
+      "server_port": 443,
+      "uuid": "f9d8aa07-589f-4da0-9cb0-fd8f2f0e4fa8",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.deepl.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ZHEMPjSWslk6_qD2JNQzd5enUPz8nY9mYRRuM6NkZmU",
+          "short_id": "0123456789abcdef"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 [G] [TG] Sweden, Stockholm | [BL]",
+      "server": "web.rolfrolf.ru",
+      "server_port": 2053,
+      "uuid": "5570943f-6cc3-4a8a-bee3-d15a2b2f53a0",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "web.rolfrolf.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "aFsY-EZjSNTomlAFShKwQIQMJ5pHiZQXXJpWvcz8WkQ",
+          "short_id": "0858af97f4e7324d"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 [G] [TG] VPN 👥",
+      "server": "89.208.231.52",
+      "server_port": 993,
+      "uuid": "b6ce8a51-19b9-4979-91ba-b4298c26d5fc",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "max.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mAu8QDi3pbmMCFg9kKC-ZBIHdtnXeCuZt3VnAw6vlH4",
+          "short_id": "ad7dab462a323acb"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 [G] Estonia, Tallinn | [BL]",
+      "server": "eeshka.api.dznn.net",
+      "server_port": 443,
+      "uuid": "b11c8d06-96bf-41b3-908d-8663f919e399",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "eeshka.api.dznn.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "9F7JxyyP-TNLt0dY2xOB0_34I8W0xXIpFY7rZ7-L0Gg",
+          "short_id": "0a6ba2716a409da6"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 [G] [TG] 1675 👥",
+      "server": "89.208.231.81",
+      "server_port": 993,
+      "uuid": "b6ce8a51-19b9-4979-91ba-b4298c26d5fc",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "max.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mAu8QDi3pbmMCFg9kKC-ZBIHdtnXeCuZt3VnAw6vlH4",
+          "short_id": "ad7dab462a323acb"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 [G] [TG] Germany, Frankfurt am Main (Innenstadt I) | 🌐 | [IPv6] | [BL] 👥",
+      "server": "de.scamhost.online",
+      "server_port": 443,
+      "uuid": "017471d2-6198-4f27-847c-a18fa753ca6e",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "de.scamhost.online",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "3T8DuoXtRuXjyrBXbDHgwDHimngqSRxfm86brOfCMVU",
+          "short_id": "a8a4229c9134dae5"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": ""
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "UN [G] [TG] тлс✅ cl-ru-2.edgeflux.ru:52006 👥",
+      "server": "cl-ru-2.edgeflux.ru",
+      "server_port": 52006,
+      "uuid": "75807638-6f19-07d0-ae08-38492ee85c88",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "cl-ru-2.edgeflux.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇹 [G] [TG] Lithuania, Vilnius | [BL] 👥",
+      "server": "lt.srv.casrv.link",
+      "server_port": 8443,
+      "uuid": "ab2f5b91-9cfd-4989-af25-353d4d69372c",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ign.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": "6ba85179e30d4fc2"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 [G] [TG] тлс✅ 🌐 Anycast-IP | [IPv6] | [BL]",
+      "server": "193.23.219.205",
+      "server_port": 8443,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "sni.latonyamadeline.ndjp.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560&https://t.me/WangCai2🇨🇳",
+        "headers": {
+          "Host": "sni.latonyamadeline.ndjp.net"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 [G] [TG] 20224d08",
+      "server": "46.226.162.205",
+      "server_port": 51177,
+      "uuid": "20224d08-bdc1-4280-8d34-f2288c4c1473",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "teamdocs.su",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "o5VKcEfjPXonAjUJYSk2Rznv0wHjkFEHlVZtcUwVsQE",
+          "short_id": "5ed6"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇹 [G] [TG] Austria, Vienna | [BL]",
+      "server": "web.pyatnica.pro",
+      "server_port": 2053,
+      "uuid": "5570943f-6cc3-4a8a-bee3-d15a2b2f53a0",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "web.pyatnica.pro",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "nN0yOjtfONIcmjurY2SwM1DMkugK5unIWZVnpgYnQCk",
+          "short_id": "9f0e2c6b4833757f"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 [G] [TG] Estonia, Tallinn | 🌐 | [IPv6] | [BL]",
+      "server": "ee.keepsecured.net",
+      "server_port": 8443,
+      "uuid": "b6ce8a51-19b9-4979-91ba-b4298c26d5fc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.kwork.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "J07yFEBPsic7-hLTS2KSxVqI7v4gpfkG6_a2cGKNVFk",
+          "short_id": "10f786a2491b2cd5"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "buysec.ru"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 [G] [TG] The Netherlands, Eindhoven | 🌐 | [IPv6] | [BL]",
+      "server": "198.105.112.43",
+      "server_port": 7443,
+      "uuid": "b375b840-8ac0-4d37-98c0-44ab85fd7127",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "chat.deepseek.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI",
+          "short_id": "d82fb387"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇺 [G] [TG] Обход LTE 1",
+      "server": "157.22.231.43",
+      "server_port": 9443,
+      "uuid": "0baa7fcd-20d2-4cdb-9e62-f213226eee53",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.vk.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "82EUNQglruwkub0OfdFYh_iJFCR9Mck8JRFzhEH8GCs",
+          "short_id": "52"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 [G] [TG] Нидерланды | 🥭🔥 www.ozon.ru",
+      "server": "v546965.hosted-by-vdsina.com",
+      "server_port": 8443,
+      "uuid": "TrueVPN_92001293",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.ozon.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "bVhVy1hZY_iw-sljlaeVbTBBa6SPvMm0Kg0tCC8CKHM",
+          "short_id": "ffffffffff"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇿 [G] [TG] Kazakhstan, Pavlodar | [BL]",
+      "server": "kz2-in.api.dznn.net",
+      "server_port": 443,
+      "uuid": "b11c8d06-96bf-41b3-908d-8663f919e399",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "kz2-in.api.dznn.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "9F7JxyyP-TNLt0dY2xOB0_34I8W0xXIpFY7rZ7-L0Gg",
+          "short_id": "0a6ba2716a409da6"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 [TG] 82. VLESS | SNI: max.ru | CIDR: VK | TG: @wlrustg t.me/rjsxrd 👥",
+      "server": "109.120.191.5",
+      "server_port": 993,
+      "uuid": "b6ce8a51-19b9-4979-91ba-b4298c26d5fc",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "max.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mAu8QDi3pbmMCFg9kKC-ZBIHdtnXeCuZt3VnAw6vlH4",
+          "short_id": "ad7dab462a323acb"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 [TG] United Kingdom, London | [BL]",
+      "server": "web.kosmoreingery.ru",
+      "server_port": 2053,
+      "uuid": "5570943f-6cc3-4a8a-bee3-d15a2b2f53a0",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "web.kosmoreingery.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "aFsY-EZjSNTomlAFShKwQIQMJ5pHiZQXXJpWvcz8WkQ",
+          "short_id": "0858af97f4e7324d"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇪 [G] [TG] тлс✅ Georgia, Tbilisi | 🌐 | [BL]",
+      "server": "72.56.62.253",
+      "server_port": 22231,
+      "uuid": "afcac633-0e1a-46c3-bef2-cc01cc0097c8",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "r1.mizulina.top",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇸 [G] [TG] Эщкерия | 🔐 | 🥭🔥 ads.x5.ru",
+      "server": "62.60.153.179",
+      "server_port": 6444,
+      "uuid": "1f1a6ea7-b2d5-4fd4-be5f-0d8b1317d6b5",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ads.x5.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "FD7YTKH3QSTPqm35DGFG23jJHC_rKo_T2ry7Nitvhjs",
+          "short_id": "c15a7e422151adbc"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇭 [G] [TG] Switzerland, Geneva | [BL]",
+      "server": "web.maysevlive.ru",
+      "server_port": 2053,
+      "uuid": "5570943f-6cc3-4a8a-bee3-d15a2b2f53a0",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "web.maysevlive.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "aFsY-EZjSNTomlAFShKwQIQMJ5pHiZQXXJpWvcz8WkQ",
+          "short_id": "0858af97f4e7324d"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 [G] [TG] Germany, Frankfurt am Main (Innenstadt I) | [BL]",
+      "server": "tiktaktok.ru",
+      "server_port": 2053,
+      "uuid": "5570943f-6cc3-4a8a-bee3-d15a2b2f53a0",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "tiktaktok.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "aFsY-EZjSNTomlAFShKwQIQMJ5pHiZQXXJpWvcz8WkQ",
+          "short_id": "0858af97f4e7324d"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 [G] [TG] тлс✅ 🌐سرور",
+      "server": "52.57.232.245",
+      "server_port": 22224,
+      "uuid": "05519058-d2ac-4f28-9e4a-2b2a1386749e",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan.burgerip.co.uk",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/telegram-channel-vlessconfig",
+        "headers": {
+          "Host": "trojan.burgerip.co.uk"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 🌐 Anycast-IP | [IPv6] [*CIDR] VK",
+      "server": "217.16.26.248",
+      "server_port": 2091,
+      "uuid": "07e5a1f8-8317-fd7b-b7fb-975a0de32205",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ads.x5.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "gOvNjuxZomABcAtt4uxcH948GhYyB74bDf-t62xhWXs",
+          "short_id": "7ebf"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 [G] [TG] тлс✅ 💦 30 - VLESS - Clean IP : 8443",
+      "server": "188.42.88.1",
+      "server_port": 8443,
+      "uuid": "051ada2d-dfd9-4108-a66d-01f96dcdccc8",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "wiNteR-WInd-90A7.nAbAREV274.WoRkERs.Dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiRk9ObjBYTGoiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyI1LjE4Ny43LjIyMCJdfQ==?ed=2560",
+        "headers": {
+          "Host": "winter-wind-90a7.nabarev274.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 [G] [TG] Russia, St Petersburg | [BL]",
+      "server": "web.catpatrol.ru",
+      "server_port": 2053,
+      "uuid": "5570943f-6cc3-4a8a-bee3-d15a2b2f53a0",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "web.catpatrol.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "aFsY-EZjSNTomlAFShKwQIQMJ5pHiZQXXJpWvcz8WkQ",
+          "short_id": "0858af97f4e7324d"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 [G] [TG] Turkey | TG: @HardVpn_robot",
+      "server": "tr-in.api.dznn.net",
+      "server_port": 443,
+      "uuid": "b11c8d06-96bf-41b3-908d-8663f919e399",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "platform-api.max.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "9F7JxyyP-TNLt0dY2xOB0_34I8W0xXIpFY7rZ7-L0Gg",
+          "short_id": "19aa22f681923dc8"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 [G] @teleking_vip",
+      "server": "45.15.129.32",
+      "server_port": 443,
+      "uuid": "3744b1fc-1fa5-4bd9-a901-d97a4214ae70",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "qsT9UM8_tjOILuNP9skeOZ0SfXfnj1oTRG-kKoCfqXs",
+          "short_id": "d0"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇹 [G] [TG] Литва [🏳️LTE",
+      "server": "84.32.209.6",
+      "server_port": 443,
+      "uuid": "37253a6a-2a9b-42bb-992c-b5f1b1ef1791",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "vltch.mostserv.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "3WzSgL8uXA3vE3IHrfdBpJmOO4MYrsWpczDSY_jJRjI",
+          "short_id": "226509f017e4c36d"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇾 [G] [TG] 塞浦路斯 | vless | 12",
+      "server": "45.15.129.5",
+      "server_port": 443,
+      "uuid": "da2d9e98-f486-43ec-8637-79089bc1f222",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "yandex.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "tmRzdUIUtlS3-qqTIXF1FNRDn9gkIm4j1kdbb50OLC8",
+          "short_id": "62f140"
+        }
+      }
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇷🇺 [G] Russia [*CIDR] VK 👥",
+        "🇷🇺 [G] [TG] тлс✅ Россия [🏳️LTE",
+        "🇫🇮 [G] [TG] Finland | 🌐 | [IPv6] [*CIDR] VK 👥",
+        "🇵🇱 [G] [TG] тлс✅ Poland [*CIDR] VK",
+        "🇷🇺 [G] [TG] Россия | 🥭🔥 login.vk.ru 👥",
+        "🇪🇺 [G] [TG] UniGates-сава",
+        "🇷🇺 [G] [TG] тлс✅ 💦 15 - VLESS - Clean IP : 443",
+        "🇫🇮 [G] [TG] Finland, Helsinki | 🌐 | [IPv6] | [BL] 👥",
+        "🇷🇺 [G] Russia, Moscow | [BL]",
+        "🇳🇱 [G] [TG] тлс✅ Нидерланды | 🌐 | 🔐 [🏳️LTE",
+        "🇷🇺 Russia | TG: @HardVpn_robot",
+        "🇳🇱 [G] [TG] тлс✅ 💦 29 - VLESS - Clean IP : 8443",
+        "🇫🇷 [G] [TG] France, Paris | [BL]",
+        "🇳🇱 [G] [TG] Direct-1",
+        "🇩🇪 [G] [TG] тлс✅ Germany, Frankfurt am Main | [BL]",
+        "🇷🇺 [G] [TG] [ 👥",
+        "🇩🇪 [G] [TG] Германия | 🌐 | 🔐 [🏳️LTE 👥",
+        "🇵🇱 [G] [TG] Poland, Warsaw | [BL]",
+        "🇳🇱 [G] [TG] The Netherlands, Dronten | [BL] 👥",
+        "🇳🇱 [G] [TG] The Netherlands, Amsterdam | [BL]",
+        "🇵🇱 [G] [TG] Польша | 🌐 | 🔐 [🏳️LTE",
+        "🇸🇪 [G] [TG] Sweden, Stockholm | [BL]",
+        "🇷🇺 [G] [TG] VPN 👥",
+        "🇪🇪 [G] Estonia, Tallinn | [BL]",
+        "🇷🇺 [G] [TG] 1675 👥",
+        "🇩🇪 [G] [TG] Germany, Frankfurt am Main (Innenstadt I) | 🌐 | [IPv6] | [BL] 👥",
+        "UN [G] [TG] тлс✅ cl-ru-2.edgeflux.ru:52006 👥",
+        "🇱🇹 [G] [TG] Lithuania, Vilnius | [BL] 👥",
+        "🇩🇪 [G] [TG] тлс✅ 🌐 Anycast-IP | [IPv6] | [BL]",
+        "🇬🇧 [G] [TG] 20224d08",
+        "🇦🇹 [G] [TG] Austria, Vienna | [BL]",
+        "🇪🇪 [G] [TG] Estonia, Tallinn | 🌐 | [IPv6] | [BL]",
+        "🇳🇱 [G] [TG] The Netherlands, Eindhoven | 🌐 | [IPv6] | [BL]",
+        "🇪🇺 [G] [TG] Обход LTE 1",
+        "🇳🇱 [G] [TG] Нидерланды | 🥭🔥 www.ozon.ru",
+        "🇰🇿 [G] [TG] Kazakhstan, Pavlodar | [BL]",
+        "🇷🇺 [TG] 82. VLESS | SNI: max.ru | CIDR: VK | TG: @wlrustg t.me/rjsxrd 👥",
+        "🇬🇧 [TG] United Kingdom, London | [BL]",
+        "🇬🇪 [G] [TG] тлс✅ Georgia, Tbilisi | 🌐 | [BL]",
+        "🇧🇸 [G] [TG] Эщкерия | 🔐 | 🥭🔥 ads.x5.ru",
+        "🇨🇭 [G] [TG] Switzerland, Geneva | [BL]",
+        "🇩🇪 [G] [TG] Germany, Frankfurt am Main (Innenstadt I) | [BL]",
+        "🇩🇪 [G] [TG] тлс✅ 🌐سرور",
+        "🇷🇺 🌐 Anycast-IP | [IPv6] [*CIDR] VK",
+        "🇳🇱 [G] [TG] тлс✅ 💦 30 - VLESS - Clean IP : 8443",
+        "🇷🇺 [G] [TG] Russia, St Petersburg | [BL]",
+        "🇹🇷 [G] [TG] Turkey | TG: @HardVpn_robot",
+        "🇳🇱 [G] @teleking_vip",
+        "🇱🇹 [G] [TG] Литва [🏳️LTE",
+        "🇨🇾 [G] [TG] 塞浦路斯 | vless | 12"
+      ],
+      "url": "https://www.gstatic.com/generate_204",
+      "interval": "5m",
+      "tolerance": 80
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇷🇺 [G] Russia [*CIDR] VK 👥",
+        "🇷🇺 [G] [TG] тлс✅ Россия [🏳️LTE",
+        "🇫🇮 [G] [TG] Finland | 🌐 | [IPv6] [*CIDR] VK 👥",
+        "🇵🇱 [G] [TG] тлс✅ Poland [*CIDR] VK",
+        "🇷🇺 [G] [TG] Россия | 🥭🔥 login.vk.ru 👥",
+        "🇪🇺 [G] [TG] UniGates-сава",
+        "🇷🇺 [G] [TG] тлс✅ 💦 15 - VLESS - Clean IP : 443",
+        "🇫🇮 [G] [TG] Finland, Helsinki | 🌐 | [IPv6] | [BL] 👥",
+        "🇷🇺 [G] Russia, Moscow | [BL]",
+        "🇳🇱 [G] [TG] тлс✅ Нидерланды | 🌐 | 🔐 [🏳️LTE",
+        "🇷🇺 Russia | TG: @HardVpn_robot",
+        "🇳🇱 [G] [TG] тлс✅ 💦 29 - VLESS - Clean IP : 8443",
+        "🇫🇷 [G] [TG] France, Paris | [BL]",
+        "🇳🇱 [G] [TG] Direct-1",
+        "🇩🇪 [G] [TG] тлс✅ Germany, Frankfurt am Main | [BL]",
+        "🇷🇺 [G] [TG] [ 👥",
+        "🇩🇪 [G] [TG] Германия | 🌐 | 🔐 [🏳️LTE 👥",
+        "🇵🇱 [G] [TG] Poland, Warsaw | [BL]",
+        "🇳🇱 [G] [TG] The Netherlands, Dronten | [BL] 👥",
+        "🇳🇱 [G] [TG] The Netherlands, Amsterdam | [BL]",
+        "🇵🇱 [G] [TG] Польша | 🌐 | 🔐 [🏳️LTE",
+        "🇸🇪 [G] [TG] Sweden, Stockholm | [BL]",
+        "🇷🇺 [G] [TG] VPN 👥",
+        "🇪🇪 [G] Estonia, Tallinn | [BL]",
+        "🇷🇺 [G] [TG] 1675 👥",
+        "🇩🇪 [G] [TG] Germany, Frankfurt am Main (Innenstadt I) | 🌐 | [IPv6] | [BL] 👥",
+        "UN [G] [TG] тлс✅ cl-ru-2.edgeflux.ru:52006 👥",
+        "🇱🇹 [G] [TG] Lithuania, Vilnius | [BL] 👥",
+        "🇩🇪 [G] [TG] тлс✅ 🌐 Anycast-IP | [IPv6] | [BL]",
+        "🇬🇧 [G] [TG] 20224d08",
+        "🇦🇹 [G] [TG] Austria, Vienna | [BL]",
+        "🇪🇪 [G] [TG] Estonia, Tallinn | 🌐 | [IPv6] | [BL]",
+        "🇳🇱 [G] [TG] The Netherlands, Eindhoven | 🌐 | [IPv6] | [BL]",
+        "🇪🇺 [G] [TG] Обход LTE 1",
+        "🇳🇱 [G] [TG] Нидерланды | 🥭🔥 www.ozon.ru",
+        "🇰🇿 [G] [TG] Kazakhstan, Pavlodar | [BL]",
+        "🇷🇺 [TG] 82. VLESS | SNI: max.ru | CIDR: VK | TG: @wlrustg t.me/rjsxrd 👥",
+        "🇬🇧 [TG] United Kingdom, London | [BL]",
+        "🇬🇪 [G] [TG] тлс✅ Georgia, Tbilisi | 🌐 | [BL]",
+        "🇧🇸 [G] [TG] Эщкерия | 🔐 | 🥭🔥 ads.x5.ru",
+        "🇨🇭 [G] [TG] Switzerland, Geneva | [BL]",
+        "🇩🇪 [G] [TG] Germany, Frankfurt am Main (Innenstadt I) | [BL]",
+        "🇩🇪 [G] [TG] тлс✅ 🌐سرور",
+        "🇷🇺 🌐 Anycast-IP | [IPv6] [*CIDR] VK",
+        "🇳🇱 [G] [TG] тлс✅ 💦 30 - VLESS - Clean IP : 8443",
+        "🇷🇺 [G] [TG] Russia, St Petersburg | [BL]",
+        "🇹🇷 [G] [TG] Turkey | TG: @HardVpn_robot",
+        "🇳🇱 [G] @teleking_vip",
+        "🇱🇹 [G] [TG] Литва [🏳️LTE",
+        "🇨🇾 [G] [TG] 塞浦路斯 | vless | 12"
+      ],
+      "default": "auto"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "dns",
+      "tag": "dns-out"
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "protocol": "dns",
+        "outbound": "dns-out"
+      }
+    ],
+    "final": "select"
+  }
+}
