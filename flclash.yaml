@@ -65,6 +65,16 @@ proxies:
   reality-opts:
     public-key: 9WnuH4KUb9-cCqbApq4bVLDhrqhPbpnd5eTn14bGciA
     short-id: f7
+- name: 🇷🇺 [G] тлс✅ Белый_Интернет 6 LTE
+  type: vless
+  server: clean.cleanersaz.help
+  port: 4443
+  uuid: b586ae4f-5570-44a5-a701-039d1047431e
+  udp: true
+  network: tcp
+  tls: true
+  servername: clean.cleanersaz.help
+  client-fingerprint: chrome
 - name: 🇦🇹 🌐 Anycast-IP | [IPv6] | [BL]
   type: vless
   server: 152.53.66.208
@@ -93,6 +103,20 @@ proxies:
   reality-opts:
     public-key: 5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI
     short-id: be0ce047
+- name: 🇺🇸 [G] тлс✅ 美国阿什本01-0.1倍
+  type: vless
+  server: 69.84.182.108
+  port: 443
+  uuid: 82766959-5cd7-4865-bae2-b87bf00da44d
+  udp: true
+  network: ws
+  tls: true
+  servername: pq-us4.globals-download.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /pq/us4
+    headers:
+      Host: pq-us4.globals-download.com
 - name: 🇷🇺 [G] Russia, Moscow (Vostochnyy administrativnyy okrug) | [BL]
   type: vless
   server: 7qqrbome80g.country-26.de-nfast.com
@@ -144,8 +168,10 @@ proxy-groups:
   - 🇩🇪 [G] [TG] тлс✅ Germany, Frankfurt am Main | [BL]
   - 🇳🇱 [G] [TG] The Netherlands, Amsterdam | [BL]
   - 🇨🇭 [G] [TG] Switzerland, Bern | 🌐 | [BL]
+  - 🇷🇺 [G] тлс✅ Белый_Интернет 6 LTE
   - 🇦🇹 🌐 Anycast-IP | [IPv6] | [BL]
   - 🇫🇷 [G] France, Aubervilliers | 🌐 | [IPv6] | [BL]
+  - 🇺🇸 [G] тлс✅ 美国阿什本01-0.1倍
   - 🇷🇺 [G] Russia, Moscow (Vostochnyy administrativnyy okrug) | [BL]
   - 🇩🇪 [G] Germany, Frankfurt am Main | 🌐 | [IPv6] | [BL]
   - 🇺🇸 [G] United States, Dover | [BL]
@@ -171,8 +197,10 @@ proxy-groups:
   - 🇩🇪 [G] [TG] тлс✅ Germany, Frankfurt am Main | [BL]
   - 🇳🇱 [G] [TG] The Netherlands, Amsterdam | [BL]
   - 🇨🇭 [G] [TG] Switzerland, Bern | 🌐 | [BL]
+  - 🇷🇺 [G] тлс✅ Белый_Интернет 6 LTE
   - 🇦🇹 🌐 Anycast-IP | [IPv6] | [BL]
   - 🇫🇷 [G] France, Aubervilliers | 🌐 | [IPv6] | [BL]
+  - 🇺🇸 [G] тлс✅ 美国阿什本01-0.1倍
   - 🇷🇺 [G] Russia, Moscow (Vostochnyy administrativnyy okrug) | [BL]
   - 🇩🇪 [G] Germany, Frankfurt am Main | 🌐 | [IPv6] | [BL]
   - 🇺🇸 [G] United States, Dover | [BL]
