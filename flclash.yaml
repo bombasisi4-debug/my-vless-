@@ -3,43 +3,19 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇺 [G] Russia, Moscow (Vostochnyy administrativnyy okrug) | [BL]
+- name: 🇷🇺 [G] [TG] [
   type: vless
-  server: 7qqrbome80g.country-26.de-nfast.com
+  server: api-no-cache.dropmefile.net
   port: 443
-  uuid: 4b481152-ba7f-4445-8cc0-d33d58546e23
+  uuid: b6ce8a51-19b9-4979-91ba-b4298c26d5fc
   udp: true
-  network: tcp
+  network: grpc
   tls: true
-  flow: xtls-rprx-vision
-  servername: tradingview.com
+  servername: api-no-cache.dropmefile.net
   client-fingerprint: chrome
-  reality-opts:
-    public-key: -tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw
-    short-id: '50'
-- name: 🇫🇮 [G] [TG] тлс✅ Finland, Helsinki | 🌐 | [IPv6] | [BL] 👥
-  type: vless
-  server: cl-eu-1.edgeflux.ru
-  port: 52006
-  uuid: 75807638-6f19-0bb8-ae08-38492ee85c88
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: cl-eu-1.edgeflux.ru
-  client-fingerprint: chrome
-- name: 🇫🇮 [G] [TG] тлс✅ Finland, Helsinki | 🌐 | [BL] 👥
-  type: vless
-  server: 87.228.94.9
-  port: 52006
-  uuid: 75807638-6f19-0bb8-ae08-38492ee85c88
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: cl-eu-1.edgeflux.ru
-  client-fingerprint: chrome
-- name: 🇩🇪 [TG] Germany, Frankfurt am Main | [BL]
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
+- name: 🇩🇪 [G] [TG] Germany, Frankfurt am Main | [BL]
   type: vless
   server: free-v7-09.elbrusway.online
   port: 443
@@ -53,46 +29,6 @@ proxies:
   reality-opts:
     public-key: BvSO06HFZ6hdq4dcQV0OXroLr0cX5H7x3M2pDToduwI
     short-id: de2a1f03e27a36b9
-- name: 🇨🇭 [G] [TG] Switzerland, Bern | 🌐 | [BL]
-  type: vless
-  server: lol-che-0001.api.neuralrelay.stream
-  port: 443
-  uuid: f189684b-6213-4c0d-a2e3-cb8860f5d4c5
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: hls-svod.itunes.apple.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 9WnuH4KUb9-cCqbApq4bVLDhrqhPbpnd5eTn14bGciA
-    short-id: f7
-- name: 🇩🇪 [G] Germany, Frankfurt am Main | 🌐 | [IPv6] | [BL]
-  type: vless
-  server: 89.106.85.2
-  port: 443
-  uuid: 2112303e-6580-40c5-adeb-885b6e7c3517
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: 89.106.85.2
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8
-    short-id: 1ed136481e0ede74
-- name: 🇵🇱 [G] [TG] Poland, Warsaw | [BL]
-  type: vless
-  server: 45.138.16.62
-  port: 30047
-  uuid: a5554072-0d6d-4b9a-93b1-9c8726fc2c0b
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 45.138.16.62
 - name: 🇺🇸 [G] [TG] тлс✅ 美国阿什本01-0.1倍
   type: vless
   server: 69.84.182.108
@@ -107,60 +43,6 @@ proxies:
     path: /pq/us4
     headers:
       Host: pq-us4.globals-download.com
-- name: 🇷🇺 [G] [TG] [
-  type: vless
-  server: api-no-cache.dropmefile.net
-  port: 443
-  uuid: b6ce8a51-19b9-4979-91ba-b4298c26d5fc
-  udp: true
-  network: grpc
-  tls: true
-  servername: api-no-cache.dropmefile.net
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: 🇫🇷 [G] [TG] France, Aubervilliers | 🌐 | [IPv6] | [BL]
-  type: vless
-  server: 45.92.218.65
-  port: 7443
-  uuid: b375b840-8ac0-4d37-98c0-44ab85fd7127
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: chat.deepseek.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI
-    short-id: be0ce047
-- name: 🇺🇸 [G] 美国圣何塞05 | 三网推荐
-  type: vless
-  server: 134.195.101.122
-  port: 443
-  uuid: 82766959-5cd7-4865-bae2-b87bf00da44d
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: download.visualstudio.microsoft.com
-  client-fingerprint: ios
-  reality-opts:
-    public-key: 5GuO4I_E15w2KmNriq2iJgCNRzmUaf2czrSyyxDaJiI
-    short-id: 870ba0fa
-- name: 🇺🇸 [G] United States, Dover | [BL]
-  type: vless
-  server: 166.1.89.21
-  port: 443
-  uuid: e69d5f8a-2629-45ac-889b-981983209933
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: www.apple.com
-  client-fingerprint: qq
-  reality-opts:
-    public-key: PxiVEKI3dp1UpqzpgnD31-Wl4MFiHjTI23ylGFn5Slg
-    short-id: '111111'
 - name: 🇺🇸 [G] [TG] United States, Dallas | [BL]
   type: vless
   server: 38.95.79.91
@@ -179,18 +61,9 @@ proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇷🇺 [G] Russia, Moscow (Vostochnyy administrativnyy okrug) | [BL]
-  - 🇫🇮 [G] [TG] тлс✅ Finland, Helsinki | 🌐 | [IPv6] | [BL] 👥
-  - 🇫🇮 [G] [TG] тлс✅ Finland, Helsinki | 🌐 | [BL] 👥
-  - 🇩🇪 [TG] Germany, Frankfurt am Main | [BL]
-  - 🇨🇭 [G] [TG] Switzerland, Bern | 🌐 | [BL]
-  - 🇩🇪 [G] Germany, Frankfurt am Main | 🌐 | [IPv6] | [BL]
-  - 🇵🇱 [G] [TG] Poland, Warsaw | [BL]
-  - 🇺🇸 [G] [TG] тлс✅ 美国阿什本01-0.1倍
   - 🇷🇺 [G] [TG] [
-  - 🇫🇷 [G] [TG] France, Aubervilliers | 🌐 | [IPv6] | [BL]
-  - 🇺🇸 [G] 美国圣何塞05 | 三网推荐
-  - 🇺🇸 [G] United States, Dover | [BL]
+  - 🇩🇪 [G] [TG] Germany, Frankfurt am Main | [BL]
+  - 🇺🇸 [G] [TG] тлс✅ 美国阿什本01-0.1倍
   - 🇺🇸 [G] [TG] United States, Dallas | [BL]
   url: https://www.gstatic.com/generate_204
   interval: 300
@@ -198,10 +71,8 @@ proxy-groups:
 - name: AI & TG
   type: url-test
   proxies:
-  - 🇨🇭 [G] [TG] Switzerland, Bern | 🌐 | [BL]
-  - 🇵🇱 [G] [TG] Poland, Warsaw | [BL]
+  - 🇩🇪 [G] [TG] Germany, Frankfurt am Main | [BL]
   - 🇺🇸 [G] [TG] тлс✅ 美国阿什本01-0.1倍
-  - 🇫🇷 [G] [TG] France, Aubervilliers | 🌐 | [IPv6] | [BL]
   - 🇺🇸 [G] [TG] United States, Dallas | [BL]
   url: https://www.gstatic.com/generate_204
   interval: 300
@@ -211,18 +82,9 @@ proxy-groups:
   proxies:
   - AUTO
   - AI & TG
-  - 🇷🇺 [G] Russia, Moscow (Vostochnyy administrativnyy okrug) | [BL]
-  - 🇫🇮 [G] [TG] тлс✅ Finland, Helsinki | 🌐 | [IPv6] | [BL] 👥
-  - 🇫🇮 [G] [TG] тлс✅ Finland, Helsinki | 🌐 | [BL] 👥
-  - 🇩🇪 [TG] Germany, Frankfurt am Main | [BL]
-  - 🇨🇭 [G] [TG] Switzerland, Bern | 🌐 | [BL]
-  - 🇩🇪 [G] Germany, Frankfurt am Main | 🌐 | [IPv6] | [BL]
-  - 🇵🇱 [G] [TG] Poland, Warsaw | [BL]
-  - 🇺🇸 [G] [TG] тлс✅ 美国阿什本01-0.1倍
   - 🇷🇺 [G] [TG] [
-  - 🇫🇷 [G] [TG] France, Aubervilliers | 🌐 | [IPv6] | [BL]
-  - 🇺🇸 [G] 美国圣何塞05 | 三网推荐
-  - 🇺🇸 [G] United States, Dover | [BL]
+  - 🇩🇪 [G] [TG] Germany, Frankfurt am Main | [BL]
+  - 🇺🇸 [G] [TG] тлс✅ 美国阿什本01-0.1倍
   - 🇺🇸 [G] [TG] United States, Dallas | [BL]
 rules:
 - MATCH,PROXY
