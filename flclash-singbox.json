@@ -23,7 +23,24 @@
     {
       "type": "vless",
       "tag": "🇫🇮 [G] [TG] тлс✅ Finland, Helsinki | 🌐 | [IPv6] | [BL] 👥",
-      "server": "87.228.94.5",
+      "server": "cl-eu-1.edgeflux.ru",
+      "server_port": 52006,
+      "uuid": "75807638-6f19-0bb8-ae08-38492ee85c88",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "cl-eu-1.edgeflux.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 [G] [TG] тлс✅ 🌐 Финляндия 9 👥",
+      "server": "87.228.94.4",
       "server_port": 52006,
       "uuid": "75807638-6f19-0bb8-ae08-38492ee85c88",
       "packet_encoding": "xudp",
@@ -40,7 +57,7 @@
     {
       "type": "vless",
       "tag": "🇫🇮 [G] [TG] тлс✅ Finland, Helsinki | 🌐 | [IPv6] | [BL] 👥 #2",
-      "server": "87.228.94.3",
+      "server": "87.228.94.12",
       "server_port": 52006,
       "uuid": "75807638-6f19-0bb8-ae08-38492ee85c88",
       "packet_encoding": "xudp",
@@ -57,23 +74,6 @@
     {
       "type": "vless",
       "tag": "🇫🇮 [G] [TG] тлс✅ Finland, Helsinki | 🌐 | [IPv6] | [BL] 👥 #3",
-      "server": "87.228.94.14",
-      "server_port": 52006,
-      "uuid": "75807638-6f19-0bb8-ae08-38492ee85c88",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "cl-eu-1.edgeflux.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 [G] [TG] тлс✅ Finland, Helsinki | 🌐 | [IPv6] | [BL] 👥 #4",
       "server": "87.228.94.16",
       "server_port": 52006,
       "uuid": "75807638-6f19-0bb8-ae08-38492ee85c88",
@@ -90,12 +90,85 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 [G] [TG] тлс✅ cl-ru-2.edgeflux.ru:52006",
-      "server": "cl-ru-2.edgeflux.ru",
+      "tag": "🇷🇺 [G] тлс✅ 🌐 Финляндия 7 👥",
+      "server": "87.228.94.2",
+      "server_port": 52006,
+      "uuid": "75807638-6f19-0bb8-ae08-38492ee85c88",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "cl-eu-1.edgeflux.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 [G] [TG] тлс✅ Россия [🏳️LTE 👥",
+      "server": "82.202.249.96",
       "server_port": 52006,
       "uuid": "75807638-6f19-07d0-ae08-38492ee85c88",
       "packet_encoding": "xudp",
       "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "82.202.249.96",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 тлс✅ 🌐 Россия 23 | Белые списки 👥",
+      "server": "178.72.182.27",
+      "server_port": 52006,
+      "uuid": "75807638-6f19-07d0-ae08-38492ee85c88",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "cl-ru-1.edgeflux.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 [G] 🌐 Россия 13 | Белые списки",
+      "server": "193.124.130.173",
+      "server_port": 443,
+      "uuid": "4b481152-ba7f-4445-8cc0-d33d58546e23",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "tradingview.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw",
+          "short_id": "50"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 [G] [TG] тлс✅ 🌐 Россия 24 | Белые списки 👥",
+      "server": "178.72.182.28",
+      "server_port": 52006,
+      "uuid": "75807638-6f19-07d0-ae08-38492ee85c88",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision-udp443",
       "tls": {
         "enabled": true,
         "server_name": "cl-ru-2.edgeflux.ru",
@@ -107,14 +180,31 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 [G] [TG] Russia [*CIDR]",
-      "server": "web.didado.ru",
+      "tag": "🇫🇮 [G] [TG] тлс✅ Finland, Helsinki | 🌐 | [IPv6] | [BL] 👥 #4",
+      "server": "87.228.94.3",
+      "server_port": 52006,
+      "uuid": "75807638-6f19-0bb8-ae08-38492ee85c88",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "cl-eu-1.edgeflux.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 [G] 🌐 Россия 50 | Белые списки 👥",
+      "server": "web.gukpayk.ru",
       "server_port": 2053,
       "uuid": "5570943f-6cc3-4a8a-bee3-d15a2b2f53a0",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "web.didado.ru",
+        "server_name": "web.gukpayk.ru",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -145,35 +235,65 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 Russia [*CIDR] VK",
-      "server": "odindvavosem.ru",
-      "server_port": 2053,
-      "uuid": "5570943f-6cc3-4a8a-bee3-d15a2b2f53a0",
+      "tag": "🇷🇺 [G] [TG] тлс✅ cl-ru-2.edgeflux.ru:52006 👥",
+      "server": "cl-ru-2.edgeflux.ru",
+      "server_port": 52006,
+      "uuid": "75807638-6f19-07d0-ae08-38492ee85c88",
       "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "web.odindvavosem.ru",
+        "server_name": "cl-ru-2.edgeflux.ru",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "aFsY-EZjSNTomlAFShKwQIQMJ5pHiZQXXJpWvcz8WkQ",
-          "short_id": "0858af97f4e7324d"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 [G] [TG] тлс✅ 💦 15 - VLESS - Clean IP : 443",
+      "tag": "🇫🇮 [G] [TG] тлс✅ Finland, Helsinki | 🌐 | [IPv6] | [BL] 👥 #5",
+      "server": "87.228.94.14",
+      "server_port": 52006,
+      "uuid": "75807638-6f19-0bb8-ae08-38492ee85c88",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "cl-eu-1.edgeflux.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 [G] [TG] тлс✅ 🌐 Россия 18 | Белые списки 👥",
+      "server": "178.72.182.12",
+      "server_port": 52006,
+      "uuid": "75807638-6f19-07d0-ae08-38492ee85c88",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "cl-ru-1.edgeflux.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 [G] 💦 15 - VLESS - Clean IP : 443",
       "server": "193.9.49.6",
       "server_port": 443,
-      "uuid": "3bdade6c-6e5f-4308-9299-87bfe6f01f07",
+      "uuid": "051ada2d-dfd9-4108-a66d-01f96dcdccc8",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "M3cz1juSPE5-f-HFtaPxRRS17zQpPw11.SalISA7474-9d1.woRkERs.dEv",
+        "server_name": "wiNTeR-wINd-90a7.nABareV274.WORKeRS.DEv",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -181,23 +301,23 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/eyJqdW5rIjoidFJGN2RaSWsiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyI0NS42MS4xNjYuMTIxIl19?ed=2560",
+        "path": "/eyJqdW5rIjoiQ3BQN2pIZ3YiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyI1LjE4Ny43LjIyMCJdfQ==?ed=2560",
         "headers": {
-          "Host": "m3cz1juspe5-f-hftapxrrs17zqppw11.salisa7474-9d1.workers.dev"
+          "Host": "winter-wind-90a7.nabarev274.workers.dev"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 [G] [TG] тлс✅ Poland, Warsaw | 🌐 | [IPv6] | [BL] 👥",
-      "server": "87.228.92.143",
+      "tag": "🇷🇺 [G] тлс✅ Россия [🏳️LTE",
+      "server": "212.41.8.216",
       "server_port": 52006,
-      "uuid": "75807638-6f19-2710-ae08-38492ee85c88",
+      "uuid": "75807638-6f19-07d0-ae08-38492ee85c88",
       "packet_encoding": "xudp",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "cl-de-1.edgeflux.ru",
+        "server_name": "212.41.8.216",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -206,7 +326,85 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 [G] [TG] тлс✅ Poland, Warsaw | 🌐 | [IPv6] | [BL] 👥 #2",
+      "tag": "🇫🇮 [G] [TG] тлс✅ Finland, Helsinki | 🌐 | [IPv6] | [BL] 👥 #6",
+      "server": "87.228.94.5",
+      "server_port": 52006,
+      "uuid": "75807638-6f19-0bb8-ae08-38492ee85c88",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "cl-eu-1.edgeflux.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇹 [G] [TG] 🌐 Литва 5 | Белые списки",
+      "server": "146.103.25.146",
+      "server_port": 8443,
+      "uuid": "ab2f5b91-9cfd-4989-af25-353d4d69372c",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ign.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": "6ba85179e30d4fc2"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 🌐 Россия 36 | Белые списки 👥",
+      "server": "85.192.30.158",
+      "server_port": 2066,
+      "uuid": "7c71bca8-1f80-435a-bb2d-0ad130d6d4f7",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "u4lNvUk5pLZGl0XN-QK4xQgPQBhoJiMkOP2XZoQ99GA",
+          "short_id": "d18f4e"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 [G] [TG] тлс✅ Россия [🏳️LTE #2",
+      "server": "188.246.226.14",
+      "server_port": 52006,
+      "uuid": "75807638-6f19-07d0-ae08-38492ee85c88",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "188.246.226.14",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 [G] [TG] тлс✅ Poland, Warsaw | 🌐 | [IPv6] | [BL] 👥",
       "server": "87.228.92.145",
       "server_port": 52006,
       "uuid": "75807638-6f19-2710-ae08-38492ee85c88",
@@ -223,8 +421,29 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 [G] [TG] тлс✅ Poland, Warsaw | 🌐 | [IPv6] | [BL] 👥 #3",
-      "server": "87.228.92.148",
+      "tag": "🇷🇺 [G] [TG] Russia [*CIDR]",
+      "server": "web.didado.ru",
+      "server_port": 2053,
+      "uuid": "5570943f-6cc3-4a8a-bee3-d15a2b2f53a0",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "web.didado.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "aFsY-EZjSNTomlAFShKwQIQMJ5pHiZQXXJpWvcz8WkQ",
+          "short_id": "0858af97f4e7324d"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 [G] [TG] тлс✅ Poland, Warsaw | 🌐 | [IPv6] | [BL] 👥 #2",
+      "server": "87.228.92.143",
       "server_port": 52006,
       "uuid": "75807638-6f19-2710-ae08-38492ee85c88",
       "packet_encoding": "xudp",
@@ -240,93 +459,129 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 [G] 🌐سرور",
-      "server": "109.248.33.240",
-      "server_port": 443,
-      "uuid": "bafc879b-eeef-00fa-ac47-8ec6c23335e9",
+      "tag": "🇷🇺 [G] [TG] тлс✅ 🌐 Россия 21 | Белые списки 👥",
+      "server": "178.72.182.20",
+      "server_port": 52006,
+      "uuid": "75807638-6f19-07d0-ae08-38492ee85c88",
       "packet_encoding": "xudp",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "cdn.trahodrom.fun",
+        "server_name": "cl-ru-1.edgeflux.ru",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "IBvNLerjNLpF4OpUX-wGJp8YDZrnKoh-gEItUDNT_Bg",
-          "short_id": ""
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 [G] [TG] Direct-1",
-      "server": "152.70.58.201",
-      "server_port": 443,
-      "uuid": "8892e34a-339b-4526-b88d-cf68c516231c",
+      "tag": "🇸🇪 [G] [TG] Sweden, Stockholm | [BL]",
+      "server": "shop.chepisi.ru",
+      "server_port": 2053,
+      "uuid": "5570943f-6cc3-4a8a-bee3-d15a2b2f53a0",
       "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.microsoft.com",
+        "server_name": "shop.chepisi.ru",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "Hg_ivwbClYmR-SEHdoGgq4yEk6ltbjS5c4yiQRa4_28",
-          "short_id": "abc123"
+          "public_key": "aFsY-EZjSNTomlAFShKwQIQMJ5pHiZQXXJpWvcz8WkQ",
+          "short_id": "0858af97f4e7324d"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 [G] [TG] Finland | 🌐 | [IPv6] [*CIDR]",
-      "server": "65.109.177.17",
-      "server_port": 7443,
-      "uuid": "b375b840-8ac0-4d37-98c0-44ab85fd7127",
+      "tag": "🇷🇺 [G] [TG] тлс✅ 🌐 Россия 25 | Белые списки 👥",
+      "server": "178.72.182.29",
+      "server_port": 52006,
+      "uuid": "75807638-6f19-07d0-ae08-38492ee85c88",
       "packet_encoding": "xudp",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "chat.deepseek.com",
+        "server_name": "cl-ru-1.edgeflux.ru",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI",
-          "short_id": "be0ce047"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 [G] [TG] Germany, Frankfurt am Main (Innenstadt I) | 🌐 | [IPv6] | [BL]",
-      "server": "de.scamhost.online",
-      "server_port": 443,
-      "uuid": "017471d2-6198-4f27-847c-a18fa753ca6e",
+      "tag": "🇷🇺 [TG] 🌐 Россия 51 | Белые списки 👥",
+      "server": "web.kaluar.ru",
+      "server_port": 2053,
+      "uuid": "5570943f-6cc3-4a8a-bee3-d15a2b2f53a0",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "de.scamhost.online",
+        "server_name": "web.kaluar.ru",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "3T8DuoXtRuXjyrBXbDHgwDHimngqSRxfm86brOfCMVU",
-          "short_id": "a8a4229c9134dae5"
+          "public_key": "aFsY-EZjSNTomlAFShKwQIQMJ5pHiZQXXJpWvcz8WkQ",
+          "short_id": "0858af97f4e7324d"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": ""
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 [G] [TG] Россия [🏳️LTE 👥",
+      "server": "cl-ru-1.edgeflux.ru",
+      "server_port": 52006,
+      "uuid": "75807638-6f19-07d0-ae08-38492ee85c88",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "cl-ru-1.edgeflux.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 [G] [TG] тлс✅ Poland, Warsaw | 🌐 | [IPv6] | [BL] 👥 #3",
+      "server": "87.228.92.147",
+      "server_port": 52006,
+      "uuid": "75807638-6f19-2710-ae08-38492ee85c88",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "cl-de-1.edgeflux.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 [G] [TG] тлс✅ 🌐 Польша 17 | Белые списки 👥",
+      "server": "178.72.182.39",
+      "server_port": 52006,
+      "uuid": "75807638-6f19-2710-ae08-38492ee85c88",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "cl-de-1.edgeflux.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -356,6 +611,134 @@
     },
     {
       "type": "vless",
+      "tag": "🇫🇮 [G] 🌐 Финляндия 3 | Белые списки",
+      "server": "65.109.218.229",
+      "server_port": 7443,
+      "uuid": "b375b840-8ac0-4d37-98c0-44ab85fd7127",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "chat.deepseek.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI",
+          "short_id": "d82fb387"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 [G] [TG] 🌐 Германия 58 | Белые списки 👥",
+      "server": "89.163.150.75",
+      "server_port": 8082,
+      "uuid": "f6808c62-cfe0-438c-aae6-44fe6ef51e47",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "id.vk.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless-grpc-reality"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 [G] [TG] 🌐 Германия 22 | Белые списки 👥",
+      "server": "194.87.29.116",
+      "server_port": 443,
+      "uuid": "017471d2-6198-4f27-847c-a18fa753ca6e",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "de.scamhost.online",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "3T8DuoXtRuXjyrBXbDHgwDHimngqSRxfm86brOfCMVU",
+          "short_id": "a8a4229c9134dae5"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": ""
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 [G] [TG] тлс✅ 🌐 Польша 4 👥",
+      "server": "87.228.92.144",
+      "server_port": 52006,
+      "uuid": "75807638-6f19-2710-ae08-38492ee85c88",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "cl-de-1.edgeflux.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 Direct-1",
+      "server": "152.70.58.201",
+      "server_port": 443,
+      "uuid": "8892e34a-339b-4526-b88d-cf68c516231c",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.microsoft.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Hg_ivwbClYmR-SEHdoGgq4yEk6ltbjS5c4yiQRa4_28",
+          "short_id": "abc123"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 [G] [TG] тлс✅ 🌐 Нидерланды 42 | Белые списки 👥",
+      "server": "178.72.181.34",
+      "server_port": 52006,
+      "uuid": "75807638-6f19-1f40-ae08-38492ee85c88",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision-udp443",
+      "tls": {
+        "enabled": true,
+        "server_name": "cluster-europe-1.firstvideocdn.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇸🇪 [G] [TG] тлс✅ 🌐 Anycast-IP | [IPv6] | [BL]",
       "server": "95.85.246.16.speed-storage.ru",
       "server_port": 573,
@@ -376,92 +759,289 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 [G] [TG] The Netherlands, Amsterdam | [BL]",
-      "server": "web.hrushka-mihrushka.ru",
-      "server_port": 2053,
-      "uuid": "5570943f-6cc3-4a8a-bee3-d15a2b2f53a0",
+      "tag": "🇵🇱 [G] [TG] тлс✅ Poland, Warsaw | 🌐 | [IPv6] | [BL] 👥 #4",
+      "server": "87.228.92.148",
+      "server_port": 52006,
+      "uuid": "75807638-6f19-2710-ae08-38492ee85c88",
       "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "web.hrushka-mihrushka.ru",
+        "server_name": "cl-de-1.edgeflux.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "aFsY-EZjSNTomlAFShKwQIQMJ5pHiZQXXJpWvcz8WkQ",
-          "short_id": "0858af97f4e7324d"
+          "fingerprint": "chrome"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 [G] [TG] Russia, St Petersburg | [BL]",
-      "server": "web.catpatrol.ru",
-      "server_port": 2053,
-      "uuid": "5570943f-6cc3-4a8a-bee3-d15a2b2f53a0",
+      "tag": "🇩🇪 [G] [TG] 🌐 Германия 60 | Белые списки 👥",
+      "server": "89.163.154.211",
+      "server_port": 8082,
+      "uuid": "f6808c62-cfe0-438c-aae6-44fe6ef51e47",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "web.catpatrol.ru",
+        "server_name": "id.vk.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "aFsY-EZjSNTomlAFShKwQIQMJ5pHiZQXXJpWvcz8WkQ",
-          "short_id": "0858af97f4e7324d"
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": ""
         }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 [G] [TG] France, Paris | [BL]",
-      "server": "web.37-z.ru",
-      "server_port": 2053,
-      "uuid": "5570943f-6cc3-4a8a-bee3-d15a2b2f53a0",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "web.37-z.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "aFsY-EZjSNTomlAFShKwQIQMJ5pHiZQXXJpWvcz8WkQ",
-          "short_id": "0858af97f4e7324d"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 [G] [TG] tres-server-vless-PL",
-      "server": "45.138.16.62",
-      "server_port": 30086,
-      "uuid": "a5554072-0d6d-4b9a-93b1-9c8726fc2c0b",
-      "packet_encoding": "xudp",
+      },
       "transport": {
         "type": "grpc",
-        "service_name": "gprc"
+        "service_name": "vless-grpc-reality"
       }
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 [G] [TG] Russia, Moscow | [BL]",
-      "server": "web.vivavo.ru",
+      "tag": "🇩🇪 [G] [TG] 🌐 Германия 54 | Белые списки",
+      "server": "5.199.133.35",
+      "server_port": 8082,
+      "uuid": "f6808c62-cfe0-438c-aae6-44fe6ef51e47",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "id.vk.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless-grpc-reality"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 [G] [TG] Finland | 🌐 | [IPv6] [*CIDR]",
+      "server": "65.109.177.17",
+      "server_port": 7443,
+      "uuid": "b375b840-8ac0-4d37-98c0-44ab85fd7127",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "chat.deepseek.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI",
+          "short_id": "be0ce047"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 [G] [TG] 🌐 Германия 55 | Белые списки",
+      "server": "5.199.139.224",
+      "server_port": 8082,
+      "uuid": "f6808c62-cfe0-438c-aae6-44fe6ef51e47",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "id.vk.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless-grpc-reality"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 [G] [TG] 🌐 Германия 40 | Белые списки",
+      "server": "194.113.104.86",
+      "server_port": 9443,
+      "uuid": "ab2f5b91-9cfd-4989-af25-353d4d69372c",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ign.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": "6ba85179e30d4fc2"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 [G] 🌐 Германия 32 | Белые списки",
+      "server": "77.221.156.241",
+      "server_port": 2066,
+      "uuid": "7c71bca8-1f80-435a-bb2d-0ad130d6d4f7",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "u4lNvUk5pLZGl0XN-QK4xQgPQBhoJiMkOP2XZoQ99GA",
+          "short_id": "d18f4e"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 [G] [TG] тлс✅ 🌐 Нидерланды 41 | Белые списки 👥",
+      "server": "178.72.181.25",
+      "server_port": 52006,
+      "uuid": "75807638-6f19-1f40-ae08-38492ee85c88",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision-udp443",
+      "tls": {
+        "enabled": true,
+        "server_name": "cluster-europe-1.firstvideocdn.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 [G] [TG] 🌐 Германия 68 | Белые списки",
+      "server": "o11111o.club",
+      "server_port": 8082,
+      "uuid": "f6808c62-cfe0-438c-aae6-44fe6ef51e47",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "id.vk.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless-grpc-reality"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 Россия [🏳️LTE",
+      "server": "217.168.240.252",
+      "server_port": 9443,
+      "uuid": "4649d681-7f26-4959-a3f2-02eb8866230f",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "wAYsJ6RJXFy94w_WaTIhp1ZfCePAPoZmP27RarvUqXg",
+          "short_id": "2344766a270a6298"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 [G] [TG] Germany | TG: @HardVpn_robot 👥",
+      "server": "89.163.237.27",
+      "server_port": 8082,
+      "uuid": "f6808c62-cfe0-438c-aae6-44fe6ef51e47",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "id.vk.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless-grpc-reality"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 [G] [TG] 🌐 Германия 50 | Белые списки",
+      "server": "213.202.222.183",
+      "server_port": 8082,
+      "uuid": "f6808c62-cfe0-438c-aae6-44fe6ef51e47",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "id.vk.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless-grpc-reality"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 [G] [TG] 🌐 Германия 11 | Белые списки 👥",
+      "server": "85.192.28.129",
       "server_port": 2053,
       "uuid": "5570943f-6cc3-4a8a-bee3-d15a2b2f53a0",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "web.vivavo.ru",
+        "server_name": "colorlib.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -472,22 +1052,127 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 [G] [TG] Germany, Frankfurt am Main | [BL]",
-      "server": "45.66.228.4",
-      "server_port": 443,
-      "uuid": "24ed4d8c-4345-42a8-bfd0-3aada23bc6ca",
+      "tag": "🇩🇪 [G] [TG] 🌐 Германия 33 | Белые списки",
+      "server": "89.185.85.199",
+      "server_port": 2066,
+      "uuid": "7c71bca8-1f80-435a-bb2d-0ad130d6d4f7",
       "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "de3.hitori.cloud",
+        "server_name": "apple.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "H4OqfYoC5BJw-hC3FmXhnd_J8_qZSRK6oRuT-irdc3U",
-          "short_id": "f43daf211bcea205"
+          "public_key": "u4lNvUk5pLZGl0XN-QK4xQgPQBhoJiMkOP2XZoQ99GA",
+          "short_id": "d18f4e"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 [G] [TG] 🌐 Германия 19 | Белые списки",
+      "server": "45.152.113.195",
+      "server_port": 443,
+      "uuid": "bafc879b-eeef-0114-ac47-8ec6c23335e9",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.trahodrom.fun",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "IBvNLerjNLpF4OpUX-wGJp8YDZrnKoh-gEItUDNT_Bg",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇹 [G] [TG] Литва [🏳️LTE",
+      "server": "vltch.mostserv.xyz",
+      "server_port": 443,
+      "uuid": "37253a6a-2a9b-42bb-992c-b5f1b1ef1791",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "vltch.mostserv.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "3WzSgL8uXA3vE3IHrfdBpJmOO4MYrsWpczDSY_jJRjI",
+          "short_id": "226509f017e4c36d"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 [G] [TG] тлс✅ 🌐 Нидерланды 45 | Белые списки 👥",
+      "server": "178.72.181.68",
+      "server_port": 52006,
+      "uuid": "75807638-6f19-1f40-ae08-38492ee85c88",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision-udp443",
+      "tls": {
+        "enabled": true,
+        "server_name": "cluster-europe-1.firstvideocdn.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 [G] [TG] 🌐 Нидерланды 31 | Белые списки 👥",
+      "server": "5.255.118.62",
+      "server_port": 443,
+      "uuid": "dacb3f31-8251-47af-a963-8bdb0d9a16b1",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "addons.mozilla.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "tVyj7_ief3PBOwG3uC9i_XXKGRXiTJJ6XkrkEOZepDc",
+          "short_id": "3c88b649989ffa95"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 [G] [TG] 🌐 Германия 25 | Белые списки 👥",
+      "server": "proxy.primarymaster.ru",
+      "server_port": 443,
+      "uuid": "017471d2-6198-4f27-847c-a18fa753ca6e",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "de.scamhost.online",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "3T8DuoXtRuXjyrBXbDHgwDHimngqSRxfm86brOfCMVU",
+          "short_id": "a8a4229c9134dae5"
         }
       },
       "transport": {
@@ -497,49 +1182,24 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 [G] [TG] Sweden, Stockholm | [BL] 👥",
-      "server": "shop.starsuntoday.ru",
-      "server_port": 2053,
-      "uuid": "5570943f-6cc3-4a8a-bee3-d15a2b2f53a0",
+      "tag": "🇷🇺 [G] [TG] тлс✅ 🌐 Нидерланды 43 | Белые списки 👥",
+      "server": "178.72.181.35",
+      "server_port": 52006,
+      "uuid": "75807638-6f19-1f40-ae08-38492ee85c88",
       "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision-udp443",
       "tls": {
         "enabled": true,
-        "server_name": "shop.starsuntoday.ru",
+        "server_name": "cluster-europe-1.firstvideocdn.ru",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "aFsY-EZjSNTomlAFShKwQIQMJ5pHiZQXXJpWvcz8WkQ",
-          "short_id": "0858af97f4e7324d"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 [G] [TG] Sweden, Stockholm | [BL]",
-      "server": "web.rolfrolf.ru",
-      "server_port": 2053,
-      "uuid": "5570943f-6cc3-4a8a-bee3-d15a2b2f53a0",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "web.rolfrolf.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "aFsY-EZjSNTomlAFShKwQIQMJ5pHiZQXXJpWvcz8WkQ",
-          "short_id": "0858af97f4e7324d"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 [G] [TG] Germany, Frankfurt am Main | [BL] #2",
+      "tag": "🇩🇪 [G] [TG] Germany, Frankfurt am Main | [BL]",
       "server": "b.primarymaster.online",
       "server_port": 443,
       "uuid": "eaa39cf6-26ac-43a4-99df-208b248c5d84",
@@ -560,6 +1220,29 @@
       "transport": {
         "type": "grpc",
         "service_name": ""
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 [G] [TG] тлс✅ 🌐سرور",
+      "server": "63.180.113.225",
+      "server_port": 22224,
+      "uuid": "05519058-d2ac-4f28-9e4a-2b2a1386749e",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan.burgerip.co.uk",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/telegram-channel-vlessconfig",
+        "headers": {
+          "Host": "trojan.burgerip.co.uk"
+        }
       }
     },
     {
@@ -586,103 +1269,137 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 [G] тлс✅ Poland, Warsaw | 🌐 | [IPv6] | [BL] 👥",
-      "server": "87.228.92.147",
-      "server_port": 52006,
-      "uuid": "75807638-6f19-2710-ae08-38492ee85c88",
+      "tag": "🇷🇺 [G] [TG] Russia, Moscow | [BL]",
+      "server": "web.vivavo.ru",
+      "server_port": 2053,
+      "uuid": "5570943f-6cc3-4a8a-bee3-d15a2b2f53a0",
       "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "cl-de-1.edgeflux.ru",
+        "server_name": "web.vivavo.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "aFsY-EZjSNTomlAFShKwQIQMJ5pHiZQXXJpWvcz8WkQ",
+          "short_id": "0858af97f4e7324d"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 [G] [TG] The Netherlands | 🌐 | [IPv6] | [BL] 👥",
-      "server": "64.188.77.66",
-      "server_port": 8443,
-      "uuid": "b6ce8a51-19b9-4979-91ba-b4298c26d5fc",
+      "tag": "🇸🇪 [G] Sweden | 🌐 [*CIDR] YA 👥",
+      "server": "51.250.104.20",
+      "server_port": 443,
+      "uuid": "ea2e515ce32648ec961df926b18ae225",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "api-maps.yandex.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Isitoq0ZHBxELbxaRNje2eqCFFUyVS8Yx7EE32pfkTs",
+          "short_id": "aabbccdd"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 [G] [TG] France, Paris | [BL]",
+      "server": "web.37-z.ru",
+      "server_port": 2053,
+      "uuid": "5570943f-6cc3-4a8a-bee3-d15a2b2f53a0",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "cdn.kwork.com",
+        "server_name": "web.37-z.ru",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "J07yFEBPsic7-hLTS2KSxVqI7v4gpfkG6_a2cGKNVFk",
-          "short_id": "10f786a2491b2cd5"
+          "public_key": "aFsY-EZjSNTomlAFShKwQIQMJ5pHiZQXXJpWvcz8WkQ",
+          "short_id": "0858af97f4e7324d"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "buysec.ru"
       }
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 [G] [TG] тлс✅ Germany, Frankfurt am Main | [BL]",
-      "server": "212.95.39.25.vhub.pro",
+      "tag": "🇷🇺 [G] [TG] 🌐 Франция 15 | Белые списки",
+      "server": "95.182.110.147",
       "server_port": 443,
-      "uuid": "32bfe5f3-a406-48e3-bad9-932945bd0bc1",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "212.95.39.25.vhub.pro",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "/sequre/grpc/"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇪 [G] [TG] тлс✅ Georgia, Tbilisi | 🌐 | [BL]",
-      "server": "72.56.62.253",
-      "server_port": 22231,
-      "uuid": "afcac633-0e1a-46c3-bef2-cc01cc0097c8",
+      "uuid": "bafc879b-eeef-00fa-ac47-8ec6c23335e9",
       "packet_encoding": "xudp",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "r1.mizulina.top",
+        "server_name": "cdn.trahodrom.fun",
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "IBvNLerjNLpF4OpUX-wGJp8YDZrnKoh-gEItUDNT_Bg",
+          "short_id": ""
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 [G] [TG] тлс✅ 💦 30 - VLESS - Clean IP : 8443",
-      "server": "188.42.88.1",
-      "server_port": 8443,
-      "uuid": "051ada2d-dfd9-4108-a66d-01f96dcdccc8",
+      "tag": "🇵🇱 [G] [TG] tres-server-vless-PL",
+      "server": "45.138.16.62",
+      "server_port": 30086,
+      "uuid": "a5554072-0d6d-4b9a-93b1-9c8726fc2c0b",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "grpc",
+        "service_name": "gprc"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 [G] [TG] Sweden, Stockholm | [BL] #2",
+      "server": "shop.starsuntoday.ru",
+      "server_port": 2053,
+      "uuid": "5570943f-6cc3-4a8a-bee3-d15a2b2f53a0",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "wiNteR-WInd-90A7.nAbAREV274.WoRkERs.Dev",
+        "server_name": "shop.starsuntoday.ru",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "aFsY-EZjSNTomlAFShKwQIQMJ5pHiZQXXJpWvcz8WkQ",
+          "short_id": "0858af97f4e7324d"
         }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/eyJqdW5rIjoiRk9ObjBYTGoiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyI1LjE4Ny43LjIyMCJdfQ==?ed=2560",
-        "headers": {
-          "Host": "winter-wind-90a7.nabarev274.workers.dev"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 [G] [TG] тлс✅ Германия | 🌐 [🏳️LTE 👥",
+      "server": "cl-de-2.edgeflux.ru",
+      "server_port": 52006,
+      "uuid": "75807638-6f19-01f4-ae08-38492ee85c88",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "cl-de-2.edgeflux.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
         }
       }
     },
@@ -731,7 +1448,75 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 [G] The Netherlands, Eygelshoven | [BL]",
+      "tag": "🇳🇱 [G] [TG] The Netherlands | 🌐 | [IPv6] | [BL]",
+      "server": "64.188.77.66",
+      "server_port": 8443,
+      "uuid": "b6ce8a51-19b9-4979-91ba-b4298c26d5fc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.kwork.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "J07yFEBPsic7-hLTS2KSxVqI7v4gpfkG6_a2cGKNVFk",
+          "short_id": "10f786a2491b2cd5"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "buysec.ru"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 [G] [TG] 🌐 Нидерланды 21 | Белые списки",
+      "server": "89.124.114.182",
+      "server_port": 443,
+      "uuid": "aed996ff-eca0-4d4a-b2f3-01362ec4d48d",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "vk.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ET27w-6nMRvINVTLG8suQqEOT_f2BhrXGCI1USpN9AM",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇸 [G] [TG] Эщкерия | 🔐 | 🥭🔥 ads.x5.ru 👥",
+      "server": "62.60.153.179",
+      "server_port": 6444,
+      "uuid": "1f1a6ea7-b2d5-4fd4-be5f-0d8b1317d6b5",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ads.x5.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "FD7YTKH3QSTPqm35DGFG23jJHC_rKo_T2ry7Nitvhjs",
+          "short_id": "c15a7e422151adbc"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 The Netherlands, Eygelshoven | [BL]",
       "server": "45.12.62.201",
       "server_port": 443,
       "uuid": "ab8d4756-c60b-484c-affd-1207a03de9d2",
@@ -753,88 +1538,66 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 [G] [TG] Finland, Helsinki | [BL]",
-      "server": "web.figorotut.ru",
-      "server_port": 2053,
-      "uuid": "5570943f-6cc3-4a8a-bee3-d15a2b2f53a0",
+      "tag": "🇷🇺 [G] 🌐 Франция 14 | Белые списки",
+      "server": "95.182.110.143",
+      "server_port": 443,
+      "uuid": "bafc879b-eeef-00fa-ac47-8ec6c23335e9",
       "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "web.figorotut.ru",
+        "server_name": "cdn.trahodrom.fun",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "aFsY-EZjSNTomlAFShKwQIQMJ5pHiZQXXJpWvcz8WkQ",
-          "short_id": "0858af97f4e7324d"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 [G] Czechia | 🌐 [*CIDR] YA",
-      "server": "51.250.5.42",
-      "server_port": 443,
-      "uuid": "7cdc11f46062413895397d941e9a2179",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "5post-gate.x5.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "QjZykXl-NfCz24AkTQ_5IILtAy3PonHH81rmPaMGY3U",
-          "short_id": "aabbccdd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 [G] [TG] The Netherlands, Amsterdam | [BL] #2",
-      "server": "5.180.54.54",
-      "server_port": 443,
-      "uuid": "2de34838-1270-4fb0-bbe5-dfc9aa5c01a1",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.microsoft.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ztJq-ujdckOvXgiARRnTean6syVqoBBWw0s5tL5IkhE",
+          "public_key": "IBvNLerjNLpF4OpUX-wGJp8YDZrnKoh-gEItUDNT_Bg",
           "short_id": ""
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 Швеция | 🥭🔥 ozon.ru",
-      "server": "62.60.233.178",
-      "server_port": 52000,
-      "uuid": "fd2bfdd2-68eb-49b0-98ad-ed82f901edde",
+      "tag": "🇷🇺 [G] 🌐 Франция 2 | Белые списки",
+      "server": "109.248.33.235",
+      "server_port": 443,
+      "uuid": "bafc879b-eeef-00fa-ac47-8ec6c23335e9",
       "packet_encoding": "xudp",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "ozon.ru",
+        "server_name": "cdn.trahodrom.fun",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "4Fs4rORU_bK5Nwy9qvmVw3dAxS91bIG5cQYOmXl7zDA",
-          "short_id": "3d67b0666a5e09a0"
+          "public_key": "IBvNLerjNLpF4OpUX-wGJp8YDZrnKoh-gEItUDNT_Bg",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 [G] [TG] 🌐 Польша | Белые списки",
+      "server": "45.138.16.62",
+      "server_port": 8443,
+      "uuid": "595ae3f9-5a91-4eaa-82a3-28a221cf8f7f",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "eh.vk.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "GzQr6fDhigtRAr0n2Y7Nk3snhdytYyOvaYo9zYe1Xn4",
+          "short_id": "b3a1cc510a2001c6"
         }
       }
     },
@@ -861,15 +1624,126 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 [G] [TG] Finland, Helsinki | 🌐 | [IPv6] | [BL] 👥",
-      "server": "87.228.94.12",
-      "server_port": 52006,
-      "uuid": "75807638-6f19-0bb8-ae08-38492ee85c88",
+      "tag": "🇷🇺 [G] [TG] 🌐سرور",
+      "server": "109.248.33.240",
+      "server_port": 443,
+      "uuid": "bafc879b-eeef-00fa-ac47-8ec6c23335e9",
       "packet_encoding": "xudp",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "cl-eu-1.edgeflux.ru",
+        "server_name": "cdn.trahodrom.fun",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "IBvNLerjNLpF4OpUX-wGJp8YDZrnKoh-gEItUDNT_Bg",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 [G] [TG] 🌐 Нидерланды 16 | Белые списки",
+      "server": "45.15.129.4",
+      "server_port": 443,
+      "uuid": "70b83ca6-3176-410f-8f82-055592e560af",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "yandex.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "VDiSzgdjDUEOWxViCcmddgSx9U9UNnmnWcbvjPhZ2hQ",
+          "short_id": "ba"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 [G] [TG] 🌐 Финляндия 14",
+      "server": "fine3.keepsecured.net",
+      "server_port": 8443,
+      "uuid": "b6ce8a51-19b9-4979-91ba-b4298c26d5fc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.kwork.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "J07yFEBPsic7-hLTS2KSxVqI7v4gpfkG6_a2cGKNVFk",
+          "short_id": "10f786a2491b2cd5"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "buysec.ru"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 [G] [TG] Finland, Helsinki | [BL]",
+      "server": "web.figorotut.ru",
+      "server_port": 2053,
+      "uuid": "5570943f-6cc3-4a8a-bee3-d15a2b2f53a0",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "web.figorotut.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "aFsY-EZjSNTomlAFShKwQIQMJ5pHiZQXXJpWvcz8WkQ",
+          "short_id": "0858af97f4e7324d"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 [G] The Netherlands, Amsterdam | [BL]",
+      "server": "web.hrushka-mihrushka.ru",
+      "server_port": 2053,
+      "uuid": "5570943f-6cc3-4a8a-bee3-d15a2b2f53a0",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "web.hrushka-mihrushka.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "aFsY-EZjSNTomlAFShKwQIQMJ5pHiZQXXJpWvcz8WkQ",
+          "short_id": "0858af97f4e7324d"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 [G] тлс✅ 🌐 Нидерланды 40 | Белые списки 👥",
+      "server": "178.72.181.14",
+      "server_port": 52006,
+      "uuid": "75807638-6f19-1f40-ae08-38492ee85c88",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "178.72.181.14",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -878,7 +1752,178 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 [G] [TG] тлс✅ 美国阿什本03-0.1倍",
+      "tag": "🇷🇺 [G] [TG] тлс✅ Россия [🏳️LTE #3",
+      "server": "80.93.187.210",
+      "server_port": 52006,
+      "uuid": "75807638-6f19-07d0-ae08-38492ee85c88",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "80.93.187.210",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 [G] [TG] Czechia | 🌐 [*CIDR] YA 👥",
+      "server": "51.250.5.42",
+      "server_port": 443,
+      "uuid": "7cdc11f46062413895397d941e9a2179",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "5post-gate.x5.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "QjZykXl-NfCz24AkTQ_5IILtAy3PonHH81rmPaMGY3U",
+          "short_id": "aabbccdd"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 [G] [TG] тлс✅ 💦 30 - VLESS - Clean IP : 8443",
+      "server": "188.42.88.1",
+      "server_port": 8443,
+      "uuid": "051ada2d-dfd9-4108-a66d-01f96dcdccc8",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "wiNteR-WInd-90A7.nAbAREV274.WoRkERs.Dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiRk9ObjBYTGoiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyI1LjE4Ny43LjIyMCJdfQ==?ed=2560",
+        "headers": {
+          "Host": "winter-wind-90a7.nabarev274.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 [G] [TG] Sweden, Stockholm | [BL] #3",
+      "server": "web.rolfrolf.ru",
+      "server_port": 2053,
+      "uuid": "5570943f-6cc3-4a8a-bee3-d15a2b2f53a0",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "web.rolfrolf.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "aFsY-EZjSNTomlAFShKwQIQMJ5pHiZQXXJpWvcz8WkQ",
+          "short_id": "0858af97f4e7324d"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 [G] [TG] Польша | 🌐 | 🔐 [🏳️LTE 👥",
+      "server": "144.31.4.166",
+      "server_port": 443,
+      "uuid": "f9d8aa07-589f-4da0-9cb0-fd8f2f0e4fa8",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.deepl.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ZHEMPjSWslk6_qD2JNQzd5enUPz8nY9mYRRuM6NkZmU",
+          "short_id": "0123456789abcdef"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇹 [G] 🌐 Литва 6 | Белые списки",
+      "server": "185.186.25.152",
+      "server_port": 8443,
+      "uuid": "ab2f5b91-9cfd-4989-af25-353d4d69372c",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ign.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": "6ba85179e30d4fc2"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 🌐 Нидерланды 49 | Белые списки",
+      "server": "77.110.103.104",
+      "server_port": 443,
+      "uuid": "aed996ff-eca0-4d4a-b2f3-01362ec4d48d",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "vk.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ET27w-6nMRvINVTLG8suQqEOT_f2BhrXGCI1USpN9AM",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 Швеция | 🥭🔥 ozon.ru 👥",
+      "server": "tr-1.illusion-vpn.ru",
+      "server_port": 52000,
+      "uuid": "bf263367-bb63-4663-b4a1-34946107a72e",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ozon.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "4Fs4rORU_bK5Nwy9qvmVw3dAxS91bIG5cQYOmXl7zDA",
+          "short_id": "3d67b0666a5e09a0"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 [G] тлс✅ 美国阿什本03-0.1倍",
       "server": "69.84.182.108",
       "server_port": 443,
       "uuid": "82766959-5cd7-4865-bae2-b87bf00da44d",
@@ -901,55 +1946,115 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 [G] [TG] Sweden | 🌐 [*CIDR] YA",
-      "server": "51.250.104.20",
-      "server_port": 443,
-      "uuid": "ea2e515ce32648ec961df926b18ae225",
+      "tag": "🇷🇺 [G] [TG] тлс✅ 🌐 Россия 26 | Белые списки 👥",
+      "server": "178.72.182.32",
+      "server_port": 52006,
+      "uuid": "75807638-6f19-07d0-ae08-38492ee85c88",
       "packet_encoding": "xudp",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "api-maps.yandex.ru",
+        "server_name": "cl-ru-1.edgeflux.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Isitoq0ZHBxELbxaRNje2eqCFFUyVS8Yx7EE32pfkTs",
-          "short_id": "aabbccdd"
+          "fingerprint": "chrome"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇪🇪 [G] [TG] Estonia, Tallinn | 🌐 | [IPv6] | [BL] 👥",
-      "server": "ee.keepsecured.net",
+      "tag": "🇩🇪 [G] [TG] Germany, Frankfurt am Main | [BL] #2",
+      "server": "free-v7-09.elbrusway.online",
       "server_port": 443,
-      "uuid": "b6ce8a51-19b9-4979-91ba-b4298c26d5fc",
+      "uuid": "fbb2b7d7-e4d1-4266-8b00-d9a7ee86dd09",
       "packet_encoding": "xudp",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "cdn.kwork.com",
+        "server_name": "www.microsoft.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "BvSO06HFZ6hdq4dcQV0OXroLr0cX5H7x3M2pDToduwI",
+          "short_id": "de2a1f03e27a36b9"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 [G] Россия [🏳️LTE 👥",
+      "server": "178.72.181.41",
+      "server_port": 52006,
+      "uuid": "75807638-6f19-07d0-ae08-38492ee85c88",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "178.72.181.41",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 [G] [TG] Germany, Frankfurt am Main | [BL] #3",
+      "server": "45.66.228.4",
+      "server_port": 443,
+      "uuid": "24ed4d8c-4345-42a8-bfd0-3aada23bc6ca",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "de3.hitori.cloud",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "H4OqfYoC5BJw-hC3FmXhnd_J8_qZSRK6oRuT-irdc3U",
+          "short_id": "f43daf211bcea205"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": ""
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇦 [G] [TG] Canada | TG: @HardVpn_robot",
+      "server": "185.141.216.246",
+      "server_port": 8443,
+      "uuid": "ab2f5b91-9cfd-4989-af25-353d4d69372c",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ign.dev",
         "utls": {
           "enabled": true,
           "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
-          "public_key": "mAu8QDi3pbmMCFg9kKC-ZBIHdtnXeCuZt3VnAw6vlH4",
-          "short_id": "ad7dab462a323acb"
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": "6ba85179e30d4fc2"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇧🇸 [G] [TG] Эщкерия | 🔐 | 🥭🔥 ads.x5.ru",
-      "server": "62.60.153.179",
-      "server_port": 6444,
-      "uuid": "1f1a6ea7-b2d5-4fd4-be5f-0d8b1317d6b5",
+      "tag": "🇬🇧 [TG] United Kingdom [*CIDR]",
+      "server": "ktzy4.vpnul.codes",
+      "server_port": 443,
+      "uuid": "3b95fcac-599b-4c55-bc26-89e63f9a1bd6",
       "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
         "server_name": "ads.x5.ru",
@@ -959,19 +2064,18 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "FD7YTKH3QSTPqm35DGFG23jJHC_rKo_T2ry7Nitvhjs",
-          "short_id": "c15a7e422151adbc"
+          "public_key": "AhQkw1Ydp_ZkXnE7UbIZvwHk9KE_Bf5_TkojYZZUuGs",
+          "short_id": "2da46294d6a521B2"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 [G] [TG] Польша | 🌐 | 🔐 [🏳️LTE",
+      "tag": "🇵🇱 [G] [TG] Польша | 🌐 | 🔐 [🏳️LTE 👥 #2",
       "server": "144.31.4.166",
-      "server_port": 443,
+      "server_port": 2053,
       "uuid": "f9d8aa07-589f-4da0-9cb0-fd8f2f0e4fa8",
       "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
         "server_name": "www.deepl.com",
@@ -984,22 +2088,31 @@
           "public_key": "ZHEMPjSWslk6_qD2JNQzd5enUPz8nY9mYRRuM6NkZmU",
           "short_id": "0123456789abcdef"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
       }
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 [G] [TG] тлс✅ Finland, Helsinki | 🌐 | [IPv6] | [BL] 👥 #5",
-      "server": "cl-eu-1.edgeflux.ru",
-      "server_port": 52006,
-      "uuid": "75807638-6f19-0bb8-ae08-38492ee85c88",
+      "tag": "🇺🇸 [G] United States, New York | [BL]",
+      "server": "usa.spectrum.vu",
+      "server_port": 443,
+      "uuid": "76713d07-5a6b-49c2-abd8-bc450a2fa7fc",
       "packet_encoding": "xudp",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "cl-eu-1.edgeflux.ru",
+        "server_name": "usa.spectrum.vu",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "XtQ3m_8a_LWCiVVEKu7cZxvJCdKnjShteUAtZ3EOlko",
+          "short_id": "2a6f8c4d1e9a"
         }
       }
     },
@@ -1008,53 +2121,107 @@
       "tag": "auto",
       "outbounds": [
         "🇫🇮 [G] [TG] тлс✅ Finland, Helsinki | 🌐 | [IPv6] | [BL] 👥",
+        "🇷🇺 [G] [TG] тлс✅ 🌐 Финляндия 9 👥",
         "🇫🇮 [G] [TG] тлс✅ Finland, Helsinki | 🌐 | [IPv6] | [BL] 👥 #2",
         "🇫🇮 [G] [TG] тлс✅ Finland, Helsinki | 🌐 | [IPv6] | [BL] 👥 #3",
+        "🇷🇺 [G] тлс✅ 🌐 Финляндия 7 👥",
+        "🇷🇺 [G] [TG] тлс✅ Россия [🏳️LTE 👥",
+        "🇷🇺 тлс✅ 🌐 Россия 23 | Белые списки 👥",
+        "🇷🇺 [G] 🌐 Россия 13 | Белые списки",
+        "🇷🇺 [G] [TG] тлс✅ 🌐 Россия 24 | Белые списки 👥",
         "🇫🇮 [G] [TG] тлс✅ Finland, Helsinki | 🌐 | [IPv6] | [BL] 👥 #4",
-        "🇷🇺 [G] [TG] тлс✅ cl-ru-2.edgeflux.ru:52006",
-        "🇷🇺 [G] [TG] Russia [*CIDR]",
+        "🇷🇺 [G] 🌐 Россия 50 | Белые списки 👥",
         "🇷🇺 [G] [TG] тлс✅ Россия [🏳️LTE",
-        "🇷🇺 Russia [*CIDR] VK",
-        "🇷🇺 [G] [TG] тлс✅ 💦 15 - VLESS - Clean IP : 443",
+        "🇷🇺 [G] [TG] тлс✅ cl-ru-2.edgeflux.ru:52006 👥",
+        "🇫🇮 [G] [TG] тлс✅ Finland, Helsinki | 🌐 | [IPv6] | [BL] 👥 #5",
+        "🇷🇺 [G] [TG] тлс✅ 🌐 Россия 18 | Белые списки 👥",
+        "🇷🇺 [G] 💦 15 - VLESS - Clean IP : 443",
+        "🇷🇺 [G] тлс✅ Россия [🏳️LTE",
+        "🇫🇮 [G] [TG] тлс✅ Finland, Helsinki | 🌐 | [IPv6] | [BL] 👥 #6",
+        "🇱🇹 [G] [TG] 🌐 Литва 5 | Белые списки",
+        "🇷🇺 🌐 Россия 36 | Белые списки 👥",
+        "🇷🇺 [G] [TG] тлс✅ Россия [🏳️LTE #2",
         "🇵🇱 [G] [TG] тлс✅ Poland, Warsaw | 🌐 | [IPv6] | [BL] 👥",
+        "🇷🇺 [G] [TG] Russia [*CIDR]",
         "🇵🇱 [G] [TG] тлс✅ Poland, Warsaw | 🌐 | [IPv6] | [BL] 👥 #2",
-        "🇵🇱 [G] [TG] тлс✅ Poland, Warsaw | 🌐 | [IPv6] | [BL] 👥 #3",
-        "🇷🇺 [G] 🌐سرور",
-        "🇳🇱 [G] [TG] Direct-1",
-        "🇫🇮 [G] [TG] Finland | 🌐 | [IPv6] [*CIDR]",
-        "🇩🇪 [G] [TG] Germany, Frankfurt am Main (Innenstadt I) | 🌐 | [IPv6] | [BL]",
-        "🇩🇪 [G] [TG] Germany | 🌐 | [IPv6] [*CIDR]",
-        "🇸🇪 [G] [TG] тлс✅ 🌐 Anycast-IP | [IPv6] | [BL]",
-        "🇳🇱 [G] [TG] The Netherlands, Amsterdam | [BL]",
-        "🇷🇺 [G] [TG] Russia, St Petersburg | [BL]",
-        "🇫🇷 [G] [TG] France, Paris | [BL]",
-        "🇵🇱 [G] [TG] tres-server-vless-PL",
-        "🇷🇺 [G] [TG] Russia, Moscow | [BL]",
-        "🇩🇪 [G] [TG] Germany, Frankfurt am Main | [BL]",
-        "🇸🇪 [G] [TG] Sweden, Stockholm | [BL] 👥",
+        "🇷🇺 [G] [TG] тлс✅ 🌐 Россия 21 | Белые списки 👥",
         "🇸🇪 [G] [TG] Sweden, Stockholm | [BL]",
-        "🇩🇪 [G] [TG] Germany, Frankfurt am Main | [BL] #2",
+        "🇷🇺 [G] [TG] тлс✅ 🌐 Россия 25 | Белые списки 👥",
+        "🇷🇺 [TG] 🌐 Россия 51 | Белые списки 👥",
+        "🇷🇺 [G] [TG] Россия [🏳️LTE 👥",
+        "🇵🇱 [G] [TG] тлс✅ Poland, Warsaw | 🌐 | [IPv6] | [BL] 👥 #3",
+        "🇷🇺 [G] [TG] тлс✅ 🌐 Польша 17 | Белые списки 👥",
+        "🇩🇪 [G] [TG] Germany | 🌐 | [IPv6] [*CIDR]",
+        "🇫🇮 [G] 🌐 Финляндия 3 | Белые списки",
+        "🇩🇪 [G] [TG] 🌐 Германия 58 | Белые списки 👥",
+        "🇩🇪 [G] [TG] 🌐 Германия 22 | Белые списки 👥",
+        "🇷🇺 [G] [TG] тлс✅ 🌐 Польша 4 👥",
+        "🇳🇱 Direct-1",
+        "🇷🇺 [G] [TG] тлс✅ 🌐 Нидерланды 42 | Белые списки 👥",
+        "🇸🇪 [G] [TG] тлс✅ 🌐 Anycast-IP | [IPv6] | [BL]",
+        "🇵🇱 [G] [TG] тлс✅ Poland, Warsaw | 🌐 | [IPv6] | [BL] 👥 #4",
+        "🇩🇪 [G] [TG] 🌐 Германия 60 | Белые списки 👥",
+        "🇩🇪 [G] [TG] 🌐 Германия 54 | Белые списки",
+        "🇫🇮 [G] [TG] Finland | 🌐 | [IPv6] [*CIDR]",
+        "🇩🇪 [G] [TG] 🌐 Германия 55 | Белые списки",
+        "🇷🇺 [G] [TG] 🌐 Германия 40 | Белые списки",
+        "🇩🇪 [G] 🌐 Германия 32 | Белые списки",
+        "🇷🇺 [G] [TG] тлс✅ 🌐 Нидерланды 41 | Белые списки 👥",
+        "🇩🇪 [G] [TG] 🌐 Германия 68 | Белые списки",
+        "🇷🇺 Россия [🏳️LTE",
+        "🇩🇪 [G] [TG] Germany | TG: @HardVpn_robot 👥",
+        "🇩🇪 [G] [TG] 🌐 Германия 50 | Белые списки",
+        "🇩🇪 [G] [TG] 🌐 Германия 11 | Белые списки 👥",
+        "🇩🇪 [G] [TG] 🌐 Германия 33 | Белые списки",
+        "🇷🇺 [G] [TG] 🌐 Германия 19 | Белые списки",
+        "🇱🇹 [G] [TG] Литва [🏳️LTE",
+        "🇷🇺 [G] [TG] тлс✅ 🌐 Нидерланды 45 | Белые списки 👥",
+        "🇳🇱 [G] [TG] 🌐 Нидерланды 31 | Белые списки 👥",
+        "🇷🇺 [G] [TG] 🌐 Германия 25 | Белые списки 👥",
+        "🇷🇺 [G] [TG] тлс✅ 🌐 Нидерланды 43 | Белые списки 👥",
+        "🇩🇪 [G] [TG] Germany, Frankfurt am Main | [BL]",
+        "🇩🇪 [G] [TG] тлс✅ 🌐سرور",
         "🇪🇺 [G] [TG] Обход LTE 1",
-        "🇵🇱 [G] тлс✅ Poland, Warsaw | 🌐 | [IPv6] | [BL] 👥",
-        "🇳🇱 [G] [TG] The Netherlands | 🌐 | [IPv6] | [BL] 👥",
-        "🇩🇪 [G] [TG] тлс✅ Germany, Frankfurt am Main | [BL]",
-        "🇬🇪 [G] [TG] тлс✅ Georgia, Tbilisi | 🌐 | [BL]",
-        "🇳🇱 [G] [TG] тлс✅ 💦 30 - VLESS - Clean IP : 8443",
+        "🇷🇺 [G] [TG] Russia, Moscow | [BL]",
+        "🇸🇪 [G] Sweden | 🌐 [*CIDR] YA 👥",
+        "🇫🇷 [G] [TG] France, Paris | [BL]",
+        "🇷🇺 [G] [TG] 🌐 Франция 15 | Белые списки",
+        "🇵🇱 [G] [TG] tres-server-vless-PL",
+        "🇸🇪 [G] [TG] Sweden, Stockholm | [BL] #2",
+        "🇩🇪 [G] [TG] тлс✅ Германия | 🌐 [🏳️LTE 👥",
         "🇫🇷 [G] [TG] France | 🌐 | [IPv6] [*CIDR]",
         "🇫🇷 [G] [TG] France, Paris | [BL] #2",
-        "🇳🇱 [G] The Netherlands, Eygelshoven | [BL]",
-        "🇫🇮 [G] [TG] Finland, Helsinki | [BL]",
-        "🇨🇿 [G] Czechia | 🌐 [*CIDR] YA",
-        "🇳🇱 [G] [TG] The Netherlands, Amsterdam | [BL] #2",
-        "🇸🇪 Швеция | 🥭🔥 ozon.ru",
+        "🇳🇱 [G] [TG] The Netherlands | 🌐 | [IPv6] | [BL]",
+        "🇳🇱 [G] [TG] 🌐 Нидерланды 21 | Белые списки",
+        "🇧🇸 [G] [TG] Эщкерия | 🔐 | 🥭🔥 ads.x5.ru 👥",
+        "🇳🇱 The Netherlands, Eygelshoven | [BL]",
+        "🇷🇺 [G] 🌐 Франция 14 | Белые списки",
+        "🇷🇺 [G] 🌐 Франция 2 | Белые списки",
+        "🇵🇱 [G] [TG] 🌐 Польша | Белые списки",
         "🇺🇸 [G] [TG] United States, Los Angeles | [BL]",
-        "🇫🇮 [G] [TG] Finland, Helsinki | 🌐 | [IPv6] | [BL] 👥",
-        "🇺🇸 [G] [TG] тлс✅ 美国阿什本03-0.1倍",
-        "🇸🇪 [G] [TG] Sweden | 🌐 [*CIDR] YA",
-        "🇪🇪 [G] [TG] Estonia, Tallinn | 🌐 | [IPv6] | [BL] 👥",
-        "🇧🇸 [G] [TG] Эщкерия | 🔐 | 🥭🔥 ads.x5.ru",
-        "🇵🇱 [G] [TG] Польша | 🌐 | 🔐 [🏳️LTE",
-        "🇫🇮 [G] [TG] тлс✅ Finland, Helsinki | 🌐 | [IPv6] | [BL] 👥 #5"
+        "🇷🇺 [G] [TG] 🌐سرور",
+        "🇳🇱 [G] [TG] 🌐 Нидерланды 16 | Белые списки",
+        "🇫🇮 [G] [TG] 🌐 Финляндия 14",
+        "🇫🇮 [G] [TG] Finland, Helsinki | [BL]",
+        "🇳🇱 [G] The Netherlands, Amsterdam | [BL]",
+        "🇷🇺 [G] тлс✅ 🌐 Нидерланды 40 | Белые списки 👥",
+        "🇷🇺 [G] [TG] тлс✅ Россия [🏳️LTE #3",
+        "🇨🇿 [G] [TG] Czechia | 🌐 [*CIDR] YA 👥",
+        "🇳🇱 [G] [TG] тлс✅ 💦 30 - VLESS - Clean IP : 8443",
+        "🇸🇪 [G] [TG] Sweden, Stockholm | [BL] #3",
+        "🇵🇱 [G] [TG] Польша | 🌐 | 🔐 [🏳️LTE 👥",
+        "🇱🇹 [G] 🌐 Литва 6 | Белые списки",
+        "🇳🇱 🌐 Нидерланды 49 | Белые списки",
+        "🇸🇪 Швеция | 🥭🔥 ozon.ru 👥",
+        "🇺🇸 [G] тлс✅ 美国阿什本03-0.1倍",
+        "🇷🇺 [G] [TG] тлс✅ 🌐 Россия 26 | Белые списки 👥",
+        "🇩🇪 [G] [TG] Germany, Frankfurt am Main | [BL] #2",
+        "🇷🇺 [G] Россия [🏳️LTE 👥",
+        "🇩🇪 [G] [TG] Germany, Frankfurt am Main | [BL] #3",
+        "🇨🇦 [G] [TG] Canada | TG: @HardVpn_robot",
+        "🇬🇧 [TG] United Kingdom [*CIDR]",
+        "🇵🇱 [G] [TG] Польша | 🌐 | 🔐 [🏳️LTE 👥 #2",
+        "🇺🇸 [G] United States, New York | [BL]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "5m",
@@ -1066,53 +2233,107 @@
       "outbounds": [
         "auto",
         "🇫🇮 [G] [TG] тлс✅ Finland, Helsinki | 🌐 | [IPv6] | [BL] 👥",
+        "🇷🇺 [G] [TG] тлс✅ 🌐 Финляндия 9 👥",
         "🇫🇮 [G] [TG] тлс✅ Finland, Helsinki | 🌐 | [IPv6] | [BL] 👥 #2",
         "🇫🇮 [G] [TG] тлс✅ Finland, Helsinki | 🌐 | [IPv6] | [BL] 👥 #3",
+        "🇷🇺 [G] тлс✅ 🌐 Финляндия 7 👥",
+        "🇷🇺 [G] [TG] тлс✅ Россия [🏳️LTE 👥",
+        "🇷🇺 тлс✅ 🌐 Россия 23 | Белые списки 👥",
+        "🇷🇺 [G] 🌐 Россия 13 | Белые списки",
+        "🇷🇺 [G] [TG] тлс✅ 🌐 Россия 24 | Белые списки 👥",
         "🇫🇮 [G] [TG] тлс✅ Finland, Helsinki | 🌐 | [IPv6] | [BL] 👥 #4",
-        "🇷🇺 [G] [TG] тлс✅ cl-ru-2.edgeflux.ru:52006",
-        "🇷🇺 [G] [TG] Russia [*CIDR]",
+        "🇷🇺 [G] 🌐 Россия 50 | Белые списки 👥",
         "🇷🇺 [G] [TG] тлс✅ Россия [🏳️LTE",
-        "🇷🇺 Russia [*CIDR] VK",
-        "🇷🇺 [G] [TG] тлс✅ 💦 15 - VLESS - Clean IP : 443",
+        "🇷🇺 [G] [TG] тлс✅ cl-ru-2.edgeflux.ru:52006 👥",
+        "🇫🇮 [G] [TG] тлс✅ Finland, Helsinki | 🌐 | [IPv6] | [BL] 👥 #5",
+        "🇷🇺 [G] [TG] тлс✅ 🌐 Россия 18 | Белые списки 👥",
+        "🇷🇺 [G] 💦 15 - VLESS - Clean IP : 443",
+        "🇷🇺 [G] тлс✅ Россия [🏳️LTE",
+        "🇫🇮 [G] [TG] тлс✅ Finland, Helsinki | 🌐 | [IPv6] | [BL] 👥 #6",
+        "🇱🇹 [G] [TG] 🌐 Литва 5 | Белые списки",
+        "🇷🇺 🌐 Россия 36 | Белые списки 👥",
+        "🇷🇺 [G] [TG] тлс✅ Россия [🏳️LTE #2",
         "🇵🇱 [G] [TG] тлс✅ Poland, Warsaw | 🌐 | [IPv6] | [BL] 👥",
+        "🇷🇺 [G] [TG] Russia [*CIDR]",
         "🇵🇱 [G] [TG] тлс✅ Poland, Warsaw | 🌐 | [IPv6] | [BL] 👥 #2",
-        "🇵🇱 [G] [TG] тлс✅ Poland, Warsaw | 🌐 | [IPv6] | [BL] 👥 #3",
-        "🇷🇺 [G] 🌐سرور",
-        "🇳🇱 [G] [TG] Direct-1",
-        "🇫🇮 [G] [TG] Finland | 🌐 | [IPv6] [*CIDR]",
-        "🇩🇪 [G] [TG] Germany, Frankfurt am Main (Innenstadt I) | 🌐 | [IPv6] | [BL]",
-        "🇩🇪 [G] [TG] Germany | 🌐 | [IPv6] [*CIDR]",
-        "🇸🇪 [G] [TG] тлс✅ 🌐 Anycast-IP | [IPv6] | [BL]",
-        "🇳🇱 [G] [TG] The Netherlands, Amsterdam | [BL]",
-        "🇷🇺 [G] [TG] Russia, St Petersburg | [BL]",
-        "🇫🇷 [G] [TG] France, Paris | [BL]",
-        "🇵🇱 [G] [TG] tres-server-vless-PL",
-        "🇷🇺 [G] [TG] Russia, Moscow | [BL]",
-        "🇩🇪 [G] [TG] Germany, Frankfurt am Main | [BL]",
-        "🇸🇪 [G] [TG] Sweden, Stockholm | [BL] 👥",
+        "🇷🇺 [G] [TG] тлс✅ 🌐 Россия 21 | Белые списки 👥",
         "🇸🇪 [G] [TG] Sweden, Stockholm | [BL]",
-        "🇩🇪 [G] [TG] Germany, Frankfurt am Main | [BL] #2",
+        "🇷🇺 [G] [TG] тлс✅ 🌐 Россия 25 | Белые списки 👥",
+        "🇷🇺 [TG] 🌐 Россия 51 | Белые списки 👥",
+        "🇷🇺 [G] [TG] Россия [🏳️LTE 👥",
+        "🇵🇱 [G] [TG] тлс✅ Poland, Warsaw | 🌐 | [IPv6] | [BL] 👥 #3",
+        "🇷🇺 [G] [TG] тлс✅ 🌐 Польша 17 | Белые списки 👥",
+        "🇩🇪 [G] [TG] Germany | 🌐 | [IPv6] [*CIDR]",
+        "🇫🇮 [G] 🌐 Финляндия 3 | Белые списки",
+        "🇩🇪 [G] [TG] 🌐 Германия 58 | Белые списки 👥",
+        "🇩🇪 [G] [TG] 🌐 Германия 22 | Белые списки 👥",
+        "🇷🇺 [G] [TG] тлс✅ 🌐 Польша 4 👥",
+        "🇳🇱 Direct-1",
+        "🇷🇺 [G] [TG] тлс✅ 🌐 Нидерланды 42 | Белые списки 👥",
+        "🇸🇪 [G] [TG] тлс✅ 🌐 Anycast-IP | [IPv6] | [BL]",
+        "🇵🇱 [G] [TG] тлс✅ Poland, Warsaw | 🌐 | [IPv6] | [BL] 👥 #4",
+        "🇩🇪 [G] [TG] 🌐 Германия 60 | Белые списки 👥",
+        "🇩🇪 [G] [TG] 🌐 Германия 54 | Белые списки",
+        "🇫🇮 [G] [TG] Finland | 🌐 | [IPv6] [*CIDR]",
+        "🇩🇪 [G] [TG] 🌐 Германия 55 | Белые списки",
+        "🇷🇺 [G] [TG] 🌐 Германия 40 | Белые списки",
+        "🇩🇪 [G] 🌐 Германия 32 | Белые списки",
+        "🇷🇺 [G] [TG] тлс✅ 🌐 Нидерланды 41 | Белые списки 👥",
+        "🇩🇪 [G] [TG] 🌐 Германия 68 | Белые списки",
+        "🇷🇺 Россия [🏳️LTE",
+        "🇩🇪 [G] [TG] Germany | TG: @HardVpn_robot 👥",
+        "🇩🇪 [G] [TG] 🌐 Германия 50 | Белые списки",
+        "🇩🇪 [G] [TG] 🌐 Германия 11 | Белые списки 👥",
+        "🇩🇪 [G] [TG] 🌐 Германия 33 | Белые списки",
+        "🇷🇺 [G] [TG] 🌐 Германия 19 | Белые списки",
+        "🇱🇹 [G] [TG] Литва [🏳️LTE",
+        "🇷🇺 [G] [TG] тлс✅ 🌐 Нидерланды 45 | Белые списки 👥",
+        "🇳🇱 [G] [TG] 🌐 Нидерланды 31 | Белые списки 👥",
+        "🇷🇺 [G] [TG] 🌐 Германия 25 | Белые списки 👥",
+        "🇷🇺 [G] [TG] тлс✅ 🌐 Нидерланды 43 | Белые списки 👥",
+        "🇩🇪 [G] [TG] Germany, Frankfurt am Main | [BL]",
+        "🇩🇪 [G] [TG] тлс✅ 🌐سرور",
         "🇪🇺 [G] [TG] Обход LTE 1",
-        "🇵🇱 [G] тлс✅ Poland, Warsaw | 🌐 | [IPv6] | [BL] 👥",
-        "🇳🇱 [G] [TG] The Netherlands | 🌐 | [IPv6] | [BL] 👥",
-        "🇩🇪 [G] [TG] тлс✅ Germany, Frankfurt am Main | [BL]",
-        "🇬🇪 [G] [TG] тлс✅ Georgia, Tbilisi | 🌐 | [BL]",
-        "🇳🇱 [G] [TG] тлс✅ 💦 30 - VLESS - Clean IP : 8443",
+        "🇷🇺 [G] [TG] Russia, Moscow | [BL]",
+        "🇸🇪 [G] Sweden | 🌐 [*CIDR] YA 👥",
+        "🇫🇷 [G] [TG] France, Paris | [BL]",
+        "🇷🇺 [G] [TG] 🌐 Франция 15 | Белые списки",
+        "🇵🇱 [G] [TG] tres-server-vless-PL",
+        "🇸🇪 [G] [TG] Sweden, Stockholm | [BL] #2",
+        "🇩🇪 [G] [TG] тлс✅ Германия | 🌐 [🏳️LTE 👥",
         "🇫🇷 [G] [TG] France | 🌐 | [IPv6] [*CIDR]",
         "🇫🇷 [G] [TG] France, Paris | [BL] #2",
-        "🇳🇱 [G] The Netherlands, Eygelshoven | [BL]",
-        "🇫🇮 [G] [TG] Finland, Helsinki | [BL]",
-        "🇨🇿 [G] Czechia | 🌐 [*CIDR] YA",
-        "🇳🇱 [G] [TG] The Netherlands, Amsterdam | [BL] #2",
-        "🇸🇪 Швеция | 🥭🔥 ozon.ru",
+        "🇳🇱 [G] [TG] The Netherlands | 🌐 | [IPv6] | [BL]",
+        "🇳🇱 [G] [TG] 🌐 Нидерланды 21 | Белые списки",
+        "🇧🇸 [G] [TG] Эщкерия | 🔐 | 🥭🔥 ads.x5.ru 👥",
+        "🇳🇱 The Netherlands, Eygelshoven | [BL]",
+        "🇷🇺 [G] 🌐 Франция 14 | Белые списки",
+        "🇷🇺 [G] 🌐 Франция 2 | Белые списки",
+        "🇵🇱 [G] [TG] 🌐 Польша | Белые списки",
         "🇺🇸 [G] [TG] United States, Los Angeles | [BL]",
-        "🇫🇮 [G] [TG] Finland, Helsinki | 🌐 | [IPv6] | [BL] 👥",
-        "🇺🇸 [G] [TG] тлс✅ 美国阿什本03-0.1倍",
-        "🇸🇪 [G] [TG] Sweden | 🌐 [*CIDR] YA",
-        "🇪🇪 [G] [TG] Estonia, Tallinn | 🌐 | [IPv6] | [BL] 👥",
-        "🇧🇸 [G] [TG] Эщкерия | 🔐 | 🥭🔥 ads.x5.ru",
-        "🇵🇱 [G] [TG] Польша | 🌐 | 🔐 [🏳️LTE",
-        "🇫🇮 [G] [TG] тлс✅ Finland, Helsinki | 🌐 | [IPv6] | [BL] 👥 #5"
+        "🇷🇺 [G] [TG] 🌐سرور",
+        "🇳🇱 [G] [TG] 🌐 Нидерланды 16 | Белые списки",
+        "🇫🇮 [G] [TG] 🌐 Финляндия 14",
+        "🇫🇮 [G] [TG] Finland, Helsinki | [BL]",
+        "🇳🇱 [G] The Netherlands, Amsterdam | [BL]",
+        "🇷🇺 [G] тлс✅ 🌐 Нидерланды 40 | Белые списки 👥",
+        "🇷🇺 [G] [TG] тлс✅ Россия [🏳️LTE #3",
+        "🇨🇿 [G] [TG] Czechia | 🌐 [*CIDR] YA 👥",
+        "🇳🇱 [G] [TG] тлс✅ 💦 30 - VLESS - Clean IP : 8443",
+        "🇸🇪 [G] [TG] Sweden, Stockholm | [BL] #3",
+        "🇵🇱 [G] [TG] Польша | 🌐 | 🔐 [🏳️LTE 👥",
+        "🇱🇹 [G] 🌐 Литва 6 | Белые списки",
+        "🇳🇱 🌐 Нидерланды 49 | Белые списки",
+        "🇸🇪 Швеция | 🥭🔥 ozon.ru 👥",
+        "🇺🇸 [G] тлс✅ 美国阿什本03-0.1倍",
+        "🇷🇺 [G] [TG] тлс✅ 🌐 Россия 26 | Белые списки 👥",
+        "🇩🇪 [G] [TG] Germany, Frankfurt am Main | [BL] #2",
+        "🇷🇺 [G] Россия [🏳️LTE 👥",
+        "🇩🇪 [G] [TG] Germany, Frankfurt am Main | [BL] #3",
+        "🇨🇦 [G] [TG] Canada | TG: @HardVpn_robot",
+        "🇬🇧 [TG] United Kingdom [*CIDR]",
+        "🇵🇱 [G] [TG] Польша | 🌐 | 🔐 [🏳️LTE 👥 #2",
+        "🇺🇸 [G] United States, New York | [BL]"
       ],
       "default": "auto"
     },
