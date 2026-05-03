@@ -22,9 +22,34 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇷🇺 [G] [TG] 🌐Россия Белые списки 👥 1",
-      "server": "144.31.50.90",
-      "server_port": 499,
+      "tag": "🇷🇺 [G] 🌐Россия Белые списки 1",
+      "server": "ru.appav.net",
+      "server_port": 2083,
+      "uuid": "a0e4e8b6-0518-4f19-803e-eece71583392",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "goya.rutube.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "J6NuOlIq3ypdTFc1TMhDDKmF8BWPnNWZq1EkxD7K-lQ",
+          "short_id": "6da16b1335651b38"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "UpdateService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 [G] 🌐Россия Белые списки 2",
+      "server": "85.209.135.75",
+      "server_port": 443,
       "uuid": "aaa7d2f2-a429-4480-ba1c-9a5a2de18730",
       "packet_encoding": "xudp",
       "flow": "xtls-rprx-vision",
@@ -39,23 +64,6 @@
           "enabled": true,
           "public_key": "nDq00UeDI5TKKFipI6rgdVCqiTO98ncHKn90Qp3EsBE",
           "short_id": "f2b78452f9233f26"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 [G] [TG] тлс✅ 👥 2",
-      "server": "cl-ru-2.edgeflux.ru",
-      "server_port": 52006,
-      "uuid": "75807638-6f19-07d0-ae08-38492ee85c88",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "cl-ru-2.edgeflux.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
         }
       }
     },
@@ -83,101 +91,15 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 [G] [TG] 🌐Россия Белые списки 4",
-      "server": "ruytym.shadownet.pro",
-      "server_port": 8443,
-      "uuid": "4e8d48bb-3c03-4e02-b15f-a76737cca9e7",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "max.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "cUMmNjFNTsCyhcxWNOfBgYBCM_Ywgzt2HlWv85VMYFE",
-          "short_id": "05f480cb6c69df22"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 [G] 🌐Россия Белые списки 5",
-      "server": "85.209.135.75",
-      "server_port": 443,
-      "uuid": "aaa7d2f2-a429-4480-ba1c-9a5a2de18730",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "ads.x5.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "nDq00UeDI5TKKFipI6rgdVCqiTO98ncHKn90Qp3EsBE",
-          "short_id": "f2b78452f9233f26"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 [G] 🌐Россия Белые списки 6",
-      "server": "ru.appav.net",
-      "server_port": 2083,
-      "uuid": "a0e4e8b6-0518-4f19-803e-eece71583392",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "goya.rutube.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "J6NuOlIq3ypdTFc1TMhDDKmF8BWPnNWZq1EkxD7K-lQ",
-          "short_id": "6da16b1335651b38"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "UpdateService"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 [G] [TG] тлс✅ 🌐 Польша Белые списки 👥 7",
-      "server": "178.72.182.39",
-      "server_port": 52006,
-      "uuid": "75807638-6f19-2710-ae08-38492ee85c88",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "cl-de-1.edgeflux.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 [G] [TG] тлс✅ 🌐Россия Белые списки 👥 8",
-      "server": "178.72.182.18",
+      "tag": "🇷🇺 [G] [TG] тлс✅ 👥 4",
+      "server": "cl-ru-2.edgeflux.ru",
       "server_port": 52006,
       "uuid": "75807638-6f19-07d0-ae08-38492ee85c88",
       "packet_encoding": "xudp",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "cl-ru-1.edgeflux.ru",
+        "server_name": "cl-ru-2.edgeflux.ru",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -186,189 +108,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 [G] [TG] 🌐Россия Белые списки 👥 9",
-      "server": "84.201.174.10",
-      "server_port": 8443,
-      "uuid": "037e1e3c-5648-4190-b841-000db6d77432",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "max.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-          "short_id": "b3bd6f5b168c4d61"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 [G] [TG] тлс✅ Германия 🌐 [🏳️LTE 👥 10",
-      "server": "cl-de-2.edgeflux.ru",
-      "server_port": 52006,
-      "uuid": "75807638-6f19-01f4-ae08-38492ee85c88",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "cl-de-2.edgeflux.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 [G] [TG] тлс✅ 💦 11",
-      "server": "193.9.49.6",
-      "server_port": 443,
-      "uuid": "051ada2d-dfd9-4108-a66d-01f96dcdccc8",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "wiNTeR-wINd-90a7.nABareV274.WORKeRS.DEv",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/eyJqdW5rIjoiQ3BQN2pIZ3YiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyI1LjE4Ny43LjIyMCJdfQ==?ed=2560",
-        "headers": {
-          "Host": "winter-wind-90a7.nabarev274.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 [G] [TG] тлс✅ 🌐 Россия Белые списки 👥 12",
-      "server": "178.72.182.29",
-      "server_port": 52006,
-      "uuid": "75807638-6f19-07d0-ae08-38492ee85c88",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "cl-ru-1.edgeflux.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 [G] [TG] тлс✅ 🌐Россия Белые списки 👥 13",
-      "server": "178.72.182.38",
-      "server_port": 52006,
-      "uuid": "75807638-6f19-07d0-ae08-38492ee85c88",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "cl-ru-1.edgeflux.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 [G] [TG] 14",
-      "server": "109.68.214.196",
-      "server_port": 443,
-      "uuid": "e72f5541-ce48-4e14-b190-dc3ee94cd720",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "ads.x5.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "AhQkw1Ydp_ZkXnE7UbIZvwHk9KE_Bf5_TkojYZZUuGs",
-          "short_id": "2da46294d6a521B2"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 [G] [TG] 🌐 [IPv6] [*CIDR] 15",
-      "server": "217.16.19.6",
-      "server_port": 4443,
-      "uuid": "b5711543-6fa7-4bfb-ad83-aba435b0aa1b",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "api-maps.yandex.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "TeLKwBR2dLcbcY-G8jySuzhC25-OOMLyjy-BkKAa1SY",
-          "short_id": "aaaa"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "api-maps.yandex.ru"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 [G] [TG] тлс✅ 🌐 Россия Белые списки 👥 16",
-      "server": "178.72.182.20",
-      "server_port": 52006,
-      "uuid": "75807638-6f19-07d0-ae08-38492ee85c88",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "cl-ru-1.edgeflux.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 🌐Россия Белые списки 👥 17",
-      "server": "84.201.174.10",
-      "server_port": 51191,
-      "uuid": "037e1e3c-5648-4190-b841-000db6d77432",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "ads.x5.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-          "short_id": "b3bd6f5b168c4d61"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 [G] [TG] тлс✅ 🌐 Россия Белые списки 👥 18",
+      "tag": "🇷🇺 [G] тлс✅ 🌐 Россия Белые списки 👥 5",
       "server": "178.72.182.32",
       "server_port": 52006,
       "uuid": "75807638-6f19-07d0-ae08-38492ee85c88",
@@ -385,32 +125,54 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 [G] [TG] 🌐 Германия Белые списки 19",
-      "server": "91.222.237.113",
-      "server_port": 443,
-      "uuid": "e136eb65-a979-428e-959c-a1865aec92f6",
+      "tag": "🇷🇺 [G] [TG] 6",
+      "server": "37.18.15.75",
+      "server_port": 50445,
+      "uuid": "899ea326-89f8-4944-93f5-f57662bbdb2a",
       "packet_encoding": "xudp",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "vk.com",
+        "server_name": "river-5-557.rtbcdn.ru",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "cKzljSufhp_TTVyy85qjeByAHzTJZB2SHxKFjHaZHwA",
-          "short_id": "5a8d3f"
+          "public_key": "ZSzB9TQPGNcCiC0WLmciF5Jc8doJDvdRgbqTi8SCoEM",
+          "short_id": "a1b2c3d4e5f6789a"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇰🇿 [G] [TG] [*CIDR] 20",
-      "server": "212.233.72.250",
-      "server_port": 8443,
-      "uuid": "aaa7d2f2-a429-4480-ba1c-9a5a2de18730",
+      "tag": "🇫🇮 7",
+      "server": "78.159.246.36",
+      "server_port": 4443,
+      "uuid": "97b77a64-0d48-4ea0-905b-acbec4ca6fe6",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "vkvideo.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "CF466523CTyWo8ekZMcVPHO18gOy4ODyKSWwusJVWVI",
+          "short_id": "5FA44664f6a566d3"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 8",
+      "server": "217.16.26.248",
+      "server_port": 2083,
+      "uuid": "c9e018d1-6a0f-21ee-0e3c-e538590f9526",
       "packet_encoding": "xudp",
       "flow": "xtls-rprx-vision",
       "tls": {
@@ -422,14 +184,188 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "nDq00UeDI5TKKFipI6rgdVCqiTO98ncHKn90Qp3EsBE",
-          "short_id": "f2b78452f9233f26"
+          "public_key": "muasnZnj1TgX25uDi7PJgQ7ReYtDaq5z0tuoLWKJFQQ",
+          "short_id": "7ebf"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 [G] [TG] 🌐Россия Белые списки 21",
+      "tag": "🇱🇹 [G] [TG] 👥 9",
+      "server": "89.208.231.5",
+      "server_port": 443,
+      "uuid": "177f4ae2-b309-4a94-b716-442e2db80630",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "eh.vk.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "TZJ9akxNG985EGNVGWj92CAGCLeKdlDDodPs3_UNLxM",
+          "short_id": "346a555162166bd7"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 [G] [TG] 10",
+      "server": "151.236.114.209",
+      "server_port": 9443,
+      "uuid": "899ea326-89f8-4944-93f5-f57662bbdb2a",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "player.mediavitrina.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ZSzB9TQPGNcCiC0WLmciF5Jc8doJDvdRgbqTi8SCoEM",
+          "short_id": "a1b2c3d4e5f6789a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 [G] [TG] 11",
+      "server": "78.159.246.36",
+      "server_port": 7443,
+      "uuid": "97b77a64-0d48-4ea0-905b-acbec4ca6fe6",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "vkvideo.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "CF466523CTyWo8ekZMcVPHO18gOy4ODyKSWwusJVWVI",
+          "short_id": "5FA44664f6a566d3"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc2"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 [G] 12",
+      "server": "213.171.26.10",
+      "server_port": 3443,
+      "uuid": "dee2bfe9-9e14-4774-8c5a-3430d5e729aa",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "max.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "XqH-gNEL9eJfr1pglaI8WU3OvE654_5duXYBS35UXlM",
+          "short_id": "ab"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 [G] [TG] 👥 13",
+      "server": "5.188.114.66",
+      "server_port": 443,
+      "uuid": "9d685c87-ac8c-43bd-bef2-af53b160aca7",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ads.x5.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "pEAQqtg98GKvvOnwTcpZp508WvMFZcFx8x7c5wzelVc",
+          "short_id": "7ad1211a97aa"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": ""
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 [G] [TG] тлс✅ 🌐Россия Белые списки 👥 14",
+      "server": "178.72.182.38",
+      "server_port": 52006,
+      "uuid": "75807638-6f19-07d0-ae08-38492ee85c88",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "cl-ru-1.edgeflux.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇹 [G] [TG] 15",
+      "server": "5.178.85.225",
+      "server_port": 443,
+      "uuid": "9d685c87-ac8c-43bd-bef2-af53b160aca7",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ads.x5.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ObBnqYiOaiWqvELvFMZRiWrHYZ5wsyq0WWSwhBteYQw",
+          "short_id": "7a1197aa"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": ""
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 [G] [TG] 🌐 Россия Белые списки 👥 16",
+      "server": "178.72.182.29",
+      "server_port": 52006,
+      "uuid": "75807638-6f19-07d0-ae08-38492ee85c88",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "cl-ru-1.edgeflux.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 [G] [TG] 🌐Россия Белые списки 17",
       "server": "serv18.strettenvpn.com",
       "server_port": 7771,
       "uuid": "a04c97f5-801a-45d3-8f47-3b62f3f3acf9",
@@ -454,6 +390,89 @@
     },
     {
       "type": "vless",
+      "tag": "🇧🇬 [G] [TG] 👥 18",
+      "server": "158.160.160.33",
+      "server_port": 443,
+      "uuid": "485a5447-f606-4875-b3bd-b68ebaa27ed5",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "5post-gate.x5.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE",
+          "short_id": "111111"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 👥 19",
+      "server": "5.188.115.43",
+      "server_port": 443,
+      "uuid": "54e1c48d-c1bd-47a2-8861-425e70a55729",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "m.vk.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "oqRus6Z_Q1jqJaTEPu7ENbRL0-XKOw54K0jwCCGLtEk",
+          "short_id": "a9c4f17e3b62d8"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 [G] [TG] тлс✅ 🌐 Россия Белые списки 👥 20",
+      "server": "178.72.182.20",
+      "server_port": 52006,
+      "uuid": "75807638-6f19-07d0-ae08-38492ee85c88",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "cl-ru-1.edgeflux.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 [G] 👥 21",
+      "server": "158.160.245.33",
+      "server_port": 443,
+      "uuid": "485a5447-f606-4875-b3bd-b68ebaa27ed5",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "id.x5.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA",
+          "short_id": "111111"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇷🇺 [G] [TG] тлс✅ 🌐 Россия Белые списки 👥 22",
       "server": "178.72.182.23",
       "server_port": 52006,
@@ -470,31 +489,275 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇷🇺 [G] [TG] тлс✅ 💦 23",
+      "server": "193.9.49.6",
+      "server_port": 443,
+      "uuid": "051ada2d-dfd9-4108-a66d-01f96dcdccc8",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "wiNTeR-wINd-90a7.nABareV274.WORKeRS.DEv",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiQ3BQN2pIZ3YiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyI1LjE4Ny43LjIyMCJdfQ==?ed=2560",
+        "headers": {
+          "Host": "winter-wind-90a7.nabarev274.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 [G] тлс✅ 🌐Россия Белые списки 👥 24",
+      "server": "178.72.182.18",
+      "server_port": 52006,
+      "uuid": "75807638-6f19-07d0-ae08-38492ee85c88",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "cl-ru-1.edgeflux.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 [TG] 🌐Россия Белые списки 👥 25",
+      "server": "144.31.50.90",
+      "server_port": 499,
+      "uuid": "aaa7d2f2-a429-4480-ba1c-9a5a2de18730",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ads.x5.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "nDq00UeDI5TKKFipI6rgdVCqiTO98ncHKn90Qp3EsBE",
+          "short_id": "f2b78452f9233f26"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 [G] [TG] тлс✅ Германия 🌐 [🏳️LTE 👥 26",
+      "server": "cl-de-2.edgeflux.ru",
+      "server_port": 52006,
+      "uuid": "75807638-6f19-01f4-ae08-38492ee85c88",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "cl-de-2.edgeflux.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 [G] 🌐Россия Белые списки 👥 27",
+      "server": "84.201.174.10",
+      "server_port": 8443,
+      "uuid": "037e1e3c-5648-4190-b841-000db6d77432",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "max.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": "b3bd6f5b168c4d61"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇿 [G] [TG] [*CIDR] 28",
+      "server": "212.233.72.250",
+      "server_port": 8443,
+      "uuid": "aaa7d2f2-a429-4480-ba1c-9a5a2de18730",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ads.x5.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "nDq00UeDI5TKKFipI6rgdVCqiTO98ncHKn90Qp3EsBE",
+          "short_id": "f2b78452f9233f26"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 [G] [TG] 🌐 Германия Белые списки 29",
+      "server": "91.222.237.113",
+      "server_port": 443,
+      "uuid": "e136eb65-a979-428e-959c-a1865aec92f6",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "vk.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "cKzljSufhp_TTVyy85qjeByAHzTJZB2SHxKFjHaZHwA",
+          "short_id": "5a8d3f"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 [G] 30",
+      "server": "109.68.214.196",
+      "server_port": 443,
+      "uuid": "e72f5541-ce48-4e14-b190-dc3ee94cd720",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ads.x5.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "AhQkw1Ydp_ZkXnE7UbIZvwHk9KE_Bf5_TkojYZZUuGs",
+          "short_id": "2da46294d6a521B2"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 [G] [TG] 31",
+      "server": "185.91.52.243",
+      "server_port": 443,
+      "uuid": "54e1c48d-c1bd-47a2-8861-425e70a55729",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ads.x5.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "oqRus6Z_Q1jqJaTEPu7ENbRL0-XKOw54K0jwCCGLtEk",
+          "short_id": "a9c4f17e3b62d8"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 [G] [TG] 👥 32",
+      "server": "84.201.147.213",
+      "server_port": 443,
+      "uuid": "5891e156-8f6d-4e26-8b2b-63592e912e75",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ads.x5.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "y9hgkaFKFTgKL5PHsksGNKuSrd7jBysJ6rBHktu2k1o",
+          "short_id": "6ba85179e30d4fc2"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 [G] [TG] 👥 33",
+      "server": "84.201.147.213",
+      "server_port": 7443,
+      "uuid": "5891e156-8f6d-4e26-8b2b-63592e912e75",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "max.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "7ibca15-im9GR65wrb0N-ij1qdUftpcxTwNxHn9HPUw",
+          "short_id": "6ba85179e30d4fc2"
+        }
+      }
+    },
+    {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 [G] [TG] 🌐Россия Белые списки 👥 1",
-        "🇷🇺 [G] [TG] тлс✅ 👥 2",
+        "🇷🇺 [G] 🌐Россия Белые списки 1",
+        "🇷🇺 [G] 🌐Россия Белые списки 2",
         "🇷🇺 [G] 🌐 Россия Белые списки 3",
-        "🇷🇺 [G] [TG] 🌐Россия Белые списки 4",
-        "🇷🇺 [G] 🌐Россия Белые списки 5",
-        "🇷🇺 [G] 🌐Россия Белые списки 6",
-        "🇷🇺 [G] [TG] тлс✅ 🌐 Польша Белые списки 👥 7",
-        "🇷🇺 [G] [TG] тлс✅ 🌐Россия Белые списки 👥 8",
-        "🇷🇺 [G] [TG] 🌐Россия Белые списки 👥 9",
-        "🇩🇪 [G] [TG] тлс✅ Германия 🌐 [🏳️LTE 👥 10",
-        "🇷🇺 [G] [TG] тлс✅ 💦 11",
-        "🇷🇺 [G] [TG] тлс✅ 🌐 Россия Белые списки 👥 12",
-        "🇷🇺 [G] [TG] тлс✅ 🌐Россия Белые списки 👥 13",
-        "🇷🇺 [G] [TG] 14",
-        "🇫🇷 [G] [TG] 🌐 [IPv6] [*CIDR] 15",
-        "🇷🇺 [G] [TG] тлс✅ 🌐 Россия Белые списки 👥 16",
-        "🇷🇺 🌐Россия Белые списки 👥 17",
-        "🇷🇺 [G] [TG] тлс✅ 🌐 Россия Белые списки 👥 18",
-        "🇷🇺 [G] [TG] 🌐 Германия Белые списки 19",
-        "🇰🇿 [G] [TG] [*CIDR] 20",
-        "🇷🇺 [G] [TG] 🌐Россия Белые списки 21",
-        "🇷🇺 [G] [TG] тлс✅ 🌐 Россия Белые списки 👥 22"
+        "🇷🇺 [G] [TG] тлс✅ 👥 4",
+        "🇷🇺 [G] тлс✅ 🌐 Россия Белые списки 👥 5",
+        "🇷🇺 [G] [TG] 6",
+        "🇫🇮 7",
+        "🇷🇺 8",
+        "🇱🇹 [G] [TG] 👥 9",
+        "🇷🇺 [G] [TG] 10",
+        "🇫🇮 [G] [TG] 11",
+        "🇷🇺 [G] 12",
+        "🇳🇱 [G] [TG] 👥 13",
+        "🇷🇺 [G] [TG] тлс✅ 🌐Россия Белые списки 👥 14",
+        "🇱🇹 [G] [TG] 15",
+        "🇷🇺 [G] [TG] 🌐 Россия Белые списки 👥 16",
+        "🇷🇺 [G] [TG] 🌐Россия Белые списки 17",
+        "🇧🇬 [G] [TG] 👥 18",
+        "🇬🇧 👥 19",
+        "🇷🇺 [G] [TG] тлс✅ 🌐 Россия Белые списки 👥 20",
+        "🇷🇺 [G] 👥 21",
+        "🇷🇺 [G] [TG] тлс✅ 🌐 Россия Белые списки 👥 22",
+        "🇷🇺 [G] [TG] тлс✅ 💦 23",
+        "🇷🇺 [G] тлс✅ 🌐Россия Белые списки 👥 24",
+        "🇷🇺 [TG] 🌐Россия Белые списки 👥 25",
+        "🇩🇪 [G] [TG] тлс✅ Германия 🌐 [🏳️LTE 👥 26",
+        "🇷🇺 [G] 🌐Россия Белые списки 👥 27",
+        "🇰🇿 [G] [TG] [*CIDR] 28",
+        "🇷🇺 [G] [TG] 🌐 Германия Белые списки 29",
+        "🇷🇺 [G] 30",
+        "🇬🇧 [G] [TG] 31",
+        "🇳🇱 [G] [TG] 👥 32",
+        "🇨🇿 [G] [TG] 👥 33"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "1m",
@@ -505,28 +768,39 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 [G] [TG] 🌐Россия Белые списки 👥 1",
-        "🇷🇺 [G] [TG] тлс✅ 👥 2",
+        "🇷🇺 [G] 🌐Россия Белые списки 1",
+        "🇷🇺 [G] 🌐Россия Белые списки 2",
         "🇷🇺 [G] 🌐 Россия Белые списки 3",
-        "🇷🇺 [G] [TG] 🌐Россия Белые списки 4",
-        "🇷🇺 [G] 🌐Россия Белые списки 5",
-        "🇷🇺 [G] 🌐Россия Белые списки 6",
-        "🇷🇺 [G] [TG] тлс✅ 🌐 Польша Белые списки 👥 7",
-        "🇷🇺 [G] [TG] тлс✅ 🌐Россия Белые списки 👥 8",
-        "🇷🇺 [G] [TG] 🌐Россия Белые списки 👥 9",
-        "🇩🇪 [G] [TG] тлс✅ Германия 🌐 [🏳️LTE 👥 10",
-        "🇷🇺 [G] [TG] тлс✅ 💦 11",
-        "🇷🇺 [G] [TG] тлс✅ 🌐 Россия Белые списки 👥 12",
-        "🇷🇺 [G] [TG] тлс✅ 🌐Россия Белые списки 👥 13",
-        "🇷🇺 [G] [TG] 14",
-        "🇫🇷 [G] [TG] 🌐 [IPv6] [*CIDR] 15",
-        "🇷🇺 [G] [TG] тлс✅ 🌐 Россия Белые списки 👥 16",
-        "🇷🇺 🌐Россия Белые списки 👥 17",
-        "🇷🇺 [G] [TG] тлс✅ 🌐 Россия Белые списки 👥 18",
-        "🇷🇺 [G] [TG] 🌐 Германия Белые списки 19",
-        "🇰🇿 [G] [TG] [*CIDR] 20",
-        "🇷🇺 [G] [TG] 🌐Россия Белые списки 21",
-        "🇷🇺 [G] [TG] тлс✅ 🌐 Россия Белые списки 👥 22"
+        "🇷🇺 [G] [TG] тлс✅ 👥 4",
+        "🇷🇺 [G] тлс✅ 🌐 Россия Белые списки 👥 5",
+        "🇷🇺 [G] [TG] 6",
+        "🇫🇮 7",
+        "🇷🇺 8",
+        "🇱🇹 [G] [TG] 👥 9",
+        "🇷🇺 [G] [TG] 10",
+        "🇫🇮 [G] [TG] 11",
+        "🇷🇺 [G] 12",
+        "🇳🇱 [G] [TG] 👥 13",
+        "🇷🇺 [G] [TG] тлс✅ 🌐Россия Белые списки 👥 14",
+        "🇱🇹 [G] [TG] 15",
+        "🇷🇺 [G] [TG] 🌐 Россия Белые списки 👥 16",
+        "🇷🇺 [G] [TG] 🌐Россия Белые списки 17",
+        "🇧🇬 [G] [TG] 👥 18",
+        "🇬🇧 👥 19",
+        "🇷🇺 [G] [TG] тлс✅ 🌐 Россия Белые списки 👥 20",
+        "🇷🇺 [G] 👥 21",
+        "🇷🇺 [G] [TG] тлс✅ 🌐 Россия Белые списки 👥 22",
+        "🇷🇺 [G] [TG] тлс✅ 💦 23",
+        "🇷🇺 [G] тлс✅ 🌐Россия Белые списки 👥 24",
+        "🇷🇺 [TG] 🌐Россия Белые списки 👥 25",
+        "🇩🇪 [G] [TG] тлс✅ Германия 🌐 [🏳️LTE 👥 26",
+        "🇷🇺 [G] 🌐Россия Белые списки 👥 27",
+        "🇰🇿 [G] [TG] [*CIDR] 28",
+        "🇷🇺 [G] [TG] 🌐 Германия Белые списки 29",
+        "🇷🇺 [G] 30",
+        "🇬🇧 [G] [TG] 31",
+        "🇳🇱 [G] [TG] 👥 32",
+        "🇨🇿 [G] [TG] 👥 33"
       ],
       "default": "auto"
     },
