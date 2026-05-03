@@ -3,30 +3,6 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇺 [G] [TG] 🌐 Anycast-IP | [IPv6] [*CIDR] VK 👥
-  type: vless
-  server: 109.120.191.171
-  port: 443
-  uuid: b6ce8a51-19b9-4979-91ba-b4298c26d5fc
-  udp: true
-  network: grpc
-  tls: true
-  servername: api-no-cache.dropmefile.net
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: 🇫🇮 [G] [TG] Finland | 🌐 | [IPv6] [*CIDR] VK 👥
-  type: vless
-  server: api-staging.dropmefile.net
-  port: 443
-  uuid: b6ce8a51-19b9-4979-91ba-b4298c26d5fc
-  udp: true
-  network: grpc
-  tls: true
-  servername: api-staging.dropmefile.net
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
 - name: 🇷🇺 [G] [TG] v2ray_dalghak 👥
   type: vless
   server: 89.208.231.81
@@ -65,19 +41,6 @@ proxies:
   reality-opts:
     public-key: aFsY-EZjSNTomlAFShKwQIQMJ5pHiZQXXJpWvcz8WkQ
     short-id: 0858af97f4e7324d
-- name: 🇷🇺 [G] [TG] Russia | 🌐 | [IPv6] [*CIDR]
-  type: vless
-  server: 45.139.25.43
-  port: 443
-  uuid: 7d3e6808-d105-4ee4-b904-1f6ed8417f4d
-  udp: true
-  network: xhttp
-  tls: true
-  servername: stats.vk-portal.net
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: ELp9PUvVnkoFJYiscWrbnPXRnsYdELSCbIz9wNmMRRw
-    short-id: 965af8960474c29c
 - name: 🇫🇮 [G] [TG] тлс✅ Finland, Helsinki | 🌐 | [IPv6] | [BL] 👥
   type: vless
   server: 87.228.94.13
@@ -89,16 +52,28 @@ proxies:
   flow: xtls-rprx-vision
   servername: 87.228.94.13
   client-fingerprint: chrome
+- name: 🇷🇺 [G] [TG] 🌐 Anycast-IP | [IPv6] [*CIDR] VK 👥
+  type: vless
+  server: 109.120.191.171
+  port: 443
+  uuid: b6ce8a51-19b9-4979-91ba-b4298c26d5fc
+  udp: true
+  network: grpc
+  tls: true
+  servername: api-no-cache.dropmefile.net
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
 - name: 🇷🇺 [G] [TG] тлс✅ Россия [🏳️LTE
   type: vless
-  server: 82.202.249.96
+  server: 95.213.184.3
   port: 52006
   uuid: 75807638-6f19-07d0-ae08-38492ee85c88
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: 82.202.249.96
+  servername: 95.213.184.3
   client-fingerprint: chrome
 - name: 🇷🇺 [G] [TG] тлс✅ cl-ru-2.edgeflux.ru:52006
   type: vless
@@ -111,127 +86,32 @@ proxies:
   flow: xtls-rprx-vision
   servername: cl-ru-2.edgeflux.ru
   client-fingerprint: chrome
-- name: '🇷🇺 [G] [TG] тлс✅ 💦 15 - VLESS - Clean IP : 443'
+- name: 🇷🇺 [G] [TG] [ 👥
   type: vless
-  server: 193.9.49.6
+  server: 109.120.191.5
   port: 443
-  uuid: 3bdade6c-6e5f-4308-9299-87bfe6f01f07
-  udp: true
-  network: ws
-  tls: true
-  servername: M3cz1juSPE5-f-HFtaPxRRS17zQpPw11.SalISA7474-9d1.woRkERs.dEv
-  client-fingerprint: chrome
-  ws-opts:
-    path: /eyJqdW5rIjoidFJGN2RaSWsiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyI0NS42MS4xNjYuMTIxIl19?ed=2560
-    headers:
-      Host: m3cz1juspe5-f-hftapxrrs17zqppw11.salisa7474-9d1.workers.dev
-- name: '🇷🇺 [G] [TG] Russia | TG: @HardVpn_robot'
-  type: vless
-  server: 141.98.191.78
-  port: 443
-  uuid: 69a2af58-d74a-44ca-864a-e09b493f4274
-  udp: true
-  network: xhttp
-  tls: true
-  servername: login.vk.ru
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: wpLAX1ax15YI3H8kmmE8PH6S4vCjAwE2gYw6hG6QIh4
-    short-id: a0
-- name: '🇻🇪 [G] Venezuela | TG: @HardVpn_robot 👥'
-  type: vless
-  server: 158.160.224.84
-  port: 443
-  uuid: a74c1d6b-2083-4c16-b13c-1aa2e2d1e5b7
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: id.x5.ru
-  client-fingerprint: random
-  reality-opts:
-    public-key: OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA
-    short-id: '111111'
-- name: 🇱🇹 [G] [TG] Lithuania [*CIDR]
-  type: vless
-  server: 146.103.25.146
-  port: 8443
-  uuid: ab2f5b91-9cfd-4989-af25-353d4d69372c
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: ign.dev
-  client-fingerprint: qq
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: 6ba85179e30d4fc2
-- name: 🇸🇪 [G] [TG] Sweden [*CIDR]
-  type: vless
-  server: 185.189.46.98
-  port: 443
-  uuid: 20e51712-5c22-4395-b43e-f0e63289eac7
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: hvec.normbot.ru
-  client-fingerprint: qq
-  reality-opts:
-    public-key: pgG2grngQEtOFJImLfz0AEm-O2IodM2jCY4aMCYQI1U
-    short-id: b2a6e3d42f05c3d1
-- name: 🇵🇱 [G] [TG] тлс✅ Poland, Warsaw | 🌐 | [IPv6] | [BL] 👥
-  type: vless
-  server: 87.228.92.147
-  port: 52006
-  uuid: 75807638-6f19-2710-ae08-38492ee85c88
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: cl-de-1.edgeflux.ru
-  client-fingerprint: chrome
-- name: 🇵🇱 [G] [TG] Poland | 🌐 | [IPv6] [*CIDR] VK
-  type: vless
-  server: 5.188.143.70
-  port: 993
   uuid: b6ce8a51-19b9-4979-91ba-b4298c26d5fc
   udp: true
-  network: tcp
+  network: grpc
   tls: true
-  flow: xtls-rprx-vision
-  servername: yandex.ru
+  servername: api-staging.dropmefile.net
   client-fingerprint: chrome
-  reality-opts:
-    public-key: mAu8QDi3pbmMCFg9kKC-ZBIHdtnXeCuZt3VnAw6vlH4
-    short-id: ad7dab462a323acb
-- name: 🇸🇪 Sweden, Stockholm | [BL]
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
+- name: 🇸🇪 [G] [TG] Sweden, Stockholm | [BL]
   type: vless
-  server: shop.vivavo.ru
-  port: 2053
-  uuid: 5570943f-6cc3-4a8a-bee3-d15a2b2f53a0
-  udp: true
-  network: tcp
-  tls: true
-  servername: shop.vivavo.ru
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: aFsY-EZjSNTomlAFShKwQIQMJ5pHiZQXXJpWvcz8WkQ
-    short-id: 0858af97f4e7324d
-- name: 🇷🇺 [G] [TG] 1675 👥
-  type: vless
-  server: 89.208.231.81
-  port: 993
-  uuid: b6ce8a51-19b9-4979-91ba-b4298c26d5fc
+  server: sw.musicperec.ru
+  port: 443
+  uuid: 31216f81-3139-0021-bac4-646680314264
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: max.ru
+  servername: www.amd.com
   client-fingerprint: chrome
   reality-opts:
-    public-key: mAu8QDi3pbmMCFg9kKC-ZBIHdtnXeCuZt3VnAw6vlH4
-    short-id: ad7dab462a323acb
+    public-key: b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4
+    short-id: 6a2b5c9d
 - name: 🇷🇺 [G] [TG] VPN 👥
   type: vless
   server: 89.208.231.52
@@ -246,57 +126,47 @@ proxies:
   reality-opts:
     public-key: mAu8QDi3pbmMCFg9kKC-ZBIHdtnXeCuZt3VnAw6vlH4
     short-id: ad7dab462a323acb
-- name: 🇩🇪 Germany [*CIDR]
+- name: '🇷🇺 [G] [TG] Russia | TG: @HardVpn_robot'
   type: vless
-  server: 178.250.243.178
-  port: 443
-  uuid: 4e8d48bb-3c03-4e02-b15f-a76737cca9e7
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: max.ru
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: lwAdXwnwQs9L0FOGVbTbk373EgGE3J5AqTr2J3rNbh0
-    short-id: '345678'
-- name: 🇩🇪 [G] [TG] тлс✅ Germany | 🌐 [*CIDR]
-  type: vless
-  server: 82.202.197.68
-  port: 52006
-  uuid: 75807638-6f19-01f4-ae08-38492ee85c88
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: 82.202.197.68
-  client-fingerprint: chrome
-- name: 🇷🇺 [G] [TG] wl4.safepass.click:9443
-  type: vless
-  server: wl4.safepass.click
-  port: 9443
-  uuid: 7d3e6808-d105-4ee4-b904-1f6ed8417f4d
-  udp: true
-  network: xhttp
-  tls: true
-  servername: stats.vk-portal.net
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: ELp9PUvVnkoFJYiscWrbnPXRnsYdELSCbIz9wNmMRRw
-    short-id: 965af8960474c29c
-- name: 🇩🇪 [TG] тлс✅ Germany, Frankfurt am Main | [BL]
-  type: vless
-  server: 212.95.39.25.vhub.pro
-  port: 443
-  uuid: 32bfe5f3-a406-48e3-bad9-932945bd0bc1
+  server: 195.209.210.87
+  port: 11174
+  uuid: e7d88c6a-c253-4d16-b0cb-e293b2856c6e
   udp: true
   network: grpc
   tls: true
-  servername: 212.95.39.25.vhub.pro
+  servername: m.vk.com
   client-fingerprint: chrome
+  reality-opts:
+    public-key: zActfG7j1iIjclCzN1Eid1jR85-_U9-ZR2nedr142Hk
+    short-id: a8ac91fd6a3c63ca
   grpc-opts:
-    grpc-service-name: /sequre/grpc/
-- name: 🇫🇮 [G] Finland, Helsinki | [BL]
+    grpc-service-name: grpc
+- name: 🇵🇱 [TG] Poland, Warsaw | 🌐 | [IPv6] | [BL] 👥
+  type: vless
+  server: 87.228.92.147
+  port: 52006
+  uuid: 75807638-6f19-2710-ae08-38492ee85c88
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: cl-de-1.edgeflux.ru
+  client-fingerprint: chrome
+- name: 🇪🇺 [G] Обход LTE 1
+  type: vless
+  server: 157.22.231.43
+  port: 9443
+  uuid: 0baa7fcd-20d2-4cdb-9e62-f213226eee53
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: www.vk.ru
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 82EUNQglruwkub0OfdFYh_iJFCR9Mck8JRFzhEH8GCs
+    short-id: '52'
+- name: 🇫🇮 [G] [TG] Finland, Helsinki | [BL]
   type: vless
   server: web.svinkovoz.ru
   port: 2053
@@ -309,47 +179,70 @@ proxies:
   reality-opts:
     public-key: aFsY-EZjSNTomlAFShKwQIQMJ5pHiZQXXJpWvcz8WkQ
     short-id: 0858af97f4e7324d
-- name: 🇫🇮 [G] [TG] Finland | 🌐 | [IPv6] [*CIDR]
+- name: 🇩🇪 [TG] тлс✅ Germany, Frankfurt am Main | [BL]
   type: vless
-  server: 65.109.177.17
-  port: 7443
-  uuid: b375b840-8ac0-4d37-98c0-44ab85fd7127
+  server: 212.95.39.25.vhub.pro
+  port: 443
+  uuid: 32bfe5f3-a406-48e3-bad9-932945bd0bc1
+  udp: true
+  network: grpc
+  tls: true
+  servername: 212.95.39.25.vhub.pro
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: /sequre/grpc/
+- name: 🇵🇱 [G] [TG] Poland, Warsaw | [BL]
+  type: vless
+  server: 45.138.16.62
+  port: 30086
+  uuid: a5554072-0d6d-4b9a-93b1-9c8726fc2c0b
+  udp: true
+  network: grpc
+  tls: false
+  grpc-opts:
+    grpc-service-name: gprc
+- name: 🇩🇪 [G] [TG] Germany, Frankfurt am Main (Innenstadt I) | 🌐 | [IPv6] | [BL]
+  type: vless
+  server: de.scamhost.online
+  port: 443
+  uuid: 017471d2-6198-4f27-847c-a18fa753ca6e
+  udp: true
+  network: grpc
+  tls: true
+  servername: de.scamhost.online
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 3T8DuoXtRuXjyrBXbDHgwDHimngqSRxfm86brOfCMVU
+    short-id: a8a4229c9134dae5
+  grpc-opts:
+    grpc-service-name: ''
+- name: 🇳🇱 [G] [TG] Direct-1
+  type: vless
+  server: 152.70.58.201
+  port: 443
+  uuid: 8892e34a-339b-4526-b88d-cf68c516231c
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: chat.deepseek.com
+  servername: www.microsoft.com
   client-fingerprint: chrome
   reality-opts:
-    public-key: 5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI
-    short-id: be0ce047
-- name: 🇫🇮 [G] Finland | 🌐 | [IPv6] [*CIDR] YA
+    public-key: Hg_ivwbClYmR-SEHdoGgq4yEk6ltbjS5c4yiQRa4_28
+    short-id: abc123
+- name: 🇷🇺 [G] [TG] 🌐 Anycast-IP | [IPv6] [*CIDR]
   type: vless
-  server: 84.201.177.81
-  port: 443
-  uuid: cdc31944-9488-4052-94c9-97ff3f325895
+  server: 195.209.212.66
+  port: 13014
+  uuid: e7d88c6a-c253-4d16-b0cb-e293b2856c6e
   udp: true
-  network: tcp
+  network: xhttp
   tls: true
-  servername: max.ru
-  client-fingerprint: qq
-  reality-opts:
-    public-key: 5ELL4X0tLgwzFLWxEOLtCfYb39NiaLQnZPWKcTPEci4
-    short-id: 8d2faad1099c46
-- name: 🇫🇷 [G] [TG] France [*CIDR]
-  type: vless
-  server: 109.248.33.61
-  port: 443
-  uuid: bafc879b-eeef-00fa-ac47-8ec6c23335e9
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: cdn.trahodrom.fun
+  servername: sso.passport.yandex.ru
   client-fingerprint: chrome
   reality-opts:
-    public-key: IBvNLerjNLpF4OpUX-wGJp8YDZrnKoh-gEItUDNT_Bg
-    short-id: ''
+    public-key: zActfG7j1iIjclCzN1Eid1jR85-_U9-ZR2nedr142Hk
+    short-id: a8ac91fd6a3c63ca
 - name: 🇳🇱 [G] [TG] The Netherlands | 🌐 | [IPv6] | [BL]
   type: vless
   server: 64.188.77.66
@@ -367,30 +260,32 @@ proxies:
     grpc-service-name: buysec.ru
 - name: 🇵🇱 [G] [TG] Польша | 🌐 | 🔐 [🏳️LTE
   type: vless
-  server: 5.188.140.166
+  server: 144.31.4.166
   port: 443
-  uuid: b6ce8a51-19b9-4979-91ba-b4298c26d5fc
-  udp: true
-  network: grpc
-  tls: true
-  servername: api1.dropmefile.net
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: 🇪🇪 [G] [TG]  👥
-  type: vless
-  server: 89.208.230.199
-  port: 8443
-  uuid: b6ce8a51-19b9-4979-91ba-b4298c26d5fc
+  uuid: f9d8aa07-589f-4da0-9cb0-fd8f2f0e4fa8
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: api-maps.yandex.ru
+  servername: www.deepl.com
   client-fingerprint: chrome
   reality-opts:
-    public-key: mAu8QDi3pbmMCFg9kKC-ZBIHdtnXeCuZt3VnAw6vlH4
-    short-id: ad7dab462a323acb
+    public-key: ZHEMPjSWslk6_qD2JNQzd5enUPz8nY9mYRRuM6NkZmU
+    short-id: 0123456789abcdef
+- name: 🇳🇱 [G] The Netherlands [*CIDR] VK 👥
+  type: vless
+  server: 89.208.229.107
+  port: 443
+  uuid: 4e8d48bb-3c03-4e02-b15f-a76737cca9e7
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: cdp.x5.ru
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: lwAdXwnwQs9L0FOGVbTbk373EgGE3J5AqTr2J3rNbh0
+    short-id: def012
 - name: 🇷🇺 [G] [TG] 🌐سرور
   type: vless
   server: 109.248.33.240
@@ -405,75 +300,46 @@ proxies:
   reality-opts:
     public-key: IBvNLerjNLpF4OpUX-wGJp8YDZrnKoh-gEItUDNT_Bg
     short-id: ''
-- name: 🇳🇱 [G] [TG] The Netherlands, Eygelshoven | [BL]
+- name: 🇵🇱 [TG] Poland [*CIDR]
   type: vless
-  server: 144.31.237.201
+  server: 45.141.215.49
+  port: 30047
+  uuid: a5554072-0d6d-4b9a-93b1-9c8726fc2c0b
+  udp: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: ''
+- name: 🇩🇪 [G] Germany [*CIDR]
+  type: vless
+  server: 178.250.243.178
   port: 443
-  uuid: 76713d07-5a6b-49c2-abd8-bc450a2fa7fc
+  uuid: 4e8d48bb-3c03-4e02-b15f-a76737cca9e7
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: download.spectrum.vu
+  servername: max.ru
   client-fingerprint: chrome
   reality-opts:
-    public-key: sXC7sPCzHG_uYfvk3GSUdYQKfHAwirOVWMhO50Y9Pn8
-    short-id: 0d1a2c1d4e1f
-- name: 🇳🇱 [G] [TG] Direct-1
+    public-key: lwAdXwnwQs9L0FOGVbTbk373EgGE3J5AqTr2J3rNbh0
+    short-id: '345678'
+- name: 🇵🇱 [G] [TG] Poland, Warsaw (Mokotów) | 🌐 | [IPv6] | [BL]
   type: vless
-  server: 152.70.58.201
+  server: pol.normbot.ru
   port: 443
-  uuid: 8892e34a-339b-4526-b88d-cf68c516231c
+  uuid: 20e51712-5c22-4395-b43e-f0e63289eac7
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: www.microsoft.com
-  client-fingerprint: chrome
+  servername: pol.normbot.ru
+  client-fingerprint: qq
   reality-opts:
-    public-key: Hg_ivwbClYmR-SEHdoGgq4yEk6ltbjS5c4yiQRa4_28
-    short-id: abc123
-- name: 🇩🇪 [G] [TG] Germany, Frankfurt am Main (Innenstadt I) | 🌐 | [IPv6] | [BL]
-  type: vless
-  server: de.scamhost.online
-  port: 443
-  uuid: 017471d2-6198-4f27-847c-a18fa753ca6e
-  udp: true
-  network: grpc
-  tls: true
-  servername: de.scamhost.online
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 3T8DuoXtRuXjyrBXbDHgwDHimngqSRxfm86brOfCMVU
-    short-id: a8a4229c9134dae5
-  grpc-opts:
-    grpc-service-name: ''
-- name: 🇬🇧 [G] 20224d08
-  type: vless
-  server: 46.226.162.205
-  port: 51177
-  uuid: 20224d08-bdc1-4280-8d34-f2288c4c1473
-  udp: true
-  network: tcp
-  tls: true
-  servername: teamdocs.su
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: o5VKcEfjPXonAjUJYSk2Rznv0wHjkFEHlVZtcUwVsQE
-    short-id: 5ed6
-- name: 🇷🇺 [G] [TG] 🌐 Anycast-IP | [IPv6] [*CIDR]
-  type: vless
-  server: 195.209.212.66
-  port: 13014
-  uuid: e7d88c6a-c253-4d16-b0cb-e293b2856c6e
-  udp: true
-  network: xhttp
-  tls: true
-  servername: sso.passport.yandex.ru
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: zActfG7j1iIjclCzN1Eid1jR85-_U9-ZR2nedr142Hk
-    short-id: a8ac91fd6a3c63ca
+    public-key: pgG2grngQEtOFJImLfz0AEm-O2IodM2jCY4aMCYQI1U
+    short-id: d2232f66ea7d1a5e
 - name: 🇩🇪 [G] [TG] Germany | 🌐 | [IPv6] [*CIDR]
   type: vless
   server: 213.202.222.225
@@ -489,19 +355,33 @@ proxies:
     short-id: ''
   grpc-opts:
     grpc-service-name: vless-grpc-reality
-- name: 🇩🇪 Germany | 🌐 | [IPv6] [*CIDR] YA 👥
+- name: 🇫🇮 [G] [TG] Finland | 🌐 | [IPv6] [*CIDR]
   type: vless
-  server: 158.160.122.138
-  port: 443
-  uuid: 1fb0a4fa-e30f-4e74-abc3-5b19f8292e36
+  server: 65.109.177.17
+  port: 7443
+  uuid: b375b840-8ac0-4d37-98c0-44ab85fd7127
   udp: true
   network: tcp
   tls: true
-  servername: max.ru
-  client-fingerprint: qq
+  flow: xtls-rprx-vision
+  servername: chat.deepseek.com
+  client-fingerprint: chrome
   reality-opts:
-    public-key: KzVfkehzvVL1GOUb9-AIf2yPE0HlpE-7kooIKpw-DRM
-    short-id: 3ad45a39d1d2a8b1
+    public-key: 5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI
+    short-id: be0ce047
+- name: 🇬🇧 [G] [TG] 20224d08
+  type: vless
+  server: 46.226.162.205
+  port: 51177
+  uuid: 20224d08-bdc1-4280-8d34-f2288c4c1473
+  udp: true
+  network: tcp
+  tls: true
+  servername: teamdocs.su
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: o5VKcEfjPXonAjUJYSk2Rznv0wHjkFEHlVZtcUwVsQE
+    short-id: 5ed6
 - name: 🇷🇺 [G] [TG] Russia, St Petersburg | [BL]
   type: vless
   server: web.catpatrol.ru
@@ -515,40 +395,29 @@ proxies:
   reality-opts:
     public-key: aFsY-EZjSNTomlAFShKwQIQMJ5pHiZQXXJpWvcz8WkQ
     short-id: 0858af97f4e7324d
-- name: 🇵🇱 [G] [TG] Poland, Warsaw | [BL]
+- name: 🇱🇹 [G] [TG] Литва [🏳️LTE
   type: vless
-  server: 45.138.16.62
-  port: 30047
-  uuid: a5554072-0d6d-4b9a-93b1-9c8726fc2c0b
+  server: vltch.mostserv.xyz
+  port: 443
+  uuid: 37253a6a-2a9b-42bb-992c-b5f1b1ef1791
   udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: ''
-- name: 🇧🇸 [G] [TG] Эщкерия | 🔐 | 🥭🔥 ads.x5.ru
-  type: vless
-  server: 62.60.153.179
-  port: 6444
-  uuid: 1f1a6ea7-b2d5-4fd4-be5f-0d8b1317d6b5
-  udp: true
-  network: xhttp
+  network: tcp
   tls: true
-  servername: ads.x5.ru
+  flow: xtls-rprx-vision
+  servername: vltch.mostserv.xyz
   client-fingerprint: chrome
   reality-opts:
-    public-key: FD7YTKH3QSTPqm35DGFG23jJHC_rKo_T2ry7Nitvhjs
-    short-id: c15a7e422151adbc
-- name: 🇳🇱 [G] [TG] The Netherlands, Amsterdam | [BL]
+    public-key: 3WzSgL8uXA3vE3IHrfdBpJmOO4MYrsWpczDSY_jJRjI
+    short-id: 226509f017e4c36d
+- name: 🇫🇷 [G] [TG] France, Paris | [BL]
   type: vless
-  server: 213.165.40.207
+  server: web.37-z.ru
   port: 2053
   uuid: 5570943f-6cc3-4a8a-bee3-d15a2b2f53a0
   udp: true
   network: tcp
   tls: true
-  servername: web.coolshopone.ru
+  servername: web.37-z.ru
   client-fingerprint: chrome
   reality-opts:
     public-key: aFsY-EZjSNTomlAFShKwQIQMJ5pHiZQXXJpWvcz8WkQ
@@ -564,86 +433,21 @@ proxies:
   flow: xtls-rprx-vision
   servername: cluster-europe-1.firstvideocdn.ru
   client-fingerprint: chrome
-- name: 🇩🇪 [G] Germany [*CIDR] YA 👥
+- name: 🇪🇪 [G] [TG] Estonia, Tallinn | 🌐 | [IPv6] | [BL]
   type: vless
-  server: 158.160.180.65
-  port: 443
-  uuid: ab8d4756-c60b-484c-affd-1207a03de9d2
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: sun-6-22.userapi.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: PjrgcrzYBq-aa3g1gC03_uKfLVgVosXzHsyUfbJbBw4
-    short-id: 8d51999a
-- name: 🇳🇱 [G] [TG] @teleking_vip
-  type: vless
-  server: 45.15.129.32
-  port: 443
-  uuid: 3744b1fc-1fa5-4bd9-a901-d97a4214ae70
-  udp: true
-  network: tcp
-  tls: true
-  servername: google.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: qsT9UM8_tjOILuNP9skeOZ0SfXfnj1oTRG-kKoCfqXs
-    short-id: d0
-- name: 🇪🇺 [G] [TG] Обход LTE 1
-  type: vless
-  server: 157.22.231.43
-  port: 9443
-  uuid: 0baa7fcd-20d2-4cdb-9e62-f213226eee53
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: www.vk.ru
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 82EUNQglruwkub0OfdFYh_iJFCR9Mck8JRFzhEH8GCs
-    short-id: '52'
-- name: 🇳🇱 [G] Нидерланды | 🥭🔥 www.ozon.ru
-  type: vless
-  server: v546965.hosted-by-vdsina.com
+  server: ee.keepsecured.net
   port: 8443
-  uuid: TrueVPN_92001293
+  uuid: b6ce8a51-19b9-4979-91ba-b4298c26d5fc
   udp: true
-  network: tcp
+  network: grpc
   tls: true
-  servername: www.ozon.ru
-  client-fingerprint: random
+  servername: cdn.kwork.com
+  client-fingerprint: qq
   reality-opts:
-    public-key: bVhVy1hZY_iw-sljlaeVbTBBa6SPvMm0Kg0tCC8CKHM
-    short-id: ffffffffff
-- name: 🇪🇪 Estonia [*CIDR]
-  type: vless
-  server: 150.241.74.191
-  port: 443
-  uuid: 76713d07-5a6b-49c2-abd8-bc450a2fa7fc
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: download.spectrum.vu
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: sXC7sPCzHG_uYfvk3GSUdYQKfHAwirOVWMhO50Y9Pn8
-    short-id: ad8c7a6ace2f
-- name: 🇵🇱 [G] [TG] Poland [*CIDR]
-  type: vless
-  server: 45.141.215.49
-  port: 30047
-  uuid: a5554072-0d6d-4b9a-93b1-9c8726fc2c0b
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: ''
+    public-key: J07yFEBPsic7-hLTS2KSxVqI7v4gpfkG6_a2cGKNVFk
+    short-id: 10f786a2491b2cd5
+  grpc-opts:
+    grpc-service-name: buysec.ru
 - name: 🇩🇪 [G] [TG] тлс✅ 🌐 Anycast-IP | [IPv6] | [BL]
   type: vless
   server: 193.23.219.205
@@ -658,58 +462,168 @@ proxies:
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
     headers:
       Host: sni.latonyamadeline.ndjp.net
-- name: 🇺🇸 [G] [TG] United States, Los Angeles | [BL]
+- name: '🇷🇺 [TG] тлс✅ 💦 15 - VLESS - Clean IP : 443'
   type: vless
-  server: vps-vmiss-usa.maze-maker.com
+  server: 193.9.49.6
   port: 443
-  uuid: 13233743-204d-41d6-a5f9-d82f4d7d3c90
+  uuid: 3bdade6c-6e5f-4308-9299-87bfe6f01f07
+  udp: true
+  network: ws
+  tls: true
+  servername: M3cz1juSPE5-f-HFtaPxRRS17zQpPw11.SalISA7474-9d1.woRkERs.dEv
+  client-fingerprint: chrome
+  ws-opts:
+    path: /eyJqdW5rIjoidFJGN2RaSWsiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyI0NS42MS4xNjYuMTIxIl19?ed=2560
+    headers:
+      Host: m3cz1juspe5-f-hftapxrrs17zqppw11.salisa7474-9d1.workers.dev
+- name: 🇳🇱 [G] Нидерланды | 🥭🔥 www.ozon.ru
+  type: vless
+  server: v546965.hosted-by-vdsina.com
+  port: 8443
+  uuid: TrueVPN_92001293
+  udp: true
+  network: tcp
+  tls: true
+  servername: www.ozon.ru
+  client-fingerprint: random
+  reality-opts:
+    public-key: bVhVy1hZY_iw-sljlaeVbTBBa6SPvMm0Kg0tCC8CKHM
+    short-id: ffffffffff
+- name: 🇸🇪 [G] [TG] Sweden [*CIDR]
+  type: vless
+  server: 185.189.46.98
+  port: 443
+  uuid: 20e51712-5c22-4395-b43e-f0e63289eac7
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: hvec.normbot.ru
+  client-fingerprint: qq
+  reality-opts:
+    public-key: pgG2grngQEtOFJImLfz0AEm-O2IodM2jCY4aMCYQI1U
+    short-id: b2a6e3d42f05c3d1
+- name: 🇺🇸 [G] United States, Charlotte | [BL]
+  type: vless
+  server: shop.sapochi.ru
+  port: 2053
+  uuid: 5570943f-6cc3-4a8a-bee3-d15a2b2f53a0
+  udp: true
+  network: tcp
+  tls: true
+  servername: shop.sapochi.ru
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: aFsY-EZjSNTomlAFShKwQIQMJ5pHiZQXXJpWvcz8WkQ
+    short-id: 0858af97f4e7324d
+- name: 🇩🇪 [G] [TG] Germany | 🌐 | [IPv6] [*CIDR] YA
+  type: vless
+  server: 158.160.122.138
+  port: 443
+  uuid: 1fb0a4fa-e30f-4e74-abc3-5b19f8292e36
+  udp: true
+  network: tcp
+  tls: true
+  servername: max.ru
+  client-fingerprint: qq
+  reality-opts:
+    public-key: KzVfkehzvVL1GOUb9-AIf2yPE0HlpE-7kooIKpw-DRM
+    short-id: 3ad45a39d1d2a8b1
+- name: 🇪🇪 [G] [TG] Estonia | 🌐 | [IPv6] [*CIDR] VK 👥
+  type: vless
+  server: 89.208.208.58
+  port: 443
+  uuid: 46917323-63d4-4797-9543-21b5d4ff7d7b
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: max.ru
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 1ZNcu6FOn9xF-YfkFLhDI3vuO8w3VWq32zYVJ4JWBxQ
+    short-id: dc4aa6635008a9ae
+- name: 🇳🇱 [G] [TG] The Netherlands, Amsterdam | [BL]
+  type: vless
+  server: 150.251.145.135
+  port: 2066
+  uuid: 7c71bca8-1f80-435a-bb2d-0ad130d6d4f7
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: apple.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: u4lNvUk5pLZGl0XN-QK4xQgPQBhoJiMkOP2XZoQ99GA
+    short-id: d18f4e
+- name: 🇫🇷 [G] [TG] France [*CIDR]
+  type: vless
+  server: 109.248.33.61
+  port: 443
+  uuid: bafc879b-eeef-00fa-ac47-8ec6c23335e9
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: cdn.trahodrom.fun
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: IBvNLerjNLpF4OpUX-wGJp8YDZrnKoh-gEItUDNT_Bg
+    short-id: ''
+- name: 🇯🇵 [G] [TG] Japan [*CIDR]
+  type: vless
+  server: web.sapochi.ru
+  port: 2053
+  uuid: 5570943f-6cc3-4a8a-bee3-d15a2b2f53a0
+  udp: true
+  network: tcp
+  tls: true
+  servername: web.sapochi.ru
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: aFsY-EZjSNTomlAFShKwQIQMJ5pHiZQXXJpWvcz8WkQ
+    short-id: 0858af97f4e7324d
+- name: 🇧🇸 [G] [TG] Эщкерия | 🔐 | 🥭🔥 ads.x5.ru
+  type: vless
+  server: 62.60.153.179
+  port: 6444
+  uuid: 1f1a6ea7-b2d5-4fd4-be5f-0d8b1317d6b5
   udp: true
   network: xhttp
   tls: true
-  servername: www.microsoft.com
+  servername: ads.x5.ru
   client-fingerprint: chrome
   reality-opts:
-    public-key: i2woqyB_equDtt2Vr4QPgehnb4quPd8aD8SsYuqFeyo
-    short-id: 0123456789abcdef
-- name: 🇱🇻 [G] [TG] Latvia | 🌐 | [IPv6] [*CIDR]
+    public-key: FD7YTKH3QSTPqm35DGFG23jJHC_rKo_T2ry7Nitvhjs
+    short-id: c15a7e422151adbc
+- name: 🇩🇪 [G] [TG] Germany | 🌐 | [IPv6] | [BL]
   type: vless
-  server: 188.253.17.104
+  server: germ.normbot.ru
   port: 443
-  uuid: 63f26629-a4a4-4550-bffc-afabb3b5b3c3
+  uuid: 20e51712-5c22-4395-b43e-f0e63289eac7
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: yahoo.com
-  client-fingerprint: random
+  servername: germ.normbot.ru
+  client-fingerprint: qq
   reality-opts:
-    public-key: rwZxMeKJhN-LkKkP-u6qXYFzSlbuyqxYzloqaOpFLUM
-    short-id: e98e89a0
-- name: 🇬🇪 [G] [TG] тлс✅ Georgia, Tbilisi | 🌐 | [BL]
+    public-key: QZ_mszIk33gaKRmr-EYBiwoQmcaY8PR5vJYjkFWRFiU
+    short-id: 6aa2d2e950441d9a
+- name: 🇫🇮 [G] [TG] Finland | 🌐 | [IPv6] [*CIDR] YA
   type: vless
-  server: 72.56.62.253
-  port: 22231
-  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+  server: 84.201.177.81
+  port: 443
+  uuid: cdc31944-9488-4052-94c9-97ff3f325895
   udp: true
   network: tcp
   tls: true
-  flow: xtls-rprx-vision
-  servername: r1.mizulina.top
-  client-fingerprint: edge
-- name: 🇫🇷 [G] [TG] France | 🌐 | [IPv6] [*CIDR]
-  type: vless
-  server: 45.92.218.193
-  port: 7443
-  uuid: b375b840-8ac0-4d37-98c0-44ab85fd7127
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: chat.deepseek.com
-  client-fingerprint: chrome
+  servername: max.ru
+  client-fingerprint: qq
   reality-opts:
-    public-key: 5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI
-    short-id: d82fb387
+    public-key: 5ELL4X0tLgwzFLWxEOLtCfYb39NiaLQnZPWKcTPEci4
+    short-id: 8d2faad1099c46
 - name: '🇳🇱 [G] [TG] тлс✅ 💦 30 - VLESS - Clean IP : 8443'
   type: vless
   server: 188.42.88.1
@@ -724,47 +638,59 @@ proxies:
     path: /eyJqdW5rIjoiRk9ObjBYTGoiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyI1LjE4Ny43LjIyMCJdfQ==?ed=2560
     headers:
       Host: winter-wind-90a7.nabarev274.workers.dev
-- name: 🇫🇷 [G] [TG] France, Paris | [BL]
+- name: 🇳🇱 [G] @teleking_vip
   type: vless
-  server: 72.56.246.128
+  server: 45.15.129.32
   port: 443
-  uuid: bafc879b-eeef-00fa-ac47-8ec6c23335e9
+  uuid: 3744b1fc-1fa5-4bd9-a901-d97a4214ae70
+  udp: true
+  network: tcp
+  tls: true
+  servername: google.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: qsT9UM8_tjOILuNP9skeOZ0SfXfnj1oTRG-kKoCfqXs
+    short-id: d0
+- name: 🇫🇷 [TG] France | 🌐 | [IPv6] [*CIDR]
+  type: vless
+  server: 45.92.218.193
+  port: 7443
+  uuid: b375b840-8ac0-4d37-98c0-44ab85fd7127
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: cdn.trahodrom.fun
+  servername: chat.deepseek.com
   client-fingerprint: chrome
   reality-opts:
-    public-key: IBvNLerjNLpF4OpUX-wGJp8YDZrnKoh-gEItUDNT_Bg
+    public-key: 5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI
+    short-id: d82fb387
+- name: 🇦🇹 [G] [TG] Austria [*CIDR] YA
+  type: vless
+  server: 178.154.243.27
+  port: 443
+  uuid: 7b13eaac-882d-43a0-b19e-6d2e867d624e
+  udp: true
+  network: grpc
+  tls: true
+  servername: zen-yabro-morda.mediascope.mc.yandex.ru
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 6_rpeumu-IKDzYPxNBgBJ0NT9ReeApZMLguTppqTs1Q
     short-id: ''
-- name: 🇨🇭 [G] [TG] Switzerland | 🌐 | [IPv6] | [BL]
+  grpc-opts:
+    grpc-service-name: ''
+- name: 🇩🇪 [G] [TG] тлс✅ Germany | 🌐 [*CIDR]
   type: vless
-  server: 45.141.119.180
-  port: 8443
-  uuid: ab2f5b91-9cfd-4989-af25-353d4d69372c
+  server: 82.202.197.68
+  port: 52006
+  uuid: 75807638-6f19-01f4-ae08-38492ee85c88
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: ign.dev
-  client-fingerprint: qq
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: 6ba85179e30d4fc2
-- name: 🇺🇸 [G] [TG] United States, Los Angeles (Downtown Los Angeles) | [BL]
-  type: vless
-  server: vps-bwg-usa.maze-maker.com
-  port: 443
-  uuid: bb870c2d-6b79-4aef-9e82-4a82275a9854
-  udp: true
-  network: xhttp
-  tls: true
-  servername: www.microsoft.com
+  servername: 82.202.197.68
   client-fingerprint: chrome
-  reality-opts:
-    public-key: i2woqyB_equDtt2Vr4QPgehnb4quPd8aD8SsYuqFeyo
-    short-id: 0123456789abcdef
 - name: 🇬🇧 [G] [TG] United Kingdom [*CIDR]
   type: vless
   server: ktzy4.vpnul.codes
@@ -779,61 +705,20 @@ proxies:
   reality-opts:
     public-key: AhQkw1Ydp_ZkXnE7UbIZvwHk9KE_Bf5_TkojYZZUuGs
     short-id: 2da46294d6a521B2
-- name: '🇹🇷 Turkey | TG: @HardVpn_robot'
+- name: 🇳🇱 [G] The Netherlands, Eygelshoven | [BL]
   type: vless
-  server: tr-1.illusion-vpn.ru
-  port: 52000
-  uuid: fd2bfdd2-68eb-49b0-98ad-ed82f901edde
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: ozon.ru
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 4Fs4rORU_bK5Nwy9qvmVw3dAxS91bIG5cQYOmXl7zDA
-    short-id: 3d67b0666a5e09a0
-- name: 🇯🇵 [G] [TG] Japan [*CIDR]
-  type: vless
-  server: web.sapochi.ru
-  port: 2053
-  uuid: 5570943f-6cc3-4a8a-bee3-d15a2b2f53a0
-  udp: true
-  network: tcp
-  tls: true
-  servername: web.sapochi.ru
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: aFsY-EZjSNTomlAFShKwQIQMJ5pHiZQXXJpWvcz8WkQ
-    short-id: 0858af97f4e7324d
-- name: 🇪🇪 [G] [TG] Estonia, Tallinn | 🌐 | [IPv6] | [BL]
-  type: vless
-  server: ee.keepsecured.net
+  server: 45.12.62.201
   port: 443
-  uuid: b6ce8a51-19b9-4979-91ba-b4298c26d5fc
+  uuid: ab8d4756-c60b-484c-affd-1207a03de9d2
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: cdn.kwork.com
-  client-fingerprint: qq
-  reality-opts:
-    public-key: mAu8QDi3pbmMCFg9kKC-ZBIHdtnXeCuZt3VnAw6vlH4
-    short-id: ad7dab462a323acb
-- name: 🇺🇸 [G] [TG] United States, New York | [BL]
-  type: vless
-  server: usa.spectrum.vu
-  port: 443
-  uuid: 76713d07-5a6b-49c2-abd8-bc450a2fa7fc
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: usa.spectrum.vu
+  servername: apple.com
   client-fingerprint: chrome
   reality-opts:
-    public-key: XtQ3m_8a_LWCiVVEKu7cZxvJCdKnjShteUAtZ3EOlko
-    short-id: 2a6f8c4d1e9a
+    public-key: PjrgcrzYBq-aa3g1gC03_uKfLVgVosXzHsyUfbJbBw4
+    short-id: d5facdae
 - name: 🇺🇸 [G] [TG] тлс✅ 美国阿什本03-0.1倍
   type: vless
   server: 69.84.182.108
@@ -848,104 +733,107 @@ proxies:
     path: /pq/us6
     headers:
       Host: pq-us6.globals-download.com
+- name: 🇩🇪 [G] Germany [*CIDR] YA
+  type: vless
+  server: 158.160.180.65
+  port: 443
+  uuid: ab8d4756-c60b-484c-affd-1207a03de9d2
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: sun-6-22.userapi.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: PjrgcrzYBq-aa3g1gC03_uKfLVgVosXzHsyUfbJbBw4
+    short-id: 8d51999a
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇷🇺 [G] [TG] 🌐 Anycast-IP | [IPv6] [*CIDR] VK 👥
-  - 🇫🇮 [G] [TG] Finland | 🌐 | [IPv6] [*CIDR] VK 👥
   - 🇷🇺 [G] [TG] v2ray_dalghak 👥
   - 🇷🇺 [G] [TG] Russia [*CIDR]
   - 🇷🇺 [G] Russia [*CIDR] VK 👥
-  - 🇷🇺 [G] [TG] Russia | 🌐 | [IPv6] [*CIDR]
   - 🇫🇮 [G] [TG] тлс✅ Finland, Helsinki | 🌐 | [IPv6] | [BL] 👥
+  - 🇷🇺 [G] [TG] 🌐 Anycast-IP | [IPv6] [*CIDR] VK 👥
   - 🇷🇺 [G] [TG] тлс✅ Россия [🏳️LTE
   - 🇷🇺 [G] [TG] тлс✅ cl-ru-2.edgeflux.ru:52006
-  - '🇷🇺 [G] [TG] тлс✅ 💦 15 - VLESS - Clean IP : 443'
-  - '🇷🇺 [G] [TG] Russia | TG: @HardVpn_robot'
-  - '🇻🇪 [G] Venezuela | TG: @HardVpn_robot 👥'
-  - 🇱🇹 [G] [TG] Lithuania [*CIDR]
-  - 🇸🇪 [G] [TG] Sweden [*CIDR]
-  - 🇵🇱 [G] [TG] тлс✅ Poland, Warsaw | 🌐 | [IPv6] | [BL] 👥
-  - 🇵🇱 [G] [TG] Poland | 🌐 | [IPv6] [*CIDR] VK
-  - 🇸🇪 Sweden, Stockholm | [BL]
-  - 🇷🇺 [G] [TG] 1675 👥
+  - 🇷🇺 [G] [TG] [ 👥
+  - 🇸🇪 [G] [TG] Sweden, Stockholm | [BL]
   - 🇷🇺 [G] [TG] VPN 👥
-  - 🇩🇪 Germany [*CIDR]
-  - 🇩🇪 [G] [TG] тлс✅ Germany | 🌐 [*CIDR]
-  - 🇷🇺 [G] [TG] wl4.safepass.click:9443
+  - '🇷🇺 [G] [TG] Russia | TG: @HardVpn_robot'
+  - 🇵🇱 [TG] Poland, Warsaw | 🌐 | [IPv6] | [BL] 👥
+  - 🇪🇺 [G] Обход LTE 1
+  - 🇫🇮 [G] [TG] Finland, Helsinki | [BL]
   - 🇩🇪 [TG] тлс✅ Germany, Frankfurt am Main | [BL]
-  - 🇫🇮 [G] Finland, Helsinki | [BL]
-  - 🇫🇮 [G] [TG] Finland | 🌐 | [IPv6] [*CIDR]
-  - 🇫🇮 [G] Finland | 🌐 | [IPv6] [*CIDR] YA
-  - 🇫🇷 [G] [TG] France [*CIDR]
+  - 🇵🇱 [G] [TG] Poland, Warsaw | [BL]
+  - 🇩🇪 [G] [TG] Germany, Frankfurt am Main (Innenstadt I) | 🌐 | [IPv6] | [BL]
+  - 🇳🇱 [G] [TG] Direct-1
+  - 🇷🇺 [G] [TG] 🌐 Anycast-IP | [IPv6] [*CIDR]
   - 🇳🇱 [G] [TG] The Netherlands | 🌐 | [IPv6] | [BL]
   - 🇵🇱 [G] [TG] Польша | 🌐 | 🔐 [🏳️LTE
-  - 🇪🇪 [G] [TG]  👥
+  - 🇳🇱 [G] The Netherlands [*CIDR] VK 👥
   - 🇷🇺 [G] [TG] 🌐سرور
-  - 🇳🇱 [G] [TG] The Netherlands, Eygelshoven | [BL]
-  - 🇳🇱 [G] [TG] Direct-1
-  - 🇩🇪 [G] [TG] Germany, Frankfurt am Main (Innenstadt I) | 🌐 | [IPv6] | [BL]
-  - 🇬🇧 [G] 20224d08
-  - 🇷🇺 [G] [TG] 🌐 Anycast-IP | [IPv6] [*CIDR]
+  - 🇵🇱 [TG] Poland [*CIDR]
+  - 🇩🇪 [G] Germany [*CIDR]
+  - 🇵🇱 [G] [TG] Poland, Warsaw (Mokotów) | 🌐 | [IPv6] | [BL]
   - 🇩🇪 [G] [TG] Germany | 🌐 | [IPv6] [*CIDR]
-  - 🇩🇪 Germany | 🌐 | [IPv6] [*CIDR] YA 👥
+  - 🇫🇮 [G] [TG] Finland | 🌐 | [IPv6] [*CIDR]
+  - 🇬🇧 [G] [TG] 20224d08
   - 🇷🇺 [G] [TG] Russia, St Petersburg | [BL]
-  - 🇵🇱 [G] [TG] Poland, Warsaw | [BL]
-  - 🇧🇸 [G] [TG] Эщкерия | 🔐 | 🥭🔥 ads.x5.ru
-  - 🇳🇱 [G] [TG] The Netherlands, Amsterdam | [BL]
-  - 🇳🇱 [G] [TG] тлс✅ The Netherlands | 🌐 | [IPv6] [*CIDR]
-  - 🇩🇪 [G] Germany [*CIDR] YA 👥
-  - 🇳🇱 [G] [TG] @teleking_vip
-  - 🇪🇺 [G] [TG] Обход LTE 1
-  - 🇳🇱 [G] Нидерланды | 🥭🔥 www.ozon.ru
-  - 🇪🇪 Estonia [*CIDR]
-  - 🇵🇱 [G] [TG] Poland [*CIDR]
-  - 🇩🇪 [G] [TG] тлс✅ 🌐 Anycast-IP | [IPv6] | [BL]
-  - 🇺🇸 [G] [TG] United States, Los Angeles | [BL]
-  - 🇱🇻 [G] [TG] Latvia | 🌐 | [IPv6] [*CIDR]
-  - 🇬🇪 [G] [TG] тлс✅ Georgia, Tbilisi | 🌐 | [BL]
-  - 🇫🇷 [G] [TG] France | 🌐 | [IPv6] [*CIDR]
-  - '🇳🇱 [G] [TG] тлс✅ 💦 30 - VLESS - Clean IP : 8443'
+  - 🇱🇹 [G] [TG] Литва [🏳️LTE
   - 🇫🇷 [G] [TG] France, Paris | [BL]
-  - 🇨🇭 [G] [TG] Switzerland | 🌐 | [IPv6] | [BL]
-  - 🇺🇸 [G] [TG] United States, Los Angeles (Downtown Los Angeles) | [BL]
-  - 🇬🇧 [G] [TG] United Kingdom [*CIDR]
-  - '🇹🇷 Turkey | TG: @HardVpn_robot'
-  - 🇯🇵 [G] [TG] Japan [*CIDR]
+  - 🇳🇱 [G] [TG] тлс✅ The Netherlands | 🌐 | [IPv6] [*CIDR]
   - 🇪🇪 [G] [TG] Estonia, Tallinn | 🌐 | [IPv6] | [BL]
-  - 🇺🇸 [G] [TG] United States, New York | [BL]
+  - 🇩🇪 [G] [TG] тлс✅ 🌐 Anycast-IP | [IPv6] | [BL]
+  - '🇷🇺 [TG] тлс✅ 💦 15 - VLESS - Clean IP : 443'
+  - 🇳🇱 [G] Нидерланды | 🥭🔥 www.ozon.ru
+  - 🇸🇪 [G] [TG] Sweden [*CIDR]
+  - 🇺🇸 [G] United States, Charlotte | [BL]
+  - 🇩🇪 [G] [TG] Germany | 🌐 | [IPv6] [*CIDR] YA
+  - 🇪🇪 [G] [TG] Estonia | 🌐 | [IPv6] [*CIDR] VK 👥
+  - 🇳🇱 [G] [TG] The Netherlands, Amsterdam | [BL]
+  - 🇫🇷 [G] [TG] France [*CIDR]
+  - 🇯🇵 [G] [TG] Japan [*CIDR]
+  - 🇧🇸 [G] [TG] Эщкерия | 🔐 | 🥭🔥 ads.x5.ru
+  - 🇩🇪 [G] [TG] Germany | 🌐 | [IPv6] | [BL]
+  - 🇫🇮 [G] [TG] Finland | 🌐 | [IPv6] [*CIDR] YA
+  - '🇳🇱 [G] [TG] тлс✅ 💦 30 - VLESS - Clean IP : 8443'
+  - 🇳🇱 [G] @teleking_vip
+  - 🇫🇷 [TG] France | 🌐 | [IPv6] [*CIDR]
+  - 🇦🇹 [G] [TG] Austria [*CIDR] YA
+  - 🇩🇪 [G] [TG] тлс✅ Germany | 🌐 [*CIDR]
+  - 🇬🇧 [G] [TG] United Kingdom [*CIDR]
+  - 🇳🇱 [G] The Netherlands, Eygelshoven | [BL]
   - 🇺🇸 [G] [TG] тлс✅ 美国阿什本03-0.1倍
+  - 🇩🇪 [G] Germany [*CIDR] YA
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 80
 - name: AI & TG
   type: url-test
   proxies:
-  - 🇱🇹 [G] [TG] Lithuania [*CIDR]
-  - 🇸🇪 [G] [TG] Sweden [*CIDR]
-  - 🇫🇮 [G] [TG] Finland | 🌐 | [IPv6] [*CIDR]
-  - 🇳🇱 [G] [TG] The Netherlands | 🌐 | [IPv6] | [BL]
-  - 🇳🇱 [G] [TG] The Netherlands, Eygelshoven | [BL]
-  - 🇳🇱 [G] [TG] Direct-1
-  - 🇩🇪 [G] [TG] Germany, Frankfurt am Main (Innenstadt I) | 🌐 | [IPv6] | [BL]
-  - 🇩🇪 [G] [TG] Germany | 🌐 | [IPv6] [*CIDR]
+  - 🇸🇪 [G] [TG] Sweden, Stockholm | [BL]
+  - 🇫🇮 [G] [TG] Finland, Helsinki | [BL]
   - 🇵🇱 [G] [TG] Poland, Warsaw | [BL]
-  - 🇧🇸 [G] [TG] Эщкерия | 🔐 | 🥭🔥 ads.x5.ru
-  - 🇳🇱 [G] [TG] The Netherlands, Amsterdam | [BL]
-  - 🇳🇱 [G] [TG] @teleking_vip
-  - 🇵🇱 [G] [TG] Poland [*CIDR]
-  - 🇩🇪 [G] [TG] тлс✅ 🌐 Anycast-IP | [IPv6] | [BL]
-  - 🇺🇸 [G] [TG] United States, Los Angeles | [BL]
-  - 🇱🇻 [G] [TG] Latvia | 🌐 | [IPv6] [*CIDR]
-  - 🇬🇪 [G] [TG] тлс✅ Georgia, Tbilisi | 🌐 | [BL]
-  - 🇫🇷 [G] [TG] France | 🌐 | [IPv6] [*CIDR]
-  - '🇳🇱 [G] [TG] тлс✅ 💦 30 - VLESS - Clean IP : 8443'
-  - 🇨🇭 [G] [TG] Switzerland | 🌐 | [IPv6] | [BL]
-  - 🇺🇸 [G] [TG] United States, Los Angeles (Downtown Los Angeles) | [BL]
-  - 🇯🇵 [G] [TG] Japan [*CIDR]
+  - 🇩🇪 [G] [TG] Germany, Frankfurt am Main (Innenstadt I) | 🌐 | [IPv6] | [BL]
+  - 🇳🇱 [G] [TG] Direct-1
+  - 🇳🇱 [G] [TG] The Netherlands | 🌐 | [IPv6] | [BL]
+  - 🇵🇱 [G] [TG] Польша | 🌐 | 🔐 [🏳️LTE
+  - 🇵🇱 [G] [TG] Poland, Warsaw (Mokotów) | 🌐 | [IPv6] | [BL]
+  - 🇩🇪 [G] [TG] Germany | 🌐 | [IPv6] [*CIDR]
+  - 🇫🇮 [G] [TG] Finland | 🌐 | [IPv6] [*CIDR]
+  - 🇬🇧 [G] [TG] 20224d08
+  - 🇱🇹 [G] [TG] Литва [🏳️LTE
+  - 🇫🇷 [G] [TG] France, Paris | [BL]
   - 🇪🇪 [G] [TG] Estonia, Tallinn | 🌐 | [IPv6] | [BL]
-  - 🇺🇸 [G] [TG] United States, New York | [BL]
+  - 🇩🇪 [G] [TG] тлс✅ 🌐 Anycast-IP | [IPv6] | [BL]
+  - 🇸🇪 [G] [TG] Sweden [*CIDR]
+  - 🇳🇱 [G] [TG] The Netherlands, Amsterdam | [BL]
+  - 🇯🇵 [G] [TG] Japan [*CIDR]
+  - 🇧🇸 [G] [TG] Эщкерия | 🔐 | 🥭🔥 ads.x5.ru
+  - 🇩🇪 [G] [TG] Germany | 🌐 | [IPv6] | [BL]
+  - '🇳🇱 [G] [TG] тлс✅ 💦 30 - VLESS - Clean IP : 8443'
   - 🇺🇸 [G] [TG] тлс✅ 美国阿什本03-0.1倍
   url: https://www.gstatic.com/generate_204
   interval: 300
@@ -955,69 +843,61 @@ proxy-groups:
   proxies:
   - AUTO
   - AI & TG
-  - 🇷🇺 [G] [TG] 🌐 Anycast-IP | [IPv6] [*CIDR] VK 👥
-  - 🇫🇮 [G] [TG] Finland | 🌐 | [IPv6] [*CIDR] VK 👥
   - 🇷🇺 [G] [TG] v2ray_dalghak 👥
   - 🇷🇺 [G] [TG] Russia [*CIDR]
   - 🇷🇺 [G] Russia [*CIDR] VK 👥
-  - 🇷🇺 [G] [TG] Russia | 🌐 | [IPv6] [*CIDR]
   - 🇫🇮 [G] [TG] тлс✅ Finland, Helsinki | 🌐 | [IPv6] | [BL] 👥
+  - 🇷🇺 [G] [TG] 🌐 Anycast-IP | [IPv6] [*CIDR] VK 👥
   - 🇷🇺 [G] [TG] тлс✅ Россия [🏳️LTE
   - 🇷🇺 [G] [TG] тлс✅ cl-ru-2.edgeflux.ru:52006
-  - '🇷🇺 [G] [TG] тлс✅ 💦 15 - VLESS - Clean IP : 443'
-  - '🇷🇺 [G] [TG] Russia | TG: @HardVpn_robot'
-  - '🇻🇪 [G] Venezuela | TG: @HardVpn_robot 👥'
-  - 🇱🇹 [G] [TG] Lithuania [*CIDR]
-  - 🇸🇪 [G] [TG] Sweden [*CIDR]
-  - 🇵🇱 [G] [TG] тлс✅ Poland, Warsaw | 🌐 | [IPv6] | [BL] 👥
-  - 🇵🇱 [G] [TG] Poland | 🌐 | [IPv6] [*CIDR] VK
-  - 🇸🇪 Sweden, Stockholm | [BL]
-  - 🇷🇺 [G] [TG] 1675 👥
+  - 🇷🇺 [G] [TG] [ 👥
+  - 🇸🇪 [G] [TG] Sweden, Stockholm | [BL]
   - 🇷🇺 [G] [TG] VPN 👥
-  - 🇩🇪 Germany [*CIDR]
-  - 🇩🇪 [G] [TG] тлс✅ Germany | 🌐 [*CIDR]
-  - 🇷🇺 [G] [TG] wl4.safepass.click:9443
+  - '🇷🇺 [G] [TG] Russia | TG: @HardVpn_robot'
+  - 🇵🇱 [TG] Poland, Warsaw | 🌐 | [IPv6] | [BL] 👥
+  - 🇪🇺 [G] Обход LTE 1
+  - 🇫🇮 [G] [TG] Finland, Helsinki | [BL]
   - 🇩🇪 [TG] тлс✅ Germany, Frankfurt am Main | [BL]
-  - 🇫🇮 [G] Finland, Helsinki | [BL]
-  - 🇫🇮 [G] [TG] Finland | 🌐 | [IPv6] [*CIDR]
-  - 🇫🇮 [G] Finland | 🌐 | [IPv6] [*CIDR] YA
-  - 🇫🇷 [G] [TG] France [*CIDR]
+  - 🇵🇱 [G] [TG] Poland, Warsaw | [BL]
+  - 🇩🇪 [G] [TG] Germany, Frankfurt am Main (Innenstadt I) | 🌐 | [IPv6] | [BL]
+  - 🇳🇱 [G] [TG] Direct-1
+  - 🇷🇺 [G] [TG] 🌐 Anycast-IP | [IPv6] [*CIDR]
   - 🇳🇱 [G] [TG] The Netherlands | 🌐 | [IPv6] | [BL]
   - 🇵🇱 [G] [TG] Польша | 🌐 | 🔐 [🏳️LTE
-  - 🇪🇪 [G] [TG]  👥
+  - 🇳🇱 [G] The Netherlands [*CIDR] VK 👥
   - 🇷🇺 [G] [TG] 🌐سرور
-  - 🇳🇱 [G] [TG] The Netherlands, Eygelshoven | [BL]
-  - 🇳🇱 [G] [TG] Direct-1
-  - 🇩🇪 [G] [TG] Germany, Frankfurt am Main (Innenstadt I) | 🌐 | [IPv6] | [BL]
-  - 🇬🇧 [G] 20224d08
-  - 🇷🇺 [G] [TG] 🌐 Anycast-IP | [IPv6] [*CIDR]
+  - 🇵🇱 [TG] Poland [*CIDR]
+  - 🇩🇪 [G] Germany [*CIDR]
+  - 🇵🇱 [G] [TG] Poland, Warsaw (Mokotów) | 🌐 | [IPv6] | [BL]
   - 🇩🇪 [G] [TG] Germany | 🌐 | [IPv6] [*CIDR]
-  - 🇩🇪 Germany | 🌐 | [IPv6] [*CIDR] YA 👥
+  - 🇫🇮 [G] [TG] Finland | 🌐 | [IPv6] [*CIDR]
+  - 🇬🇧 [G] [TG] 20224d08
   - 🇷🇺 [G] [TG] Russia, St Petersburg | [BL]
-  - 🇵🇱 [G] [TG] Poland, Warsaw | [BL]
-  - 🇧🇸 [G] [TG] Эщкерия | 🔐 | 🥭🔥 ads.x5.ru
-  - 🇳🇱 [G] [TG] The Netherlands, Amsterdam | [BL]
-  - 🇳🇱 [G] [TG] тлс✅ The Netherlands | 🌐 | [IPv6] [*CIDR]
-  - 🇩🇪 [G] Germany [*CIDR] YA 👥
-  - 🇳🇱 [G] [TG] @teleking_vip
-  - 🇪🇺 [G] [TG] Обход LTE 1
-  - 🇳🇱 [G] Нидерланды | 🥭🔥 www.ozon.ru
-  - 🇪🇪 Estonia [*CIDR]
-  - 🇵🇱 [G] [TG] Poland [*CIDR]
-  - 🇩🇪 [G] [TG] тлс✅ 🌐 Anycast-IP | [IPv6] | [BL]
-  - 🇺🇸 [G] [TG] United States, Los Angeles | [BL]
-  - 🇱🇻 [G] [TG] Latvia | 🌐 | [IPv6] [*CIDR]
-  - 🇬🇪 [G] [TG] тлс✅ Georgia, Tbilisi | 🌐 | [BL]
-  - 🇫🇷 [G] [TG] France | 🌐 | [IPv6] [*CIDR]
-  - '🇳🇱 [G] [TG] тлс✅ 💦 30 - VLESS - Clean IP : 8443'
+  - 🇱🇹 [G] [TG] Литва [🏳️LTE
   - 🇫🇷 [G] [TG] France, Paris | [BL]
-  - 🇨🇭 [G] [TG] Switzerland | 🌐 | [IPv6] | [BL]
-  - 🇺🇸 [G] [TG] United States, Los Angeles (Downtown Los Angeles) | [BL]
-  - 🇬🇧 [G] [TG] United Kingdom [*CIDR]
-  - '🇹🇷 Turkey | TG: @HardVpn_robot'
-  - 🇯🇵 [G] [TG] Japan [*CIDR]
+  - 🇳🇱 [G] [TG] тлс✅ The Netherlands | 🌐 | [IPv6] [*CIDR]
   - 🇪🇪 [G] [TG] Estonia, Tallinn | 🌐 | [IPv6] | [BL]
-  - 🇺🇸 [G] [TG] United States, New York | [BL]
+  - 🇩🇪 [G] [TG] тлс✅ 🌐 Anycast-IP | [IPv6] | [BL]
+  - '🇷🇺 [TG] тлс✅ 💦 15 - VLESS - Clean IP : 443'
+  - 🇳🇱 [G] Нидерланды | 🥭🔥 www.ozon.ru
+  - 🇸🇪 [G] [TG] Sweden [*CIDR]
+  - 🇺🇸 [G] United States, Charlotte | [BL]
+  - 🇩🇪 [G] [TG] Germany | 🌐 | [IPv6] [*CIDR] YA
+  - 🇪🇪 [G] [TG] Estonia | 🌐 | [IPv6] [*CIDR] VK 👥
+  - 🇳🇱 [G] [TG] The Netherlands, Amsterdam | [BL]
+  - 🇫🇷 [G] [TG] France [*CIDR]
+  - 🇯🇵 [G] [TG] Japan [*CIDR]
+  - 🇧🇸 [G] [TG] Эщкерия | 🔐 | 🥭🔥 ads.x5.ru
+  - 🇩🇪 [G] [TG] Germany | 🌐 | [IPv6] | [BL]
+  - 🇫🇮 [G] [TG] Finland | 🌐 | [IPv6] [*CIDR] YA
+  - '🇳🇱 [G] [TG] тлс✅ 💦 30 - VLESS - Clean IP : 8443'
+  - 🇳🇱 [G] @teleking_vip
+  - 🇫🇷 [TG] France | 🌐 | [IPv6] [*CIDR]
+  - 🇦🇹 [G] [TG] Austria [*CIDR] YA
+  - 🇩🇪 [G] [TG] тлс✅ Germany | 🌐 [*CIDR]
+  - 🇬🇧 [G] [TG] United Kingdom [*CIDR]
+  - 🇳🇱 [G] The Netherlands, Eygelshoven | [BL]
   - 🇺🇸 [G] [TG] тлс✅ 美国阿什本03-0.1倍
+  - 🇩🇪 [G] Germany [*CIDR] YA
 rules:
 - MATCH,PROXY
