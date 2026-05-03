@@ -1,0 +1,346 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+- name: 🇷🇺 [G] [TG] 🌐Россия Белые списки 👥 1
+  type: vless
+  server: 144.31.50.90
+  port: 499
+  uuid: aaa7d2f2-a429-4480-ba1c-9a5a2de18730
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: ads.x5.ru
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: nDq00UeDI5TKKFipI6rgdVCqiTO98ncHKn90Qp3EsBE
+    short-id: f2b78452f9233f26
+- name: 🇷🇺 [G] [TG] тлс✅ 👥 2
+  type: vless
+  server: cl-ru-2.edgeflux.ru
+  port: 52006
+  uuid: 75807638-6f19-07d0-ae08-38492ee85c88
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: cl-ru-2.edgeflux.ru
+  client-fingerprint: chrome
+- name: 🇷🇺 [G] 🌐 Россия Белые списки 3
+  type: vless
+  server: 193.124.130.173
+  port: 443
+  uuid: 4b481152-ba7f-4445-8cc0-d33d58546e23
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: tradingview.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: -tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw
+    short-id: '50'
+- name: 🇷🇺 [G] [TG] 🌐Россия Белые списки 4
+  type: vless
+  server: ruytym.shadownet.pro
+  port: 8443
+  uuid: 4e8d48bb-3c03-4e02-b15f-a76737cca9e7
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: max.ru
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: cUMmNjFNTsCyhcxWNOfBgYBCM_Ywgzt2HlWv85VMYFE
+    short-id: 05f480cb6c69df22
+- name: 🇷🇺 [G] 🌐Россия Белые списки 5
+  type: vless
+  server: 85.209.135.75
+  port: 443
+  uuid: aaa7d2f2-a429-4480-ba1c-9a5a2de18730
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: ads.x5.ru
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: nDq00UeDI5TKKFipI6rgdVCqiTO98ncHKn90Qp3EsBE
+    short-id: f2b78452f9233f26
+- name: 🇷🇺 [G] 🌐Россия Белые списки 6
+  type: vless
+  server: ru.appav.net
+  port: 2083
+  uuid: a0e4e8b6-0518-4f19-803e-eece71583392
+  udp: true
+  network: grpc
+  tls: true
+  servername: goya.rutube.ru
+  client-fingerprint: qq
+  reality-opts:
+    public-key: J6NuOlIq3ypdTFc1TMhDDKmF8BWPnNWZq1EkxD7K-lQ
+    short-id: 6da16b1335651b38
+  grpc-opts:
+    grpc-service-name: UpdateService
+- name: 🇷🇺 [G] [TG] тлс✅ 🌐 Польша Белые списки 👥 7
+  type: vless
+  server: 178.72.182.39
+  port: 52006
+  uuid: 75807638-6f19-2710-ae08-38492ee85c88
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: cl-de-1.edgeflux.ru
+  client-fingerprint: chrome
+- name: 🇷🇺 [G] [TG] тлс✅ 🌐Россия Белые списки 👥 8
+  type: vless
+  server: 178.72.182.18
+  port: 52006
+  uuid: 75807638-6f19-07d0-ae08-38492ee85c88
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: cl-ru-1.edgeflux.ru
+  client-fingerprint: chrome
+- name: 🇷🇺 [G] [TG] 🌐Россия Белые списки 👥 9
+  type: vless
+  server: 84.201.174.10
+  port: 8443
+  uuid: 037e1e3c-5648-4190-b841-000db6d77432
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: max.ru
+  client-fingerprint: qq
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: b3bd6f5b168c4d61
+- name: 🇩🇪 [G] [TG] тлс✅ Германия 🌐 [🏳️LTE 👥 10
+  type: vless
+  server: cl-de-2.edgeflux.ru
+  port: 52006
+  uuid: 75807638-6f19-01f4-ae08-38492ee85c88
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: cl-de-2.edgeflux.ru
+  client-fingerprint: chrome
+- name: 🇷🇺 [G] [TG] тлс✅ 💦 11
+  type: vless
+  server: 193.9.49.6
+  port: 443
+  uuid: 051ada2d-dfd9-4108-a66d-01f96dcdccc8
+  udp: true
+  network: ws
+  tls: true
+  servername: wiNTeR-wINd-90a7.nABareV274.WORKeRS.DEv
+  client-fingerprint: chrome
+  ws-opts:
+    path: /eyJqdW5rIjoiQ3BQN2pIZ3YiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyI1LjE4Ny43LjIyMCJdfQ==?ed=2560
+    headers:
+      Host: winter-wind-90a7.nabarev274.workers.dev
+- name: 🇷🇺 [G] [TG] тлс✅ 🌐 Россия Белые списки 👥 12
+  type: vless
+  server: 178.72.182.29
+  port: 52006
+  uuid: 75807638-6f19-07d0-ae08-38492ee85c88
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: cl-ru-1.edgeflux.ru
+  client-fingerprint: chrome
+- name: 🇷🇺 [G] [TG] тлс✅ 🌐Россия Белые списки 👥 13
+  type: vless
+  server: 178.72.182.38
+  port: 52006
+  uuid: 75807638-6f19-07d0-ae08-38492ee85c88
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: cl-ru-1.edgeflux.ru
+  client-fingerprint: chrome
+- name: 🇷🇺 [G] [TG] 14
+  type: vless
+  server: 109.68.214.196
+  port: 443
+  uuid: e72f5541-ce48-4e14-b190-dc3ee94cd720
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: ads.x5.ru
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: AhQkw1Ydp_ZkXnE7UbIZvwHk9KE_Bf5_TkojYZZUuGs
+    short-id: 2da46294d6a521B2
+- name: 🇫🇷 [G] [TG] 🌐 [IPv6] [*CIDR] 15
+  type: vless
+  server: 217.16.19.6
+  port: 4443
+  uuid: b5711543-6fa7-4bfb-ad83-aba435b0aa1b
+  udp: true
+  network: grpc
+  tls: true
+  servername: api-maps.yandex.ru
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: TeLKwBR2dLcbcY-G8jySuzhC25-OOMLyjy-BkKAa1SY
+    short-id: aaaa
+  grpc-opts:
+    grpc-service-name: api-maps.yandex.ru
+- name: 🇷🇺 [G] [TG] тлс✅ 🌐 Россия Белые списки 👥 16
+  type: vless
+  server: 178.72.182.20
+  port: 52006
+  uuid: 75807638-6f19-07d0-ae08-38492ee85c88
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: cl-ru-1.edgeflux.ru
+  client-fingerprint: chrome
+- name: 🇷🇺 🌐Россия Белые списки 👥 17
+  type: vless
+  server: 84.201.174.10
+  port: 51191
+  uuid: 037e1e3c-5648-4190-b841-000db6d77432
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: ads.x5.ru
+  client-fingerprint: qq
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: b3bd6f5b168c4d61
+- name: 🇷🇺 [G] [TG] тлс✅ 🌐 Россия Белые списки 👥 18
+  type: vless
+  server: 178.72.182.32
+  port: 52006
+  uuid: 75807638-6f19-07d0-ae08-38492ee85c88
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: cl-ru-1.edgeflux.ru
+  client-fingerprint: chrome
+- name: 🇷🇺 [G] [TG] 🌐 Германия Белые списки 19
+  type: vless
+  server: 91.222.237.113
+  port: 443
+  uuid: e136eb65-a979-428e-959c-a1865aec92f6
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: vk.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: cKzljSufhp_TTVyy85qjeByAHzTJZB2SHxKFjHaZHwA
+    short-id: 5a8d3f
+- name: 🇰🇿 [G] [TG] [*CIDR] 20
+  type: vless
+  server: 212.233.72.250
+  port: 8443
+  uuid: aaa7d2f2-a429-4480-ba1c-9a5a2de18730
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: ads.x5.ru
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: nDq00UeDI5TKKFipI6rgdVCqiTO98ncHKn90Qp3EsBE
+    short-id: f2b78452f9233f26
+- name: 🇷🇺 [G] [TG] 🌐Россия Белые списки 21
+  type: vless
+  server: serv18.strettenvpn.com
+  port: 7771
+  uuid: a04c97f5-801a-45d3-8f47-3b62f3f3acf9
+  udp: true
+  network: grpc
+  tls: true
+  servername: 5post-gate.x5.ru
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: yhUfTGgu5PYRlFqMnRZkxffH_aU05AFUToGI8_EKF28
+    short-id: '8248954896'
+  grpc-opts:
+    grpc-service-name: 5post-gate.x5.ru
+- name: 🇷🇺 [G] [TG] тлс✅ 🌐 Россия Белые списки 👥 22
+  type: vless
+  server: 178.72.182.23
+  port: 52006
+  uuid: 75807638-6f19-07d0-ae08-38492ee85c88
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: cl-ru-1.edgeflux.ru
+  client-fingerprint: chrome
+proxy-groups:
+- name: 🚀 Авто (лучший)
+  type: url-test
+  proxies:
+  - 🇷🇺 [G] [TG] 🌐Россия Белые списки 👥 1
+  - 🇷🇺 [G] [TG] тлс✅ 👥 2
+  - 🇷🇺 [G] 🌐 Россия Белые списки 3
+  - 🇷🇺 [G] [TG] 🌐Россия Белые списки 4
+  - 🇷🇺 [G] 🌐Россия Белые списки 5
+  - 🇷🇺 [G] 🌐Россия Белые списки 6
+  - 🇷🇺 [G] [TG] тлс✅ 🌐 Польша Белые списки 👥 7
+  - 🇷🇺 [G] [TG] тлс✅ 🌐Россия Белые списки 👥 8
+  - 🇷🇺 [G] [TG] 🌐Россия Белые списки 👥 9
+  - 🇩🇪 [G] [TG] тлс✅ Германия 🌐 [🏳️LTE 👥 10
+  - 🇷🇺 [G] [TG] тлс✅ 💦 11
+  - 🇷🇺 [G] [TG] тлс✅ 🌐 Россия Белые списки 👥 12
+  - 🇷🇺 [G] [TG] тлс✅ 🌐Россия Белые списки 👥 13
+  - 🇷🇺 [G] [TG] 14
+  - 🇫🇷 [G] [TG] 🌐 [IPv6] [*CIDR] 15
+  - 🇷🇺 [G] [TG] тлс✅ 🌐 Россия Белые списки 👥 16
+  - 🇷🇺 🌐Россия Белые списки 👥 17
+  - 🇷🇺 [G] [TG] тлс✅ 🌐 Россия Белые списки 👥 18
+  - 🇷🇺 [G] [TG] 🌐 Германия Белые списки 19
+  - 🇰🇿 [G] [TG] [*CIDR] 20
+  - 🇷🇺 [G] [TG] 🌐Россия Белые списки 21
+  - 🇷🇺 [G] [TG] тлс✅ 🌐 Россия Белые списки 👥 22
+  url: https://www.gstatic.com/generate_204
+  interval: 60
+  tolerance: 80
+- name: PROXY
+  type: select
+  proxies:
+  - 🚀 Авто (лучший)
+  - 🇷🇺 [G] [TG] 🌐Россия Белые списки 👥 1
+  - 🇷🇺 [G] [TG] тлс✅ 👥 2
+  - 🇷🇺 [G] 🌐 Россия Белые списки 3
+  - 🇷🇺 [G] [TG] 🌐Россия Белые списки 4
+  - 🇷🇺 [G] 🌐Россия Белые списки 5
+  - 🇷🇺 [G] 🌐Россия Белые списки 6
+  - 🇷🇺 [G] [TG] тлс✅ 🌐 Польша Белые списки 👥 7
+  - 🇷🇺 [G] [TG] тлс✅ 🌐Россия Белые списки 👥 8
+  - 🇷🇺 [G] [TG] 🌐Россия Белые списки 👥 9
+  - 🇩🇪 [G] [TG] тлс✅ Германия 🌐 [🏳️LTE 👥 10
+  - 🇷🇺 [G] [TG] тлс✅ 💦 11
+  - 🇷🇺 [G] [TG] тлс✅ 🌐 Россия Белые списки 👥 12
+  - 🇷🇺 [G] [TG] тлс✅ 🌐Россия Белые списки 👥 13
+  - 🇷🇺 [G] [TG] 14
+  - 🇫🇷 [G] [TG] 🌐 [IPv6] [*CIDR] 15
+  - 🇷🇺 [G] [TG] тлс✅ 🌐 Россия Белые списки 👥 16
+  - 🇷🇺 🌐Россия Белые списки 👥 17
+  - 🇷🇺 [G] [TG] тлс✅ 🌐 Россия Белые списки 👥 18
+  - 🇷🇺 [G] [TG] 🌐 Германия Белые списки 19
+  - 🇰🇿 [G] [TG] [*CIDR] 20
+  - 🇷🇺 [G] [TG] 🌐Россия Белые списки 21
+  - 🇷🇺 [G] [TG] тлс✅ 🌐 Россия Белые списки 👥 22
+rules:
+- MATCH,PROXY
