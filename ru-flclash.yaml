@@ -3,260 +3,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇺 [G] 👥 1
-  type: vless
-  server: 5.188.224.73
-  port: 2083
-  uuid: 054a13cb-47a2-41f1-8010-1ad46c67df3d
-  udp: true
-  network: grpc
-  tls: true
-  servername: ir.ozone.ru
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: J6NuOlIq3ypdTFc1TMhDDKmF8BWPnNWZq1EkxD7K-lQ
-    short-id: 6da16b1335651b38
-  grpc-opts:
-    grpc-service-name: UpdateService
-- name: 🇷🇺 [G] [TG] 2
-  type: vless
-  server: 185.147.27.26
-  port: 443
-  uuid: 3dae19c4-f3d1-4dab-9bb2-1d0121813f52
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: ru.maxonelove.com
-  client-fingerprint: qq
-  reality-opts:
-    public-key: bqoZnQgCG5B4vLKc-mgL-CHRI06Q0H1bv9zBcpo9zjE
-    short-id: '825867'
-- name: 🇷🇺 [G] [*CIDR] 👥 3
-  type: vless
-  server: 5.188.224.84
-  port: 2083
-  uuid: d06bd338-23a5-4cb1-bfe2-d78bb3f4c909
-  udp: true
-  network: grpc
-  tls: true
-  servername: ir.ozone.ru
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: J6NuOlIq3ypdTFc1TMhDDKmF8BWPnNWZq1EkxD7K-lQ
-    short-id: 6da16b1335651b38
-  grpc-opts:
-    grpc-service-name: UpdateService
-- name: 🇷🇺 [G] 👥 4
-  type: vless
-  server: 5.188.224.137
-  port: 2083
-  uuid: 09120795-6ba9-447e-931f-b02c712abf6a
-  udp: true
-  network: grpc
-  tls: true
-  servername: ir.ozone.ru
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: J6NuOlIq3ypdTFc1TMhDDKmF8BWPnNWZq1EkxD7K-lQ
-    short-id: 6da16b1335651b38
-  grpc-opts:
-    grpc-service-name: UpdateService
-- name: 🇷🇺 [G] [TG] 5
-  type: vless
-  server: 95.163.214.212
-  port: 443
-  uuid: cf5718f5-c0f3-4b63-8fbf-1de69c1299c5
-  udp: true
-  network: grpc
-  tls: true
-  servername: viennaairport
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: qB_eMu3ZO_wGITnyIqJ7Kt39-h9oHFnHlQQEqA-r3VA
-    short-id: ''
-  grpc-opts:
-    grpc-service-name: grpc
-- name: 🇷🇺 [G] [*CIDR] 👥 6
-  type: vless
-  server: 51.250.14.155
-  port: 446
-  uuid: 6a17d3c4-d673-4bf1-8306-1e997f9a49f7
-  udp: true
-  network: grpc
-  tls: true
-  servername: ads.x5.ru
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 97EIz0OGtAEOcDYuVfjqQqjwWKsy-MXf5PsiLAY4y28
-    short-id: 0512557389abcdef
-  grpc-opts:
-    grpc-service-name: ads.x5.ru
-- name: 🇷🇺 [G] [TG] тлс✅ 🌐 Россия Белые списки 👥 7
-  type: vless
-  server: 178.72.182.32
-  port: 52006
-  uuid: 75807638-6f19-07d0-ae08-38492ee85c88
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: cl-ru-1.edgeflux.ru
-  client-fingerprint: chrome
-- name: 🇷🇺 [G] [*CIDR] 👥 8
-  type: vless
-  server: 51.250.14.155
-  port: 444
-  uuid: 6a17d3c4-d673-4bf1-8306-1e997f9a49f7
-  udp: true
-  network: grpc
-  tls: true
-  servername: ads.x5.ru
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: A9vakvWIdkK56iqCw0A3TscILvUpGicItxIp7Gc28BU
-    short-id: 0614355789abcdef
-  grpc-opts:
-    grpc-service-name: ads.x5.ru
-- name: 🇷🇺 [G] [TG] тлс✅ 🌐 Россия Белые списки 👥 9
-  type: vless
-  server: 178.72.182.13
-  port: 52006
-  uuid: 75807638-6f19-07d0-ae08-38492ee85c88
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: cl-ru-1.edgeflux.ru
-  client-fingerprint: chrome
-- name: 🇷🇺 [G] [TG] тлс✅ 🌐 Россия Белые списки 👥 10
-  type: vless
-  server: 178.72.182.29
-  port: 52006
-  uuid: 75807638-6f19-07d0-ae08-38492ee85c88
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: cl-ru-1.edgeflux.ru
-  client-fingerprint: chrome
-- name: 🇷🇺 [G] [TG] тлс✅ 🌐Россия Белые списки 👥 11
-  type: vless
-  server: 178.72.182.38
-  port: 52006
-  uuid: 75807638-6f19-07d0-ae08-38492ee85c88
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: cl-ru-1.edgeflux.ru
-  client-fingerprint: chrome
-- name: 🇷🇺 [G] [*CIDR] 👥 12
-  type: vless
-  server: 5.188.224.166
-  port: 2083
-  uuid: 09120795-6ba9-447e-931f-b02c712abf6a
-  udp: true
-  network: grpc
-  tls: true
-  servername: ir.ozone.ru
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: J6NuOlIq3ypdTFc1TMhDDKmF8BWPnNWZq1EkxD7K-lQ
-    short-id: 6da16b1335651b38
-  grpc-opts:
-    grpc-service-name: UpdateService
-- name: 🇷🇺 [G] [TG] тлс✅ 🌐 Россия Белые списки 👥 13
-  type: vless
-  server: 178.72.182.23
-  port: 52006
-  uuid: 75807638-6f19-07d0-ae08-38492ee85c88
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: cl-ru-1.edgeflux.ru
-  client-fingerprint: chrome
-- name: 🇷🇺 [G] [TG] тлс✅ 🌐 Россия Белые списки 👥 14
-  type: vless
-  server: 178.72.182.20
-  port: 52006
-  uuid: 75807638-6f19-07d0-ae08-38492ee85c88
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: cl-ru-1.edgeflux.ru
-  client-fingerprint: chrome
-- name: 🇷🇺 [G] [*CIDR] 👥 15
-  type: vless
-  server: 5.188.224.136
-  port: 2083
-  uuid: 10cc1052-15de-4a66-b8bb-d62ef8b7f956
-  udp: true
-  network: grpc
-  tls: true
-  servername: ir.ozone.ru
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: J6NuOlIq3ypdTFc1TMhDDKmF8BWPnNWZq1EkxD7K-lQ
-    short-id: 6da16b1335651b38
-  grpc-opts:
-    grpc-service-name: UpdateService
-- name: 🇷🇺 [G] [TG] 🌐 [IPv6] [*CIDR] 16
-  type: vless
-  server: 87.249.53.89
-  port: 443
-  uuid: d428091c-e6eb-48f9-9a07-b44eb886ac90
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: mydogcollections.com
-  client-fingerprint: random
-  reality-opts:
-    public-key: RsG53RnTZKpPwbKt0mnj3963DinwNFHpk3eWaHH6oG4
-    short-id: '653253254366'
-- name: 🇷🇺 [G] [TG] тлс✅ 🌐 Польша Белые списки 👥 17
-  type: vless
-  server: 178.72.182.39
-  port: 52006
-  uuid: 75807638-6f19-2710-ae08-38492ee85c88
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: cl-de-1.edgeflux.ru
-  client-fingerprint: chrome
-- name: 🇷🇺 18
-  type: vless
-  server: 45.84.224.177
-  port: 443
-  uuid: 4d06f190-266c-4b50-b334-11f374513d10
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: google.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: rycCAWk9gOJmQYOqyAi6USUrOQCyRAHQ2AAz-atwrF8
-    short-id: ''
-- name: 🇷🇺 [G] [TG] 🌐 [IPv6] [*CIDR] 19
-  type: vless
-  server: 217.18.61.215
-  port: 443
-  uuid: d428091c-e6eb-48f9-9a07-b44eb886ac90
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: mydogcollections.com
-  client-fingerprint: random
-  reality-opts:
-    public-key: RsG53RnTZKpPwbKt0mnj3963DinwNFHpk3eWaHH6oG4
-    short-id: '653253254366'
-- name: 🇷🇺 [G] [TG] 20
+- name: 🇷🇺 [G] [TG] 1
   type: vless
   server: 194.55.244.186
   port: 443
@@ -270,7 +17,181 @@ proxies:
   reality-opts:
     public-key: bqoZnQgCG5B4vLKc-mgL-CHRI06Q0H1bv9zBcpo9zjE
     short-id: 96962fed
-- name: 🇩🇪 [G] [TG] 21
+- name: 🇷🇺 [G] [*CIDR] 👥 2
+  type: vless
+  server: 5.188.224.84
+  port: 2083
+  uuid: 10cc1052-15de-4a66-b8bb-d62ef8b7f956
+  udp: true
+  network: grpc
+  tls: true
+  servername: ir.ozone.ru
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: J6NuOlIq3ypdTFc1TMhDDKmF8BWPnNWZq1EkxD7K-lQ
+    short-id: 6da16b1335651b38
+  grpc-opts:
+    grpc-service-name: UpdateService
+- name: 🇷🇺 [G] [TG] 3
+  type: vless
+  server: 185.147.27.26
+  port: 443
+  uuid: 3dae19c4-f3d1-4dab-9bb2-1d0121813f52
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: ru.maxonelove.com
+  client-fingerprint: qq
+  reality-opts:
+    public-key: bqoZnQgCG5B4vLKc-mgL-CHRI06Q0H1bv9zBcpo9zjE
+    short-id: '825867'
+- name: 🇷🇺 [G] [TG] тлс✅ 🌐Россия Белые списки 👥 4
+  type: vless
+  server: 178.72.182.38
+  port: 52006
+  uuid: 75807638-6f19-07d0-ae08-38492ee85c88
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: cl-ru-1.edgeflux.ru
+  client-fingerprint: chrome
+- name: 🇷🇺 [G] [TG] тлс✅ 👥 5
+  type: vless
+  server: cl-ru-2.edgeflux.ru
+  port: 52006
+  uuid: 75807638-6f19-07d0-ae08-38492ee85c88
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: cl-ru-2.edgeflux.ru
+  client-fingerprint: chrome
+- name: 🇷🇺 [G] [TG] тлс✅ 🌐 Россия Белые списки 👥 6
+  type: vless
+  server: 178.72.182.13
+  port: 52006
+  uuid: 75807638-6f19-07d0-ae08-38492ee85c88
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: cl-ru-1.edgeflux.ru
+  client-fingerprint: chrome
+- name: 🇷🇺 [G] [TG] тлс✅ 🌐 Россия Белые списки 👥 7
+  type: vless
+  server: 178.72.182.29
+  port: 52006
+  uuid: 75807638-6f19-07d0-ae08-38492ee85c88
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: cl-ru-1.edgeflux.ru
+  client-fingerprint: chrome
+- name: 🇷🇺 [G] 👥 8
+  type: vless
+  server: 5.188.224.136
+  port: 2083
+  uuid: 09120795-6ba9-447e-931f-b02c712abf6a
+  udp: true
+  network: grpc
+  tls: true
+  servername: ir.ozone.ru
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: J6NuOlIq3ypdTFc1TMhDDKmF8BWPnNWZq1EkxD7K-lQ
+    short-id: 6da16b1335651b38
+  grpc-opts:
+    grpc-service-name: UpdateService
+- name: 🇷🇺 [G] [TG] тлс✅ 🌐 Россия Белые списки 👥 9
+  type: vless
+  server: 178.72.182.20
+  port: 52006
+  uuid: 75807638-6f19-07d0-ae08-38492ee85c88
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: cl-ru-1.edgeflux.ru
+  client-fingerprint: chrome
+- name: 🇷🇺 [G] 🌐 [IPv6] [*CIDR] 10
+  type: vless
+  server: 217.18.61.215
+  port: 443
+  uuid: d428091c-e6eb-48f9-9a07-b44eb886ac90
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: mydogcollections.com
+  client-fingerprint: random
+  reality-opts:
+    public-key: RsG53RnTZKpPwbKt0mnj3963DinwNFHpk3eWaHH6oG4
+    short-id: '653253254366'
+- name: 🇷🇺 [G] [TG] тлс✅ 🌐 Россия Белые списки 👥 11
+  type: vless
+  server: 178.72.182.32
+  port: 52006
+  uuid: 75807638-6f19-07d0-ae08-38492ee85c88
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: cl-ru-1.edgeflux.ru
+  client-fingerprint: chrome
+- name: 🇷🇺 [G] тлс✅ 🌐 Россия Белые списки 👥 12
+  type: vless
+  server: 178.72.182.23
+  port: 52006
+  uuid: 75807638-6f19-07d0-ae08-38492ee85c88
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: cl-ru-1.edgeflux.ru
+  client-fingerprint: chrome
+- name: 🇷🇺 [G] [TG] тлс✅ 🌐 Польша Белые списки 👥 13
+  type: vless
+  server: 178.72.182.39
+  port: 52006
+  uuid: 75807638-6f19-2710-ae08-38492ee85c88
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: cl-de-1.edgeflux.ru
+  client-fingerprint: chrome
+- name: 🇷🇺 [G] [TG] 🌐 [IPv6] [*CIDR] 14
+  type: vless
+  server: 87.249.53.89
+  port: 443
+  uuid: d428091c-e6eb-48f9-9a07-b44eb886ac90
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: mydogcollections.com
+  client-fingerprint: random
+  reality-opts:
+    public-key: RsG53RnTZKpPwbKt0mnj3963DinwNFHpk3eWaHH6oG4
+    short-id: '653253254366'
+- name: 🇷🇺 15
+  type: vless
+  server: 45.84.224.177
+  port: 443
+  uuid: 4d06f190-266c-4b50-b334-11f374513d10
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: google.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: rycCAWk9gOJmQYOqyAi6USUrOQCyRAHQ2AAz-atwrF8
+    short-id: ''
+- name: 🇩🇪 [G] [TG] 16
   type: vless
   server: 212.193.24.193
   port: 443
@@ -284,7 +205,35 @@ proxies:
   reality-opts:
     public-key: 9mJq2cP3srX_6K1YfMDp1yndvo5CtgL6TEVQ8tm4fVc
     short-id: ''
-- name: 🇷🇺 [G] [TG] 22
+- name: 🇷🇺 [G] [TG] тлс✅ 💦 17
+  type: vless
+  server: 193.9.49.6
+  port: 443
+  uuid: 3bdade6c-6e5f-4308-9299-87bfe6f01f07
+  udp: true
+  network: ws
+  tls: true
+  servername: M3cz1juSPE5-f-HFtaPxRRS17zQpPw11.SalISA7474-9d1.woRkERs.dEv
+  client-fingerprint: chrome
+  ws-opts:
+    path: /eyJqdW5rIjoidFJGN2RaSWsiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyI0NS42MS4xNjYuMTIxIl19?ed=2560
+    headers:
+      Host: m3cz1juspe5-f-hftapxrrs17zqppw11.salisa7474-9d1.workers.dev
+- name: 🇷🇺 [G] [TG] 👥 18
+  type: vless
+  server: 84.201.134.250
+  port: 443
+  uuid: a74649e5-8019-4a2a-abc9-39ab93fb48a3
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: max.ru
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: rh2IgXc0vtXZ3euLtMP8RUlnmBc_4ftYBuL5Z0udk2A
+    short-id: ''
+- name: 🇷🇺 [G] [TG] 19
   type: vless
   server: 85.239.57.232
   port: 443
@@ -298,22 +247,11 @@ proxies:
   reality-opts:
     public-key: pAM88jLm7lCwGSl9VdizATHzdzlJRwuTlcDyhrfHL2s
     short-id: fd
-- name: 🇩🇪 [G] [TG] тлс✅ Германия 🌐 [🏳️LTE 👥 23
+- name: 🇷🇺 [G] [TG] 👥 20
   type: vless
-  server: cl-de-2.edgeflux.ru
-  port: 52006
-  uuid: 75807638-6f19-01f4-ae08-38492ee85c88
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: cl-de-2.edgeflux.ru
-  client-fingerprint: chrome
-- name: 🇷🇺 [G] [TG] 🌐 [IPv6] [*CIDR] 👥 24
-  type: vless
-  server: 51.250.15.95
-  port: 8443
-  uuid: 7a771ef8-960d-408c-b88a-fafbfe815242
+  server: 84.201.146.248
+  port: 443
+  uuid: a74649e5-8019-4a2a-abc9-39ab93fb48a3
   udp: true
   network: tcp
   tls: true
@@ -321,9 +259,92 @@ proxies:
   servername: max.ru
   client-fingerprint: chrome
   reality-opts:
-    public-key: pTbESwhdAb5h4BeLDXK9DOHfh-FOeJhjrkLn179p-Dc
-    short-id: e311d0
-- name: 🇨🇿 [G] [TG] 25
+    public-key: rh2IgXc0vtXZ3euLtMP8RUlnmBc_4ftYBuL5Z0udk2A
+    short-id: ''
+- name: 🇷🇺 [G] [TG] 🌐Россия Белые списки 👥 21
+  type: vless
+  server: 158.160.156.30
+  port: 9543
+  uuid: ca65e5f6-0661-4f3d-b5aa-6dc90a3dc29e
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: yastatic.net
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: oynLxVmZUC9Aw3r4BaQXH_UAuwDaQHrH10euBHWxID4
+    short-id: c537f9a3
+- name: 🇳🇱 [G] 22
+  type: vless
+  server: 185.244.43.118
+  port: 443
+  uuid: e31a303c-a8f0-4189-9bdf-2312d15253d2
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: www.google.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 9mJq2cP3srX_6K1YfMDp1yndvo5CtgL6TEVQ8tm4fVc
+    short-id: ''
+- name: 🇷🇺 [G] 23
+  type: vless
+  server: 77.73.67.188
+  port: 443
+  uuid: 2d66de0d-d4de-4abd-ab83-ea7d0e9ddea3
+  udp: true
+  network: tcp
+  tls: true
+  servername: 643.ppower.tech
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: vY4iJehqlh0g_7w7XDGTQNVkGJ76rHHGiJgQXuZS_HI
+    short-id: 2329cb0cabca634a
+- name: 🇷🇺 24
+  type: vless
+  server: 51.250.121.83
+  port: 443
+  uuid: a74649e5-8019-4a2a-abc9-39ab93fb48a3
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: max.ru
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: rh2IgXc0vtXZ3euLtMP8RUlnmBc_4ftYBuL5Z0udk2A
+    short-id: ''
+- name: 🇱🇹 [G] [TG] 25
+  type: vless
+  server: 109.248.201.149
+  port: 443
+  uuid: e31a303c-a8f0-4189-9bdf-2312d15253d2
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: www.google.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 9mJq2cP3srX_6K1YfMDp1yndvo5CtgL6TEVQ8tm4fVc
+    short-id: ''
+- name: 🇷🇺 [G] [*CIDR] 26
+  type: vless
+  server: ruytym.shadownet.pro
+  port: 8443
+  uuid: 61bb7c74-09f7-4ab8-b5db-a8bac075884e
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: max.ru
+  client-fingerprint: qq
+  reality-opts:
+    public-key: cUMmNjFNTsCyhcxWNOfBgYBCM_Ywgzt2HlWv85VMYFE
+    short-id: 05f480cb6c69df22
+- name: 🇨🇿 [G] [TG] 27
   type: vless
   server: 83.166.250.44
   port: 443
@@ -338,21 +359,34 @@ proxies:
     short-id: ''
   grpc-opts:
     grpc-service-name: grpc
-- name: 🇱🇹 [G] 26
+- name: 🇷🇺 [G] [TG] 28
   type: vless
-  server: 109.248.201.149
+  server: 109.68.214.122
   port: 443
-  uuid: e31a303c-a8f0-4189-9bdf-2312d15253d2
+  uuid: 2d66de0d-d4de-4abd-ab83-ea7d0e9ddea3
+  udp: true
+  network: tcp
+  tls: true
+  servername: 643.ppower.tech
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: AEOqpfcitp_c7C4i_SnYpuUN5-KtFE7MG2hIso_Xkj8
+    short-id: 44d6f8fa0e4d0125
+- name: 🇩🇪 [G] [*CIDR] 29
+  type: vless
+  server: 89.208.229.107
+  port: 443
+  uuid: 61bb7c74-09f7-4ab8-b5db-a8bac075884e
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: www.google.com
+  servername: max.ru
   client-fingerprint: chrome
   reality-opts:
-    public-key: 9mJq2cP3srX_6K1YfMDp1yndvo5CtgL6TEVQ8tm4fVc
-    short-id: ''
-- name: 🇷🇺 [G] [TG] тлс✅ 👥 27
+    public-key: lwAdXwnwQs9L0FOGVbTbk373EgGE3J5AqTr2J3rNbh0
+    short-id: 89abcdef
+- name: 🇷🇺 [G] [TG] тлс✅ 👥 30
   type: vless
   server: 195.209.88.180
   port: 443
@@ -366,159 +400,21 @@ proxies:
     path: /
     headers:
       Host: s28233.cdn.ngenix.net
-- name: 🇷🇺 [G] [TG] тлс✅ 💦 28
+- name: 🇷🇺 [G] [TG] 👥 31
   type: vless
-  server: 193.9.49.6
+  server: 84.201.150.246
   port: 443
-  uuid: 3bdade6c-6e5f-4308-9299-87bfe6f01f07
-  udp: true
-  network: ws
-  tls: true
-  servername: M3cz1juSPE5-f-HFtaPxRRS17zQpPw11.SalISA7474-9d1.woRkERs.dEv
-  client-fingerprint: chrome
-  ws-opts:
-    path: /eyJqdW5rIjoidFJGN2RaSWsiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyI0NS42MS4xNjYuMTIxIl19?ed=2560
-    headers:
-      Host: m3cz1juspe5-f-hftapxrrs17zqppw11.salisa7474-9d1.workers.dev
-- name: 🇷🇺 [G] 29
-  type: vless
-  server: 109.68.214.122
-  port: 443
-  uuid: 2d66de0d-d4de-4abd-ab83-ea7d0e9ddea3
-  udp: true
-  network: tcp
-  tls: true
-  servername: 643.ppower.tech
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: AEOqpfcitp_c7C4i_SnYpuUN5-KtFE7MG2hIso_Xkj8
-    short-id: 44d6f8fa0e4d0125
-- name: 🇷🇺 [G] [TG] тлс✅ 👥 30
-  type: vless
-  server: cl-ru-2.edgeflux.ru
-  port: 52006
-  uuid: 75807638-6f19-07d0-ae08-38492ee85c88
+  uuid: a74649e5-8019-4a2a-abc9-39ab93fb48a3
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: cl-ru-2.edgeflux.ru
+  servername: max.ru
   client-fingerprint: chrome
-- name: 🇷🇺 [G] [TG] тлс✅ 👥 31
-  type: vless
-  server: 195.209.82.149
-  port: 443
-  uuid: 3563d3aa-007e-Fade-8892-5f4a0dc21145
-  udp: true
-  network: ws
-  tls: true
-  servername: s28233.cdn.ngenix.net
-  client-fingerprint: qq
-  ws-opts:
-    path: /
-    headers:
-      Host: s28233.cdn.ngenix.net
-- name: 🇷🇺 [G] [TG] тлс✅ 👥 32
-  type: vless
-  server: 195.209.88.216
-  port: 443
-  uuid: 1890f74a-423e-Fade-9819-7453c8e5ab06
-  udp: true
-  network: ws
-  tls: true
-  servername: s28233.cdn.ngenix.net
-  client-fingerprint: qq
-  ws-opts:
-    path: /
-    headers:
-      Host: s28233.cdn.ngenix.net
-- name: 🇷🇺 [G] [TG] тлс✅ 👥 33
-  type: vless
-  server: 195.209.90.178
-  port: 443
-  uuid: 7c271a77-b5c3-Fade-b475-45a9faa0879f
-  udp: true
-  network: ws
-  tls: true
-  servername: s28233.cdn.ngenix.net
-  client-fingerprint: qq
-  ws-opts:
-    path: /
-    headers:
-      Host: s28233.cdn.ngenix.net
-- name: 🇩🇪 [G] 🌐 [IPv6] [*CIDR] 34
-  type: vless
-  server: 176.124.211.23
-  port: 8446
-  uuid: 85381812-dad1-4097-910a-be9464e93141
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: jobinvest.ru
-  client-fingerprint: qq
   reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    public-key: rh2IgXc0vtXZ3euLtMP8RUlnmBc_4ftYBuL5Z0udk2A
     short-id: ''
-- name: 🇳🇱 [G] [TG] 35
-  type: vless
-  server: 146.185.243.59
-  port: 443
-  uuid: cf5718f5-c0f3-4b63-8fbf-1de69c1299c5
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: kookas.fi
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: qB_eMu3ZO_wGITnyIqJ7Kt39-h9oHFnHlQQEqA-r3VA
-    short-id: ''
-- name: 🇳🇱 [G] 👥 36
-  type: vless
-  server: 72.56.15.240
-  port: 443
-  uuid: e31a303c-a8f0-4189-9bdf-2312d15253d2
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: www.google.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 9mJq2cP3srX_6K1YfMDp1yndvo5CtgL6TEVQ8tm4fVc
-    short-id: ''
-- name: 🇷🇺 [G] [*CIDR] 👥 37
-  type: vless
-  server: a1.money-cloud.ru
-  port: 444
-  uuid: 6a17d3c4-d673-4bf1-8306-1e997f9a49f7
-  udp: true
-  network: grpc
-  tls: true
-  servername: ads.x5.ru
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: xiOvFspGDufcf37IfC_Ny82NZUPNMEDi6qUwfnQ822I
-    short-id: 0614355789abbdef
-  grpc-opts:
-    grpc-service-name: ads.x5.ru
-- name: 🇷🇺 [G] 🌐Россия Белые списки 👥 38
-  type: vless
-  server: a1.money-cloud.ru
-  port: 446
-  uuid: 6a17d3c4-d673-4bf1-8306-1e997f9a49f7
-  udp: true
-  network: grpc
-  tls: true
-  servername: ads.x5.ru
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: GEDIqxOYjdOtI5zMlsmkGsOfvBttWOeTuUI6yAEzlwg
-    short-id: 0512557389abbdef
-  grpc-opts:
-    grpc-service-name: ads.x5.ru
-- name: 🇷🇺 [G] 👥 39
+- name: 🇷🇺 [G] 👥 32
   type: vless
   server: 72.56.249.174
   port: 443
@@ -532,73 +428,129 @@ proxies:
   reality-opts:
     public-key: 9mJq2cP3srX_6K1YfMDp1yndvo5CtgL6TEVQ8tm4fVc
     short-id: ''
-- name: 🇷🇺 [G] [TG] тлс✅ 🧿81@oneclickvpnkeys 👥 40
+- name: 🇩🇪 [G] [TG] тлс✅ Германия 🌐 [🏳️LTE 👥 33
   type: vless
-  server: 178.72.181.18
+  server: cl-de-2.edgeflux.ru
   port: 52006
-  uuid: 75807638-6f19-03e8-ae08-38492ee85c88
+  uuid: 75807638-6f19-01f4-ae08-38492ee85c88
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: 178.72.181.18
+  servername: cl-de-2.edgeflux.ru
   client-fingerprint: chrome
-- name: 🇷🇺 [G] [TG] тлс✅ 🌐 Финляндия Белые списки 41
+- name: 🇷🇺 [G] тлс✅ 👥 34
   type: vless
-  server: 82.202.197.2
-  port: 52006
-  uuid: 75807638-6f19-0bb8-ae08-38492ee85c88
+  server: 195.209.82.149
+  port: 443
+  uuid: bf969a17-0542-Fade-9d52-879b44ffa8ba
+  udp: true
+  network: ws
+  tls: true
+  servername: s28233.cdn.ngenix.net
+  client-fingerprint: qq
+  ws-opts:
+    path: /
+    headers:
+      Host: s28233.cdn.ngenix.net
+- name: 🇷🇺 [G] [TG] тлс✅ 👥 35
+  type: vless
+  server: 195.209.88.216
+  port: 443
+  uuid: 1890f74a-423e-Fade-9819-7453c8e5ab06
+  udp: true
+  network: ws
+  tls: true
+  servername: s28233.cdn.ngenix.net
+  client-fingerprint: qq
+  ws-opts:
+    path: /
+    headers:
+      Host: s28233.cdn.ngenix.net
+- name: 🇳🇱 [G] [TG] 👥 36
+  type: vless
+  server: 72.56.15.240
+  port: 443
+  uuid: e31a303c-a8f0-4189-9bdf-2312d15253d2
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: 82.202.197.2
+  servername: www.google.com
   client-fingerprint: chrome
+  reality-opts:
+    public-key: 9mJq2cP3srX_6K1YfMDp1yndvo5CtgL6TEVQ8tm4fVc
+    short-id: ''
+- name: 🇷🇺 — 👥 37
+  type: vless
+  server: 5.188.114.71
+  port: 443
+  uuid: f8c1bbb1-8321-41f3-ad38-7a40f9e0b6a0
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: cdn1.s3-rus.ru
+  client-fingerprint: edge
+  reality-opts:
+    public-key: 04ldY404vmp-rpwOyK6wNxwFvWOdhxce_gIcHt5T2A4
+    short-id: de91bc568dad8f58
+- name: 🇷🇺 [G] [TG] тлс✅ 👥 38
+  type: vless
+  server: 195.209.90.178
+  port: 443
+  uuid: 7c271a77-b5c3-Fade-b475-45a9faa0879f
+  udp: true
+  network: ws
+  tls: true
+  servername: s28233.cdn.ngenix.net
+  client-fingerprint: qq
+  ws-opts:
+    path: /
+    headers:
+      Host: s28233.cdn.ngenix.net
 proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - 🇷🇺 [G] 👥 1
-  - 🇷🇺 [G] [TG] 2
-  - 🇷🇺 [G] [*CIDR] 👥 3
-  - 🇷🇺 [G] 👥 4
-  - 🇷🇺 [G] [TG] 5
-  - 🇷🇺 [G] [*CIDR] 👥 6
+  - 🇷🇺 [G] [TG] 1
+  - 🇷🇺 [G] [*CIDR] 👥 2
+  - 🇷🇺 [G] [TG] 3
+  - 🇷🇺 [G] [TG] тлс✅ 🌐Россия Белые списки 👥 4
+  - 🇷🇺 [G] [TG] тлс✅ 👥 5
+  - 🇷🇺 [G] [TG] тлс✅ 🌐 Россия Белые списки 👥 6
   - 🇷🇺 [G] [TG] тлс✅ 🌐 Россия Белые списки 👥 7
-  - 🇷🇺 [G] [*CIDR] 👥 8
+  - 🇷🇺 [G] 👥 8
   - 🇷🇺 [G] [TG] тлс✅ 🌐 Россия Белые списки 👥 9
-  - 🇷🇺 [G] [TG] тлс✅ 🌐 Россия Белые списки 👥 10
-  - 🇷🇺 [G] [TG] тлс✅ 🌐Россия Белые списки 👥 11
-  - 🇷🇺 [G] [*CIDR] 👥 12
-  - 🇷🇺 [G] [TG] тлс✅ 🌐 Россия Белые списки 👥 13
-  - 🇷🇺 [G] [TG] тлс✅ 🌐 Россия Белые списки 👥 14
-  - 🇷🇺 [G] [*CIDR] 👥 15
-  - 🇷🇺 [G] [TG] 🌐 [IPv6] [*CIDR] 16
-  - 🇷🇺 [G] [TG] тлс✅ 🌐 Польша Белые списки 👥 17
-  - 🇷🇺 18
-  - 🇷🇺 [G] [TG] 🌐 [IPv6] [*CIDR] 19
-  - 🇷🇺 [G] [TG] 20
-  - 🇩🇪 [G] [TG] 21
-  - 🇷🇺 [G] [TG] 22
-  - 🇩🇪 [G] [TG] тлс✅ Германия 🌐 [🏳️LTE 👥 23
-  - 🇷🇺 [G] [TG] 🌐 [IPv6] [*CIDR] 👥 24
-  - 🇨🇿 [G] [TG] 25
-  - 🇱🇹 [G] 26
-  - 🇷🇺 [G] [TG] тлс✅ 👥 27
-  - 🇷🇺 [G] [TG] тлс✅ 💦 28
-  - 🇷🇺 [G] 29
+  - 🇷🇺 [G] 🌐 [IPv6] [*CIDR] 10
+  - 🇷🇺 [G] [TG] тлс✅ 🌐 Россия Белые списки 👥 11
+  - 🇷🇺 [G] тлс✅ 🌐 Россия Белые списки 👥 12
+  - 🇷🇺 [G] [TG] тлс✅ 🌐 Польша Белые списки 👥 13
+  - 🇷🇺 [G] [TG] 🌐 [IPv6] [*CIDR] 14
+  - 🇷🇺 15
+  - 🇩🇪 [G] [TG] 16
+  - 🇷🇺 [G] [TG] тлс✅ 💦 17
+  - 🇷🇺 [G] [TG] 👥 18
+  - 🇷🇺 [G] [TG] 19
+  - 🇷🇺 [G] [TG] 👥 20
+  - 🇷🇺 [G] [TG] 🌐Россия Белые списки 👥 21
+  - 🇳🇱 [G] 22
+  - 🇷🇺 [G] 23
+  - 🇷🇺 24
+  - 🇱🇹 [G] [TG] 25
+  - 🇷🇺 [G] [*CIDR] 26
+  - 🇨🇿 [G] [TG] 27
+  - 🇷🇺 [G] [TG] 28
+  - 🇩🇪 [G] [*CIDR] 29
   - 🇷🇺 [G] [TG] тлс✅ 👥 30
-  - 🇷🇺 [G] [TG] тлс✅ 👥 31
-  - 🇷🇺 [G] [TG] тлс✅ 👥 32
-  - 🇷🇺 [G] [TG] тлс✅ 👥 33
-  - 🇩🇪 [G] 🌐 [IPv6] [*CIDR] 34
-  - 🇳🇱 [G] [TG] 35
-  - 🇳🇱 [G] 👥 36
-  - 🇷🇺 [G] [*CIDR] 👥 37
-  - 🇷🇺 [G] 🌐Россия Белые списки 👥 38
-  - 🇷🇺 [G] 👥 39
-  - 🇷🇺 [G] [TG] тлс✅ 🧿81@oneclickvpnkeys 👥 40
-  - 🇷🇺 [G] [TG] тлс✅ 🌐 Финляндия Белые списки 41
+  - 🇷🇺 [G] [TG] 👥 31
+  - 🇷🇺 [G] 👥 32
+  - 🇩🇪 [G] [TG] тлс✅ Германия 🌐 [🏳️LTE 👥 33
+  - 🇷🇺 [G] тлс✅ 👥 34
+  - 🇷🇺 [G] [TG] тлс✅ 👥 35
+  - 🇳🇱 [G] [TG] 👥 36
+  - 🇷🇺 — 👥 37
+  - 🇷🇺 [G] [TG] тлс✅ 👥 38
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -606,46 +558,43 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 Авто (лучший)
-  - 🇷🇺 [G] 👥 1
-  - 🇷🇺 [G] [TG] 2
-  - 🇷🇺 [G] [*CIDR] 👥 3
-  - 🇷🇺 [G] 👥 4
-  - 🇷🇺 [G] [TG] 5
-  - 🇷🇺 [G] [*CIDR] 👥 6
+  - 🇷🇺 [G] [TG] 1
+  - 🇷🇺 [G] [*CIDR] 👥 2
+  - 🇷🇺 [G] [TG] 3
+  - 🇷🇺 [G] [TG] тлс✅ 🌐Россия Белые списки 👥 4
+  - 🇷🇺 [G] [TG] тлс✅ 👥 5
+  - 🇷🇺 [G] [TG] тлс✅ 🌐 Россия Белые списки 👥 6
   - 🇷🇺 [G] [TG] тлс✅ 🌐 Россия Белые списки 👥 7
-  - 🇷🇺 [G] [*CIDR] 👥 8
+  - 🇷🇺 [G] 👥 8
   - 🇷🇺 [G] [TG] тлс✅ 🌐 Россия Белые списки 👥 9
-  - 🇷🇺 [G] [TG] тлс✅ 🌐 Россия Белые списки 👥 10
-  - 🇷🇺 [G] [TG] тлс✅ 🌐Россия Белые списки 👥 11
-  - 🇷🇺 [G] [*CIDR] 👥 12
-  - 🇷🇺 [G] [TG] тлс✅ 🌐 Россия Белые списки 👥 13
-  - 🇷🇺 [G] [TG] тлс✅ 🌐 Россия Белые списки 👥 14
-  - 🇷🇺 [G] [*CIDR] 👥 15
-  - 🇷🇺 [G] [TG] 🌐 [IPv6] [*CIDR] 16
-  - 🇷🇺 [G] [TG] тлс✅ 🌐 Польша Белые списки 👥 17
-  - 🇷🇺 18
-  - 🇷🇺 [G] [TG] 🌐 [IPv6] [*CIDR] 19
-  - 🇷🇺 [G] [TG] 20
-  - 🇩🇪 [G] [TG] 21
-  - 🇷🇺 [G] [TG] 22
-  - 🇩🇪 [G] [TG] тлс✅ Германия 🌐 [🏳️LTE 👥 23
-  - 🇷🇺 [G] [TG] 🌐 [IPv6] [*CIDR] 👥 24
-  - 🇨🇿 [G] [TG] 25
-  - 🇱🇹 [G] 26
-  - 🇷🇺 [G] [TG] тлс✅ 👥 27
-  - 🇷🇺 [G] [TG] тлс✅ 💦 28
-  - 🇷🇺 [G] 29
+  - 🇷🇺 [G] 🌐 [IPv6] [*CIDR] 10
+  - 🇷🇺 [G] [TG] тлс✅ 🌐 Россия Белые списки 👥 11
+  - 🇷🇺 [G] тлс✅ 🌐 Россия Белые списки 👥 12
+  - 🇷🇺 [G] [TG] тлс✅ 🌐 Польша Белые списки 👥 13
+  - 🇷🇺 [G] [TG] 🌐 [IPv6] [*CIDR] 14
+  - 🇷🇺 15
+  - 🇩🇪 [G] [TG] 16
+  - 🇷🇺 [G] [TG] тлс✅ 💦 17
+  - 🇷🇺 [G] [TG] 👥 18
+  - 🇷🇺 [G] [TG] 19
+  - 🇷🇺 [G] [TG] 👥 20
+  - 🇷🇺 [G] [TG] 🌐Россия Белые списки 👥 21
+  - 🇳🇱 [G] 22
+  - 🇷🇺 [G] 23
+  - 🇷🇺 24
+  - 🇱🇹 [G] [TG] 25
+  - 🇷🇺 [G] [*CIDR] 26
+  - 🇨🇿 [G] [TG] 27
+  - 🇷🇺 [G] [TG] 28
+  - 🇩🇪 [G] [*CIDR] 29
   - 🇷🇺 [G] [TG] тлс✅ 👥 30
-  - 🇷🇺 [G] [TG] тлс✅ 👥 31
-  - 🇷🇺 [G] [TG] тлс✅ 👥 32
-  - 🇷🇺 [G] [TG] тлс✅ 👥 33
-  - 🇩🇪 [G] 🌐 [IPv6] [*CIDR] 34
-  - 🇳🇱 [G] [TG] 35
-  - 🇳🇱 [G] 👥 36
-  - 🇷🇺 [G] [*CIDR] 👥 37
-  - 🇷🇺 [G] 🌐Россия Белые списки 👥 38
-  - 🇷🇺 [G] 👥 39
-  - 🇷🇺 [G] [TG] тлс✅ 🧿81@oneclickvpnkeys 👥 40
-  - 🇷🇺 [G] [TG] тлс✅ 🌐 Финляндия Белые списки 41
+  - 🇷🇺 [G] [TG] 👥 31
+  - 🇷🇺 [G] 👥 32
+  - 🇩🇪 [G] [TG] тлс✅ Германия 🌐 [🏳️LTE 👥 33
+  - 🇷🇺 [G] тлс✅ 👥 34
+  - 🇷🇺 [G] [TG] тлс✅ 👥 35
+  - 🇳🇱 [G] [TG] 👥 36
+  - 🇷🇺 — 👥 37
+  - 🇷🇺 [G] [TG] тлс✅ 👥 38
 rules:
 - MATCH,PROXY
