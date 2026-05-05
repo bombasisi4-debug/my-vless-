@@ -46,28 +46,6 @@
     {
       "type": "vless",
       "tag": "🇫🇮 [G] [TG] 2",
-      "server": "2.27.31.68",
-      "server_port": 443,
-      "uuid": "e1a36afa-775b-472d-90dd-ee19d5f7eaa4",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "vk.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "vE113ytfg2fUQhXxEq8Ypj_CDV0G8QRTZcyBjk5FA2Q",
-          "short_id": "c313813144"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 [G] [TG] 3",
       "server": "185.231.206.210",
       "server_port": 443,
       "uuid": "cf5718f5-c0f3-4b63-8fbf-1de69c1299c5",
@@ -92,48 +70,57 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 [G] [TG] [BL] 👥 4",
-      "server": "45.138.16.62",
-      "server_port": 39800,
-      "uuid": "8f59feef-aab9-4e0b-924c-2a31bb8f446f",
+      "tag": "🇳🇱 [G] [TG] [*CIDR] 👥 3",
+      "server": "144.31.24.85",
+      "server_port": 8443,
+      "uuid": "f6f693a1-4cfa-40ec-857b-41b554261706",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "apple.com",
+        "server_name": "ads.x5.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
-          "public_key": "bpHDYJWkA0h_nOqRBLUbuJJXfqmIZIMGcv07zcFpdCs",
-          "short_id": "dc27d60c096413b5"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 [G] [TG] тлс✅ 🌐 [IPv6] [BL] 👥 5",
-      "server": "95.85.246.16.speed-storage.ru",
-      "server_port": 573,
-      "uuid": "832f76f8-fca3-4efa-80be-870e123ad764",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "95.85.246.16.speed-storage.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
+          "public_key": "wSQIBnAc0cYO9JitaNcgZ2LwkTix0_dXVpDjnZxDrCE",
+          "short_id": ""
         }
       },
       "transport": {
         "type": "grpc",
-        "service_name": "/sequre/grpc/"
+        "service_name": "xyz"
       }
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 [G] [TG] 👥 6",
+      "tag": "🇦🇱 [G] [TG] 🌐 [IPv6] [*CIDR] 👥 4",
+      "server": "144.31.131.37",
+      "server_port": 443,
+      "uuid": "d428091c-e6eb-48f9-9a07-b44eb886ac90",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ads.x5.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "8mILUX8PYFzZi2l9hmzKFMshhRRoahjwktbYHgL7WRk",
+          "short_id": "6347547485"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": ""
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 [G] [TG] 👥 5",
       "server": "144.31.233.236",
       "server_port": 7443,
       "uuid": "b54d36d1-43c3-4b8f-a5f8-cf6504db0562",
@@ -158,22 +145,252 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 [G] [TG] [BL] 👥 7",
-      "server": "45.138.16.62",
-      "server_port": 30047,
-      "uuid": "8f59feef-aab9-4e0b-924c-2a31bb8f446f",
+      "tag": "🇩🇪 [G] [TG] 6",
+      "server": "153.76.112.209",
+      "server_port": 7443,
+      "uuid": "9c1d1c98-697d-4565-8a27-c15e17152ace",
       "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "45.138.16.62"
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "chat.deepseek.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI",
+          "short_id": "be0ce047"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 [G] [TG] [*CIDR] 👥 8",
+      "tag": "🇵🇱 [G] [TG] 👥 7",
+      "server": "144.31.5.46",
+      "server_port": 443,
+      "uuid": "3dae19c4-f3d1-4dab-9bb2-1d0121813f52",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl.maxonelove.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "o_ZQuEx_ealt_YkqgtYRqFhee0pzFkg9ObUhODLTAB8",
+          "short_id": "1f7854fbfe"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇻 [G] [TG] 🌐 [IPv6] [*CIDR] 8",
+      "server": "104.165.205.238",
+      "server_port": 443,
+      "uuid": "c476ac5f-07af-4346-8c42-6fd377a345f7",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "g7.steptofreedom.one",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ivgTfLR13A6xBsicIA28OPoav2tXlsstTTmGuETfnSk",
+          "short_id": "6d6f13013d3e1d0c"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 [G] [TG] 9",
+      "server": "153.76.112.247",
+      "server_port": 7443,
+      "uuid": "9c1d1c98-697d-4565-8a27-c15e17152ace",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "chat.deepseek.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI",
+          "short_id": "d82fb387"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 [G] [TG] 10",
+      "server": "2.27.31.68",
+      "server_port": 443,
+      "uuid": "e1a36afa-775b-472d-90dd-ee19d5f7eaa4",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "vk.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "vE113ytfg2fUQhXxEq8Ypj_CDV0G8QRTZcyBjk5FA2Q",
+          "short_id": "c313813144"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 [G] [TG] 11",
+      "server": "5.231.17.130",
+      "server_port": 52006,
+      "uuid": "3dae19c4-f3d1-4dab-9bb2-1d0121813f52",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "api.vk-maps.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "o_ZQuEx_ealt_YkqgtYRqFhee0pzFkg9ObUhODLTAB8",
+          "short_id": "c05d4c564d2bcd"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 [G] [TG] 🏳️ 👥 12",
+      "server": "138.124.32.76",
+      "server_port": 443,
+      "uuid": "4b481152-ba7f-4445-8cc0-d33d58546e23",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "tradingview.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw",
+          "short_id": "50"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 [G] [TG] 👥 13",
+      "server": "144.31.233.236",
+      "server_port": 9443,
+      "uuid": "b54d36d1-43c3-4b8f-a5f8-cf6504db0562",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "MbYR2O0XBSeG74gGYpFIofXsILcf5lG2gc36GyURBXQ",
+          "short_id": "0199436dd359351b"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 [G] [TG] [*CIDR] 14",
+      "server": "cz.money-cloud.ru",
+      "server_port": 444,
+      "uuid": "6a17d3c4-d673-4bf1-8306-1e997f9a49f7",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "web.max.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "VOhUlgnDhzYam9kl7G_VNtnBjkuasi6_u63xvFcV23E",
+          "short_id": "8622956789abcdef"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "web.max.ru"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 [G] [TG] 🏳️ 👥 15",
+      "server": "138.124.32.73",
+      "server_port": 443,
+      "uuid": "4b481152-ba7f-4445-8cc0-d33d58546e23",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "tradingview.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw",
+          "short_id": "50"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 [G] [TG] 16",
+      "server": "89.41.181.62",
+      "server_port": 443,
+      "uuid": "3dae19c4-f3d1-4dab-9bb2-1d0121813f52",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "tradingview.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-AdhgMZeNHR2zAmGWa5peg7Ni0-e4IVMoSzydC9n7C4",
+          "short_id": "28a059440d3d5ba1"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 [G] [TG] [*CIDR] 👥 17",
       "server": "grpc1.pineappled.org",
       "server_port": 2053,
       "uuid": "629d2ccc-3a2a-4dd3-83d2-86b25fc8783e",
@@ -198,146 +415,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 [G] [TG] 👥 9",
-      "server": "144.31.233.236",
-      "server_port": 9443,
-      "uuid": "b54d36d1-43c3-4b8f-a5f8-cf6504db0562",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "MbYR2O0XBSeG74gGYpFIofXsILcf5lG2gc36GyURBXQ",
-          "short_id": "0199436dd359351b"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 [G] [TG] тлс✅ Польша 🌐 🔐 [🏳️LTE 👥 10",
-      "server": "pl74.mechvpn.online",
-      "server_port": 443,
-      "uuid": "6d916d55-fead-4ff3-a3a9-83e175ea8ad7",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl74.mechvpn.online",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 [G] [TG] 👥 11",
-      "server": "144.31.5.46",
-      "server_port": 443,
-      "uuid": "3dae19c4-f3d1-4dab-9bb2-1d0121813f52",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl.maxonelove.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "o_ZQuEx_ealt_YkqgtYRqFhee0pzFkg9ObUhODLTAB8",
-          "short_id": "1f7854fbfe"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 [G] [TG] 🌐 [IPv6] [BL] 👥 12",
-      "server": "95.85.248.67",
-      "server_port": 30086,
-      "uuid": "8f59feef-aab9-4e0b-924c-2a31bb8f446f",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "grpc",
-        "service_name": "gprc"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 [G] [TG] 13",
-      "server": "89.41.181.62",
-      "server_port": 443,
-      "uuid": "3dae19c4-f3d1-4dab-9bb2-1d0121813f52",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "tradingview.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "-AdhgMZeNHR2zAmGWa5peg7Ni0-e4IVMoSzydC9n7C4",
-          "short_id": "28a059440d3d5ba1"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 [G] [TG] [*CIDR] 14",
-      "server": "84.32.103.183",
-      "server_port": 443,
-      "uuid": "7b13eaac-882d-43a0-b19e-6d2e867d624e",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "hcaptcha.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "s7STQtGCpR_y3PeQK0XOLUKEj689oKDy9v9iuxwzRzk",
-          "short_id": "8ac90e6b636226f7"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 [G] [TG] 15",
-      "server": "5.231.17.130",
-      "server_port": 52006,
-      "uuid": "3dae19c4-f3d1-4dab-9bb2-1d0121813f52",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "api.vk-maps.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "o_ZQuEx_ealt_YkqgtYRqFhee0pzFkg9ObUhODLTAB8",
-          "short_id": "c05d4c564d2bcd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 [G] [TG] 16",
+      "tag": "🇬🇧 [G] [TG] 18",
       "server": "107.181.134.248",
       "server_port": 7443,
       "uuid": "9c1d1c98-697d-4565-8a27-c15e17152ace",
@@ -359,28 +437,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 [G] [TG] 🌐Польша Белые списки 👥 17",
-      "server": "45.138.16.62",
-      "server_port": 8443,
-      "uuid": "8f59feef-aab9-4e0b-924c-2a31bb8f446f",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "eh.vk.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "GzQr6fDhigtRAr0n2Y7Nk3snhdytYyOvaYo9zYe1Xn4",
-          "short_id": "b3a1cc510a2001c6"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 [G] [TG] [*CIDR] 👥 18",
+      "tag": "🇩🇪 [G] [TG] [*CIDR] 👥 19",
       "server": "89.106.95.206",
       "server_port": 443,
       "uuid": "629d2ccc-3a2a-4dd3-83d2-86b25fc8783e",
@@ -402,32 +459,29 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇭 [G] [TG] [BL] 19",
-      "server": "179.43.143.138",
+      "tag": "🇩🇪 [G] [TG] 👥 20",
+      "server": "138.124.32.75",
       "server_port": 443,
-      "uuid": "7b13eaac-882d-43a0-b19e-6d2e867d624e",
+      "uuid": "4b481152-ba7f-4445-8cc0-d33d58546e23",
       "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "1c.ru",
+        "server_name": "tradingview.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "h7CCbT_1gwxhQGM-4_pZkNRbAe_I6YFQM6jO9x6uORw",
-          "short_id": ""
+          "public_key": "-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw",
+          "short_id": "50"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": ""
       }
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 [G] [TG] 20",
+      "tag": "🇬🇧 [G] [TG] 21",
       "server": "45.141.118.202",
       "server_port": 7443,
       "uuid": "9c1d1c98-697d-4565-8a27-c15e17152ace",
@@ -449,44 +503,228 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 [G] [TG] 🌐 [IPv6] [BL] 👥 21",
-      "server": "95.85.248.67",
-      "server_port": 30047,
-      "uuid": "8f59feef-aab9-4e0b-924c-2a31bb8f446f",
+      "tag": "🇸🇪 [G] [TG] тлс✅ 🌐 [IPv6] [BL] 22",
+      "server": "95.85.246.16.speed-storage.ru",
+      "server_port": 573,
+      "uuid": "832f76f8-fca3-4efa-80be-870e123ad764",
       "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "95.85.248.67"
+      "tls": {
+        "enabled": true,
+        "server_name": "95.85.246.16.speed-storage.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "/sequre/grpc/"
       }
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 [G] [TG] 🏳️ 👥 22",
-      "server": "138.124.32.76",
-      "server_port": 443,
-      "uuid": "4b481152-ba7f-4445-8cc0-d33d58546e23",
+      "tag": "🇬🇧 [G] [TG] 23",
+      "server": "107.181.134.216",
+      "server_port": 7443,
+      "uuid": "9c1d1c98-697d-4565-8a27-c15e17152ace",
       "packet_encoding": "xudp",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "tradingview.com",
+        "server_name": "chat.deepseek.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw",
-          "short_id": "50"
+          "public_key": "5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI",
+          "short_id": "d82fb387"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 [G] [TG] 23",
+      "tag": "🇧🇸 [G] [TG] Эщкерия 🔐 🥭🔥 24",
+      "server": "62.60.153.179",
+      "server_port": 6444,
+      "uuid": "1f1a6ea7-b2d5-4fd4-be5f-0d8b1317d6b5",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ads.x5.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "FD7YTKH3QSTPqm35DGFG23jJHC_rKo_T2ry7Nitvhjs",
+          "short_id": "c15a7e422151adbc"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 [G] [TG] [*CIDR] 👥 25",
+      "server": "89.106.83.44",
+      "server_port": 443,
+      "uuid": "629d2ccc-3a2a-4dd3-83d2-86b25fc8783e",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "V6FabatADtcX7aO9KMjGCadJC4LuQ_5nRViab-z-nFQ",
+          "short_id": "23"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 [G] [TG] [*CIDR] 👥 26",
+      "server": "89.106.95.203",
+      "server_port": 443,
+      "uuid": "629d2ccc-3a2a-4dd3-83d2-86b25fc8783e",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "V6FabatADtcX7aO9KMjGCadJC4LuQ_5nRViab-z-nFQ",
+          "short_id": "23"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 [G] [TG] 27",
+      "server": "85.155.98.45",
+      "server_port": 7443,
+      "uuid": "9c1d1c98-697d-4565-8a27-c15e17152ace",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "chat.deepseek.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI",
+          "short_id": "d82fb387"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇹 [G] [TG] 🌐Италия Белые списки 28",
+      "server": "italy.money-cloud.ru",
+      "server_port": 444,
+      "uuid": "6a17d3c4-d673-4bf1-8306-1e997f9a49f7",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "web.max.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "jd9qbVNCv_dHvZrTsPEUiyyFdZiSectvF-BQhyv_pDA",
+          "short_id": "8622956789accdef"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "web.max.ru"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 [G] [TG] 🌐Германия Белые списки 👥 29",
+      "server": "germany.pineappled.org",
+      "server_port": 443,
+      "uuid": "629d2ccc-3a2a-4dd3-83d2-86b25fc8783e",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "V6FabatADtcX7aO9KMjGCadJC4LuQ_5nRViab-z-nFQ",
+          "short_id": "23"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 [G] [TG] тлс✅ 30",
+      "server": "15.188.230.176",
+      "server_port": 22224,
+      "uuid": "05519058-d2ac-4f28-9e4a-2b2a1386749e",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan.burgerip.co.uk",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/telegram-channel-vlessconfig",
+        "headers": {
+          "Host": "trojan.burgerip.co.uk"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇭 [G] [TG] 👥 31",
+      "server": "ch2.fastlanehosting.ru",
+      "server_port": 443,
+      "uuid": "c7ba57bf-0418-4b66-89bb-d320b5cdd8e5",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "store.steampowered.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Z--Ieq3GtHx_Qtqj3NUyK5wY2foVBtlOkyzXqESeswU",
+          "short_id": "0c80cc39"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 [G] [TG] 32",
       "server": "185.231.205.80",
       "server_port": 443,
       "uuid": "cf5718f5-c0f3-4b63-8fbf-1de69c1299c5",
@@ -511,180 +749,51 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 [G] [TG] 🌐Германия 👥 24",
-      "server": "polsha.pineappled.org",
+      "tag": "🇵🇱 [G] [TG] 👥 33",
+      "server": "144.31.2.24",
       "server_port": 443,
-      "uuid": "629d2ccc-3a2a-4dd3-83d2-86b25fc8783e",
+      "uuid": "3dae19c4-f3d1-4dab-9bb2-1d0121813f52",
       "packet_encoding": "xudp",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "pl.maxonelove.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
-          "public_key": "V6FabatADtcX7aO9KMjGCadJC4LuQ_5nRViab-z-nFQ",
-          "short_id": "23"
+          "public_key": "o_ZQuEx_ealt_YkqgtYRqFhee0pzFkg9ObUhODLTAB8",
+          "short_id": "1f7854fbfe"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 [G] [TG] [BL] 25",
-      "server": "185.125.203.33",
-      "server_port": 443,
-      "uuid": "b1c72117-f193-47ad-ae96-994e3444a6bf",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "BgDZcLIjx_1FZbLGsaZuu7Pc2dl5OwSd3VErem7ymyA",
-          "short_id": "8c71"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 [G] [TG] 👥 26",
-      "server": "138.124.55.141",
-      "server_port": 443,
-      "uuid": "d789b20d-70b9-498f-a439-1d6ac78b8c5a",
+      "tag": "🇳🇱 [G] [TG] 34",
+      "server": "5.180.97.157",
+      "server_port": 7443,
+      "uuid": "9c1d1c98-697d-4565-8a27-c15e17152ace",
       "packet_encoding": "xudp",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "ya.ru",
+        "server_name": "chat.deepseek.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "Db9LqZCurs0KyNxhW20sBImFIi3-68Am4M_mmgx7EwY",
-          "short_id": "57b212a6a3d23173"
+          "public_key": "5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI",
+          "short_id": "d82fb387"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 [G] [TG] 🌐 [IPv6] [*CIDR] 27",
-      "server": "65.109.211.186",
-      "server_port": 8443,
-      "uuid": "54358dac-e826-4079-92b1-dcc4eeeecc46",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "eh.vk.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "_tBiRkButwPxxa2HHuNufy0Tyr_0SViQZReJT75JVTI",
-          "short_id": "d49d578f280fd83a"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 [G] [TG] [*CIDR] 28",
-      "server": "45.66.163.94",
-      "server_port": 443,
-      "uuid": "3a1bfef6-f94c-4ec5-ba15-409e057326e8",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "eh.vk.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "19Z9Syrik36ltvmS01HL2hsxcPCjlEF16wXWOozJHTU",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 [G] [TG] 🌐 [*CIDR] 👥 29",
-      "server": "94.249.175.39",
-      "server_port": 443,
-      "uuid": "629d2ccc-3a2a-4dd3-83d2-86b25fc8783e",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "V6FabatADtcX7aO9KMjGCadJC4LuQ_5nRViab-z-nFQ",
-          "short_id": "23"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 [G] [TG] 30",
-      "server": "5.180.183.213",
-      "server_port": 443,
-      "uuid": "2d66de0d-d4de-4abd-ab83-ea7d0e9ddea3",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "528.ppower.tech",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Ycq9yvtnxN20x__sBzMdpEvBhO8XdbSYcmWm9v8pcT0",
-          "short_id": "ac8e3caa4f6d77de"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 [G] [TG] — 👥 31",
-      "server": "94.249.175.49",
-      "server_port": 443,
-      "uuid": "629d2ccc-3a2a-4dd3-83d2-86b25fc8783e",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "V6FabatADtcX7aO9KMjGCadJC4LuQ_5nRViab-z-nFQ",
-          "short_id": "23"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 [G] [TG] 32",
+      "tag": "🇳🇱 [G] [TG] 35",
       "server": "89.127.206.169",
       "server_port": 443,
       "uuid": "7fbeb76f-2fa1-4a5a-9f99-4dbfaafb4da2",
@@ -706,8 +815,8 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 [G] [TG] 👥 33",
-      "server": "144.31.214.42",
+      "tag": "🇱🇻 [G] [TG] 👥 36",
+      "server": "150.241.75.136",
       "server_port": 443,
       "uuid": "3dae19c4-f3d1-4dab-9bb2-1d0121813f52",
       "packet_encoding": "xudp",
@@ -717,19 +826,19 @@
         "server_name": "tradingview.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
-          "public_key": "o_ZQuEx_ealt_YkqgtYRqFhee0pzFkg9ObUhODLTAB8",
+          "public_key": "-AdhgMZeNHR2zAmGWa5peg7Ni0-e4IVMoSzydC9n7C4",
           "short_id": "08"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 [G] [TG] 🌐 [*CIDR] 👥 34",
-      "server": "94.249.175.44",
+      "tag": "🇩🇪 [G] [TG] [*CIDR] 👥 37",
+      "server": "89.106.83.59",
       "server_port": 443,
       "uuid": "629d2ccc-3a2a-4dd3-83d2-86b25fc8783e",
       "packet_encoding": "xudp",
@@ -750,50 +859,94 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇭 [G] [TG] 35",
-      "server": "ch2.fastlanehosting.ru",
+      "tag": "🇱🇻 [G] [TG] 👥 38",
+      "server": "150.241.75.135",
       "server_port": 443,
-      "uuid": "c7ba57bf-0418-4b66-89bb-d320b5cdd8e5",
+      "uuid": "3dae19c4-f3d1-4dab-9bb2-1d0121813f52",
       "packet_encoding": "xudp",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "store.steampowered.com",
+        "server_name": "tradingview.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-AdhgMZeNHR2zAmGWa5peg7Ni0-e4IVMoSzydC9n7C4",
+          "short_id": "6a608eaf9117"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 [G] [TG] 🌐Германия 👥 39",
+      "server": "polsha.pineappled.org",
+      "server_port": 443,
+      "uuid": "629d2ccc-3a2a-4dd3-83d2-86b25fc8783e",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "Z--Ieq3GtHx_Qtqj3NUyK5wY2foVBtlOkyzXqESeswU",
-          "short_id": "0c80cc39"
+          "public_key": "V6FabatADtcX7aO9KMjGCadJC4LuQ_5nRViab-z-nFQ",
+          "short_id": "23"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 [G] [TG] [BL] 36",
-      "server": "45.140.204.119",
-      "server_port": 443,
-      "uuid": "30143e07-b734-4bd6-867c-7daf4782cccb",
+      "tag": "🇸🇪 [G] [TG] [*CIDR] 40",
+      "server": "83.219.250.21",
+      "server_port": 1443,
+      "uuid": "3408c68d-927c-418c-95a7-b656b13d54fb",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "yahoo.com",
+        "server_name": "www.vk.ru",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "vl5WQd9UDA3DvLxPPS1yF9ivUipxkxoxhaBRHpnyLho",
-          "short_id": "67fb"
+          "public_key": "MN4phV5ACk88g-otHCgPlIbX-ZqixmCrlaK7AMqZ-lM",
+          "short_id": "7e47f59c"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 [G] [TG] 🌐 [*CIDR] 👥 37",
+      "tag": "🇳🇱 [G] [TG] 🌐 [*CIDR] 👥 41",
+      "server": "94.249.175.39",
+      "server_port": 443,
+      "uuid": "629d2ccc-3a2a-4dd3-83d2-86b25fc8783e",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "V6FabatADtcX7aO9KMjGCadJC4LuQ_5nRViab-z-nFQ",
+          "short_id": "23"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 [G] [TG] 🌐 [*CIDR] 👥 42",
       "server": "94.249.175.54",
       "server_port": 443,
       "uuid": "629d2ccc-3a2a-4dd3-83d2-86b25fc8783e",
@@ -815,10 +968,32 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 [G] [TG] 🏳️ 👥 38",
-      "server": "138.124.32.73",
+      "tag": "🇱🇻 [G] [TG] 👥 43",
+      "server": "150.241.75.138",
       "server_port": 443,
-      "uuid": "4b481152-ba7f-4445-8cc0-d33d58546e23",
+      "uuid": "3dae19c4-f3d1-4dab-9bb2-1d0121813f52",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "tradingview.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-AdhgMZeNHR2zAmGWa5peg7Ni0-e4IVMoSzydC9n7C4",
+          "short_id": "825867"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 [G] [TG] 👥 44",
+      "server": "144.31.214.42",
+      "server_port": 443,
+      "uuid": "3dae19c4-f3d1-4dab-9bb2-1d0121813f52",
       "packet_encoding": "xudp",
       "flow": "xtls-rprx-vision",
       "tls": {
@@ -830,14 +1005,58 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw",
-          "short_id": "50"
+          "public_key": "o_ZQuEx_ealt_YkqgtYRqFhee0pzFkg9ObUhODLTAB8",
+          "short_id": "08"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇦🇹 [G] [TG] 39",
+      "tag": "🇳🇱 [G] [TG] 🌐 [*CIDR] 👥 45",
+      "server": "94.249.175.44",
+      "server_port": 443,
+      "uuid": "629d2ccc-3a2a-4dd3-83d2-86b25fc8783e",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "V6FabatADtcX7aO9KMjGCadJC4LuQ_5nRViab-z-nFQ",
+          "short_id": "23"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 [G] [TG] — 👥 46",
+      "server": "94.249.175.49",
+      "server_port": 443,
+      "uuid": "629d2ccc-3a2a-4dd3-83d2-86b25fc8783e",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "V6FabatADtcX7aO9KMjGCadJC4LuQ_5nRViab-z-nFQ",
+          "short_id": "23"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇹 [G] [TG] 47",
       "server": "152.53.45.25",
       "server_port": 7443,
       "uuid": "9c1d1c98-697d-4565-8a27-c15e17152ace",
@@ -859,14 +1078,35 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 [G] [TG] тлс✅ 🌐 [IPv6] [*CIDR] 40",
-      "server": "80.74.25.46",
+      "tag": "🇳🇱 [G] [TG] 48",
+      "server": "5.180.183.213",
       "server_port": 443,
+      "uuid": "2d66de0d-d4de-4abd-ab83-ea7d0e9ddea3",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "528.ppower.tech",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Ycq9yvtnxN20x__sBzMdpEvBhO8XdbSYcmWm9v8pcT0",
+          "short_id": "ac8e3caa4f6d77de"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 [G] [TG] 🌐🌐Anycast 49",
+      "server": "45.61.137.103",
+      "server_port": 8443,
       "uuid": "26524cce-d514-4014-a426-365fb266a14d",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "ynwta9.api-edge.fgfw.qzz.io",
+        "server_name": "jpkbw.storage-api.chinam.indevs.in",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -876,107 +1116,20 @@
         "type": "ws",
         "path": "/danfeng?ed=2560",
         "headers": {
-          "Host": "ynwta9.api-edge.fgfw.qzz.io"
+          "Host": "jpkbw.storage-api.chinam.indevs.in"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 [G] [TG] 41",
-      "server": "v546965.hosted-by-vdsina.com",
-      "server_port": 8443,
-      "uuid": "1cb91b20-49cc-59ff-8393-91808a4deede",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.ozon.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "bVhVy1hZY_iw-sljlaeVbTBBa6SPvMm0Kg0tCC8CKHM",
-          "short_id": "ffffffffff"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 [G] [TG] 🌐 [IPv6] [BL] 42",
-      "server": "ee.keepsecured.net",
+      "tag": "🇸🇬 [G] [TG] тлс✅ 50",
+      "server": "103.90.72.71",
       "server_port": 443,
-      "uuid": "b6ce8a51-19b9-4979-91ba-b4298c26d5fc",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn.kwork.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mAu8QDi3pbmMCFg9kKC-ZBIHdtnXeCuZt3VnAw6vlH4",
-          "short_id": "ad7dab462a323acb"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 [G] [TG] 43",
-      "server": "66.151.40.22",
-      "server_port": 443,
-      "uuid": "7fbeb76f-2fa1-4a5a-9f99-4dbfaafb4da2",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "4v_4RSmE8ztHfQ4EV8Ym6J-6C8ACtYiznTHcdWJw6WA",
-          "short_id": "aabbccdd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 [G] [TG] 🌐 Нидерланды Белые списки 44",
-      "server": "89.125.48.161",
-      "server_port": 443,
-      "uuid": "e69d5f8a-2629-45ac-889b-981983209933",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "PxiVEKI3dp1UpqzpgnD31-Wl4MFiHjTI23ylGFn5Slg",
-          "short_id": "111111"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 [G] [TG] тлс✅ 45",
-      "server": "15.188.230.176",
-      "server_port": 22224,
-      "uuid": "05519058-d2ac-4f28-9e4a-2b2a1386749e",
+      "uuid": "26524cce-d514-4014-a426-365fb266a14d",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "trojan.burgerip.co.uk",
+        "server_name": "xfxl35a.node-edge.gfw.hidns.co",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -984,93 +1137,15 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/telegram-channel-vlessconfig",
+        "path": "/danfeng?ed=2560fp=firefox",
         "headers": {
-          "Host": "trojan.burgerip.co.uk"
+          "Host": "xfxl35a.node-edge.gfw.hidns.co"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇲🇰 [G] [TG] 46",
-      "server": "45.83.141.132",
-      "server_port": 443,
-      "uuid": "cf5718f5-c0f3-4b63-8fbf-1de69c1299c5",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "max.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "qB_eMu3ZO_wGITnyIqJ7Kt39-h9oHFnHlQQEqA-r3VA",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 [G] [TG] [*CIDR] 47",
-      "server": "45.141.215.49",
-      "server_port": 30086,
-      "uuid": "8f59feef-aab9-4e0b-924c-2a31bb8f446f",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "grpc",
-        "service_name": "gprc"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 [G] [TG] 48",
-      "server": "62.60.237.124",
-      "server_port": 443,
-      "uuid": "d789b20d-70b9-498f-a439-1d6ac78b8c5a",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "ya.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Db9LqZCurs0KyNxhW20sBImFIi3-68Am4M_mmgx7EwY",
-          "short_id": "57b212a6a3d23173"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 [G] [TG] 49",
-      "server": "107.161.168.188",
-      "server_port": 7443,
-      "uuid": "9c1d1c98-697d-4565-8a27-c15e17152ace",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "chat.deepseek.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI",
-          "short_id": "be0ce047"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 [G] [TG] 50",
+      "tag": "🇸🇬 [G] [TG] 51",
       "server": "167.17.181.190",
       "server_port": 443,
       "uuid": "26524cce-d514-4014-a426-365fb266a14d",
@@ -1092,59 +1167,201 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇲🇰 [G] [TG] 52",
+      "server": "45.83.141.132",
+      "server_port": 443,
+      "uuid": "cf5718f5-c0f3-4b63-8fbf-1de69c1299c5",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "max.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "qB_eMu3ZO_wGITnyIqJ7Kt39-h9oHFnHlQQEqA-r3VA",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇸 [G] [TG] 🏳️ 53",
+      "server": "45.15.160.132",
+      "server_port": 443,
+      "uuid": "0b89c53e-1d55-463f-90d7-f28b0e17b8a7",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "2YrB1VDud3ZDZp-fnEGO7BKsHZQN9NVJuXU_5j-uzVI",
+          "short_id": "ddb9"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 [G] [TG] 🌐США Белые списки 54",
+      "server": "la.money-cloud.ru",
+      "server_port": 444,
+      "uuid": "6a17d3c4-d673-4bf1-8306-1e997f9a49f7",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "web.max.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "7ng6QUDL9RWC13cTM9aC_cVKXEek-Ly4akTq5Lhm2Cw",
+          "short_id": "8622222589abcdef"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "web.max.ru"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 [G] [TG] 🌐Франция Белые списки 👥 55",
+      "server": "72.56.32.79",
+      "server_port": 9877,
+      "uuid": "2de349e0-19bb-4341-96e3-83c274b22025",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.io.ozone.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "im7-98zxWz_OGimQfeoN_Y5p1tAy8KoZCxOe2wOeWS4",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 [G] [TG] тлс✅ 美国阿什本03-0.1倍 56",
+      "server": "69.84.182.108",
+      "server_port": 443,
+      "uuid": "82766959-5cd7-4865-bae2-b87bf00da44d",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "pq-us6.globals-download.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/pq/us6",
+        "headers": {
+          "Host": "pq-us6.globals-download.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 [G] [TG] 🌐سرور 👥 57",
+      "server": "45.12.146.179",
+      "server_port": 8443,
+      "uuid": "e033ef6e-ab4b-47d4-a523-ff568d2c8dbb",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "tradingview.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "TH8C9sgNuMRVR3o5QehXPgYw8PWjoHrH2rVQF4JWwGI",
+          "short_id": ""
+        }
+      }
+    },
+    {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
         "🇫🇮 [G] [TG] тлс✅ 1",
         "🇫🇮 [G] [TG] 2",
-        "🇫🇮 [G] [TG] 3",
-        "🇵🇱 [G] [TG] [BL] 👥 4",
-        "🇸🇪 [G] [TG] тлс✅ 🌐 [IPv6] [BL] 👥 5",
-        "🇳🇱 [G] [TG] 👥 6",
-        "🇵🇱 [G] [TG] [BL] 👥 7",
-        "🇩🇪 [G] [TG] [*CIDR] 👥 8",
-        "🇳🇱 [G] [TG] 👥 9",
-        "🇵🇱 [G] [TG] тлс✅ Польша 🌐 🔐 [🏳️LTE 👥 10",
-        "🇵🇱 [G] [TG] 👥 11",
-        "🇳🇱 [G] [TG] 🌐 [IPv6] [BL] 👥 12",
-        "🇳🇱 [G] [TG] 13",
-        "🇳🇱 [G] [TG] [*CIDR] 14",
-        "🇩🇪 [G] [TG] 15",
-        "🇬🇧 [G] [TG] 16",
-        "🇵🇱 [G] [TG] 🌐Польша Белые списки 👥 17",
-        "🇩🇪 [G] [TG] [*CIDR] 👥 18",
-        "🇨🇭 [G] [TG] [BL] 19",
-        "🇬🇧 [G] [TG] 20",
-        "🇳🇱 [G] [TG] 🌐 [IPv6] [BL] 👥 21",
-        "🇩🇪 [G] [TG] 🏳️ 👥 22",
-        "🇫🇷 [G] [TG] 23",
-        "🇩🇪 [G] [TG] 🌐Германия 👥 24",
-        "🇳🇱 [G] [TG] [BL] 25",
-        "🇳🇱 [G] [TG] 👥 26",
-        "🇫🇮 [G] [TG] 🌐 [IPv6] [*CIDR] 27",
-        "🇳🇱 [G] [TG] [*CIDR] 28",
-        "🇳🇱 [G] [TG] 🌐 [*CIDR] 👥 29",
-        "🇳🇱 [G] [TG] 30",
-        "🇳🇱 [G] [TG] — 👥 31",
-        "🇳🇱 [G] [TG] 32",
-        "🇫🇷 [G] [TG] 👥 33",
-        "🇳🇱 [G] [TG] 🌐 [*CIDR] 👥 34",
-        "🇨🇭 [G] [TG] 35",
-        "🇵🇱 [G] [TG] [BL] 36",
-        "🇳🇱 [G] [TG] 🌐 [*CIDR] 👥 37",
-        "🇩🇪 [G] [TG] 🏳️ 👥 38",
-        "🇦🇹 [G] [TG] 39",
-        "🇳🇱 [G] [TG] тлс✅ 🌐 [IPv6] [*CIDR] 40",
-        "🇳🇱 [G] [TG] 41",
-        "🇪🇪 [G] [TG] 🌐 [IPv6] [BL] 42",
-        "🇩🇪 [G] [TG] 43",
-        "🇳🇱 [G] [TG] 🌐 Нидерланды Белые списки 44",
-        "🇫🇷 [G] [TG] тлс✅ 45",
-        "🇲🇰 [G] [TG] 46",
-        "🇵🇱 [G] [TG] [*CIDR] 47",
-        "🇫🇮 [G] [TG] 48",
-        "🇺🇸 [G] [TG] 49",
-        "🇸🇬 [G] [TG] 50"
+        "🇳🇱 [G] [TG] [*CIDR] 👥 3",
+        "🇦🇱 [G] [TG] 🌐 [IPv6] [*CIDR] 👥 4",
+        "🇳🇱 [G] [TG] 👥 5",
+        "🇩🇪 [G] [TG] 6",
+        "🇵🇱 [G] [TG] 👥 7",
+        "🇱🇻 [G] [TG] 🌐 [IPv6] [*CIDR] 8",
+        "🇩🇪 [G] [TG] 9",
+        "🇫🇮 [G] [TG] 10",
+        "🇩🇪 [G] [TG] 11",
+        "🇩🇪 [G] [TG] 🏳️ 👥 12",
+        "🇳🇱 [G] [TG] 👥 13",
+        "🇨🇿 [G] [TG] [*CIDR] 14",
+        "🇩🇪 [G] [TG] 🏳️ 👥 15",
+        "🇳🇱 [G] [TG] 16",
+        "🇩🇪 [G] [TG] [*CIDR] 👥 17",
+        "🇬🇧 [G] [TG] 18",
+        "🇩🇪 [G] [TG] [*CIDR] 👥 19",
+        "🇩🇪 [G] [TG] 👥 20",
+        "🇬🇧 [G] [TG] 21",
+        "🇸🇪 [G] [TG] тлс✅ 🌐 [IPv6] [BL] 22",
+        "🇬🇧 [G] [TG] 23",
+        "🇧🇸 [G] [TG] Эщкерия 🔐 🥭🔥 24",
+        "🇩🇪 [G] [TG] [*CIDR] 👥 25",
+        "🇩🇪 [G] [TG] [*CIDR] 👥 26",
+        "🇳🇱 [G] [TG] 27",
+        "🇮🇹 [G] [TG] 🌐Италия Белые списки 28",
+        "🇩🇪 [G] [TG] 🌐Германия Белые списки 👥 29",
+        "🇫🇷 [G] [TG] тлс✅ 30",
+        "🇨🇭 [G] [TG] 👥 31",
+        "🇫🇷 [G] [TG] 32",
+        "🇵🇱 [G] [TG] 👥 33",
+        "🇳🇱 [G] [TG] 34",
+        "🇳🇱 [G] [TG] 35",
+        "🇱🇻 [G] [TG] 👥 36",
+        "🇩🇪 [G] [TG] [*CIDR] 👥 37",
+        "🇱🇻 [G] [TG] 👥 38",
+        "🇩🇪 [G] [TG] 🌐Германия 👥 39",
+        "🇸🇪 [G] [TG] [*CIDR] 40",
+        "🇳🇱 [G] [TG] 🌐 [*CIDR] 👥 41",
+        "🇳🇱 [G] [TG] 🌐 [*CIDR] 👥 42",
+        "🇱🇻 [G] [TG] 👥 43",
+        "🇫🇷 [G] [TG] 👥 44",
+        "🇳🇱 [G] [TG] 🌐 [*CIDR] 👥 45",
+        "🇳🇱 [G] [TG] — 👥 46",
+        "🇦🇹 [G] [TG] 47",
+        "🇳🇱 [G] [TG] 48",
+        "🇳🇱 [G] [TG] 🌐🌐Anycast 49",
+        "🇸🇬 [G] [TG] тлс✅ 50",
+        "🇸🇬 [G] [TG] 51",
+        "🇲🇰 [G] [TG] 52",
+        "🇷🇸 [G] [TG] 🏳️ 53",
+        "🇺🇸 [G] [TG] 🌐США Белые списки 54",
+        "🇫🇷 [G] [TG] 🌐Франция Белые списки 👥 55",
+        "🇺🇸 [G] [TG] тлс✅ 美国阿什本03-0.1倍 56",
+        "🇫🇮 [G] [TG] 🌐سرور 👥 57"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "1m",
@@ -1157,54 +1374,61 @@
         "auto",
         "🇫🇮 [G] [TG] тлс✅ 1",
         "🇫🇮 [G] [TG] 2",
-        "🇫🇮 [G] [TG] 3",
-        "🇵🇱 [G] [TG] [BL] 👥 4",
-        "🇸🇪 [G] [TG] тлс✅ 🌐 [IPv6] [BL] 👥 5",
-        "🇳🇱 [G] [TG] 👥 6",
-        "🇵🇱 [G] [TG] [BL] 👥 7",
-        "🇩🇪 [G] [TG] [*CIDR] 👥 8",
-        "🇳🇱 [G] [TG] 👥 9",
-        "🇵🇱 [G] [TG] тлс✅ Польша 🌐 🔐 [🏳️LTE 👥 10",
-        "🇵🇱 [G] [TG] 👥 11",
-        "🇳🇱 [G] [TG] 🌐 [IPv6] [BL] 👥 12",
-        "🇳🇱 [G] [TG] 13",
-        "🇳🇱 [G] [TG] [*CIDR] 14",
-        "🇩🇪 [G] [TG] 15",
-        "🇬🇧 [G] [TG] 16",
-        "🇵🇱 [G] [TG] 🌐Польша Белые списки 👥 17",
-        "🇩🇪 [G] [TG] [*CIDR] 👥 18",
-        "🇨🇭 [G] [TG] [BL] 19",
-        "🇬🇧 [G] [TG] 20",
-        "🇳🇱 [G] [TG] 🌐 [IPv6] [BL] 👥 21",
-        "🇩🇪 [G] [TG] 🏳️ 👥 22",
-        "🇫🇷 [G] [TG] 23",
-        "🇩🇪 [G] [TG] 🌐Германия 👥 24",
-        "🇳🇱 [G] [TG] [BL] 25",
-        "🇳🇱 [G] [TG] 👥 26",
-        "🇫🇮 [G] [TG] 🌐 [IPv6] [*CIDR] 27",
-        "🇳🇱 [G] [TG] [*CIDR] 28",
-        "🇳🇱 [G] [TG] 🌐 [*CIDR] 👥 29",
-        "🇳🇱 [G] [TG] 30",
-        "🇳🇱 [G] [TG] — 👥 31",
-        "🇳🇱 [G] [TG] 32",
-        "🇫🇷 [G] [TG] 👥 33",
-        "🇳🇱 [G] [TG] 🌐 [*CIDR] 👥 34",
-        "🇨🇭 [G] [TG] 35",
-        "🇵🇱 [G] [TG] [BL] 36",
-        "🇳🇱 [G] [TG] 🌐 [*CIDR] 👥 37",
-        "🇩🇪 [G] [TG] 🏳️ 👥 38",
-        "🇦🇹 [G] [TG] 39",
-        "🇳🇱 [G] [TG] тлс✅ 🌐 [IPv6] [*CIDR] 40",
-        "🇳🇱 [G] [TG] 41",
-        "🇪🇪 [G] [TG] 🌐 [IPv6] [BL] 42",
-        "🇩🇪 [G] [TG] 43",
-        "🇳🇱 [G] [TG] 🌐 Нидерланды Белые списки 44",
-        "🇫🇷 [G] [TG] тлс✅ 45",
-        "🇲🇰 [G] [TG] 46",
-        "🇵🇱 [G] [TG] [*CIDR] 47",
-        "🇫🇮 [G] [TG] 48",
-        "🇺🇸 [G] [TG] 49",
-        "🇸🇬 [G] [TG] 50"
+        "🇳🇱 [G] [TG] [*CIDR] 👥 3",
+        "🇦🇱 [G] [TG] 🌐 [IPv6] [*CIDR] 👥 4",
+        "🇳🇱 [G] [TG] 👥 5",
+        "🇩🇪 [G] [TG] 6",
+        "🇵🇱 [G] [TG] 👥 7",
+        "🇱🇻 [G] [TG] 🌐 [IPv6] [*CIDR] 8",
+        "🇩🇪 [G] [TG] 9",
+        "🇫🇮 [G] [TG] 10",
+        "🇩🇪 [G] [TG] 11",
+        "🇩🇪 [G] [TG] 🏳️ 👥 12",
+        "🇳🇱 [G] [TG] 👥 13",
+        "🇨🇿 [G] [TG] [*CIDR] 14",
+        "🇩🇪 [G] [TG] 🏳️ 👥 15",
+        "🇳🇱 [G] [TG] 16",
+        "🇩🇪 [G] [TG] [*CIDR] 👥 17",
+        "🇬🇧 [G] [TG] 18",
+        "🇩🇪 [G] [TG] [*CIDR] 👥 19",
+        "🇩🇪 [G] [TG] 👥 20",
+        "🇬🇧 [G] [TG] 21",
+        "🇸🇪 [G] [TG] тлс✅ 🌐 [IPv6] [BL] 22",
+        "🇬🇧 [G] [TG] 23",
+        "🇧🇸 [G] [TG] Эщкерия 🔐 🥭🔥 24",
+        "🇩🇪 [G] [TG] [*CIDR] 👥 25",
+        "🇩🇪 [G] [TG] [*CIDR] 👥 26",
+        "🇳🇱 [G] [TG] 27",
+        "🇮🇹 [G] [TG] 🌐Италия Белые списки 28",
+        "🇩🇪 [G] [TG] 🌐Германия Белые списки 👥 29",
+        "🇫🇷 [G] [TG] тлс✅ 30",
+        "🇨🇭 [G] [TG] 👥 31",
+        "🇫🇷 [G] [TG] 32",
+        "🇵🇱 [G] [TG] 👥 33",
+        "🇳🇱 [G] [TG] 34",
+        "🇳🇱 [G] [TG] 35",
+        "🇱🇻 [G] [TG] 👥 36",
+        "🇩🇪 [G] [TG] [*CIDR] 👥 37",
+        "🇱🇻 [G] [TG] 👥 38",
+        "🇩🇪 [G] [TG] 🌐Германия 👥 39",
+        "🇸🇪 [G] [TG] [*CIDR] 40",
+        "🇳🇱 [G] [TG] 🌐 [*CIDR] 👥 41",
+        "🇳🇱 [G] [TG] 🌐 [*CIDR] 👥 42",
+        "🇱🇻 [G] [TG] 👥 43",
+        "🇫🇷 [G] [TG] 👥 44",
+        "🇳🇱 [G] [TG] 🌐 [*CIDR] 👥 45",
+        "🇳🇱 [G] [TG] — 👥 46",
+        "🇦🇹 [G] [TG] 47",
+        "🇳🇱 [G] [TG] 48",
+        "🇳🇱 [G] [TG] 🌐🌐Anycast 49",
+        "🇸🇬 [G] [TG] тлс✅ 50",
+        "🇸🇬 [G] [TG] 51",
+        "🇲🇰 [G] [TG] 52",
+        "🇷🇸 [G] [TG] 🏳️ 53",
+        "🇺🇸 [G] [TG] 🌐США Белые списки 54",
+        "🇫🇷 [G] [TG] 🌐Франция Белые списки 👥 55",
+        "🇺🇸 [G] [TG] тлс✅ 美国阿什本03-0.1倍 56",
+        "🇫🇮 [G] [TG] 🌐سرور 👥 57"
       ],
       "default": "auto"
     },
