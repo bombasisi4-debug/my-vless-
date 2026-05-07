@@ -47,22 +47,45 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 20",
-      "server": "528.ppower.tech",
+      "tag": "🇱🇻 159a",
+      "server": "airport.thinairtech.com",
       "server_port": 443,
-      "uuid": "2d66de0d-d4de-4abd-ab83-ea7d0e9ddea3",
+      "uuid": "147d6553-eb25-4eb4-bf3e-97a53e22c868",
       "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "528.ppower.tech",
+        "server_name": "airport.thinairtech.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "Ycq9yvtnxN20x__sBzMdpEvBhO8XdbSYcmWm9v8pcT0",
-          "short_id": "ac8e3caa4f6d77de"
+          "public_key": "mepO9Q9nbKjjdDgGLW_eqlFDuNrHtpEhUT7x03XgiXw",
+          "short_id": "299ad271ac32a1d2"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 163b",
+      "server": "network.fintech-llc.com",
+      "server_port": 443,
+      "uuid": "147d6553-eb25-4eb4-bf3e-97a53e22c868",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "network.fintech-llc.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Kkpdrf3HDxb05xXM7vXgQvvMPybpU4gIRW6Ue11GRl4",
+          "short_id": "d5165ba2f1efc8cd"
         }
       }
     },
@@ -71,7 +94,8 @@
       "tag": "auto",
       "outbounds": [
         "🇳🇱 167",
-        "🇳🇱 20"
+        "🇱🇻 159a",
+        "🇵🇱 163b"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "1m",
@@ -83,7 +107,8 @@
       "outbounds": [
         "auto",
         "🇳🇱 167",
-        "🇳🇱 20"
+        "🇱🇻 159a",
+        "🇵🇱 163b"
       ],
       "default": "auto"
     },
