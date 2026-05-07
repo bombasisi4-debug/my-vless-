@@ -3,20 +3,30 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇳🇱 147b
+- name: 🇸🇪 ✓ 51
   type: vless
-  server: vk.cachingtech.com
+  server: swed.oplatasite.ru
+  port: 8443
+  uuid: "f834b1a5-dc5e-4878-a73c-ad0c80f8f748"
+  udp: true
+  network: tcp
+  tls: true
+  servername: "vpn.oplatasite.ru"
+  client-fingerprint: chrome
+- name: 🇱🇻 159b
+  type: vless
+  server: airport.thinairtech.com
   port: 443
   uuid: "147d6553-eb25-4eb4-bf3e-97a53e22c868"
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: "vk.cachingtech.com"
+  servername: "airport.thinairtech.com"
   client-fingerprint: chrome
   reality-opts:
-    public-key: "yk1VgHUKE7-oMeFrhyyFn6aLtedVP40h6abJWJJq8W4"
-    short-id: "4f9b2b1a3c5d7e0f"
+    public-key: "mepO9Q9nbKjjdDgGLW_eqlFDuNrHtpEhUT7x03XgiXw"
+    short-id: "299ad271ac32a1d2"
 - name: 🇳🇱 62a
   type: vless
   server: api.dockl.com
@@ -31,12 +41,28 @@ proxies:
   reality-opts:
     public-key: "krArCjBlamNPPSImydWgBHWCLZG5jj16jGHAnlZmuzo"
     short-id: "8f9dd98853c79394"
+- name: 🇬🇧 22
+  type: vless
+  server: 3.8.177.226
+  port: 39093
+  uuid: "f0449dd0-915d-4d7a-9c2d-b2ccd482f812"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "yahoo.com"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "TsI3LH9voENiAq5puKOvBjxgP4UF2ailXG1IRncJ1EE"
+    short-id: "8452eb6f8cb17bab"
 proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - 🇳🇱 147b
+  - 🇸🇪 ✓ 51
+  - 🇱🇻 159b
   - 🇳🇱 62a
+  - 🇬🇧 22
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -44,7 +70,9 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 Авто (лучший)
-  - 🇳🇱 147b
+  - 🇸🇪 ✓ 51
+  - 🇱🇻 159b
   - 🇳🇱 62a
+  - 🇬🇧 22
 rules:
 - MATCH,PROXY
