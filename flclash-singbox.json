@@ -22,45 +22,45 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇵🇱 163",
-      "server": "network.fintech-llc.com",
+      "tag": "🇳🇱 147b",
+      "server": "vk.cachingtech.com",
       "server_port": 443,
       "uuid": "147d6553-eb25-4eb4-bf3e-97a53e22c868",
       "packet_encoding": "xudp",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "network.fintech-llc.com",
+        "server_name": "vk.cachingtech.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "Kkpdrf3HDxb05xXM7vXgQvvMPybpU4gIRW6Ue11GRl4",
-          "short_id": "d5165ba2f1efc8cd"
+          "public_key": "yk1VgHUKE7-oMeFrhyyFn6aLtedVP40h6abJWJJq8W4",
+          "short_id": "4f9b2b1a3c5d7e0f"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 31",
-      "server": "185.153.181.118",
-      "server_port": 46110,
-      "uuid": "6ec3c298-1058-43bd-81e3-54b155c4ae21",
+      "tag": "🇳🇱 62a",
+      "server": "api.dockl.com",
+      "server_port": 443,
+      "uuid": "147d6553-eb25-4eb4-bf3e-97a53e22c868",
       "packet_encoding": "xudp",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.deepl.com",
+        "server_name": "api.dockl.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "7q3_m65wkw4AlZ0tk2SGw5PQePvYPh2kaU-UCkHUb2g",
-          "short_id": "5e"
+          "public_key": "krArCjBlamNPPSImydWgBHWCLZG5jj16jGHAnlZmuzo",
+          "short_id": "8f9dd98853c79394"
         }
       }
     },
@@ -68,8 +68,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇱 163",
-        "🇫🇮 31"
+        "🇳🇱 147b",
+        "🇳🇱 62a"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "1m",
@@ -80,8 +80,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇱 163",
-        "🇫🇮 31"
+        "🇳🇱 147b",
+        "🇳🇱 62a"
       ],
       "default": "auto"
     },
