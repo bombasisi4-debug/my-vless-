@@ -3,36 +3,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇳🇱 167
-  type: vless
-  server: rain.quietgarden.live
-  port: 443
-  uuid: "a5ff4d58-23e4-4f1a-8e56-409959dd107c"
-  udp: true
-  network: grpc
-  tls: true
-  servername: "rain.quietgarden.live"
-  client-fingerprint: random
-  reality-opts:
-    public-key: "BuvkEogWW6TyTAZNA21CVwNsRpi2GNGcDspHwYxOUS4"
-    short-id: "1856d4c96087feeb"
-  grpc-opts:
-    grpc-service-name: grpc
-- name: 🇱🇻 159a
-  type: vless
-  server: airport.thinairtech.com
-  port: 443
-  uuid: "147d6553-eb25-4eb4-bf3e-97a53e22c868"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "airport.thinairtech.com"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "mepO9Q9nbKjjdDgGLW_eqlFDuNrHtpEhUT7x03XgiXw"
-    short-id: "299ad271ac32a1d2"
-- name: 🇵🇱 163b
+- name: 🇵🇱 163
   type: vless
   server: network.fintech-llc.com
   port: 443
@@ -46,13 +17,26 @@ proxies:
   reality-opts:
     public-key: "Kkpdrf3HDxb05xXM7vXgQvvMPybpU4gIRW6Ue11GRl4"
     short-id: "d5165ba2f1efc8cd"
+- name: 🇭🇺 129
+  type: vless
+  server: buda-meow.nethcloud.top
+  port: 443
+  uuid: "e9888b9b-658b-4f51-94f3-b8ba80e4ef91"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "wikihow.com"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "1HeKf_8KDjfzXfUi9P7WBaGStMvr96TKdUbofpkwBzQ"
+    short-id: "8bd29483ded126b4"
 proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - 🇳🇱 167
-  - 🇱🇻 159a
-  - 🇵🇱 163b
+  - 🇵🇱 163
+  - 🇭🇺 129
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -60,8 +44,7 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 Авто (лучший)
-  - 🇳🇱 167
-  - 🇱🇻 159a
-  - 🇵🇱 163b
+  - 🇵🇱 163
+  - 🇭🇺 129
 rules:
 - MATCH,PROXY
