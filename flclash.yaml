@@ -18,25 +18,41 @@ proxies:
     short-id: "1856d4c96087feeb"
   grpc-opts:
     grpc-service-name: grpc
-- name: 🇳🇱 20
+- name: 🇱🇻 159a
   type: vless
-  server: 528.ppower.tech
+  server: airport.thinairtech.com
   port: 443
-  uuid: "2d66de0d-d4de-4abd-ab83-ea7d0e9ddea3"
+  uuid: "147d6553-eb25-4eb4-bf3e-97a53e22c868"
   udp: true
   network: tcp
   tls: true
-  servername: "528.ppower.tech"
+  flow: xtls-rprx-vision
+  servername: "airport.thinairtech.com"
   client-fingerprint: chrome
   reality-opts:
-    public-key: "Ycq9yvtnxN20x__sBzMdpEvBhO8XdbSYcmWm9v8pcT0"
-    short-id: "ac8e3caa4f6d77de"
+    public-key: "mepO9Q9nbKjjdDgGLW_eqlFDuNrHtpEhUT7x03XgiXw"
+    short-id: "299ad271ac32a1d2"
+- name: 🇵🇱 163b
+  type: vless
+  server: network.fintech-llc.com
+  port: 443
+  uuid: "147d6553-eb25-4eb4-bf3e-97a53e22c868"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "network.fintech-llc.com"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "Kkpdrf3HDxb05xXM7vXgQvvMPybpU4gIRW6Ue11GRl4"
+    short-id: "d5165ba2f1efc8cd"
 proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
   - 🇳🇱 167
-  - 🇳🇱 20
+  - 🇱🇻 159a
+  - 🇵🇱 163b
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -45,6 +61,7 @@ proxy-groups:
   proxies:
   - 🚀 Авто (лучший)
   - 🇳🇱 167
-  - 🇳🇱 20
+  - 🇱🇻 159a
+  - 🇵🇱 163b
 rules:
 - MATCH,PROXY
