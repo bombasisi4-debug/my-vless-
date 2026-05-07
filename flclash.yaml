@@ -17,26 +17,26 @@ proxies:
   reality-opts:
     public-key: "Kkpdrf3HDxb05xXM7vXgQvvMPybpU4gIRW6Ue11GRl4"
     short-id: "d5165ba2f1efc8cd"
-- name: 🇭🇺 129
+- name: 🇫🇮 31
   type: vless
-  server: buda-meow.nethcloud.top
-  port: 443
-  uuid: "e9888b9b-658b-4f51-94f3-b8ba80e4ef91"
+  server: 185.153.181.118
+  port: 46110
+  uuid: "6ec3c298-1058-43bd-81e3-54b155c4ae21"
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: "wikihow.com"
+  servername: "www.deepl.com"
   client-fingerprint: chrome
   reality-opts:
-    public-key: "1HeKf_8KDjfzXfUi9P7WBaGStMvr96TKdUbofpkwBzQ"
-    short-id: "8bd29483ded126b4"
+    public-key: "7q3_m65wkw4AlZ0tk2SGw5PQePvYPh2kaU-UCkHUb2g"
+    short-id: "5e"
 proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
   - 🇵🇱 163
-  - 🇭🇺 129
+  - 🇫🇮 31
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -45,6 +45,6 @@ proxy-groups:
   proxies:
   - 🚀 Авто (лучший)
   - 🇵🇱 163
-  - 🇭🇺 129
+  - 🇫🇮 31
 rules:
 - MATCH,PROXY
