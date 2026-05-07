@@ -3,20 +3,131 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇺 33c
+- name: 🇷🇺 36a
   type: vless
-  server: 51.250.15.205
+  server: 46.182.24.148
+  port: 6443
+  uuid: "7bbc52f8-e8d3-48cb-8b62-a3bc50c862c1"
+  udp: true
+  network: grpc
+  tls: true
+  servername: "ads.x5.ru"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "W6UrEglDqSm0gtVYdLmMItMIQWD_sPt8EIZUq-UgDwc"
+    short-id: "4ca4a1f4f6afb7c3"
+  grpc-opts:
+    grpc-service-name: grpc
+- name: 🇷🇺 ✓ 42c
+  type: vless
+  server: 195.209.82.149
   port: 443
-  uuid: "769d6219-be8b-400d-9dd7-bbec4cca3593"
+  uuid: "73ea81a4-6cd5-Fade-b3e6-bf4dd74256fc"
+  udp: true
+  network: ws
+  tls: true
+  servername: "s28233.cdn.ngenix.net"
+  client-fingerprint: qq
+  ws-opts:
+    path: /
+    headers:
+      Host: s28233.cdn.ngenix.net
+- name: 🇷🇺 48c
+  type: vless
+  server: 217.168.240.172
+  port: 2443
+  uuid: "b5d7d57a-f953-4769-88e4-5815b89c0f19"
+  udp: true
+  network: xhttp
+  tls: true
+  servername: "travel.yandex.ru"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "XqH-gNEL9eJfr1pglaI8WU3OvE654_5duXYBS35UXlM"
+    short-id: "ab"
+- name: 🇷🇺 50b
+  type: vless
+  server: 87.242.118.99
+  port: 443
+  uuid: "dfe7f396-1414-4802-9e1a-a423a9dbf199"
+  udp: true
+  network: xhttp
+  tls: true
+  servername: "travel.yandex.ru"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "XqH-gNEL9eJfr1pglaI8WU3OvE654_5duXYBS35UXlM"
+    short-id: "abcdef0123456789"
+- name: 🇷🇺 ✓ 52d
+  type: vless
+  server: 195.209.88.216
+  port: 443
+  uuid: "18f88fb7-470f-Fade-8da9-b57f35009c6d"
+  udp: true
+  network: ws
+  tls: true
+  servername: "s28233.cdn.ngenix.net"
+  client-fingerprint: qq
+  ws-opts:
+    path: /
+    headers:
+      Host: s28233.cdn.ngenix.net
+- name: 🇷🇺 23b
+  type: vless
+  server: 79.174.91.100
+  port: 2447
+  uuid: "3b6ed23e-7ddc-4a86-9637-c07001805670"
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: "ads.x5.ru"
-  client-fingerprint: qq
+  servername: "dnd.wb.ru"
+  client-fingerprint: random
   reality-opts:
-    public-key: "W79JZgWJdz5LZ3ZplqNDCzvb9G4YKEIZIJZb_c7Ddjc"
-    short-id: "2094160d4e94f289"
+    public-key: "5w9AftPH_705ynMzcG03D3z61O1qegNp6WFL6jOXxRA"
+    short-id: "e035146d93da51a9"
+- name: 🇷🇺 17a
+  type: vless
+  server: 79.174.91.100
+  port: 2452
+  uuid: "6cdf5172-8679-4e26-aea8-09a32e48547a"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "queuev4.vk.com"
+  client-fingerprint: random
+  reality-opts:
+    public-key: "5w9AftPH_705ynMzcG03D3z61O1qegNp6WFL6jOXxRA"
+    short-id: "7b374423e3f0f5fb"
+- name: 🇷🇺 ✓ 30
+  type: vless
+  server: 193.9.49.6
+  port: 443
+  uuid: "051ada2d-dfd9-4108-a66d-01f96dcdccc8"
+  udp: true
+  network: ws
+  tls: true
+  servername: "wiNTeR-wINd-90a7.nABareV274.WORKeRS.DEv"
+  client-fingerprint: chrome
+  ws-opts:
+    path: /eyJqdW5rIjoiQ3BQN2pIZ3YiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyI1LjE4Ny43LjIyMCJdfQ==?ed=2560
+    headers:
+      Host: winter-wind-90a7.nabarev274.workers.dev
+- name: 🇷🇺 ✓ 33b
+  type: vless
+  server: 195.209.88.180
+  port: 443
+  uuid: "48170ed5-f072-Fade-aff3-ea93a2b1be56"
+  udp: true
+  network: ws
+  tls: true
+  servername: "s28233.cdn.ngenix.net"
+  client-fingerprint: qq
+  ws-opts:
+    path: /
+    headers:
+      Host: s28233.cdn.ngenix.net
 - name: 🇷🇺 ✓ 29a
   type: vless
   server: 195.209.90.178
@@ -31,146 +142,49 @@ proxies:
     path: /
     headers:
       Host: s28233.cdn.ngenix.net
-- name: 🇷🇺 14a
-  type: vless
-  server: 46.182.24.148
-  port: 6443
-  uuid: "3b6ed23e-7ddc-4a86-9637-c07001805670"
-  udp: true
-  network: grpc
-  tls: true
-  servername: "ads.x5.ru"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "W6UrEglDqSm0gtVYdLmMItMIQWD_sPt8EIZUq-UgDwc"
-    short-id: "9f9c109d12c19362"
-  grpc-opts:
-    grpc-service-name: grpc
-- name: 🇷🇺 42c
-  type: vless
-  server: 195.209.82.149
-  port: 443
-  uuid: "73ea81a4-6cd5-Fade-b3e6-bf4dd74256fc"
-  udp: true
-  network: ws
-  tls: true
-  servername: "s28233.cdn.ngenix.net"
-  client-fingerprint: qq
-  ws-opts:
-    path: /
-    headers:
-      Host: s28233.cdn.ngenix.net
-- name: 🇷🇺 ✓ 43d
-  type: vless
-  server: 195.209.88.216
-  port: 443
-  uuid: "d0510c6d-0322-Fade-b0f2-53eb6895d86b"
-  udp: true
-  network: ws
-  tls: true
-  servername: "s28233.cdn.ngenix.net"
-  client-fingerprint: qq
-  ws-opts:
-    path: /
-    headers:
-      Host: s28233.cdn.ngenix.net
-- name: 🇷🇺 1
-  type: vless
-  server: 193.9.49.6
-  port: 443
-  uuid: "3bdade6c-6e5f-4308-9299-87bfe6f01f07"
-  udp: true
-  network: ws
-  tls: true
-  servername: "M3cz1juSPE5-f-HFtaPxRRS17zQpPw11.SalISA7474-9d1.woRkERs.dEv"
-  client-fingerprint: chrome
-  ws-opts:
-    path: /eyJqdW5rIjoidFJGN2RaSWsiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyI0NS42MS4xNjYuMTIxIl19?ed=2560
-    headers:
-      Host: m3cz1juspe5-f-hftapxrrs17zqppw11.salisa7474-9d1.workers.dev
-- name: 🇷🇺 38
-  type: vless
-  server: 217.168.240.172
-  port: 2443
-  uuid: "1e907a80-34d0-4c84-b81b-1f89a1e9447b"
-  udp: true
-  network: xhttp
-  tls: true
-  servername: "travel.yandex.ru"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "XqH-gNEL9eJfr1pglaI8WU3OvE654_5duXYBS35UXlM"
-    short-id: "abcdef0123456789"
-- name: 🇷🇺 21b
-  type: vless
-  server: 87.242.118.99
-  port: 443
-  uuid: "c6bf291d-9f63-454d-86c1-30ad0ac2c39e"
-  udp: true
-  network: xhttp
-  tls: true
-  servername: "travel.yandex.ru"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "XqH-gNEL9eJfr1pglaI8WU3OvE654_5duXYBS35UXlM"
-    short-id: "abcdef0123456789"
-- name: 🇷🇺 19
-  type: vless
-  server: usa2.vpnfreedom.tech
-  port: 443
-  uuid: "6220e45d-8ac6-4a10-8433-0dbadcf747ca"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "google.com"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "dl8h7j1NKxBL_p2leIy9SWKznB0VG5h8ftsb0hlLICk"
-    short-id: "2404"
-- name: 🇷🇺 40
+- name: 🇷🇺 32
   type: vless
   server: 79.174.91.100
-  port: 2452
-  uuid: "3b6ed23e-7ddc-4a86-9637-c07001805670"
+  port: 2446
+  uuid: "7bbc52f8-e8d3-48cb-8b62-a3bc50c862c1"
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: "queuev4.vk.com"
+  servername: "ir.ozone.ru"
   client-fingerprint: random
   reality-opts:
     public-key: "5w9AftPH_705ynMzcG03D3z61O1qegNp6WFL6jOXxRA"
     short-id: "e035146d93da51a9"
-- name: 🇷🇺 ✓ 39b
+- name: 🇷🇺 88
   type: vless
-  server: 195.209.88.180
+  server: lk.cloudconsole.ru
   port: 443
-  uuid: "a8f9766b-e1e8-Fade-a893-e2bd2c78f192"
+  uuid: "23616470-4782-4da9-8576-affbbcf6ae7b"
   udp: true
-  network: ws
+  network: xhttp
   tls: true
-  servername: "s28233.cdn.ngenix.net"
-  client-fingerprint: qq
-  ws-opts:
-    path: /
-    headers:
-      Host: s28233.cdn.ngenix.net
+  servername: "vk.com"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "nCxYuad0GYaNJwUpLjyKZyK7NyjTssz0a1Agq5wZcwI"
+    short-id: "87"
 proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - 🇷🇺 33c
+  - 🇷🇺 36a
+  - 🇷🇺 ✓ 42c
+  - 🇷🇺 48c
+  - 🇷🇺 50b
+  - 🇷🇺 ✓ 52d
+  - 🇷🇺 23b
+  - 🇷🇺 17a
+  - 🇷🇺 ✓ 30
+  - 🇷🇺 ✓ 33b
   - 🇷🇺 ✓ 29a
-  - 🇷🇺 14a
-  - 🇷🇺 42c
-  - 🇷🇺 ✓ 43d
-  - 🇷🇺 1
-  - 🇷🇺 38
-  - 🇷🇺 21b
-  - 🇷🇺 19
-  - 🇷🇺 40
-  - 🇷🇺 ✓ 39b
+  - 🇷🇺 32
+  - 🇷🇺 88
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -178,9 +192,9 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇷🇺 ✓ 29a
-  - 🇷🇺 ✓ 39b
-  - 🇷🇺 42c
-  - 🇷🇺 ✓ 43d
+  - 🇷🇺 ✓ 33b
+  - 🇷🇺 ✓ 42c
+  - 🇷🇺 ✓ 52d
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -189,16 +203,17 @@ proxy-groups:
   proxies:
   - 🚀 Авто (лучший)
   - 📁 Группа A
-  - 🇷🇺 33c
+  - 🇷🇺 36a
+  - 🇷🇺 ✓ 42c
+  - 🇷🇺 48c
+  - 🇷🇺 50b
+  - 🇷🇺 ✓ 52d
+  - 🇷🇺 23b
+  - 🇷🇺 17a
+  - 🇷🇺 ✓ 30
+  - 🇷🇺 ✓ 33b
   - 🇷🇺 ✓ 29a
-  - 🇷🇺 14a
-  - 🇷🇺 42c
-  - 🇷🇺 ✓ 43d
-  - 🇷🇺 1
-  - 🇷🇺 38
-  - 🇷🇺 21b
-  - 🇷🇺 19
-  - 🇷🇺 40
-  - 🇷🇺 ✓ 39b
+  - 🇷🇺 32
+  - 🇷🇺 88
 rules:
 - MATCH,PROXY
