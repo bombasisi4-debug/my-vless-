@@ -3,7 +3,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇪🇪 114c
+- name: 🇪🇪 114b
   type: vless
   server: minecraft.twilightparadox.com
   port: 443
@@ -17,7 +17,7 @@ proxies:
   reality-opts:
     public-key: zkyUy8Deg-OEnzgoSKCVQfadI3_Ls_vzUydpzT6CsUg
     short-id: ba26d0a9bc05c198
-- name: 🇫🇮 90b
+- name: 🇫🇮 90
   type: vless
   server: 85.192.49.174
   port: 443
@@ -32,19 +32,6 @@ proxies:
     short-id: 6ac433f9c670e002
   grpc-opts:
     grpc-service-name: xyz
-- name: 🇬🇧 3a
-  type: vless
-  server: world.asperwild.com
-  port: 443
-  uuid: a5ff4d58-23e4-4f1a-8e56-409959dd107c
-  udp: true
-  network: xhttp
-  tls: true
-  servername: world.asperwild.com
-  client-fingerprint: qq
-  reality-opts:
-    public-key: hLlhnCZGMfjakOk2U1uDynwnqG0z4A8HSE4cu-lrrzo
-    short-id: 40321d69f30e0cca
 - name: 🇳🇱 93b
   type: vless
   server: portal.projectauths.com
@@ -58,16 +45,6 @@ proxies:
   reality-opts:
     public-key: hLlhnCZGMfjakOk2U1uDynwnqG0z4A8HSE4cu-lrrzo
     short-id: 159570b153a58fea
-- name: 🇸🇪 ✓ 51a
-  type: vless
-  server: swed.oplatasite.ru
-  port: 8443
-  uuid: f834b1a5-dc5e-4878-a73c-ad0c80f8f748
-  udp: true
-  network: tcp
-  tls: true
-  servername: vpn.oplatasite.ru
-  client-fingerprint: chrome
 - name: 🇳🇱 167c
   type: vless
   server: rain.quietgarden.live
@@ -98,49 +75,62 @@ proxies:
     short-id: a4a9c895397fa42e
   grpc-opts:
     grpc-service-name: xyz
-- name: 🇳🇱 62a
+- name: 🇵🇱 156e
   type: vless
-  server: api.dockl.com
+  server: sync-provider.ignorelist.com
   port: 443
   uuid: 147d6553-eb25-4eb4-bf3e-97a53e22c868
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: api.dockl.com
-  client-fingerprint: chrome
+  servername: sync-provider.ignorelist.com
+  client-fingerprint: random
   reality-opts:
-    public-key: krArCjBlamNPPSImydWgBHWCLZG5jj16jGHAnlZmuzo
-    short-id: 8f9dd98853c79394
-- name: 🇫🇷 81b
+    public-key: itfFe5EsAZUYgiuWlhEEagGvT6s8ErWiI4PrF25YqTg
+    short-id: 0c72ad8ba18d63ad
+- name: 🇬🇧 3a
   type: vless
-  server: ms-office.opior.com
+  server: world.asperwild.com
   port: 443
-  uuid: 147d6553-eb25-4eb4-bf3e-97a53e22c868
+  uuid: a5ff4d58-23e4-4f1a-8e56-409959dd107c
+  udp: true
+  network: xhttp
+  tls: true
+  servername: world.asperwild.com
+  client-fingerprint: qq
+  reality-opts:
+    public-key: hLlhnCZGMfjakOk2U1uDynwnqG0z4A8HSE4cu-lrrzo
+    short-id: 40321d69f30e0cca
+- name: 🇺🇸 86
+  type: vless
+  server: ru-nl.braidx.tech
+  port: 443
+  uuid: e31a303c-a8f0-4189-9bdf-2312d15253d2
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: ms-office.opior.com
+  servername: www.google.com
   client-fingerprint: chrome
   reality-opts:
-    public-key: bAsmfgKZYXYptO4f2eV622XRbnai3kcQvxLSGTebK2k
-    short-id: 6caf94f7f05077a7
-- name: 🇪🇸 103b
+    public-key: 9mJq2cP3srX_6K1YfMDp1yndvo5CtgL6TEVQ8tm4fVc
+    short-id: ''
+- name: 🇪🇪 158a
   type: vless
-  server: isp01.myxavpn.com
-  port: 443
-  uuid: 00a31b83-d78a-4866-9124-bf80ab961501
+  server: tal.odavpn.online
+  port: 8443
+  uuid: edabe54f-5b45-472b-8de2-a339f12d2a6f
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: isp01.myxavpn.com
+  servername: vk.com
   client-fingerprint: chrome
   reality-opts:
-    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
-    short-id: d67ec5a8fc40ebea
-- name: 🇺🇸 99a
+    public-key: fV1a9bRBEUvWODYvk0ow7SgGKt1moska3H61LRCLEHw
+    short-id: 5adbad5bb8d9
+- name: 🇺🇸 99c
   type: vless
   server: 2.27.59.125
   port: 443
@@ -155,6 +145,59 @@ proxies:
     short-id: '01'
   grpc-opts:
     grpc-service-name: ''
+- name: 🇸🇪 ✓ 51a
+  type: vless
+  server: swed.oplatasite.ru
+  port: 8443
+  uuid: f834b1a5-dc5e-4878-a73c-ad0c80f8f748
+  udp: true
+  network: tcp
+  tls: true
+  servername: vpn.oplatasite.ru
+  client-fingerprint: chrome
+- name: 🇳🇱 138c
+  type: vless
+  server: net.coreytech.com
+  port: 443
+  uuid: 147d6553-eb25-4eb4-bf3e-97a53e22c868
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: net.coreytech.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 4952kbKqM3YvtoAVPUzW95XBSFWjhxnr05OOF1tfL2o
+    short-id: cfd137addad9f127
+- name: 🇸🇪 16a
+  type: vless
+  server: 31.22.91.203
+  port: 443
+  uuid: 216da8a8-8833-49e1-86d1-982d6223c8a3
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: vega.relead.org
+  client-fingerprint: qq
+  reality-opts:
+    public-key: qTfZpilVyQrFDIgxmEsd18Ph3c_-8O-R_af4o_WQ_Tg
+    short-id: f74c6a18133e2e72
+- name: 🇺🇸 89
+  type: vless
+  server: 216.227.161.43
+  port: 443
+  uuid: 95937e6d-ce76-4f20-bdb2-731a4d3757b0
+  udp: true
+  network: grpc
+  tls: true
+  servername: deepl.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: zz1etKRzRA4fwe0Te0p6jAlHorNJs4mmcljA3oL520E
+    short-id: d0ad251b4ce4eb2c
+  grpc-opts:
+    grpc-service-name: xyz
 - name: 🇩🇪 ✓ 55b
   type: vless
   server: vpn.oplatasite.ru
@@ -165,6 +208,20 @@ proxies:
   tls: true
   servername: vpn.oplatasite.ru
   client-fingerprint: chrome
+- name: 🇫🇷 81a
+  type: vless
+  server: ms-office.opior.com
+  port: 443
+  uuid: 147d6553-eb25-4eb4-bf3e-97a53e22c868
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: ms-office.opior.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: bAsmfgKZYXYptO4f2eV622XRbnai3kcQvxLSGTebK2k
+    short-id: 6caf94f7f05077a7
 - name: 🇮🇪 2a
   type: vless
   server: 31.57.56.135
@@ -180,49 +237,48 @@ proxies:
     short-id: 428f5fc6c8446732
   grpc-opts:
     grpc-service-name: xyz
-- name: 🇺🇸 52a
+- name: 🇫🇷 118
   type: vless
-  server: 23.177.185.168
-  port: 444
-  uuid: 90a3d2f9-04d4-467a-9603-63781354f915
-  udp: true
-  network: grpc
-  tls: true
-  servername: vk.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: k4Lzi9W9WA5DZNWrDfodl_8XCkegl9INee7JWlre1Rk
-    short-id: fcafb151
-  grpc-opts:
-    grpc-service-name: grpc
-- name: 🇵🇱 45
-  type: vless
-  server: fast.pilates.rodeo
+  server: y1xdwst8om.brod-studio.ru
   port: 443
-  uuid: 3d243df5-9cda-4aac-89d5-354de77d79e2
+  uuid: 3dae19c4-f3d1-4dab-9bb2-1d0121813f52
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: mirror.yandex.ru
+  servername: tradingview.com
   client-fingerprint: chrome
   reality-opts:
-    public-key: IarU4xicX8qiVO5nqzeHc6MK9A_Vw9YaAtnPHB4DswU
-    short-id: 916a
-- name: 🇳🇱 61b
+    public-key: o_ZQuEx_ealt_YkqgtYRqFhee0pzFkg9ObUhODLTAB8
+    short-id: 08
+- name: 🇮🇶 41b
   type: vless
-  server: 109.71.240.191
+  server: iq.c2horizon.app
   port: 443
-  uuid: e50329b6-1add-4360-86a2-e00de951f739
+  uuid: 8ce35445-3f2c-4200-88c7-7fff79fb30c4
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: max.ru
+  servername: iq.c2horizon.app
+  client-fingerprint: qq
+  reality-opts:
+    public-key: IuvAXlAWBpeXehmEk0P-FIGTctUhny2H3UilbWWfJC0
+    short-id: 122218f4c1f172e4
+- name: 🇹🇷 172b
+  type: vless
+  server: tr2.odavpn.online
+  port: 8443
+  uuid: edabe54f-5b45-472b-8de2-a339f12d2a6f
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: www.sony.com
   client-fingerprint: chrome
   reality-opts:
-    public-key: VUTfN-BEUcoR9hUW8HQ5jWl6iTBSGBmaHxklrL05hRs
-    short-id: 99d43973
+    public-key: Lq1xwc-Qd0Te8sV-NxrJLQO6JbvPkknki6inkKj5_WQ
+    short-id: 22c6f049621c44ec
 - name: 🇩🇪 87
   type: vless
   server: serv18.strettenvpn.com
@@ -238,73 +294,46 @@ proxies:
     short-id: '8248954896'
   grpc-opts:
     grpc-service-name: 5post-gate.x5.ru
-- name: 🇫🇷 118
+- name: 🇵🇱 144d
   type: vless
-  server: y1xdwst8om.brod-studio.ru
+  server: db.diamondbsd.com
   port: 443
-  uuid: 3dae19c4-f3d1-4dab-9bb2-1d0121813f52
+  uuid: 147d6553-eb25-4eb4-bf3e-97a53e22c868
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: tradingview.com
+  servername: db.diamondbsd.com
   client-fingerprint: chrome
   reality-opts:
-    public-key: o_ZQuEx_ealt_YkqgtYRqFhee0pzFkg9ObUhODLTAB8
-    short-id: 08
-- name: 🇹🇷 172
-  type: vless
-  server: tr2.odavpn.online
-  port: 8443
-  uuid: edabe54f-5b45-472b-8de2-a339f12d2a6f
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: www.sony.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: Lq1xwc-Qd0Te8sV-NxrJLQO6JbvPkknki6inkKj5_WQ
-    short-id: 22c6f049621c44ec
-- name: 🇺🇸 89a
-  type: vless
-  server: 216.227.161.43
-  port: 443
-  uuid: 95937e6d-ce76-4f20-bdb2-731a4d3757b0
-  udp: true
-  network: grpc
-  tls: true
-  servername: deepl.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: zz1etKRzRA4fwe0Te0p6jAlHorNJs4mmcljA3oL520E
-    short-id: d0ad251b4ce4eb2c
-  grpc-opts:
-    grpc-service-name: xyz
+    public-key: yx2Uk6XAY47b3_hfpdR6FUI4ax5xASeUGkh5NFkg3RU
+    short-id: 04b5a6f1e2d3c978
 proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - 🇪🇪 114c
-  - 🇫🇮 90b
-  - 🇬🇧 3a
+  - 🇪🇪 114b
+  - 🇫🇮 90
   - 🇳🇱 93b
-  - 🇸🇪 ✓ 51a
   - 🇳🇱 167c
   - 🇫🇮 122b
-  - 🇳🇱 62a
-  - 🇫🇷 81b
-  - 🇪🇸 103b
-  - 🇺🇸 99a
+  - 🇵🇱 156e
+  - 🇬🇧 3a
+  - 🇺🇸 86
+  - 🇪🇪 158a
+  - 🇺🇸 99c
+  - 🇸🇪 ✓ 51a
+  - 🇳🇱 138c
+  - 🇸🇪 16a
+  - 🇺🇸 89
   - 🇩🇪 ✓ 55b
+  - 🇫🇷 81a
   - 🇮🇪 2a
-  - 🇺🇸 52a
-  - 🇵🇱 45
-  - 🇳🇱 61b
-  - 🇩🇪 87
   - 🇫🇷 118
-  - 🇹🇷 172
-  - 🇺🇸 89a
+  - 🇮🇶 41b
+  - 🇹🇷 172b
+  - 🇩🇪 87
+  - 🇵🇱 144d
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -312,25 +341,27 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 Авто (лучший)
-  - 🇪🇪 114c
-  - 🇫🇮 90b
-  - 🇬🇧 3a
+  - 🇪🇪 114b
+  - 🇫🇮 90
   - 🇳🇱 93b
-  - 🇸🇪 ✓ 51a
   - 🇳🇱 167c
   - 🇫🇮 122b
-  - 🇳🇱 62a
-  - 🇫🇷 81b
-  - 🇪🇸 103b
-  - 🇺🇸 99a
+  - 🇵🇱 156e
+  - 🇬🇧 3a
+  - 🇺🇸 86
+  - 🇪🇪 158a
+  - 🇺🇸 99c
+  - 🇸🇪 ✓ 51a
+  - 🇳🇱 138c
+  - 🇸🇪 16a
+  - 🇺🇸 89
   - 🇩🇪 ✓ 55b
+  - 🇫🇷 81a
   - 🇮🇪 2a
-  - 🇺🇸 52a
-  - 🇵🇱 45
-  - 🇳🇱 61b
-  - 🇩🇪 87
   - 🇫🇷 118
-  - 🇹🇷 172
-  - 🇺🇸 89a
+  - 🇮🇶 41b
+  - 🇹🇷 172b
+  - 🇩🇪 87
+  - 🇵🇱 144d
 rules:
 - MATCH,PROXY
