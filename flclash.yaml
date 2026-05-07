@@ -3,40 +3,40 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇵🇱 163
+- name: 🇳🇱 147b
   type: vless
-  server: network.fintech-llc.com
+  server: vk.cachingtech.com
   port: 443
   uuid: "147d6553-eb25-4eb4-bf3e-97a53e22c868"
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: "network.fintech-llc.com"
+  servername: "vk.cachingtech.com"
   client-fingerprint: chrome
   reality-opts:
-    public-key: "Kkpdrf3HDxb05xXM7vXgQvvMPybpU4gIRW6Ue11GRl4"
-    short-id: "d5165ba2f1efc8cd"
-- name: 🇫🇮 31
+    public-key: "yk1VgHUKE7-oMeFrhyyFn6aLtedVP40h6abJWJJq8W4"
+    short-id: "4f9b2b1a3c5d7e0f"
+- name: 🇳🇱 62a
   type: vless
-  server: 185.153.181.118
-  port: 46110
-  uuid: "6ec3c298-1058-43bd-81e3-54b155c4ae21"
+  server: api.dockl.com
+  port: 443
+  uuid: "147d6553-eb25-4eb4-bf3e-97a53e22c868"
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: "www.deepl.com"
+  servername: "api.dockl.com"
   client-fingerprint: chrome
   reality-opts:
-    public-key: "7q3_m65wkw4AlZ0tk2SGw5PQePvYPh2kaU-UCkHUb2g"
-    short-id: "5e"
+    public-key: "krArCjBlamNPPSImydWgBHWCLZG5jj16jGHAnlZmuzo"
+    short-id: "8f9dd98853c79394"
 proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - 🇵🇱 163
-  - 🇫🇮 31
+  - 🇳🇱 147b
+  - 🇳🇱 62a
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -44,7 +44,7 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 Авто (лучший)
-  - 🇵🇱 163
-  - 🇫🇮 31
+  - 🇳🇱 147b
+  - 🇳🇱 62a
 rules:
 - MATCH,PROXY
