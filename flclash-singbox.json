@@ -22,29 +22,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "138",
-      "server": "net.coreytech.com",
-      "server_port": 443,
-      "uuid": "147d6553-eb25-4eb4-bf3e-97a53e22c868",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "net.coreytech.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "4952kbKqM3YvtoAVPUzW95XBSFWjhxnr05OOF1tfL2o",
-          "short_id": "cfd137addad9f127"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "167",
+      "tag": "🇳🇱 167",
       "server": "rain.quietgarden.live",
       "server_port": 443,
       "uuid": "a5ff4d58-23e4-4f1a-8e56-409959dd107c",
@@ -69,36 +47,31 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 99",
-      "server": "2.27.59.125",
+      "tag": "🇳🇱 20",
+      "server": "528.ppower.tech",
       "server_port": 443,
-      "uuid": "e6e84f7b-0ae7-47a5-90c9-f0d0aa0b3123",
+      "uuid": "2d66de0d-d4de-4abd-ab83-ea7d0e9ddea3",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "google.com",
+        "server_name": "528.ppower.tech",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "2nKanJImME7wWPXjX-O8gJqlpn5udynqp0W6Ns_jm0w",
-          "short_id": "01"
+          "public_key": "Ycq9yvtnxN20x__sBzMdpEvBhO8XdbSYcmWm9v8pcT0",
+          "short_id": "ac8e3caa4f6d77de"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": ""
       }
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "138",
-        "167",
-        "🇺🇸 99"
+        "🇳🇱 167",
+        "🇳🇱 20"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "1m",
@@ -109,9 +82,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "138",
-        "167",
-        "🇺🇸 99"
+        "🇳🇱 167",
+        "🇳🇱 20"
       ],
       "default": "auto"
     },
