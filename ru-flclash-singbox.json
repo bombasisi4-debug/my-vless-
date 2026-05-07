@@ -22,8 +22,8 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇷🇺 2",
-      "server": "178.72.182.29",
+      "tag": "🇷🇺 ✓ 4",
+      "server": "178.72.182.38",
       "server_port": 52006,
       "uuid": "75807638-6f19-07d0-ae08-38492ee85c88",
       "packet_encoding": "xudp",
@@ -39,54 +39,30 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 46",
-      "server": "217.18.61.243",
+      "tag": "🇷🇺 ✓ 21b",
+      "server": "195.209.82.149",
       "server_port": 443,
-      "uuid": "d428091c-e6eb-48f9-9a07-b44eb886ac90",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "mydogcollections.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "RsG53RnTZKpPwbKt0mnj3963DinwNFHpk3eWaHH6oG4",
-          "short_id": "653253254366"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 142",
-      "server": "95.163.214.212",
-      "server_port": 443,
-      "uuid": "cf5718f5-c0f3-4b63-8fbf-1de69c1299c5",
+      "uuid": "fba0f717-c14c-Fade-b85b-4cd03da2f687",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "viennaairport",
+        "server_name": "s28233.cdn.ngenix.net",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "qB_eMu3ZO_wGITnyIqJ7Kt39-h9oHFnHlQQEqA-r3VA",
-          "short_id": ""
+          "fingerprint": "qq"
         }
       },
       "transport": {
-        "type": "grpc",
-        "service_name": "grpc"
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "s28233.cdn.ngenix.net"
+        }
       }
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 30",
+      "tag": "🇷🇺 30c",
       "server": "195.209.90.178",
       "server_port": 443,
       "uuid": "dd97b494-de65-Fade-8b30-919e46268920",
@@ -108,13 +84,105 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇷🇺 ✓ 17a",
+      "server": "195.209.88.216",
+      "server_port": 443,
+      "uuid": "d0510c6d-0322-Fade-b0f2-53eb6895d86b",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "s28233.cdn.ngenix.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "s28233.cdn.ngenix.net"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 13",
+      "server": "87.242.118.99",
+      "server_port": 443,
+      "uuid": "a0b3bfd1-e9a0-4ea8-bb19-c864c84a6919",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "vk.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "OvzRQOJMpkup7bhUmQicdBxrB0Pm8adQHLbTxgNorlo",
+          "short_id": "ab"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 ✓ 1",
+      "server": "193.9.49.6",
+      "server_port": 443,
+      "uuid": "3bdade6c-6e5f-4308-9299-87bfe6f01f07",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "M3cz1juSPE5-f-HFtaPxRRS17zQpPw11.SalISA7474-9d1.woRkERs.dEv",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoidFJGN2RaSWsiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyI0NS42MS4xNjYuMTIxIl19?ed=2560",
+        "headers": {
+          "Host": "m3cz1juspe5-f-hftapxrrs17zqppw11.salisa7474-9d1.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 19",
+      "server": "usa2.vpnfreedom.tech",
+      "server_port": 443,
+      "uuid": "6220e45d-8ac6-4a10-8433-0dbadcf747ca",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "dl8h7j1NKxBL_p2leIy9SWKznB0VG5h8ftsb0hlLICk",
+          "short_id": "2404"
+        }
+      }
+    },
+    {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 2",
-        "🇷🇺 46",
-        "🇷🇺 142",
-        "🇷🇺 30"
+        "🇷🇺 ✓ 4",
+        "🇷🇺 ✓ 21b",
+        "🇷🇺 30c",
+        "🇷🇺 ✓ 17a",
+        "🇷🇺 13",
+        "🇷🇺 ✓ 1",
+        "🇷🇺 19"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "1m",
@@ -125,10 +193,13 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 2",
-        "🇷🇺 46",
-        "🇷🇺 142",
-        "🇷🇺 30"
+        "🇷🇺 ✓ 4",
+        "🇷🇺 ✓ 21b",
+        "🇷🇺 30c",
+        "🇷🇺 ✓ 17a",
+        "🇷🇺 13",
+        "🇷🇺 ✓ 1",
+        "🇷🇺 19"
       ],
       "default": "auto"
     },
