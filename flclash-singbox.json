@@ -22,54 +22,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇳🇱 167",
-      "server": "rain.quietgarden.live",
-      "server_port": 443,
-      "uuid": "a5ff4d58-23e4-4f1a-8e56-409959dd107c",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "rain.quietgarden.live",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "BuvkEogWW6TyTAZNA21CVwNsRpi2GNGcDspHwYxOUS4",
-          "short_id": "1856d4c96087feeb"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇱🇻 159a",
-      "server": "airport.thinairtech.com",
-      "server_port": 443,
-      "uuid": "147d6553-eb25-4eb4-bf3e-97a53e22c868",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "airport.thinairtech.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mepO9Q9nbKjjdDgGLW_eqlFDuNrHtpEhUT7x03XgiXw",
-          "short_id": "299ad271ac32a1d2"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 163b",
+      "tag": "🇵🇱 163",
       "server": "network.fintech-llc.com",
       "server_port": 443,
       "uuid": "147d6553-eb25-4eb4-bf3e-97a53e22c868",
@@ -90,12 +43,33 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇭🇺 129",
+      "server": "buda-meow.nethcloud.top",
+      "server_port": 443,
+      "uuid": "e9888b9b-658b-4f51-94f3-b8ba80e4ef91",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "wikihow.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1HeKf_8KDjfzXfUi9P7WBaGStMvr96TKdUbofpkwBzQ",
+          "short_id": "8bd29483ded126b4"
+        }
+      }
+    },
+    {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇱 167",
-        "🇱🇻 159a",
-        "🇵🇱 163b"
+        "🇵🇱 163",
+        "🇭🇺 129"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "1m",
@@ -106,9 +80,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇱 167",
-        "🇱🇻 159a",
-        "🇵🇱 163b"
+        "🇵🇱 163",
+        "🇭🇺 129"
       ],
       "default": "auto"
     },
