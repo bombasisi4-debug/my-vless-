@@ -3,57 +3,40 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: '138'
-  type: vless
-  server: net.coreytech.com
-  port: 443
-  uuid: 147d6553-eb25-4eb4-bf3e-97a53e22c868
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: net.coreytech.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 4952kbKqM3YvtoAVPUzW95XBSFWjhxnr05OOF1tfL2o
-    short-id: cfd137addad9f127
-- name: '167'
+- name: 🇳🇱 167
   type: vless
   server: rain.quietgarden.live
   port: 443
-  uuid: a5ff4d58-23e4-4f1a-8e56-409959dd107c
+  uuid: "a5ff4d58-23e4-4f1a-8e56-409959dd107c"
   udp: true
   network: grpc
   tls: true
-  servername: rain.quietgarden.live
+  servername: "rain.quietgarden.live"
   client-fingerprint: random
   reality-opts:
-    public-key: BuvkEogWW6TyTAZNA21CVwNsRpi2GNGcDspHwYxOUS4
-    short-id: 1856d4c96087feeb
+    public-key: "BuvkEogWW6TyTAZNA21CVwNsRpi2GNGcDspHwYxOUS4"
+    short-id: "1856d4c96087feeb"
   grpc-opts:
     grpc-service-name: grpc
-- name: 🇺🇸 99
+- name: 🇳🇱 20
   type: vless
-  server: 2.27.59.125
+  server: 528.ppower.tech
   port: 443
-  uuid: e6e84f7b-0ae7-47a5-90c9-f0d0aa0b3123
+  uuid: "2d66de0d-d4de-4abd-ab83-ea7d0e9ddea3"
   udp: true
-  network: grpc
+  network: tcp
   tls: true
-  servername: google.com
+  servername: "528.ppower.tech"
   client-fingerprint: chrome
   reality-opts:
-    public-key: 2nKanJImME7wWPXjX-O8gJqlpn5udynqp0W6Ns_jm0w
-    short-id: '01'
-  grpc-opts:
-    grpc-service-name: ''
+    public-key: "Ycq9yvtnxN20x__sBzMdpEvBhO8XdbSYcmWm9v8pcT0"
+    short-id: "ac8e3caa4f6d77de"
 proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - '138'
-  - '167'
-  - 🇺🇸 99
+  - 🇳🇱 167
+  - 🇳🇱 20
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -61,8 +44,7 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 Авто (лучший)
-  - '138'
-  - '167'
-  - 🇺🇸 99
+  - 🇳🇱 167
+  - 🇳🇱 20
 rules:
 - MATCH,PROXY
