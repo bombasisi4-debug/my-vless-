@@ -3,18 +3,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇺 ✓ 4
-  type: vless
-  server: 178.72.182.38
-  port: 52006
-  uuid: "75807638-6f19-07d0-ae08-38492ee85c88"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "cl-ru-1.edgeflux.ru"
-  client-fingerprint: chrome
-- name: 🇷🇺 ✓ 21b
+- name: 🇷🇺 21b
   type: vless
   server: 195.209.82.149
   port: 443
@@ -28,7 +17,21 @@ proxies:
     path: /
     headers:
       Host: s28233.cdn.ngenix.net
-- name: 🇷🇺 30c
+- name: 🇷🇺 14a
+  type: vless
+  server: 51.250.109.25
+  port: 443
+  uuid: "769d6219-be8b-400d-9dd7-bbec4cca3593"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "ads.x5.ru"
+  client-fingerprint: qq
+  reality-opts:
+    public-key: "hseuuTmi2wPzhego9kHpfxq9pXZPeNeQ2P-1D2cdrR4"
+    short-id: "0fef"
+- name: 🇷🇺 ✓ 30c
   type: vless
   server: 195.209.90.178
   port: 443
@@ -42,11 +45,39 @@ proxies:
     path: /
     headers:
       Host: s28233.cdn.ngenix.net
-- name: 🇷🇺 ✓ 17a
+- name: 🇷🇺 33c
+  type: vless
+  server: 51.250.15.205
+  port: 443
+  uuid: "769d6219-be8b-400d-9dd7-bbec4cca3593"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "ads.x5.ru"
+  client-fingerprint: qq
+  reality-opts:
+    public-key: "W79JZgWJdz5LZ3ZplqNDCzvb9G4YKEIZIJZb_c7Ddjc"
+    short-id: "2094160d4e94f289"
+- name: 🇷🇺 ✓ 1
+  type: vless
+  server: 193.9.49.6
+  port: 443
+  uuid: "3bdade6c-6e5f-4308-9299-87bfe6f01f07"
+  udp: true
+  network: ws
+  tls: true
+  servername: "M3cz1juSPE5-f-HFtaPxRRS17zQpPw11.SalISA7474-9d1.woRkERs.dEv"
+  client-fingerprint: chrome
+  ws-opts:
+    path: /eyJqdW5rIjoidFJGN2RaSWsiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyI0NS42MS4xNjYuMTIxIl19?ed=2560
+    headers:
+      Host: m3cz1juspe5-f-hftapxrrs17zqppw11.salisa7474-9d1.workers.dev
+- name: 🇷🇺 17a
   type: vless
   server: 195.209.88.216
   port: 443
-  uuid: "d0510c6d-0322-Fade-b0f2-53eb6895d86b"
+  uuid: "62a14974-632b-Fade-bcf8-300ad5b351ee"
   udp: true
   network: ws
   tls: true
@@ -69,20 +100,20 @@ proxies:
   reality-opts:
     public-key: "OvzRQOJMpkup7bhUmQicdBxrB0Pm8adQHLbTxgNorlo"
     short-id: "ab"
-- name: 🇷🇺 ✓ 1
+- name: 🇷🇺 16b
   type: vless
-  server: 193.9.49.6
+  server: 212.109.219.204
   port: 443
-  uuid: "3bdade6c-6e5f-4308-9299-87bfe6f01f07"
+  uuid: "b5f8c9a3-d609-4977-bf5a-ee4fe39af0ca"
   udp: true
-  network: ws
+  network: tcp
   tls: true
-  servername: "M3cz1juSPE5-f-HFtaPxRRS17zQpPw11.SalISA7474-9d1.woRkERs.dEv"
-  client-fingerprint: chrome
-  ws-opts:
-    path: /eyJqdW5rIjoidFJGN2RaSWsiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyI0NS42MS4xNjYuMTIxIl19?ed=2560
-    headers:
-      Host: m3cz1juspe5-f-hftapxrrs17zqppw11.salisa7474-9d1.workers.dev
+  flow: xtls-rprx-vision
+  servername: "apple.com"
+  client-fingerprint: random
+  reality-opts:
+    public-key: "4RrSSxyw5jBgXf_F-t7Flk5wRqWXCnXkblkAJveAbBo"
+    short-id: ""
 - name: 🇷🇺 19
   type: vless
   server: usa2.vpnfreedom.tech
@@ -101,12 +132,14 @@ proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - 🇷🇺 ✓ 4
-  - 🇷🇺 ✓ 21b
-  - 🇷🇺 30c
-  - 🇷🇺 ✓ 17a
-  - 🇷🇺 13
+  - 🇷🇺 21b
+  - 🇷🇺 14a
+  - 🇷🇺 ✓ 30c
+  - 🇷🇺 33c
   - 🇷🇺 ✓ 1
+  - 🇷🇺 17a
+  - 🇷🇺 13
+  - 🇷🇺 16b
   - 🇷🇺 19
   url: https://www.gstatic.com/generate_204
   interval: 60
@@ -115,12 +148,14 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 Авто (лучший)
-  - 🇷🇺 ✓ 4
-  - 🇷🇺 ✓ 21b
-  - 🇷🇺 30c
-  - 🇷🇺 ✓ 17a
-  - 🇷🇺 13
+  - 🇷🇺 21b
+  - 🇷🇺 14a
+  - 🇷🇺 ✓ 30c
+  - 🇷🇺 33c
   - 🇷🇺 ✓ 1
+  - 🇷🇺 17a
+  - 🇷🇺 13
+  - 🇷🇺 16b
   - 🇷🇺 19
 rules:
 - MATCH,PROXY
