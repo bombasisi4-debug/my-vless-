@@ -3,49 +3,21 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇪🇪 114b
+- name: '138'
   type: vless
-  server: minecraft.twilightparadox.com
+  server: net.coreytech.com
   port: 443
   uuid: 147d6553-eb25-4eb4-bf3e-97a53e22c868
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: minecraft.twilightparadox.com
+  servername: net.coreytech.com
   client-fingerprint: chrome
   reality-opts:
-    public-key: zkyUy8Deg-OEnzgoSKCVQfadI3_Ls_vzUydpzT6CsUg
-    short-id: ba26d0a9bc05c198
-- name: 🇫🇮 90
-  type: vless
-  server: 85.192.49.174
-  port: 443
-  uuid: 95937e6d-ce76-4f20-bdb2-731a4d3757b0
-  udp: true
-  network: grpc
-  tls: true
-  servername: fi.moktana.app
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: zz1etKRzRA4fwe0Te0p6jAlHorNJs4mmcljA3oL520E
-    short-id: 6ac433f9c670e002
-  grpc-opts:
-    grpc-service-name: xyz
-- name: 🇳🇱 93b
-  type: vless
-  server: portal.projectauths.com
-  port: 443
-  uuid: a5ff4d58-23e4-4f1a-8e56-409959dd107c
-  udp: true
-  network: xhttp
-  tls: true
-  servername: portal.projectauths.com
-  client-fingerprint: random
-  reality-opts:
-    public-key: hLlhnCZGMfjakOk2U1uDynwnqG0z4A8HSE4cu-lrrzo
-    short-id: 159570b153a58fea
-- name: 🇳🇱 167c
+    public-key: 4952kbKqM3YvtoAVPUzW95XBSFWjhxnr05OOF1tfL2o
+    short-id: cfd137addad9f127
+- name: '167'
   type: vless
   server: rain.quietgarden.live
   port: 443
@@ -60,77 +32,7 @@ proxies:
     short-id: 1856d4c96087feeb
   grpc-opts:
     grpc-service-name: grpc
-- name: 🇫🇮 122b
-  type: vless
-  server: 85.192.48.87
-  port: 443
-  uuid: 95937e6d-ce76-4f20-bdb2-731a4d3757b0
-  udp: true
-  network: grpc
-  tls: true
-  servername: fi.moktana.app
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: zz1etKRzRA4fwe0Te0p6jAlHorNJs4mmcljA3oL520E
-    short-id: a4a9c895397fa42e
-  grpc-opts:
-    grpc-service-name: xyz
-- name: 🇵🇱 156e
-  type: vless
-  server: sync-provider.ignorelist.com
-  port: 443
-  uuid: 147d6553-eb25-4eb4-bf3e-97a53e22c868
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: sync-provider.ignorelist.com
-  client-fingerprint: random
-  reality-opts:
-    public-key: itfFe5EsAZUYgiuWlhEEagGvT6s8ErWiI4PrF25YqTg
-    short-id: 0c72ad8ba18d63ad
-- name: 🇬🇧 3a
-  type: vless
-  server: world.asperwild.com
-  port: 443
-  uuid: a5ff4d58-23e4-4f1a-8e56-409959dd107c
-  udp: true
-  network: xhttp
-  tls: true
-  servername: world.asperwild.com
-  client-fingerprint: qq
-  reality-opts:
-    public-key: hLlhnCZGMfjakOk2U1uDynwnqG0z4A8HSE4cu-lrrzo
-    short-id: 40321d69f30e0cca
-- name: 🇺🇸 86
-  type: vless
-  server: ru-nl.braidx.tech
-  port: 443
-  uuid: e31a303c-a8f0-4189-9bdf-2312d15253d2
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: www.google.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 9mJq2cP3srX_6K1YfMDp1yndvo5CtgL6TEVQ8tm4fVc
-    short-id: ''
-- name: 🇪🇪 158a
-  type: vless
-  server: tal.odavpn.online
-  port: 8443
-  uuid: edabe54f-5b45-472b-8de2-a339f12d2a6f
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: vk.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: fV1a9bRBEUvWODYvk0ow7SgGKt1moska3H61LRCLEHw
-    short-id: 5adbad5bb8d9
-- name: 🇺🇸 99c
+- name: 🇺🇸 99
   type: vless
   server: 2.27.59.125
   port: 443
@@ -145,195 +47,13 @@ proxies:
     short-id: '01'
   grpc-opts:
     grpc-service-name: ''
-- name: 🇸🇪 ✓ 51a
-  type: vless
-  server: swed.oplatasite.ru
-  port: 8443
-  uuid: f834b1a5-dc5e-4878-a73c-ad0c80f8f748
-  udp: true
-  network: tcp
-  tls: true
-  servername: vpn.oplatasite.ru
-  client-fingerprint: chrome
-- name: 🇳🇱 138c
-  type: vless
-  server: net.coreytech.com
-  port: 443
-  uuid: 147d6553-eb25-4eb4-bf3e-97a53e22c868
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: net.coreytech.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 4952kbKqM3YvtoAVPUzW95XBSFWjhxnr05OOF1tfL2o
-    short-id: cfd137addad9f127
-- name: 🇸🇪 16a
-  type: vless
-  server: 31.22.91.203
-  port: 443
-  uuid: 216da8a8-8833-49e1-86d1-982d6223c8a3
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: vega.relead.org
-  client-fingerprint: qq
-  reality-opts:
-    public-key: qTfZpilVyQrFDIgxmEsd18Ph3c_-8O-R_af4o_WQ_Tg
-    short-id: f74c6a18133e2e72
-- name: 🇺🇸 89
-  type: vless
-  server: 216.227.161.43
-  port: 443
-  uuid: 95937e6d-ce76-4f20-bdb2-731a4d3757b0
-  udp: true
-  network: grpc
-  tls: true
-  servername: deepl.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: zz1etKRzRA4fwe0Te0p6jAlHorNJs4mmcljA3oL520E
-    short-id: d0ad251b4ce4eb2c
-  grpc-opts:
-    grpc-service-name: xyz
-- name: 🇩🇪 ✓ 55b
-  type: vless
-  server: vpn.oplatasite.ru
-  port: 443
-  uuid: f834b1a5-dc5e-4878-a73c-ad0c80f8f748
-  udp: true
-  network: tcp
-  tls: true
-  servername: vpn.oplatasite.ru
-  client-fingerprint: chrome
-- name: 🇫🇷 81a
-  type: vless
-  server: ms-office.opior.com
-  port: 443
-  uuid: 147d6553-eb25-4eb4-bf3e-97a53e22c868
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: ms-office.opior.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: bAsmfgKZYXYptO4f2eV622XRbnai3kcQvxLSGTebK2k
-    short-id: 6caf94f7f05077a7
-- name: 🇮🇪 2a
-  type: vless
-  server: 31.57.56.135
-  port: 443
-  uuid: 95937e6d-ce76-4f20-bdb2-731a4d3757b0
-  udp: true
-  network: grpc
-  tls: true
-  servername: deepl.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: zz1etKRzRA4fwe0Te0p6jAlHorNJs4mmcljA3oL520E
-    short-id: 428f5fc6c8446732
-  grpc-opts:
-    grpc-service-name: xyz
-- name: 🇫🇷 118
-  type: vless
-  server: y1xdwst8om.brod-studio.ru
-  port: 443
-  uuid: 3dae19c4-f3d1-4dab-9bb2-1d0121813f52
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: tradingview.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: o_ZQuEx_ealt_YkqgtYRqFhee0pzFkg9ObUhODLTAB8
-    short-id: 08
-- name: 🇮🇶 41b
-  type: vless
-  server: iq.c2horizon.app
-  port: 443
-  uuid: 8ce35445-3f2c-4200-88c7-7fff79fb30c4
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: iq.c2horizon.app
-  client-fingerprint: qq
-  reality-opts:
-    public-key: IuvAXlAWBpeXehmEk0P-FIGTctUhny2H3UilbWWfJC0
-    short-id: 122218f4c1f172e4
-- name: 🇹🇷 172b
-  type: vless
-  server: tr2.odavpn.online
-  port: 8443
-  uuid: edabe54f-5b45-472b-8de2-a339f12d2a6f
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: www.sony.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: Lq1xwc-Qd0Te8sV-NxrJLQO6JbvPkknki6inkKj5_WQ
-    short-id: 22c6f049621c44ec
-- name: 🇩🇪 87
-  type: vless
-  server: serv18.strettenvpn.com
-  port: 7771
-  uuid: ba52eda4-80e7-42ca-a37f-5a0cb5caea8e
-  udp: true
-  network: grpc
-  tls: true
-  servername: 5post-gate.x5.ru
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: yhUfTGgu5PYRlFqMnRZkxffH_aU05AFUToGI8_EKF28
-    short-id: '8248954896'
-  grpc-opts:
-    grpc-service-name: 5post-gate.x5.ru
-- name: 🇵🇱 144d
-  type: vless
-  server: db.diamondbsd.com
-  port: 443
-  uuid: 147d6553-eb25-4eb4-bf3e-97a53e22c868
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: db.diamondbsd.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: yx2Uk6XAY47b3_hfpdR6FUI4ax5xASeUGkh5NFkg3RU
-    short-id: 04b5a6f1e2d3c978
 proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - 🇪🇪 114b
-  - 🇫🇮 90
-  - 🇳🇱 93b
-  - 🇳🇱 167c
-  - 🇫🇮 122b
-  - 🇵🇱 156e
-  - 🇬🇧 3a
-  - 🇺🇸 86
-  - 🇪🇪 158a
-  - 🇺🇸 99c
-  - 🇸🇪 ✓ 51a
-  - 🇳🇱 138c
-  - 🇸🇪 16a
-  - 🇺🇸 89
-  - 🇩🇪 ✓ 55b
-  - 🇫🇷 81a
-  - 🇮🇪 2a
-  - 🇫🇷 118
-  - 🇮🇶 41b
-  - 🇹🇷 172b
-  - 🇩🇪 87
-  - 🇵🇱 144d
+  - '138'
+  - '167'
+  - 🇺🇸 99
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -341,27 +61,8 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 Авто (лучший)
-  - 🇪🇪 114b
-  - 🇫🇮 90
-  - 🇳🇱 93b
-  - 🇳🇱 167c
-  - 🇫🇮 122b
-  - 🇵🇱 156e
-  - 🇬🇧 3a
-  - 🇺🇸 86
-  - 🇪🇪 158a
-  - 🇺🇸 99c
-  - 🇸🇪 ✓ 51a
-  - 🇳🇱 138c
-  - 🇸🇪 16a
-  - 🇺🇸 89
-  - 🇩🇪 ✓ 55b
-  - 🇫🇷 81a
-  - 🇮🇪 2a
-  - 🇫🇷 118
-  - 🇮🇶 41b
-  - 🇹🇷 172b
-  - 🇩🇪 87
-  - 🇵🇱 144d
+  - '138'
+  - '167'
+  - 🇺🇸 99
 rules:
 - MATCH,PROXY
