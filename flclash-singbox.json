@@ -22,83 +22,40 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇸🇪 ✓ 51",
-      "server": "swed.oplatasite.ru",
-      "server_port": 8443,
-      "uuid": "f834b1a5-dc5e-4878-a73c-ad0c80f8f748",
+      "tag": "🇬🇪 ✓ 58",
+      "server": "r1.mizulina.top",
+      "server_port": 22231,
+      "uuid": "afcac633-0e1a-46c3-bef2-cc01cc0097c8",
       "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "vpn.oplatasite.ru",
+        "server_name": "r1.mizulina.top",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "edge"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇱🇻 159b",
-      "server": "airport.thinairtech.com",
+      "tag": "🇨🇦 3",
+      "server": "185.141.216.199",
       "server_port": 443,
-      "uuid": "147d6553-eb25-4eb4-bf3e-97a53e22c868",
+      "uuid": "480cee80-36bb-4382-afcc-d5deb877783c",
       "packet_encoding": "xudp",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "airport.thinairtech.com",
+        "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "mepO9Q9nbKjjdDgGLW_eqlFDuNrHtpEhUT7x03XgiXw",
-          "short_id": "299ad271ac32a1d2"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 62a",
-      "server": "api.dockl.com",
-      "server_port": 443,
-      "uuid": "147d6553-eb25-4eb4-bf3e-97a53e22c868",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "api.dockl.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "krArCjBlamNPPSImydWgBHWCLZG5jj16jGHAnlZmuzo",
-          "short_id": "8f9dd98853c79394"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 22",
-      "server": "3.8.177.226",
-      "server_port": 39093,
-      "uuid": "f0449dd0-915d-4d7a-9c2d-b2ccd482f812",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "TsI3LH9voENiAq5puKOvBjxgP4UF2ailXG1IRncJ1EE",
-          "short_id": "8452eb6f8cb17bab"
+          "public_key": "zeWC31vWK-6rMIa_kiqgZLrtnij8TNrqYZzlXC1jzlA",
+          "short_id": "1abc0c83115fffec"
         }
       }
     },
@@ -106,10 +63,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇪 ✓ 51",
-        "🇱🇻 159b",
-        "🇳🇱 62a",
-        "🇬🇧 22"
+        "🇬🇪 ✓ 58",
+        "🇨🇦 3"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "1m",
@@ -120,10 +75,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇪 ✓ 51",
-        "🇱🇻 159b",
-        "🇳🇱 62a",
-        "🇬🇧 22"
+        "🇬🇪 ✓ 58",
+        "🇨🇦 3"
       ],
       "default": "auto"
     },
