@@ -3,20 +3,19 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇻 159
+- name: 🇩🇪 7
   type: vless
-  server: airport.thinairtech.com
-  port: 443
-  uuid: "147d6553-eb25-4eb4-bf3e-97a53e22c868"
+  server: 64.188.57.161
+  port: 3443
+  uuid: "d9a48a6f-cefa-41ac-8193-e006c2eaec98"
   udp: true
-  network: tcp
+  network: xhttp
   tls: true
-  flow: xtls-rprx-vision
-  servername: "airport.thinairtech.com"
+  servername: "sun6-21.userapi.com"
   client-fingerprint: chrome
   reality-opts:
-    public-key: "mepO9Q9nbKjjdDgGLW_eqlFDuNrHtpEhUT7x03XgiXw"
-    short-id: "299ad271ac32a1d2"
+    public-key: "kwQ9aAYlpF632btXxqBUrq9D_grwjgNi0v78H7yh-F0"
+    short-id: "abcdef0123456789"
 - name: 🇬🇪 ✓ 58
   type: vless
   server: r1.mizulina.top
@@ -32,7 +31,7 @@ proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - 🇱🇻 159
+  - 🇩🇪 7
   - 🇬🇪 ✓ 58
   url: https://www.gstatic.com/generate_204
   interval: 60
@@ -41,7 +40,7 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 Авто (лучший)
-  - 🇱🇻 159
+  - 🇩🇪 7
   - 🇬🇪 ✓ 58
 rules:
 - MATCH,PROXY
