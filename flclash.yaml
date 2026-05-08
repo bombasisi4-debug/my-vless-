@@ -16,23 +16,11 @@ proxies:
   reality-opts:
     public-key: "kwQ9aAYlpF632btXxqBUrq9D_grwjgNi0v78H7yh-F0"
     short-id: "abcdef0123456789"
-- name: 🇬🇪 ✓ 58
-  type: vless
-  server: r1.mizulina.top
-  port: 22231
-  uuid: "afcac633-0e1a-46c3-bef2-cc01cc0097c8"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "r1.mizulina.top"
-  client-fingerprint: edge
 proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
   - 🇩🇪 7
-  - 🇬🇪 ✓ 58
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -41,6 +29,5 @@ proxy-groups:
   proxies:
   - 🚀 Авто (лучший)
   - 🇩🇪 7
-  - 🇬🇪 ✓ 58
 rules:
 - MATCH,PROXY
