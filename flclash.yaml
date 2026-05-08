@@ -3,20 +3,20 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇫🇮 5
+- name: 🇱🇻 159
   type: vless
-  server: 64.188.76.112
+  server: airport.thinairtech.com
   port: 443
-  uuid: "a9cac45f-de21-4858-aa2e-42be08002b39"
+  uuid: "147d6553-eb25-4eb4-bf3e-97a53e22c868"
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: "www.apple.com"
+  servername: "airport.thinairtech.com"
   client-fingerprint: chrome
   reality-opts:
-    public-key: "SvQNeUViPFTH2-zG7HPZki4iY6a-d6yWdBXkMStqwjU"
-    short-id: "74db5d"
+    public-key: "mepO9Q9nbKjjdDgGLW_eqlFDuNrHtpEhUT7x03XgiXw"
+    short-id: "299ad271ac32a1d2"
 - name: 🇬🇪 ✓ 58
   type: vless
   server: r1.mizulina.top
@@ -32,7 +32,7 @@ proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - 🇫🇮 5
+  - 🇱🇻 159
   - 🇬🇪 ✓ 58
   url: https://www.gstatic.com/generate_204
   interval: 60
@@ -41,7 +41,7 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 Авто (лучший)
-  - 🇫🇮 5
+  - 🇱🇻 159
   - 🇬🇪 ✓ 58
 rules:
 - MATCH,PROXY
