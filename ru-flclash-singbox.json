@@ -22,66 +22,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇷🇺 2a",
-      "server": "st.xbs54as9c6.ru",
-      "server_port": 443,
-      "uuid": "75356919-6ece-455c-ba7a-9f042a60d2c5",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/stream",
-        "headers": {
-          "Host": "rbc.ru"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 ✓ 1",
-      "server": "193.9.49.6",
-      "server_port": 443,
-      "uuid": "3bdade6c-6e5f-4308-9299-87bfe6f01f07",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "M3cz1juSPE5-f-HFtaPxRRS17zQpPw11.SalISA7474-9d1.woRkERs.dEv",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/eyJqdW5rIjoidFJGN2RaSWsiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyI0NS42MS4xNjYuMTIxIl19?ed=2560",
-        "headers": {
-          "Host": "m3cz1juspe5-f-hftapxrrs17zqppw11.salisa7474-9d1.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 26",
-      "server": "87.242.118.99",
-      "server_port": 443,
-      "uuid": "4ec34d50-a63e-4db4-b3db-044529fcf74d",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "vk.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "OvzRQOJMpkup7bhUmQicdBxrB0Pm8adQHLbTxgNorlo",
-          "short_id": "ab"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 ✓ 15b",
+      "tag": "🇷🇺 ✓ 15",
       "server": "178.72.182.18",
       "server_port": 52006,
       "uuid": "75807638-6f19-07d0-ae08-38492ee85c88",
@@ -97,13 +38,32 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇷🇺 1",
+      "server": "87.242.118.99",
+      "server_port": 443,
+      "uuid": "49331bfd-6405-4416-bb50-485e46e9fb11",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "travel.yandex.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "XqH-gNEL9eJfr1pglaI8WU3OvE654_5duXYBS35UXlM",
+          "short_id": "abcdef0123456789"
+        }
+      }
+    },
+    {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 2a",
-        "🇷🇺 ✓ 1",
-        "🇷🇺 26",
-        "🇷🇺 ✓ 15b"
+        "🇷🇺 ✓ 15",
+        "🇷🇺 1"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "1m",
@@ -114,10 +74,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 2a",
-        "🇷🇺 ✓ 1",
-        "🇷🇺 26",
-        "🇷🇺 ✓ 15b"
+        "🇷🇺 ✓ 15",
+        "🇷🇺 1"
       ],
       "default": "auto"
     },
