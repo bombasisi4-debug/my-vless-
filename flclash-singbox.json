@@ -22,23 +22,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇱🇻 159",
-      "server": "airport.thinairtech.com",
-      "server_port": 443,
-      "uuid": "147d6553-eb25-4eb4-bf3e-97a53e22c868",
+      "tag": "🇩🇪 7",
+      "server": "64.188.57.161",
+      "server_port": 3443,
+      "uuid": "d9a48a6f-cefa-41ac-8193-e006c2eaec98",
       "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "airport.thinairtech.com",
+        "server_name": "sun6-21.userapi.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "mepO9Q9nbKjjdDgGLW_eqlFDuNrHtpEhUT7x03XgiXw",
-          "short_id": "299ad271ac32a1d2"
+          "public_key": "kwQ9aAYlpF632btXxqBUrq9D_grwjgNi0v78H7yh-F0",
+          "short_id": "abcdef0123456789"
         }
       }
     },
@@ -63,7 +62,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇻 159",
+        "🇩🇪 7",
         "🇬🇪 ✓ 58"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -75,7 +74,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇻 159",
+        "🇩🇪 7",
         "🇬🇪 ✓ 58"
       ],
       "default": "auto"
