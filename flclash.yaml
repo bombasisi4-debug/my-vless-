@@ -3,25 +3,25 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇫🇷 10
+- name: 🇳🇱 3
   type: vless
-  server: 198.16.112.202
+  server: nl1server.rabstvo.shop
   port: 443
-  uuid: "93246986-2fbf-4dfb-a2c3-39a4f11f42ce"
+  uuid: "e4103db2-0965-416e-8ca8-a66d46eeee45"
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: "cdn.trahodrom.fun"
+  servername: "ya.ru"
   client-fingerprint: chrome
   reality-opts:
-    public-key: "_4cv7OXJFuVt8PGPNwk8isFFgrRR5tKojjpLWGTN8RI"
-    short-id: ""
+    public-key: "mr6pvCeUkQCaRcpbWvZ1ixoKlzZBEFTRlsN0uFcqbic"
+    short-id: "c5204446"
 proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - 🇫🇷 10
+  - 🇳🇱 3
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -29,6 +29,6 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 Авто (лучший)
-  - 🇫🇷 10
+  - 🇳🇱 3
 rules:
 - MATCH,PROXY
