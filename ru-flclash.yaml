@@ -3,6 +3,59 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
+- name: 🇷🇺 29
+  type: vless
+  server: a.ru.maviks.ru
+  port: 443
+  uuid: "0eeeb64e-9cea-001e-b5e5-e4336f1c40e5"
+  udp: true
+  network: tcp
+  tls: true
+  servername: "maviks.ru"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "fPSR5GZpxhOV6Rh7VzMtS4AeRN7ipyNX4waG9JzJzxQ"
+    short-id: "31181028b56c8704"
+- name: 🇷🇺 ✓ 14
+  type: vless
+  server: 193.9.49.6
+  port: 443
+  uuid: "3bdade6c-6e5f-4308-9299-87bfe6f01f07"
+  udp: true
+  network: ws
+  tls: true
+  servername: "M3cz1juSPE5-f-HFtaPxRRS17zQpPw11.SalISA7474-9d1.woRkERs.dEv"
+  client-fingerprint: chrome
+  ws-opts:
+    path: /eyJqdW5rIjoidFJGN2RaSWsiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyI0NS42MS4xNjYuMTIxIl19?ed=2560
+    headers:
+      Host: m3cz1juspe5-f-hftapxrrs17zqppw11.salisa7474-9d1.workers.dev
+- name: 🇷🇺 24
+  type: vless
+  server: 213.171.26.10
+  port: 3443
+  uuid: "44a2ade2-2eca-4b1a-ac4b-360f5ae1488b"
+  udp: true
+  network: xhttp
+  tls: true
+  servername: "kinopoisk.ru"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "XqH-gNEL9eJfr1pglaI8WU3OvE654_5duXYBS35UXlM"
+    short-id: "ab"
+- name: 🇷🇺 26
+  type: vless
+  server: 87.242.118.99
+  port: 443
+  uuid: "41f86479-e486-4e2f-bc24-74bdcaeca40f"
+  udp: true
+  network: xhttp
+  tls: true
+  servername: "travel.yandex.ru"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "XqH-gNEL9eJfr1pglaI8WU3OvE654_5duXYBS35UXlM"
+    short-id: "abcdef0123456789"
 - name: 🇷🇺 ✓ 15
   type: vless
   server: 178.72.182.18
@@ -14,25 +67,15 @@ proxies:
   flow: xtls-rprx-vision
   servername: "cl-ru-1.edgeflux.ru"
   client-fingerprint: chrome
-- name: 🇷🇺 1
-  type: vless
-  server: 87.242.118.99
-  port: 443
-  uuid: "49331bfd-6405-4416-bb50-485e46e9fb11"
-  udp: true
-  network: xhttp
-  tls: true
-  servername: "travel.yandex.ru"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "XqH-gNEL9eJfr1pglaI8WU3OvE654_5duXYBS35UXlM"
-    short-id: "abcdef0123456789"
 proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
+  - 🇷🇺 29
+  - 🇷🇺 ✓ 14
+  - 🇷🇺 24
+  - 🇷🇺 26
   - 🇷🇺 ✓ 15
-  - 🇷🇺 1
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -40,7 +83,10 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 Авто (лучший)
+  - 🇷🇺 29
+  - 🇷🇺 ✓ 14
+  - 🇷🇺 24
+  - 🇷🇺 26
   - 🇷🇺 ✓ 15
-  - 🇷🇺 1
 rules:
 - MATCH,PROXY
