@@ -2,32 +2,18 @@ mixed-port: 7890
 allow-lan: false
 mode: rule
 log-level: info
-proxies:
-- name: 🇩🇪 7
-  type: vless
-  server: 64.188.57.161
-  port: 3443
-  uuid: "d9a48a6f-cefa-41ac-8193-e006c2eaec98"
-  udp: true
-  network: xhttp
-  tls: true
-  servername: "sun6-21.userapi.com"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "kwQ9aAYlpF632btXxqBUrq9D_grwjgNi0v78H7yh-F0"
-    short-id: "abcdef0123456789"
+proxies: []
 proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - 🇩🇪 7
+  - DIRECT
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
 - name: PROXY
   type: select
   proxies:
-  - 🚀 Авто (лучший)
-  - 🇩🇪 7
+  - DIRECT
 rules:
 - MATCH,PROXY
