@@ -3,7 +3,35 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇬🇪 ✓ 58
+- name: 🇫🇮 5
+  type: vless
+  server: 64.188.76.112
+  port: 443
+  uuid: "a9cac45f-de21-4858-aa2e-42be08002b39"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "www.apple.com"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "SvQNeUViPFTH2-zG7HPZki4iY6a-d6yWdBXkMStqwjU"
+    short-id: "74db5d"
+- name: 🇳🇱 147
+  type: vless
+  server: vk.cachingtech.com
+  port: 443
+  uuid: "147d6553-eb25-4eb4-bf3e-97a53e22c868"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "vk.cachingtech.com"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "yk1VgHUKE7-oMeFrhyyFn6aLtedVP40h6abJWJJq8W4"
+    short-id: "4f9b2b1a3c5d7e0f"
+- name: 🇬🇪 58
   type: vless
   server: r1.mizulina.top
   port: 22231
@@ -14,26 +42,13 @@ proxies:
   flow: xtls-rprx-vision
   servername: "r1.mizulina.top"
   client-fingerprint: edge
-- name: 🇨🇦 3
-  type: vless
-  server: 185.141.216.199
-  port: 443
-  uuid: "480cee80-36bb-4382-afcc-d5deb877783c"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "addons.mozilla.org"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "zeWC31vWK-6rMIa_kiqgZLrtnij8TNrqYZzlXC1jzlA"
-    short-id: "1abc0c83115fffec"
 proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - 🇬🇪 ✓ 58
-  - 🇨🇦 3
+  - 🇫🇮 5
+  - 🇳🇱 147
+  - 🇬🇪 58
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -41,7 +56,8 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 Авто (лучший)
-  - 🇬🇪 ✓ 58
-  - 🇨🇦 3
+  - 🇫🇮 5
+  - 🇳🇱 147
+  - 🇬🇪 58
 rules:
 - MATCH,PROXY
