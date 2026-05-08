@@ -3,19 +3,34 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇺 29
+- name: 🇷🇺 12a
   type: vless
-  server: a.ru.maviks.ru
+  server: 84.201.146.248
   port: 443
-  uuid: "0eeeb64e-9cea-001e-b5e5-e4336f1c40e5"
+  uuid: "328f03f2-1e0d-4cd0-9126-4492bbd38348"
   udp: true
   network: tcp
   tls: true
-  servername: "maviks.ru"
+  flow: xtls-rprx-vision
+  servername: "max.ru"
   client-fingerprint: chrome
   reality-opts:
-    public-key: "fPSR5GZpxhOV6Rh7VzMtS4AeRN7ipyNX4waG9JzJzxQ"
-    short-id: "31181028b56c8704"
+    public-key: "rh2IgXc0vtXZ3euLtMP8RUlnmBc_4ftYBuL5Z0udk2A"
+    short-id: ""
+- name: 🇷🇺 26b
+  type: vless
+  server: 84.201.145.80
+  port: 443
+  uuid: "328f03f2-1e0d-4cd0-9126-4492bbd38348"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "max.ru"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "rh2IgXc0vtXZ3euLtMP8RUlnmBc_4ftYBuL5Z0udk2A"
+    short-id: ""
 - name: 🇷🇺 ✓ 14
   type: vless
   server: 193.9.49.6
@@ -30,32 +45,48 @@ proxies:
     path: /eyJqdW5rIjoidFJGN2RaSWsiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyI0NS42MS4xNjYuMTIxIl19?ed=2560
     headers:
       Host: m3cz1juspe5-f-hftapxrrs17zqppw11.salisa7474-9d1.workers.dev
-- name: 🇷🇺 24
+- name: 🇷🇺 34d
   type: vless
-  server: 213.171.26.10
-  port: 3443
-  uuid: "44a2ade2-2eca-4b1a-ac4b-360f5ae1488b"
-  udp: true
-  network: xhttp
-  tls: true
-  servername: "kinopoisk.ru"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "XqH-gNEL9eJfr1pglaI8WU3OvE654_5duXYBS35UXlM"
-    short-id: "ab"
-- name: 🇷🇺 26
-  type: vless
-  server: 87.242.118.99
+  server: 37.9.4.82
   port: 443
-  uuid: "41f86479-e486-4e2f-bc24-74bdcaeca40f"
+  uuid: "fd47bf21-bd91-Fade-b53f-6ce484de16b6"
+  udp: true
+  network: grpc
+  tls: true
+  servername: "ads.x5.ru"
+  client-fingerprint: qq
+  reality-opts:
+    public-key: "o6jbbDkNF_5v8BlkIDl4NKhBiXTxCGms-NPmFkuQNXA"
+    short-id: ""
+  grpc-opts:
+    grpc-service-name: ''
+- name: 🇷🇺 18
+  type: vless
+  server: 217.168.240.172
+  port: 2443
+  uuid: "85e5bf1d-b33f-4126-a3e9-597686f161aa"
   udp: true
   network: xhttp
   tls: true
   servername: "travel.yandex.ru"
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   reality-opts:
     public-key: "XqH-gNEL9eJfr1pglaI8WU3OvE654_5duXYBS35UXlM"
-    short-id: "abcdef0123456789"
+    short-id: "ab"
+- name: 🇷🇺 35
+  type: vless
+  server: 51.250.114.26
+  port: 443
+  uuid: "b80e8e25-c7d5-488d-92bf-9774226ae040"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "wl-6-5.legendary.ac"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "c8Sx7-8OcvtHEbVU59r-9DQrNdSI91GbMaHR-du4BxA"
+    short-id: "b7b3ff64ca530808"
 - name: 🇷🇺 ✓ 15
   type: vless
   server: 178.72.182.18
@@ -67,15 +98,69 @@ proxies:
   flow: xtls-rprx-vision
   servername: "cl-ru-1.edgeflux.ru"
   client-fingerprint: chrome
+- name: 🇷🇺 19
+  type: vless
+  server: usa2.vpnfreedom.tech
+  port: 443
+  uuid: "6220e45d-8ac6-4a10-8433-0dbadcf747ca"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "google.com"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "dl8h7j1NKxBL_p2leIy9SWKznB0VG5h8ftsb0hlLICk"
+    short-id: "2404"
+- name: 🇷🇺 ✓ 4
+  type: vless
+  server: 178.72.182.38
+  port: 52006
+  uuid: "75807638-6f19-07d0-ae08-38492ee85c88"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "cl-ru-1.edgeflux.ru"
+  client-fingerprint: chrome
+- name: 🇷🇺 29c
+  type: vless
+  server: 84.201.134.250
+  port: 443
+  uuid: "328f03f2-1e0d-4cd0-9126-4492bbd38348"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "max.ru"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "rh2IgXc0vtXZ3euLtMP8RUlnmBc_4ftYBuL5Z0udk2A"
+    short-id: ""
 proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - 🇷🇺 29
+  - 🇷🇺 12a
+  - 🇷🇺 26b
   - 🇷🇺 ✓ 14
-  - 🇷🇺 24
-  - 🇷🇺 26
+  - 🇷🇺 34d
+  - 🇷🇺 18
+  - 🇷🇺 35
   - 🇷🇺 ✓ 15
+  - 🇷🇺 19
+  - 🇷🇺 ✓ 4
+  - 🇷🇺 29c
+  url: https://www.gstatic.com/generate_204
+  interval: 60
+  tolerance: 80
+- name: 📁 Группа A
+  type: url-test
+  proxies:
+  - 🇷🇺 12a
+  - 🇷🇺 26b
+  - 🇷🇺 29c
+  - 🇷🇺 34d
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -83,10 +168,16 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 Авто (лучший)
-  - 🇷🇺 29
+  - 📁 Группа A
+  - 🇷🇺 12a
+  - 🇷🇺 26b
   - 🇷🇺 ✓ 14
-  - 🇷🇺 24
-  - 🇷🇺 26
+  - 🇷🇺 34d
+  - 🇷🇺 18
+  - 🇷🇺 35
   - 🇷🇺 ✓ 15
+  - 🇷🇺 19
+  - 🇷🇺 ✓ 4
+  - 🇷🇺 29c
 rules:
 - MATCH,PROXY
