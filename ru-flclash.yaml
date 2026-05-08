@@ -3,6 +3,20 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
+- name: 🇷🇺 ✓ 10
+  type: vless
+  server: 193.9.49.6
+  port: 443
+  uuid: "051ada2d-dfd9-4108-a66d-01f96dcdccc8"
+  udp: true
+  network: ws
+  tls: true
+  servername: "wiNTeR-wINd-90a7.nABareV274.WORKeRS.DEv"
+  client-fingerprint: chrome
+  ws-opts:
+    path: /eyJqdW5rIjoiQ3BQN2pIZ3YiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyI1LjE4Ny43LjIyMCJdfQ==?ed=2560
+    headers:
+      Host: winter-wind-90a7.nabarev274.workers.dev
 - name: 🇷🇺 65
   type: vless
   server: srv80.towersflowerss.com
@@ -17,7 +31,18 @@ proxies:
   reality-opts:
     public-key: "Ufkz__Q3m_d8NFR08OVtXx3hLaV4-x7UesrVKduEIn0"
     short-id: ""
-- name: 🇷🇺 2
+- name: 🇷🇺 ✓ 15b
+  type: vless
+  server: 178.72.182.18
+  port: 52006
+  uuid: "75807638-6f19-07d0-ae08-38492ee85c88"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "cl-ru-1.edgeflux.ru"
+  client-fingerprint: chrome
+- name: 🇷🇺 2a
   type: vless
   server: st.xbs54as9c6.ru
   port: 443
@@ -29,66 +54,14 @@ proxies:
     path: /stream
     headers:
       Host: rbc.ru
-- name: 🇷🇺 ✓ 15
-  type: vless
-  server: 178.72.182.18
-  port: 52006
-  uuid: "75807638-6f19-07d0-ae08-38492ee85c88"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "cl-ru-1.edgeflux.ru"
-  client-fingerprint: chrome
-- name: 🇷🇺 ✓ 63
-  type: vless
-  server: 195.209.88.180
-  port: 443
-  uuid: "a8f9766b-e1e8-Fade-a893-e2bd2c78f192"
-  udp: true
-  network: ws
-  tls: true
-  servername: "s28233.cdn.ngenix.net"
-  client-fingerprint: qq
-  ws-opts:
-    path: /
-    headers:
-      Host: s28233.cdn.ngenix.net
-- name: 🇷🇺 ✓ 5
-  type: vless
-  server: 193.9.49.6
-  port: 443
-  uuid: "3bdade6c-6e5f-4308-9299-87bfe6f01f07"
-  udp: true
-  network: ws
-  tls: true
-  servername: "M3cz1juSPE5-f-HFtaPxRRS17zQpPw11.SalISA7474-9d1.woRkERs.dEv"
-  client-fingerprint: chrome
-  ws-opts:
-    path: /eyJqdW5rIjoidFJGN2RaSWsiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyI0NS42MS4xNjYuMTIxIl19?ed=2560
-    headers:
-      Host: m3cz1juspe5-f-hftapxrrs17zqppw11.salisa7474-9d1.workers.dev
-- name: 🇷🇺 ✓ 13
-  type: vless
-  server: eu.active-engine.ru
-  port: 52006
-  uuid: "75807638-6f19-0fa0-ae08-38492ee85c88"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "eu.active-engine.ru"
-  client-fingerprint: chrome
 proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
+  - 🇷🇺 ✓ 10
   - 🇷🇺 65
-  - 🇷🇺 2
-  - 🇷🇺 ✓ 15
-  - 🇷🇺 ✓ 63
-  - 🇷🇺 ✓ 5
-  - 🇷🇺 ✓ 13
+  - 🇷🇺 ✓ 15b
+  - 🇷🇺 2a
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -96,11 +69,9 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 Авто (лучший)
+  - 🇷🇺 ✓ 10
   - 🇷🇺 65
-  - 🇷🇺 2
-  - 🇷🇺 ✓ 15
-  - 🇷🇺 ✓ 63
-  - 🇷🇺 ✓ 5
-  - 🇷🇺 ✓ 13
+  - 🇷🇺 ✓ 15b
+  - 🇷🇺 2a
 rules:
 - MATCH,PROXY
