@@ -21,10 +21,32 @@
   ],
   "outbounds": [
     {
+      "type": "vless",
+      "tag": "🇫🇷 10",
+      "server": "198.16.112.202",
+      "server_port": 443,
+      "uuid": "93246986-2fbf-4dfb-a2c3-39a4f11f42ce",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.trahodrom.fun",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "_4cv7OXJFuVt8PGPNwk8isFFgrRR5tKojjpLWGTN8RI",
+          "short_id": ""
+        }
+      }
+    },
+    {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "direct"
+        "🇫🇷 10"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "1m",
@@ -34,7 +56,8 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "direct"
+        "auto",
+        "🇫🇷 10"
       ],
       "default": "auto"
     },
