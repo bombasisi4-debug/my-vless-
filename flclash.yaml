@@ -3,66 +3,37 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇪 ✓ 51
+- name: 🇬🇪 ✓ 58
   type: vless
-  server: swed.oplatasite.ru
-  port: 8443
-  uuid: "f834b1a5-dc5e-4878-a73c-ad0c80f8f748"
+  server: r1.mizulina.top
+  port: 22231
+  uuid: "afcac633-0e1a-46c3-bef2-cc01cc0097c8"
   udp: true
   network: tcp
   tls: true
-  servername: "vpn.oplatasite.ru"
-  client-fingerprint: chrome
-- name: 🇱🇻 159b
+  flow: xtls-rprx-vision
+  servername: "r1.mizulina.top"
+  client-fingerprint: edge
+- name: 🇨🇦 3
   type: vless
-  server: airport.thinairtech.com
+  server: 185.141.216.199
   port: 443
-  uuid: "147d6553-eb25-4eb4-bf3e-97a53e22c868"
+  uuid: "480cee80-36bb-4382-afcc-d5deb877783c"
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: "airport.thinairtech.com"
+  servername: "addons.mozilla.org"
   client-fingerprint: chrome
   reality-opts:
-    public-key: "mepO9Q9nbKjjdDgGLW_eqlFDuNrHtpEhUT7x03XgiXw"
-    short-id: "299ad271ac32a1d2"
-- name: 🇳🇱 62a
-  type: vless
-  server: api.dockl.com
-  port: 443
-  uuid: "147d6553-eb25-4eb4-bf3e-97a53e22c868"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "api.dockl.com"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "krArCjBlamNPPSImydWgBHWCLZG5jj16jGHAnlZmuzo"
-    short-id: "8f9dd98853c79394"
-- name: 🇬🇧 22
-  type: vless
-  server: 3.8.177.226
-  port: 39093
-  uuid: "f0449dd0-915d-4d7a-9c2d-b2ccd482f812"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "yahoo.com"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "TsI3LH9voENiAq5puKOvBjxgP4UF2ailXG1IRncJ1EE"
-    short-id: "8452eb6f8cb17bab"
+    public-key: "zeWC31vWK-6rMIa_kiqgZLrtnij8TNrqYZzlXC1jzlA"
+    short-id: "1abc0c83115fffec"
 proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - 🇸🇪 ✓ 51
-  - 🇱🇻 159b
-  - 🇳🇱 62a
-  - 🇬🇧 22
+  - 🇬🇪 ✓ 58
+  - 🇨🇦 3
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -70,9 +41,7 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 Авто (лучший)
-  - 🇸🇪 ✓ 51
-  - 🇱🇻 159b
-  - 🇳🇱 62a
-  - 🇬🇧 22
+  - 🇬🇪 ✓ 58
+  - 🇨🇦 3
 rules:
 - MATCH,PROXY
