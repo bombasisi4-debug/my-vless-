@@ -3,7 +3,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇺 2
+- name: 🇷🇺 2a
   type: vless
   server: st.xbs54as9c6.ru
   port: 443
@@ -15,7 +15,98 @@ proxies:
     path: /stream
     headers:
       Host: rbc.ru
-- name: 🇷🇺 ✓ 15
+- name: 🇷🇺 ✓ 63c
+  type: vless
+  server: 195.209.88.180
+  port: 443
+  uuid: "a8f9766b-e1e8-Fade-a893-e2bd2c78f192"
+  udp: true
+  network: ws
+  tls: true
+  servername: "s28233.cdn.ngenix.net"
+  client-fingerprint: qq
+  ws-opts:
+    path: /
+    headers:
+      Host: s28233.cdn.ngenix.net
+- name: 🇷🇺 ✓ 25
+  type: vless
+  server: 193.9.49.6
+  port: 443
+  uuid: "051ada2d-dfd9-4108-a66d-01f96dcdccc8"
+  udp: true
+  network: ws
+  tls: true
+  servername: "wiNTeR-wINd-90a7.nABareV274.WORKeRS.DEv"
+  client-fingerprint: chrome
+  ws-opts:
+    path: /eyJqdW5rIjoiQ3BQN2pIZ3YiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyI1LjE4Ny43LjIyMCJdfQ==?ed=2560
+    headers:
+      Host: winter-wind-90a7.nabarev274.workers.dev
+- name: 🇷🇺 ✓ 45b
+  type: vless
+  server: 195.209.82.149
+  port: 443
+  uuid: "fba0f717-c14c-Fade-b85b-4cd03da2f687"
+  udp: true
+  network: ws
+  tls: true
+  servername: "s28233.cdn.ngenix.net"
+  client-fingerprint: qq
+  ws-opts:
+    path: /
+    headers:
+      Host: s28233.cdn.ngenix.net
+- name: 🇷🇺 ✓ 31a
+  type: vless
+  server: 195.209.90.178
+  port: 443
+  uuid: "dd97b494-de65-Fade-8b30-919e46268920"
+  udp: true
+  network: ws
+  tls: true
+  servername: "s28233.cdn.ngenix.net"
+  client-fingerprint: qq
+  ws-opts:
+    path: /
+    headers:
+      Host: s28233.cdn.ngenix.net
+- name: 🇷🇺 23d
+  type: vless
+  server: cl-ru-tw.fastaichat.ru
+  port: 52006
+  uuid: "75807638-6f19-07d0-ae08-38492ee85c88"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "cl-ru-tw.fastaichat.ru"
+  client-fingerprint: chrome
+- name: 🇷🇺 ✓ 13b
+  type: vless
+  server: eu.active-engine.ru
+  port: 52006
+  uuid: "75807638-6f19-0fa0-ae08-38492ee85c88"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "eu.active-engine.ru"
+  client-fingerprint: chrome
+- name: 🇷🇺 10
+  type: vless
+  server: 217.168.240.172
+  port: 2443
+  uuid: "85e5bf1d-b33f-4126-a3e9-597686f161aa"
+  udp: true
+  network: xhttp
+  tls: true
+  servername: "travel.yandex.ru"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "XqH-gNEL9eJfr1pglaI8WU3OvE654_5duXYBS35UXlM"
+    short-id: "ab"
+- name: 🇷🇺 ✓ 15c
   type: vless
   server: 178.72.182.18
   port: 52006
@@ -37,85 +128,30 @@ proxies:
   flow: xtls-rprx-vision
   servername: "cl-ru-1.edgeflux.ru"
   client-fingerprint: chrome
-- name: 🇷🇺 63c
-  type: vless
-  server: 195.209.88.180
-  port: 443
-  uuid: "a8f9766b-e1e8-Fade-a893-e2bd2c78f192"
-  udp: true
-  network: ws
-  tls: true
-  servername: "s28233.cdn.ngenix.net"
-  client-fingerprint: qq
-  ws-opts:
-    path: /
-    headers:
-      Host: s28233.cdn.ngenix.net
-- name: 🇷🇺 ✓ 6
-  type: vless
-  server: 178.72.182.23
-  port: 52006
-  uuid: "75807638-6f19-07d0-ae08-38492ee85c88"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "cl-ru-1.edgeflux.ru"
-  client-fingerprint: chrome
-- name: 🇷🇺 ✓ 22
-  type: vless
-  server: 193.9.49.6
-  port: 443
-  uuid: "3bdade6c-6e5f-4308-9299-87bfe6f01f07"
-  udp: true
-  network: ws
-  tls: true
-  servername: "M3cz1juSPE5-f-HFtaPxRRS17zQpPw11.SalISA7474-9d1.woRkERs.dEv"
-  client-fingerprint: chrome
-  ws-opts:
-    path: /eyJqdW5rIjoidFJGN2RaSWsiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyI0NS42MS4xNjYuMTIxIl19?ed=2560
-    headers:
-      Host: m3cz1juspe5-f-hftapxrrs17zqppw11.salisa7474-9d1.workers.dev
-- name: 🇷🇺 ✓ 31a
-  type: vless
-  server: 195.209.90.178
-  port: 443
-  uuid: "dd97b494-de65-Fade-8b30-919e46268920"
-  udp: true
-  network: ws
-  tls: true
-  servername: "s28233.cdn.ngenix.net"
-  client-fingerprint: qq
-  ws-opts:
-    path: /
-    headers:
-      Host: s28233.cdn.ngenix.net
-- name: 🇷🇺 45b
-  type: vless
-  server: 195.209.82.149
-  port: 443
-  uuid: "fba0f717-c14c-Fade-b85b-4cd03da2f687"
-  udp: true
-  network: ws
-  tls: true
-  servername: "s28233.cdn.ngenix.net"
-  client-fingerprint: qq
-  ws-opts:
-    path: /
-    headers:
-      Host: s28233.cdn.ngenix.net
 proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - 🇷🇺 2
-  - 🇷🇺 ✓ 15
-  - 🇷🇺 7
-  - 🇷🇺 63c
-  - 🇷🇺 ✓ 6
-  - 🇷🇺 ✓ 22
+  - 🇷🇺 2a
+  - 🇷🇺 ✓ 63c
+  - 🇷🇺 ✓ 25
+  - 🇷🇺 ✓ 45b
   - 🇷🇺 ✓ 31a
-  - 🇷🇺 45b
+  - 🇷🇺 23d
+  - 🇷🇺 ✓ 13b
+  - 🇷🇺 10
+  - 🇷🇺 ✓ 15c
+  - 🇷🇺 7
+  url: https://www.gstatic.com/generate_204
+  interval: 60
+  tolerance: 80
+- name: 📁 Группа A
+  type: url-test
+  proxies:
+  - 🇷🇺 2a
+  - 🇷🇺 ✓ 13b
+  - 🇷🇺 ✓ 15c
+  - 🇷🇺 23d
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -123,13 +159,16 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 Авто (лучший)
-  - 🇷🇺 2
-  - 🇷🇺 ✓ 15
-  - 🇷🇺 7
-  - 🇷🇺 63c
-  - 🇷🇺 ✓ 6
-  - 🇷🇺 ✓ 22
+  - 📁 Группа A
+  - 🇷🇺 2a
+  - 🇷🇺 ✓ 63c
+  - 🇷🇺 ✓ 25
+  - 🇷🇺 ✓ 45b
   - 🇷🇺 ✓ 31a
-  - 🇷🇺 45b
+  - 🇷🇺 23d
+  - 🇷🇺 ✓ 13b
+  - 🇷🇺 10
+  - 🇷🇺 ✓ 15c
+  - 🇷🇺 7
 rules:
 - MATCH,PROXY
