@@ -17,21 +17,7 @@ proxies:
   reality-opts:
     public-key: "SvQNeUViPFTH2-zG7HPZki4iY6a-d6yWdBXkMStqwjU"
     short-id: "74db5d"
-- name: 🇳🇱 147
-  type: vless
-  server: vk.cachingtech.com
-  port: 443
-  uuid: "147d6553-eb25-4eb4-bf3e-97a53e22c868"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "vk.cachingtech.com"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "yk1VgHUKE7-oMeFrhyyFn6aLtedVP40h6abJWJJq8W4"
-    short-id: "4f9b2b1a3c5d7e0f"
-- name: 🇬🇪 58
+- name: 🇬🇪 ✓ 58
   type: vless
   server: r1.mizulina.top
   port: 22231
@@ -47,8 +33,7 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇫🇮 5
-  - 🇳🇱 147
-  - 🇬🇪 58
+  - 🇬🇪 ✓ 58
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -57,7 +42,6 @@ proxy-groups:
   proxies:
   - 🚀 Авто (лучший)
   - 🇫🇮 5
-  - 🇳🇱 147
-  - 🇬🇪 58
+  - 🇬🇪 ✓ 58
 rules:
 - MATCH,PROXY
