@@ -22,6 +22,29 @@
   "outbounds": [
     {
       "type": "vless",
+      "tag": "🇨🇿 ✓ 32",
+      "server": "14.102.228.191",
+      "server_port": 443,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "sni.my111000.tech",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "sni.my111000.tech"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇳🇱 3",
       "server": "nl1server.rabstvo.shop",
       "server_port": 443,
@@ -46,6 +69,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇨🇿 ✓ 32",
         "🇳🇱 3"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -57,6 +81,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇨🇿 ✓ 32",
         "🇳🇱 3"
       ],
       "default": "auto"
