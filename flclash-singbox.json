@@ -22,7 +22,51 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇬🇪 ✓ 58",
+      "tag": "🇫🇮 5",
+      "server": "64.188.76.112",
+      "server_port": 443,
+      "uuid": "a9cac45f-de21-4858-aa2e-42be08002b39",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SvQNeUViPFTH2-zG7HPZki4iY6a-d6yWdBXkMStqwjU",
+          "short_id": "74db5d"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 147",
+      "server": "vk.cachingtech.com",
+      "server_port": 443,
+      "uuid": "147d6553-eb25-4eb4-bf3e-97a53e22c868",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "vk.cachingtech.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "yk1VgHUKE7-oMeFrhyyFn6aLtedVP40h6abJWJJq8W4",
+          "short_id": "4f9b2b1a3c5d7e0f"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇪 58",
       "server": "r1.mizulina.top",
       "server_port": 22231,
       "uuid": "afcac633-0e1a-46c3-bef2-cc01cc0097c8",
@@ -38,33 +82,12 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇨🇦 3",
-      "server": "185.141.216.199",
-      "server_port": 443,
-      "uuid": "480cee80-36bb-4382-afcc-d5deb877783c",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "addons.mozilla.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "zeWC31vWK-6rMIa_kiqgZLrtnij8TNrqYZzlXC1jzlA",
-          "short_id": "1abc0c83115fffec"
-        }
-      }
-    },
-    {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇪 ✓ 58",
-        "🇨🇦 3"
+        "🇫🇮 5",
+        "🇳🇱 147",
+        "🇬🇪 58"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "1m",
@@ -75,8 +98,9 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇪 ✓ 58",
-        "🇨🇦 3"
+        "🇫🇮 5",
+        "🇳🇱 147",
+        "🇬🇪 58"
       ],
       "default": "auto"
     },
