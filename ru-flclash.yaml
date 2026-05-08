@@ -3,7 +3,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇺 ✓ 14a
+- name: 🇷🇺 ✓ 45b
   type: vless
   server: 195.209.82.149
   port: 443
@@ -17,39 +17,11 @@ proxies:
     path: /
     headers:
       Host: s28233.cdn.ngenix.net
-- name: 🇷🇺 63
-  type: vless
-  server: srv89.towersflowerss.com
-  port: 443
-  uuid: "11b50152-1989-48e6-8587-870aae492925"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "srv89.towersflowerss.com"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "Ufkz__Q3m_d8NFR08OVtXx3hLaV4-x7UesrVKduEIn0"
-    short-id: ""
-- name: 🇷🇺 65
-  type: vless
-  server: srv80.towersflowerss.com
-  port: 443
-  uuid: "11b50152-1989-48e6-8587-870aae492925"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "srv80.towersflowerss.com"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "Ufkz__Q3m_d8NFR08OVtXx3hLaV4-x7UesrVKduEIn0"
-    short-id: ""
-- name: 🇷🇺 ✓ 29c
+- name: 🇷🇺 ✓ 31a
   type: vless
   server: 195.209.90.178
   port: 443
-  uuid: "bafebca1-e754-Fade-8969-5b10472a73a9"
+  uuid: "dd97b494-de65-Fade-8b30-919e46268920"
   udp: true
   network: ws
   tls: true
@@ -59,11 +31,22 @@ proxies:
     path: /
     headers:
       Host: s28233.cdn.ngenix.net
-- name: 🇷🇺 17b
+- name: 🇷🇺 ✓ 4
   type: vless
-  server: 195.209.88.216
+  server: 178.72.182.38
+  port: 52006
+  uuid: "75807638-6f19-07d0-ae08-38492ee85c88"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "cl-ru-1.edgeflux.ru"
+  client-fingerprint: chrome
+- name: 🇷🇺 ✓ 63c
+  type: vless
+  server: 195.209.88.180
   port: 443
-  uuid: "d0510c6d-0322-Fade-b0f2-53eb6895d86b"
+  uuid: "a8f9766b-e1e8-Fade-a893-e2bd2c78f192"
   udp: true
   network: ws
   tls: true
@@ -73,7 +56,61 @@ proxies:
     path: /
     headers:
       Host: s28233.cdn.ngenix.net
-- name: 🇷🇺 ✓ 15
+- name: 🇷🇺 22
+  type: vless
+  server: 193.9.49.6
+  port: 443
+  uuid: "3bdade6c-6e5f-4308-9299-87bfe6f01f07"
+  udp: true
+  network: ws
+  tls: true
+  servername: "M3cz1juSPE5-f-HFtaPxRRS17zQpPw11.SalISA7474-9d1.woRkERs.dEv"
+  client-fingerprint: chrome
+  ws-opts:
+    path: /eyJqdW5rIjoidFJGN2RaSWsiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyI0NS42MS4xNjYuMTIxIl19?ed=2560
+    headers:
+      Host: m3cz1juspe5-f-hftapxrrs17zqppw11.salisa7474-9d1.workers.dev
+- name: 🇷🇺 13b
+  type: vless
+  server: 79.174.95.200
+  port: 5443
+  uuid: "97a94a0d-4a4d-406c-979b-64db85a24876"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "ads.x5.ru"
+  client-fingerprint: random
+  reality-opts:
+    public-key: "OtGux0Ty5TSzfIvlHVd4q_TdYbRUHKbS8WCxmpHJx18"
+    short-id: "e4d6a0fcf32883ab"
+- name: 🇷🇺 10a
+  type: vless
+  server: 79.174.91.100
+  port: 2448
+  uuid: "7bbc52f8-e8d3-48cb-8b62-a3bc50c862c1"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "m.ok.ru"
+  client-fingerprint: random
+  reality-opts:
+    public-key: "5w9AftPH_705ynMzcG03D3z61O1qegNp6WFL6jOXxRA"
+    short-id: "7b374423e3f0f5fb"
+- name: 🇷🇺 2a
+  type: vless
+  server: st.xbs54as9c6.ru
+  port: 443
+  uuid: "75356919-6ece-455c-ba7a-9f042a60d2c5"
+  udp: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /stream
+    headers:
+      Host: rbc.ru
+- name: 🇷🇺 ✓ 15b
   type: vless
   server: 178.72.182.18
   port: 52006
@@ -84,46 +121,19 @@ proxies:
   flow: xtls-rprx-vision
   servername: "cl-ru-1.edgeflux.ru"
   client-fingerprint: chrome
-- name: 🇷🇺 18
-  type: vless
-  server: 79.174.95.135
-  port: 5447
-  uuid: "a277a703-e767-4ed4-a963-89fe26d91162"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "st.okcdn.ru"
-  client-fingerprint: random
-  reality-opts:
-    public-key: "OtGux0Ty5TSzfIvlHVd4q_TdYbRUHKbS8WCxmpHJx18"
-    short-id: "f543a7a8ec616e07"
-- name: 🇷🇺 ✓ 26
-  type: vless
-  server: 193.9.49.6
-  port: 443
-  uuid: "051ada2d-dfd9-4108-a66d-01f96dcdccc8"
-  udp: true
-  network: ws
-  tls: true
-  servername: "wiNTeR-wINd-90a7.nABareV274.WORKeRS.DEv"
-  client-fingerprint: chrome
-  ws-opts:
-    path: /eyJqdW5rIjoiQ3BQN2pIZ3YiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyI1LjE4Ny43LjIyMCJdfQ==?ed=2560
-    headers:
-      Host: winter-wind-90a7.nabarev274.workers.dev
 proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - 🇷🇺 ✓ 14a
-  - 🇷🇺 63
-  - 🇷🇺 65
-  - 🇷🇺 ✓ 29c
-  - 🇷🇺 17b
-  - 🇷🇺 ✓ 15
-  - 🇷🇺 18
-  - 🇷🇺 ✓ 26
+  - 🇷🇺 ✓ 45b
+  - 🇷🇺 ✓ 31a
+  - 🇷🇺 ✓ 4
+  - 🇷🇺 ✓ 63c
+  - 🇷🇺 22
+  - 🇷🇺 13b
+  - 🇷🇺 10a
+  - 🇷🇺 2a
+  - 🇷🇺 ✓ 15b
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -131,13 +141,14 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 Авто (лучший)
-  - 🇷🇺 ✓ 14a
-  - 🇷🇺 63
-  - 🇷🇺 65
-  - 🇷🇺 ✓ 29c
-  - 🇷🇺 17b
-  - 🇷🇺 ✓ 15
-  - 🇷🇺 18
-  - 🇷🇺 ✓ 26
+  - 🇷🇺 ✓ 45b
+  - 🇷🇺 ✓ 31a
+  - 🇷🇺 ✓ 4
+  - 🇷🇺 ✓ 63c
+  - 🇷🇺 22
+  - 🇷🇺 13b
+  - 🇷🇺 10a
+  - 🇷🇺 2a
+  - 🇷🇺 ✓ 15b
 rules:
 - MATCH,PROXY
