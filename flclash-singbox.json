@@ -22,23 +22,23 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇫🇷 10",
-      "server": "198.16.112.202",
+      "tag": "🇳🇱 3",
+      "server": "nl1server.rabstvo.shop",
       "server_port": 443,
-      "uuid": "93246986-2fbf-4dfb-a2c3-39a4f11f42ce",
+      "uuid": "e4103db2-0965-416e-8ca8-a66d46eeee45",
       "packet_encoding": "xudp",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "cdn.trahodrom.fun",
+        "server_name": "ya.ru",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "_4cv7OXJFuVt8PGPNwk8isFFgrRR5tKojjpLWGTN8RI",
-          "short_id": ""
+          "public_key": "mr6pvCeUkQCaRcpbWvZ1ixoKlzZBEFTRlsN0uFcqbic",
+          "short_id": "c5204446"
         }
       }
     },
@@ -46,7 +46,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇷 10"
+        "🇳🇱 3"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "1m",
@@ -57,7 +57,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇷 10"
+        "🇳🇱 3"
       ],
       "default": "auto"
     },
