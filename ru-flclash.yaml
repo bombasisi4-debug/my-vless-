@@ -3,20 +3,69 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇺 12a
+- name: 🇷🇺 43c
   type: vless
-  server: 84.201.146.248
+  server: 37.9.4.82
   port: 443
-  uuid: "328f03f2-1e0d-4cd0-9126-4492bbd38348"
+  uuid: "69fb5fba-d093-Fade-941c-08a06fc25db9"
+  udp: true
+  network: grpc
+  tls: true
+  servername: "ads.x5.ru"
+  client-fingerprint: qq
+  reality-opts:
+    public-key: "o6jbbDkNF_5v8BlkIDl4NKhBiXTxCGms-NPmFkuQNXA"
+    short-id: ""
+  grpc-opts:
+    grpc-service-name: ''
+- name: 🇷🇺 ✓ 4
+  type: vless
+  server: 178.72.182.38
+  port: 52006
+  uuid: "75807638-6f19-07d0-ae08-38492ee85c88"
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: "max.ru"
+  servername: "cl-ru-1.edgeflux.ru"
+  client-fingerprint: chrome
+- name: 🇷🇺 ✓ 15
+  type: vless
+  server: 178.72.182.18
+  port: 52006
+  uuid: "75807638-6f19-07d0-ae08-38492ee85c88"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "cl-ru-1.edgeflux.ru"
+  client-fingerprint: chrome
+- name: 🇷🇺 30b
+  type: vless
+  server: 213.171.26.10
+  port: 2443
+  uuid: "58a7bb8c-ab16-4a2e-9b84-1dcedd3dc550"
+  udp: true
+  network: xhttp
+  tls: true
+  servername: "travel.yandex.ru"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "XqH-gNEL9eJfr1pglaI8WU3OvE654_5duXYBS35UXlM"
+    short-id: "ab"
+- name: 🇷🇺 10a
+  type: vless
+  server: 217.168.240.172
+  port: 2443
+  uuid: "4ec34d50-a63e-4db4-b3db-044529fcf74d"
+  udp: true
+  network: xhttp
+  tls: true
+  servername: "travel.yandex.ru"
   client-fingerprint: chrome
   reality-opts:
-    public-key: "rh2IgXc0vtXZ3euLtMP8RUlnmBc_4ftYBuL5Z0udk2A"
-    short-id: ""
+    public-key: "XqH-gNEL9eJfr1pglaI8WU3OvE654_5duXYBS35UXlM"
+    short-id: "ab"
 - name: 🇷🇺 26b
   type: vless
   server: 84.201.145.80
@@ -45,34 +94,6 @@ proxies:
     path: /eyJqdW5rIjoidFJGN2RaSWsiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyI0NS42MS4xNjYuMTIxIl19?ed=2560
     headers:
       Host: m3cz1juspe5-f-hftapxrrs17zqppw11.salisa7474-9d1.workers.dev
-- name: 🇷🇺 34d
-  type: vless
-  server: 37.9.4.82
-  port: 443
-  uuid: "fd47bf21-bd91-Fade-b53f-6ce484de16b6"
-  udp: true
-  network: grpc
-  tls: true
-  servername: "ads.x5.ru"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: "o6jbbDkNF_5v8BlkIDl4NKhBiXTxCGms-NPmFkuQNXA"
-    short-id: ""
-  grpc-opts:
-    grpc-service-name: ''
-- name: 🇷🇺 18
-  type: vless
-  server: 217.168.240.172
-  port: 2443
-  uuid: "85e5bf1d-b33f-4126-a3e9-597686f161aa"
-  udp: true
-  network: xhttp
-  tls: true
-  servername: "travel.yandex.ru"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "XqH-gNEL9eJfr1pglaI8WU3OvE654_5duXYBS35UXlM"
-    short-id: "ab"
 - name: 🇷🇺 35
   type: vless
   server: 51.250.114.26
@@ -87,17 +108,33 @@ proxies:
   reality-opts:
     public-key: "c8Sx7-8OcvtHEbVU59r-9DQrNdSI91GbMaHR-du4BxA"
     short-id: "b7b3ff64ca530808"
-- name: 🇷🇺 ✓ 15
+- name: 🇷🇺 12a
   type: vless
-  server: 178.72.182.18
-  port: 52006
-  uuid: "75807638-6f19-07d0-ae08-38492ee85c88"
+  server: 84.201.146.248
+  port: 443
+  uuid: "328f03f2-1e0d-4cd0-9126-4492bbd38348"
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: "cl-ru-1.edgeflux.ru"
+  servername: "max.ru"
   client-fingerprint: chrome
+  reality-opts:
+    public-key: "rh2IgXc0vtXZ3euLtMP8RUlnmBc_4ftYBuL5Z0udk2A"
+    short-id: ""
+- name: 🇷🇺 38c
+  type: vless
+  server: 87.242.118.99
+  port: 443
+  uuid: "77a60808-1249-4282-a5b1-31a5868d577b"
+  udp: true
+  network: xhttp
+  tls: true
+  servername: "travel.yandex.ru"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "XqH-gNEL9eJfr1pglaI8WU3OvE654_5duXYBS35UXlM"
+    short-id: "abcdef0123456789"
 - name: 🇷🇺 19
   type: vless
   server: usa2.vpnfreedom.tech
@@ -112,55 +149,21 @@ proxies:
   reality-opts:
     public-key: "dl8h7j1NKxBL_p2leIy9SWKznB0VG5h8ftsb0hlLICk"
     short-id: "2404"
-- name: 🇷🇺 ✓ 4
-  type: vless
-  server: 178.72.182.38
-  port: 52006
-  uuid: "75807638-6f19-07d0-ae08-38492ee85c88"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "cl-ru-1.edgeflux.ru"
-  client-fingerprint: chrome
-- name: 🇷🇺 29c
-  type: vless
-  server: 84.201.134.250
-  port: 443
-  uuid: "328f03f2-1e0d-4cd0-9126-4492bbd38348"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "max.ru"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "rh2IgXc0vtXZ3euLtMP8RUlnmBc_4ftYBuL5Z0udk2A"
-    short-id: ""
 proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - 🇷🇺 12a
+  - 🇷🇺 43c
+  - 🇷🇺 ✓ 4
+  - 🇷🇺 ✓ 15
+  - 🇷🇺 30b
+  - 🇷🇺 10a
   - 🇷🇺 26b
   - 🇷🇺 ✓ 14
-  - 🇷🇺 34d
-  - 🇷🇺 18
   - 🇷🇺 35
-  - 🇷🇺 ✓ 15
-  - 🇷🇺 19
-  - 🇷🇺 ✓ 4
-  - 🇷🇺 29c
-  url: https://www.gstatic.com/generate_204
-  interval: 60
-  tolerance: 80
-- name: 📁 Группа A
-  type: url-test
-  proxies:
   - 🇷🇺 12a
-  - 🇷🇺 26b
-  - 🇷🇺 29c
-  - 🇷🇺 34d
+  - 🇷🇺 38c
+  - 🇷🇺 19
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -168,16 +171,16 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 Авто (лучший)
-  - 📁 Группа A
-  - 🇷🇺 12a
+  - 🇷🇺 43c
+  - 🇷🇺 ✓ 4
+  - 🇷🇺 ✓ 15
+  - 🇷🇺 30b
+  - 🇷🇺 10a
   - 🇷🇺 26b
   - 🇷🇺 ✓ 14
-  - 🇷🇺 34d
-  - 🇷🇺 18
   - 🇷🇺 35
-  - 🇷🇺 ✓ 15
+  - 🇷🇺 12a
+  - 🇷🇺 38c
   - 🇷🇺 19
-  - 🇷🇺 ✓ 4
-  - 🇷🇺 29c
 rules:
 - MATCH,PROXY
