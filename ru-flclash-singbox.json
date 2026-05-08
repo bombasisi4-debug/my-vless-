@@ -22,24 +22,16 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇷🇺 ✓ 10",
-      "server": "193.9.49.6",
+      "tag": "🇷🇺 2a",
+      "server": "st.xbs54as9c6.ru",
       "server_port": 443,
-      "uuid": "051ada2d-dfd9-4108-a66d-01f96dcdccc8",
+      "uuid": "75356919-6ece-455c-ba7a-9f042a60d2c5",
       "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "wiNTeR-wINd-90a7.nABareV274.WORKeRS.DEv",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
       "transport": {
         "type": "ws",
-        "path": "/eyJqdW5rIjoiQ3BQN2pIZ3YiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyI1LjE4Ny43LjIyMCJdfQ==?ed=2560",
+        "path": "/stream",
         "headers": {
-          "Host": "winter-wind-90a7.nabarev274.workers.dev"
+          "Host": "rbc.ru"
         }
       }
     },
@@ -84,16 +76,45 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 2a",
-      "server": "st.xbs54as9c6.ru",
+      "tag": "🇷🇺 ✓ 10",
+      "server": "193.9.49.6",
       "server_port": 443,
-      "uuid": "75356919-6ece-455c-ba7a-9f042a60d2c5",
+      "uuid": "051ada2d-dfd9-4108-a66d-01f96dcdccc8",
       "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "wiNTeR-wINd-90a7.nABareV274.WORKeRS.DEv",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
       "transport": {
         "type": "ws",
-        "path": "/stream",
+        "path": "/eyJqdW5rIjoiQ3BQN2pIZ3YiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyI1LjE4Ny43LjIyMCJdfQ==?ed=2560",
         "headers": {
-          "Host": "rbc.ru"
+          "Host": "winter-wind-90a7.nabarev274.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 26",
+      "server": "87.242.118.99",
+      "server_port": 443,
+      "uuid": "4ec34d50-a63e-4db4-b3db-044529fcf74d",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "vk.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "OvzRQOJMpkup7bhUmQicdBxrB0Pm8adQHLbTxgNorlo",
+          "short_id": "ab"
         }
       }
     },
@@ -101,10 +122,11 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 ✓ 10",
+        "🇷🇺 2a",
         "🇷🇺 65",
         "🇷🇺 ✓ 15b",
-        "🇷🇺 2a"
+        "🇷🇺 ✓ 10",
+        "🇷🇺 26"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "1m",
@@ -115,10 +137,11 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 ✓ 10",
+        "🇷🇺 2a",
         "🇷🇺 65",
         "🇷🇺 ✓ 15b",
-        "🇷🇺 2a"
+        "🇷🇺 ✓ 10",
+        "🇷🇺 26"
       ],
       "default": "auto"
     },
