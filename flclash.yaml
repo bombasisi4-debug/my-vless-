@@ -3,20 +3,6 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇳🇱 51
-  type: vless
-  server: nl2.wireguardvpnbotik.com
-  port: 443
-  uuid: "501a2da5-cb22-4a3f-915e-e3b821d1d62d"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "habrastorage.org"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: "IhVsG6dmqowvpkW8gjV_B8Z4rrVeGpQnpFnfki8QB1k"
-    short-id: "c84db3997357290c"
 - name: 🇳🇱 49
   type: vless
   server: nl1server.rabstvo.shop
@@ -36,7 +22,6 @@ proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - 🇳🇱 51
   - 🇳🇱 49
   url: https://www.gstatic.com/generate_204
   interval: 60
@@ -45,7 +30,6 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 Авто (лучший)
-  - 🇳🇱 51
   - 🇳🇱 49
 rules:
 - MATCH,PROXY
