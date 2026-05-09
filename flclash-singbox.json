@@ -21,32 +21,10 @@
   ],
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇫🇷 53 BP",
-      "server": "152.89.253.73",
-      "server_port": 7443,
-      "uuid": "5e217cdf-9a6e-4ddc-84d2-ccda9e7e16fa",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "chat.deepseek.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI",
-          "short_id": "d82fb387"
-        }
-      }
-    },
-    {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇷 53 BP"
+        "direct"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "1m",
@@ -56,8 +34,7 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "auto",
-        "🇫🇷 53 BP"
+        "direct"
       ],
       "default": "auto"
     },
