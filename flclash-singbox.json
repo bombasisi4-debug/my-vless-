@@ -21,10 +21,32 @@
   ],
   "outbounds": [
     {
+      "type": "vless",
+      "tag": "🇹🇷 54 BP",
+      "server": "194.87.39.152",
+      "server_port": 443,
+      "uuid": "e9888b9b-658b-4f51-94f3-b8ba80e4ef91",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "wikihow.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1HeKf_8KDjfzXfUi9P7WBaGStMvr96TKdUbofpkwBzQ",
+          "short_id": "8bd29483ded126b4"
+        }
+      }
+    },
+    {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "direct"
+        "🇹🇷 54 BP"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "1m",
@@ -34,7 +56,8 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "direct"
+        "auto",
+        "🇹🇷 54 BP"
       ],
       "default": "auto"
     },
