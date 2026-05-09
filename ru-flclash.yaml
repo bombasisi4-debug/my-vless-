@@ -3,61 +3,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇺 40c
-  type: vless
-  server: 5.188.116.68
-  port: 8443
-  uuid: "ae8ddd8e-00af-48e5-bd57-05074a1bbffb"
-  udp: true
-  network: grpc
-  tls: true
-  servername: "eh.vk.com"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: "ZHEMPjSWslk6_qD2JNQzd5enUPz8nY9mYRRuM6NkZmU"
-    short-id: "0123456789abcdef"
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: 🇷🇺 36b
-  type: vless
-  server: 5.188.116.68
-  port: 9443
-  uuid: "ae8ddd8e-00af-48e5-bd57-05074a1bbffb"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "rutube.ru"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: "ZHEMPjSWslk6_qD2JNQzd5enUPz8nY9mYRRuM6NkZmU"
-    short-id: ""
-- name: 🇷🇺 16a
-  type: vless
-  server: 5.188.116.68
-  port: 443
-  uuid: "ae8ddd8e-00af-48e5-bd57-05074a1bbffb"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "www.avito.ru"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "ZHEMPjSWslk6_qD2JNQzd5enUPz8nY9mYRRuM6NkZmU"
-    short-id: "1a"
-- name: 🇷🇺 ✓ 15
-  type: vless
-  server: 178.72.182.18
-  port: 52006
-  uuid: "75807638-6f19-07d0-ae08-38492ee85c88"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "cl-ru-1.edgeflux.ru"
-  client-fingerprint: chrome
-- name: 🇷🇺 45b
+- name: 🇷🇺 ✓ 45b
   type: vless
   server: 195.209.82.149
   port: 443
@@ -71,20 +17,20 @@ proxies:
     path: /
     headers:
       Host: s28233.cdn.ngenix.net
-- name: 🇷🇺 22
+- name: 🇷🇺 ✓ 55
   type: vless
-  server: 89.208.231.52
+  server: 193.9.49.6
   port: 443
-  uuid: "b6ce8a51-19b9-4979-91ba-b4298c26d5fc"
+  uuid: "3bdade6c-6e5f-4308-9299-87bfe6f01f07"
   udp: true
-  network: tcp
+  network: ws
   tls: true
-  flow: xtls-rprx-vision
-  servername: "max.ru"
+  servername: "M3cz1juSPE5-f-HFtaPxRRS17zQpPw11.SalISA7474-9d1.woRkERs.dEv"
   client-fingerprint: chrome
-  reality-opts:
-    public-key: "mAu8QDi3pbmMCFg9kKC-ZBIHdtnXeCuZt3VnAw6vlH4"
-    short-id: "ad7dab462a323acb"
+  ws-opts:
+    path: /eyJqdW5rIjoidFJGN2RaSWsiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyI0NS42MS4xNjYuMTIxIl19?ed=2560
+    headers:
+      Host: m3cz1juspe5-f-hftapxrrs17zqppw11.salisa7474-9d1.workers.dev
 - name: 🇷🇺 ✓ 31a
   type: vless
   server: 195.209.90.178
@@ -99,25 +45,39 @@ proxies:
     path: /
     headers:
       Host: s28233.cdn.ngenix.net
-- name: 🇷🇺 ✓ 13
+- name: 🇷🇺 ✓ 57
   type: vless
-  server: 193.9.49.6
+  server: 195.209.88.180
   port: 443
-  uuid: "051ada2d-dfd9-4108-a66d-01f96dcdccc8"
+  uuid: "d471e982-4237-Fade-94df-c0d11029282a"
   udp: true
   network: ws
   tls: true
-  servername: "wiNTeR-wINd-90a7.nABareV274.WORKeRS.DEv"
-  client-fingerprint: chrome
+  servername: "s28233.cdn.ngenix.net"
+  client-fingerprint: qq
   ws-opts:
-    path: /eyJqdW5rIjoiQ3BQN2pIZ3YiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyI1LjE4Ny43LjIyMCJdfQ==?ed=2560
+    path: /
     headers:
-      Host: winter-wind-90a7.nabarev274.workers.dev
-- name: 🇷🇺 6b
+      Host: s28233.cdn.ngenix.net
+- name: 🇷🇺 14
   type: vless
-  server: 87.242.118.99
+  server: 78.159.246.239
   port: 443
-  uuid: "900407b4-5594-4926-9647-55794304581e"
+  uuid: "1132a937-5410-4f28-9f4d-b54430c2e71e"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "x5.ru"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "VEQ1aFtLMHgfLcZ2yIugry8JzVXPE5ZXz72L10RUXVs"
+    short-id: "f4e2b8971d5c3a9f"
+- name: 🇷🇺 61
+  type: vless
+  server: 213.171.26.10
+  port: 2443
+  uuid: "134b80e3-7e8b-4171-b9cc-fa61618bc307"
   udp: true
   network: xhttp
   tls: true
@@ -125,34 +85,17 @@ proxies:
   client-fingerprint: firefox
   reality-opts:
     public-key: "XqH-gNEL9eJfr1pglaI8WU3OvE654_5duXYBS35UXlM"
-    short-id: "ab"
-- name: 🇷🇺 3a
-  type: vless
-  server: 217.168.240.172
-  port: 2443
-  uuid: "e0c71136-a549-4195-8387-27cf4f4ee18a"
-  udp: true
-  network: xhttp
-  tls: true
-  servername: "travel.yandex.ru"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "XqH-gNEL9eJfr1pglaI8WU3OvE654_5duXYBS35UXlM"
-    short-id: "ab"
+    short-id: "abcdef0123456789"
 proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - 🇷🇺 40c
-  - 🇷🇺 36b
-  - 🇷🇺 16a
-  - 🇷🇺 ✓ 15
-  - 🇷🇺 45b
-  - 🇷🇺 22
+  - 🇷🇺 ✓ 45b
+  - 🇷🇺 ✓ 55
   - 🇷🇺 ✓ 31a
-  - 🇷🇺 ✓ 13
-  - 🇷🇺 6b
-  - 🇷🇺 3a
+  - 🇷🇺 ✓ 57
+  - 🇷🇺 14
+  - 🇷🇺 61
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -160,15 +103,11 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 Авто (лучший)
-  - 🇷🇺 40c
-  - 🇷🇺 36b
-  - 🇷🇺 16a
-  - 🇷🇺 ✓ 15
-  - 🇷🇺 45b
-  - 🇷🇺 22
+  - 🇷🇺 ✓ 45b
+  - 🇷🇺 ✓ 55
   - 🇷🇺 ✓ 31a
-  - 🇷🇺 ✓ 13
-  - 🇷🇺 6b
-  - 🇷🇺 3a
+  - 🇷🇺 ✓ 57
+  - 🇷🇺 14
+  - 🇷🇺 61
 rules:
 - MATCH,PROXY
