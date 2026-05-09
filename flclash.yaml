@@ -3,40 +3,41 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇿 ✓ 32
+- name: 🇳🇱 51
   type: vless
-  server: 14.102.228.191
+  server: nl2.wireguardvpnbotik.com
   port: 443
-  uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-  udp: true
-  network: ws
-  tls: true
-  servername: "sni.my111000.tech"
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: sni.my111000.tech
-- name: 🇳🇱 3
-  type: vless
-  server: nl1server.rabstvo.shop
-  port: 443
-  uuid: "e4103db2-0965-416e-8ca8-a66d46eeee45"
+  uuid: "501a2da5-cb22-4a3f-915e-e3b821d1d62d"
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: "ya.ru"
+  servername: "habrastorage.org"
+  client-fingerprint: qq
+  reality-opts:
+    public-key: "IhVsG6dmqowvpkW8gjV_B8Z4rrVeGpQnpFnfki8QB1k"
+    short-id: "c84db3997357290c"
+- name: 🇳🇱 49
+  type: vless
+  server: nl1server.rabstvo.shop
+  port: 443
+  uuid: "e50329b6-1add-4360-86a2-e00de951f739"
+  udp: true
+  network: grpc
+  tls: true
+  servername: "max.ru"
   client-fingerprint: chrome
   reality-opts:
-    public-key: "mr6pvCeUkQCaRcpbWvZ1ixoKlzZBEFTRlsN0uFcqbic"
-    short-id: "c5204446"
+    public-key: "VUTfN-BEUcoR9hUW8HQ5jWl6iTBSGBmaHxklrL05hRs"
+    short-id: "99d43973"
+  grpc-opts:
+    grpc-service-name: grpc
 proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - 🇨🇿 ✓ 32
-  - 🇳🇱 3
+  - 🇳🇱 51
+  - 🇳🇱 49
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -44,7 +45,7 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 Авто (лучший)
-  - 🇨🇿 ✓ 32
-  - 🇳🇱 3
+  - 🇳🇱 51
+  - 🇳🇱 49
 rules:
 - MATCH,PROXY
