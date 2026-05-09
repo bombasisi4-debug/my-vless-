@@ -2,18 +2,33 @@ mixed-port: 7890
 allow-lan: false
 mode: rule
 log-level: info
-proxies: []
+proxies:
+- name: 🇹🇷 54 BP
+  type: vless
+  server: 194.87.39.152
+  port: 443
+  uuid: "e9888b9b-658b-4f51-94f3-b8ba80e4ef91"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "wikihow.com"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "1HeKf_8KDjfzXfUi9P7WBaGStMvr96TKdUbofpkwBzQ"
+    short-id: "8bd29483ded126b4"
 proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - DIRECT
+  - 🇹🇷 54 BP
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
 - name: PROXY
   type: select
   proxies:
-  - DIRECT
+  - 🚀 Авто (лучший)
+  - 🇹🇷 54 BP
 rules:
 - MATCH,PROXY
