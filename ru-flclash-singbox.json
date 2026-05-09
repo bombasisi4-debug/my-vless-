@@ -39,6 +39,52 @@
     },
     {
       "type": "vless",
+      "tag": "🇷🇺 ✓ 18b",
+      "server": "195.209.90.178",
+      "server_port": 443,
+      "uuid": "34954be5-333b-Fade-ab1e-00c7df47eb28",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "s28233.cdn.ngenix.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "s28233.cdn.ngenix.net"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 1a BP",
+      "server": "195.209.88.216",
+      "server_port": 443,
+      "uuid": "31df9217-b7d0-Fade-946c-ac50d556aeff",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "s28233.cdn.ngenix.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "s28233.cdn.ngenix.net"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇷🇺 ✓ 3 BP",
       "server": "193.9.49.6",
       "server_port": 443,
@@ -65,7 +111,7 @@
       "tag": "🇷🇺 14 BP",
       "server": "87.242.118.99",
       "server_port": 443,
-      "uuid": "7be5301e-00a4-4ae3-a404-0aca244b7630",
+      "uuid": "9a456f87-cf81-453a-bf1f-183b564164e6",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -77,54 +123,30 @@
         "reality": {
           "enabled": true,
           "public_key": "OvzRQOJMpkup7bhUmQicdBxrB0Pm8adQHLbTxgNorlo",
-          "short_id": "abcdef0123456789"
+          "short_id": "ab"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 6 BP",
-      "server": "217.168.240.172",
-      "server_port": 2443,
-      "uuid": "85461b3a-a823-4df9-b499-a96da9dfcd85",
+      "tag": "🇷🇺 15 BP",
+      "server": "89.208.229.107",
+      "server_port": 443,
+      "uuid": "7c396b1b-cac3-4cc5-b605-301e7b8fea5c",
       "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "travel.yandex.ru",
+        "server_name": "max.ru",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "XqH-gNEL9eJfr1pglaI8WU3OvE654_5duXYBS35UXlM",
-          "short_id": "abcdef0123456789"
+          "public_key": "-3db-870saQ43F5kBx4JkokDn6eC1M5yhU5V71UlsFc",
+          "short_id": "89abcdef"
         }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 16",
-      "server": "37.9.4.82",
-      "server_port": 443,
-      "uuid": "759281a0-013a-Fade-9104-dbeaa25a8eb3",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "ads.x5.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "o6jbbDkNF_5v8BlkIDl4NKhBiXTxCGms-NPmFkuQNXA",
-          "short_id": ""
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": ""
       }
     },
     {
@@ -132,10 +154,11 @@
       "tag": "auto",
       "outbounds": [
         "🇷🇺 ✓ 10 BP",
+        "🇷🇺 ✓ 18b",
+        "🇷🇺 1a BP",
         "🇷🇺 ✓ 3 BP",
         "🇷🇺 14 BP",
-        "🇷🇺 6 BP",
-        "🇷🇺 16"
+        "🇷🇺 15 BP"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "1m",
@@ -147,10 +170,11 @@
       "outbounds": [
         "auto",
         "🇷🇺 ✓ 10 BP",
+        "🇷🇺 ✓ 18b",
+        "🇷🇺 1a BP",
         "🇷🇺 ✓ 3 BP",
         "🇷🇺 14 BP",
-        "🇷🇺 6 BP",
-        "🇷🇺 16"
+        "🇷🇺 15 BP"
       ],
       "default": "auto"
     },
