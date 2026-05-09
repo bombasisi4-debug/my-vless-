@@ -22,6 +22,70 @@
   "outbounds": [
     {
       "type": "vless",
+      "tag": "🇵🇱 1a",
+      "server": "pl-mirror.api.akenai.click",
+      "server_port": 753,
+      "uuid": "0febb78b-96ef-0001-9766-124bb6a354db",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.amd.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "i00_tpIO0Oe2TV2lxm2BLm6QUzzkncyJtauMa7Rn500",
+          "short_id": "b91a73752053b039"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇹 54d",
+      "server": "lithnode.lumixnet.com",
+      "server_port": 443,
+      "uuid": "5d509427-0502-4159-9c2b-7eee71c5e41e",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "lithnode.lumixnet.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "8K4cnpy__grgZ9mQG0qdUg1JUYc0bz3wwrpXO9VXVXQ",
+          "short_id": "4e7082cd83ad9df5"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 33c",
+      "server": "pl-mirror.api.akenai.click",
+      "server_port": 443,
+      "uuid": "0febb78b-96ef-0013-9766-124bb6a354db",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl-mirror.api.akenai.click",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "i00_tpIO0Oe2TV2lxm2BLm6QUzzkncyJtauMa7Rn500",
+          "short_id": "b91a73752053b039"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇳🇱 49",
       "server": "nl1server.rabstvo.shop",
       "server_port": 443,
@@ -46,10 +110,58 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇫🇮 24b",
+      "server": "f5.steptofreedom.one",
+      "server_port": 443,
+      "uuid": "d4e7bb0a-ad2c-4030-b2e0-7bb6840b04f5",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "f5.steptofreedom.one",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ivgTfLR13A6xBsicIA28OPoav2tXlsstTTmGuETfnSk",
+          "short_id": "6d6f13013d3e1d0c"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇭 56e",
+      "server": "ch-mirror.api.akenai.click",
+      "server_port": 443,
+      "uuid": "0febb78b-96ef-43c6-9766-124bb6a354db",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ch-mirror.api.akenai.click",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "i00_tpIO0Oe2TV2lxm2BLm6QUzzkncyJtauMa7Rn500",
+          "short_id": "b91a73752053b039"
+        }
+      }
+    },
+    {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇱 49"
+        "🇵🇱 1a",
+        "🇱🇹 54d",
+        "🇵🇱 33c",
+        "🇳🇱 49",
+        "🇫🇮 24b",
+        "🇨🇭 56e"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "1m",
@@ -60,7 +172,12 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇱 49"
+        "🇵🇱 1a",
+        "🇱🇹 54d",
+        "🇵🇱 33c",
+        "🇳🇱 49",
+        "🇫🇮 24b",
+        "🇨🇭 56e"
       ],
       "default": "auto"
     },
