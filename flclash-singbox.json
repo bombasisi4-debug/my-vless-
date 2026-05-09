@@ -22,28 +22,6 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇳🇱 51",
-      "server": "nl2.wireguardvpnbotik.com",
-      "server_port": 443,
-      "uuid": "501a2da5-cb22-4a3f-915e-e3b821d1d62d",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "habrastorage.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "IhVsG6dmqowvpkW8gjV_B8Z4rrVeGpQnpFnfki8QB1k",
-          "short_id": "c84db3997357290c"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇳🇱 49",
       "server": "nl1server.rabstvo.shop",
       "server_port": 443,
@@ -71,7 +49,6 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇱 51",
         "🇳🇱 49"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -83,7 +60,6 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇱 51",
         "🇳🇱 49"
       ],
       "default": "auto"
