@@ -3,20 +3,6 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇺 ✓ 27a
-  type: vless
-  server: 195.209.90.178
-  port: 443
-  uuid: "31df9217-b7d0-Fade-946c-ac50d556aeff"
-  udp: true
-  network: ws
-  tls: true
-  servername: "s28233.cdn.ngenix.net"
-  client-fingerprint: qq
-  ws-opts:
-    path: /
-    headers:
-      Host: s28233.cdn.ngenix.net
 - name: 🇷🇺 ✓ 10 BP
   type: vless
   server: 87.228.74.197
@@ -28,11 +14,11 @@ proxies:
   flow: xtls-rprx-vision
   servername: "87.228.74.197"
   client-fingerprint: chrome
-- name: 🇷🇺 ✓ 29b BP
+- name: 🇷🇺 ✓ 27a
   type: vless
-  server: 195.209.88.216
+  server: 195.209.90.178
   port: 443
-  uuid: "d0510c6d-0322-fade-b0f2-53eb6895d86b"
+  uuid: "31df9217-b7d0-Fade-946c-ac50d556aeff"
   udp: true
   network: ws
   tls: true
@@ -56,20 +42,20 @@ proxies:
   reality-opts:
     public-key: "5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI"
     short-id: "d82fb387"
-- name: 🇷🇺 58 BP
+- name: 🇷🇺 ✓ 35c
   type: vless
-  server: 217.149.25.195
+  server: 195.209.88.180
   port: 443
-  uuid: "2003b2e8-0f93-47d7-8290-9df2321ef62a"
+  uuid: "31df9217-b7d0-Fade-946c-ac50d556aeff"
   udp: true
-  network: tcp
+  network: ws
   tls: true
-  flow: xtls-rprx-vision
-  servername: "rf1.helper-internet.com"
-  client-fingerprint: random
-  reality-opts:
-    public-key: "W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE"
-    short-id: "ff776ff77be48b88"
+  servername: "s28233.cdn.ngenix.net"
+  client-fingerprint: qq
+  ws-opts:
+    path: /
+    headers:
+      Host: s28233.cdn.ngenix.net
 - name: 🇷🇺 52
   type: vless
   server: 5.188.115.161
@@ -85,6 +71,49 @@ proxies:
     short-id: "104ddee73f941bc4"
   grpc-opts:
     grpc-service-name: xraygrpc
+- name: 🇷🇺 34
+  type: vless
+  server: 37.9.4.82
+  port: 443
+  uuid: "53b6ca11-d75f-Fade-a2cc-6c0daea324e6"
+  udp: true
+  network: grpc
+  tls: true
+  servername: "ads.x5.ru"
+  client-fingerprint: qq
+  reality-opts:
+    public-key: "o6jbbDkNF_5v8BlkIDl4NKhBiXTxCGms-NPmFkuQNXA"
+    short-id: ""
+  grpc-opts:
+    grpc-service-name: ''
+- name: 🇷🇺 ✓ 29b BP
+  type: vless
+  server: 195.209.88.216
+  port: 443
+  uuid: "d0510c6d-0322-fade-b0f2-53eb6895d86b"
+  udp: true
+  network: ws
+  tls: true
+  servername: "s28233.cdn.ngenix.net"
+  client-fingerprint: qq
+  ws-opts:
+    path: /
+    headers:
+      Host: s28233.cdn.ngenix.net
+- name: 🇷🇺 3 BP
+  type: vless
+  server: 193.9.49.6
+  port: 443
+  uuid: "051ada2d-dfd9-4108-a66d-01f96dcdccc8"
+  udp: true
+  network: ws
+  tls: true
+  servername: "wiNTeR-wINd-90a7.nABareV274.WORKeRS.DEv"
+  client-fingerprint: chrome
+  ws-opts:
+    path: /eyJqdW5rIjoiQ3BQN2pIZ3YiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyI1LjE4Ny43LjIyMCJdfQ==?ed=2560
+    headers:
+      Host: winter-wind-90a7.nabarev274.workers.dev
 - name: 🇷🇺 24a
   type: vless
   server: 185.186.142.210
@@ -99,47 +128,16 @@ proxies:
   reality-opts:
     public-key: "9mJq2cP3srX_6K1YfMDp1yndvo5CtgL6TEVQ8tm4fVc"
     short-id: ""
-- name: 🇷🇺 ✓ 3 BP
+- name: 🇷🇺 ✓ 59d
   type: vless
-  server: 193.9.49.6
-  port: 443
-  uuid: "051ada2d-dfd9-4108-a66d-01f96dcdccc8"
-  udp: true
-  network: ws
-  tls: true
-  servername: "wiNTeR-wINd-90a7.nABareV274.WORKeRS.DEv"
-  client-fingerprint: chrome
-  ws-opts:
-    path: /eyJqdW5rIjoiQ3BQN2pIZ3YiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyI1LjE4Ny43LjIyMCJdfQ==?ed=2560
-    headers:
-      Host: winter-wind-90a7.nabarev274.workers.dev
-- name: 🇷🇺 62 BP
-  type: vless
-  server: 45.151.31.68
-  port: 443
-  uuid: "e9888b9b-658b-4f51-94f3-b8ba80e4ef91"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "wikihow.com"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "1HeKf_8KDjfzXfUi9P7WBaGStMvr96TKdUbofpkwBzQ"
-    short-id: "8bd29483ded126b4"
-- name: 🇷🇺 34
-  type: vless
-  server: 37.9.4.82
-  port: 443
-  uuid: "53b6ca11-d75f-Fade-a2cc-6c0daea324e6"
+  server: 109.236.57.8
+  port: 8443
+  uuid: "37d4b779-5081-Fade-b791-8703fef4a9f7"
   udp: true
   network: grpc
   tls: true
-  servername: "ads.x5.ru"
+  servername: "vyrrh-ru-24sel.r-fade.cfd"
   client-fingerprint: qq
-  reality-opts:
-    public-key: "o6jbbDkNF_5v8BlkIDl4NKhBiXTxCGms-NPmFkuQNXA"
-    short-id: ""
   grpc-opts:
     grpc-service-name: ''
 - name: 🇷🇺 40b BP
@@ -169,60 +167,6 @@ proxies:
   reality-opts:
     public-key: "OvzRQOJMpkup7bhUmQicdBxrB0Pm8adQHLbTxgNorlo"
     short-id: "ab"
-- name: 🇷🇺 59d
-  type: vless
-  server: 109.236.57.8
-  port: 8443
-  uuid: "37d4b779-5081-Fade-b791-8703fef4a9f7"
-  udp: true
-  network: grpc
-  tls: true
-  servername: "vyrrh-ru-24sel.r-fade.cfd"
-  client-fingerprint: qq
-  grpc-opts:
-    grpc-service-name: ''
-- name: 🇷🇺 ✓ 35c
-  type: vless
-  server: 195.209.88.180
-  port: 443
-  uuid: "31df9217-b7d0-Fade-946c-ac50d556aeff"
-  udp: true
-  network: ws
-  tls: true
-  servername: "s28233.cdn.ngenix.net"
-  client-fingerprint: qq
-  ws-opts:
-    path: /
-    headers:
-      Host: s28233.cdn.ngenix.net
-- name: 🇷🇺 19 BP
-  type: vless
-  server: usa2.vpnfreedom.tech
-  port: 443
-  uuid: "6220e45d-8ac6-4a10-8433-0dbadcf747ca"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "google.com"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "dl8h7j1NKxBL_p2leIy9SWKznB0VG5h8ftsb0hlLICk"
-    short-id: "2404"
-- name: 🇷🇺 67 BP
-  type: vless
-  server: serv52.strettenvpn.com
-  port: 443
-  uuid: "5cca5cb6-5e24-4037-ab5c-2ce8da724307"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "eh.vk.com"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "yhUfTGgu5PYRlFqMnRZkxffH_aU05AFUToGI8_EKF28"
-    short-id: "8248954896"
 - name: 🇷🇺 51c BP
   type: vless
   server: 72.56.15.240
@@ -237,27 +181,68 @@ proxies:
   reality-opts:
     public-key: "9mJq2cP3srX_6K1YfMDp1yndvo5CtgL6TEVQ8tm4fVc"
     short-id: ""
+- name: 🇷🇺 19 BP
+  type: vless
+  server: usa2.vpnfreedom.tech
+  port: 443
+  uuid: "6220e45d-8ac6-4a10-8433-0dbadcf747ca"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "google.com"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "dl8h7j1NKxBL_p2leIy9SWKznB0VG5h8ftsb0hlLICk"
+    short-id: "2404"
+- name: 🇷🇺 62 BP
+  type: vless
+  server: 45.151.31.68
+  port: 443
+  uuid: "e9888b9b-658b-4f51-94f3-b8ba80e4ef91"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "wikihow.com"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "1HeKf_8KDjfzXfUi9P7WBaGStMvr96TKdUbofpkwBzQ"
+    short-id: "8bd29483ded126b4"
+- name: 🇷🇺 18 BP
+  type: vless
+  server: 130.49.189.40
+  port: 443
+  uuid: "8b1af25a-e873-4915-bc56-3ad741e82f09"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "telegavpn.com"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "WvNaAxI0W__qfUKbtysH4IwF155YENlv3PG6crCmPkA"
+    short-id: ""
 proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - 🇷🇺 ✓ 27a
   - 🇷🇺 ✓ 10 BP
-  - 🇷🇺 ✓ 29b BP
+  - 🇷🇺 ✓ 27a
   - 🇷🇺 48 BP
-  - 🇷🇺 58 BP
+  - 🇷🇺 ✓ 35c
   - 🇷🇺 52
-  - 🇷🇺 24a
-  - 🇷🇺 ✓ 3 BP
-  - 🇷🇺 62 BP
   - 🇷🇺 34
+  - 🇷🇺 ✓ 29b BP
+  - 🇷🇺 3 BP
+  - 🇷🇺 24a
+  - 🇷🇺 ✓ 59d
   - 🇷🇺 40b BP
   - 🇷🇺 61 BP
-  - 🇷🇺 59d
-  - 🇷🇺 ✓ 35c
-  - 🇷🇺 19 BP
-  - 🇷🇺 67 BP
   - 🇷🇺 51c BP
+  - 🇷🇺 19 BP
+  - 🇷🇺 62 BP
+  - 🇷🇺 18 BP
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -265,22 +250,21 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 Авто (лучший)
-  - 🇷🇺 ✓ 27a
   - 🇷🇺 ✓ 10 BP
-  - 🇷🇺 ✓ 29b BP
+  - 🇷🇺 ✓ 27a
   - 🇷🇺 48 BP
-  - 🇷🇺 58 BP
+  - 🇷🇺 ✓ 35c
   - 🇷🇺 52
-  - 🇷🇺 24a
-  - 🇷🇺 ✓ 3 BP
-  - 🇷🇺 62 BP
   - 🇷🇺 34
+  - 🇷🇺 ✓ 29b BP
+  - 🇷🇺 3 BP
+  - 🇷🇺 24a
+  - 🇷🇺 ✓ 59d
   - 🇷🇺 40b BP
   - 🇷🇺 61 BP
-  - 🇷🇺 59d
-  - 🇷🇺 ✓ 35c
-  - 🇷🇺 19 BP
-  - 🇷🇺 67 BP
   - 🇷🇺 51c BP
+  - 🇷🇺 19 BP
+  - 🇷🇺 62 BP
+  - 🇷🇺 18 BP
 rules:
 - MATCH,PROXY
