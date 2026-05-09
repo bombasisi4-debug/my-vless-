@@ -22,47 +22,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇷🇺 ✓ 10 BP",
-      "server": "87.228.74.197",
-      "server_port": 52006,
-      "uuid": "75807638-6f19-2710-ae08-38492ee85c88",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "87.228.74.197",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 ✓ 18b",
-      "server": "195.209.90.178",
-      "server_port": 443,
-      "uuid": "34954be5-333b-Fade-ab1e-00c7df47eb28",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "s28233.cdn.ngenix.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "s28233.cdn.ngenix.net"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 1a BP",
+      "tag": "🇷🇺 ✓ 1a BP",
       "server": "195.209.88.216",
       "server_port": 443,
       "uuid": "31df9217-b7d0-Fade-946c-ac50d556aeff",
@@ -129,6 +89,68 @@
     },
     {
       "type": "vless",
+      "tag": "🇷🇺 18b",
+      "server": "195.209.90.178",
+      "server_port": 443,
+      "uuid": "34954be5-333b-Fade-ab1e-00c7df47eb28",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "s28233.cdn.ngenix.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "s28233.cdn.ngenix.net"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 ✓ 10 BP",
+      "server": "87.228.74.197",
+      "server_port": 52006,
+      "uuid": "75807638-6f19-2710-ae08-38492ee85c88",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "87.228.74.197",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 19 BP",
+      "server": "usa2.vpnfreedom.tech",
+      "server_port": 443,
+      "uuid": "6220e45d-8ac6-4a10-8433-0dbadcf747ca",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "dl8h7j1NKxBL_p2leIy9SWKznB0VG5h8ftsb0hlLICk",
+          "short_id": "2404"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇷🇺 15 BP",
       "server": "89.208.229.107",
       "server_port": 443,
@@ -153,11 +175,12 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 ✓ 10 BP",
-        "🇷🇺 ✓ 18b",
-        "🇷🇺 1a BP",
+        "🇷🇺 ✓ 1a BP",
         "🇷🇺 ✓ 3 BP",
         "🇷🇺 14 BP",
+        "🇷🇺 18b",
+        "🇷🇺 ✓ 10 BP",
+        "🇷🇺 19 BP",
         "🇷🇺 15 BP"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -169,11 +192,12 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 ✓ 10 BP",
-        "🇷🇺 ✓ 18b",
-        "🇷🇺 1a BP",
+        "🇷🇺 ✓ 1a BP",
         "🇷🇺 ✓ 3 BP",
         "🇷🇺 14 BP",
+        "🇷🇺 18b",
+        "🇷🇺 ✓ 10 BP",
+        "🇷🇺 19 BP",
         "🇷🇺 15 BP"
       ],
       "default": "auto"
