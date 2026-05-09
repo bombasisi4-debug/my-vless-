@@ -3,6 +3,17 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
+- name: 🇷🇺 ✓ 10 BP
+  type: vless
+  server: 87.228.74.197
+  port: 52006
+  uuid: "75807638-6f19-2710-ae08-38492ee85c88"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "87.228.74.197"
+  client-fingerprint: chrome
 - name: 🇷🇺 ✓ 1a BP
   type: vless
   server: 195.209.88.216
@@ -17,6 +28,104 @@ proxies:
     path: /
     headers:
       Host: s28233.cdn.ngenix.net
+- name: 🇷🇺 58 BP
+  type: vless
+  server: 217.149.25.195
+  port: 443
+  uuid: "2003b2e8-0f93-47d7-8290-9df2321ef62a"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "rf1.helper-internet.com"
+  client-fingerprint: random
+  reality-opts:
+    public-key: "W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE"
+    short-id: "ff776ff77be48b88"
+- name: 🇷🇺 48 BP
+  type: vless
+  server: 37.220.80.58
+  port: 7443
+  uuid: "5e217cdf-9a6e-4ddc-84d2-ccda9e7e16fa"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "chat.deepseek.com"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI"
+    short-id: "d82fb387"
+- name: 🇷🇺 24a
+  type: vless
+  server: 185.186.142.210
+  port: 443
+  uuid: "e31a303c-a8f0-4189-9bdf-2312d15253d2"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "www.google.com"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "9mJq2cP3srX_6K1YfMDp1yndvo5CtgL6TEVQ8tm4fVc"
+    short-id: ""
+- name: 🇷🇺 ✓ 18b
+  type: vless
+  server: 195.209.90.178
+  port: 443
+  uuid: "34954be5-333b-Fade-ab1e-00c7df47eb28"
+  udp: true
+  network: ws
+  tls: true
+  servername: "s28233.cdn.ngenix.net"
+  client-fingerprint: qq
+  ws-opts:
+    path: /
+    headers:
+      Host: s28233.cdn.ngenix.net
+- name: 🇷🇺 52 BP
+  type: vless
+  server: 2.56.178.124
+  port: 443
+  uuid: "3d168767-6e7e-463d-8739-a6e6cc4ae508"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "eh.vk.com"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "CaUiCF3-CEZbL9fLFVL9g12qcrKMX1FW4Qe7EsASPUY"
+    short-id: "3d9a1c7f5e2b8460"
+- name: 🇷🇺 40b BP
+  type: vless
+  server: 109.73.195.235
+  port: 443
+  uuid: "e31a303c-a8f0-4189-9bdf-2312d15253d2"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "www.google.com"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "9mJq2cP3srX_6K1YfMDp1yndvo5CtgL6TEVQ8tm4fVc"
+    short-id: ""
+- name: 🇷🇺 61a BP
+  type: vless
+  server: 176.108.243.76
+  port: 443
+  uuid: "e9888b9b-658b-4f51-94f3-b8ba80e4ef91"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "wikihow.com"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "1HeKf_8KDjfzXfUi9P7WBaGStMvr96TKdUbofpkwBzQ"
+    short-id: "8bd29483ded126b4"
 - name: 🇷🇺 ✓ 3 BP
   type: vless
   server: 193.9.49.6
@@ -31,44 +140,6 @@ proxies:
     path: /eyJqdW5rIjoiQ3BQN2pIZ3YiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyI1LjE4Ny43LjIyMCJdfQ==?ed=2560
     headers:
       Host: winter-wind-90a7.nabarev274.workers.dev
-- name: 🇷🇺 14 BP
-  type: vless
-  server: 87.242.118.99
-  port: 443
-  uuid: "9a456f87-cf81-453a-bf1f-183b564164e6"
-  udp: true
-  network: xhttp
-  tls: true
-  servername: "vk.com"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "OvzRQOJMpkup7bhUmQicdBxrB0Pm8adQHLbTxgNorlo"
-    short-id: "ab"
-- name: 🇷🇺 18b
-  type: vless
-  server: 195.209.90.178
-  port: 443
-  uuid: "34954be5-333b-Fade-ab1e-00c7df47eb28"
-  udp: true
-  network: ws
-  tls: true
-  servername: "s28233.cdn.ngenix.net"
-  client-fingerprint: qq
-  ws-opts:
-    path: /
-    headers:
-      Host: s28233.cdn.ngenix.net
-- name: 🇷🇺 ✓ 10 BP
-  type: vless
-  server: 87.228.74.197
-  port: 52006
-  uuid: "75807638-6f19-2710-ae08-38492ee85c88"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "87.228.74.197"
-  client-fingerprint: chrome
 - name: 🇷🇺 19 BP
   type: vless
   server: usa2.vpnfreedom.tech
@@ -83,9 +154,37 @@ proxies:
   reality-opts:
     public-key: "dl8h7j1NKxBL_p2leIy9SWKznB0VG5h8ftsb0hlLICk"
     short-id: "2404"
-- name: 🇷🇺 15 BP
+- name: 🇷🇺 51c BP
   type: vless
-  server: 89.208.229.107
+  server: 72.56.15.240
+  port: 443
+  uuid: "e31a303c-a8f0-4189-9bdf-2312d15253d2"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "www.google.com"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "9mJq2cP3srX_6K1YfMDp1yndvo5CtgL6TEVQ8tm4fVc"
+    short-id: ""
+- name: 🇷🇺 12 BP
+  type: vless
+  server: 79.174.95.135
+  port: 5447
+  uuid: "362bdd1a-4042-4359-9566-e3fa076a84a8"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "st.okcdn.ru"
+  client-fingerprint: random
+  reality-opts:
+    public-key: "OtGux0Ty5TSzfIvlHVd4q_TdYbRUHKbS8WCxmpHJx18"
+    short-id: "542c8ba8f82ea453"
+- name: 🇷🇺 59 BP
+  type: vless
+  server: fast.shadownet.pro
   port: 443
   uuid: "7c396b1b-cac3-4cc5-b605-301e7b8fea5c"
   udp: true
@@ -97,17 +196,39 @@ proxies:
   reality-opts:
     public-key: "-3db-870saQ43F5kBx4JkokDn6eC1M5yhU5V71UlsFc"
     short-id: "89abcdef"
+- name: 🇷🇺 62b BP
+  type: vless
+  server: 45.151.31.68
+  port: 443
+  uuid: "e9888b9b-658b-4f51-94f3-b8ba80e4ef91"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "wikihow.com"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "1HeKf_8KDjfzXfUi9P7WBaGStMvr96TKdUbofpkwBzQ"
+    short-id: "8bd29483ded126b4"
 proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - 🇷🇺 ✓ 1a BP
-  - 🇷🇺 ✓ 3 BP
-  - 🇷🇺 14 BP
-  - 🇷🇺 18b
   - 🇷🇺 ✓ 10 BP
+  - 🇷🇺 ✓ 1a BP
+  - 🇷🇺 58 BP
+  - 🇷🇺 48 BP
+  - 🇷🇺 24a
+  - 🇷🇺 ✓ 18b
+  - 🇷🇺 52 BP
+  - 🇷🇺 40b BP
+  - 🇷🇺 61a BP
+  - 🇷🇺 ✓ 3 BP
   - 🇷🇺 19 BP
-  - 🇷🇺 15 BP
+  - 🇷🇺 51c BP
+  - 🇷🇺 12 BP
+  - 🇷🇺 59 BP
+  - 🇷🇺 62b BP
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -115,12 +236,20 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 Авто (лучший)
-  - 🇷🇺 ✓ 1a BP
-  - 🇷🇺 ✓ 3 BP
-  - 🇷🇺 14 BP
-  - 🇷🇺 18b
   - 🇷🇺 ✓ 10 BP
+  - 🇷🇺 ✓ 1a BP
+  - 🇷🇺 58 BP
+  - 🇷🇺 48 BP
+  - 🇷🇺 24a
+  - 🇷🇺 ✓ 18b
+  - 🇷🇺 52 BP
+  - 🇷🇺 40b BP
+  - 🇷🇺 61a BP
+  - 🇷🇺 ✓ 3 BP
   - 🇷🇺 19 BP
-  - 🇷🇺 15 BP
+  - 🇷🇺 51c BP
+  - 🇷🇺 12 BP
+  - 🇷🇺 59 BP
+  - 🇷🇺 62b BP
 rules:
 - MATCH,PROXY
