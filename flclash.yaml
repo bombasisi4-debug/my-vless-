@@ -3,6 +3,46 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
+- name: 🇵🇱 1a
+  type: vless
+  server: pl-mirror.api.akenai.click
+  port: 753
+  uuid: "0febb78b-96ef-0001-9766-124bb6a354db"
+  udp: true
+  network: tcp
+  tls: true
+  servername: "www.amd.com"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "i00_tpIO0Oe2TV2lxm2BLm6QUzzkncyJtauMa7Rn500"
+    short-id: "b91a73752053b039"
+- name: 🇱🇹 54d
+  type: vless
+  server: lithnode.lumixnet.com
+  port: 443
+  uuid: "5d509427-0502-4159-9c2b-7eee71c5e41e"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "lithnode.lumixnet.com"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "8K4cnpy__grgZ9mQG0qdUg1JUYc0bz3wwrpXO9VXVXQ"
+    short-id: "4e7082cd83ad9df5"
+- name: 🇵🇱 33c
+  type: vless
+  server: pl-mirror.api.akenai.click
+  port: 443
+  uuid: "0febb78b-96ef-0013-9766-124bb6a354db"
+  udp: true
+  network: tcp
+  tls: true
+  servername: "pl-mirror.api.akenai.click"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "i00_tpIO0Oe2TV2lxm2BLm6QUzzkncyJtauMa7Rn500"
+    short-id: "b91a73752053b039"
 - name: 🇳🇱 49
   type: vless
   server: nl1server.rabstvo.shop
@@ -18,11 +58,54 @@ proxies:
     short-id: "99d43973"
   grpc-opts:
     grpc-service-name: grpc
+- name: 🇫🇮 24b
+  type: vless
+  server: f5.steptofreedom.one
+  port: 443
+  uuid: "d4e7bb0a-ad2c-4030-b2e0-7bb6840b04f5"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "f5.steptofreedom.one"
+  client-fingerprint: randomized
+  reality-opts:
+    public-key: "ivgTfLR13A6xBsicIA28OPoav2tXlsstTTmGuETfnSk"
+    short-id: "6d6f13013d3e1d0c"
+- name: 🇨🇭 56e
+  type: vless
+  server: ch-mirror.api.akenai.click
+  port: 443
+  uuid: "0febb78b-96ef-43c6-9766-124bb6a354db"
+  udp: true
+  network: tcp
+  tls: true
+  servername: "ch-mirror.api.akenai.click"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "i00_tpIO0Oe2TV2lxm2BLm6QUzzkncyJtauMa7Rn500"
+    short-id: "b91a73752053b039"
 proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
+  - 🇵🇱 1a
+  - 🇱🇹 54d
+  - 🇵🇱 33c
   - 🇳🇱 49
+  - 🇫🇮 24b
+  - 🇨🇭 56e
+  url: https://www.gstatic.com/generate_204
+  interval: 60
+  tolerance: 80
+- name: 📁 Группа A
+  type: url-test
+  proxies:
+  - 🇵🇱 1a
+  - 🇫🇮 24b
+  - 🇵🇱 33c
+  - 🇱🇹 54d
+  - 🇨🇭 56e
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -30,6 +113,12 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 Авто (лучший)
+  - 📁 Группа A
+  - 🇵🇱 1a
+  - 🇱🇹 54d
+  - 🇵🇱 33c
   - 🇳🇱 49
+  - 🇫🇮 24b
+  - 🇨🇭 56e
 rules:
 - MATCH,PROXY
