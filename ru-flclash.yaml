@@ -3,16 +3,16 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇺 ✓ 28b BP
+- name: 🇷🇺 ✓ 14a BP
   type: vless
-  server: 212.41.8.216
+  server: 80.93.187.210
   port: 52006
   uuid: "75807638-6f19-07d0-ae08-38492ee85c88"
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: "212.41.8.216"
+  servername: "80.93.187.210"
   client-fingerprint: chrome
 - name: 🇷🇺 37c BP
   type: vless
@@ -25,49 +25,11 @@ proxies:
   flow: xtls-rprx-vision
   servername: "188.246.226.14"
   client-fingerprint: chrome
-- name: 🇷🇺 ✓ 14a BP
-  type: vless
-  server: 80.93.187.210
-  port: 52006
-  uuid: "75807638-6f19-07d0-ae08-38492ee85c88"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "80.93.187.210"
-  client-fingerprint: chrome
-- name: 🇷🇺 21 BP
-  type: vless
-  server: 158.160.250.161
-  port: 443
-  uuid: "616f5216-aaf1-4983-8c79-7ee9b2dfdf02"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "www.apple.com"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "z9dOqH2pEKYk8V7opl4npiUUSXzj6yRHDYj9Xl95znY"
-    short-id: "b99e82f6d99f6e"
-- name: 🇷🇺 51e BP
-  type: vless
-  server: 213.171.26.10
-  port: 3443
-  uuid: "398c4893-c8df-4882-9539-2cef39c5aec7"
-  udp: true
-  network: xhttp
-  tls: true
-  servername: "kinopoisk.ru"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "XqH-gNEL9eJfr1pglaI8WU3OvE654_5duXYBS35UXlM"
-    short-id: "abcdef0123456789"
-- name: 🇷🇺 46c
+- name: 🇷🇺 59c BP
   type: vless
   server: 217.168.240.172
   port: 2443
-  uuid: "e0c71136-a549-4195-8387-27cf4f4ee18a"
+  uuid: "3db1d393-666a-4b55-9328-0d46e889397c"
   udp: true
   network: xhttp
   tls: true
@@ -76,16 +38,16 @@ proxies:
   reality-opts:
     public-key: "XqH-gNEL9eJfr1pglaI8WU3OvE654_5duXYBS35UXlM"
     short-id: "ab"
-- name: 🇷🇺 ✓ 47d
+- name: 🇷🇺 28b BP
   type: vless
-  server: cl-de-2.edgeflux.ru
+  server: 212.41.8.216
   port: 52006
-  uuid: "75807638-6f19-01f4-ae08-38492ee85c88"
+  uuid: "75807638-6f19-07d0-ae08-38492ee85c88"
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: "cl-de-2.edgeflux.ru"
+  servername: "212.41.8.216"
   client-fingerprint: chrome
 - name: 🇷🇺 1a BP
   type: vless
@@ -114,39 +76,22 @@ proxies:
   reality-opts:
     public-key: "lggRqXlpIE3Pirqc1G_CZUn3oITFtmzvYNvGsEdEcDA"
     short-id: "999999"
-- name: 🇷🇺 55f BP
+- name: 🇷🇺 ✓ 47d
   type: vless
-  server: 79.174.95.200
-  port: 5443
-  uuid: "d1bba76e-fa65-4772-a3ce-ea3ede58f343"
+  server: cl-de-2.edgeflux.ru
+  port: 52006
+  uuid: "75807638-6f19-01f4-ae08-38492ee85c88"
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: "ads.x5.ru"
+  servername: "cl-de-2.edgeflux.ru"
   client-fingerprint: chrome
-  reality-opts:
-    public-key: "OtGux0Ty5TSzfIvlHVd4q_TdYbRUHKbS8WCxmpHJx18"
-    short-id: "c95e7623d9adfee3"
-- name: 🇷🇺 43b BP
+- name: 🇷🇺 4b BP
   type: vless
-  server: thaelen.kaguya.sbs
-  port: 443
-  uuid: "46917323-63d4-4797-9543-21b5d4ff7d7b"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "max.ru"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "1ZNcu6FOn9xF-YfkFLhDI3vuO8w3VWq32zYVJ4JWBxQ"
-    short-id: "dc4aa6635008a9ae"
-- name: 🇷🇺 49d BP
-  type: vless
-  server: 79.174.95.200
+  server: 79.174.95.135
   port: 5447
-  uuid: "a277a703-e767-4ed4-a963-89fe26d91162"
+  uuid: "893c3f9e-bde5-4cf1-ab91-c412c264eeb9"
   udp: true
   network: tcp
   tls: true
@@ -156,37 +101,48 @@ proxies:
   reality-opts:
     public-key: "OtGux0Ty5TSzfIvlHVd4q_TdYbRUHKbS8WCxmpHJx18"
     short-id: "f543a7a8ec616e07"
-- name: 🇷🇺 26 BP
+- name: 🇷🇺 51 BP
   type: vless
-  server: 217.16.21.98
-  port: 27472
-  uuid: "39e282e0-5ae4-4ff4-8848-4b9346505c78"
+  server: 72.56.249.185
+  port: 443
+  uuid: "hubRCvAe7AmmWpXepK3IxK"
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: "www.samsung.com"
+  servername: "m.vk.ru"
   client-fingerprint: chrome
   reality-opts:
-    public-key: "tfBYj32NRb7oc8lmVjr0nlote_rqpe_vd367HlcwxVs"
-    short-id: "b0"
+    public-key: "Zht5O4dms-VLzZV7MNbvXMu3qiSQzVSg-OVnjlOF5Hk"
+    short-id: "38f58380b7adef3e"
+- name: 🇷🇺 21 BP
+  type: vless
+  server: 158.160.250.161
+  port: 443
+  uuid: "616f5216-aaf1-4983-8c79-7ee9b2dfdf02"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "www.apple.com"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "z9dOqH2pEKYk8V7opl4npiUUSXzj6yRHDYj9Xl95znY"
+    short-id: "b99e82f6d99f6e"
 proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - 🇷🇺 ✓ 28b BP
-  - 🇷🇺 37c BP
   - 🇷🇺 ✓ 14a BP
-  - 🇷🇺 21 BP
-  - 🇷🇺 51e BP
-  - 🇷🇺 46c
-  - 🇷🇺 ✓ 47d
+  - 🇷🇺 37c BP
+  - 🇷🇺 59c BP
+  - 🇷🇺 28b BP
   - 🇷🇺 1a BP
   - 🇷🇺 41 BP
-  - 🇷🇺 55f BP
-  - 🇷🇺 43b BP
-  - 🇷🇺 49d BP
-  - 🇷🇺 26 BP
+  - 🇷🇺 ✓ 47d
+  - 🇷🇺 4b BP
+  - 🇷🇺 51 BP
+  - 🇷🇺 21 BP
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -194,18 +150,15 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 Авто (лучший)
-  - 🇷🇺 ✓ 28b BP
-  - 🇷🇺 37c BP
   - 🇷🇺 ✓ 14a BP
-  - 🇷🇺 21 BP
-  - 🇷🇺 51e BP
-  - 🇷🇺 46c
-  - 🇷🇺 ✓ 47d
+  - 🇷🇺 37c BP
+  - 🇷🇺 59c BP
+  - 🇷🇺 28b BP
   - 🇷🇺 1a BP
   - 🇷🇺 41 BP
-  - 🇷🇺 55f BP
-  - 🇷🇺 43b BP
-  - 🇷🇺 49d BP
-  - 🇷🇺 26 BP
+  - 🇷🇺 ✓ 47d
+  - 🇷🇺 4b BP
+  - 🇷🇺 51 BP
+  - 🇷🇺 21 BP
 rules:
 - MATCH,PROXY
