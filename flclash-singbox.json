@@ -21,10 +21,172 @@
   ],
   "outbounds": [
     {
+      "type": "vless",
+      "tag": "🇳🇱 22c BP",
+      "server": "s3.perecbass.ru",
+      "server_port": 43435,
+      "uuid": "e6dd980c-1978-4e3c-b689-af2f0399366e",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.amd.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mc5GFUALNT1V4TgYZ4OWJHB2DQ-G-b4qLYsRlgWB-VQ",
+          "short_id": "0facd268d1951fe4"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "api"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 25d BP",
+      "server": "pl1.astrocore.cloud",
+      "server_port": 443,
+      "uuid": "b1b24586-cccf-458d-b125-d621c3710676",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl1.astrocore.cloud",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "X2Sb6CKcI_yEV4gu9KUAmL9mcL-xpC1Ngks06NYIaxw",
+          "short_id": "f129f93e"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 ✓ 20b",
+      "server": "45.85.119.191",
+      "server_port": 443,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "sni.my111000.tech",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "sni.my111000.tech"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇸 27e BP",
+      "server": "isp2.myxavpn.com",
+      "server_port": 443,
+      "uuid": "00a31b83-d78a-4866-9124-bf80ab961501",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "isp2.myxavpn.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw",
+          "short_id": "d67ec5a8fc40ebea"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 33g BP",
+      "server": "skynode-germany.duckdns.org",
+      "server_port": 2053,
+      "uuid": "8f18a1a9-dee6-4ba8-8edd-7f8574777b59",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.microsoft.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "qURsRyIC4cOFGTEcRC3gTLW2zLP5Svu93Hn-bBlGfiY",
+          "short_id": "0123456789abcdef"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 15a BP",
+      "server": "91.84.119.187",
+      "server_port": 443,
+      "uuid": "c7cb3bae-8591-40dd-b18c-20919ab6389d",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "XoF4tf2G6jbwfd7t4aR8HpRXS3eYJRsGb0RAzPHLwGA",
+          "short_id": "18b90000"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 31f BP",
+      "server": "216.57.108.20",
+      "server_port": 443,
+      "uuid": "ec75f351-4428-4e57-ae4a-f8e546da2be7",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "udIQmQtfL5_RuM9EowSs7DEnee-IEFVFmxbkeD8jIT0",
+          "short_id": "95c7"
+        }
+      }
+    },
+    {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "direct"
+        "🇳🇱 22c BP",
+        "🇵🇱 25d BP",
+        "🇬🇧 ✓ 20b",
+        "🇪🇸 27e BP",
+        "🇩🇪 33g BP",
+        "🇳🇱 15a BP",
+        "🇩🇪 31f BP"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "1m",
@@ -34,7 +196,14 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "direct"
+        "auto",
+        "🇳🇱 22c BP",
+        "🇵🇱 25d BP",
+        "🇬🇧 ✓ 20b",
+        "🇪🇸 27e BP",
+        "🇩🇪 33g BP",
+        "🇳🇱 15a BP",
+        "🇩🇪 31f BP"
       ],
       "default": "auto"
     },
