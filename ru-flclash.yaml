@@ -3,61 +3,11 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇺 44i BP
-  type: vless
-  server: 158.160.241.112
-  port: 443
-  uuid: "2fefd712-a0bc-4904-8709-8d27c446ea8d"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "id.x5.ru"
-  client-fingerprint: random
-  reality-opts:
-    public-key: "OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA"
-    short-id: "111111"
-- name: 🇷🇺 ✓ 109ar BP
-  type: vless
-  server: 82.202.249.3
-  port: 52006
-  uuid: "75807638-6f19-07d0-ae08-38492ee85c88"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "cluster-russia-1.firstvideocdn.ru"
-  client-fingerprint: chrome
-- name: 🇷🇺 ✓ 99al BP
-  type: vless
-  server: 178.72.162.160
-  port: 52006
-  uuid: "75807638-6f19-0898-ae08-38492ee85c88"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "cluster-other-1.firstvideocdn.ru"
-  client-fingerprint: chrome
-- name: 🇷🇺 95aj BP
-  type: vless
-  server: 158.160.231.91
-  port: 443
-  uuid: "cb685ccc-99fe-444c-b307-ff5638813d09"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "id.x5.ru"
-  client-fingerprint: random
-  reality-opts:
-    public-key: "OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA"
-    short-id: "111111"
-- name: 🇷🇺 21f BP
+- name: 🇷🇺 10c BP
   type: vless
   server: 158.160.224.84
   port: 443
-  uuid: "acd51ea6-d228-462c-8d69-23310002e079"
+  uuid: "692794c4-eeed-480a-bfda-cd9e30af8735"
   udp: true
   network: tcp
   tls: true
@@ -67,22 +17,11 @@ proxies:
   reality-opts:
     public-key: "OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA"
     short-id: "111111"
-- name: 🇷🇺 108aq BP
+- name: 🇷🇺 14e BP
   type: vless
-  server: 82.202.197.3
-  port: 52006
-  uuid: "75807638-6f19-07d0-ae08-38492ee85c88"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "cluster-russia-1.firstvideocdn.ru"
-  client-fingerprint: chrome
-- name: 🇷🇺 52l BP
-  type: vless
-  server: 158.160.231.91
+  server: 158.160.245.33
   port: 443
-  uuid: "4f9d2c5e-bfc5-47d7-806e-e752f73300ae"
+  uuid: "0c0c7a71-0ad6-4874-bc93-0ab1defeaf9c"
   udp: true
   network: tcp
   tls: true
@@ -92,78 +31,7 @@ proxies:
   reality-opts:
     public-key: "OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA"
     short-id: "111111"
-- name: 🇷🇺 146bl BP
-  type: vless
-  server: 158.160.241.112
-  port: 443
-  uuid: "cb685ccc-99fe-444c-b307-ff5638813d09"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "5post-gate.x5.ru"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: "OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA"
-    short-id: "111111"
-- name: 🇷🇺 11d
-  type: vless
-  server: 46.243.232.186
-  port: 443
-  uuid: "049a0193-e1c9-4e9b-a3cc-f5318e3d9f31"
-  udp: true
-  network: grpc
-  tls: true
-  servername: "ads.x5.ru"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "OoPqWo20Aq1LsqmZCnGxcvLHun7S1d6F4Bx6PbxpOVE"
-    short-id: "5FA44664f6a566d3"
-  grpc-opts:
-    grpc-service-name: vless-grpc
-- name: 🇷🇺 116au BP
-  type: vless
-  server: 84.201.163.248
-  port: 443
-  uuid: "cb685ccc-99fe-444c-b307-ff5638813d09"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "id.x5.ru"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: "OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA"
-    short-id: "111111"
-- name: 🇷🇺 17e BP
-  type: vless
-  server: 158.160.231.91
-  port: 443
-  uuid: "2fefd712-a0bc-4904-8709-8d27c446ea8d"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "id.x5.ru"
-  client-fingerprint: random
-  reality-opts:
-    public-key: "OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA"
-    short-id: "111111"
-- name: 🇷🇺 117av BP
-  type: vless
-  server: 84.201.154.239
-  port: 443
-  uuid: "2fefd712-a0bc-4904-8709-8d27c446ea8d"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "id.x5.ru"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: "OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA"
-    short-id: "111111"
-- name: 🇷🇺 74v BP
+- name: 🇷🇺 16f BP
   type: vless
   server: 84.201.161.48
   port: 443
@@ -173,41 +41,41 @@ proxies:
   tls: true
   flow: xtls-rprx-vision
   servername: "id.x5.ru"
-  client-fingerprint: qq
+  client-fingerprint: chrome
   reality-opts:
     public-key: "OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA"
     short-id: "111111"
-- name: 🇷🇺 120ax BP
+- name: 🇷🇺 28h BP
   type: vless
-  server: 84.201.179.45
+  server: 158.160.254.27
+  port: 443
+  uuid: "2fefd712-a0bc-4904-8709-8d27c446ea8d"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "5post-gate.x5.ru"
+  client-fingerprint: random
+  reality-opts:
+    public-key: "XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE"
+    short-id: "111111"
+- name: 🇷🇺 32i BP
+  type: vless
+  server: 158.160.145.14
   port: 443
   uuid: "4f9d2c5e-bfc5-47d7-806e-e752f73300ae"
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: "id.x5.ru"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: "OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA"
-    short-id: "111111"
-- name: 🇷🇺 77x BP
-  type: vless
-  server: 158.160.241.112
-  port: 443
-  uuid: "acd51ea6-d228-462c-8d69-23310002e079"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
   servername: "5post-gate.x5.ru"
-  client-fingerprint: qq
+  client-fingerprint: random
   reality-opts:
-    public-key: "OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA"
+    public-key: "XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE"
     short-id: "111111"
-- name: 🇷🇺 145bk BP
+- name: 🇷🇺 9b BP
   type: vless
-  server: 84.201.151.181
+  server: 84.201.154.239
   port: 443
   uuid: "acd51ea6-d228-462c-8d69-23310002e079"
   udp: true
@@ -221,119 +89,7 @@ proxies:
     short-id: "111111"
 - name: 🇷🇺 1a BP
   type: vless
-  server: 84.201.154.239
-  port: 443
-  uuid: "cb685ccc-99fe-444c-b307-ff5638813d09"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "id.x5.ru"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: "OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA"
-    short-id: "111111"
-- name: 🇷🇺 139bg BP
-  type: vless
-  server: 84.201.151.181
-  port: 443
-  uuid: "cb685ccc-99fe-444c-b307-ff5638813d09"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "id.x5.ru"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: "OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA"
-    short-id: "111111"
-- name: 🇷🇺 93ah BP
-  type: vless
-  server: 84.201.161.48
-  port: 443
-  uuid: "cb685ccc-99fe-444c-b307-ff5638813d09"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "id.x5.ru"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: "OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA"
-    short-id: "111111"
-- name: 🇷🇺 94ai BP
-  type: vless
-  server: 84.201.163.248
-  port: 443
-  uuid: "acd51ea6-d228-462c-8d69-23310002e079"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "id.x5.ru"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: "OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA"
-    short-id: "111111"
-- name: 🇷🇺 143bi BP
-  type: vless
-  server: 158.160.231.91
-  port: 443
-  uuid: "acd51ea6-d228-462c-8d69-23310002e079"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "id.x5.ru"
-  client-fingerprint: random
-  reality-opts:
-    public-key: "OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA"
-    short-id: "111111"
-- name: 🇷🇺 118aw BP
-  type: vless
-  server: 84.201.179.45
-  port: 443
-  uuid: "acd51ea6-d228-462c-8d69-23310002e079"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "id.x5.ru"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: "OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA"
-    short-id: "111111"
-- name: 🇷🇺 69s BP
-  type: vless
-  server: 158.160.241.112
-  port: 443
-  uuid: "4f9d2c5e-bfc5-47d7-806e-e752f73300ae"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "5post-gate.x5.ru"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: "OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA"
-    short-id: "111111"
-- name: 🇷🇺 134bd BP
-  type: vless
-  server: 84.201.137.212
-  port: 443
-  uuid: "acd51ea6-d228-462c-8d69-23310002e079"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "5post-gate.x5.ru"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA"
-    short-id: "111111"
-- name: 🇷🇺 73u BP
-  type: vless
-  server: 84.201.151.181
+  server: 158.160.168.132
   port: 443
   uuid: "2fefd712-a0bc-4904-8709-8d27c446ea8d"
   udp: true
@@ -341,755 +97,51 @@ proxies:
   tls: true
   flow: xtls-rprx-vision
   servername: "id.x5.ru"
-  client-fingerprint: qq
+  client-fingerprint: random
   reality-opts:
     public-key: "OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA"
     short-id: "111111"
-- name: 🇷🇺 ✓ 98ak BP
+- name: 🇷🇺 13d BP
   type: vless
-  server: 195.209.88.216
-  port: 443
-  uuid: "d471e982-4237-Fade-94df-c0d11029282a"
-  udp: true
-  network: ws
-  tls: true
-  servername: "s28233.cdn.ngenix.net"
-  client-fingerprint: qq
-  ws-opts:
-    path: /
-    headers:
-      Host: s28233.cdn.ngenix.net
-- name: 🇷🇺 78y BP
-  type: vless
-  server: 84.201.151.181
-  port: 443
-  uuid: "4f9d2c5e-bfc5-47d7-806e-e752f73300ae"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "id.x5.ru"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: "OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA"
-    short-id: "111111"
-- name: 🇷🇺 46j BP
-  type: vless
-  server: 84.201.150.127
-  port: 443
-  uuid: "4f9d2c5e-bfc5-47d7-806e-e752f73300ae"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "5post-gate.x5.ru"
-  client-fingerprint: random
-  reality-opts:
-    public-key: "XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE"
-    short-id: "111111"
-- name: 🇷🇺 22g BP
-  type: vless
-  server: 84.201.150.127
-  port: 443
-  uuid: "2fefd712-a0bc-4904-8709-8d27c446ea8d"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "5post-gate.x5.ru"
-  client-fingerprint: random
-  reality-opts:
-    public-key: "XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE"
-    short-id: "111111"
-- name: 🇷🇺 53m BP
-  type: vless
-  server: 158.160.197.131
-  port: 443
-  uuid: "4f9d2c5e-bfc5-47d7-806e-e752f73300ae"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "5post-gate.x5.ru"
-  client-fingerprint: random
-  reality-opts:
-    public-key: "XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE"
-    short-id: "111111"
-- name: 🇷🇺 144bj BP
-  type: vless
-  server: 158.160.197.131
-  port: 443
-  uuid: "2fefd712-a0bc-4904-8709-8d27c446ea8d"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "5post-gate.x5.ru"
-  client-fingerprint: random
-  reality-opts:
-    public-key: "XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE"
-    short-id: "111111"
-- name: 🇷🇺 60p BP
-  type: vless
-  server: 158.160.170.80
-  port: 443
-  uuid: "cb685ccc-99fe-444c-b307-ff5638813d09"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "5post-gate.x5.ru"
-  client-fingerprint: random
-  reality-opts:
-    public-key: "XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE"
-    short-id: "111111"
-- name: 🇷🇺 71a BP
-  type: vless
-  server: 158.160.251.31
-  port: 443
-  uuid: "2fefd712-a0bc-4904-8709-8d27c446ea8d"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "5post-gate.x5.ru"
-  client-fingerprint: random
-  reality-opts:
-    public-key: "XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE"
-    short-id: "111111"
-- name: 🇷🇺 2b
-  type: vless
-  server: 84.201.166.160
-  port: 443
-  uuid: "03fdd2c2-7459-41b9-9504-ed2ecc1181b6"
-  udp: true
-  network: grpc
-  tls: true
-  servername: "max.ru"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "gDxzyiv2JKbJVxgFqmurttOCVJgCD1SrRZqiPEZ_9CU"
-    short-id: "104ddee73f941bc4"
-  grpc-opts:
-    grpc-service-name: xraygrpc
-- name: 🇷🇺 ✓ 14 BP
-  type: vless
-  server: 80.93.187.210
-  port: 52006
-  uuid: "75807638-6f19-07d0-ae08-38492ee85c88"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "80.93.187.210"
-  client-fingerprint: chrome
-- name: 🇷🇺 129bb BP
-  type: vless
-  server: 158.160.248.32
-  port: 443
-  uuid: "2fefd712-a0bc-4904-8709-8d27c446ea8d"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "5post-gate.x5.ru"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: "XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE"
-    short-id: "111111"
-- name: 🇷🇺 88ae BP
-  type: vless
-  server: 158.160.197.131
-  port: 443
-  uuid: "acd51ea6-d228-462c-8d69-23310002e079"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "5post-gate.x5.ru"
-  client-fingerprint: random
-  reality-opts:
-    public-key: "XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE"
-    short-id: "111111"
-- name: 🇷🇺 107ap BP
-  type: vless
-  server: 217.16.22.96
-  port: 4443
-  uuid: "bb04531b-5826-496e-9160-feb3139a99cf"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "yandex.ru"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: "MLe294SbK9H2C5yccEet4_9mhT47G2eusL-6e5Ajtks"
-    short-id: "6b94175e0a1de1c2"
-- name: 🇷🇺 91af BP
-  type: vless
-  server: 217.16.22.96
-  port: 7443
-  uuid: "bb04531b-5826-496e-9160-feb3139a99cf"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "api-maps.yandex.ru"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: "DiB2kmxjYHVH_vRPqFpn2gJWq5Np4eRZHI534GTS_FU"
-    short-id: "62bc1454bfb603a0"
-- name: 🇷🇺 121ay
-  type: vless
-  server: 217.16.22.69
-  port: 7443
-  uuid: "bb04531b-5826-496e-9160-feb3139a99cf"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "api-maps.yandex.ru"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: "DiB2kmxjYHVH_vRPqFpn2gJWq5Np4eRZHI534GTS_FU"
-    short-id: "62bc1454bfb603a0"
-- name: 🇷🇺 87b BP
-  type: vless
-  server: 158.160.170.80
-  port: 443
-  uuid: "acd51ea6-d228-462c-8d69-23310002e079"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "5post-gate.x5.ru"
-  client-fingerprint: random
-  reality-opts:
-    public-key: "XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE"
-    short-id: "111111"
-- name: 🇷🇺 68r BP
-  type: vless
-  server: 217.16.22.96
+  server: hype1.snichvpn.ru
   port: 5443
   uuid: "bb04531b-5826-496e-9160-feb3139a99cf"
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: "max.ru"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: "X-a277A-j9mskp-aKvnCXu0lKSdPixD2tpzxOi6uURk"
-    short-id: "3d23e1ce53e79cef"
-- name: 🇷🇺 138bf BP
-  type: vless
-  server: 158.160.191.222
-  port: 443
-  uuid: "4f9d2c5e-bfc5-47d7-806e-e752f73300ae"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "5post-gate.x5.ru"
-  client-fingerprint: random
-  reality-opts:
-    public-key: "XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE"
-    short-id: "111111"
-- name: 🇷🇺 105ao BP
-  type: vless
-  server: 84.201.154.239
-  port: 443
-  uuid: "4f9d2c5e-bfc5-47d7-806e-e752f73300ae"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "id.x5.ru"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: "OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA"
-    short-id: "111111"
-- name: 🇷🇺 100am BP
-  type: vless
-  server: 158.160.170.80
-  port: 443
-  uuid: "2fefd712-a0bc-4904-8709-8d27c446ea8d"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "5post-gate.x5.ru"
-  client-fingerprint: random
-  reality-opts:
-    public-key: "XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE"
-    short-id: "111111"
-- name: 🇷🇺 81z BP
-  type: vless
-  server: 158.160.98.211
-  port: 443
-  uuid: "2fefd712-a0bc-4904-8709-8d27c446ea8d"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "5post-gate.x5.ru"
-  client-fingerprint: random
-  reality-opts:
-    public-key: "XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE"
-    short-id: "111111"
-- name: 🇷🇺 67q BP
-  type: vless
-  server: 84.201.160.223
-  port: 443
-  uuid: "acd51ea6-d228-462c-8d69-23310002e079"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "5post-gate.x5.ru"
-  client-fingerprint: random
-  reality-opts:
-    public-key: "XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE"
-    short-id: "111111"
-- name: 🇷🇺 84ab BP
-  type: vless
-  server: 217.16.22.69
-  port: 8443
-  uuid: "bb04531b-5826-496e-9160-feb3139a99cf"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "ads.x5.ru"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: "Ak6lguU4TWLebGzoA9XonBqnM-tRl8jYjFEzyjQG3E4"
-    short-id: "28678fcf96e8a01f"
-- name: 🇷🇺 57n
-  type: vless
-  server: 217.16.22.69
-  port: 4443
-  uuid: "bb04531b-5826-496e-9160-feb3139a99cf"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
   servername: "yandex.ru"
   client-fingerprint: qq
   reality-opts:
-    public-key: "MLe294SbK9H2C5yccEet4_9mhT47G2eusL-6e5Ajtks"
-    short-id: "6b94175e0a1de1c2"
-- name: 🇷🇺 41 BP
-  type: vless
-  server: 193.233.251.113
-  port: 443
-  uuid: "f429ba7e-1739-4e7f-8f4a-2c52c9e85ef0"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "eh.vk.com"
-  client-fingerprint: random
-  reality-opts:
-    public-key: "lggRqXlpIE3Pirqc1G_CZUn3oITFtmzvYNvGsEdEcDA"
-    short-id: "999999"
-- name: 🇷🇺 72t BP
-  type: vless
-  server: 84.201.143.223
-  port: 443
-  uuid: "acd51ea6-d228-462c-8d69-23310002e079"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "5post-gate.x5.ru"
-  client-fingerprint: random
-  reality-opts:
-    public-key: "XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE"
-    short-id: "111111"
-- name: 🇷🇺 131bc BP
-  type: vless
-  server: 84.201.143.223
-  port: 443
-  uuid: "cb685ccc-99fe-444c-b307-ff5638813d09"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "5post-gate.x5.ru"
-  client-fingerprint: random
-  reality-opts:
-    public-key: "XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE"
-    short-id: "111111"
-- name: 🇷🇺 104an BP
-  type: vless
-  server: 217.16.22.69
-  port: 5443
-  uuid: "bb04531b-5826-496e-9160-feb3139a99cf"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "max.ru"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: "X-a277A-j9mskp-aKvnCXu0lKSdPixD2tpzxOi6uURk"
-    short-id: "3d23e1ce53e79cef"
-- name: 🇷🇺 9c BP
-  type: vless
-  server: 158.160.251.31
-  port: 443
-  uuid: "4f9d2c5e-bfc5-47d7-806e-e752f73300ae"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "5post-gate.x5.ru"
-  client-fingerprint: random
-  reality-opts:
-    public-key: "XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE"
-    short-id: "111111"
-- name: 🇷🇺 110as BP
-  type: vless
-  server: 158.160.224.84
-  port: 443
-  uuid: "4f9d2c5e-bfc5-47d7-806e-e752f73300ae"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "id.x5.ru"
-  client-fingerprint: random
-  reality-opts:
-    public-key: "OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA"
-    short-id: "111111"
-- name: 🇷🇺 123az BP
+    public-key: "XtdL-37-fMg79jlyMqpIHNgnL77458UVldAj6t2ogho"
+    short-id: "646d0719715d735c"
+- name: 🇷🇺 26g BP
   type: vless
   server: 84.201.179.45
   port: 443
-  uuid: "cb685ccc-99fe-444c-b307-ff5638813d09"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "id.x5.ru"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: "OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA"
-    short-id: "111111"
-- name: 🇷🇺 58o BP
-  type: vless
-  server: 158.160.198.96
-  port: 443
-  uuid: "acd51ea6-d228-462c-8d69-23310002e079"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "5post-gate.x5.ru"
-  client-fingerprint: random
-  reality-opts:
-    public-key: "XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE"
-    short-id: "111111"
-- name: 🇷🇺 128ba BP
-  type: vless
-  server: 158.160.198.96
-  port: 443
   uuid: "2fefd712-a0bc-4904-8709-8d27c446ea8d"
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: "5post-gate.x5.ru"
-  client-fingerprint: random
-  reality-opts:
-    public-key: "XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE"
-    short-id: "111111"
-- name: 🇷🇺 83aa BP
-  type: vless
-  server: 158.160.248.32
-  port: 443
-  uuid: "4f9d2c5e-bfc5-47d7-806e-e752f73300ae"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "5post-gate.x5.ru"
-  client-fingerprint: random
-  reality-opts:
-    public-key: "XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE"
-    short-id: "111111"
-- name: 🇷🇺 142bh BP
-  type: vless
-  server: 158.160.245.72
-  port: 443
-  uuid: "4f9d2c5e-bfc5-47d7-806e-e752f73300ae"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "5post-gate.x5.ru"
-  client-fingerprint: random
-  reality-opts:
-    public-key: "XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE"
-    short-id: "111111"
-- name: 🇷🇺 76w BP
-  type: vless
-  server: 84.201.160.223
-  port: 443
-  uuid: "cb685ccc-99fe-444c-b307-ff5638813d09"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "5post-gate.x5.ru"
-  client-fingerprint: random
-  reality-opts:
-    public-key: "XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE"
-    short-id: "111111"
-- name: 🇷🇺 97b BP
-  type: vless
-  server: 158.160.98.211
-  port: 443
-  uuid: "4f9d2c5e-bfc5-47d7-806e-e752f73300ae"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "5post-gate.x5.ru"
-  client-fingerprint: random
-  reality-opts:
-    public-key: "XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE"
-    short-id: "111111"
-- name: 🇷🇺 92ag BP
-  type: vless
-  server: 158.160.251.31
-  port: 443
-  uuid: "cb685ccc-99fe-444c-b307-ff5638813d09"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "5post-gate.x5.ru"
-  client-fingerprint: random
-  reality-opts:
-    public-key: "XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE"
-    short-id: "111111"
-- name: 🇷🇺 119c BP
-  type: vless
-  server: 87.242.118.99
-  port: 443
-  uuid: "e0b66eb7-ab5f-42d6-8bff-41e527e5a3ea"
-  udp: true
-  network: xhttp
-  tls: true
-  servername: "travel.yandex.ru"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "XqH-gNEL9eJfr1pglaI8WU3OvE654_5duXYBS35UXlM"
-    short-id: "ab"
-- name: 🇷🇺 85ac BP
-  type: vless
-  server: 84.201.161.48
-  port: 443
-  uuid: "acd51ea6-d228-462c-8d69-23310002e079"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
   servername: "id.x5.ru"
   client-fingerprint: qq
   reality-opts:
     public-key: "OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA"
-    short-id: "111111"
-- name: 🇷🇺 51 BP
-  type: vless
-  server: 72.56.249.185
-  port: 443
-  uuid: "hubRCvAe7AmmWpXepK3IxK"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "m.vk.ru"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "Zht5O4dms-VLzZV7MNbvXMu3qiSQzVSg-OVnjlOF5Hk"
-    short-id: "38f58380b7adef3e"
-- name: 🇷🇺 25h BP
-  type: vless
-  server: 84.201.137.212
-  port: 443
-  uuid: "4f9d2c5e-bfc5-47d7-806e-e752f73300ae"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "id.x5.ru"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: "OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA"
-    short-id: "111111"
-- name: 🇷🇺 90a BP
-  type: vless
-  server: 87.242.118.99
-  port: 443
-  uuid: "f1f1f835-d256-44f6-bb7e-3c41161841c9"
-  udp: true
-  network: xhttp
-  tls: true
-  servername: "travel.yandex.ru"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "XqH-gNEL9eJfr1pglaI8WU3OvE654_5duXYBS35UXlM"
-    short-id: "abcdef0123456789"
-- name: 🇷🇺 47k BP
-  type: vless
-  server: 158.160.191.222
-  port: 443
-  uuid: "acd51ea6-d228-462c-8d69-23310002e079"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "5post-gate.x5.ru"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: "XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE"
-    short-id: "111111"
-- name: 🇷🇺 136c BP
-  type: vless
-  server: 158.160.248.32
-  port: 443
-  uuid: "acd51ea6-d228-462c-8d69-23310002e079"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "5post-gate.x5.ru"
-  client-fingerprint: random
-  reality-opts:
-    public-key: "XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE"
-    short-id: "111111"
-- name: 🇷🇺 135be BP
-  type: vless
-  server: 158.160.248.232
-  port: 443
-  uuid: "4f9d2c5e-bfc5-47d7-806e-e752f73300ae"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "5post-gate.x5.ru"
-  client-fingerprint: random
-  reality-opts:
-    public-key: "XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE"
-    short-id: "111111"
-- name: 🇷🇺 86ad BP
-  type: vless
-  server: 84.201.164.72
-  port: 443
-  uuid: "19e1a5de-6d71-47db-8691-ec334839f508"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "yandex.ru"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "ONSC3Bp5U0cjkMca7bXlUI16izIeN0fJKoCjEdn64RQ"
-    short-id: "a9c469c7b7475059"
-- name: 🇷🇺 111at BP
-  type: vless
-  server: 158.160.248.232
-  port: 443
-  uuid: "acd51ea6-d228-462c-8d69-23310002e079"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "5post-gate.x5.ru"
-  client-fingerprint: random
-  reality-opts:
-    public-key: "XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE"
     short-id: "111111"
 proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - 🇷🇺 44i BP
-  - 🇷🇺 ✓ 109ar BP
-  - 🇷🇺 ✓ 99al BP
-  - 🇷🇺 95aj BP
-  - 🇷🇺 21f BP
-  - 🇷🇺 108aq BP
-  - 🇷🇺 52l BP
-  - 🇷🇺 146bl BP
-  - 🇷🇺 11d
-  - 🇷🇺 116au BP
-  - 🇷🇺 17e BP
-  - 🇷🇺 117av BP
-  - 🇷🇺 74v BP
-  - 🇷🇺 120ax BP
-  - 🇷🇺 77x BP
-  - 🇷🇺 145bk BP
+  - 🇷🇺 10c BP
+  - 🇷🇺 14e BP
+  - 🇷🇺 16f BP
+  - 🇷🇺 28h BP
+  - 🇷🇺 32i BP
+  - 🇷🇺 9b BP
   - 🇷🇺 1a BP
-  - 🇷🇺 139bg BP
-  - 🇷🇺 93ah BP
-  - 🇷🇺 94ai BP
-  - 🇷🇺 143bi BP
-  - 🇷🇺 118aw BP
-  - 🇷🇺 69s BP
-  - 🇷🇺 134bd BP
-  - 🇷🇺 73u BP
-  - 🇷🇺 ✓ 98ak BP
-  - 🇷🇺 78y BP
-  - 🇷🇺 46j BP
-  - 🇷🇺 22g BP
-  - 🇷🇺 53m BP
-  - 🇷🇺 144bj BP
-  - 🇷🇺 60p BP
-  - 🇷🇺 71a BP
-  - 🇷🇺 2b
-  - 🇷🇺 ✓ 14 BP
-  - 🇷🇺 129bb BP
-  - 🇷🇺 88ae BP
-  - 🇷🇺 107ap BP
-  - 🇷🇺 91af BP
-  - 🇷🇺 121ay
-  - 🇷🇺 87b BP
-  - 🇷🇺 68r BP
-  - 🇷🇺 138bf BP
-  - 🇷🇺 105ao BP
-  - 🇷🇺 100am BP
-  - 🇷🇺 81z BP
-  - 🇷🇺 67q BP
-  - 🇷🇺 84ab BP
-  - 🇷🇺 57n
-  - 🇷🇺 41 BP
-  - 🇷🇺 72t BP
-  - 🇷🇺 131bc BP
-  - 🇷🇺 104an BP
-  - 🇷🇺 9c BP
-  - 🇷🇺 110as BP
-  - 🇷🇺 123az BP
-  - 🇷🇺 58o BP
-  - 🇷🇺 128ba BP
-  - 🇷🇺 83aa BP
-  - 🇷🇺 142bh BP
-  - 🇷🇺 76w BP
-  - 🇷🇺 97b BP
-  - 🇷🇺 92ag BP
-  - 🇷🇺 119c BP
-  - 🇷🇺 85ac BP
-  - 🇷🇺 51 BP
-  - 🇷🇺 25h BP
-  - 🇷🇺 90a BP
-  - 🇷🇺 47k BP
-  - 🇷🇺 136c BP
-  - 🇷🇺 135be BP
-  - 🇷🇺 86ad BP
-  - 🇷🇺 111at BP
+  - 🇷🇺 13d BP
+  - 🇷🇺 26g BP
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -1097,78 +149,14 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 Авто (лучший)
-  - 🇷🇺 44i BP
-  - 🇷🇺 ✓ 109ar BP
-  - 🇷🇺 ✓ 99al BP
-  - 🇷🇺 95aj BP
-  - 🇷🇺 21f BP
-  - 🇷🇺 108aq BP
-  - 🇷🇺 52l BP
-  - 🇷🇺 146bl BP
-  - 🇷🇺 11d
-  - 🇷🇺 116au BP
-  - 🇷🇺 17e BP
-  - 🇷🇺 117av BP
-  - 🇷🇺 74v BP
-  - 🇷🇺 120ax BP
-  - 🇷🇺 77x BP
-  - 🇷🇺 145bk BP
+  - 🇷🇺 10c BP
+  - 🇷🇺 14e BP
+  - 🇷🇺 16f BP
+  - 🇷🇺 28h BP
+  - 🇷🇺 32i BP
+  - 🇷🇺 9b BP
   - 🇷🇺 1a BP
-  - 🇷🇺 139bg BP
-  - 🇷🇺 93ah BP
-  - 🇷🇺 94ai BP
-  - 🇷🇺 143bi BP
-  - 🇷🇺 118aw BP
-  - 🇷🇺 69s BP
-  - 🇷🇺 134bd BP
-  - 🇷🇺 73u BP
-  - 🇷🇺 ✓ 98ak BP
-  - 🇷🇺 78y BP
-  - 🇷🇺 46j BP
-  - 🇷🇺 22g BP
-  - 🇷🇺 53m BP
-  - 🇷🇺 144bj BP
-  - 🇷🇺 60p BP
-  - 🇷🇺 71a BP
-  - 🇷🇺 2b
-  - 🇷🇺 ✓ 14 BP
-  - 🇷🇺 129bb BP
-  - 🇷🇺 88ae BP
-  - 🇷🇺 107ap BP
-  - 🇷🇺 91af BP
-  - 🇷🇺 121ay
-  - 🇷🇺 87b BP
-  - 🇷🇺 68r BP
-  - 🇷🇺 138bf BP
-  - 🇷🇺 105ao BP
-  - 🇷🇺 100am BP
-  - 🇷🇺 81z BP
-  - 🇷🇺 67q BP
-  - 🇷🇺 84ab BP
-  - 🇷🇺 57n
-  - 🇷🇺 41 BP
-  - 🇷🇺 72t BP
-  - 🇷🇺 131bc BP
-  - 🇷🇺 104an BP
-  - 🇷🇺 9c BP
-  - 🇷🇺 110as BP
-  - 🇷🇺 123az BP
-  - 🇷🇺 58o BP
-  - 🇷🇺 128ba BP
-  - 🇷🇺 83aa BP
-  - 🇷🇺 142bh BP
-  - 🇷🇺 76w BP
-  - 🇷🇺 97b BP
-  - 🇷🇺 92ag BP
-  - 🇷🇺 119c BP
-  - 🇷🇺 85ac BP
-  - 🇷🇺 51 BP
-  - 🇷🇺 25h BP
-  - 🇷🇺 90a BP
-  - 🇷🇺 47k BP
-  - 🇷🇺 136c BP
-  - 🇷🇺 135be BP
-  - 🇷🇺 86ad BP
-  - 🇷🇺 111at BP
+  - 🇷🇺 13d BP
+  - 🇷🇺 26g BP
 rules:
 - MATCH,PROXY
