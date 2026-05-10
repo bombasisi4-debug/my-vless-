@@ -14,42 +14,18 @@ proxies:
   flow: xtls-rprx-vision
   servername: "80.93.187.210"
   client-fingerprint: chrome
-- name: 🇷🇺 37c BP
+- name: 🇷🇺 ✓ 47c
   type: vless
-  server: 188.246.226.14
+  server: cl-de-2.edgeflux.ru
   port: 52006
-  uuid: "75807638-6f19-07d0-ae08-38492ee85c88"
+  uuid: "75807638-6f19-01f4-ae08-38492ee85c88"
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: "188.246.226.14"
+  servername: "cl-de-2.edgeflux.ru"
   client-fingerprint: chrome
-- name: 🇷🇺 59c BP
-  type: vless
-  server: 217.168.240.172
-  port: 2443
-  uuid: "3db1d393-666a-4b55-9328-0d46e889397c"
-  udp: true
-  network: xhttp
-  tls: true
-  servername: "travel.yandex.ru"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "XqH-gNEL9eJfr1pglaI8WU3OvE654_5duXYBS35UXlM"
-    short-id: "ab"
-- name: 🇷🇺 28b BP
-  type: vless
-  server: 212.41.8.216
-  port: 52006
-  uuid: "75807638-6f19-07d0-ae08-38492ee85c88"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "212.41.8.216"
-  client-fingerprint: chrome
-- name: 🇷🇺 1a BP
+- name: 🇷🇺 1 BP
   type: vless
   server: 87.242.118.99
   port: 443
@@ -62,6 +38,21 @@ proxies:
   reality-opts:
     public-key: "XqH-gNEL9eJfr1pglaI8WU3OvE654_5duXYBS35UXlM"
     short-id: "ab"
+- name: 🇷🇺 2
+  type: vless
+  server: 84.201.166.160
+  port: 443
+  uuid: "03fdd2c2-7459-41b9-9504-ed2ecc1181b6"
+  udp: true
+  network: grpc
+  tls: true
+  servername: "max.ru"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "gDxzyiv2JKbJVxgFqmurttOCVJgCD1SrRZqiPEZ_9CU"
+    short-id: "104ddee73f941bc4"
+  grpc-opts:
+    grpc-service-name: xraygrpc
 - name: 🇷🇺 41 BP
   type: vless
   server: 193.233.251.113
@@ -76,31 +67,6 @@ proxies:
   reality-opts:
     public-key: "lggRqXlpIE3Pirqc1G_CZUn3oITFtmzvYNvGsEdEcDA"
     short-id: "999999"
-- name: 🇷🇺 ✓ 47d
-  type: vless
-  server: cl-de-2.edgeflux.ru
-  port: 52006
-  uuid: "75807638-6f19-01f4-ae08-38492ee85c88"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "cl-de-2.edgeflux.ru"
-  client-fingerprint: chrome
-- name: 🇷🇺 4b BP
-  type: vless
-  server: 79.174.95.135
-  port: 5447
-  uuid: "893c3f9e-bde5-4cf1-ab91-c412c264eeb9"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "st.okcdn.ru"
-  client-fingerprint: random
-  reality-opts:
-    public-key: "OtGux0Ty5TSzfIvlHVd4q_TdYbRUHKbS8WCxmpHJx18"
-    short-id: "f543a7a8ec616e07"
 - name: 🇷🇺 51 BP
   type: vless
   server: 72.56.249.185
@@ -115,34 +81,28 @@ proxies:
   reality-opts:
     public-key: "Zht5O4dms-VLzZV7MNbvXMu3qiSQzVSg-OVnjlOF5Hk"
     short-id: "38f58380b7adef3e"
-- name: 🇷🇺 21 BP
+- name: 🇷🇺 ✓ 37b BP
   type: vless
-  server: 158.160.250.161
-  port: 443
-  uuid: "616f5216-aaf1-4983-8c79-7ee9b2dfdf02"
+  server: 188.246.226.14
+  port: 52006
+  uuid: "75807638-6f19-07d0-ae08-38492ee85c88"
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: "www.apple.com"
+  servername: "188.246.226.14"
   client-fingerprint: chrome
-  reality-opts:
-    public-key: "z9dOqH2pEKYk8V7opl4npiUUSXzj6yRHDYj9Xl95znY"
-    short-id: "b99e82f6d99f6e"
 proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
   - 🇷🇺 ✓ 14a BP
-  - 🇷🇺 37c BP
-  - 🇷🇺 59c BP
-  - 🇷🇺 28b BP
-  - 🇷🇺 1a BP
+  - 🇷🇺 ✓ 47c
+  - 🇷🇺 1 BP
+  - 🇷🇺 2
   - 🇷🇺 41 BP
-  - 🇷🇺 ✓ 47d
-  - 🇷🇺 4b BP
   - 🇷🇺 51 BP
-  - 🇷🇺 21 BP
+  - 🇷🇺 ✓ 37b BP
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -151,14 +111,11 @@ proxy-groups:
   proxies:
   - 🚀 Авто (лучший)
   - 🇷🇺 ✓ 14a BP
-  - 🇷🇺 37c BP
-  - 🇷🇺 59c BP
-  - 🇷🇺 28b BP
-  - 🇷🇺 1a BP
+  - 🇷🇺 ✓ 47c
+  - 🇷🇺 1 BP
+  - 🇷🇺 2
   - 🇷🇺 41 BP
-  - 🇷🇺 ✓ 47d
-  - 🇷🇺 4b BP
   - 🇷🇺 51 BP
-  - 🇷🇺 21 BP
+  - 🇷🇺 ✓ 37b BP
 rules:
 - MATCH,PROXY
