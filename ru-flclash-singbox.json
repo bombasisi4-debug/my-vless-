@@ -22,7 +22,76 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇷🇺 11 BP",
+      "tag": "🇷🇺 84 BP",
+      "server": "46.149.71.46",
+      "server_port": 443,
+      "uuid": "ae8ddd8e-00af-48e5-bd57-05074a1bbffb",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.avito.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ZHEMPjSWslk6_qD2JNQzd5enUPz8nY9mYRRuM6NkZmU",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 47f BP",
+      "server": "46.182.24.148",
+      "server_port": 6443,
+      "uuid": "3b6ed23e-7ddc-4a86-9637-c07001805670",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ads.x5.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "W6UrEglDqSm0gtVYdLmMItMIQWD_sPt8EIZUq-UgDwc",
+          "short_id": "917bd1c51bbed7db"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 52g BP",
+      "server": "46.149.71.46",
+      "server_port": 9443,
+      "uuid": "d511e429-e32b-46a7-ac07-a0fffa9b634c",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "rutube.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ZHEMPjSWslk6_qD2JNQzd5enUPz8nY9mYRRuM6NkZmU",
+          "short_id": "43dcff53849b81e6"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 11a BP",
       "server": "ru.astrocore.cloud",
       "server_port": 443,
       "uuid": "b1b24586-cccf-458d-b125-d621c3710676",
@@ -62,6 +131,111 @@
           "public_key": "5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI",
           "short_id": "d82fb387"
         }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 41d BP",
+      "server": "95.163.211.240",
+      "server_port": 80,
+      "uuid": "aef9ff3f-9c4a-4c42-a0dd-e82709b4c36f",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "max.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Z84J2IelR9ch3k8VtlVhhs5ycBUlXA7wHBWcBrjqnAw",
+          "short_id": "7dbf7d3233971d5c"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 42e BP",
+      "server": "91.219.227.200",
+      "server_port": 8083,
+      "uuid": "aef9ff3f-9c4a-4c42-a0dd-e82709b4c36f",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "sso.passport.yandex.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Z84J2IelR9ch3k8VtlVhhs5ycBUlXA7wHBWcBrjqnAw",
+          "short_id": "7dbf7d3233971d5c"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 7",
+      "server": "wl4.safepass.click",
+      "server_port": 443,
+      "uuid": "6784aee2-0dfe-474f-8446-480259ff9918",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "stats.vk-portal.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ELp9PUvVnkoFJYiscWrbnPXRnsYdELSCbIz9wNmMRRw",
+          "short_id": "965af8960474c29c"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 ✓ 27b BP",
+      "server": "80.93.187.2",
+      "server_port": 52006,
+      "uuid": "75807638-6f19-07d0-ae08-38492ee85c88",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "cluster-russia-1.firstvideocdn.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 28b",
+      "server": "37.9.4.82",
+      "server_port": 443,
+      "uuid": "d1953b66-0a85-Fade-8180-256f8c8f5c07",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ads.x5.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "o6jbbDkNF_5v8BlkIDl4NKhBiXTxCGms-NPmFkuQNXA",
+          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": ""
       }
     },
     {
@@ -110,15 +284,80 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 16 BP",
+      "tag": "🇷🇺 35c BP",
       "server": "79.174.92.31",
-      "server_port": 3443,
-      "uuid": "7fa0420b-d52a-4023-a4b1-efea69e13057",
+      "server_port": 3449,
+      "uuid": "2a5d0347-9898-4e28-ba75-8ec7887d3155",
       "packet_encoding": "xudp",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
+        "server_name": "dev.tau.vk.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "y8Xef3AIk7TEbLdu2WkC1NX0jtdxrSs9xsAxLqkSXA8",
+          "short_id": "822d4a48d7c4cbf4"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 23a BP",
+      "server": "95.163.211.237",
+      "server_port": 8181,
+      "uuid": "309041cd-522b-4215-aedd-c3203967c89b",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
         "server_name": "ads.x5.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Z84J2IelR9ch3k8VtlVhhs5ycBUlXA7wHBWcBrjqnAw",
+          "short_id": "7dbf7d3233971d5c"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 44b BP",
+      "server": "79.174.95.135",
+      "server_port": 5446,
+      "uuid": "2033579d-c7f4-4dff-a863-7fe7cb8ef300",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "quiz.kinopoisk.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "OtGux0Ty5TSzfIvlHVd4q_TdYbRUHKbS8WCxmpHJx18",
+          "short_id": "542c8ba8f82ea453"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 24a BP",
+      "server": "79.174.92.31",
+      "server_port": 3450,
+      "uuid": "a277a703-e767-4ed4-a963-89fe26d91162",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "wap.yandex.com",
         "utls": {
           "enabled": true,
           "fingerprint": "random"
@@ -134,11 +373,22 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 11 BP",
+        "🇷🇺 84 BP",
+        "🇷🇺 47f BP",
+        "🇷🇺 52g BP",
+        "🇷🇺 11a BP",
         "🇷🇺 14 BP",
+        "🇷🇺 41d BP",
+        "🇷🇺 42e BP",
+        "🇷🇺 7",
+        "🇷🇺 ✓ 27b BP",
+        "🇷🇺 28b",
         "🇷🇺 19 BP",
         "🇷🇺 6 BP",
-        "🇷🇺 16 BP"
+        "🇷🇺 35c BP",
+        "🇷🇺 23a BP",
+        "🇷🇺 44b BP",
+        "🇷🇺 24a BP"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "1m",
@@ -149,11 +399,22 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 11 BP",
+        "🇷🇺 84 BP",
+        "🇷🇺 47f BP",
+        "🇷🇺 52g BP",
+        "🇷🇺 11a BP",
         "🇷🇺 14 BP",
+        "🇷🇺 41d BP",
+        "🇷🇺 42e BP",
+        "🇷🇺 7",
+        "🇷🇺 ✓ 27b BP",
+        "🇷🇺 28b",
         "🇷🇺 19 BP",
         "🇷🇺 6 BP",
-        "🇷🇺 16 BP"
+        "🇷🇺 35c BP",
+        "🇷🇺 23a BP",
+        "🇷🇺 44b BP",
+        "🇷🇺 24a BP"
       ],
       "default": "auto"
     },
