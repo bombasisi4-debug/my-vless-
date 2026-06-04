@@ -3,7 +3,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇿 1 TG
+- name: 🇨🇿 1 G TG
   type: vless
   server: 87.236.146.34
   port: 443
@@ -44,21 +44,7 @@ proxies:
   reality-opts:
     public-key: "rKXg6--NSVISGCnP980Hu7Cs9Gb0phAgQkdw87ko9hI"
     short-id: "1e7f0263824cca"
-- name: 🇫🇮 4
-  type: vless
-  server: ingress.zhaopn.xyz
-  port: 443
-  uuid: "aeb01308-551f-4d2d-933d-3b83c3eedec0"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "storage.zhaopn.xyz"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "tlBEmDIt55KpmUh8a3ujFPLMnmKupodFhV_tHdNNkEI"
-    short-id: "8a575f3dcc41f518"
-- name: 🇫🇷 5 TG
+- name: 🇫🇷 4 G TG
   type: vless
   server: 45.92.218.235
   port: 7443
@@ -72,7 +58,7 @@ proxies:
   reality-opts:
     public-key: "5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI"
     short-id: ""
-- name: 🇫🇷 6 TG
+- name: 🇫🇷 5 G TG
   type: vless
   server: 45.67.139.54
   port: 7443
@@ -86,7 +72,7 @@ proxies:
   reality-opts:
     public-key: "5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI"
     short-id: ""
-- name: 🇬🇧 7 TG
+- name: 🇬🇧 6 TG
   type: vless
   server: uk-lon-lsw-02.cccpbot.fuck-rkn.xyz
   port: 443
@@ -100,7 +86,7 @@ proxies:
   reality-opts:
     public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
     short-id: ""
-- name: 🇬🇧 8 TG
+- name: 🇬🇧 7 TG
   type: vless
   server: uk-lon-lsw-01.cccpbot.fuck-rkn.xyz
   port: 443
@@ -114,7 +100,7 @@ proxies:
   reality-opts:
     public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
     short-id: ""
-- name: 🇬🇧 9 TG
+- name: 🇬🇧 8 G TG
   type: vless
   server: 31.76.80.76
   port: 443
@@ -129,7 +115,7 @@ proxies:
     short-id: ""
   grpc-opts:
     grpc-service-name: ''
-- name: 🇱🇹 10
+- name: 🇱🇹 9 TG
   type: vless
   server: 72.62.112.132
   port: 8443
@@ -143,7 +129,7 @@ proxies:
   reality-opts:
     public-key: "FVL0r87K3-vUP2KXQX1juLMFEHJtvxwKM-nm6_PYllc"
     short-id: "a1b2c3d4e5f6"
-- name: 🇳🇱 11
+- name: 🇳🇱 10 G
   type: vless
   server: 45.150.109.15
   port: 8443
@@ -157,7 +143,7 @@ proxies:
   reality-opts:
     public-key: "FVL0r87K3-vUP2KXQX1juLMFEHJtvxwKM-nm6_PYllc"
     short-id: "deadbeef42"
-- name: 🇳🇱 12 TG
+- name: 🇳🇱 11 TG
   type: vless
   server: bridge.pool.jobinvest.ru
   port: 8446
@@ -171,7 +157,7 @@ proxies:
   reality-opts:
     public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
     short-id: ""
-- name: 🇳🇱 13 TG
+- name: 🇳🇱 12 G TG
   type: vless
   server: 193.38.235.229
   port: 443
@@ -185,7 +171,7 @@ proxies:
   reality-opts:
     public-key: "ZWUry6-Pw4Ix0U37EDljelkSSJit-ME934BvwZOYDDM"
     short-id: "885a6b80b13d362b"
-- name: 🇳🇱 14 TG
+- name: 🇳🇱 13 TG
   type: vless
   server: 212.46.33.4
   port: 443
@@ -200,7 +186,7 @@ proxies:
     short-id: ""
   grpc-opts:
     grpc-service-name: ''
-- name: 🇷🇺 15
+- name: 🇷🇺 14
   type: vless
   server: sub.ru.netrelay-sync.online
   port: 443
@@ -214,7 +200,7 @@ proxies:
   reality-opts:
     public-key: "wWxV3KmPjbUh3bFL5ebCrkwCNwYxAWz7pfRpk7wqqGY"
     short-id: "b3"
-- name: 🇺🇸 16 TG
+- name: 🇺🇸 15 G TG
   type: vless
   server: nether2cxc.ignorelist.com
   port: 443
@@ -232,22 +218,21 @@ proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - 🇨🇿 1 TG
+  - 🇨🇿 1 G TG
   - 🇩🇪 2 TG
   - 🇩🇪 3 TG
-  - 🇫🇮 4
-  - 🇫🇷 5 TG
-  - 🇫🇷 6 TG
+  - 🇫🇷 4 G TG
+  - 🇫🇷 5 G TG
+  - 🇬🇧 6 TG
   - 🇬🇧 7 TG
-  - 🇬🇧 8 TG
-  - 🇬🇧 9 TG
-  - 🇱🇹 10
-  - 🇳🇱 11
-  - 🇳🇱 12 TG
+  - 🇬🇧 8 G TG
+  - 🇱🇹 9 TG
+  - 🇳🇱 10 G
+  - 🇳🇱 11 TG
+  - 🇳🇱 12 G TG
   - 🇳🇱 13 TG
-  - 🇳🇱 14 TG
-  - 🇷🇺 15
-  - 🇺🇸 16 TG
+  - 🇷🇺 14
+  - 🇺🇸 15 G TG
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -255,21 +240,20 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 Авто (лучший)
-  - 🇨🇿 1 TG
+  - 🇨🇿 1 G TG
   - 🇩🇪 2 TG
   - 🇩🇪 3 TG
-  - 🇫🇮 4
-  - 🇫🇷 5 TG
-  - 🇫🇷 6 TG
+  - 🇫🇷 4 G TG
+  - 🇫🇷 5 G TG
+  - 🇬🇧 6 TG
   - 🇬🇧 7 TG
-  - 🇬🇧 8 TG
-  - 🇬🇧 9 TG
-  - 🇱🇹 10
-  - 🇳🇱 11
-  - 🇳🇱 12 TG
+  - 🇬🇧 8 G TG
+  - 🇱🇹 9 TG
+  - 🇳🇱 10 G
+  - 🇳🇱 11 TG
+  - 🇳🇱 12 G TG
   - 🇳🇱 13 TG
-  - 🇳🇱 14 TG
-  - 🇷🇺 15
-  - 🇺🇸 16 TG
+  - 🇷🇺 14
+  - 🇺🇸 15 G TG
 rules:
 - MATCH,PROXY
