@@ -31,7 +31,7 @@ proxies:
   reality-opts:
     public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
     short-id: ""
-- name: 🇩🇪 3 TG
+- name: 🇩🇪 3
   type: vless
   server: 91.107.162.63
   port: 8443
@@ -44,7 +44,7 @@ proxies:
   reality-opts:
     public-key: "rKXg6--NSVISGCnP980Hu7Cs9Gb0phAgQkdw87ko9hI"
     short-id: "1e7f0263824cca"
-- name: 🇫🇷 4 G TG
+- name: 🇫🇷 4 TG
   type: vless
   server: 45.92.218.235
   port: 7443
@@ -186,21 +186,7 @@ proxies:
     short-id: ""
   grpc-opts:
     grpc-service-name: ''
-- name: 🇷🇺 14
-  type: vless
-  server: sub.ru.netrelay-sync.online
-  port: 443
-  uuid: "RF-1"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "www.ozon.ru"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "wWxV3KmPjbUh3bFL5ebCrkwCNwYxAWz7pfRpk7wqqGY"
-    short-id: "b3"
-- name: 🇺🇸 15 G TG
+- name: 🇺🇸 14 G TG
   type: vless
   server: nether2cxc.ignorelist.com
   port: 443
@@ -220,8 +206,8 @@ proxy-groups:
   proxies:
   - 🇨🇿 1 G TG
   - 🇩🇪 2 TG
-  - 🇩🇪 3 TG
-  - 🇫🇷 4 G TG
+  - 🇩🇪 3
+  - 🇫🇷 4 TG
   - 🇫🇷 5 G TG
   - 🇬🇧 6 TG
   - 🇬🇧 7 TG
@@ -231,8 +217,7 @@ proxy-groups:
   - 🇳🇱 11 TG
   - 🇳🇱 12 G TG
   - 🇳🇱 13 TG
-  - 🇷🇺 14
-  - 🇺🇸 15 G TG
+  - 🇺🇸 14 G TG
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -242,8 +227,8 @@ proxy-groups:
   - 🚀 Авто (лучший)
   - 🇨🇿 1 G TG
   - 🇩🇪 2 TG
-  - 🇩🇪 3 TG
-  - 🇫🇷 4 G TG
+  - 🇩🇪 3
+  - 🇫🇷 4 TG
   - 🇫🇷 5 G TG
   - 🇬🇧 6 TG
   - 🇬🇧 7 TG
@@ -253,7 +238,6 @@ proxy-groups:
   - 🇳🇱 11 TG
   - 🇳🇱 12 G TG
   - 🇳🇱 13 TG
-  - 🇷🇺 14
-  - 🇺🇸 15 G TG
+  - 🇺🇸 14 G TG
 rules:
 - MATCH,PROXY
