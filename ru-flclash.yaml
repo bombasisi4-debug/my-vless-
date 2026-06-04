@@ -17,10 +17,10 @@ proxies:
   reality-opts:
     public-key: "tlBEmDIt55KpmUh8a3ujFPLMnmKupodFhV_tHdNNkEI"
     short-id: "8a575f3dcc41f518"
-- name: 🇷🇺 63c
+- name: 🇷🇺 39b
   type: vless
   server: bridge.pool.jobinvest.ru
-  port: 8444
+  port: 8454
   uuid: "1fa6979a-5693-4225-bb31-783bf11380d8"
   udp: true
   network: tcp
@@ -31,10 +31,10 @@ proxies:
   reality-opts:
     public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
     short-id: ""
-- name: 🇷🇺 39b
+- name: 🇷🇺 63c
   type: vless
   server: bridge.pool.jobinvest.ru
-  port: 8454
+  port: 8444
   uuid: "1fa6979a-5693-4225-bb31-783bf11380d8"
   udp: true
   network: tcp
@@ -64,8 +64,8 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇷🇺 65 BP
-  - 🇷🇺 63c
   - 🇷🇺 39b
+  - 🇷🇺 63c
   - 🇷🇺 32a
   url: https://www.gstatic.com/generate_204
   interval: 60
@@ -75,8 +75,8 @@ proxy-groups:
   proxies:
   - 🚀 Авто (лучший)
   - 🇷🇺 65 BP
-  - 🇷🇺 63c
   - 🇷🇺 39b
+  - 🇷🇺 63c
   - 🇷🇺 32a
 rules:
 - MATCH,PROXY
