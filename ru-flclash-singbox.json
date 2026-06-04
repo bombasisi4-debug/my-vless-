@@ -22,109 +22,31 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇷🇺 65 BP",
-      "server": "ingress.zhaopn.xyz",
+      "tag": "🇷🇺 30",
+      "server": "sub.ru.netrelay-sync.online",
       "server_port": 443,
-      "uuid": "aeb01308-551f-4d2d-933d-3b83c3eedec0",
+      "uuid": "RF-1",
       "packet_encoding": "xudp",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "storage.zhaopn.xyz",
+        "server_name": "www.ozon.ru",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "tlBEmDIt55KpmUh8a3ujFPLMnmKupodFhV_tHdNNkEI",
-          "short_id": "8a575f3dcc41f518"
+          "public_key": "wWxV3KmPjbUh3bFL5ebCrkwCNwYxAWz7pfRpk7wqqGY",
+          "short_id": "b3"
         }
       }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 63c",
-      "server": "bridge.pool.jobinvest.ru",
-      "server_port": 8444,
-      "uuid": "1fa6979a-5693-4225-bb31-783bf11380d8",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "jobinvest.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 32a",
-      "server": "bridge.pool.jobinvest.ru",
-      "server_port": 8446,
-      "uuid": "1fa6979a-5693-4225-bb31-783bf11380d8",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "jobinvest.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 39b",
-      "server": "bridge.pool.jobinvest.ru",
-      "server_port": 8454,
-      "uuid": "1fa6979a-5693-4225-bb31-783bf11380d8",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "jobinvest.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 26",
-      "server": "89.19.223.140",
-      "server_port": 8443,
-      "uuid": "e77e2c21-f469-4474-8f94-e2f2e67fcb58",
-      "packet_encoding": "xudp"
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 65 BP",
-        "🇷🇺 63c",
-        "🇷🇺 32a",
-        "🇷🇺 39b",
-        "🇷🇺 26"
+        "🇷🇺 30"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "1m",
@@ -135,11 +57,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 65 BP",
-        "🇷🇺 63c",
-        "🇷🇺 32a",
-        "🇷🇺 39b",
-        "🇷🇺 26"
+        "🇷🇺 30"
       ],
       "default": "auto"
     },
