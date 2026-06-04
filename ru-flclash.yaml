@@ -17,20 +17,6 @@ proxies:
   reality-opts:
     public-key: "tlBEmDIt55KpmUh8a3ujFPLMnmKupodFhV_tHdNNkEI"
     short-id: "8a575f3dcc41f518"
-- name: 🇷🇺 39b
-  type: vless
-  server: bridge.pool.jobinvest.ru
-  port: 8454
-  uuid: "1fa6979a-5693-4225-bb31-783bf11380d8"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "jobinvest.ru"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
-    short-id: ""
 - name: 🇷🇺 63c
   type: vless
   server: bridge.pool.jobinvest.ru
@@ -45,6 +31,76 @@ proxies:
   reality-opts:
     public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
     short-id: ""
+- name: 🇷🇺 39b
+  type: vless
+  server: bridge.pool.jobinvest.ru
+  port: 8454
+  uuid: "1fa6979a-5693-4225-bb31-783bf11380d8"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "jobinvest.ru"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+    short-id: ""
+- name: 🇷🇺 2a
+  type: vless
+  server: 51.250.104.246
+  port: 443
+  uuid: "2d213d87-bd1b-4fa6-ad21-e7ae3379b9af"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "cdp.x5.ru"
+  client-fingerprint: safari
+  reality-opts:
+    public-key: "wgXD4k3A16WR0aL63N9Mx8xoqFigJLyQWJXi-l3MPXI"
+    short-id: "8ec792bfd725be8a"
+- name: 🇷🇺 25c
+  type: vless
+  server: 51.250.24.232
+  port: 443
+  uuid: "2d213d87-bd1b-4fa6-ad21-e7ae3379b9af"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "cdp.x5.ru"
+  client-fingerprint: safari
+  reality-opts:
+    public-key: "wgXD4k3A16WR0aL63N9Mx8xoqFigJLyQWJXi-l3MPXI"
+    short-id: "8ec792bfd725be8a"
+- name: 🇷🇺 18b BP
+  type: vless
+  server: 51.250.97.18
+  port: 443
+  uuid: "2d213d87-bd1b-4fa6-ad21-e7ae3379b9af"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "cdp.x5.ru"
+  client-fingerprint: safari
+  reality-opts:
+    public-key: "wgXD4k3A16WR0aL63N9Mx8xoqFigJLyQWJXi-l3MPXI"
+    short-id: "8ec792bfd725be8a"
+- name: 🇷🇺 26d
+  type: vless
+  server: 51.250.106.87
+  port: 443
+  uuid: "2d213d87-bd1b-4fa6-ad21-e7ae3379b9af"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "cdp.x5.ru"
+  client-fingerprint: safari
+  reality-opts:
+    public-key: "wgXD4k3A16WR0aL63N9Mx8xoqFigJLyQWJXi-l3MPXI"
+    short-id: "8ec792bfd725be8a"
 - name: 🇷🇺 32a
   type: vless
   server: bridge.pool.jobinvest.ru
@@ -59,14 +115,48 @@ proxies:
   reality-opts:
     public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
     short-id: ""
+- name: 🇷🇺 40f
+  type: vless
+  server: 51.250.103.104
+  port: 443
+  uuid: "2d213d87-bd1b-4fa6-ad21-e7ae3379b9af"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "cdp.x5.ru"
+  client-fingerprint: safari
+  reality-opts:
+    public-key: "wgXD4k3A16WR0aL63N9Mx8xoqFigJLyQWJXi-l3MPXI"
+    short-id: "8ec792bfd725be8a"
+- name: 🇷🇺 31e
+  type: vless
+  server: 51.250.102.69
+  port: 443
+  uuid: "2d213d87-bd1b-4fa6-ad21-e7ae3379b9af"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "cdp.x5.ru"
+  client-fingerprint: safari
+  reality-opts:
+    public-key: "wgXD4k3A16WR0aL63N9Mx8xoqFigJLyQWJXi-l3MPXI"
+    short-id: "8ec792bfd725be8a"
 proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
   - 🇷🇺 65 BP
-  - 🇷🇺 39b
   - 🇷🇺 63c
+  - 🇷🇺 39b
+  - 🇷🇺 2a
+  - 🇷🇺 25c
+  - 🇷🇺 18b BP
+  - 🇷🇺 26d
   - 🇷🇺 32a
+  - 🇷🇺 40f
+  - 🇷🇺 31e
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -75,8 +165,14 @@ proxy-groups:
   proxies:
   - 🚀 Авто (лучший)
   - 🇷🇺 65 BP
-  - 🇷🇺 39b
   - 🇷🇺 63c
+  - 🇷🇺 39b
+  - 🇷🇺 2a
+  - 🇷🇺 25c
+  - 🇷🇺 18b BP
+  - 🇷🇺 26d
   - 🇷🇺 32a
+  - 🇷🇺 40f
+  - 🇷🇺 31e
 rules:
 - MATCH,PROXY
