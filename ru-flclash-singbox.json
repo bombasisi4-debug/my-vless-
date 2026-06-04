@@ -22,27 +22,365 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇷🇺 17 BP",
-      "server": "89.208.208.92",
-      "server_port": 7443,
-      "uuid": "cbc27e56-38a1-4b0d-bce3-f9e7dcb807a4",
+      "tag": "🇷🇺 50d BP",
+      "server": "176.109.101.215",
+      "server_port": 8444,
+      "uuid": "abe3cb91-cf7e-468d-8c4e-6cbf61cab495",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "loadtest.dev.urent.ru",
+        "server_name": "ads.x5.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Z84J2IelR9ch3k8VtlVhhs5ycBUlXA7wHBWcBrjqnAw",
+          "short_id": "7dbf7d3233971d5c"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 63c",
+      "server": "bridge.pool.jobinvest.ru",
+      "server_port": 8444,
+      "uuid": "1fa6979a-5693-4225-bb31-783bf11380d8",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "jobinvest.ru",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "_AXs-QnufIq918tbb2pwM3MDbe7kQ6i0cIHDMLwPmGs",
-          "short_id": "3210e0eee6605048"
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": ""
         }
-      },
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 39b",
+      "server": "bridge.pool.jobinvest.ru",
+      "server_port": 8454,
+      "uuid": "1fa6979a-5693-4225-bb31-783bf11380d8",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "jobinvest.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 55e BP",
+      "server": "5.188.140.160",
+      "server_port": 5443,
+      "uuid": "7d876627-abf5-4865-8ff4-03f37d49de5d",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "max.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "LGcG8Sqv5vPDypbaEgHV0ZGqQOBkgDepPWXyDohbVXQ",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 32a",
+      "server": "bridge.pool.jobinvest.ru",
+      "server_port": 8446,
+      "uuid": "1fa6979a-5693-4225-bb31-783bf11380d8",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "jobinvest.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 67f",
+      "server": "94.241.168.123",
+      "server_port": 2040,
+      "uuid": "17451fec-af94-4715-8c2f-7f6839130d0a",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "tradingview.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "LidllyozUeeSbuzJ0ZfieGoy8YjVzqXX9H2m9whPaG0",
+          "short_id": "53197c66aef53c44"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 68g",
+      "server": "81.200.152.178",
+      "server_port": 5443,
+      "uuid": "7d876627-abf5-4865-8ff4-03f37d49de5d",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "LGcG8Sqv5vPDypbaEgHV0ZGqQOBkgDepPWXyDohbVXQ",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 38c BP",
+      "server": "176.109.101.215",
+      "server_port": 8083,
+      "uuid": "abe3cb91-cf7e-468d-8c4e-6cbf61cab495",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ads.x5.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Z84J2IelR9ch3k8VtlVhhs5ycBUlXA7wHBWcBrjqnAw",
+          "short_id": "7dbf7d3233971d5c"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 1a",
+      "server": "51.250.97.18",
+      "server_port": 443,
+      "uuid": "75d0614c-27bb-4b77-a1d4-582387cff614",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdp.x5.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "wgXD4k3A16WR0aL63N9Mx8xoqFigJLyQWJXi-l3MPXI",
+          "short_id": "8ec792bfd725be8a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 71f",
+      "server": "51.250.104.246",
+      "server_port": 443,
+      "uuid": "75d0614c-27bb-4b77-a1d4-582387cff614",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdp.x5.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "wgXD4k3A16WR0aL63N9Mx8xoqFigJLyQWJXi-l3MPXI",
+          "short_id": "8ec792bfd725be8a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 43b",
+      "server": "51.250.24.222",
+      "server_port": 443,
+      "uuid": "75d0614c-27bb-4b77-a1d4-582387cff614",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdp.x5.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "wgXD4k3A16WR0aL63N9Mx8xoqFigJLyQWJXi-l3MPXI",
+          "short_id": "8ec792bfd725be8a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 69e",
+      "server": "51.250.103.104",
+      "server_port": 443,
+      "uuid": "75d0614c-27bb-4b77-a1d4-582387cff614",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdp.x5.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "wgXD4k3A16WR0aL63N9Mx8xoqFigJLyQWJXi-l3MPXI",
+          "short_id": "8ec792bfd725be8a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 47c",
+      "server": "51.250.106.87",
+      "server_port": 443,
+      "uuid": "75d0614c-27bb-4b77-a1d4-582387cff614",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdp.x5.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "wgXD4k3A16WR0aL63N9Mx8xoqFigJLyQWJXi-l3MPXI",
+          "short_id": "8ec792bfd725be8a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 59d",
+      "server": "51.250.24.232",
+      "server_port": 443,
+      "uuid": "75d0614c-27bb-4b77-a1d4-582387cff614",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdp.x5.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "wgXD4k3A16WR0aL63N9Mx8xoqFigJLyQWJXi-l3MPXI",
+          "short_id": "8ec792bfd725be8a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 34a",
+      "server": "185.242.19.249",
+      "server_port": 80,
+      "uuid": "abe3cb91-cf7e-468d-8c4e-6cbf61cab495",
+      "packet_encoding": "xudp",
       "transport": {
-        "type": "grpc",
-        "service_name": "grpc"
+        "type": "ws",
+        "path": "/static",
+        "headers": {
+          "Host": "top3491497032.mwscdn.ru"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 75h",
+      "server": "176.109.101.215",
+      "server_port": 7443,
+      "uuid": "abe3cb91-cf7e-468d-8c4e-6cbf61cab495",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "eh.vk.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Z84J2IelR9ch3k8VtlVhhs5ycBUlXA7wHBWcBrjqnAw",
+          "short_id": "7dbf7d3233971d5c"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 36b",
+      "server": "89.223.64.189",
+      "server_port": 5443,
+      "uuid": "7d876627-abf5-4865-8ff4-03f37d49de5d",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "LGcG8Sqv5vPDypbaEgHV0ZGqQOBkgDepPWXyDohbVXQ",
+          "short_id": ""
+        }
       }
     },
     {
@@ -74,7 +412,23 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 17 BP",
+        "🇷🇺 50d BP",
+        "🇷🇺 63c",
+        "🇷🇺 39b",
+        "🇷🇺 55e BP",
+        "🇷🇺 32a",
+        "🇷🇺 67f",
+        "🇷🇺 68g",
+        "🇷🇺 38c BP",
+        "🇷🇺 1a",
+        "🇷🇺 71f",
+        "🇷🇺 43b",
+        "🇷🇺 69e",
+        "🇷🇺 47c",
+        "🇷🇺 59d",
+        "🇷🇺 34a",
+        "🇷🇺 75h",
+        "🇷🇺 36b",
         "🇷🇺 6"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -86,7 +440,23 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 17 BP",
+        "🇷🇺 50d BP",
+        "🇷🇺 63c",
+        "🇷🇺 39b",
+        "🇷🇺 55e BP",
+        "🇷🇺 32a",
+        "🇷🇺 67f",
+        "🇷🇺 68g",
+        "🇷🇺 38c BP",
+        "🇷🇺 1a",
+        "🇷🇺 71f",
+        "🇷🇺 43b",
+        "🇷🇺 69e",
+        "🇷🇺 47c",
+        "🇷🇺 59d",
+        "🇷🇺 34a",
+        "🇷🇺 75h",
+        "🇷🇺 36b",
         "🇷🇺 6"
       ],
       "default": "auto"
