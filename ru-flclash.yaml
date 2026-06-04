@@ -3,7 +3,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇺 30
+- name: 🇷🇺 30 [YtM]
   type: vless
   server: sub.ru.netrelay-sync.online
   port: 443
@@ -21,7 +21,7 @@ proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - 🇷🇺 30
+  - 🇷🇺 30 [YtM]
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -29,6 +29,6 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 Авто (лучший)
-  - 🇷🇺 30
+  - 🇷🇺 30 [YtM]
 rules:
 - MATCH,PROXY
