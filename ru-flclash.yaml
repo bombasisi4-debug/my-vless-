@@ -31,20 +31,6 @@ proxies:
   reality-opts:
     public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
     short-id: ""
-- name: 🇷🇺 39b
-  type: vless
-  server: bridge.pool.jobinvest.ru
-  port: 8454
-  uuid: "1fa6979a-5693-4225-bb31-783bf11380d8"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "jobinvest.ru"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
-    short-id: ""
 - name: 🇷🇺 32a
   type: vless
   server: bridge.pool.jobinvest.ru
@@ -59,14 +45,37 @@ proxies:
   reality-opts:
     public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
     short-id: ""
+- name: 🇷🇺 39b
+  type: vless
+  server: bridge.pool.jobinvest.ru
+  port: 8454
+  uuid: "1fa6979a-5693-4225-bb31-783bf11380d8"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "jobinvest.ru"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+    short-id: ""
+- name: 🇷🇺 26
+  type: vless
+  server: 89.19.223.140
+  port: 8443
+  uuid: "e77e2c21-f469-4474-8f94-e2f2e67fcb58"
+  udp: true
+  network: tcp
+  tls: false
 proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
   - 🇷🇺 65 BP
   - 🇷🇺 63c
-  - 🇷🇺 39b
   - 🇷🇺 32a
+  - 🇷🇺 39b
+  - 🇷🇺 26
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -76,7 +85,8 @@ proxy-groups:
   - 🚀 Авто (лучший)
   - 🇷🇺 65 BP
   - 🇷🇺 63c
-  - 🇷🇺 39b
   - 🇷🇺 32a
+  - 🇷🇺 39b
+  - 🇷🇺 26
 rules:
 - MATCH,PROXY
