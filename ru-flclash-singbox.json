@@ -22,22 +22,23 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇷🇺 88a",
-      "server": "v6.cloudconsole.ru",
+      "tag": "🇷🇺 65 BP",
+      "server": "ingress.zhaopn.xyz",
       "server_port": 443,
-      "uuid": "346af57f-316c-4246-839d-6e363b1dbdf9",
+      "uuid": "aeb01308-551f-4d2d-933d-3b83c3eedec0",
       "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "yandex.ru",
+        "server_name": "storage.zhaopn.xyz",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "SQo6HHEMN-eGaCOdmN0_CX9F3cbCje4gVwuCrKh1MFU",
-          "short_id": "de"
+          "public_key": "tlBEmDIt55KpmUh8a3ujFPLMnmKupodFhV_tHdNNkEI",
+          "short_id": "8a575f3dcc41f518"
         }
       }
     },
@@ -65,35 +66,22 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 76b",
-      "server": "85.239.43.72",
-      "server_port": 2087,
-      "uuid": "8aaddb95-b918-42c6-98c9-e94ff24287c3",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "grpc",
-        "service_name": "vlessgrpc"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 65a BP",
-      "server": "ingress.zhaopn.xyz",
+      "tag": "🇷🇺 88a",
+      "server": "v6.cloudconsole.ru",
       "server_port": 443,
-      "uuid": "aeb01308-551f-4d2d-933d-3b83c3eedec0",
+      "uuid": "346af57f-316c-4246-839d-6e363b1dbdf9",
       "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "storage.zhaopn.xyz",
+        "server_name": "yandex.ru",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "tlBEmDIt55KpmUh8a3ujFPLMnmKupodFhV_tHdNNkEI",
-          "short_id": "8a575f3dcc41f518"
+          "public_key": "SQo6HHEMN-eGaCOdmN0_CX9F3cbCje4gVwuCrKh1MFU",
+          "short_id": "de"
         }
       }
     },
@@ -121,6 +109,48 @@
     },
     {
       "type": "vless",
+      "tag": "🇷🇺 67b",
+      "server": "94.241.168.123",
+      "server_port": 2040,
+      "uuid": "17451fec-af94-4715-8c2f-7f6839130d0a",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "tradingview.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "LidllyozUeeSbuzJ0ZfieGoy8YjVzqXX9H2m9whPaG0",
+          "short_id": "53197c66aef53c44"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 103",
+      "server": "94.228.123.175",
+      "server_port": 2040,
+      "uuid": "17451fec-af94-4715-8c2f-7f6839130d0a",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "tradingview.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "LidllyozUeeSbuzJ0ZfieGoy8YjVzqXX9H2m9whPaG0",
+          "short_id": "53197c66aef53c44"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇷🇺 36a",
       "server": "89.223.64.189",
       "server_port": 5443,
@@ -143,43 +173,23 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 67b",
-      "server": "94.241.168.123",
-      "server_port": 2040,
-      "uuid": "17451fec-af94-4715-8c2f-7f6839130d0a",
+      "tag": "🇷🇺 32a",
+      "server": "bridge.pool.jobinvest.ru",
+      "server_port": 8446,
+      "uuid": "1fa6979a-5693-4225-bb31-783bf11380d8",
       "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "tradingview.com",
+        "server_name": "jobinvest.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "LidllyozUeeSbuzJ0ZfieGoy8YjVzqXX9H2m9whPaG0",
-          "short_id": "53197c66aef53c44"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 103b",
-      "server": "94.228.123.175",
-      "server_port": 2040,
-      "uuid": "17451fec-af94-4715-8c2f-7f6839130d0a",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "tradingview.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "LidllyozUeeSbuzJ0ZfieGoy8YjVzqXX9H2m9whPaG0",
-          "short_id": "53197c66aef53c44"
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": ""
         }
       }
     },
@@ -207,32 +217,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 2",
-      "server": "usr.moktana.app",
-      "server_port": 443,
-      "uuid": "7841aff6-8552-4f8e-ad0c-06c3b73e6440",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "us.moktana.app",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "_yzmX8WwaZJD4ddVgOZWJsx6r0lJzhTrTbkQLhwiWXk",
-          "short_id": "c8540a3e9e1d8136"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "moktana.net.v1.StreamService"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 6a",
+      "tag": "🇷🇺 6",
       "server": "72.56.246.199",
       "server_port": 50576,
       "uuid": "ab20bac9-6c43-4a3b-9d19-bb5cf31db209",
@@ -279,43 +264,45 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 32a",
-      "server": "bridge.pool.jobinvest.ru",
-      "server_port": 8446,
-      "uuid": "1fa6979a-5693-4225-bb31-783bf11380d8",
+      "tag": "🇷🇺 2",
+      "server": "usr.moktana.app",
+      "server_port": 443,
+      "uuid": "7841aff6-8552-4f8e-ad0c-06c3b73e6440",
       "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "jobinvest.ru",
+        "server_name": "us.moktana.app",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-          "short_id": ""
+          "public_key": "_yzmX8WwaZJD4ddVgOZWJsx6r0lJzhTrTbkQLhwiWXk",
+          "short_id": "c8540a3e9e1d8136"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "moktana.net.v1.StreamService"
       }
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 88a",
+        "🇷🇺 65 BP",
         "🇷🇺 63c",
-        "🇷🇺 76b",
-        "🇷🇺 65a BP",
+        "🇷🇺 88a",
         "🇷🇺 39b",
-        "🇷🇺 36a",
         "🇷🇺 67b",
-        "🇷🇺 103b",
+        "🇷🇺 103",
+        "🇷🇺 36a",
+        "🇷🇺 32a",
         "🇷🇺 68c",
-        "🇷🇺 2",
-        "🇷🇺 6a",
+        "🇷🇺 6",
         "🇷🇺 114b",
-        "🇷🇺 32a"
+        "🇷🇺 2"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "1m",
@@ -326,19 +313,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 88a",
+        "🇷🇺 65 BP",
         "🇷🇺 63c",
-        "🇷🇺 76b",
-        "🇷🇺 65a BP",
+        "🇷🇺 88a",
         "🇷🇺 39b",
-        "🇷🇺 36a",
         "🇷🇺 67b",
-        "🇷🇺 103b",
+        "🇷🇺 103",
+        "🇷🇺 36a",
+        "🇷🇺 32a",
         "🇷🇺 68c",
-        "🇷🇺 2",
-        "🇷🇺 6a",
+        "🇷🇺 6",
         "🇷🇺 114b",
-        "🇷🇺 32a"
+        "🇷🇺 2"
       ],
       "default": "auto"
     },
