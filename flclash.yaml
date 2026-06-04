@@ -3,7 +3,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇩🇪 39b [G?] [YtM?]
+- name: 🇩🇪 G YtM 39b
   type: vless
   server: bridge.pool.jobinvest.ru
   port: 8454
@@ -17,7 +17,7 @@ proxies:
   reality-opts:
     public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
     short-id: ""
-- name: 🇳🇱 32a [G?] [YtM?]
+- name: 🇳🇱 G YtM 32a
   type: vless
   server: bridge.pool.jobinvest.ru
   port: 8446
@@ -31,7 +31,7 @@ proxies:
   reality-opts:
     public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
     short-id: ""
-- name: 🇳🇱 21b [G?] [YtM?]
+- name: 🇳🇱 G YtM 21b
   type: vless
   server: 193.38.235.229
   port: 443
@@ -45,7 +45,7 @@ proxies:
   reality-opts:
     public-key: "ZWUry6-Pw4Ix0U37EDljelkSSJit-ME934BvwZOYDDM"
     short-id: "885a6b80b13d362b"
-- name: 🇬🇧 74d [G?] [YtM?]
+- name: 🇬🇧 G YtM 74d
   type: vless
   server: uk-lon-lsw-02.cccpbot.fuck-rkn.xyz
   port: 443
@@ -59,7 +59,7 @@ proxies:
   reality-opts:
     public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
     short-id: ""
-- name: 🇳🇱 60b [G?] [YtM?]
+- name: 🇳🇱 G YtM 60b
   type: vless
   server: 212.46.33.4
   port: 443
@@ -74,7 +74,7 @@ proxies:
     short-id: ""
   grpc-opts:
     grpc-service-name: ''
-- name: 🇨🇿 16a [G?] [YtM?]
+- name: 🇨🇿 G YtM 16a
   type: vless
   server: 87.236.146.34
   port: 443
@@ -88,7 +88,7 @@ proxies:
   reality-opts:
     public-key: "9vBE_sWSX59x9qwLygpd9oekDQ_4icfiHpecX90NZH8"
     short-id: "45192dfdd6520f1a"
-- name: 🇬🇧 44c [G?] [YtM?]
+- name: 🇬🇧 G YtM 44c
   type: vless
   server: uk-lon-lsw-01.cccpbot.fuck-rkn.xyz
   port: 443
@@ -102,7 +102,7 @@ proxies:
   reality-opts:
     public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
     short-id: ""
-- name: 🇱🇹 27a [G?] [YtM?]
+- name: 🇱🇹 G YtM 27a
   type: vless
   server: 72.62.112.132
   port: 8443
@@ -116,7 +116,7 @@ proxies:
   reality-opts:
     public-key: "FVL0r87K3-vUP2KXQX1juLMFEHJtvxwKM-nm6_PYllc"
     short-id: "a1b2c3d4e5f6"
-- name: 🇬🇧 31 [G?] [YtM?] BP
+- name: 🇬🇧 G YtM 31 BP
   type: vless
   server: 31.76.80.76
   port: 443
@@ -131,7 +131,7 @@ proxies:
     short-id: ""
   grpc-opts:
     grpc-service-name: ''
-- name: 🇺🇸 48 [G?] [YtM?]
+- name: 🇺🇸 G YtM 48
   type: vless
   server: nether2cxc.ignorelist.com
   port: 443
@@ -149,16 +149,16 @@ proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - 🇩🇪 39b [G?] [YtM?]
-  - 🇳🇱 32a [G?] [YtM?]
-  - 🇳🇱 21b [G?] [YtM?]
-  - 🇬🇧 74d [G?] [YtM?]
-  - 🇳🇱 60b [G?] [YtM?]
-  - 🇨🇿 16a [G?] [YtM?]
-  - 🇬🇧 44c [G?] [YtM?]
-  - 🇱🇹 27a [G?] [YtM?]
-  - 🇬🇧 31 [G?] [YtM?] BP
-  - 🇺🇸 48 [G?] [YtM?]
+  - 🇩🇪 G YtM 39b
+  - 🇳🇱 G YtM 32a
+  - 🇳🇱 G YtM 21b
+  - 🇬🇧 G YtM 74d
+  - 🇳🇱 G YtM 60b
+  - 🇨🇿 G YtM 16a
+  - 🇬🇧 G YtM 44c
+  - 🇱🇹 G YtM 27a
+  - 🇬🇧 G YtM 31 BP
+  - 🇺🇸 G YtM 48
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -166,15 +166,15 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 Авто (лучший)
-  - 🇩🇪 39b [G?] [YtM?]
-  - 🇳🇱 32a [G?] [YtM?]
-  - 🇳🇱 21b [G?] [YtM?]
-  - 🇬🇧 74d [G?] [YtM?]
-  - 🇳🇱 60b [G?] [YtM?]
-  - 🇨🇿 16a [G?] [YtM?]
-  - 🇬🇧 44c [G?] [YtM?]
-  - 🇱🇹 27a [G?] [YtM?]
-  - 🇬🇧 31 [G?] [YtM?] BP
-  - 🇺🇸 48 [G?] [YtM?]
+  - 🇩🇪 G YtM 39b
+  - 🇳🇱 G YtM 32a
+  - 🇳🇱 G YtM 21b
+  - 🇬🇧 G YtM 74d
+  - 🇳🇱 G YtM 60b
+  - 🇨🇿 G YtM 16a
+  - 🇬🇧 G YtM 44c
+  - 🇱🇹 G YtM 27a
+  - 🇬🇧 G YtM 31 BP
+  - 🇺🇸 G YtM 48
 rules:
 - MATCH,PROXY
