@@ -3,79 +3,25 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇺 65 BP
+- name: 🇷🇺 30
   type: vless
-  server: ingress.zhaopn.xyz
+  server: sub.ru.netrelay-sync.online
   port: 443
-  uuid: "aeb01308-551f-4d2d-933d-3b83c3eedec0"
+  uuid: "RF-1"
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: "storage.zhaopn.xyz"
+  servername: "www.ozon.ru"
   client-fingerprint: chrome
   reality-opts:
-    public-key: "tlBEmDIt55KpmUh8a3ujFPLMnmKupodFhV_tHdNNkEI"
-    short-id: "8a575f3dcc41f518"
-- name: 🇷🇺 63c
-  type: vless
-  server: bridge.pool.jobinvest.ru
-  port: 8444
-  uuid: "1fa6979a-5693-4225-bb31-783bf11380d8"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "jobinvest.ru"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
-    short-id: ""
-- name: 🇷🇺 32a
-  type: vless
-  server: bridge.pool.jobinvest.ru
-  port: 8446
-  uuid: "1fa6979a-5693-4225-bb31-783bf11380d8"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "jobinvest.ru"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
-    short-id: ""
-- name: 🇷🇺 39b
-  type: vless
-  server: bridge.pool.jobinvest.ru
-  port: 8454
-  uuid: "1fa6979a-5693-4225-bb31-783bf11380d8"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "jobinvest.ru"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
-    short-id: ""
-- name: 🇷🇺 26
-  type: vless
-  server: 89.19.223.140
-  port: 8443
-  uuid: "e77e2c21-f469-4474-8f94-e2f2e67fcb58"
-  udp: true
-  network: tcp
-  tls: false
+    public-key: "wWxV3KmPjbUh3bFL5ebCrkwCNwYxAWz7pfRpk7wqqGY"
+    short-id: "b3"
 proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - 🇷🇺 65 BP
-  - 🇷🇺 63c
-  - 🇷🇺 32a
-  - 🇷🇺 39b
-  - 🇷🇺 26
+  - 🇷🇺 30
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -83,10 +29,6 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 Авто (лучший)
-  - 🇷🇺 65 BP
-  - 🇷🇺 63c
-  - 🇷🇺 32a
-  - 🇷🇺 39b
-  - 🇷🇺 26
+  - 🇷🇺 30
 rules:
 - MATCH,PROXY
