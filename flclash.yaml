@@ -2,18 +2,114 @@ mixed-port: 7890
 allow-lan: false
 mode: rule
 log-level: info
-proxies: []
+proxies:
+- name: 🇳🇱 21b
+  type: vless
+  server: 193.38.235.229
+  port: 443
+  uuid: "8fef5339-6d26-4e08-a2c3-c4439facbdd7"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "www.googletagmanager.com"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "ZWUry6-Pw4Ix0U37EDljelkSSJit-ME934BvwZOYDDM"
+    short-id: "885a6b80b13d362b"
+- name: 🇨🇿 16a
+  type: vless
+  server: 87.236.146.34
+  port: 443
+  uuid: "8bc7ed8e-fcbc-47fc-9b06-ae72da2502cb"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "www.seznam.cz"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "9vBE_sWSX59x9qwLygpd9oekDQ_4icfiHpecX90NZH8"
+    short-id: "45192dfdd6520f1a"
+- name: 🇫🇷 86b
+  type: vless
+  server: 45.92.218.235
+  port: 7443
+  uuid: "10484bee-8516-400a-9b1e-efb5144ad324"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "ya.ru"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI"
+    short-id: ""
+- name: 🇫🇷 83a
+  type: vless
+  server: 45.67.139.54
+  port: 7443
+  uuid: "10484bee-8516-400a-9b1e-efb5144ad324"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "ya.ru"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI"
+    short-id: ""
+- name: 🇬🇧 31 BP
+  type: vless
+  server: 31.76.80.76
+  port: 443
+  uuid: "9dcf8c2a-1f2d-431b-9df3-824297921734"
+  udp: true
+  network: grpc
+  tls: true
+  servername: "stats.vk-portal.net"
+  client-fingerprint: randomized
+  reality-opts:
+    public-key: "YD5WWrYv-qy2P6Hu9dtImndERQBhf9uC928NigPOIjg"
+    short-id: ""
+  grpc-opts:
+    grpc-service-name: ''
+- name: 🇺🇸 48
+  type: vless
+  server: nether2cxc.ignorelist.com
+  port: 443
+  uuid: "d78c12c4-6927-40b8-8550-ed9be00334da"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "nether2cxc.ignorelist.com"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "MNfRDUdBmptd-zKqgIljosss5-oNO44Lt68hgVwa_Qo"
+    short-id: "22f2d3f943dfcb40"
 proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - DIRECT
+  - 🇳🇱 21b
+  - 🇨🇿 16a
+  - 🇫🇷 86b
+  - 🇫🇷 83a
+  - 🇬🇧 31 BP
+  - 🇺🇸 48
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
 - name: PROXY
   type: select
   proxies:
-  - DIRECT
+  - 🚀 Авто (лучший)
+  - 🇳🇱 21b
+  - 🇨🇿 16a
+  - 🇫🇷 86b
+  - 🇫🇷 83a
+  - 🇬🇧 31 BP
+  - 🇺🇸 48
 rules:
 - MATCH,PROXY
