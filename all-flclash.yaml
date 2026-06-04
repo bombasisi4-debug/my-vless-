@@ -1,0 +1,275 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+- name: 🇨🇿 1 TG
+  type: vless
+  server: 87.236.146.34
+  port: 443
+  uuid: "8bc7ed8e-fcbc-47fc-9b06-ae72da2502cb"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "www.seznam.cz"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "9vBE_sWSX59x9qwLygpd9oekDQ_4icfiHpecX90NZH8"
+    short-id: "45192dfdd6520f1a"
+- name: 🇩🇪 2 TG
+  type: vless
+  server: bridge.pool.jobinvest.ru
+  port: 8454
+  uuid: "1fa6979a-5693-4225-bb31-783bf11380d8"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "jobinvest.ru"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+    short-id: ""
+- name: 🇩🇪 3 TG
+  type: vless
+  server: 91.107.162.63
+  port: 8443
+  uuid: "73cfa726-772b-4e91-9401-918598d29e50"
+  udp: true
+  network: xhttp
+  tls: true
+  servername: "www.yahoo.com"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "rKXg6--NSVISGCnP980Hu7Cs9Gb0phAgQkdw87ko9hI"
+    short-id: "1e7f0263824cca"
+- name: 🇫🇮 4
+  type: vless
+  server: ingress.zhaopn.xyz
+  port: 443
+  uuid: "aeb01308-551f-4d2d-933d-3b83c3eedec0"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "storage.zhaopn.xyz"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "tlBEmDIt55KpmUh8a3ujFPLMnmKupodFhV_tHdNNkEI"
+    short-id: "8a575f3dcc41f518"
+- name: 🇫🇷 5 TG
+  type: vless
+  server: 45.92.218.235
+  port: 7443
+  uuid: "10484bee-8516-400a-9b1e-efb5144ad324"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "ya.ru"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI"
+    short-id: ""
+- name: 🇫🇷 6 TG
+  type: vless
+  server: 45.67.139.54
+  port: 7443
+  uuid: "10484bee-8516-400a-9b1e-efb5144ad324"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "ya.ru"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI"
+    short-id: ""
+- name: 🇬🇧 7 TG
+  type: vless
+  server: uk-lon-lsw-02.cccpbot.fuck-rkn.xyz
+  port: 443
+  uuid: "1fa6979a-5693-4225-bb31-783bf11380d8"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "jobinvest.ru"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+    short-id: ""
+- name: 🇬🇧 8 TG
+  type: vless
+  server: uk-lon-lsw-01.cccpbot.fuck-rkn.xyz
+  port: 443
+  uuid: "1fa6979a-5693-4225-bb31-783bf11380d8"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "jobinvest.ru"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+    short-id: ""
+- name: 🇬🇧 9 TG
+  type: vless
+  server: 31.76.80.76
+  port: 443
+  uuid: "9dcf8c2a-1f2d-431b-9df3-824297921734"
+  udp: true
+  network: grpc
+  tls: true
+  servername: "stats.vk-portal.net"
+  client-fingerprint: randomized
+  reality-opts:
+    public-key: "YD5WWrYv-qy2P6Hu9dtImndERQBhf9uC928NigPOIjg"
+    short-id: ""
+  grpc-opts:
+    grpc-service-name: ''
+- name: 🇱🇹 10
+  type: vless
+  server: 72.62.112.132
+  port: 8443
+  uuid: "561f3a9c-35d6-11f1-84f4-16774f3e241b"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "www.apple.com"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "FVL0r87K3-vUP2KXQX1juLMFEHJtvxwKM-nm6_PYllc"
+    short-id: "a1b2c3d4e5f6"
+- name: 🇳🇱 11
+  type: vless
+  server: 45.150.109.15
+  port: 8443
+  uuid: "561f3a9c-35d6-11f1-84f4-16774f3e241b"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "www.apple.com"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "FVL0r87K3-vUP2KXQX1juLMFEHJtvxwKM-nm6_PYllc"
+    short-id: "deadbeef42"
+- name: 🇳🇱 12 TG
+  type: vless
+  server: bridge.pool.jobinvest.ru
+  port: 8446
+  uuid: "1fa6979a-5693-4225-bb31-783bf11380d8"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "jobinvest.ru"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+    short-id: ""
+- name: 🇳🇱 13 TG
+  type: vless
+  server: 193.38.235.229
+  port: 443
+  uuid: "8fef5339-6d26-4e08-a2c3-c4439facbdd7"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "www.googletagmanager.com"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "ZWUry6-Pw4Ix0U37EDljelkSSJit-ME934BvwZOYDDM"
+    short-id: "885a6b80b13d362b"
+- name: 🇳🇱 14 TG
+  type: vless
+  server: 212.46.33.4
+  port: 443
+  uuid: "6048cd5b-621f-40c6-bf81-3855e4c069b1"
+  udp: true
+  network: grpc
+  tls: true
+  servername: "hcaptcha.com"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "slxFJ2Mv5d8ce1tAbFgwsifvBcK8cbFo3KsYMmM5J1Q"
+    short-id: ""
+  grpc-opts:
+    grpc-service-name: ''
+- name: 🇷🇺 15
+  type: vless
+  server: sub.ru.netrelay-sync.online
+  port: 443
+  uuid: "RF-1"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "www.ozon.ru"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "wWxV3KmPjbUh3bFL5ebCrkwCNwYxAWz7pfRpk7wqqGY"
+    short-id: "b3"
+- name: 🇺🇸 16 TG
+  type: vless
+  server: nether2cxc.ignorelist.com
+  port: 443
+  uuid: "d78c12c4-6927-40b8-8550-ed9be00334da"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "nether2cxc.ignorelist.com"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "MNfRDUdBmptd-zKqgIljosss5-oNO44Lt68hgVwa_Qo"
+    short-id: "22f2d3f943dfcb40"
+proxy-groups:
+- name: 🚀 Авто (лучший)
+  type: url-test
+  proxies:
+  - 🇨🇿 1 TG
+  - 🇩🇪 2 TG
+  - 🇩🇪 3 TG
+  - 🇫🇮 4
+  - 🇫🇷 5 TG
+  - 🇫🇷 6 TG
+  - 🇬🇧 7 TG
+  - 🇬🇧 8 TG
+  - 🇬🇧 9 TG
+  - 🇱🇹 10
+  - 🇳🇱 11
+  - 🇳🇱 12 TG
+  - 🇳🇱 13 TG
+  - 🇳🇱 14 TG
+  - 🇷🇺 15
+  - 🇺🇸 16 TG
+  url: https://www.gstatic.com/generate_204
+  interval: 60
+  tolerance: 80
+- name: PROXY
+  type: select
+  proxies:
+  - 🚀 Авто (лучший)
+  - 🇨🇿 1 TG
+  - 🇩🇪 2 TG
+  - 🇩🇪 3 TG
+  - 🇫🇮 4
+  - 🇫🇷 5 TG
+  - 🇫🇷 6 TG
+  - 🇬🇧 7 TG
+  - 🇬🇧 8 TG
+  - 🇬🇧 9 TG
+  - 🇱🇹 10
+  - 🇳🇱 11
+  - 🇳🇱 12 TG
+  - 🇳🇱 13 TG
+  - 🇳🇱 14 TG
+  - 🇷🇺 15
+  - 🇺🇸 16 TG
+rules:
+- MATCH,PROXY
