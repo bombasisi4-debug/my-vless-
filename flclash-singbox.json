@@ -21,10 +21,32 @@
   ],
   "outbounds": [
     {
+      "type": "vless",
+      "tag": "🇱🇹 G 12",
+      "server": "72.62.112.132",
+      "server_port": 8443,
+      "uuid": "561f3a9c-35d6-11f1-84f4-16774f3e241b",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "FVL0r87K3-vUP2KXQX1juLMFEHJtvxwKM-nm6_PYllc",
+          "short_id": "a1b2c3d4e5f6"
+        }
+      }
+    },
+    {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "direct"
+        "🇱🇹 G 12"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "1m",
@@ -34,7 +56,8 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "direct"
+        "auto",
+        "🇱🇹 G 12"
       ],
       "default": "auto"
     },
