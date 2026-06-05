@@ -2,18 +2,33 @@ mixed-port: 7890
 allow-lan: false
 mode: rule
 log-level: info
-proxies: []
+proxies:
+- name: 🇺🇸 G 48 BP
+  type: vless
+  server: nether2cxc.ignorelist.com
+  port: 443
+  uuid: "d78c12c4-6927-40b8-8550-ed9be00334da"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "nether2cxc.ignorelist.com"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "MNfRDUdBmptd-zKqgIljosss5-oNO44Lt68hgVwa_Qo"
+    short-id: "22f2d3f943dfcb40"
 proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - DIRECT
+  - 🇺🇸 G 48 BP
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
 - name: PROXY
   type: select
   proxies:
-  - DIRECT
+  - 🚀 Авто (лучший)
+  - 🇺🇸 G 48 BP
 rules:
 - MATCH,PROXY
