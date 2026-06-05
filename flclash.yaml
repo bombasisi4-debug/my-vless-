@@ -3,35 +3,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇩🇪 G 2a BP
-  type: vless
-  server: bridge.pool.jobinvest.ru
-  port: 8454
-  uuid: "1fa6979a-5693-4225-bb31-783bf11380d8"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "jobinvest.ru"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
-    short-id: ""
-- name: 🇳🇱 G 16b BP
-  type: vless
-  server: 45.150.109.15
-  port: 8443
-  uuid: "561f3a9c-35d6-11f1-84f4-16774f3e241b"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "www.apple.com"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "FVL0r87K3-vUP2KXQX1juLMFEHJtvxwKM-nm6_PYllc"
-    short-id: "deadbeef42"
-- name: 🇬🇧 G 6b
+- name: 🇬🇧 G 6
   type: vless
   server: uk-lon-lsw-02.cccpbot.fuck-rkn.xyz
   port: 443
@@ -45,21 +17,7 @@ proxies:
   reality-opts:
     public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
     short-id: ""
-- name: 🇨🇿 G 19 BP
-  type: vless
-  server: 87.236.146.34
-  port: 443
-  uuid: "8bc7ed8e-fcbc-47fc-9b06-ae72da2502cb"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "www.seznam.cz"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "9vBE_sWSX59x9qwLygpd9oekDQ_4icfiHpecX90NZH8"
-    short-id: "45192dfdd6520f1a"
-- name: 🇱🇹 G 12a
+- name: 🇱🇹 G 12
   type: vless
   server: 72.62.112.132
   port: 8443
@@ -91,11 +49,8 @@ proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - 🇩🇪 G 2a BP
-  - 🇳🇱 G 16b BP
-  - 🇬🇧 G 6b
-  - 🇨🇿 G 19 BP
-  - 🇱🇹 G 12a
+  - 🇬🇧 G 6
+  - 🇱🇹 G 12
   - 🇺🇸 G 48 BP
   url: https://www.gstatic.com/generate_204
   interval: 60
@@ -104,11 +59,8 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 Авто (лучший)
-  - 🇩🇪 G 2a BP
-  - 🇳🇱 G 16b BP
-  - 🇬🇧 G 6b
-  - 🇨🇿 G 19 BP
-  - 🇱🇹 G 12a
+  - 🇬🇧 G 6
+  - 🇱🇹 G 12
   - 🇺🇸 G 48 BP
 rules:
 - MATCH,PROXY
