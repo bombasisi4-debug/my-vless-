@@ -21,10 +21,32 @@
   ],
   "outbounds": [
     {
+      "type": "vless",
+      "tag": "🇺🇸 G 48 BP",
+      "server": "nether2cxc.ignorelist.com",
+      "server_port": 443,
+      "uuid": "d78c12c4-6927-40b8-8550-ed9be00334da",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "nether2cxc.ignorelist.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "MNfRDUdBmptd-zKqgIljosss5-oNO44Lt68hgVwa_Qo",
+          "short_id": "22f2d3f943dfcb40"
+        }
+      }
+    },
+    {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "direct"
+        "🇺🇸 G 48 BP"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "1m",
@@ -34,7 +56,8 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "direct"
+        "auto",
+        "🇺🇸 G 48 BP"
       ],
       "default": "auto"
     },
