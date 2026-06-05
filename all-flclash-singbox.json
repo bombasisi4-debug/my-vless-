@@ -22,7 +22,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇨🇿 1 G TG YtM",
+      "tag": "🇨🇿 1",
       "server": "87.236.146.34",
       "server_port": 443,
       "uuid": "8bc7ed8e-fcbc-47fc-9b06-ae72da2502cb",
@@ -44,7 +44,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 2 G TG YtM",
+      "tag": "🇩🇪 2",
       "server": "bridge.pool.jobinvest.ru",
       "server_port": 8454,
       "uuid": "1fa6979a-5693-4225-bb31-783bf11380d8",
@@ -66,7 +66,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 3 G TG YtM",
+      "tag": "🇬🇧 3 TG",
       "server": "uk-lon-lsw-02.cccpbot.fuck-rkn.xyz",
       "server_port": 443,
       "uuid": "1fa6979a-5693-4225-bb31-783bf11380d8",
@@ -88,54 +88,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 4 G TG YtM",
-      "server": "uk-lon-lsw-01.cccpbot.fuck-rkn.xyz",
-      "server_port": 443,
-      "uuid": "1fa6979a-5693-4225-bb31-783bf11380d8",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "jobinvest.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 5 G TG YtM",
-      "server": "31.76.80.76",
-      "server_port": 443,
-      "uuid": "9dcf8c2a-1f2d-431b-9df3-824297921734",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "stats.vk-portal.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "randomized"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "YD5WWrYv-qy2P6Hu9dtImndERQBhf9uC928NigPOIjg",
-          "short_id": ""
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": ""
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇱🇹 6 G TG YtM",
+      "tag": "🇱🇹 4 TG",
       "server": "72.62.112.132",
       "server_port": 8443,
       "uuid": "561f3a9c-35d6-11f1-84f4-16774f3e241b",
@@ -157,29 +110,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 7 G YtM",
-      "server": "45.150.109.15",
-      "server_port": 8443,
-      "uuid": "561f3a9c-35d6-11f1-84f4-16774f3e241b",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "FVL0r87K3-vUP2KXQX1juLMFEHJtvxwKM-nm6_PYllc",
-          "short_id": "deadbeef42"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 8 G TG YtM",
+      "tag": "🇳🇱 5",
       "server": "bridge.pool.jobinvest.ru",
       "server_port": 8446,
       "uuid": "1fa6979a-5693-4225-bb31-783bf11380d8",
@@ -201,54 +132,29 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 9 G TG YtM",
-      "server": "193.38.235.229",
-      "server_port": 443,
-      "uuid": "8fef5339-6d26-4e08-a2c3-c4439facbdd7",
+      "tag": "🇳🇱 6",
+      "server": "45.150.109.15",
+      "server_port": 8443,
+      "uuid": "561f3a9c-35d6-11f1-84f4-16774f3e241b",
       "packet_encoding": "xudp",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.googletagmanager.com",
+        "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "ZWUry6-Pw4Ix0U37EDljelkSSJit-ME934BvwZOYDDM",
-          "short_id": "885a6b80b13d362b"
+          "public_key": "FVL0r87K3-vUP2KXQX1juLMFEHJtvxwKM-nm6_PYllc",
+          "short_id": "deadbeef42"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 10 G TG YtM",
-      "server": "212.46.33.4",
-      "server_port": 443,
-      "uuid": "6048cd5b-621f-40c6-bf81-3855e4c069b1",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "hcaptcha.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "slxFJ2Mv5d8ce1tAbFgwsifvBcK8cbFo3KsYMmM5J1Q",
-          "short_id": ""
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": ""
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 11 G TG YtM",
+      "tag": "🇺🇸 7 TG",
       "server": "nether2cxc.ignorelist.com",
       "server_port": 443,
       "uuid": "d78c12c4-6927-40b8-8550-ed9be00334da",
@@ -272,17 +178,13 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 1 G TG YtM",
-        "🇩🇪 2 G TG YtM",
-        "🇬🇧 3 G TG YtM",
-        "🇬🇧 4 G TG YtM",
-        "🇬🇧 5 G TG YtM",
-        "🇱🇹 6 G TG YtM",
-        "🇳🇱 7 G YtM",
-        "🇳🇱 8 G TG YtM",
-        "🇳🇱 9 G TG YtM",
-        "🇳🇱 10 G TG YtM",
-        "🇺🇸 11 G TG YtM"
+        "🇨🇿 1",
+        "🇩🇪 2",
+        "🇬🇧 3 TG",
+        "🇱🇹 4 TG",
+        "🇳🇱 5",
+        "🇳🇱 6",
+        "🇺🇸 7 TG"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "1m",
@@ -293,17 +195,13 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 1 G TG YtM",
-        "🇩🇪 2 G TG YtM",
-        "🇬🇧 3 G TG YtM",
-        "🇬🇧 4 G TG YtM",
-        "🇬🇧 5 G TG YtM",
-        "🇱🇹 6 G TG YtM",
-        "🇳🇱 7 G YtM",
-        "🇳🇱 8 G TG YtM",
-        "🇳🇱 9 G TG YtM",
-        "🇳🇱 10 G TG YtM",
-        "🇺🇸 11 G TG YtM"
+        "🇨🇿 1",
+        "🇩🇪 2",
+        "🇬🇧 3 TG",
+        "🇱🇹 4 TG",
+        "🇳🇱 5",
+        "🇳🇱 6",
+        "🇺🇸 7 TG"
       ],
       "default": "auto"
     },
