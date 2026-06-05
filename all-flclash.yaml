@@ -3,7 +3,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇿 1 G TG YtM
+- name: 🇨🇿 1
   type: vless
   server: 87.236.146.34
   port: 443
@@ -17,7 +17,7 @@ proxies:
   reality-opts:
     public-key: "9vBE_sWSX59x9qwLygpd9oekDQ_4icfiHpecX90NZH8"
     short-id: "45192dfdd6520f1a"
-- name: 🇩🇪 2 G TG YtM
+- name: 🇩🇪 2
   type: vless
   server: bridge.pool.jobinvest.ru
   port: 8454
@@ -31,7 +31,7 @@ proxies:
   reality-opts:
     public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
     short-id: ""
-- name: 🇬🇧 3 G TG YtM
+- name: 🇬🇧 3 TG
   type: vless
   server: uk-lon-lsw-02.cccpbot.fuck-rkn.xyz
   port: 443
@@ -45,36 +45,7 @@ proxies:
   reality-opts:
     public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
     short-id: ""
-- name: 🇬🇧 4 G TG YtM
-  type: vless
-  server: uk-lon-lsw-01.cccpbot.fuck-rkn.xyz
-  port: 443
-  uuid: "1fa6979a-5693-4225-bb31-783bf11380d8"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "jobinvest.ru"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
-    short-id: ""
-- name: 🇬🇧 5 G TG YtM
-  type: vless
-  server: 31.76.80.76
-  port: 443
-  uuid: "9dcf8c2a-1f2d-431b-9df3-824297921734"
-  udp: true
-  network: grpc
-  tls: true
-  servername: "stats.vk-portal.net"
-  client-fingerprint: randomized
-  reality-opts:
-    public-key: "YD5WWrYv-qy2P6Hu9dtImndERQBhf9uC928NigPOIjg"
-    short-id: ""
-  grpc-opts:
-    grpc-service-name: ''
-- name: 🇱🇹 6 G TG YtM
+- name: 🇱🇹 4 TG
   type: vless
   server: 72.62.112.132
   port: 8443
@@ -88,21 +59,7 @@ proxies:
   reality-opts:
     public-key: "FVL0r87K3-vUP2KXQX1juLMFEHJtvxwKM-nm6_PYllc"
     short-id: "a1b2c3d4e5f6"
-- name: 🇳🇱 7 G YtM
-  type: vless
-  server: 45.150.109.15
-  port: 8443
-  uuid: "561f3a9c-35d6-11f1-84f4-16774f3e241b"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "www.apple.com"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "FVL0r87K3-vUP2KXQX1juLMFEHJtvxwKM-nm6_PYllc"
-    short-id: "deadbeef42"
-- name: 🇳🇱 8 G TG YtM
+- name: 🇳🇱 5
   type: vless
   server: bridge.pool.jobinvest.ru
   port: 8446
@@ -116,36 +73,21 @@ proxies:
   reality-opts:
     public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
     short-id: ""
-- name: 🇳🇱 9 G TG YtM
+- name: 🇳🇱 6
   type: vless
-  server: 193.38.235.229
-  port: 443
-  uuid: "8fef5339-6d26-4e08-a2c3-c4439facbdd7"
+  server: 45.150.109.15
+  port: 8443
+  uuid: "561f3a9c-35d6-11f1-84f4-16774f3e241b"
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: "www.googletagmanager.com"
+  servername: "www.apple.com"
   client-fingerprint: chrome
   reality-opts:
-    public-key: "ZWUry6-Pw4Ix0U37EDljelkSSJit-ME934BvwZOYDDM"
-    short-id: "885a6b80b13d362b"
-- name: 🇳🇱 10 G TG YtM
-  type: vless
-  server: 212.46.33.4
-  port: 443
-  uuid: "6048cd5b-621f-40c6-bf81-3855e4c069b1"
-  udp: true
-  network: grpc
-  tls: true
-  servername: "hcaptcha.com"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "slxFJ2Mv5d8ce1tAbFgwsifvBcK8cbFo3KsYMmM5J1Q"
-    short-id: ""
-  grpc-opts:
-    grpc-service-name: ''
-- name: 🇺🇸 11 G TG YtM
+    public-key: "FVL0r87K3-vUP2KXQX1juLMFEHJtvxwKM-nm6_PYllc"
+    short-id: "deadbeef42"
+- name: 🇺🇸 7 TG
   type: vless
   server: nether2cxc.ignorelist.com
   port: 443
@@ -163,17 +105,13 @@ proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - 🇨🇿 1 G TG YtM
-  - 🇩🇪 2 G TG YtM
-  - 🇬🇧 3 G TG YtM
-  - 🇬🇧 4 G TG YtM
-  - 🇬🇧 5 G TG YtM
-  - 🇱🇹 6 G TG YtM
-  - 🇳🇱 7 G YtM
-  - 🇳🇱 8 G TG YtM
-  - 🇳🇱 9 G TG YtM
-  - 🇳🇱 10 G TG YtM
-  - 🇺🇸 11 G TG YtM
+  - 🇨🇿 1
+  - 🇩🇪 2
+  - 🇬🇧 3 TG
+  - 🇱🇹 4 TG
+  - 🇳🇱 5
+  - 🇳🇱 6
+  - 🇺🇸 7 TG
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -181,16 +119,12 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 Авто (лучший)
-  - 🇨🇿 1 G TG YtM
-  - 🇩🇪 2 G TG YtM
-  - 🇬🇧 3 G TG YtM
-  - 🇬🇧 4 G TG YtM
-  - 🇬🇧 5 G TG YtM
-  - 🇱🇹 6 G TG YtM
-  - 🇳🇱 7 G YtM
-  - 🇳🇱 8 G TG YtM
-  - 🇳🇱 9 G TG YtM
-  - 🇳🇱 10 G TG YtM
-  - 🇺🇸 11 G TG YtM
+  - 🇨🇿 1
+  - 🇩🇪 2
+  - 🇬🇧 3 TG
+  - 🇱🇹 4 TG
+  - 🇳🇱 5
+  - 🇳🇱 6
+  - 🇺🇸 7 TG
 rules:
 - MATCH,PROXY
