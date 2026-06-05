@@ -17,35 +17,7 @@ proxies:
   reality-opts:
     public-key: "9vBE_sWSX59x9qwLygpd9oekDQ_4icfiHpecX90NZH8"
     short-id: "45192dfdd6520f1a"
-- name: 🇩🇪 2
-  type: vless
-  server: bridge.pool.jobinvest.ru
-  port: 8454
-  uuid: "1fa6979a-5693-4225-bb31-783bf11380d8"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "jobinvest.ru"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
-    short-id: ""
-- name: 🇬🇧 3 G TG
-  type: vless
-  server: uk-lon-lsw-02.cccpbot.fuck-rkn.xyz
-  port: 443
-  uuid: "1fa6979a-5693-4225-bb31-783bf11380d8"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "jobinvest.ru"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
-    short-id: ""
-- name: 🇱🇹 4 G TG
+- name: 🇱🇹 2 G TG
   type: vless
   server: 72.62.112.132
   port: 8443
@@ -59,7 +31,7 @@ proxies:
   reality-opts:
     public-key: "FVL0r87K3-vUP2KXQX1juLMFEHJtvxwKM-nm6_PYllc"
     short-id: "a1b2c3d4e5f6"
-- name: 🇳🇱 5
+- name: 🇳🇱 3 G
   type: vless
   server: 45.150.109.15
   port: 8443
@@ -73,7 +45,7 @@ proxies:
   reality-opts:
     public-key: "FVL0r87K3-vUP2KXQX1juLMFEHJtvxwKM-nm6_PYllc"
     short-id: "deadbeef42"
-- name: 🇺🇸 6 G TG
+- name: 🇺🇸 4 G TG
   type: vless
   server: nether2cxc.ignorelist.com
   port: 443
@@ -92,11 +64,9 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇨🇿 1
-  - 🇩🇪 2
-  - 🇬🇧 3 G TG
-  - 🇱🇹 4 G TG
-  - 🇳🇱 5
-  - 🇺🇸 6 G TG
+  - 🇱🇹 2 G TG
+  - 🇳🇱 3 G
+  - 🇺🇸 4 G TG
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -105,10 +75,8 @@ proxy-groups:
   proxies:
   - 🚀 Авто (лучший)
   - 🇨🇿 1
-  - 🇩🇪 2
-  - 🇬🇧 3 G TG
-  - 🇱🇹 4 G TG
-  - 🇳🇱 5
-  - 🇺🇸 6 G TG
+  - 🇱🇹 2 G TG
+  - 🇳🇱 3 G
+  - 🇺🇸 4 G TG
 rules:
 - MATCH,PROXY
