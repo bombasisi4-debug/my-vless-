@@ -3,6 +3,34 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
+- name: 🇬🇧 G 6
+  type: vless
+  server: uk-lon-lsw-02.cccpbot.fuck-rkn.xyz
+  port: 443
+  uuid: "1fa6979a-5693-4225-bb31-783bf11380d8"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "jobinvest.ru"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+    short-id: ""
+- name: 🇱🇹 G 12
+  type: vless
+  server: 72.62.112.132
+  port: 8443
+  uuid: "561f3a9c-35d6-11f1-84f4-16774f3e241b"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "www.apple.com"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "FVL0r87K3-vUP2KXQX1juLMFEHJtvxwKM-nm6_PYllc"
+    short-id: "a1b2c3d4e5f6"
 - name: 🇺🇸 G 48 BP
   type: vless
   server: nether2cxc.ignorelist.com
@@ -21,6 +49,8 @@ proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
+  - 🇬🇧 G 6
+  - 🇱🇹 G 12
   - 🇺🇸 G 48 BP
   url: https://www.gstatic.com/generate_204
   interval: 60
@@ -29,6 +59,8 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 Авто (лучший)
+  - 🇬🇧 G 6
+  - 🇱🇹 G 12
   - 🇺🇸 G 48 BP
 rules:
 - MATCH,PROXY
