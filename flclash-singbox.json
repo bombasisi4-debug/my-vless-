@@ -22,28 +22,6 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇬🇧 G 6",
-      "server": "uk-lon-lsw-02.cccpbot.fuck-rkn.xyz",
-      "server_port": 443,
-      "uuid": "1fa6979a-5693-4225-bb31-783bf11380d8",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "jobinvest.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇱🇹 G 12",
       "server": "72.62.112.132",
       "server_port": 8443,
@@ -90,7 +68,6 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇧 G 6",
         "🇱🇹 G 12",
         "🇺🇸 G 48 BP"
       ],
@@ -103,7 +80,6 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇧 G 6",
         "🇱🇹 G 12",
         "🇺🇸 G 48 BP"
       ],
