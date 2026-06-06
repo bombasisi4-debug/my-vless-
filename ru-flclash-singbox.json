@@ -45,27 +45,6 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 6",
-      "server": "ru01.goodmaximum.com",
-      "server_port": 443,
-      "uuid": "db95b766-43a8-001e-9b5d-5ca6f2735188",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "ru-cloud.221131513.xyz",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "fPSR5GZpxhOV6Rh7VzMtS4AeRN7ipyNX4waG9JzJzxQ",
-          "short_id": "31181028b56c8704"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇷🇺 ✓ 9",
       "server": "chatgpt.com",
       "server_port": 443,
@@ -88,12 +67,34 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇷🇺 34",
+      "server": "node3.frost-api.com",
+      "server_port": 443,
+      "uuid": "a6266066-1153-44aa-a2d8-b538e4b00cd6",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "max.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SHIYN7zN9aFVxwKK-bIvDbhUgtHvlBhDi1qSl2sWwRw",
+          "short_id": "513b0a"
+        }
+      }
+    },
+    {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
         "🇷🇺 29",
-        "🇷🇺 6",
-        "🇷🇺 ✓ 9"
+        "🇷🇺 ✓ 9",
+        "🇷🇺 34"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "1m",
@@ -105,8 +106,8 @@
       "outbounds": [
         "auto",
         "🇷🇺 29",
-        "🇷🇺 6",
-        "🇷🇺 ✓ 9"
+        "🇷🇺 ✓ 9",
+        "🇷🇺 34"
       ],
       "default": "auto"
     },
