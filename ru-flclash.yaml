@@ -3,7 +3,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇺 G 29
+- name: 🇷🇺 29
   type: vless
   server: zmaoz.faculty.ucdavis.edu
   port: 443
@@ -17,7 +17,7 @@ proxies:
     path: /@ZEDMODEON-ZEDMODEON-ZEDMODEON@ZEDMODEON-ZEDMODEON-TEL-ZEDMODEON-ZEDMODEON-ZEDMODEON-@ZEDMODEON?ed=2048
     headers:
       Host: karafarini.ir
-- name: 🇷🇺 G ✓ 9
+- name: 🇷🇺 ✓ 9
   type: vless
   server: chatgpt.com
   port: 443
@@ -31,12 +31,27 @@ proxies:
     path: /eyJqdW5rIjoiNDBNWGY3Z0NPd0loZ2YiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119?ed=2560
     headers:
       Host: free.marzshekan.com.tr
+- name: 🇷🇺 34
+  type: vless
+  server: node3.frost-api.com
+  port: 443
+  uuid: "a6266066-1153-44aa-a2d8-b538e4b00cd6"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "max.ru"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "SHIYN7zN9aFVxwKK-bIvDbhUgtHvlBhDi1qSl2sWwRw"
+    short-id: "513b0a"
 proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - 🇷🇺 G 29
-  - 🇷🇺 G ✓ 9
+  - 🇷🇺 29
+  - 🇷🇺 ✓ 9
+  - 🇷🇺 34
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -44,7 +59,8 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 Авто (лучший)
-  - 🇷🇺 G 29
-  - 🇷🇺 G ✓ 9
+  - 🇷🇺 29
+  - 🇷🇺 ✓ 9
+  - 🇷🇺 34
 rules:
 - MATCH,PROXY
