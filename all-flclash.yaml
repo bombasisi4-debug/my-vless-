@@ -3,7 +3,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇱 1
+- name: 🇦🇱 1 G
   type: vless
   server: 45.89.60.64
   port: 8443
@@ -32,7 +32,21 @@ proxies:
   reality-opts:
     public-key: "9vBE_sWSX59x9qwLygpd9oekDQ_4icfiHpecX90NZH8"
     short-id: "45192dfdd6520f1a"
-- name: 🇩🇪 3
+- name: 🇩🇪 3 G
+  type: vless
+  server: node3.frost-api.com
+  port: 443
+  uuid: "a6266066-1153-44aa-a2d8-b538e4b00cd6"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "max.ru"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "SHIYN7zN9aFVxwKK-bIvDbhUgtHvlBhDi1qSl2sWwRw"
+    short-id: "513b0a"
+- name: 🇩🇪 4 G
   type: vless
   server: 94.183.219.239
   port: 443
@@ -47,7 +61,7 @@ proxies:
     short-id: ""
   grpc-opts:
     grpc-service-name: ''
-- name: 🇩🇪 4
+- name: 🇩🇪 5 G
   type: vless
   server: 176.97.210.14
   port: 443
@@ -61,7 +75,7 @@ proxies:
   reality-opts:
     public-key: "pJpaRasoceUeRDJTXEZNnKT3yW5IocPXudB_B7_rBR0"
     short-id: "4fa44664f6a566d3"
-- name: 🇩🇪 5
+- name: 🇩🇪 6 G
   type: vless
   server: denode1.frost-api.com
   port: 443
@@ -75,7 +89,7 @@ proxies:
   reality-opts:
     public-key: "SHIYN7zN9aFVxwKK-bIvDbhUgtHvlBhDi1qSl2sWwRw"
     short-id: "513b0a"
-- name: 🇩🇪 6
+- name: 🇩🇪 7
   type: vless
   server: nether2cxc.ignorelist.com
   port: 443
@@ -89,7 +103,7 @@ proxies:
   reality-opts:
     public-key: "MNfRDUdBmptd-zKqgIljosss5-oNO44Lt68hgVwa_Qo"
     short-id: "22f2d3f943dfcb40"
-- name: 🇩🇪 7
+- name: 🇩🇪 8 G
   type: vless
   server: ru-2.videoproeditor.com
   port: 443
@@ -103,21 +117,7 @@ proxies:
   reality-opts:
     public-key: "ivgTfLR13A6xBsicIA28OPoav2tXlsstTTmGuETfnSk"
     short-id: "6d6f13013d3e1d0c"
-- name: 🇪🇪 8
-  type: vless
-  server: 158.160.22.195
-  port: 443
-  uuid: "7b7619ef-3015-45e4-a1c0-5672f81b864c"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "ya.ru"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: "9tKfmbONYzchVLBVki3UDOBgulMw2-_9fV5qm4aPiiM"
-    short-id: "700e5b8399d12d"
-- name: 🇪🇪 9
+- name: 🇪🇪 9 G
   type: vless
   server: tw.serviceoda.ru
   port: 443
@@ -131,7 +131,7 @@ proxies:
   reality-opts:
     public-key: "JTDF2NcBkHPybo8UokBD01cGbFQ1Rsa2j-TJknU3TGE"
     short-id: "a2046727f1bb6a06"
-- name: 🇫🇮 10
+- name: 🇫🇮 10 G
   type: vless
   server: fl-1.stay-secure.vip
   port: 8443
@@ -160,7 +160,7 @@ proxies:
   reality-opts:
     public-key: "SHIYN7zN9aFVxwKK-bIvDbhUgtHvlBhDi1qSl2sWwRw"
     short-id: "01e7"
-- name: 🇬🇧 12
+- name: 🇬🇧 12 G
   type: vless
   server: 84.201.176.251
   port: 8081
@@ -174,7 +174,7 @@ proxies:
   reality-opts:
     public-key: "QHkXBS2ENHV0khgY9VBYi8_9bpfqnUYDcfQN4cW5Qg0"
     short-id: "4326"
-- name: 🇰🇿 13
+- name: 🇰🇿 13 G
   type: vless
   server: 45.136.58.34
   port: 443
@@ -187,7 +187,7 @@ proxies:
   reality-opts:
     public-key: "DMliziQZIP7k6OYcVSTi6gZ5xqK595sbyrpdzI6CdUs"
     short-id: "70e2107044b9"
-- name: 🇰🇿 14
+- name: 🇰🇿 14 G
   type: vless
   server: kaz1.frost-api.com
   port: 443
@@ -201,7 +201,7 @@ proxies:
   reality-opts:
     public-key: "SHIYN7zN9aFVxwKK-bIvDbhUgtHvlBhDi1qSl2sWwRw"
     short-id: "66c17371"
-- name: 🇱🇻 15
+- name: 🇱🇻 15 G
   type: vless
   server: 2.26.88.118
   port: 8443
@@ -216,7 +216,7 @@ proxies:
     short-id: "ea1058117be12087"
   grpc-opts:
     grpc-service-name: max.ru
-- name: 🇳🇱 16
+- name: 🇳🇱 16 G
   type: vless
   server: 62.84.112.113
   port: 443
@@ -232,19 +232,6 @@ proxies:
     short-id: "9e6e0631f73cad02"
 - name: 🇳🇱 17
   type: vless
-  server: nl01.goodmaximum.com
-  port: 443
-  uuid: "ec6b9cd8-0b2c-000a-996f-df26fee230f7"
-  udp: true
-  network: tcp
-  tls: true
-  servername: "files.nimhogoa.com"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "fPSR5GZpxhOV6Rh7VzMtS4AeRN7ipyNX4waG9JzJzxQ"
-    short-id: "77778028b56c8704"
-- name: 🇳🇱 18
-  type: vless
   server: 45.150.109.15
   port: 8443
   uuid: "561f3a9c-35d6-11f1-84f4-16774f3e241b"
@@ -257,7 +244,7 @@ proxies:
   reality-opts:
     public-key: "FVL0r87K3-vUP2KXQX1juLMFEHJtvxwKM-nm6_PYllc"
     short-id: "deadbeef42"
-- name: 🇳🇱 19
+- name: 🇳🇱 18 G
   type: vless
   server: treng.loralden.com
   port: 443
@@ -272,7 +259,7 @@ proxies:
     short-id: "ed72a429f0135a3f"
   grpc-opts:
     grpc-service-name: grpc
-- name: 🇳🇱 20
+- name: 🇳🇱 19 G
   type: vless
   server: 72.56.18.179
   port: 443
@@ -285,7 +272,7 @@ proxies:
   reality-opts:
     public-key: "8xufuXmVTmxmM9SKIN1P6x3CFstZdl1mfSxr_LfOkDQ"
     short-id: "2af15d98"
-- name: 🇵🇱 21
+- name: 🇵🇱 20 G
   type: vless
   server: 144.31.0.48
   port: 2097
@@ -298,7 +285,7 @@ proxies:
   reality-opts:
     public-key: "KE4sXLqi-C6ar7WX9dtbVyAcc1KeevWKvHfqacR5wEk"
     short-id: "c25471687f078fbd"
-- name: 🇵🇱 22
+- name: 🇵🇱 21 G
   type: vless
   server: poland.milas.click
   port: 443
@@ -313,7 +300,7 @@ proxies:
     short-id: "4fa44664f6a566d3"
   grpc-opts:
     grpc-service-name: ''
-- name: 🇵🇱 23
+- name: 🇵🇱 22 G
   type: vless
   server: node5.frost-api.com
   port: 443
@@ -327,7 +314,7 @@ proxies:
   reality-opts:
     public-key: "SHIYN7zN9aFVxwKK-bIvDbhUgtHvlBhDi1qSl2sWwRw"
     short-id: "66c17371"
-- name: 🇵🇱 24
+- name: 🇵🇱 23 G
   type: vless
   server: tw1.serviceoda.ru
   port: 443
@@ -341,7 +328,7 @@ proxies:
   reality-opts:
     public-key: "G9uQu7GdqkkvE6WH0gZ1kfzt2J50s6VgddYnqck5tjw"
     short-id: "a29991b068641259"
-- name: 🇵🇱 25
+- name: 🇵🇱 24 G
   type: vless
   server: 104.165.244.183
   port: 50095
@@ -359,31 +346,30 @@ proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - 🇦🇱 1
+  - 🇦🇱 1 G
   - 🇨🇿 2 G
-  - 🇩🇪 3
-  - 🇩🇪 4
-  - 🇩🇪 5
-  - 🇩🇪 6
+  - 🇩🇪 3 G
+  - 🇩🇪 4 G
+  - 🇩🇪 5 G
+  - 🇩🇪 6 G
   - 🇩🇪 7
-  - 🇪🇪 8
-  - 🇪🇪 9
-  - 🇫🇮 10
+  - 🇩🇪 8 G
+  - 🇪🇪 9 G
+  - 🇫🇮 10 G
   - 🇫🇷 11
-  - 🇬🇧 12
-  - 🇰🇿 13
-  - 🇰🇿 14
-  - 🇱🇻 15
-  - 🇳🇱 16
+  - 🇬🇧 12 G
+  - 🇰🇿 13 G
+  - 🇰🇿 14 G
+  - 🇱🇻 15 G
+  - 🇳🇱 16 G
   - 🇳🇱 17
-  - 🇳🇱 18
-  - 🇳🇱 19
-  - 🇳🇱 20
-  - 🇵🇱 21
-  - 🇵🇱 22
-  - 🇵🇱 23
-  - 🇵🇱 24
-  - 🇵🇱 25
+  - 🇳🇱 18 G
+  - 🇳🇱 19 G
+  - 🇵🇱 20 G
+  - 🇵🇱 21 G
+  - 🇵🇱 22 G
+  - 🇵🇱 23 G
+  - 🇵🇱 24 G
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -391,30 +377,29 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 Авто (лучший)
-  - 🇦🇱 1
+  - 🇦🇱 1 G
   - 🇨🇿 2 G
-  - 🇩🇪 3
-  - 🇩🇪 4
-  - 🇩🇪 5
-  - 🇩🇪 6
+  - 🇩🇪 3 G
+  - 🇩🇪 4 G
+  - 🇩🇪 5 G
+  - 🇩🇪 6 G
   - 🇩🇪 7
-  - 🇪🇪 8
-  - 🇪🇪 9
-  - 🇫🇮 10
+  - 🇩🇪 8 G
+  - 🇪🇪 9 G
+  - 🇫🇮 10 G
   - 🇫🇷 11
-  - 🇬🇧 12
-  - 🇰🇿 13
-  - 🇰🇿 14
-  - 🇱🇻 15
-  - 🇳🇱 16
+  - 🇬🇧 12 G
+  - 🇰🇿 13 G
+  - 🇰🇿 14 G
+  - 🇱🇻 15 G
+  - 🇳🇱 16 G
   - 🇳🇱 17
-  - 🇳🇱 18
-  - 🇳🇱 19
-  - 🇳🇱 20
-  - 🇵🇱 21
-  - 🇵🇱 22
-  - 🇵🇱 23
-  - 🇵🇱 24
-  - 🇵🇱 25
+  - 🇳🇱 18 G
+  - 🇳🇱 19 G
+  - 🇵🇱 20 G
+  - 🇵🇱 21 G
+  - 🇵🇱 22 G
+  - 🇵🇱 23 G
+  - 🇵🇱 24 G
 rules:
 - MATCH,PROXY
