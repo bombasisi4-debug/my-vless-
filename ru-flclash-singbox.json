@@ -67,34 +67,11 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇷🇺 34",
-      "server": "node3.frost-api.com",
-      "server_port": 443,
-      "uuid": "a6266066-1153-44aa-a2d8-b538e4b00cd6",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "max.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "SHIYN7zN9aFVxwKK-bIvDbhUgtHvlBhDi1qSl2sWwRw",
-          "short_id": "513b0a"
-        }
-      }
-    },
-    {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
         "🇷🇺 29",
-        "🇷🇺 ✓ 9",
-        "🇷🇺 34"
+        "🇷🇺 ✓ 9"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "1m",
@@ -106,8 +83,7 @@
       "outbounds": [
         "auto",
         "🇷🇺 29",
-        "🇷🇺 ✓ 9",
-        "🇷🇺 34"
+        "🇷🇺 ✓ 9"
       ],
       "default": "auto"
     },
