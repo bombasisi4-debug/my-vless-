@@ -22,32 +22,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇦🇱 1",
-      "server": "45.89.60.64",
-      "server_port": 8443,
-      "uuid": "81e72eea-45f4-4448-8b9c-22926c715f5c",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "ads.x5.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "wSQIBnAc0cYO9JitaNcgZ2LwkTix0_dXVpDjnZxDrCE",
-          "short_id": ""
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": ""
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 2 G",
+      "tag": "🇨🇿 1 G",
       "server": "87.236.146.34",
       "server_port": 443,
       "uuid": "8bc7ed8e-fcbc-47fc-9b06-ae72da2502cb",
@@ -69,7 +44,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 3",
+      "tag": "🇩🇪 2",
       "server": "94.183.219.239",
       "server_port": 443,
       "uuid": "91427003-38cb-473e-95f2-a4b500c91f7b",
@@ -94,29 +69,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 4",
-      "server": "176.97.210.14",
-      "server_port": 443,
-      "uuid": "91427003-38cb-473e-95f2-a4b500c91f7b",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "germany.milas.click",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "pJpaRasoceUeRDJTXEZNnKT3yW5IocPXudB_B7_rBR0",
-          "short_id": "4fa44664f6a566d3"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 5",
+      "tag": "🇩🇪 3",
       "server": "denode1.frost-api.com",
       "server_port": 443,
       "uuid": "a6266066-1153-44aa-a2d8-b538e4b00cd6",
@@ -138,7 +91,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 6",
+      "tag": "🇩🇪 4",
       "server": "nether2cxc.ignorelist.com",
       "server_port": 443,
       "uuid": "d78c12c4-6927-40b8-8550-ed9be00334da",
@@ -160,7 +113,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇪 7",
+      "tag": "🇪🇪 5",
       "server": "tw.serviceoda.ru",
       "server_port": 443,
       "uuid": "7b7619ef-3015-45e4-a1c0-5672f81b864c",
@@ -182,32 +135,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 8",
-      "server": "fl-1.stay-secure.vip",
-      "server_port": 8443,
-      "uuid": "4468b7eb-1c51-4f67-bd45-2b40ec2e90a7",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "ign.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "H2W1qvM0nUovlPadYco7_EWiZ_psfcLxOPJwOs3BDXU",
-          "short_id": "fe2e437f64f2da7a"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 9",
+      "tag": "🇫🇷 6",
       "server": "fra1.frost-api.com",
       "server_port": 443,
       "uuid": "a6266066-1153-44aa-a2d8-b538e4b00cd6",
@@ -229,7 +157,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 10",
+      "tag": "🇬🇧 7",
       "server": "84.201.176.251",
       "server_port": 8081,
       "uuid": "24cfd5a4-d39e-40ed-9548-2dc21363f731",
@@ -251,7 +179,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇰🇿 11",
+      "tag": "🇰🇿 8",
       "server": "45.136.58.34",
       "server_port": 443,
       "uuid": "a6e72947-cd53-449e-8ae2-11140ea398df",
@@ -272,7 +200,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇰🇿 12",
+      "tag": "🇰🇿 9",
       "server": "kaz1.frost-api.com",
       "server_port": 443,
       "uuid": "a6266066-1153-44aa-a2d8-b538e4b00cd6",
@@ -294,32 +222,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇱🇻 13",
-      "server": "2.26.88.118",
-      "server_port": 8443,
-      "uuid": "785c7771-8d7f-48ca-bbc2-1a22e360d4d0",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "2.26.88.118",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "TdT90qbeyM7WO0QCztOhKDGKOi2qaFFif0hO0cfK1E4",
-          "short_id": "ea1058117be12087"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "max.ru"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 14",
+      "tag": "🇳🇱 10",
       "server": "62.84.112.113",
       "server_port": 443,
       "uuid": "7b7619ef-3015-45e4-a1c0-5672f81b864c",
@@ -341,7 +244,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 15",
+      "tag": "🇳🇱 11",
       "server": "45.150.109.15",
       "server_port": 8443,
       "uuid": "561f3a9c-35d6-11f1-84f4-16774f3e241b",
@@ -363,53 +266,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 16",
-      "server": "treng.loralden.com",
-      "server_port": 443,
-      "uuid": "82d47c52-9738-4d40-93a4-220bab575c60",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "treng.loralden.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "EUK_ePvEKUGcezQYHqgJ5P462XxLPXPm9CZWGLaL33k",
-          "short_id": "ed72a429f0135a3f"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 17",
-      "server": "144.31.0.48",
-      "server_port": 2097,
-      "uuid": "5f230810-7270-4b03-b802-329a4ad8d0b2",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.nvidia.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "KE4sXLqi-C6ar7WX9dtbVyAcc1KeevWKvHfqacR5wEk",
-          "short_id": "c25471687f078fbd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 18",
+      "tag": "🇵🇱 12",
       "server": "poland.milas.click",
       "server_port": 443,
       "uuid": "91427003-38cb-473e-95f2-a4b500c91f7b",
@@ -434,29 +291,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 19",
-      "server": "node5.frost-api.com",
-      "server_port": 443,
-      "uuid": "a6266066-1153-44aa-a2d8-b538e4b00cd6",
+      "tag": "🇵🇱 13",
+      "server": "144.31.0.48",
+      "server_port": 2097,
+      "uuid": "5f230810-7270-4b03-b802-329a4ad8d0b2",
       "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "max.ru",
+        "server_name": "www.nvidia.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,
-          "public_key": "SHIYN7zN9aFVxwKK-bIvDbhUgtHvlBhDi1qSl2sWwRw",
-          "short_id": "66c17371"
+          "public_key": "KE4sXLqi-C6ar7WX9dtbVyAcc1KeevWKvHfqacR5wEk",
+          "short_id": "c25471687f078fbd"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 20",
+      "tag": "🇵🇱 14",
       "server": "tw1.serviceoda.ru",
       "server_port": 443,
       "uuid": "7b7619ef-3015-45e4-a1c0-5672f81b864c",
@@ -478,23 +334,45 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 21",
-      "server": "104.165.244.183",
-      "server_port": 50095,
-      "uuid": "347a56c2-a453-4b32-86cd-7522943df88c",
+      "tag": "🇵🇱 15",
+      "server": "node5.frost-api.com",
+      "server_port": 443,
+      "uuid": "a6266066-1153-44aa-a2d8-b538e4b00cd6",
       "packet_encoding": "xudp",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "cdn.jsdelivr.net",
+        "server_name": "max.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "vZuBWF0YzlKI0fJWxU6hmOLHHQ5Qb1kf35HbZDcFCH4",
-          "short_id": "f2e1861359398ff2"
+          "public_key": "SHIYN7zN9aFVxwKK-bIvDbhUgtHvlBhDi1qSl2sWwRw",
+          "short_id": "66c17371"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 16",
+      "server": "node3.frost-api.com",
+      "server_port": 443,
+      "uuid": "a6266066-1153-44aa-a2d8-b538e4b00cd6",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "max.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SHIYN7zN9aFVxwKK-bIvDbhUgtHvlBhDi1qSl2sWwRw",
+          "short_id": "513b0a"
         }
       }
     },
@@ -502,27 +380,22 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇱 1",
-        "🇨🇿 2 G",
+        "🇨🇿 1 G",
+        "🇩🇪 2",
         "🇩🇪 3",
         "🇩🇪 4",
-        "🇩🇪 5",
-        "🇩🇪 6",
-        "🇪🇪 7",
-        "🇫🇮 8",
-        "🇫🇷 9",
-        "🇬🇧 10",
-        "🇰🇿 11",
-        "🇰🇿 12",
-        "🇱🇻 13",
-        "🇳🇱 14",
-        "🇳🇱 15",
-        "🇳🇱 16",
-        "🇵🇱 17",
-        "🇵🇱 18",
-        "🇵🇱 19",
-        "🇵🇱 20",
-        "🇵🇱 21"
+        "🇪🇪 5",
+        "🇫🇷 6",
+        "🇬🇧 7",
+        "🇰🇿 8",
+        "🇰🇿 9",
+        "🇳🇱 10",
+        "🇳🇱 11",
+        "🇵🇱 12",
+        "🇵🇱 13",
+        "🇵🇱 14",
+        "🇵🇱 15",
+        "🇵🇱 16"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "1m",
@@ -533,27 +406,22 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇱 1",
-        "🇨🇿 2 G",
+        "🇨🇿 1 G",
+        "🇩🇪 2",
         "🇩🇪 3",
         "🇩🇪 4",
-        "🇩🇪 5",
-        "🇩🇪 6",
-        "🇪🇪 7",
-        "🇫🇮 8",
-        "🇫🇷 9",
-        "🇬🇧 10",
-        "🇰🇿 11",
-        "🇰🇿 12",
-        "🇱🇻 13",
-        "🇳🇱 14",
-        "🇳🇱 15",
-        "🇳🇱 16",
-        "🇵🇱 17",
-        "🇵🇱 18",
-        "🇵🇱 19",
-        "🇵🇱 20",
-        "🇵🇱 21"
+        "🇪🇪 5",
+        "🇫🇷 6",
+        "🇬🇧 7",
+        "🇰🇿 8",
+        "🇰🇿 9",
+        "🇳🇱 10",
+        "🇳🇱 11",
+        "🇵🇱 12",
+        "🇵🇱 13",
+        "🇵🇱 14",
+        "🇵🇱 15",
+        "🇵🇱 16"
       ],
       "default": "auto"
     },
