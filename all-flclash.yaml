@@ -3,22 +3,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇱 1
-  type: vless
-  server: 45.89.60.64
-  port: 8443
-  uuid: "81e72eea-45f4-4448-8b9c-22926c715f5c"
-  udp: true
-  network: grpc
-  tls: true
-  servername: "ads.x5.ru"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "wSQIBnAc0cYO9JitaNcgZ2LwkTix0_dXVpDjnZxDrCE"
-    short-id: ""
-  grpc-opts:
-    grpc-service-name: ''
-- name: 🇨🇿 2 G
+- name: 🇨🇿 1 G
   type: vless
   server: 87.236.146.34
   port: 443
@@ -32,7 +17,7 @@ proxies:
   reality-opts:
     public-key: "9vBE_sWSX59x9qwLygpd9oekDQ_4icfiHpecX90NZH8"
     short-id: "45192dfdd6520f1a"
-- name: 🇩🇪 3
+- name: 🇩🇪 2
   type: vless
   server: 94.183.219.239
   port: 443
@@ -47,21 +32,7 @@ proxies:
     short-id: ""
   grpc-opts:
     grpc-service-name: ''
-- name: 🇩🇪 4
-  type: vless
-  server: 176.97.210.14
-  port: 443
-  uuid: "91427003-38cb-473e-95f2-a4b500c91f7b"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "germany.milas.click"
-  client-fingerprint: random
-  reality-opts:
-    public-key: "pJpaRasoceUeRDJTXEZNnKT3yW5IocPXudB_B7_rBR0"
-    short-id: "4fa44664f6a566d3"
-- name: 🇩🇪 5
+- name: 🇩🇪 3
   type: vless
   server: denode1.frost-api.com
   port: 443
@@ -75,7 +46,7 @@ proxies:
   reality-opts:
     public-key: "SHIYN7zN9aFVxwKK-bIvDbhUgtHvlBhDi1qSl2sWwRw"
     short-id: "513b0a"
-- name: 🇩🇪 6
+- name: 🇩🇪 4
   type: vless
   server: nether2cxc.ignorelist.com
   port: 443
@@ -89,7 +60,7 @@ proxies:
   reality-opts:
     public-key: "MNfRDUdBmptd-zKqgIljosss5-oNO44Lt68hgVwa_Qo"
     short-id: "22f2d3f943dfcb40"
-- name: 🇪🇪 7
+- name: 🇪🇪 5
   type: vless
   server: tw.serviceoda.ru
   port: 443
@@ -103,22 +74,7 @@ proxies:
   reality-opts:
     public-key: "JTDF2NcBkHPybo8UokBD01cGbFQ1Rsa2j-TJknU3TGE"
     short-id: "a2046727f1bb6a06"
-- name: 🇫🇮 8
-  type: vless
-  server: fl-1.stay-secure.vip
-  port: 8443
-  uuid: "4468b7eb-1c51-4f67-bd45-2b40ec2e90a7"
-  udp: true
-  network: grpc
-  tls: true
-  servername: "ign.com"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "H2W1qvM0nUovlPadYco7_EWiZ_psfcLxOPJwOs3BDXU"
-    short-id: "fe2e437f64f2da7a"
-  grpc-opts:
-    grpc-service-name: grpc
-- name: 🇫🇷 9
+- name: 🇫🇷 6
   type: vless
   server: fra1.frost-api.com
   port: 443
@@ -132,7 +88,7 @@ proxies:
   reality-opts:
     public-key: "SHIYN7zN9aFVxwKK-bIvDbhUgtHvlBhDi1qSl2sWwRw"
     short-id: "01e7"
-- name: 🇬🇧 10
+- name: 🇬🇧 7
   type: vless
   server: 84.201.176.251
   port: 8081
@@ -146,7 +102,7 @@ proxies:
   reality-opts:
     public-key: "QHkXBS2ENHV0khgY9VBYi8_9bpfqnUYDcfQN4cW5Qg0"
     short-id: "4326"
-- name: 🇰🇿 11
+- name: 🇰🇿 8
   type: vless
   server: 45.136.58.34
   port: 443
@@ -159,7 +115,7 @@ proxies:
   reality-opts:
     public-key: "DMliziQZIP7k6OYcVSTi6gZ5xqK595sbyrpdzI6CdUs"
     short-id: "70e2107044b9"
-- name: 🇰🇿 12
+- name: 🇰🇿 9
   type: vless
   server: kaz1.frost-api.com
   port: 443
@@ -173,22 +129,7 @@ proxies:
   reality-opts:
     public-key: "SHIYN7zN9aFVxwKK-bIvDbhUgtHvlBhDi1qSl2sWwRw"
     short-id: "66c17371"
-- name: 🇱🇻 13
-  type: vless
-  server: 2.26.88.118
-  port: 8443
-  uuid: "785c7771-8d7f-48ca-bbc2-1a22e360d4d0"
-  udp: true
-  network: grpc
-  tls: true
-  servername: "2.26.88.118"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "TdT90qbeyM7WO0QCztOhKDGKOi2qaFFif0hO0cfK1E4"
-    short-id: "ea1058117be12087"
-  grpc-opts:
-    grpc-service-name: max.ru
-- name: 🇳🇱 14
+- name: 🇳🇱 10
   type: vless
   server: 62.84.112.113
   port: 443
@@ -202,7 +143,7 @@ proxies:
   reality-opts:
     public-key: "RJsLWisvBs-NayKhcJ4sJ111Eoh6mpBX0pgvBR4f4EU"
     short-id: "9e6e0631f73cad02"
-- name: 🇳🇱 15
+- name: 🇳🇱 11
   type: vless
   server: 45.150.109.15
   port: 8443
@@ -216,35 +157,7 @@ proxies:
   reality-opts:
     public-key: "FVL0r87K3-vUP2KXQX1juLMFEHJtvxwKM-nm6_PYllc"
     short-id: "deadbeef42"
-- name: 🇳🇱 16
-  type: vless
-  server: treng.loralden.com
-  port: 443
-  uuid: "82d47c52-9738-4d40-93a4-220bab575c60"
-  udp: true
-  network: grpc
-  tls: true
-  servername: "treng.loralden.com"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "EUK_ePvEKUGcezQYHqgJ5P462XxLPXPm9CZWGLaL33k"
-    short-id: "ed72a429f0135a3f"
-  grpc-opts:
-    grpc-service-name: grpc
-- name: 🇵🇱 17
-  type: vless
-  server: 144.31.0.48
-  port: 2097
-  uuid: "5f230810-7270-4b03-b802-329a4ad8d0b2"
-  udp: true
-  network: xhttp
-  tls: true
-  servername: "www.nvidia.com"
-  client-fingerprint: safari
-  reality-opts:
-    public-key: "KE4sXLqi-C6ar7WX9dtbVyAcc1KeevWKvHfqacR5wEk"
-    short-id: "c25471687f078fbd"
-- name: 🇵🇱 18
+- name: 🇵🇱 12
   type: vless
   server: poland.milas.click
   port: 443
@@ -259,21 +172,20 @@ proxies:
     short-id: "4fa44664f6a566d3"
   grpc-opts:
     grpc-service-name: ''
-- name: 🇵🇱 19
+- name: 🇵🇱 13
   type: vless
-  server: node5.frost-api.com
-  port: 443
-  uuid: "a6266066-1153-44aa-a2d8-b538e4b00cd6"
+  server: 144.31.0.48
+  port: 2097
+  uuid: "5f230810-7270-4b03-b802-329a4ad8d0b2"
   udp: true
-  network: tcp
+  network: xhttp
   tls: true
-  flow: xtls-rprx-vision
-  servername: "max.ru"
-  client-fingerprint: chrome
+  servername: "www.nvidia.com"
+  client-fingerprint: safari
   reality-opts:
-    public-key: "SHIYN7zN9aFVxwKK-bIvDbhUgtHvlBhDi1qSl2sWwRw"
-    short-id: "66c17371"
-- name: 🇵🇱 20
+    public-key: "KE4sXLqi-C6ar7WX9dtbVyAcc1KeevWKvHfqacR5wEk"
+    short-id: "c25471687f078fbd"
+- name: 🇵🇱 14
   type: vless
   server: tw1.serviceoda.ru
   port: 443
@@ -287,45 +199,54 @@ proxies:
   reality-opts:
     public-key: "G9uQu7GdqkkvE6WH0gZ1kfzt2J50s6VgddYnqck5tjw"
     short-id: "a29991b068641259"
-- name: 🇵🇱 21
+- name: 🇵🇱 15
   type: vless
-  server: 104.165.244.183
-  port: 50095
-  uuid: "347a56c2-a453-4b32-86cd-7522943df88c"
+  server: node5.frost-api.com
+  port: 443
+  uuid: "a6266066-1153-44aa-a2d8-b538e4b00cd6"
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: "cdn.jsdelivr.net"
-  client-fingerprint: qq
+  servername: "max.ru"
+  client-fingerprint: chrome
   reality-opts:
-    public-key: "vZuBWF0YzlKI0fJWxU6hmOLHHQ5Qb1kf35HbZDcFCH4"
-    short-id: "f2e1861359398ff2"
+    public-key: "SHIYN7zN9aFVxwKK-bIvDbhUgtHvlBhDi1qSl2sWwRw"
+    short-id: "66c17371"
+- name: 🇵🇱 16
+  type: vless
+  server: node3.frost-api.com
+  port: 443
+  uuid: "a6266066-1153-44aa-a2d8-b538e4b00cd6"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "max.ru"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "SHIYN7zN9aFVxwKK-bIvDbhUgtHvlBhDi1qSl2sWwRw"
+    short-id: "513b0a"
 proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - 🇦🇱 1
-  - 🇨🇿 2 G
+  - 🇨🇿 1 G
+  - 🇩🇪 2
   - 🇩🇪 3
   - 🇩🇪 4
-  - 🇩🇪 5
-  - 🇩🇪 6
-  - 🇪🇪 7
-  - 🇫🇮 8
-  - 🇫🇷 9
-  - 🇬🇧 10
-  - 🇰🇿 11
-  - 🇰🇿 12
-  - 🇱🇻 13
-  - 🇳🇱 14
-  - 🇳🇱 15
-  - 🇳🇱 16
-  - 🇵🇱 17
-  - 🇵🇱 18
-  - 🇵🇱 19
-  - 🇵🇱 20
-  - 🇵🇱 21
+  - 🇪🇪 5
+  - 🇫🇷 6
+  - 🇬🇧 7
+  - 🇰🇿 8
+  - 🇰🇿 9
+  - 🇳🇱 10
+  - 🇳🇱 11
+  - 🇵🇱 12
+  - 🇵🇱 13
+  - 🇵🇱 14
+  - 🇵🇱 15
+  - 🇵🇱 16
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -333,26 +254,21 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 Авто (лучший)
-  - 🇦🇱 1
-  - 🇨🇿 2 G
+  - 🇨🇿 1 G
+  - 🇩🇪 2
   - 🇩🇪 3
   - 🇩🇪 4
-  - 🇩🇪 5
-  - 🇩🇪 6
-  - 🇪🇪 7
-  - 🇫🇮 8
-  - 🇫🇷 9
-  - 🇬🇧 10
-  - 🇰🇿 11
-  - 🇰🇿 12
-  - 🇱🇻 13
-  - 🇳🇱 14
-  - 🇳🇱 15
-  - 🇳🇱 16
-  - 🇵🇱 17
-  - 🇵🇱 18
-  - 🇵🇱 19
-  - 🇵🇱 20
-  - 🇵🇱 21
+  - 🇪🇪 5
+  - 🇫🇷 6
+  - 🇬🇧 7
+  - 🇰🇿 8
+  - 🇰🇿 9
+  - 🇳🇱 10
+  - 🇳🇱 11
+  - 🇵🇱 12
+  - 🇵🇱 13
+  - 🇵🇱 14
+  - 🇵🇱 15
+  - 🇵🇱 16
 rules:
 - MATCH,PROXY
