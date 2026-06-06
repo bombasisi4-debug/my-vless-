@@ -2,33 +2,18 @@ mixed-port: 7890
 allow-lan: false
 mode: rule
 log-level: info
-proxies:
-- name: 🇱🇹 G 12
-  type: vless
-  server: 72.62.112.132
-  port: 8443
-  uuid: "561f3a9c-35d6-11f1-84f4-16774f3e241b"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "www.apple.com"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "FVL0r87K3-vUP2KXQX1juLMFEHJtvxwKM-nm6_PYllc"
-    short-id: "a1b2c3d4e5f6"
+proxies: []
 proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - 🇱🇹 G 12
+  - DIRECT
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
 - name: PROXY
   type: select
   proxies:
-  - 🚀 Авто (лучший)
-  - 🇱🇹 G 12
+  - DIRECT
 rules:
 - MATCH,PROXY
