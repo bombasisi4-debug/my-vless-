@@ -22,23 +22,68 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇷🇺 3 BP",
-      "server": "sub.ru.netrelay-sync.online",
+      "tag": "🇷🇺 29",
+      "server": "zmaoz.faculty.ucdavis.edu",
       "server_port": 443,
-      "uuid": "RF-1",
+      "uuid": "Biain--ZEDMODEON",
       "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.ozon.ru",
+        "server_name": "zmaoz.faculty.ucdavis.edu",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@ZEDMODEON-ZEDMODEON-ZEDMODEON@ZEDMODEON-ZEDMODEON-TEL-ZEDMODEON-ZEDMODEON-ZEDMODEON-@ZEDMODEON?ed=2048",
+        "headers": {
+          "Host": "karafarini.ir"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 6",
+      "server": "ru01.goodmaximum.com",
+      "server_port": 443,
+      "uuid": "db95b766-43a8-001e-9b5d-5ca6f2735188",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ru-cloud.221131513.xyz",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "wWxV3KmPjbUh3bFL5ebCrkwCNwYxAWz7pfRpk7wqqGY",
-          "short_id": "b3"
+          "public_key": "fPSR5GZpxhOV6Rh7VzMtS4AeRN7ipyNX4waG9JzJzxQ",
+          "short_id": "31181028b56c8704"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 ✓ 9",
+      "server": "chatgpt.com",
+      "server_port": 443,
+      "uuid": "87eed50e-357e-479e-b483-ae195fec73a2",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "free.marzshekan.com.tr",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiNDBNWGY3Z0NPd0loZ2YiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119?ed=2560",
+        "headers": {
+          "Host": "free.marzshekan.com.tr"
         }
       }
     },
@@ -46,7 +91,9 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 3 BP"
+        "🇷🇺 29",
+        "🇷🇺 6",
+        "🇷🇺 ✓ 9"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "1m",
@@ -57,7 +104,9 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 3 BP"
+        "🇷🇺 29",
+        "🇷🇺 6",
+        "🇷🇺 ✓ 9"
       ],
       "default": "auto"
     },
