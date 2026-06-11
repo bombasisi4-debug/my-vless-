@@ -22,37 +22,36 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇷🇺 29",
-      "server": "zmaoz.faculty.ucdavis.edu",
-      "server_port": 443,
-      "uuid": "Biain--ZEDMODEON",
+      "tag": "🇷🇺 G 7 BP",
+      "server": "178.248.238.85",
+      "server_port": 13443,
+      "uuid": "cb62a359-3d64-4fdf-bf38-d5f146db44c1",
       "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "zmaoz.faculty.ucdavis.edu",
+        "server_name": "rutube.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@ZEDMODEON-ZEDMODEON-ZEDMODEON@ZEDMODEON-ZEDMODEON-TEL-ZEDMODEON-ZEDMODEON-ZEDMODEON-@ZEDMODEON?ed=2048",
-        "headers": {
-          "Host": "karafarini.ir"
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc",
+          "short_id": "43dcff53849b81e6"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 ✓ 9",
-      "server": "chatgpt.com",
+      "tag": "🇷🇺 13 BP",
+      "server": "104.21.74.139",
       "server_port": 443,
-      "uuid": "87eed50e-357e-479e-b483-ae195fec73a2",
+      "uuid": "9b704599-c989-4e1d-b842-84b5fa0f6549",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "free.marzshekan.com.tr",
+        "server_name": "stunts.aurorainiceland.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -60,9 +59,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/eyJqdW5rIjoiNDBNWGY3Z0NPd0loZ2YiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119?ed=2560",
+        "path": "/nimws",
         "headers": {
-          "Host": "free.marzshekan.com.tr"
+          "Host": "stunts.aurorainiceland.com"
         }
       }
     },
@@ -70,8 +69,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 29",
-        "🇷🇺 ✓ 9"
+        "🇷🇺 G 7 BP",
+        "🇷🇺 13 BP"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "1m",
@@ -82,8 +81,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 29",
-        "🇷🇺 ✓ 9"
+        "🇷🇺 G 7 BP",
+        "🇷🇺 13 BP"
       ],
       "default": "auto"
     },
