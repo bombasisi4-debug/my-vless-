@@ -3,21 +3,35 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇩🇪 1 G
+- name: 🇩🇪 1
   type: vless
-  server: 46.8.209.149
+  server: de-dp-01.com
   port: 8443
-  uuid: "cb62a359-3d64-001a-bf38-d5f146db44c1"
+  uuid: "f552a78e-400c-4332-8265-8e5da1c21eeb"
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: "rutube.ru"
-  client-fingerprint: qq
+  servername: "storage.yandex.net"
+  client-fingerprint: firefox
   reality-opts:
-    public-key: "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc"
-    short-id: "43dcff53849b81e6"
-- name: 🇩🇪 2
+    public-key: "ISa-DZOI4LRRb9DHMFYm5oFqBXDjYzz0hVWUfWvzLmo"
+    short-id: "5be97fb85093a3a9"
+- name: 🇩🇪 2 G
+  type: vless
+  server: pl.node.ghostsyvpn.org
+  port: 443
+  uuid: "38321edd-637b-4d3b-b524-edd826414a31"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "pl.node.ghostsyvpn.org"
+  client-fingerprint: safari
+  reality-opts:
+    public-key: "03MJy26A8kc5c8aMMdkY3s_CX3qiw0eTmjrc3UCBLm0"
+    short-id: ""
+- name: 🇩🇪 3
   type: vless
   server: nether2cxc.ignorelist.com
   port: 443
@@ -31,7 +45,21 @@ proxies:
   reality-opts:
     public-key: "MNfRDUdBmptd-zKqgIljosss5-oNO44Lt68hgVwa_Qo"
     short-id: "22f2d3f943dfcb40"
-- name: 🇬🇧 3 G
+- name: 🇫🇮 4 G
+  type: vless
+  server: 31.76.103.77
+  port: 443
+  uuid: "3ef170be-05d0-479c-9753-aa2f860964ea"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "cloudflare.com"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "C1hW1bTA9WOacIK-fHHg-HLkDZ3FY7FhEhAyldMSUEA"
+    short-id: "a1b2c3d4e5f6"
+- name: 🇬🇧 5 G
   type: vless
   server: 45.141.118.146
   port: 7443
@@ -46,9 +74,23 @@ proxies:
     short-id: ""
   grpc-opts:
     grpc-service-name: ''
-- name: 🇭🇺 4
+- name: 🇬🇧 6 G
   type: vless
-  server: 109.122.221.77
+  server: y51.cdns.su
+  port: 443
+  uuid: "cfbfd307-1de9-49e1-8b8a-e1f831771c0e"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "api-maps.yandex.ru"
+  client-fingerprint: qq
+  reality-opts:
+    public-key: "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs"
+    short-id: "428ef87fd47a3a32"
+- name: 🇭🇺 7 G
+  type: vless
+  server: 185.187.72.117
   port: 443
   uuid: "0a12381a-e241-4b63-a03c-1a5a45a95977"
   udp: true
@@ -60,35 +102,21 @@ proxies:
   reality-opts:
     public-key: "mPzNFHO4pZMzFviRkIhRd7xDUz4dMHyI-flZLOrgDVg"
     short-id: "f8379ce795f2e5ed"
-- name: 🇭🇺 5 G
+- name: 🇰🇿 8 G
   type: vless
-  server: 185.187.72.117
+  server: 38.180.39.171
   port: 443
-  uuid: "5a96b986-1a96-4005-b5ae-45096ae6f85a"
+  uuid: "158d03db-e5d7-4540-a31c-b2daa7aa4964"
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: "hu.locklance.lol"
-  client-fingerprint: firefox
+  servername: "web.max.ru"
+  client-fingerprint: chrome
   reality-opts:
-    public-key: "mPzNFHO4pZMzFviRkIhRd7xDUz4dMHyI-flZLOrgDVg"
-    short-id: "7bd8d1d17331a1e4"
-- name: 🇮🇹 6
-  type: vless
-  server: cdn3.cloud-vk.com
-  port: 8443
-  uuid: "faa8ebf2-c4f1-4e33-917a-2db510da57cf"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "id.vk.ru"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "vWN_pooUFoy4BkbO0r_SBibQlFSsA9f5wIGgQEfvfEA"
-    short-id: "91ffab9b7b7180b8"
-- name: 🇱🇹 7 G
+    public-key: "7ReQIe2kMtP4rCrptgH5glkOM-JGcSAPzHNxOED-Z0s"
+    short-id: "247fd6dab1a34a48"
+- name: 🇱🇹 9 G
   type: vless
   server: 5.199.171.88
   port: 443
@@ -102,7 +130,7 @@ proxies:
   reality-opts:
     public-key: "wa00o0wO4pEn9ki565dMNkzt0SBcuJ4aRyz6tpTYmQw"
     short-id: "9d35004ad989e412"
-- name: 🇱🇻 8 G
+- name: 🇱🇻 10 G
   type: vless
   server: 95.164.91.94
   port: 443
@@ -116,78 +144,122 @@ proxies:
   reality-opts:
     public-key: "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc"
     short-id: "43dcff53849b81e6"
-- name: 🇳🇱 9
+- name: 🇳🇱 11 G
   type: vless
-  server: 176.99.6.2
+  server: nl.node.ghostsyvpn.org
   port: 443
-  uuid: "af98f1f5-965d-4b06-8687-a61fc2df03bb"
+  uuid: "38321edd-637b-4d3b-b524-edd826414a31"
   udp: true
-  network: tcp
+  network: grpc
   tls: true
-  flow: xtls-rprx-vision
-  servername: "www.microsoft.com"
-  client-fingerprint: chrome
+  servername: "nl.node.ghostsyvpn.org"
+  client-fingerprint: firefox
   reality-opts:
-    public-key: "DYxgYrUH1sm7Fb33XJq7ZFYXHscSTedYb8yfDQSWm2k"
-    short-id: "7c9fb968ceb13456"
-- name: 🇳🇱 10 G
-  type: vless
-  server: ne999.sonicservice.digital
-  port: 443
-  uuid: "76b220dc-df21-4299-aa41-f0c056912e68"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "ne999.sonicservice.digital"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: "z-TKWOWgZLfzQ-wNdwXQqVwaUgCmbchM2Xtrk1NGynU"
+    public-key: "cGG5BPfd29vY7UDbip1mVMPec5cNBEj50n5Lo0pEZQs"
     short-id: ""
-- name: 🇵🇱 11 G
+  grpc-opts:
+    grpc-service-name: ''
+- name: 🇳🇱 12 G
   type: vless
-  server: 144.31.2.184
+  server: 154.83.159.20
+  port: 8443
+  uuid: "fee80fa1-64b1-468b-8ecc-0aac07f8a9a9"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "storage.yandex.net"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "LT_0j3zQkaqgtJHvyaG24xz0IfmXUswVCTeC75Qsgjo"
+    short-id: "ab4cc4f5aa354fa4"
+- name: 🇳🇱 13 G
+  type: vless
+  server: 144.124.228.113
   port: 443
-  uuid: "cb62a359-3d64-4fdf-bf38-d5f146db44c1"
+  uuid: "039a1658-e86e-475f-a3a4-67cc249acada"
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: "pl.quattro-tech.ru"
-  client-fingerprint: qq
+  servername: "nl3.panel11.ru"
+  client-fingerprint: firefox
   reality-opts:
-    public-key: "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc"
-    short-id: "43dcff53849b81e6"
-- name: 🇸🇪 12 G
+    public-key: "odHeTqoDcoPA6jeZStmaFPqoFg0ZiWwOKREEB0X-ez4"
+    short-id: "e069bfaf9ba2069c"
+- name: 🇳🇱 14 G
   type: vless
-  server: 178.248.238.85
-  port: 15443
-  uuid: "cb62a359-3d64-0009-bf38-d5f146db44c1"
+  server: cdn.netraidly.ru
+  port: 40443
+  uuid: "4bf5a71c-d726-4585-b095-7396675706d5"
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: "rutube.ru"
+  servername: "deepl.com"
   client-fingerprint: qq
   reality-opts:
-    public-key: "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc"
-    short-id: "43dcff53849b81e6"
+    public-key: "D_ks4Yyk4-osnWBxCFvd0_UEgohUXvR2zJoWQg1CACU"
+    short-id: "c84f"
+- name: 🇵🇱 15 G
+  type: vless
+  server: 144.31.171.99
+  port: 4443
+  uuid: "f6431ff1-dec0-4a6c-be4a-ce917913b589"
+  udp: true
+  network: grpc
+  tls: false
+  grpc-opts:
+    grpc-service-name: ''
+- name: 🇸🇪 16 G
+  type: vless
+  server: ru6.cdn-global.pro
+  port: 443
+  uuid: "d4d234ea-80ea-4820-ac5e-05d653960579"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "ru6.cdn-global.pro"
+  client-fingerprint: edge
+  reality-opts:
+    public-key: "vLxGB-lOlxcxTs9Wzuq4WLqdrpuLIIRMY582qC730Gk"
+    short-id: "9f76cfc6302bfcbe"
+- name: 🇺🇸 17 G
+  type: vless
+  server: 45.95.96.134
+  port: 443
+  uuid: "4e71d588-61af-4b58-b467-3eba16b5041b"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "mos3078.rtnode.site"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "Vgpu-ulcEK2GcWK3dohesaAGGFlnrXD1MxPrU6j_KkY"
+    short-id: "bad3a25cf8c16109"
 proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - 🇩🇪 1 G
-  - 🇩🇪 2
-  - 🇬🇧 3 G
-  - 🇭🇺 4
-  - 🇭🇺 5 G
-  - 🇮🇹 6
-  - 🇱🇹 7 G
-  - 🇱🇻 8 G
-  - 🇳🇱 9
-  - 🇳🇱 10 G
-  - 🇵🇱 11 G
-  - 🇸🇪 12 G
+  - 🇩🇪 1
+  - 🇩🇪 2 G
+  - 🇩🇪 3
+  - 🇫🇮 4 G
+  - 🇬🇧 5 G
+  - 🇬🇧 6 G
+  - 🇭🇺 7 G
+  - 🇰🇿 8 G
+  - 🇱🇹 9 G
+  - 🇱🇻 10 G
+  - 🇳🇱 11 G
+  - 🇳🇱 12 G
+  - 🇳🇱 13 G
+  - 🇳🇱 14 G
+  - 🇵🇱 15 G
+  - 🇸🇪 16 G
+  - 🇺🇸 17 G
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -195,17 +267,22 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 Авто (лучший)
-  - 🇩🇪 1 G
-  - 🇩🇪 2
-  - 🇬🇧 3 G
-  - 🇭🇺 4
-  - 🇭🇺 5 G
-  - 🇮🇹 6
-  - 🇱🇹 7 G
-  - 🇱🇻 8 G
-  - 🇳🇱 9
-  - 🇳🇱 10 G
-  - 🇵🇱 11 G
-  - 🇸🇪 12 G
+  - 🇩🇪 1
+  - 🇩🇪 2 G
+  - 🇩🇪 3
+  - 🇫🇮 4 G
+  - 🇬🇧 5 G
+  - 🇬🇧 6 G
+  - 🇭🇺 7 G
+  - 🇰🇿 8 G
+  - 🇱🇹 9 G
+  - 🇱🇻 10 G
+  - 🇳🇱 11 G
+  - 🇳🇱 12 G
+  - 🇳🇱 13 G
+  - 🇳🇱 14 G
+  - 🇵🇱 15 G
+  - 🇸🇪 16 G
+  - 🇺🇸 17 G
 rules:
 - MATCH,PROXY
