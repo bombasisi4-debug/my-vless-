@@ -3,50 +3,21 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇿 1 G
+- name: 🇩🇪 1 G
   type: vless
-  server: 87.236.146.34
-  port: 443
-  uuid: "8bc7ed8e-fcbc-47fc-9b06-ae72da2502cb"
+  server: 46.8.209.149
+  port: 8443
+  uuid: "cb62a359-3d64-001a-bf38-d5f146db44c1"
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: "www.seznam.cz"
-  client-fingerprint: chrome
+  servername: "rutube.ru"
+  client-fingerprint: qq
   reality-opts:
-    public-key: "9vBE_sWSX59x9qwLygpd9oekDQ_4icfiHpecX90NZH8"
-    short-id: "45192dfdd6520f1a"
+    public-key: "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc"
+    short-id: "43dcff53849b81e6"
 - name: 🇩🇪 2
-  type: vless
-  server: 94.183.219.239
-  port: 443
-  uuid: "91427003-38cb-473e-95f2-a4b500c91f7b"
-  udp: true
-  network: grpc
-  tls: true
-  servername: "google.com"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "uemqA7VkHB7Xw_gc88AfbBijEJgiWaVdCiIyMae8CSI"
-    short-id: ""
-  grpc-opts:
-    grpc-service-name: ''
-- name: 🇩🇪 3
-  type: vless
-  server: denode1.frost-api.com
-  port: 443
-  uuid: "a6266066-1153-44aa-a2d8-b538e4b00cd6"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "max.ru"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "SHIYN7zN9aFVxwKK-bIvDbhUgtHvlBhDi1qSl2sWwRw"
-    short-id: "513b0a"
-- name: 🇩🇪 4
   type: vless
   server: nether2cxc.ignorelist.com
   port: 443
@@ -60,193 +31,163 @@ proxies:
   reality-opts:
     public-key: "MNfRDUdBmptd-zKqgIljosss5-oNO44Lt68hgVwa_Qo"
     short-id: "22f2d3f943dfcb40"
-- name: 🇪🇪 5
+- name: 🇬🇧 3 G
   type: vless
-  server: tw.serviceoda.ru
-  port: 443
-  uuid: "7b7619ef-3015-45e4-a1c0-5672f81b864c"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "api-maps.yandex.ru"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: "JTDF2NcBkHPybo8UokBD01cGbFQ1Rsa2j-TJknU3TGE"
-    short-id: "a2046727f1bb6a06"
-- name: 🇫🇷 6
-  type: vless
-  server: fra1.frost-api.com
-  port: 443
-  uuid: "a6266066-1153-44aa-a2d8-b538e4b00cd6"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "max.ru"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "SHIYN7zN9aFVxwKK-bIvDbhUgtHvlBhDi1qSl2sWwRw"
-    short-id: "01e7"
-- name: 🇬🇧 7
-  type: vless
-  server: 84.201.176.251
-  port: 8081
-  uuid: "24cfd5a4-d39e-40ed-9548-2dc21363f731"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "ads.x5.ru"
-  client-fingerprint: edge
-  reality-opts:
-    public-key: "QHkXBS2ENHV0khgY9VBYi8_9bpfqnUYDcfQN4cW5Qg0"
-    short-id: "4326"
-- name: 🇰🇿 8
-  type: vless
-  server: 45.136.58.34
-  port: 443
-  uuid: "a6e72947-cd53-449e-8ae2-11140ea398df"
-  udp: true
-  network: tcp
-  tls: true
-  servername: "www.samsung.com"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "DMliziQZIP7k6OYcVSTi6gZ5xqK595sbyrpdzI6CdUs"
-    short-id: "70e2107044b9"
-- name: 🇰🇿 9
-  type: vless
-  server: kaz1.frost-api.com
-  port: 443
-  uuid: "a6266066-1153-44aa-a2d8-b538e4b00cd6"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "max.ru"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "SHIYN7zN9aFVxwKK-bIvDbhUgtHvlBhDi1qSl2sWwRw"
-    short-id: "66c17371"
-- name: 🇳🇱 10
-  type: vless
-  server: 62.84.112.113
-  port: 443
-  uuid: "7b7619ef-3015-45e4-a1c0-5672f81b864c"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "ya.ru"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: "RJsLWisvBs-NayKhcJ4sJ111Eoh6mpBX0pgvBR4f4EU"
-    short-id: "9e6e0631f73cad02"
-- name: 🇳🇱 11
-  type: vless
-  server: 45.150.109.15
-  port: 8443
-  uuid: "561f3a9c-35d6-11f1-84f4-16774f3e241b"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "www.apple.com"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "FVL0r87K3-vUP2KXQX1juLMFEHJtvxwKM-nm6_PYllc"
-    short-id: "deadbeef42"
-- name: 🇵🇱 12
-  type: vless
-  server: poland.milas.click
-  port: 443
-  uuid: "91427003-38cb-473e-95f2-a4b500c91f7b"
+  server: 45.141.118.146
+  port: 7443
+  uuid: "6e41151e-ae07-4ea6-910e-7a3986b7bc0d"
   udp: true
   network: grpc
   tls: true
-  servername: "poland.milas.click"
-  client-fingerprint: random
+  servername: "apple.com"
+  client-fingerprint: firefox
   reality-opts:
-    public-key: "DoZSKLwNQjogQMlE7oEEuB8TqpNa-umXzG-2Q6dTTEY"
-    short-id: "4fa44664f6a566d3"
+    public-key: "RTa9W5Sq3CjIvirE8jFvIwZLreM5Z-9ZQ5_zZHv0-yA"
+    short-id: ""
   grpc-opts:
     grpc-service-name: ''
-- name: 🇵🇱 13
+- name: 🇭🇺 4
   type: vless
-  server: 144.31.0.48
-  port: 2097
-  uuid: "5f230810-7270-4b03-b802-329a4ad8d0b2"
-  udp: true
-  network: xhttp
-  tls: true
-  servername: "www.nvidia.com"
-  client-fingerprint: safari
-  reality-opts:
-    public-key: "KE4sXLqi-C6ar7WX9dtbVyAcc1KeevWKvHfqacR5wEk"
-    short-id: "c25471687f078fbd"
-- name: 🇵🇱 14
-  type: vless
-  server: tw1.serviceoda.ru
+  server: 109.122.221.77
   port: 443
-  uuid: "7b7619ef-3015-45e4-a1c0-5672f81b864c"
+  uuid: "0a12381a-e241-4b63-a03c-1a5a45a95977"
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: "api-maps.yandex.ru"
+  servername: "hu.locklance.lol"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "mPzNFHO4pZMzFviRkIhRd7xDUz4dMHyI-flZLOrgDVg"
+    short-id: "f8379ce795f2e5ed"
+- name: 🇭🇺 5 G
+  type: vless
+  server: 185.187.72.117
+  port: 443
+  uuid: "5a96b986-1a96-4005-b5ae-45096ae6f85a"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "hu.locklance.lol"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "mPzNFHO4pZMzFviRkIhRd7xDUz4dMHyI-flZLOrgDVg"
+    short-id: "7bd8d1d17331a1e4"
+- name: 🇮🇹 6
+  type: vless
+  server: cdn3.cloud-vk.com
+  port: 8443
+  uuid: "faa8ebf2-c4f1-4e33-917a-2db510da57cf"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "id.vk.ru"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "vWN_pooUFoy4BkbO0r_SBibQlFSsA9f5wIGgQEfvfEA"
+    short-id: "91ffab9b7b7180b8"
+- name: 🇱🇹 7 G
+  type: vless
+  server: 5.199.171.88
+  port: 443
+  uuid: "129400e5-7d1b-4720-bf3e-f877c3e5021e"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "www.microsoft.com"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "wa00o0wO4pEn9ki565dMNkzt0SBcuJ4aRyz6tpTYmQw"
+    short-id: "9d35004ad989e412"
+- name: 🇱🇻 8 G
+  type: vless
+  server: 95.164.91.94
+  port: 443
+  uuid: "cb62a359-3d64-4fdf-bf38-d5f146db44c1"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "lv.quattro-tech.ru"
+  client-fingerprint: edge
+  reality-opts:
+    public-key: "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc"
+    short-id: "43dcff53849b81e6"
+- name: 🇳🇱 9
+  type: vless
+  server: 176.99.6.2
+  port: 443
+  uuid: "af98f1f5-965d-4b06-8687-a61fc2df03bb"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "www.microsoft.com"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "DYxgYrUH1sm7Fb33XJq7ZFYXHscSTedYb8yfDQSWm2k"
+    short-id: "7c9fb968ceb13456"
+- name: 🇳🇱 10 G
+  type: vless
+  server: ne999.sonicservice.digital
+  port: 443
+  uuid: "76b220dc-df21-4299-aa41-f0c056912e68"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "ne999.sonicservice.digital"
   client-fingerprint: qq
   reality-opts:
-    public-key: "G9uQu7GdqkkvE6WH0gZ1kfzt2J50s6VgddYnqck5tjw"
-    short-id: "a29991b068641259"
-- name: 🇵🇱 15
+    public-key: "z-TKWOWgZLfzQ-wNdwXQqVwaUgCmbchM2Xtrk1NGynU"
+    short-id: ""
+- name: 🇵🇱 11 G
   type: vless
-  server: node5.frost-api.com
+  server: 144.31.2.184
   port: 443
-  uuid: "a6266066-1153-44aa-a2d8-b538e4b00cd6"
+  uuid: "cb62a359-3d64-4fdf-bf38-d5f146db44c1"
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: "max.ru"
-  client-fingerprint: chrome
+  servername: "pl.quattro-tech.ru"
+  client-fingerprint: qq
   reality-opts:
-    public-key: "SHIYN7zN9aFVxwKK-bIvDbhUgtHvlBhDi1qSl2sWwRw"
-    short-id: "66c17371"
-- name: 🇵🇱 16
+    public-key: "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc"
+    short-id: "43dcff53849b81e6"
+- name: 🇸🇪 12 G
   type: vless
-  server: node3.frost-api.com
-  port: 443
-  uuid: "a6266066-1153-44aa-a2d8-b538e4b00cd6"
+  server: 178.248.238.85
+  port: 15443
+  uuid: "cb62a359-3d64-0009-bf38-d5f146db44c1"
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: "max.ru"
-  client-fingerprint: chrome
+  servername: "rutube.ru"
+  client-fingerprint: qq
   reality-opts:
-    public-key: "SHIYN7zN9aFVxwKK-bIvDbhUgtHvlBhDi1qSl2sWwRw"
-    short-id: "513b0a"
+    public-key: "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc"
+    short-id: "43dcff53849b81e6"
 proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - 🇨🇿 1 G
+  - 🇩🇪 1 G
   - 🇩🇪 2
-  - 🇩🇪 3
-  - 🇩🇪 4
-  - 🇪🇪 5
-  - 🇫🇷 6
-  - 🇬🇧 7
-  - 🇰🇿 8
-  - 🇰🇿 9
-  - 🇳🇱 10
-  - 🇳🇱 11
-  - 🇵🇱 12
-  - 🇵🇱 13
-  - 🇵🇱 14
-  - 🇵🇱 15
-  - 🇵🇱 16
+  - 🇬🇧 3 G
+  - 🇭🇺 4
+  - 🇭🇺 5 G
+  - 🇮🇹 6
+  - 🇱🇹 7 G
+  - 🇱🇻 8 G
+  - 🇳🇱 9
+  - 🇳🇱 10 G
+  - 🇵🇱 11 G
+  - 🇸🇪 12 G
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -254,21 +195,17 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 Авто (лучший)
-  - 🇨🇿 1 G
+  - 🇩🇪 1 G
   - 🇩🇪 2
-  - 🇩🇪 3
-  - 🇩🇪 4
-  - 🇪🇪 5
-  - 🇫🇷 6
-  - 🇬🇧 7
-  - 🇰🇿 8
-  - 🇰🇿 9
-  - 🇳🇱 10
-  - 🇳🇱 11
-  - 🇵🇱 12
-  - 🇵🇱 13
-  - 🇵🇱 14
-  - 🇵🇱 15
-  - 🇵🇱 16
+  - 🇬🇧 3 G
+  - 🇭🇺 4
+  - 🇭🇺 5 G
+  - 🇮🇹 6
+  - 🇱🇹 7 G
+  - 🇱🇻 8 G
+  - 🇳🇱 9
+  - 🇳🇱 10 G
+  - 🇵🇱 11 G
+  - 🇸🇪 12 G
 rules:
 - MATCH,PROXY
