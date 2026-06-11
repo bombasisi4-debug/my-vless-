@@ -3,40 +3,40 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇺 29
+- name: 🇷🇺 G 7 BP
   type: vless
-  server: zmaoz.faculty.ucdavis.edu
+  server: 178.248.238.85
+  port: 13443
+  uuid: "cb62a359-3d64-4fdf-bf38-d5f146db44c1"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "rutube.ru"
+  client-fingerprint: qq
+  reality-opts:
+    public-key: "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc"
+    short-id: "43dcff53849b81e6"
+- name: 🇷🇺 13 BP
+  type: vless
+  server: 104.21.74.139
   port: 443
-  uuid: "Biain--ZEDMODEON"
+  uuid: "9b704599-c989-4e1d-b842-84b5fa0f6549"
   udp: true
   network: ws
   tls: true
-  servername: "zmaoz.faculty.ucdavis.edu"
+  servername: "stunts.aurorainiceland.com"
   client-fingerprint: chrome
   ws-opts:
-    path: /@ZEDMODEON-ZEDMODEON-ZEDMODEON@ZEDMODEON-ZEDMODEON-TEL-ZEDMODEON-ZEDMODEON-ZEDMODEON-@ZEDMODEON?ed=2048
+    path: /nimws
     headers:
-      Host: karafarini.ir
-- name: 🇷🇺 ✓ 9
-  type: vless
-  server: chatgpt.com
-  port: 443
-  uuid: "87eed50e-357e-479e-b483-ae195fec73a2"
-  udp: true
-  network: ws
-  tls: true
-  servername: "free.marzshekan.com.tr"
-  client-fingerprint: chrome
-  ws-opts:
-    path: /eyJqdW5rIjoiNDBNWGY3Z0NPd0loZ2YiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119?ed=2560
-    headers:
-      Host: free.marzshekan.com.tr
+      Host: stunts.aurorainiceland.com
 proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - 🇷🇺 29
-  - 🇷🇺 ✓ 9
+  - 🇷🇺 G 7 BP
+  - 🇷🇺 13 BP
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -44,7 +44,7 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 Авто (лучший)
-  - 🇷🇺 29
-  - 🇷🇺 ✓ 9
+  - 🇷🇺 G 7 BP
+  - 🇷🇺 13 BP
 rules:
 - MATCH,PROXY
