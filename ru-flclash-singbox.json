@@ -22,28 +22,6 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇷🇺 G 65 BP",
-      "server": "147.45.159.110",
-      "server_port": 443,
-      "uuid": "33de2596-d95d-412b-a8c2-410be7060ca3",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "sellflow.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇷🇺 S 13 BP",
       "server": "104.21.74.139",
       "server_port": 443,
@@ -66,50 +44,10 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇷🇺 G 77",
-      "server": "185.147.27.105",
-      "server_port": 80,
-      "uuid": "c3506ca8-0224-4711-99b0-276db410af95",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "185.147.27.105"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 G 60",
-      "server": "201.51.3.123",
-      "server_port": 443,
-      "uuid": "33de2596-d95d-412b-a8c2-410be7060ca3",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "fi.sellflow.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-          "short_id": ""
-        }
-      }
-    },
-    {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 G 65 BP",
-        "🇷🇺 S 13 BP",
-        "🇷🇺 G 77",
-        "🇷🇺 G 60"
+        "🇷🇺 S 13 BP"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "1m",
@@ -120,10 +58,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 G 65 BP",
-        "🇷🇺 S 13 BP",
-        "🇷🇺 G 77",
-        "🇷🇺 G 60"
+        "🇷🇺 S 13 BP"
       ],
       "default": "auto"
     },
