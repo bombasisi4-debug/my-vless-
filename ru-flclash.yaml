@@ -3,20 +3,6 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇺 G 65 BP
-  type: vless
-  server: 147.45.159.110
-  port: 443
-  uuid: "33de2596-d95d-412b-a8c2-410be7060ca3"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "sellflow.org"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
-    short-id: ""
 - name: 🇷🇺 S 13 BP
   type: vless
   server: 104.21.74.139
@@ -31,40 +17,11 @@ proxies:
     path: /nimws
     headers:
       Host: stunts.aurorainiceland.com
-- name: 🇷🇺 G 77
-  type: vless
-  server: 185.147.27.105
-  port: 80
-  uuid: "c3506ca8-0224-4711-99b0-276db410af95"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 185.147.27.105
-- name: 🇷🇺 G 60
-  type: vless
-  server: 201.51.3.123
-  port: 443
-  uuid: "33de2596-d95d-412b-a8c2-410be7060ca3"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "fi.sellflow.org"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
-    short-id: ""
 proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - 🇷🇺 G 65 BP
   - 🇷🇺 S 13 BP
-  - 🇷🇺 G 77
-  - 🇷🇺 G 60
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -72,9 +29,6 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 Авто (лучший)
-  - 🇷🇺 G 65 BP
   - 🇷🇺 S 13 BP
-  - 🇷🇺 G 77
-  - 🇷🇺 G 60
 rules:
 - MATCH,PROXY
