@@ -3,768 +3,309 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇹 1 G
+- name: 🇨🇦 1 G
   type: vless
-  server: 212.183.88.140
-  port: 80
-  uuid: "f9255507-1b65-433f-bfd8-193b35e068e2"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: Telegram🇨🇳 @WangCai2
-    headers:
-      Host: s5.868001.xyz
-- name: 🇧🇿 2 G
-  type: vless
-  server: 45.131.210.140
-  port: 80
-  uuid: "f9255507-1b65-433f-bfd8-193b35e068e2"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: Telegram🇨🇳 @WangCai2
-    headers:
-      Host: s5.868001.xyz
-- name: 🇧🇿 3 G
-  type: vless
-  server: 45.131.7.140
-  port: 80
-  uuid: "f9255507-1b65-433f-bfd8-193b35e068e2"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: Telegram🇨🇳 @WangCai2
-    headers:
-      Host: s5.868001.xyz
-- name: 🇨🇦 4 G
-  type: vless
-  server: 92.53.191.140
-  port: 80
-  uuid: "f9255507-1b65-433f-bfd8-193b35e068e2"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: Telegram🇨🇳 @WangCai2
-    headers:
-      Host: s5.868001.xyz
-- name: 🇨🇦 5 G
-  type: vless
-  server: 92.53.189.140
-  port: 80
-  uuid: "f9255507-1b65-433f-bfd8-193b35e068e2"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: Telegram🇨🇳 @WangCai2
-    headers:
-      Host: s5.868001.xyz
-- name: 🇨🇼 6 G
-  type: vless
-  server: 5.10.247.140
-  port: 80
-  uuid: "f9255507-1b65-433f-bfd8-193b35e068e2"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: Telegram🇨🇳 @WangCai2
-    headers:
-      Host: s5.868001.xyz
-- name: 🇨🇼 7 G
-  type: vless
-  server: 5.10.245.140
-  port: 80
-  uuid: "f9255507-1b65-433f-bfd8-193b35e068e2"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: Telegram🇨🇳+@WangCai2
-    headers:
-      Host: s5.868001.xyz
-- name: 🇨🇾 8 G
-  type: vless
-  server: 104.239.72.140
-  port: 80
-  uuid: "f9255507-1b65-433f-bfd8-193b35e068e2"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: Telegram🇨🇳 @WangCai2
-    headers:
-      Host: s5.868001.xyz
-- name: 🇨🇾 9 G
-  type: vless
-  server: 77.37.33.140
-  port: 80
-  uuid: "f9255507-1b65-433f-bfd8-193b35e068e2"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: Telegram🇨🇳 @WangCai2
-    headers:
-      Host: s5.868001.xyz
-- name: 🇨🇾 10 G
-  type: vless
-  server: 77.75.199.140
-  port: 80
-  uuid: "f9255507-1b65-433f-bfd8-193b35e068e2"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: Telegram🇨🇳+@WangCai2
-    headers:
-      Host: s5.868001.xyz
-- name: 🇨🇾 11 G
-  type: vless
-  server: 195.85.59.140
-  port: 80
-  uuid: "f9255507-1b65-433f-bfd8-193b35e068e2"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: Telegram
-    headers:
-      Host: s5.868001.xyz
-- name: 🇨🇾 12 G
-  type: vless
-  server: 195.26.229.140
-  port: 80
-  uuid: "f9255507-1b65-433f-bfd8-193b35e068e2"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: Telegram🇨🇳 @WangCai2
-    headers:
-      Host: s5.868001.xyz
-- name: 🇩🇪 13 G
-  type: vless
-  server: 198.177.56.140
-  port: 80
-  uuid: "f9255507-1b65-433f-bfd8-193b35e068e2"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: Telegram🇨🇳 @WangCai2
-    headers:
-      Host: s5.868001.xyz
-- name: 🇩🇪 14 G
-  type: vless
-  server: 64.188.79.53
-  port: 48161
-  uuid: "72362320-3c4c-42cf-b76c-82f7b1832c47"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "github.com"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "cm3MNPIRmySoBcEgeH6QEuVyoPbBQyjRhs8UF_swl1E"
-    short-id: "41388e02247a3902"
-- name: 🇩🇪 15 G
-  type: vless
-  server: 159.195.27.99
+  server: 20.151.233.69
   port: 443
-  uuid: "859a537b-09cf-4bce-8da4-ecbb72950e3a"
+  uuid: "0b08b1c4-342a-4992-ac5f-5b9eff2327a0"
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: "1.oncloudnineservicestreang.com"
+  servername: "www.cloudflare.com"
+  client-fingerprint: safari
+  reality-opts:
+    public-key: "dalyPgxW_YMUf1O3cgNWc-3XDeShAzU43307V4rBr3s"
+    short-id: "64597fca"
+- name: 🇨🇭 2 G
+  type: vless
+  server: 194.147.214.197
+  port: 443
+  uuid: "7dc8bd4d-5c5d-4391-82d9-2424b16ec2a3"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "yahoo.com"
   client-fingerprint: firefox
   reality-opts:
-    public-key: "EuExqpNB141gtIjbCmU0yyurbBqiLtGjDg-n95JIuig"
-    short-id: "28415a7918168947"
-- name: 🇪🇪 16 G
+    public-key: "vtbYKmQECfnd9IQN3SvhlCWlWHwEzHRA0rD_wT46TnA"
+    short-id: "cd8971da5a669139"
+- name: 🇨🇭 3 G
   type: vless
-  server: 95.85.243.239
+  server: 103.227.84.101
+  port: 443
+  uuid: "9193a887-edb9-42d6-9f30-96291e72a2c1"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "tradingview.com"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "GkHB79Vhb0L7LCG9P2MNFfkHxwut2Qql1dQ8zz74pgM"
+    short-id: "0fafb2da2621"
+- name: 🇩🇪 4 G
+  type: vless
+  server: 144.31.25.85
+  port: 443
+  uuid: "5e58c2f5-b27d-4130-bd8f-dd05ee0f4825"
+  udp: true
+  network: grpc
+  tls: true
+  servername: "www.microsoft.com"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "AXjwyGxRT-mcOzOSNYYywOWoxZ9tEvfCTo3LZDxS5Dw"
+    short-id: "c0ffee12"
+  grpc-opts:
+    grpc-service-name: GrpcFuckRKN2
+- name: 🇪🇸 5 G
+  type: vless
+  server: 45.90.237.114
+  port: 443
+  uuid: "9193a887-edb9-42d6-9f30-96291e72a2c1"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "tradingview.com"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "GkHB79Vhb0L7LCG9P2MNFfkHxwut2Qql1dQ8zz74pgM"
+    short-id: "0fafb2da2621"
+- name: 🇫🇮 6 G
+  type: vless
+  server: 45.151.102.99
+  port: 9443
+  uuid: "ba302f7c-8ded-4ea6-99be-5abfd3ab6b3e"
+  udp: true
+  network: grpc
+  tls: true
+  servername: "maps.apple.com"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "OMlQAFrCMZ3DX0xlnbEZiByLBFzpUE8XJHJsrBzLdlY"
+    short-id: "2da4299da566b7"
+  grpc-opts:
+    grpc-service-name: your-custom-path
+- name: 🇫🇮 7 G
+  type: vless
+  server: fl.convert-flow.net
+  port: 443
+  uuid: "ac2b2b02-1add-4f1e-9d66-24b6937426a6"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "fl.convert-flow.net"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "5iF0c8rLWJeGPr9UpBxuSaQOzbxE8XbrQFHy5UMQc1w"
+    short-id: "00a61d55a07de885"
+- name: 🇫🇮 8 G
+  type: vless
+  server: fi.kuda-idem-nvrsk.ru
+  port: 30904
+  uuid: "736dc313-3eb7-46d0-9564-49e3ad1b3fa4"
+  udp: true
+  network: tcp
+  tls: true
+  servername: "vk.ru"
+  client-fingerprint: qq
+  reality-opts:
+    public-key: "G8lsgZQLC1cydeTSGFcugL-Zwxq-yIoaLONODkMuQA4"
+    short-id: "72"
+- name: 🇬🇧 9 G
+  type: vless
+  server: 82.26.193.251
+  port: 443
+  uuid: "7691de10-83e2-44fd-a2fa-0f31aad8efef"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "yahoo.com"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "vtbYKmQECfnd9IQN3SvhlCWlWHwEzHRA0rD_wT46TnA"
+    short-id: "cd8971da5a669139"
+- name: 🇭🇺 10 G
+  type: vless
+  server: 45.198.87.8
+  port: 8443
+  uuid: "7896c501-248f-4068-bc2f-363c91ba5122"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "storage.yandex.net"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg"
+    short-id: "2715592069f36fe7"
+- name: 🇮🇹 11 G
+  type: vless
+  server: 151.243.198.45
+  port: 443
+  uuid: "7691de10-83e2-44fd-a2fa-0f31aad8efef"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "yahoo.com"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "vtbYKmQECfnd9IQN3SvhlCWlWHwEzHRA0rD_wT46TnA"
+    short-id: "cd8971da5a669139"
+- name: 🇱🇹 12 G
+  type: vless
+  server: 45.194.10.52
+  port: 8443
+  uuid: "3e7cede4-721a-4807-b0a2-5fe6586af907"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "storage.yandex.net"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA"
+    short-id: "2cfb5a0ae8ab0cb0"
+- name: 🇱🇹 13 G
+  type: vless
+  server: 45.194.10.4
+  port: 8443
+  uuid: "3e7cede4-721a-4807-b0a2-5fe6586af907"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "storage.yandex.net"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA"
+    short-id: "2cfb5a0ae8ab0cb0"
+- name: 🇱🇹 14 G
+  type: vless
+  server: 45.194.10.131
+  port: 8443
+  uuid: "3e7cede4-721a-4807-b0a2-5fe6586af907"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "storage.yandex.net"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA"
+    short-id: "2cfb5a0ae8ab0cb0"
+- name: 🇱🇹 15 G
+  type: vless
+  server: 45.194.10.182
+  port: 8443
+  uuid: "3e7cede4-721a-4807-b0a2-5fe6586af907"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "storage.yandex.net"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA"
+    short-id: "2cfb5a0ae8ab0cb0"
+- name: 🇱🇹 16 G
+  type: vless
+  server: 45.194.10.125
+  port: 8443
+  uuid: "3e7cede4-721a-4807-b0a2-5fe6586af907"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "storage.yandex.net"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA"
+    short-id: "2cfb5a0ae8ab0cb0"
+- name: 🇱🇹 17 G
+  type: vless
+  server: 45.194.10.35
+  port: 8443
+  uuid: "3e7cede4-721a-4807-b0a2-5fe6586af907"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "storage.yandex.net"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA"
+    short-id: "2cfb5a0ae8ab0cb0"
+- name: 🇳🇱 18 G
+  type: vless
+  server: 2.27.12.207
+  port: 443
+  uuid: "9193a887-edb9-42d6-9f30-96291e72a2c1"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "tradingview.com"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "GkHB79Vhb0L7LCG9P2MNFfkHxwut2Qql1dQ8zz74pgM"
+    short-id: "0fafb2da2621"
+- name: 🇳🇱 19 G
+  type: vless
+  server: 2.26.2.173
   port: 443
   uuid: "dbfa97b8-f4fb-4687-96dc-a5a2aebfae11"
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: "est01.port-server.online"
+  servername: "nl01.port-server.online"
   client-fingerprint: firefox
   reality-opts:
-    public-key: "aNbj5QBUxwKIRnh9Z_0ZA-FmDELZKLb1YMUpId3OCU8"
-    short-id: "9902cda1645757ea"
-- name: 🇪🇸 17 G
+    public-key: "aG121VHPQfsuK_DYqAxQkh6moKXKqYQT2JFxNDjFBjo"
+    short-id: "44cac987d1070b5b"
+- name: 🇺🇸 20 G
   type: vless
-  server: 185.18.250.140
-  port: 80
-  uuid: "f9255507-1b65-433f-bfd8-193b35e068e2"
+  server: 193.233.202.211
+  port: 52573
+  uuid: "d7607a75-77a7-4af9-a67c-444c138ca8a7"
   udp: true
   network: ws
   tls: false
   ws-opts:
-    path: Telegram🇨🇳 @WangCai2
+    path: /
     headers:
-      Host: s5.868001.xyz
-- name: 🇫🇮 18 G
-  type: vless
-  server: web.poezdkafun.ru
-  port: 443
-  uuid: "efbb8405-fe89-4830-bc05-e2d1b575f8b5"
-  udp: true
-  network: grpc
-  tls: true
-  servername: "web.poezdkafun.ru"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "aFsY-EZjSNTomlAFShKwQIQMJ5pHiZQXXJpWvcz8WkQ"
-    short-id: "0858af97f4e7324d"
-  grpc-opts:
-    grpc-service-name: poezdkafun-grpc
-- name: 🇫🇮 19 G
-  type: vless
-  server: 31.13.208.240
-  port: 57176
-  uuid: "83bbdb45-4824-4870-b191-427b1e3d7a29"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "www.amd.com"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "UvZM3FjG0QECXEojqtYLxfUYqw96Q5J56ylZOWp4FBM"
-    short-id: "3818373396cb"
-- name: 🇫🇮 20 G
-  type: vless
-  server: 186.246.13.16
-  port: 443
-  uuid: "33de2596-d95d-412b-a8c2-410be7060ca3"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "fi.sellflow.org"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
-    short-id: ""
-- name: 🇫🇷 21 G
-  type: vless
-  server: 45.146.131.154
-  port: 8549
-  uuid: "0dd1365f-4765-4502-a20d-1e09516ae8f5"
-  udp: true
-  network: grpc
-  tls: true
-  servername: "www.microsoft.com"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "4IOWxdtudwyVdmZl1Z2CINSbYHgMk94Bet0hVlgkrXo"
-    short-id: "c4e8a1f29b3d6075"
-  grpc-opts:
-    grpc-service-name: service
-- name: 🇫🇷 22 G
-  type: vless
-  server: 46.226.161.161
-  port: 14302
-  uuid: "1dd5f2be-f124-4f35-9239-8abc042829c2"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "www.samsung.com"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "lw7-Msn5E2O6HbBdqMw9SvoDJgbDIvHss0UVQ9iZFRc"
-    short-id: "106f1604d65bb70c"
-- name: 🇬🇧 23 G
-  type: vless
-  server: 185.162.231.140
-  port: 80
-  uuid: "f9255507-1b65-433f-bfd8-193b35e068e2"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: Telegram🇨🇳 @WangCai2
-    headers:
-      Host: s5.868001.xyz
-- name: 🇬🇧 24 G
-  type: vless
-  server: 164.38.155.140
-  port: 80
-  uuid: "f9255507-1b65-433f-bfd8-193b35e068e2"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: Telegram🇨🇳 @WangCai2
-    headers:
-      Host: s5.868001.xyz
-- name: 🇬🇧 25 G
-  type: vless
-  server: 185.193.28.140
-  port: 80
-  uuid: "f9255507-1b65-433f-bfd8-193b35e068e2"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: Telegram🇨🇳+@WangCai2
-    headers:
-      Host: s5.868001.xyz
-- name: 🇬🇧 26 G
-  type: vless
-  server: 45.12.31.140
-  port: 80
-  uuid: "f9255507-1b65-433f-bfd8-193b35e068e2"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: Telegram
-    headers:
-      Host: s5.868001.xyz
-- name: 🇬🇧 27 G
-  type: vless
-  server: 185.162.228.140
-  port: 80
-  uuid: "f9255507-1b65-433f-bfd8-193b35e068e2"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: Telegram🇨🇳
-    headers:
-      Host: s5.868001.xyz
-- name: 🇬🇧 28 G
-  type: vless
-  server: 185.238.228.140
-  port: 80
-  uuid: "f9255507-1b65-433f-bfd8-193b35e068e2"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: Telegram🇨🇳 @WangCai2
-    headers:
-      Host: s5.868001.xyz
-- name: 🇬🇧 29 G
-  type: vless
-  server: 77.110.110.81
-  port: 14302
-  uuid: "1dd5f2be-f124-4f35-9239-8abc042829c2"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "www.samsung.com"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "lw7-Msn5E2O6HbBdqMw9SvoDJgbDIvHss0UVQ9iZFRc"
-    short-id: "106f1604d65bb70c"
-- name: 🇭🇰 30 G
-  type: vless
-  server: 27.50.49.140
-  port: 80
-  uuid: "f9255507-1b65-433f-bfd8-193b35e068e2"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: Telegram🇨🇳 @WangCai2
-    headers:
-      Host: s5.868001.xyz
-- name: 🇭🇰 31 G
-  type: vless
-  server: 103.160.204.140
-  port: 80
-  uuid: "f9255507-1b65-433f-bfd8-193b35e068e2"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: Telegram
-    headers:
-      Host: s5.868001.xyz
-- name: 🇭🇷 32 G
-  type: vless
-  server: 213.182.199.140
-  port: 80
-  uuid: "f9255507-1b65-433f-bfd8-193b35e068e2"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: Telegram🇨🇳 @WangCai2
-    headers:
-      Host: s5.868001.xyz
-- name: 🇭🇺 33 G
-  type: vless
-  server: 74.49.215.140
-  port: 80
-  uuid: "f9255507-1b65-433f-bfd8-193b35e068e2"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: Telegram🇨🇳 @WangCai2
-    headers:
-      Host: s5.868001.xyz
-- name: 🇮🇳 34 G
-  type: vless
-  server: 108.165.152.140
-  port: 80
-  uuid: "f9255507-1b65-433f-bfd8-193b35e068e2"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: Telegram🇨🇳+@WangCai2
-    headers:
-      Host: s5.868001.xyz
-- name: 🇲🇹 35 G
-  type: vless
-  server: 46.202.30.140
-  port: 80
-  uuid: "f9255507-1b65-433f-bfd8-193b35e068e2"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: Telegram🇨🇳 @WangCai2
-    headers:
-      Host: s5.868001.xyz
-- name: 🇳🇱 36 G
-  type: vless
-  server: 193.227.99.140
-  port: 80
-  uuid: "f9255507-1b65-433f-bfd8-193b35e068e2"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: Telegram🇨🇳 @WangCai2
-    headers:
-      Host: s5.868001.xyz
-- name: 🇳🇱 37 G
-  type: vless
-  server: 45.146.131.154
-  port: 8548
-  uuid: "0dd1365f-4765-4502-a20d-1e09516ae8f5"
-  udp: true
-  network: grpc
-  tls: true
-  servername: "www.microsoft.com"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "4IOWxdtudwyVdmZl1Z2CINSbYHgMk94Bet0hVlgkrXo"
-    short-id: "c4e8a1f29b3d6075"
-  grpc-opts:
-    grpc-service-name: service
-- name: 🇳🇱 38 G
-  type: vless
-  server: 103.112.69.210
-  port: 443
-  uuid: "40de6299-d792-4868-8a82-411ead0aa943"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "gateway.icloud.com"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "L0acYoTxKR5ix7LXAmP10cy06n2JjgkXTojGjtWAqww"
-    short-id: "ed7b9bdfedb9b8e5"
-- name: 🇳🇱 39 G
-  type: vless
-  server: nl-2.coinbridge.nl
-  port: 443
-  uuid: "3e9381fa-b6b0-42c8-8014-4818aa05b346"
-  udp: true
-  network: grpc
-  tls: true
-  servername: "google.com"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "kPBXTe2KCp55GrHS_qU_sF7ohUcT8Vu-e8i6Yd9MERI"
-    short-id: "d5c7f84e37e0c12d"
-  grpc-opts:
-    grpc-service-name: data-sync
-- name: 🇳🇱 40 G
-  type: vless
-  server: ams-01.gni-daed.ru
-  port: 443
-  uuid: "7c0f30a2-a7c1-43b1-bc51-20f07036a76e"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "ams-01.gni-daed.ru"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "L78hKnIWL5jdxw3R2NcY725t8QMqAfX8rGdYI46cFgs"
-    short-id: "a8399289e18af5f4"
-- name: 🇸🇬 41 G
-  type: vless
-  server: 45.8.211.140
-  port: 80
-  uuid: "f9255507-1b65-433f-bfd8-193b35e068e2"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: Telegram🇨🇳
-    headers:
-      Host: s5.868001.xyz
-- name: 🇹🇭 42 G
-  type: vless
-  server: 154.83.2.140
-  port: 80
-  uuid: "f9255507-1b65-433f-bfd8-193b35e068e2"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: Telegram🇨🇳 @WangCai2
-    headers:
-      Host: s5.868001.xyz
-- name: 🇺🇦 43 G
-  type: vless
-  server: 194.152.44.140
-  port: 80
-  uuid: "f9255507-1b65-433f-bfd8-193b35e068e2"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: Telegram🇨🇳 @WangCai2
-    headers:
-      Host: s5.868001.xyz
-- name: 🇺🇦 44 G
-  type: vless
-  server: 45.135.235.140
-  port: 80
-  uuid: "f9255507-1b65-433f-bfd8-193b35e068e2"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: Telegram🇨🇳 @WangCai2
-    headers:
-      Host: s5.868001.xyz
-- name: 🇺🇸 45 G
-  type: vless
-  server: 45.40.152.140
-  port: 80
-  uuid: "f9255507-1b65-433f-bfd8-193b35e068e2"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: Telegram🇨🇳 @WangCai2
-    headers:
-      Host: s5.868001.xyz
-- name: 🇺🇸 46 G
-  type: vless
-  server: 45.40.146.140
-  port: 80
-  uuid: "f9255507-1b65-433f-bfd8-193b35e068e2"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: Telegram🇨🇳 @WangCai2
-    headers:
-      Host: s5.868001.xyz
-- name: 🇺🇸 47 G
-  type: vless
-  server: 198.71.232.140
-  port: 80
-  uuid: "f9255507-1b65-433f-bfd8-193b35e068e2"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: Telegram🇨🇳 @WangCai2
-    headers:
-      Host: s5.868001.xyz
-- name: 🇺🇸 48 G
-  type: vless
-  server: 160.153.1.140
-  port: 80
-  uuid: "f9255507-1b65-433f-bfd8-193b35e068e2"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: Telegram🇨🇳+@WangCai2
-    headers:
-      Host: s5.868001.xyz
-- name: 🇺🇸 49 G
-  type: vless
-  server: 184.174.80.140
-  port: 80
-  uuid: "f9255507-1b65-433f-bfd8-193b35e068e2"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: Telegram🇨🇳 @WangCai2
-    headers:
-      Host: s5.868001.xyz
-- name: 🇺🇸 50 G
-  type: vless
-  server: 154.197.64.140
-  port: 80
-  uuid: "f9255507-1b65-433f-bfd8-193b35e068e2"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: Telegram🇨🇳+@WangCai2
-    headers:
-      Host: s5.868001.xyz
-- name: 🇺🇸 51 G
-  type: vless
-  server: 77.74.228.140
-  port: 80
-  uuid: "f9255507-1b65-433f-bfd8-193b35e068e2"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: Telegram🇨🇳+@WangCai2
-    headers:
-      Host: s5.868001.xyz
-- name: 🇺🇸 52 G
-  type: vless
-  server: 45.40.154.140
-  port: 80
-  uuid: "f9255507-1b65-433f-bfd8-193b35e068e2"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: Telegram🇨🇳+@WangCai2
-    headers:
-      Host: s5.868001.xyz
-- name: 🇺🇸 53 G
-  type: vless
-  server: 216.24.57.140
-  port: 80
-  uuid: "f9255507-1b65-433f-bfd8-193b35e068e2"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: Telegram🇨🇳 @WangCai2
-    headers:
-      Host: s5.868001.xyz
-- name: 🇺🇸 54 G
-  type: vless
-  server: 108.165.216.140
-  port: 80
-  uuid: "f9255507-1b65-433f-bfd8-193b35e068e2"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: Telegram🇨🇳 @WangCai2
-    headers:
-      Host: s5.868001.xyz
-- name: 🇺🇸 55 G
-  type: vless
-  server: 205.233.181.140
-  port: 80
-  uuid: "f9255507-1b65-433f-bfd8-193b35e068e2"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: Telegram🇨🇳 @WangCai2
-    headers:
-      Host: s5.868001.xyz
-- name: 🇺🇸 56 G
-  type: vless
-  server: 184.168.47.140
-  port: 80
-  uuid: "f9255507-1b65-433f-bfd8-193b35e068e2"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: Telegram🇨🇳 @WangCai2
-    headers:
-      Host: s5.868001.xyz
+      Host: 193.233.202.211
 proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - 🇦🇹 1 G
-  - 🇧🇿 2 G
-  - 🇧🇿 3 G
-  - 🇨🇦 4 G
-  - 🇨🇦 5 G
-  - 🇨🇼 6 G
-  - 🇨🇼 7 G
-  - 🇨🇾 8 G
-  - 🇨🇾 9 G
-  - 🇨🇾 10 G
-  - 🇨🇾 11 G
-  - 🇨🇾 12 G
-  - 🇩🇪 13 G
-  - 🇩🇪 14 G
-  - 🇩🇪 15 G
-  - 🇪🇪 16 G
-  - 🇪🇸 17 G
-  - 🇫🇮 18 G
-  - 🇫🇮 19 G
-  - 🇫🇮 20 G
-  - 🇫🇷 21 G
-  - 🇫🇷 22 G
-  - 🇬🇧 23 G
-  - 🇬🇧 24 G
-  - 🇬🇧 25 G
-  - 🇬🇧 26 G
-  - 🇬🇧 27 G
-  - 🇬🇧 28 G
-  - 🇬🇧 29 G
-  - 🇭🇰 30 G
-  - 🇭🇰 31 G
-  - 🇭🇷 32 G
-  - 🇭🇺 33 G
-  - 🇮🇳 34 G
-  - 🇲🇹 35 G
-  - 🇳🇱 36 G
-  - 🇳🇱 37 G
-  - 🇳🇱 38 G
-  - 🇳🇱 39 G
-  - 🇳🇱 40 G
-  - 🇸🇬 41 G
-  - 🇹🇭 42 G
-  - 🇺🇦 43 G
-  - 🇺🇦 44 G
-  - 🇺🇸 45 G
-  - 🇺🇸 46 G
-  - 🇺🇸 47 G
-  - 🇺🇸 48 G
-  - 🇺🇸 49 G
-  - 🇺🇸 50 G
-  - 🇺🇸 51 G
-  - 🇺🇸 52 G
-  - 🇺🇸 53 G
-  - 🇺🇸 54 G
-  - 🇺🇸 55 G
-  - 🇺🇸 56 G
+  - 🇨🇦 1 G
+  - 🇨🇭 2 G
+  - 🇨🇭 3 G
+  - 🇩🇪 4 G
+  - 🇪🇸 5 G
+  - 🇫🇮 6 G
+  - 🇫🇮 7 G
+  - 🇫🇮 8 G
+  - 🇬🇧 9 G
+  - 🇭🇺 10 G
+  - 🇮🇹 11 G
+  - 🇱🇹 12 G
+  - 🇱🇹 13 G
+  - 🇱🇹 14 G
+  - 🇱🇹 15 G
+  - 🇱🇹 16 G
+  - 🇱🇹 17 G
+  - 🇳🇱 18 G
+  - 🇳🇱 19 G
+  - 🇺🇸 20 G
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -772,61 +313,25 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 Авто (лучший)
-  - 🇦🇹 1 G
-  - 🇧🇿 2 G
-  - 🇧🇿 3 G
-  - 🇨🇦 4 G
-  - 🇨🇦 5 G
-  - 🇨🇼 6 G
-  - 🇨🇼 7 G
-  - 🇨🇾 8 G
-  - 🇨🇾 9 G
-  - 🇨🇾 10 G
-  - 🇨🇾 11 G
-  - 🇨🇾 12 G
-  - 🇩🇪 13 G
-  - 🇩🇪 14 G
-  - 🇩🇪 15 G
-  - 🇪🇪 16 G
-  - 🇪🇸 17 G
-  - 🇫🇮 18 G
-  - 🇫🇮 19 G
-  - 🇫🇮 20 G
-  - 🇫🇷 21 G
-  - 🇫🇷 22 G
-  - 🇬🇧 23 G
-  - 🇬🇧 24 G
-  - 🇬🇧 25 G
-  - 🇬🇧 26 G
-  - 🇬🇧 27 G
-  - 🇬🇧 28 G
-  - 🇬🇧 29 G
-  - 🇭🇰 30 G
-  - 🇭🇰 31 G
-  - 🇭🇷 32 G
-  - 🇭🇺 33 G
-  - 🇮🇳 34 G
-  - 🇲🇹 35 G
-  - 🇳🇱 36 G
-  - 🇳🇱 37 G
-  - 🇳🇱 38 G
-  - 🇳🇱 39 G
-  - 🇳🇱 40 G
-  - 🇸🇬 41 G
-  - 🇹🇭 42 G
-  - 🇺🇦 43 G
-  - 🇺🇦 44 G
-  - 🇺🇸 45 G
-  - 🇺🇸 46 G
-  - 🇺🇸 47 G
-  - 🇺🇸 48 G
-  - 🇺🇸 49 G
-  - 🇺🇸 50 G
-  - 🇺🇸 51 G
-  - 🇺🇸 52 G
-  - 🇺🇸 53 G
-  - 🇺🇸 54 G
-  - 🇺🇸 55 G
-  - 🇺🇸 56 G
+  - 🇨🇦 1 G
+  - 🇨🇭 2 G
+  - 🇨🇭 3 G
+  - 🇩🇪 4 G
+  - 🇪🇸 5 G
+  - 🇫🇮 6 G
+  - 🇫🇮 7 G
+  - 🇫🇮 8 G
+  - 🇬🇧 9 G
+  - 🇭🇺 10 G
+  - 🇮🇹 11 G
+  - 🇱🇹 12 G
+  - 🇱🇹 13 G
+  - 🇱🇹 14 G
+  - 🇱🇹 15 G
+  - 🇱🇹 16 G
+  - 🇱🇹 17 G
+  - 🇳🇱 18 G
+  - 🇳🇱 19 G
+  - 🇺🇸 20 G
 rules:
 - MATCH,PROXY
