@@ -3,34 +3,272 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇪 92b BP
+- name: 🇩🇪 23
   type: vless
-  server: comfort.noode.work
+  server: 147.45.251.9
+  port: 2053
+  uuid: "e0e44cfe-39b3-11f1-84d1-e6ad33f6a752"
+  udp: true
+  network: grpc
+  tls: true
+  servername: "cam-msk-4.videomonitor.cloud"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "uKbIByAq9ZpRu9XkvD8wnI1yLvDhEOjaV41YLz3TRF8"
+    short-id: "7332c990726046a2"
+  grpc-opts:
+    grpc-service-name: grpc-direct
+- name: 🇩🇪 3a BP
+  type: vless
+  server: cam-msk-7.videomonitor.cloud
+  port: 2053
+  uuid: "0a1afeba-642f-11f1-9ca8-da0cb7a547ac"
+  udp: true
+  network: grpc
+  tls: true
+  servername: "cam-msk-7.videomonitor.cloud"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "yjmr4nFrDGjHa32A9Uriq3co86CE-waGH3pmZt2_oQk"
+    short-id: "da5f3e182bc85077"
+  grpc-opts:
+    grpc-service-name: grpc-direct
+- name: 🇸🇪 152e
+  type: vless
+  server: se7.oncloudvpn.com
+  port: 64534
+  uuid: "b727c798-c7b5-41bd-a7f5-3b2c71f25c19"
+  udp: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: se7.oncloudvpn.com
+- name: 🇬🇧 143c
+  type: vless
+  server: swe.fast-cone.com
   port: 443
-  uuid: "cb5711c1-6d39-4296-b613-8936e49e3ad9"
+  uuid: "cf30deec-917f-4b1a-bb01-c48527cbc83a"
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: "comfort.self-cloud.work"
-  client-fingerprint: qq
+  servername: "swe.fast-cone.com"
+  client-fingerprint: edge
   reality-opts:
-    public-key: "qTfZpilVyQrFDIgxmEsd18Ph3c_-8O-R_af4o_WQ_Tg"
-    short-id: "f74c6a18133e2e72"
-- name: 🇩🇪 65 BP
+    public-key: "GmtqiNIkjg_TAy3_kOHSt2XbPV4w85ckf5l9kcIoI2A"
+    short-id: "44"
+- name: 🇳🇱 38b
   type: vless
-  server: 31.77.161.2
+  server: 154.83.159.14
   port: 8443
-  uuid: "a6704fb4-4874-4e6b-98f4-571b048e3d90"
+  uuid: "0047a8bc-0025-4d45-899b-c75c669f3ede"
   udp: true
   network: tcp
   tls: true
-  servername: "prod.de-node-01.security-sbrf.ru"
+  flow: xtls-rprx-vision
+  servername: "storage.yandex.net"
   client-fingerprint: firefox
   reality-opts:
-    public-key: "4XxjInQuDp4SqaYF03yQ1VY61exkKi9e0RS5-kgyxAE"
-    short-id: "db04ce8bdb8900f1"
-- name: 🇳🇱 100 BP
+    public-key: "LT_0j3zQkaqgtJHvyaG24xz0IfmXUswVCTeC75Qsgjo"
+    short-id: "6f15101ff2cc4887"
+- name: 🇩🇪 10b
+  type: vless
+  server: 85.239.38.231
+  port: 2053
+  uuid: "1d895fcc-62b4-11f1-9ca8-da0cb7a547ac"
+  udp: true
+  network: grpc
+  tls: true
+  servername: "cam-msk-1.videomonitor.cloud"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "Kpfb-cfRzFu3ytDc8BMl6Sif-HqoyW_cPcsI6wmhDls"
+    short-id: "3520f2ed9e5f92be"
+  grpc-opts:
+    grpc-service-name: grpc-direct
+- name: 🇵🇱 174j
+  type: vless
+  server: pl.oncloudvpn.com
+  port: 64534
+  uuid: "b727c798-c7b5-41bd-a7f5-3b2c71f25c19"
+  udp: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: pl.oncloudvpn.com
+- name: 🇫🇮 171h
+  type: vless
+  server: fi.oncloudvpn.com
+  port: 64534
+  uuid: "b727c798-c7b5-41bd-a7f5-3b2c71f25c19"
+  udp: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: fi.oncloudvpn.com
+- name: 🇩🇪 56c
+  type: vless
+  server: de.oncloudvpn.com
+  port: 64534
+  uuid: "b727c798-c7b5-41bd-a7f5-3b2c71f25c19"
+  udp: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: de.oncloudvpn.com
+- name: 🇫🇮 175k
+  type: vless
+  server: usa3.oncloudvpn.com
+  port: 64534
+  uuid: "b727c798-c7b5-41bd-a7f5-3b2c71f25c19"
+  udp: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: usa3.oncloudvpn.com
+- name: 🇨🇿 108d
+  type: vless
+  server: wl1.oncloudvpn.com
+  port: 443
+  uuid: "b727c798-c7b5-41bd-a7f5-3b2c71f25c19"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "wl1.oncloudvpn.com"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "1az_XYGwf1SX5RjaXXov8xBFqpbFlzYegZgFWULF1FY"
+    short-id: "f106"
+- name: 🇳🇱 110c
+  type: vless
+  server: 144.31.123.247
+  port: 443
+  uuid: "baeb9020-8fcd-444c-b95d-f76507816e6d"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "nl-root.sworkingvpn.com"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI"
+    short-id: "15bcc0a77c3cacdf"
+- name: 🇦🇱 61b
+  type: vless
+  server: 78.159.131.79
+  port: 443
+  uuid: "baeb9020-8fcd-444c-b95d-f76507816e6d"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "nl-root.sworkingvpn.com"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI"
+    short-id: "15bcc0a77c3cacdf"
+- name: 🇳🇱 172i
+  type: vless
+  server: nl4.oncloudvpn.com
+  port: 64534
+  uuid: "b727c798-c7b5-41bd-a7f5-3b2c71f25c19"
+  udp: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: nl4.oncloudvpn.com
+- name: 🇨🇿 159g
+  type: vless
+  server: cz.oncloudvpn.com
+  port: 64534
+  uuid: "b727c798-c7b5-41bd-a7f5-3b2c71f25c19"
+  udp: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: cz.oncloudvpn.com
+- name: 🇳🇱 14a
+  type: vless
+  server: nl3.oncloudvpn.com
+  port: 64534
+  uuid: "b727c798-c7b5-41bd-a7f5-3b2c71f25c19"
+  udp: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: nl3.oncloudvpn.com
+- name: 🇫🇮 41a
+  type: vless
+  server: 64.188.74.228
+  port: 443
+  uuid: "baeb9020-8fcd-444c-b95d-f76507816e6d"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "fl-root.sworkingvpn.com"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI"
+    short-id: "15bcc0a77c3cacdf"
+- name: 🇳🇱 30a
+  type: vless
+  server: 138.124.67.165
+  port: 443
+  uuid: "baeb9020-8fcd-444c-b95d-f76507816e6d"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "nl-root.sworkingvpn.com"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI"
+    short-id: "15bcc0a77c3cacdf"
+- name: 🇧🇬 154f
+  type: vless
+  server: bg2.oncloudvpn.com
+  port: 64534
+  uuid: "b727c798-c7b5-41bd-a7f5-3b2c71f25c19"
+  udp: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: bg2.oncloudvpn.com
+- name: 🇦🇹 86 BP
+  type: vless
+  server: 95.163.211.206
+  port: 443
+  uuid: "b2b8bd00-2e42-4875-8d7b-bcf97093a1d4"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "at.sellflow.org"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+    short-id: ""
+- name: 🇳🇱 100b
   type: vless
   server: 154.83.159.9
   port: 8443
@@ -44,71 +282,122 @@ proxies:
   reality-opts:
     public-key: "LT_0j3zQkaqgtJHvyaG24xz0IfmXUswVCTeC75Qsgjo"
     short-id: "6f15101ff2cc4887"
-- name: 🇳🇱 85
+- name: 🇳🇱 24c
   type: vless
-  server: fast.mohammadaz2.shop
-  port: 62803
-  uuid: "e286cebe-7473-44e9-8c30-273ac36ac83b"
+  server: 5.42.99.168
+  port: 2053
+  uuid: "ada18e5c-5e60-11f1-bd95-ee5f4ed81fa1"
   udp: true
-  network: tcp
+  network: grpc
   tls: true
-  servername: "www.yahoo.com"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "KSK5SkjSLgWF83rV8oJ1zArRQtfyN6R6yT0rPKlrh0E"
-    short-id: "479b"
-- name: 🇵🇱 10
-  type: vless
-  server: 144.31.131.38
-  port: 8443
-  uuid: "4cc2379d-9a8c-4270-9723-39ff75b8f564"
-  udp: true
-  network: tcp
-  tls: true
-  servername: "prod.pl-node-02.security-sbrf.ru"
+  servername: "api.gruztrack.online"
   client-fingerprint: firefox
   reality-opts:
-    public-key: "ivSYLLXu-f4slJOLrlZxhnq0nAAaCW-ct6ptzVUJxUs"
-    short-id: "db04ce8bdb8900f1"
-- name: 🇳🇱 125c BP
+    public-key: "75W-x6PKwwG6fJJbrIkGcsBgMKP7pQnw2HlM8oevDjM"
+    short-id: "e35c7f14cc807f4d"
+  grpc-opts:
+    grpc-service-name: grpc-direct
+- name: 🇰🇿 21b
   type: vless
-  server: nl2.noode.work
-  port: 443
-  uuid: "cb5711c1-6d39-4296-b613-8936e49e3ad9"
+  server: kz.oncloudvpn.com
+  port: 64534
+  uuid: "b727c798-c7b5-41bd-a7f5-3b2c71f25c19"
+  udp: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: kz.oncloudvpn.com
+- name: 🇩🇪 6
+  type: vless
+  server: 89.125.119.48
+  port: 8443
+  uuid: "cf038a28-8f85-41fc-9e86-ba99a3fdd0d9"
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: "tr187.self-cloud.work"
-  client-fingerprint: qq
+  servername: "mamakoko.morrisis.net"
+  client-fingerprint: firefox
   reality-opts:
-    public-key: "qTfZpilVyQrFDIgxmEsd18Ph3c_-8O-R_af4o_WQ_Tg"
-    short-id: "f74c6a18133e2e72"
-- name: 🇳🇱 38a
+    public-key: "EtkZdJxEpbkpER7tXmp2DnuozvILY4xIQymfBrsMJwo"
+    short-id: ""
+- name: 🇰🇿 17a
   type: vless
-  server: economy.self-cloud.work
+  server: 155.117.137.104
   port: 443
-  uuid: "cb5711c1-6d39-4296-b613-8936e49e3ad9"
+  uuid: "a29b529f-ef5d-4400-9d79-65f10ce033dd"
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: "economy.self-cloud.work"
-  client-fingerprint: qq
+  servername: "cdn4-35.yahoo.com"
+  client-fingerprint: firefox
   reality-opts:
-    public-key: "qTfZpilVyQrFDIgxmEsd18Ph3c_-8O-R_af4o_WQ_Tg"
-    short-id: "f74c6a18133e2e72"
+    public-key: "CMkW1axrhEXoiJ6anMz9XEjlfqlAtEZya7L0b5ZPMyw"
+    short-id: "e1d75c3d43f85999"
 proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - 🇸🇪 92b BP
-  - 🇩🇪 65 BP
-  - 🇳🇱 100 BP
-  - 🇳🇱 85
-  - 🇵🇱 10
-  - 🇳🇱 125c BP
-  - 🇳🇱 38a
+  - 🇩🇪 23
+  - 🇩🇪 3a BP
+  - 🇸🇪 152e
+  - 🇬🇧 143c
+  - 🇳🇱 38b
+  - 🇩🇪 10b
+  - 🇵🇱 174j
+  - 🇫🇮 171h
+  - 🇩🇪 56c
+  - 🇫🇮 175k
+  - 🇨🇿 108d
+  - 🇳🇱 110c
+  - 🇦🇱 61b
+  - 🇳🇱 172i
+  - 🇨🇿 159g
+  - 🇳🇱 14a
+  - 🇫🇮 41a
+  - 🇳🇱 30a
+  - 🇧🇬 154f
+  - 🇦🇹 86 BP
+  - 🇳🇱 100b
+  - 🇳🇱 24c
+  - 🇰🇿 21b
+  - 🇩🇪 6
+  - 🇰🇿 17a
+  url: https://www.gstatic.com/generate_204
+  interval: 60
+  tolerance: 80
+- name: 📁 Группа A
+  type: url-test
+  proxies:
+  - 🇳🇱 14a
+  - 🇫🇮 41a
+  - 🇰🇿 17a
+  - 🇩🇪 3a BP
+  - 🇳🇱 30a
+  url: https://www.gstatic.com/generate_204
+  interval: 60
+  tolerance: 80
+- name: 📁 Группа B
+  type: url-test
+  proxies:
+  - 🇰🇿 21b
+  - 🇦🇱 61b
+  - 🇳🇱 38b
+  - 🇩🇪 10b
+  - 🇳🇱 100b
+  url: https://www.gstatic.com/generate_204
+  interval: 60
+  tolerance: 80
+- name: 📁 Группа C
+  type: url-test
+  proxies:
+  - 🇩🇪 56c
+  - 🇳🇱 110c
+  - 🇳🇱 24c
+  - 🇬🇧 143c
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -116,12 +405,33 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 Авто (лучший)
-  - 🇸🇪 92b BP
-  - 🇩🇪 65 BP
-  - 🇳🇱 100 BP
-  - 🇳🇱 85
-  - 🇵🇱 10
-  - 🇳🇱 125c BP
-  - 🇳🇱 38a
+  - 📁 Группа A
+  - 📁 Группа B
+  - 📁 Группа C
+  - 🇩🇪 23
+  - 🇩🇪 3a BP
+  - 🇸🇪 152e
+  - 🇬🇧 143c
+  - 🇳🇱 38b
+  - 🇩🇪 10b
+  - 🇵🇱 174j
+  - 🇫🇮 171h
+  - 🇩🇪 56c
+  - 🇫🇮 175k
+  - 🇨🇿 108d
+  - 🇳🇱 110c
+  - 🇦🇱 61b
+  - 🇳🇱 172i
+  - 🇨🇿 159g
+  - 🇳🇱 14a
+  - 🇫🇮 41a
+  - 🇳🇱 30a
+  - 🇧🇬 154f
+  - 🇦🇹 86 BP
+  - 🇳🇱 100b
+  - 🇳🇱 24c
+  - 🇰🇿 21b
+  - 🇩🇪 6
+  - 🇰🇿 17a
 rules:
 - MATCH,PROXY
