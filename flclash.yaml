@@ -3,74 +3,20 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇪 152b
+- name: 🇭🇺 19
   type: vless
-  server: se7.oncloudvpn.com
-  port: 64534
-  uuid: "b727c798-c7b5-41bd-a7f5-3b2c71f25c19"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: se7.oncloudvpn.com
-- name: 🇳🇱 9
-  type: vless
-  server: yamabiko.proxy.rlwy.net
-  port: 20093
-  uuid: "@MAconnectt"
+  server: 37.221.210.58
+  port: 443
+  uuid: "ada4f294-b5c1-4de4-82ba-a654e2c3a30b"
   udp: true
   network: xhttp
   tls: true
-  servername: "is1-ssl.mzstatic.com"
+  servername: "hu99.bearbeer.digital"
   client-fingerprint: firefox
   reality-opts:
-    public-key: "_gcTnuegXCwu1yYHnCntC-lwbPvLo9n05UFzaXklgRk"
-    short-id: "9656"
-- name: 🇩🇪 218c
-  type: vless
-  server: de-s3.ru
-  port: 443
-  uuid: "f0b752da-101e-46dd-9860-3f089e71ec91"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "de-s3.ru"
-  client-fingerprint: edge
-  reality-opts:
-    public-key: "CmKaRa0TecpFSyn7OK6UTPPuWJ7ji2OwsaOBuUtSKGM"
-    short-id: "7a3f9e2b1c8d4f6a"
-- name: 🇳🇱 16 BP
-  type: vless
-  server: nid.hatvpn.org
-  port: 443
-  uuid: "ebf2b955-ebff-4913-9cc0-d9c56870cfbe"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "nid.hatvpn.org"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "PfG1V1-ODHD8CegoTVg8m4G4mw5S1QiA751yWKCkhBc"
-    short-id: "054602d818379876"
-- name: 🇩🇪 28c
-  type: vless
-  server: 84.32.223.22
-  port: 443
-  uuid: "205ba7f4-03c3-4568-bef8-fc7217e72585"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "cherry-de1.t1n2.com"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "A0oiMHyUXzvKw3vlEtfUulJ3ba8fjOKbSXg8PoRCgG8"
-    short-id: "dffc606759f342ec"
-- name: 🇵🇱 174g
+    public-key: "z-TKWOWgZLfzQ-wNdwXQqVwaUgCmbchM2Xtrk1NGynU"
+    short-id: ""
+- name: 🇵🇱 174f
   type: vless
   server: pl.oncloudvpn.com
   port: 64534
@@ -82,21 +28,15 @@ proxies:
     path: /
     headers:
       Host: pl.oncloudvpn.com
-- name: 🇳🇱 8a
+- name: 🇸🇪 243
   type: vless
-  server: 89.105.208.121
-  port: 443
-  uuid: "91d0fa43-e557-43e7-a731-f0c3d1fb306a"
+  server: 89.19.223.145
+  port: 8443
+  uuid: "f0b752da-101e-46dd-9860-3f089e71ec91"
   udp: true
   network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "n1.cloudgaming.one"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "ivgTfLR13A6xBsicIA28OPoav2tXlsstTTmGuETfnSk"
-    short-id: "6d6f13013d3e1d0c"
-- name: 🇫🇮 175h
+  tls: false
+- name: 🇫🇮 175g
   type: vless
   server: usa3.oncloudvpn.com
   port: 64534
@@ -108,41 +48,15 @@ proxies:
     path: /
     headers:
       Host: usa3.oncloudvpn.com
-- name: 🇳🇱 25b
+- name: 🇵🇱 233
   type: vless
-  server: 89.105.208.126
-  port: 443
-  uuid: "91d0fa43-e557-43e7-a731-f0c3d1fb306a"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "n1.cloudgaming.one"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "ivgTfLR13A6xBsicIA28OPoav2tXlsstTTmGuETfnSk"
-    short-id: "6d6f13013d3e1d0c"
-- name: 🇸🇪 12a
-  type: vless
-  server: se.s3-rus.ru
-  port: 443
-  uuid: "f0b752da-101e-46dd-9860-3f089e71ec91"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /api-se
-    headers:
-      Host: se.s3-rus.ru
-- name: 🇸🇪 243d
-  type: vless
-  server: 89.19.223.145
-  port: 8443
-  uuid: "f0b752da-101e-46dd-9860-3f089e71ec91"
+  server: 2.59.163.45
+  port: 59992
+  uuid: "9a9fe945246a431ebd051cb981464c8d"
   udp: true
   network: tcp
   tls: false
-- name: 🇫🇮 171e
+- name: 🇫🇮 171d
   type: vless
   server: fi.oncloudvpn.com
   port: 64534
@@ -154,33 +68,7 @@ proxies:
     path: /
     headers:
       Host: fi.oncloudvpn.com
-- name: 🇳🇱 11
-  type: vless
-  server: 89.105.208.124
-  port: 443
-  uuid: "91d0fa43-e557-43e7-a731-f0c3d1fb306a"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "n1.cloudgaming.one"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "ivgTfLR13A6xBsicIA28OPoav2tXlsstTTmGuETfnSk"
-    short-id: "6d6f13013d3e1d0c"
-- name: 🇳🇱 14a
-  type: vless
-  server: nl3.oncloudvpn.com
-  port: 64534
-  uuid: "b727c798-c7b5-41bd-a7f5-3b2c71f25c19"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: nl3.oncloudvpn.com
-- name: 🇵🇱 24a
+- name: 🇵🇱 24
   type: vless
   server: plkrep.tgflow.me
   port: 443
@@ -194,55 +82,7 @@ proxies:
   reality-opts:
     public-key: "5SNuJakUsFk3udLSxuAhlzrdC6Xr2snwTIHvHwT5UiI"
     short-id: "fe8950f135674cfc"
-- name: 🇵🇱 233
-  type: vless
-  server: 2.59.163.45
-  port: 59992
-  uuid: "9a9fe945246a431ebd051cb981464c8d"
-  udp: true
-  network: tcp
-  tls: false
-- name: 🇭🇰 88b
-  type: vless
-  server: 31.77.146.252.cdn-one.org
-  port: 443
-  uuid: "181d203a-e738-4aa4-a2d8-d82765f1c0c5"
-  udp: true
-  network: tcp
-  tls: true
-  servername: "31-77-146-252.cdn-one.org"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: "OSiNJZQmDVJdoemKMEV5j60iRIQmZwPJUaXBgqUlDD4"
-    short-id: "6d0ba5f4818072c7"
-- name: 🇳🇱 41e
-  type: vless
-  server: 89.105.208.123
-  port: 443
-  uuid: "91d0fa43-e557-43e7-a731-f0c3d1fb306a"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "n1.cloudgaming.one"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "ivgTfLR13A6xBsicIA28OPoav2tXlsstTTmGuETfnSk"
-    short-id: "6d6f13013d3e1d0c"
-- name: 🇭🇺 19a
-  type: vless
-  server: 37.221.210.58
-  port: 443
-  uuid: "ada4f294-b5c1-4de4-82ba-a654e2c3a30b"
-  udp: true
-  network: xhttp
-  tls: true
-  servername: "hu99.bearbeer.digital"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "z-TKWOWgZLfzQ-wNdwXQqVwaUgCmbchM2Xtrk1NGynU"
-    short-id: ""
-- name: 🇨🇿 159d
+- name: 🇨🇿 159c
   type: vless
   server: cz.oncloudvpn.com
   port: 64534
@@ -254,35 +94,21 @@ proxies:
     path: /
     headers:
       Host: cz.oncloudvpn.com
-- name: 🇳🇱 39b BP
+- name: 🇬🇧 2a
   type: vless
-  server: 192.142.8.200
+  server: 147.45.78.118
   port: 443
-  uuid: "eb295947-24de-0001-9b8f-85431e5fe493"
+  uuid: "0281c1be-e123-480a-a104-d0b506ecfc7d"
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: "md-editor.xyz"
-  client-fingerprint: qq
+  servername: "www.google.com"
+  client-fingerprint: firefox
   reality-opts:
-    public-key: "6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY"
-    short-id: ""
-- name: 🇫🇮 62b
-  type: vless
-  server: fl-s3.ru
-  port: 443
-  uuid: "f0b752da-101e-46dd-9860-3f089e71ec91"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "fl-s3.ru"
-  client-fingerprint: edge
-  reality-opts:
-    public-key: "0e7XhRGhWbMQVvqu4ELdx5G0uSocM_En9iSmKVWM5C4"
-    short-id: "7a3f9e2b1c8d4f6a"
-- name: 🇧🇬 154c
+    public-key: "CJoXyyPzLgs7qeqEjvrnMlpYOPVfNHqPF0uuZpq_QUU"
+    short-id: "abcd1234"
+- name: 🇧🇬 154b
   type: vless
   server: bg2.oncloudvpn.com
   port: 64534
@@ -294,7 +120,7 @@ proxies:
     path: /
     headers:
       Host: bg2.oncloudvpn.com
-- name: 🇳🇱 172f
+- name: 🇳🇱 172e
   type: vless
   server: nl4.oncloudvpn.com
   port: 64534
@@ -306,21 +132,7 @@ proxies:
     path: /
     headers:
       Host: nl4.oncloudvpn.com
-- name: 🇭🇺 38d
-  type: vless
-  server: 45.195.111.77
-  port: 443
-  uuid: "4af89b09-ce0c-4dab-b798-629d8b900af0"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "storage.yandex.net"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg"
-    short-id: "f4b4a6365558ea2e"
-- name: 🇳🇱 100f
+- name: 🇳🇱 100b
   type: vless
   server: 154.83.159.9
   port: 8443
@@ -334,23 +146,9 @@ proxies:
   reality-opts:
     public-key: "LT_0j3zQkaqgtJHvyaG24xz0IfmXUswVCTeC75Qsgjo"
     short-id: "6f15101ff2cc4887"
-- name: 🇩🇪 6
+- name: 🇳🇱 14a
   type: vless
-  server: 89.125.119.48
-  port: 8443
-  uuid: "cf038a28-8f85-41fc-9e86-ba99a3fdd0d9"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "mamakoko.morrisis.net"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "EtkZdJxEpbkpER7tXmp2DnuozvILY4xIQymfBrsMJwo"
-    short-id: ""
-- name: 🇦🇹 176i
-  type: vless
-  server: at.oncloudvpn.com
+  server: nl3.oncloudvpn.com
   port: 64534
   uuid: "b727c798-c7b5-41bd-a7f5-3b2c71f25c19"
   udp: true
@@ -359,61 +157,24 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: at.oncloudvpn.com
+      Host: nl3.oncloudvpn.com
 proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - 🇸🇪 152b
-  - 🇳🇱 9
-  - 🇩🇪 218c
-  - 🇳🇱 16 BP
-  - 🇩🇪 28c
-  - 🇵🇱 174g
-  - 🇳🇱 8a
-  - 🇫🇮 175h
-  - 🇳🇱 25b
-  - 🇸🇪 12a
-  - 🇸🇪 243d
-  - 🇫🇮 171e
-  - 🇳🇱 11
-  - 🇳🇱 14a
-  - 🇵🇱 24a
+  - 🇭🇺 19
+  - 🇵🇱 174f
+  - 🇸🇪 243
+  - 🇫🇮 175g
   - 🇵🇱 233
-  - 🇭🇰 88b
-  - 🇳🇱 41e
-  - 🇭🇺 19a
-  - 🇨🇿 159d
-  - 🇳🇱 39b BP
-  - 🇫🇮 62b
-  - 🇧🇬 154c
-  - 🇳🇱 172f
-  - 🇭🇺 38d
-  - 🇳🇱 100f
-  - 🇩🇪 6
-  - 🇦🇹 176i
-  url: https://www.gstatic.com/generate_204
-  interval: 60
-  tolerance: 80
-- name: 📁 Группа A
-  type: url-test
-  proxies:
+  - 🇫🇮 171d
+  - 🇵🇱 24
+  - 🇨🇿 159c
+  - 🇬🇧 2a
+  - 🇧🇬 154b
+  - 🇳🇱 172e
+  - 🇳🇱 100b
   - 🇳🇱 14a
-  - 🇸🇪 12a
-  - 🇳🇱 8a
-  - 🇭🇺 19a
-  - 🇵🇱 24a
-  url: https://www.gstatic.com/generate_204
-  interval: 60
-  tolerance: 80
-- name: 📁 Группа B
-  type: url-test
-  proxies:
-  - 🇸🇪 152b
-  - 🇫🇮 62b
-  - 🇳🇱 25b
-  - 🇳🇱 39b BP
-  - 🇭🇰 88b
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -421,35 +182,18 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 Авто (лучший)
-  - 📁 Группа A
-  - 📁 Группа B
-  - 🇸🇪 152b
-  - 🇳🇱 9
-  - 🇩🇪 218c
-  - 🇳🇱 16 BP
-  - 🇩🇪 28c
-  - 🇵🇱 174g
-  - 🇳🇱 8a
-  - 🇫🇮 175h
-  - 🇳🇱 25b
-  - 🇸🇪 12a
-  - 🇸🇪 243d
-  - 🇫🇮 171e
-  - 🇳🇱 11
-  - 🇳🇱 14a
-  - 🇵🇱 24a
+  - 🇭🇺 19
+  - 🇵🇱 174f
+  - 🇸🇪 243
+  - 🇫🇮 175g
   - 🇵🇱 233
-  - 🇭🇰 88b
-  - 🇳🇱 41e
-  - 🇭🇺 19a
-  - 🇨🇿 159d
-  - 🇳🇱 39b BP
-  - 🇫🇮 62b
-  - 🇧🇬 154c
-  - 🇳🇱 172f
-  - 🇭🇺 38d
-  - 🇳🇱 100f
-  - 🇩🇪 6
-  - 🇦🇹 176i
+  - 🇫🇮 171d
+  - 🇵🇱 24
+  - 🇨🇿 159c
+  - 🇬🇧 2a
+  - 🇧🇬 154b
+  - 🇳🇱 172e
+  - 🇳🇱 100b
+  - 🇳🇱 14a
 rules:
 - MATCH,PROXY
