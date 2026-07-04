@@ -3,7 +3,22 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇪🇪 87d
+- name: 🇩🇪 75b
+  type: vless
+  server: 89.208.229.243
+  port: 2053
+  uuid: "25ecfd72-76ff-11f1-9625-ea86131eb9f3"
+  udp: true
+  network: grpc
+  tls: true
+  servername: "hh.ru"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "WUY8Lb4LfUUKLzZK3oSlRAdoy-Iu0w3Ait1-jtxbW1M"
+    short-id: "7824dfd19eab1acc"
+  grpc-opts:
+    grpc-service-name: grpc-direct
+- name: 🇪🇪 87e
   type: vless
   server: 5.188.140.216
   port: 2053
@@ -18,77 +33,21 @@ proxies:
     short-id: "4b685844d0b4f724"
   grpc-opts:
     grpc-service-name: grpc-direct
-- name: 🇱🇻 80b
+- name: 🇩🇪 93b
   type: vless
-  server: 201.51.7.247
+  server: de.monkeyisland.xyz
   port: 443
-  uuid: "f794fa90-d14d-4b1b-9723-5ef11750cacc"
+  uuid: "3e0a91ec-05a3-461f-9367-14b289a5b54b"
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: "yk.mediastreamer.online"
+  servername: "de.monkeyisland.xyz"
   client-fingerprint: firefox
   reality-opts:
-    public-key: "CBXDYxidOn1LoaTLFODqHrq5L05Y2jdcY2owMhgR6iw"
-    short-id: "3173c7a33eab82"
-- name: 🇫🇮 53d
-  type: vless
-  server: 45.198.108.152
-  port: 443
-  uuid: "701ea834-7c31-4544-95d6-f0a4dfe40b36"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "storage.yandex.net"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "KYlgK96xPZJq10GbhF-BaCXRxXc9XzxzfICdooYvMlg"
-    short-id: "d020b987f84eb78a"
-- name: 🇪🇪 83c
-  type: vless
-  server: 5.188.140.194
-  port: 2053
-  uuid: "25ecfd72-76ff-11f1-9625-ea86131eb9f3"
-  udp: true
-  network: grpc
-  tls: true
-  servername: "hh.ru"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "WUY8Lb4LfUUKLzZK3oSlRAdoy-Iu0w3Ait1-jtxbW1M"
-    short-id: "7824dfd19eab1acc"
-  grpc-opts:
-    grpc-service-name: grpc-direct
-- name: 🇩🇪 56
-  type: vless
-  server: 161.104.16.112
-  port: 8880
-  uuid: "e52fedb7-befe-4615-a53e-89d446f74bf4"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /cdn/assets/stream
-    headers:
-      Host: cnd.finland2.nexusdataroute.com
-- name: 🇨🇭 49c
-  type: vless
-  server: 152.233.31.72
-  port: 16923
-  uuid: "732a3a5c-5dee-42c7-a898-139e35b78c5d"
-  udp: true
-  network: grpc
-  tls: true
-  servername: "api-maps.yandex.ru"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "_QeslG3rHGM7DoM99pYC8-jpc16pM2MbNZ6NRMoxmHA"
-    short-id: "10ffb85da1c2d986"
-  grpc-opts:
-    grpc-service-name: neurex
-- name: 🇨🇭 78a
+    public-key: "2AKBmK0PMf2zUMhRo1Ad-WNf_XoRk3AN-SGo6ZdhxA4"
+    short-id: "19e741a804f420a7"
+- name: 🇨🇭 78c
   type: vless
   server: 152.233.31.71
   port: 16923
@@ -103,7 +62,47 @@ proxies:
     short-id: "10ffb85da1c2d986"
   grpc-opts:
     grpc-service-name: neurex
-- name: 🇬🇧 88b
+- name: 🇨🇭 49a
+  type: vless
+  server: 152.233.31.72
+  port: 16923
+  uuid: "732a3a5c-5dee-42c7-a898-139e35b78c5d"
+  udp: true
+  network: grpc
+  tls: true
+  servername: "api-maps.yandex.ru"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "_QeslG3rHGM7DoM99pYC8-jpc16pM2MbNZ6NRMoxmHA"
+    short-id: "10ffb85da1c2d986"
+  grpc-opts:
+    grpc-service-name: neurex
+- name: 🇵🇱 174e
+  type: vless
+  server: pl.oncloudvpn.com
+  port: 64534
+  uuid: "b727c798-c7b5-41bd-a7f5-3b2c71f25c19"
+  udp: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: pl.oncloudvpn.com
+- name: 🇭🇺 19
+  type: vless
+  server: 37.221.210.58
+  port: 443
+  uuid: "ada4f294-b5c1-4de4-82ba-a654e2c3a30b"
+  udp: true
+  network: xhttp
+  tls: true
+  servername: "hu99.bearbeer.digital"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "z-TKWOWgZLfzQ-wNdwXQqVwaUgCmbchM2Xtrk1NGynU"
+    short-id: ""
+- name: 🇬🇧 88
   type: vless
   server: app.oneoker.com
   port: 443
@@ -118,30 +117,14 @@ proxies:
     short-id: "1c63aa937542d3c0"
   grpc-opts:
     grpc-service-name: api.v1.StreamService
-- name: 🇵🇱 174e
+- name: 🇸🇪 243
   type: vless
-  server: pl.oncloudvpn.com
-  port: 64534
-  uuid: "b727c798-c7b5-41bd-a7f5-3b2c71f25c19"
+  server: 89.19.223.145
+  port: 8443
+  uuid: "f0b752da-101e-46dd-9860-3f089e71ec91"
   udp: true
-  network: ws
+  network: tcp
   tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: pl.oncloudvpn.com
-- name: 🇫🇮 175f
-  type: vless
-  server: usa3.oncloudvpn.com
-  port: 64534
-  uuid: "b727c798-c7b5-41bd-a7f5-3b2c71f25c19"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: usa3.oncloudvpn.com
 - name: 🇬🇧 16a
   type: vless
   server: uk.monkeyisland.xyz
@@ -156,11 +139,23 @@ proxies:
   reality-opts:
     public-key: "2AKBmK0PMf2zUMhRo1Ad-WNf_XoRk3AN-SGo6ZdhxA4"
     short-id: "f66c289040d589ee"
-- name: 🇸🇪 243
+- name: 🇫🇮 175f
   type: vless
-  server: 89.19.223.145
-  port: 8443
-  uuid: "f0b752da-101e-46dd-9860-3f089e71ec91"
+  server: usa3.oncloudvpn.com
+  port: 64534
+  uuid: "b727c798-c7b5-41bd-a7f5-3b2c71f25c19"
+  udp: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: usa3.oncloudvpn.com
+- name: 🇵🇱 233
+  type: vless
+  server: 2.59.163.45
+  port: 59992
+  uuid: "9a9fe945246a431ebd051cb981464c8d"
   udp: true
   network: tcp
   tls: false
@@ -176,21 +171,20 @@ proxies:
     path: /
     headers:
       Host: fi.oncloudvpn.com
-- name: 🇪🇪 75b
+- name: 🇱🇹 95
   type: vless
-  server: 89.208.229.243
-  port: 2053
-  uuid: "25ecfd72-76ff-11f1-9625-ea86131eb9f3"
+  server: 45.196.31.77
+  port: 8443
+  uuid: "a1472a7d-ca70-4490-a5a5-81537599861c"
   udp: true
-  network: grpc
+  network: tcp
   tls: true
-  servername: "hh.ru"
+  flow: xtls-rprx-vision
+  servername: "storage.yandex.net"
   client-fingerprint: chrome
   reality-opts:
-    public-key: "WUY8Lb4LfUUKLzZK3oSlRAdoy-Iu0w3Ait1-jtxbW1M"
-    short-id: "7824dfd19eab1acc"
-  grpc-opts:
-    grpc-service-name: grpc-direct
+    public-key: "L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA"
+    short-id: "2cfb5a0ae8ab0cb0"
 - name: 🇱🇹 92
   type: vless
   server: 45.196.31.199
@@ -205,32 +199,21 @@ proxies:
   reality-opts:
     public-key: "L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA"
     short-id: "2cfb5a0ae8ab0cb0"
-- name: 🇫🇮 85 BP
+- name: 🇳🇱 94g
   type: vless
-  server: 178.250.242.157
+  server: 62.152.56.73
   port: 443
-  uuid: "5bead282-fe56-40a9-a09b-065b78207842"
+  uuid: "b5271850-37c5-4f17-b6c9-103501aaf5b4"
   udp: true
   network: tcp
   tls: true
-  servername: "ya.ru"
-  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  servername: "wl-12.nodes.ac"
+  client-fingerprint: qq
   reality-opts:
-    public-key: "qKA6VHyCok50-RsGca0EjTJgWJqKb16K6C-dEEuBBiA"
-    short-id: "e06dc9"
-- name: 🇳🇱 172d
-  type: vless
-  server: nl4.oncloudvpn.com
-  port: 64534
-  uuid: "b727c798-c7b5-41bd-a7f5-3b2c71f25c19"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: nl4.oncloudvpn.com
-- name: 🇵🇱 24a
+    public-key: "lh3qj3VX335HGH2T3xQ8RHZ4v3zEStbz6ENiPwkILSg"
+    short-id: "cf43c0c197cd464a"
+- name: 🇵🇱 24
   type: vless
   server: plkrep.tgflow.me
   port: 443
@@ -244,40 +227,6 @@ proxies:
   reality-opts:
     public-key: "5SNuJakUsFk3udLSxuAhlzrdC6Xr2snwTIHvHwT5UiI"
     short-id: "fe8950f135674cfc"
-- name: 🇭🇺 19
-  type: vless
-  server: 37.221.210.58
-  port: 443
-  uuid: "ada4f294-b5c1-4de4-82ba-a654e2c3a30b"
-  udp: true
-  network: xhttp
-  tls: true
-  servername: "hu99.bearbeer.digital"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "z-TKWOWgZLfzQ-wNdwXQqVwaUgCmbchM2Xtrk1NGynU"
-    short-id: ""
-- name: 🇵🇱 233
-  type: vless
-  server: 2.59.163.45
-  port: 59992
-  uuid: "9a9fe945246a431ebd051cb981464c8d"
-  udp: true
-  network: tcp
-  tls: false
-- name: 🇷🇴 47b
-  type: vless
-  server: 89.125.201.223
-  port: 8443
-  uuid: "534773cf-7d0b-4acf-ac4f-dbc79e42a9a8"
-  udp: true
-  network: xhttp
-  tls: true
-  servername: "www.vk.ru"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "4bgFY_YO2RjobBYyYjfEfHIX_dyhtvaDrN086wl1TmE"
-    short-id: "99ea"
 - name: 🇬🇧 2
   type: vless
   server: 147.45.78.118
@@ -292,7 +241,21 @@ proxies:
   reality-opts:
     public-key: "CJoXyyPzLgs7qeqEjvrnMlpYOPVfNHqPF0uuZpq_QUU"
     short-id: "abcd1234"
-- name: 🇬🇧 38a
+- name: 🇫🇮 53a
+  type: vless
+  server: 45.198.108.152
+  port: 443
+  uuid: "701ea834-7c31-4544-95d6-f0a4dfe40b36"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "storage.yandex.net"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "KYlgK96xPZJq10GbhF-BaCXRxXc9XzxzfICdooYvMlg"
+    short-id: "d020b987f84eb78a"
+- name: 🇬🇧 38
   type: vless
   server: 45.86.159.133
   port: 2085
@@ -302,18 +265,6 @@ proxies:
   tls: false
   grpc-opts:
     grpc-service-name: vless
-- name: 🇨🇿 159b
-  type: vless
-  server: cz.oncloudvpn.com
-  port: 64534
-  uuid: "b727c798-c7b5-41bd-a7f5-3b2c71f25c19"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: cz.oncloudvpn.com
 - name: 🇧🇬 154a
   type: vless
   server: bg2.oncloudvpn.com
@@ -326,7 +277,20 @@ proxies:
     path: /
     headers:
       Host: bg2.oncloudvpn.com
-- name: 🇳🇱 100e
+- name: 🇷🇴 47
+  type: vless
+  server: 89.125.201.223
+  port: 8443
+  uuid: "534773cf-7d0b-4acf-ac4f-dbc79e42a9a8"
+  udp: true
+  network: xhttp
+  tls: true
+  servername: "www.vk.ru"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "4bgFY_YO2RjobBYyYjfEfHIX_dyhtvaDrN086wl1TmE"
+    short-id: "99ea"
+- name: 🇳🇱 100b
   type: vless
   server: 154.83.159.9
   port: 8443
@@ -340,36 +304,90 @@ proxies:
   reality-opts:
     public-key: "LT_0j3zQkaqgtJHvyaG24xz0IfmXUswVCTeC75Qsgjo"
     short-id: "6f15101ff2cc4887"
+- name: 🇨🇿 159b
+  type: vless
+  server: cz.oncloudvpn.com
+  port: 64534
+  uuid: "b727c798-c7b5-41bd-a7f5-3b2c71f25c19"
+  udp: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: cz.oncloudvpn.com
+- name: 🇩🇪 90f BP
+  type: vless
+  server: 37.9.4.224
+  port: 443
+  uuid: "b5271850-37c5-4f17-b6c9-103501aaf5b4"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "wl-2-1.legendary.ac"
+  client-fingerprint: qq
+  reality-opts:
+    public-key: "uL4x8EbCl080G43kFlv8nbpEyseWi1Dc_bl8F7lWtm8"
+    short-id: "aa03ec59c9695e91"
+- name: 🇱🇻 83d
+  type: vless
+  server: 5.188.140.194
+  port: 2053
+  uuid: "25ecfd72-76ff-11f1-9625-ea86131eb9f3"
+  udp: true
+  network: grpc
+  tls: true
+  servername: "hh.ru"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "WUY8Lb4LfUUKLzZK3oSlRAdoy-Iu0w3Ait1-jtxbW1M"
+    short-id: "7824dfd19eab1acc"
+  grpc-opts:
+    grpc-service-name: grpc-direct
+- name: 🇳🇱 172d
+  type: vless
+  server: nl4.oncloudvpn.com
+  port: 64534
+  uuid: "b727c798-c7b5-41bd-a7f5-3b2c71f25c19"
+  udp: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: nl4.oncloudvpn.com
 proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - 🇪🇪 87d
-  - 🇱🇻 80b
-  - 🇫🇮 53d
-  - 🇪🇪 83c
-  - 🇩🇪 56
-  - 🇨🇭 49c
-  - 🇨🇭 78a
-  - 🇬🇧 88b
+  - 🇩🇪 75b
+  - 🇪🇪 87e
+  - 🇩🇪 93b
+  - 🇨🇭 78c
+  - 🇨🇭 49a
   - 🇵🇱 174e
-  - 🇫🇮 175f
-  - 🇬🇧 16a
-  - 🇸🇪 243
-  - 🇫🇮 171c
-  - 🇪🇪 75b
-  - 🇱🇹 92
-  - 🇫🇮 85 BP
-  - 🇳🇱 172d
-  - 🇵🇱 24a
   - 🇭🇺 19
+  - 🇬🇧 88
+  - 🇸🇪 243
+  - 🇬🇧 16a
+  - 🇫🇮 175f
   - 🇵🇱 233
-  - 🇷🇴 47b
+  - 🇫🇮 171c
+  - 🇱🇹 95
+  - 🇱🇹 92
+  - 🇳🇱 94g
+  - 🇵🇱 24
   - 🇬🇧 2
-  - 🇬🇧 38a
-  - 🇨🇿 159b
+  - 🇫🇮 53a
+  - 🇬🇧 38
   - 🇧🇬 154a
-  - 🇳🇱 100e
+  - 🇷🇴 47
+  - 🇳🇱 100b
+  - 🇨🇿 159b
+  - 🇩🇪 90f BP
+  - 🇱🇻 83d
+  - 🇳🇱 172d
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -377,9 +395,8 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇧🇬 154a
-  - 🇵🇱 24a
-  - 🇬🇧 38a
-  - 🇨🇭 78a
+  - 🇫🇮 53a
+  - 🇨🇭 49a
   - 🇬🇧 16a
   url: https://www.gstatic.com/generate_204
   interval: 60
@@ -388,10 +405,9 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇨🇿 159b
-  - 🇱🇻 80b
-  - 🇷🇴 47b
-  - 🇬🇧 88b
-  - 🇪🇪 75b
+  - 🇳🇱 100b
+  - 🇩🇪 75b
+  - 🇩🇪 93b
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -401,31 +417,32 @@ proxy-groups:
   - 🚀 Авто (лучший)
   - 📁 Группа A
   - 📁 Группа B
-  - 🇪🇪 87d
-  - 🇱🇻 80b
-  - 🇫🇮 53d
-  - 🇪🇪 83c
-  - 🇩🇪 56
-  - 🇨🇭 49c
-  - 🇨🇭 78a
-  - 🇬🇧 88b
+  - 🇩🇪 75b
+  - 🇪🇪 87e
+  - 🇩🇪 93b
+  - 🇨🇭 78c
+  - 🇨🇭 49a
   - 🇵🇱 174e
-  - 🇫🇮 175f
-  - 🇬🇧 16a
-  - 🇸🇪 243
-  - 🇫🇮 171c
-  - 🇪🇪 75b
-  - 🇱🇹 92
-  - 🇫🇮 85 BP
-  - 🇳🇱 172d
-  - 🇵🇱 24a
   - 🇭🇺 19
+  - 🇬🇧 88
+  - 🇸🇪 243
+  - 🇬🇧 16a
+  - 🇫🇮 175f
   - 🇵🇱 233
-  - 🇷🇴 47b
+  - 🇫🇮 171c
+  - 🇱🇹 95
+  - 🇱🇹 92
+  - 🇳🇱 94g
+  - 🇵🇱 24
   - 🇬🇧 2
-  - 🇬🇧 38a
-  - 🇨🇿 159b
+  - 🇫🇮 53a
+  - 🇬🇧 38
   - 🇧🇬 154a
-  - 🇳🇱 100e
+  - 🇷🇴 47
+  - 🇳🇱 100b
+  - 🇨🇿 159b
+  - 🇩🇪 90f BP
+  - 🇱🇻 83d
+  - 🇳🇱 172d
 rules:
 - MATCH,PROXY
