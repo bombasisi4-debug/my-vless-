@@ -3,19 +3,14 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇺 19
+- name: 🇸🇪 243
   type: vless
-  server: 37.221.210.58
-  port: 443
-  uuid: "ada4f294-b5c1-4de4-82ba-a654e2c3a30b"
+  server: 89.19.223.145
+  port: 8443
+  uuid: "f0b752da-101e-46dd-9860-3f089e71ec91"
   udp: true
-  network: xhttp
-  tls: true
-  servername: "hu99.bearbeer.digital"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "z-TKWOWgZLfzQ-wNdwXQqVwaUgCmbchM2Xtrk1NGynU"
-    short-id: ""
+  network: tcp
+  tls: false
 - name: 🇵🇱 174e
   type: vless
   server: pl.oncloudvpn.com
@@ -28,20 +23,6 @@ proxies:
     path: /
     headers:
       Host: pl.oncloudvpn.com
-- name: 🇩🇪 93
-  type: vless
-  server: de.monkeyisland.xyz
-  port: 443
-  uuid: "3e0a91ec-05a3-461f-9367-14b289a5b54b"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "de.monkeyisland.xyz"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "2AKBmK0PMf2zUMhRo1Ad-WNf_XoRk3AN-SGo6ZdhxA4"
-    short-id: "19e741a804f420a7"
 - name: 🇫🇮 171c
   type: vless
   server: fi.oncloudvpn.com
@@ -54,14 +35,6 @@ proxies:
     path: /
     headers:
       Host: fi.oncloudvpn.com
-- name: 🇸🇪 243
-  type: vless
-  server: 89.19.223.145
-  port: 8443
-  uuid: "f0b752da-101e-46dd-9860-3f089e71ec91"
-  udp: true
-  network: tcp
-  tls: false
 - name: 🇫🇮 175f
   type: vless
   server: usa3.oncloudvpn.com
@@ -82,14 +55,44 @@ proxies:
   udp: true
   network: tcp
   tls: false
-- name: 🇩🇪 16 BP
+- name: 🇳🇱 7
   type: vless
-  server: 130.185.121.183
-  port: 55375
-  uuid: "1c4a1618-98a8-41c6-b155-5c1a866c8620"
+  server: 194.55.239.186
+  port: 67
+  uuid: "612f6d1c-a551-45af-83b6-d8e3d0842bfb"
   udp: true
   network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "nl-t3.vinnypuxtomoon.today"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "RwtMzZtTCmy9WRq3_27xeGF8-1l_qPXRVG3yIFp-6Go"
+    short-id: "c0d1d1776fed0f6d"
+- name: 🇬🇧 38
+  type: vless
+  server: 45.86.159.133
+  port: 2085
+  uuid: "1ea1b30b-4114-4a5c-bd3a-9637bdae1948"
+  udp: true
+  network: grpc
   tls: false
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇨🇿 3
+  type: vless
+  server: 185.17.0.39
+  port: 9443
+  uuid: "42387f58-fc1c-45dc-b224-b1c086e0bf64"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "www.tesla.com"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "6RnCVPCohP4zBcbSmEJD9RRia8gERSV3Q0IaZec4El0"
+    short-id: "be0191cc"
 - name: 🇬🇧 2a
   type: vless
   server: 147.45.78.118
@@ -104,54 +107,32 @@ proxies:
   reality-opts:
     public-key: "CJoXyyPzLgs7qeqEjvrnMlpYOPVfNHqPF0uuZpq_QUU"
     short-id: "abcd1234"
-- name: 🇵🇱 24
+- name: 🇨🇿 159b
   type: vless
-  server: plkrep.tgflow.me
+  server: cz.oncloudvpn.com
+  port: 64534
+  uuid: "b727c798-c7b5-41bd-a7f5-3b2c71f25c19"
+  udp: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: cz.oncloudvpn.com
+- name: 🇩🇪 10
+  type: vless
+  server: 45.145.56.254
   port: 443
-  uuid: "9f19123a-1450-49f9-8ca4-3cc5f92f600b"
+  uuid: "17930cee-cbea-484b-ad7f-7b8062825fee"
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: "plkrep.tgflow.me"
+  servername: "www.vk.com"
   client-fingerprint: firefox
   reality-opts:
-    public-key: "5SNuJakUsFk3udLSxuAhlzrdC6Xr2snwTIHvHwT5UiI"
-    short-id: "fe8950f135674cfc"
-- name: 🇧🇬 154a
-  type: vless
-  server: bg2.oncloudvpn.com
-  port: 64534
-  uuid: "b727c798-c7b5-41bd-a7f5-3b2c71f25c19"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: bg2.oncloudvpn.com
-- name: 🇳🇱 172d
-  type: vless
-  server: nl4.oncloudvpn.com
-  port: 64534
-  uuid: "b727c798-c7b5-41bd-a7f5-3b2c71f25c19"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: nl4.oncloudvpn.com
-- name: 🇬🇧 38
-  type: vless
-  server: 45.86.159.133
-  port: 2085
-  uuid: "1ea1b30b-4114-4a5c-bd3a-9637bdae1948"
-  udp: true
-  network: grpc
-  tls: false
-  grpc-opts:
-    grpc-service-name: vless
+    public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+    short-id: ""
 - name: 🇩🇪 53b
   type: vless
   server: 45.145.56.145
@@ -166,7 +147,46 @@ proxies:
   reality-opts:
     public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
     short-id: ""
-- name: 🇬🇧 88c BP
+- name: 🇳🇱 17a
+  type: vless
+  server: 45.139.76.72
+  port: 443
+  uuid: "7d5fc75d-5353-49e8-ac3a-ccbada84840c"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "www.amd.com"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "V1vIrExX3-oHy5vJNlsazYhVdkKyt9rtt4CDADBeFFo"
+    short-id: "0bbd0f101ee82d47"
+- name: 🇵🇱 16 BP
+  type: vless
+  server: 45.144.50.249
+  port: 443
+  uuid: "a2415a12-3f92-4636-9823-9828d3ceb818"
+  udp: true
+  network: tcp
+  tls: true
+  servername: "www.intel.com"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "hgQ3Wa09f9ectEos7QyC1LQ8bBq8lEAcAtGIDFTKin0"
+    short-id: "c0"
+- name: 🇧🇬 154a
+  type: vless
+  server: bg2.oncloudvpn.com
+  port: 64534
+  uuid: "b727c798-c7b5-41bd-a7f5-3b2c71f25c19"
+  udp: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: bg2.oncloudvpn.com
+- name: 🇬🇧 88b BP
   type: vless
   server: 213.108.20.209
   port: 2083
@@ -180,7 +200,7 @@ proxies:
   reality-opts:
     public-key: "l1Ekgk-8T5rB-yolp5OIpc0XZTcd2gBeqmIR2bytKXY"
     short-id: "4e590fdc"
-- name: 🇳🇱 100d
+- name: 🇳🇱 100
   type: vless
   server: 154.83.159.9
   port: 8443
@@ -194,9 +214,9 @@ proxies:
   reality-opts:
     public-key: "LT_0j3zQkaqgtJHvyaG24xz0IfmXUswVCTeC75Qsgjo"
     short-id: "6f15101ff2cc4887"
-- name: 🇨🇿 159b
+- name: 🇳🇱 172d
   type: vless
-  server: cz.oncloudvpn.com
+  server: nl4.oncloudvpn.com
   port: 64534
   uuid: "b727c798-c7b5-41bd-a7f5-3b2c71f25c19"
   udp: true
@@ -205,28 +225,29 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: cz.oncloudvpn.com
+      Host: nl4.oncloudvpn.com
 proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - 🇭🇺 19
-  - 🇵🇱 174e
-  - 🇩🇪 93
-  - 🇫🇮 171c
   - 🇸🇪 243
+  - 🇵🇱 174e
+  - 🇫🇮 171c
   - 🇫🇮 175f
   - 🇵🇱 233
-  - 🇩🇪 16 BP
-  - 🇬🇧 2a
-  - 🇵🇱 24
-  - 🇧🇬 154a
-  - 🇳🇱 172d
+  - 🇳🇱 7
   - 🇬🇧 38
-  - 🇩🇪 53b
-  - 🇬🇧 88c BP
-  - 🇳🇱 100d
+  - 🇨🇿 3
+  - 🇬🇧 2a
   - 🇨🇿 159b
+  - 🇩🇪 10
+  - 🇩🇪 53b
+  - 🇳🇱 17a
+  - 🇵🇱 16 BP
+  - 🇧🇬 154a
+  - 🇬🇧 88b BP
+  - 🇳🇱 100
+  - 🇳🇱 172d
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -234,22 +255,23 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 Авто (лучший)
-  - 🇭🇺 19
-  - 🇵🇱 174e
-  - 🇩🇪 93
-  - 🇫🇮 171c
   - 🇸🇪 243
+  - 🇵🇱 174e
+  - 🇫🇮 171c
   - 🇫🇮 175f
   - 🇵🇱 233
-  - 🇩🇪 16 BP
-  - 🇬🇧 2a
-  - 🇵🇱 24
-  - 🇧🇬 154a
-  - 🇳🇱 172d
+  - 🇳🇱 7
   - 🇬🇧 38
-  - 🇩🇪 53b
-  - 🇬🇧 88c BP
-  - 🇳🇱 100d
+  - 🇨🇿 3
+  - 🇬🇧 2a
   - 🇨🇿 159b
+  - 🇩🇪 10
+  - 🇩🇪 53b
+  - 🇳🇱 17a
+  - 🇵🇱 16 BP
+  - 🇧🇬 154a
+  - 🇬🇧 88b BP
+  - 🇳🇱 100
+  - 🇳🇱 172d
 rules:
 - MATCH,PROXY
