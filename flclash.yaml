@@ -3,49 +3,60 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇪 92
+- name: 🇰🇿 97b BP
   type: vless
-  server: azx.foot8all.ir
-  port: 56625
-  uuid: "a4d329d2-196d-460b-94ec-e5acb029940c"
+  server: 31.43.179.0
+  port: 80
+  uuid: "40d36acd-5743-4b96-b8f6-b195e35e7336"
   udp: true
-  network: grpc
-  tls: true
-  servername: "icloud.com"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "sVtMU2ZA5W6TLnBCZdgfXqDnOwWePrGVjSNnueDlYmM"
-    short-id: "d5e4b75249e38cbb"
-  grpc-opts:
-    grpc-service-name: ''
-- name: 🇳🇴 102f
+  network: ws
+  tls: false
+  ws-opts:
+    path: /187o1HyKayf2hitk?ed=2560
+    headers:
+      Host: worker3.tacemor185.workers.dev
+- name: 🇫🇮 25a
   type: vless
-  server: 144.31.217.108
+  server: 78.17.3.113
   port: 443
-  uuid: "cec5e508-defc-44d5-b4bb-797665378013"
+  uuid: "c7c0e837-d9ac-4211-aee7-1e7691be3be1"
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: "www.sciencedirect.com"
-  client-fingerprint: firefox
+  servername: "www.cloudflare.com"
+  client-fingerprint: safari
   reality-opts:
-    public-key: "DVdaREsxnfqVa8gE6OI7hfX86bwrmwAbxwjVoX8QYnw"
-    short-id: "a1b2c4d4a1b2c3d5"
-- name: 🇫🇮 98b BP
+    public-key: "X2H-SQTGBao3eTqP9D3M75dXjfydbhShHbkV9KC6vy4"
+    short-id: "433b9f"
+- name: 🇩🇪 114
   type: vless
-  server: 2.26.9.221
+  server: ger.frdmhere.com
   port: 443
-  uuid: "cec5e508-defc-44d5-b4bb-797665378013"
+  uuid: "6277241b-bb52-408b-9308-a6189fe1cb8b"
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: "www.sciencedirect.com"
-  client-fingerprint: firefox
+  servername: "pkvc-hls4.cdnvideo.ru"
+  client-fingerprint: qq
   reality-opts:
-    public-key: "DVdaREsxnfqVa8gE6OI7hfX86bwrmwAbxwjVoX8QYnw"
-    short-id: "a1b2c4d4a1b2c3d5"
+    public-key: "J8SR9wrUnOVg8OaQWOm2y1GyDlnISBDbDhVT9SJ41WA"
+    short-id: "7ccbcb93b59845de"
+- name: 🇸🇪 40b
+  type: vless
+  server: 148.253.211.10
+  port: 443
+  uuid: "60576147-90e7-4afc-9cf9-c7361a8c7fd8"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "vk.me"
+  client-fingerprint: ios
+  reality-opts:
+    public-key: "B3MWDjEWGQsObyH-9npa_PlkaoQDBqzwlwURFK1zlE8"
+    short-id: "3e0527d94cc8d1"
 - name: 🇺🇸 62a BP
   type: vless
   server: mtn.v2plus.ovh
@@ -58,41 +69,6 @@ proxies:
     path: /187o1HyKayf2hitk?ed=2560
     headers:
       Host: worker3.tacemor185.workers.dev
-- name: 🇩🇪 105g
-  type: vless
-  server: 94.141.123.235
-  port: 8443
-  uuid: "fee5bf09-5d07-45e8-9a47-859b06694971"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "bunny.net"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "92bt1gYq9EAz3SSOtKDrmqnbetNcaStEDicwrFg0_Rc"
-    short-id: ""
-- name: 🇩🇪 87
-  type: vless
-  server: de.cvb.pp.ua
-  port: 20811
-  uuid: "2a1e3833-c973-4e13-969d-4f80af9ff5db"
-  udp: true
-  network: tcp
-  tls: true
-  servername: "www.bing.com"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "HkXO-Bo8yy9zda9SYoqnVFy4FiYq9wHYvH57GX5eTks"
-    short-id: "6c710321"
-- name: 🇸🇪 243
-  type: vless
-  server: 89.19.223.145
-  port: 8443
-  uuid: "f0b752da-101e-46dd-9860-3f089e71ec91"
-  udp: true
-  network: tcp
-  tls: false
 - name: 🇸🇪 93
   type: vless
   server: 130.17.1.107
@@ -107,135 +83,9 @@ proxies:
   reality-opts:
     public-key: "DVdaREsxnfqVa8gE6OI7hfX86bwrmwAbxwjVoX8QYnw"
     short-id: "a1b2c4d4a1b2c3d5"
-- name: 🇺🇸 109i BP
-  type: vless
-  server: rus.unlimitedteam.space
-  port: 443
-  uuid: "7982f37c-757c-4a29-9ad4-04db96d6b1bc"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "rus.unlimitedteam.space"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "p3Mg0hDnw7oY5QJ_FHg8fRFDBKcc473_JbcaDLdd7iw"
-    short-id: "dc2bd4a33fdc3f8f"
-- name: 🇳🇱 64b
-  type: vless
-  server: 176.109.88.217
-  port: 33443
-  uuid: "86134fee-4c27-42e8-8660-e64b9c8150ad"
-  udp: true
-  network: grpc
-  tls: true
-  servername: "5post-gate.x5.ru"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "Jd_VsyCzLh-UHJoeazmppnwqBkVuzS-VaQNPu6_EpWM"
-    short-id: ""
-  grpc-opts:
-    grpc-service-name: grpc
-- name: 🇩🇪 104c
+- name: 🇩🇪 104b
   type: vless
   server: 87.120.126.79
-  port: 443
-  uuid: "cec5e508-defc-44d5-b4bb-797665378013"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "www.sciencedirect.com"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "DVdaREsxnfqVa8gE6OI7hfX86bwrmwAbxwjVoX8QYnw"
-    short-id: "a1b2c4d4a1b2c3d5"
-- name: 🇫🇮 94a
-  type: vless
-  server: 92.42.102.76
-  port: 443
-  uuid: "cec5e508-defc-44d5-b4bb-797665378013"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "www.sciencedirect.com"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "DVdaREsxnfqVa8gE6OI7hfX86bwrmwAbxwjVoX8QYnw"
-    short-id: "a1b2c4d4a1b2c3d5"
-- name: 🇫🇮 23a BP
-  type: vless
-  server: 146.75.119.82
-  port: 80
-  uuid: "8ef682a2-6412-4482-9fdc-ef06d60ac696"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: ws/?ed=2048/@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz/?2048
-    headers:
-      Host: rb24.ir
-- name: 🇩🇪 47b BP
-  type: vless
-  server: 152.236.3.30
-  port: 8443
-  uuid: "1a05db30-9dce-4e3c-b491-012a14300a43"
-  udp: true
-  network: grpc
-  tls: true
-  servername: "addons.mozilla.org"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "56QUSkgaBUAruo4LoZnfo6z6Y4CGZRTx1zdNLYKKGRk"
-    short-id: "530db35e324c3aa5"
-  grpc-opts:
-    grpc-service-name: api.v1.telemetry.EventStream
-- name: 🇵🇱 110j BP
-  type: vless
-  server: 150.241.103.27
-  port: 8443
-  uuid: "cf038a28-8f85-41fc-9e86-ba99a3fdd0d9"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "yourcloud.ldtp.com"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "kt-3Y5U6yLWiLB_RijhceKo01lYAVosWRZbhS05YpCY"
-    short-id: "7d6203949764f921"
-- name: 🇳🇴 101e
-  type: vless
-  server: 144.31.217.125
-  port: 443
-  uuid: "cec5e508-defc-44d5-b4bb-797665378013"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "www.sciencedirect.com"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "DVdaREsxnfqVa8gE6OI7hfX86bwrmwAbxwjVoX8QYnw"
-    short-id: "a1b2c4d4a1b2c3d5"
-- name: 🇩🇪 95c BP
-  type: vless
-  server: 31.76.4.59
-  port: 8443
-  uuid: "cf038a28-8f85-41fc-9e86-ba99a3fdd0d9"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "service.mycloudsfere.abrdns.com"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: "Xb-A55KyH9nwjxKw85wksIUJs9KBGk5B8rLArXGVLiw"
-    short-id: "d9654598d4415f95"
-- name: 🇸🇪 108h
-  type: vless
-  server: 144.31.240.202
   port: 443
   uuid: "cec5e508-defc-44d5-b4bb-797665378013"
   udp: true
@@ -255,21 +105,51 @@ proxies:
   udp: true
   network: tcp
   tls: false
-- name: 🇰🇿 97b BP
+- name: 🇩🇪 87
   type: vless
-  server: 31.43.179.0
-  port: 80
-  uuid: "40d36acd-5743-4b96-b8f6-b195e35e7336"
+  server: de.cvb.pp.ua
+  port: 20811
+  uuid: "2a1e3833-c973-4e13-969d-4f80af9ff5db"
   udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /187o1HyKayf2hitk?ed=2560
-    headers:
-      Host: worker3.tacemor185.workers.dev
-- name: 🇩🇪 3a
+  network: tcp
+  tls: true
+  servername: "www.bing.com"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "HkXO-Bo8yy9zda9SYoqnVFy4FiYq9wHYvH57GX5eTks"
+    short-id: "6c710321"
+- name: 🇩🇪 47c BP
   type: vless
-  server: 193.233.75.110
+  server: 152.236.3.30
+  port: 8443
+  uuid: "1a05db30-9dce-4e3c-b491-012a14300a43"
+  udp: true
+  network: grpc
+  tls: true
+  servername: "addons.mozilla.org"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "56QUSkgaBUAruo4LoZnfo6z6Y4CGZRTx1zdNLYKKGRk"
+    short-id: "530db35e324c3aa5"
+  grpc-opts:
+    grpc-service-name: api.v1.telemetry.EventStream
+- name: 🇺🇸 109d BP
+  type: vless
+  server: rus.unlimitedteam.space
+  port: 443
+  uuid: "7982f37c-757c-4a29-9ad4-04db96d6b1bc"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "rus.unlimitedteam.space"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "p3Mg0hDnw7oY5QJ_FHg8fRFDBKcc473_JbcaDLdd7iw"
+    short-id: "dc2bd4a33fdc3f8f"
+- name: 🇫🇮 94a
+  type: vless
+  server: 92.42.102.76
   port: 443
   uuid: "cec5e508-defc-44d5-b4bb-797665378013"
   udp: true
@@ -281,7 +161,49 @@ proxies:
   reality-opts:
     public-key: "DVdaREsxnfqVa8gE6OI7hfX86bwrmwAbxwjVoX8QYnw"
     short-id: "a1b2c4d4a1b2c3d5"
-- name: 🇳🇱 S 100d
+- name: 🇩🇪 105e
+  type: vless
+  server: 94.141.123.235
+  port: 8443
+  uuid: "fee5bf09-5d07-45e8-9a47-859b06694971"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "bunny.net"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "92bt1gYq9EAz3SSOtKDrmqnbetNcaStEDicwrFg0_Rc"
+    short-id: ""
+- name: 🇳🇴 102d
+  type: vless
+  server: 144.31.217.108
+  port: 443
+  uuid: "cec5e508-defc-44d5-b4bb-797665378013"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "www.sciencedirect.com"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "DVdaREsxnfqVa8gE6OI7hfX86bwrmwAbxwjVoX8QYnw"
+    short-id: "a1b2c4d4a1b2c3d5"
+- name: 🇳🇴 101c
+  type: vless
+  server: 144.31.217.125
+  port: 443
+  uuid: "cec5e508-defc-44d5-b4bb-797665378013"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "www.sciencedirect.com"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "DVdaREsxnfqVa8gE6OI7hfX86bwrmwAbxwjVoX8QYnw"
+    short-id: "a1b2c4d4a1b2c3d5"
+- name: 🇳🇱 S 100b
   type: vless
   server: 154.83.159.9
   port: 8443
@@ -295,7 +217,7 @@ proxies:
   reality-opts:
     public-key: "LT_0j3zQkaqgtJHvyaG24xz0IfmXUswVCTeC75Qsgjo"
     short-id: "6f15101ff2cc4887"
-- name: 🇬🇧 2
+- name: 🇬🇧 2a
   type: vless
   server: 147.45.78.118
   port: 443
@@ -309,33 +231,36 @@ proxies:
   reality-opts:
     public-key: "CJoXyyPzLgs7qeqEjvrnMlpYOPVfNHqPF0uuZpq_QUU"
     short-id: "abcd1234"
+- name: 🇸🇪 243
+  type: vless
+  server: 89.19.223.145
+  port: 8443
+  uuid: "f0b752da-101e-46dd-9860-3f089e71ec91"
+  udp: true
+  network: tcp
+  tls: false
 proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - 🇸🇪 92
-  - 🇳🇴 102f
-  - 🇫🇮 98b BP
-  - 🇺🇸 62a BP
-  - 🇩🇪 105g
-  - 🇩🇪 87
-  - 🇸🇪 243
-  - 🇸🇪 93
-  - 🇺🇸 109i BP
-  - 🇳🇱 64b
-  - 🇩🇪 104c
-  - 🇫🇮 94a
-  - 🇫🇮 23a BP
-  - 🇩🇪 47b BP
-  - 🇵🇱 110j BP
-  - 🇳🇴 101e
-  - 🇩🇪 95c BP
-  - 🇸🇪 108h
-  - 🇵🇱 233
   - 🇰🇿 97b BP
-  - 🇩🇪 3a
-  - 🇳🇱 S 100d
-  - 🇬🇧 2
+  - 🇫🇮 25a
+  - 🇩🇪 114
+  - 🇸🇪 40b
+  - 🇺🇸 62a BP
+  - 🇸🇪 93
+  - 🇩🇪 104b
+  - 🇵🇱 233
+  - 🇩🇪 87
+  - 🇩🇪 47c BP
+  - 🇺🇸 109d BP
+  - 🇫🇮 94a
+  - 🇩🇪 105e
+  - 🇳🇴 102d
+  - 🇳🇴 101c
+  - 🇳🇱 S 100b
+  - 🇬🇧 2a
+  - 🇸🇪 243
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -343,9 +268,9 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸 62a BP
-  - 🇫🇮 23a BP
+  - 🇬🇧 2a
   - 🇫🇮 94a
-  - 🇩🇪 3a
+  - 🇫🇮 25a
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -353,9 +278,9 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇰🇿 97b BP
-  - 🇳🇱 64b
-  - 🇫🇮 98b BP
-  - 🇩🇪 47b BP
+  - 🇳🇱 S 100b
+  - 🇩🇪 104b
+  - 🇸🇪 40b
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -365,28 +290,23 @@ proxy-groups:
   - 🚀 Авто (лучший)
   - 📁 Группа A
   - 📁 Группа B
-  - 🇸🇪 92
-  - 🇳🇴 102f
-  - 🇫🇮 98b BP
-  - 🇺🇸 62a BP
-  - 🇩🇪 105g
-  - 🇩🇪 87
-  - 🇸🇪 243
-  - 🇸🇪 93
-  - 🇺🇸 109i BP
-  - 🇳🇱 64b
-  - 🇩🇪 104c
-  - 🇫🇮 94a
-  - 🇫🇮 23a BP
-  - 🇩🇪 47b BP
-  - 🇵🇱 110j BP
-  - 🇳🇴 101e
-  - 🇩🇪 95c BP
-  - 🇸🇪 108h
-  - 🇵🇱 233
   - 🇰🇿 97b BP
-  - 🇩🇪 3a
-  - 🇳🇱 S 100d
-  - 🇬🇧 2
+  - 🇫🇮 25a
+  - 🇩🇪 114
+  - 🇸🇪 40b
+  - 🇺🇸 62a BP
+  - 🇸🇪 93
+  - 🇩🇪 104b
+  - 🇵🇱 233
+  - 🇩🇪 87
+  - 🇩🇪 47c BP
+  - 🇺🇸 109d BP
+  - 🇫🇮 94a
+  - 🇩🇪 105e
+  - 🇳🇴 102d
+  - 🇳🇴 101c
+  - 🇳🇱 S 100b
+  - 🇬🇧 2a
+  - 🇸🇪 243
 rules:
 - MATCH,PROXY
