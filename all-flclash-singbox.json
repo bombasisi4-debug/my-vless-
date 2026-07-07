@@ -45,23 +45,26 @@
     {
       "type": "vless",
       "tag": "🇩🇪 2",
-      "server": "87.120.126.79",
-      "server_port": 443,
-      "uuid": "cec5e508-defc-44d5-b4bb-797665378013",
+      "server": "152.236.3.30",
+      "server_port": 8443,
+      "uuid": "1a05db30-9dce-4e3c-b491-012a14300a43",
       "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.sciencedirect.com",
+        "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "DVdaREsxnfqVa8gE6OI7hfX86bwrmwAbxwjVoX8QYnw",
-          "short_id": "a1b2c4d4a1b2c3d5"
+          "public_key": "56QUSkgaBUAruo4LoZnfo6z6Y4CGZRTx1zdNLYKKGRk",
+          "short_id": "530db35e324c3aa5"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "api.v1.telemetry.EventStream"
       }
     },
     {
@@ -88,26 +91,23 @@
     {
       "type": "vless",
       "tag": "🇩🇪 4",
-      "server": "152.236.3.30",
-      "server_port": 8443,
-      "uuid": "1a05db30-9dce-4e3c-b491-012a14300a43",
+      "server": "87.120.126.79",
+      "server_port": 443,
+      "uuid": "cec5e508-defc-44d5-b4bb-797665378013",
       "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "addons.mozilla.org",
+        "server_name": "www.sciencedirect.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "56QUSkgaBUAruo4LoZnfo6z6Y4CGZRTx1zdNLYKKGRk",
-          "short_id": "530db35e324c3aa5"
+          "public_key": "DVdaREsxnfqVa8gE6OI7hfX86bwrmwAbxwjVoX8QYnw",
+          "short_id": "a1b2c4d4a1b2c3d5"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "api.v1.telemetry.EventStream"
       }
     },
     {
@@ -290,24 +290,10 @@
     {
       "type": "vless",
       "tag": "🇸🇪 14",
-      "server": "148.253.211.10",
-      "server_port": 443,
-      "uuid": "60576147-90e7-4afc-9cf9-c7361a8c7fd8",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "vk.me",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "ios"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "B3MWDjEWGQsObyH-9npa_PlkaoQDBqzwlwURFK1zlE8",
-          "short_id": "3e0527d94cc8d1"
-        }
-      }
+      "server": "89.19.223.145",
+      "server_port": 8443,
+      "uuid": "f0b752da-101e-46dd-9860-3f089e71ec91",
+      "packet_encoding": "xudp"
     },
     {
       "type": "vless",
@@ -334,10 +320,24 @@
     {
       "type": "vless",
       "tag": "🇸🇪 16",
-      "server": "89.19.223.145",
-      "server_port": 8443,
-      "uuid": "f0b752da-101e-46dd-9860-3f089e71ec91",
-      "packet_encoding": "xudp"
+      "server": "148.253.211.10",
+      "server_port": 443,
+      "uuid": "60576147-90e7-4afc-9cf9-c7361a8c7fd8",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "vk.me",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "B3MWDjEWGQsObyH-9npa_PlkaoQDBqzwlwURFK1zlE8",
+          "short_id": "3e0527d94cc8d1"
+        }
+      }
     },
     {
       "type": "vless",
