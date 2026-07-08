@@ -17,21 +17,21 @@ proxies:
   reality-opts:
     public-key: "IdqrygjwHBEMCOamBl7a504TVk6uMAtTRj0xLWcFcxY"
     short-id: "40ce08cf20c67003"
-- name: 🇩🇪 2
+- name: 🇨🇭 2
   type: vless
-  server: 87.120.126.218
+  server: 179.237.75.21
   port: 443
-  uuid: "0790e1d6-a2df-43c1-ba24-5e5a1e2c8287"
+  uuid: "56fde86d-7985-4385-bc75-276b29a70e44"
   udp: true
   network: grpc
   tls: true
-  servername: "mageia.ubuntuhosting.host"
-  client-fingerprint: firefox
+  servername: "yahoo.com"
+  client-fingerprint: chrome
   reality-opts:
-    public-key: "QJW15WZWLNjA8KEpe4GqSdOe4rfW8KgqjjVmKxPk-ng"
-    short-id: "3fa234ea9feaa048"
+    public-key: "MhOa-Fkr656VVRcxXd27gam263cdXF_uyGiHZZEISUA"
+    short-id: "ce741cbe468babc7"
   grpc-opts:
-    grpc-service-name: gun
+    grpc-service-name: xyz
 - name: 🇩🇪 3
   type: vless
   server: 144.31.87.16
@@ -62,17 +62,19 @@ proxies:
     short-id: "6c710321"
 - name: 🇩🇪 5
   type: vless
-  server: 144.31.87.16
+  server: 87.120.126.218
   port: 443
-  uuid: "c40f773e-3b96-417e-b22c-e48cb63ca7d9"
+  uuid: "0790e1d6-a2df-43c1-ba24-5e5a1e2c8287"
   udp: true
-  network: tcp
+  network: grpc
   tls: true
-  servername: "yandex.ru"
-  client-fingerprint: chrome
+  servername: "mageia.ubuntuhosting.host"
+  client-fingerprint: firefox
   reality-opts:
-    public-key: "l5eAOSPQMEyzEPvWGAKvCkcPpsJvR3DJfYo6elw1UTE"
-    short-id: "3b802dad547b0847"
+    public-key: "QJW15WZWLNjA8KEpe4GqSdOe4rfW8KgqjjVmKxPk-ng"
+    short-id: "3fa234ea9feaa048"
+  grpc-opts:
+    grpc-service-name: gun
 - name: 🇩🇪 6
   type: vless
   server: 64.188.79.129
@@ -89,17 +91,17 @@ proxies:
     short-id: "23042f0ba48bc97d"
 - name: 🇩🇪 7
   type: vless
-  server: germany-de-1.appcodes.ir
-  port: 2026
-  uuid: "f8cae104-2eaa-4b16-b258-65be28281b70"
+  server: 144.31.87.16
+  port: 443
+  uuid: "c40f773e-3b96-417e-b22c-e48cb63ca7d9"
   udp: true
   network: tcp
   tls: true
-  servername: "yahoo.com"
-  client-fingerprint: firefox
+  servername: "yandex.ru"
+  client-fingerprint: chrome
   reality-opts:
-    public-key: "1pZz4shnro2xyuXc7MMSFseBbbuy1weo2QLclTDJ8Fo"
-    short-id: "db4a993c8bb355ba"
+    public-key: "l5eAOSPQMEyzEPvWGAKvCkcPpsJvR3DJfYo6elw1UTE"
+    short-id: "3b802dad547b0847"
 - name: 🇫🇮 8
   type: vless
   server: 146.75.119.82
@@ -112,11 +114,11 @@ proxies:
     path: ws/?ed=2048/@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz/?2048
     headers:
       Host: rb24.ir
-- name: 🇫🇷 9
+- name: 🇬🇧 9
   type: vless
-  server: ve002.vleeeeeee001.wang
-  port: 2096
-  uuid: "26a22c4d-d39f-4f17-8737-2443cf185dad"
+  server: cn004.cdn20888.top
+  port: 443
+  uuid: "a79a1efc-8248-4a7c-9ca7-9a286ab7ceb7"
   udp: true
   network: tcp
   tls: true
@@ -124,8 +126,8 @@ proxies:
   servername: "www.apple.com"
   client-fingerprint: safari
   reality-opts:
-    public-key: "K3Q-brFtkI0WU_AoNGEC2J4CtMRHcxAa7OBFF-2wsi8"
-    short-id: "6e0d8df12d3f8152"
+    public-key: "V-vL4sCG87RqskH__jqn2Cvt4WDwDxyhofZ_nY89mSs"
+    short-id: "403de8e97e1403"
 - name: 🇬🇧 10
   type: vless
   server: 45.206.52.204
@@ -140,35 +142,7 @@ proxies:
   reality-opts:
     public-key: "dY9SNEllJMW63xo-JdXufhmjAxB_4uFw_QMjgufjiD8"
     short-id: "ea10cd5686751ec5"
-- name: 🇬🇧 11
-  type: vless
-  server: cn004.cdn20888.top
-  port: 443
-  uuid: "a79a1efc-8248-4a7c-9ca7-9a286ab7ceb7"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "www.apple.com"
-  client-fingerprint: safari
-  reality-opts:
-    public-key: "V-vL4sCG87RqskH__jqn2Cvt4WDwDxyhofZ_nY89mSs"
-    short-id: "403de8e97e1403"
-- name: 🇱🇹 12
-  type: vless
-  server: 45.194.10.89
-  port: 8443
-  uuid: "3e7cede4-721a-4807-b0a2-5fe6586af907"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "storage.yandex.net"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA"
-    short-id: "2cfb5a0ae8ab0cb0"
-- name: 🇱🇹 13
+- name: 🇱🇹 11
   type: vless
   server: 45.196.31.244
   port: 8443
@@ -182,7 +156,21 @@ proxies:
   reality-opts:
     public-key: "L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA"
     short-id: "2cfb5a0ae8ab0cb0"
-- name: 🇳🇱 14
+- name: 🇱🇹 12
+  type: vless
+  server: 45.194.10.222
+  port: 8443
+  uuid: "3e7cede4-721a-4807-b0a2-5fe6586af907"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "storage.yandex.net"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA"
+    short-id: "2cfb5a0ae8ab0cb0"
+- name: 🇳🇱 13
   type: vless
   server: zephyr.proxy.rlwy.net
   port: 34941
@@ -195,43 +183,21 @@ proxies:
   reality-opts:
     public-key: "I0fuHwRFGN2pDCcIvMx3zY2LsEN8SK5CXKj14CsNJF0"
     short-id: "8e67cc25d8f6fb7f"
-- name: 🇳🇱 15
+- name: 🇵🇱 14
   type: vless
-  server: 5.8.34.146
+  server: pol02.port-server.online
   port: 443
-  uuid: "26a22c4d-d39f-4f17-8737-2443cf185dad"
+  uuid: "45c876f9-4900-40c0-b269-94871e78df54"
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: "www.apple.com"
-  client-fingerprint: safari
+  servername: "pol02.port-server.online"
+  client-fingerprint: firefox
   reality-opts:
-    public-key: "W5aBD6EV1jt4uj5WGH7Ciu4M3_NESc8BLjwEkpkhOW8"
-    short-id: "ab89658fe871"
-- name: 🇳🇱 16
-  type: vless
-  server: 154.83.140.111
-  port: 443
-  uuid: "a79a1efc-8248-4a7c-9ca7-9a286ab7ceb7"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "www.apple.com"
-  client-fingerprint: edge
-  reality-opts:
-    public-key: "pT2jMbFlRO-mbNImK5ZFCCujqUbKiMEa_NSe20gCEFU"
-    short-id: "76b7bd"
-- name: 🇵🇱 17
-  type: vless
-  server: 2.59.163.45
-  port: 59992
-  uuid: "9a9fe945246a431ebd051cb981464c8d"
-  udp: true
-  network: tcp
-  tls: false
-- name: 🇷🇴 18
+    public-key: "hopci7XVq-CJh15pjLw7lNIybwwVZfA2XgV2VAkxsR0"
+    short-id: "9e53379f048436bf"
+- name: 🇷🇴 15
   type: vless
   server: 178.214.211.23
   port: 443
@@ -246,21 +212,7 @@ proxies:
     short-id: "c9e0a2f4b6d8"
   grpc-opts:
     grpc-service-name: vless
-- name: 🇸🇪 19
-  type: vless
-  server: 144.31.240.140
-  port: 443
-  uuid: "ee910466-92b2-4f17-afc6-2f01dbda51e4"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "estoxy.com"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "r93g3bpvAfKqF6GXG6nu0gz670iYPyn1Ve7e-snzqks"
-    short-id: "681333da5a32ba5d"
-- name: 🇸🇪 20
+- name: 🇸🇪 16
   type: vless
   server: 31.22.91.203
   port: 443
@@ -274,7 +226,7 @@ proxies:
   reality-opts:
     public-key: "qTfZpilVyQrFDIgxmEsd18Ph3c_-8O-R_af4o_WQ_Tg"
     short-id: "f74c6a18133e2e72"
-- name: 🇸🇪 21
+- name: 🇸🇪 17
   type: vless
   server: 89.19.223.145
   port: 8443
@@ -287,26 +239,22 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇨🇭 1
-  - 🇩🇪 2
+  - 🇨🇭 2
   - 🇩🇪 3
   - 🇩🇪 4
   - 🇩🇪 5
   - 🇩🇪 6
   - 🇩🇪 7
   - 🇫🇮 8
-  - 🇫🇷 9
+  - 🇬🇧 9
   - 🇬🇧 10
-  - 🇬🇧 11
+  - 🇱🇹 11
   - 🇱🇹 12
-  - 🇱🇹 13
-  - 🇳🇱 14
-  - 🇳🇱 15
-  - 🇳🇱 16
-  - 🇵🇱 17
-  - 🇷🇴 18
-  - 🇸🇪 19
-  - 🇸🇪 20
-  - 🇸🇪 21
+  - 🇳🇱 13
+  - 🇵🇱 14
+  - 🇷🇴 15
+  - 🇸🇪 16
+  - 🇸🇪 17
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -315,25 +263,21 @@ proxy-groups:
   proxies:
   - 🚀 Авто (лучший)
   - 🇨🇭 1
-  - 🇩🇪 2
+  - 🇨🇭 2
   - 🇩🇪 3
   - 🇩🇪 4
   - 🇩🇪 5
   - 🇩🇪 6
   - 🇩🇪 7
   - 🇫🇮 8
-  - 🇫🇷 9
+  - 🇬🇧 9
   - 🇬🇧 10
-  - 🇬🇧 11
+  - 🇱🇹 11
   - 🇱🇹 12
-  - 🇱🇹 13
-  - 🇳🇱 14
-  - 🇳🇱 15
-  - 🇳🇱 16
-  - 🇵🇱 17
-  - 🇷🇴 18
-  - 🇸🇪 19
-  - 🇸🇪 20
-  - 🇸🇪 21
+  - 🇳🇱 13
+  - 🇵🇱 14
+  - 🇷🇴 15
+  - 🇸🇪 16
+  - 🇸🇪 17
 rules:
 - MATCH,PROXY
