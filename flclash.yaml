@@ -3,35 +3,18 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇫🇮 165k
+- name: 🇰🇿 97b BP
   type: vless
-  server: 81.94.148.75
-  port: 8443
-  uuid: "1bc9225a-9da7-4e5c-8657-d9e6cadeba9e"
+  server: 31.43.179.0
+  port: 80
+  uuid: "40d36acd-5743-4b96-b8f6-b195e35e7336"
   udp: true
-  network: grpc
-  tls: true
-  servername: "ads.x5.ru"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "DaIRouGSxxQDEv9WKRxD79b2Vt0fsw4yQOTeAmXUYCM"
-    short-id: "08"
-  grpc-opts:
-    grpc-service-name: ads.x5.ru
-- name: 🇳🇴 102b
-  type: vless
-  server: 144.31.217.108
-  port: 443
-  uuid: "cec5e508-defc-44d5-b4bb-797665378013"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "www.sciencedirect.com"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "DVdaREsxnfqVa8gE6OI7hfX86bwrmwAbxwjVoX8QYnw"
-    short-id: "a1b2c4d4a1b2c3d5"
+  network: ws
+  tls: false
+  ws-opts:
+    path: /187o1HyKayf2hitk?ed=2560
+    headers:
+      Host: worker3.tacemor185.workers.dev
 - name: 🇫🇮 25
   type: vless
   server: 78.17.3.113
@@ -46,9 +29,9 @@ proxies:
   reality-opts:
     public-key: "X2H-SQTGBao3eTqP9D3M75dXjfydbhShHbkV9KC6vy4"
     short-id: "433b9f"
-- name: 🇳🇴 101a
+- name: 🇳🇴 102
   type: vless
-  server: 144.31.217.125
+  server: 144.31.217.108
   port: 443
   uuid: "cec5e508-defc-44d5-b4bb-797665378013"
   udp: true
@@ -60,7 +43,7 @@ proxies:
   reality-opts:
     public-key: "DVdaREsxnfqVa8gE6OI7hfX86bwrmwAbxwjVoX8QYnw"
     short-id: "a1b2c4d4a1b2c3d5"
-- name: 🇩🇪 168l
+- name: 🇩🇪 168a
   type: vless
   server: 188.68.218.29
   port: 443
@@ -75,6 +58,20 @@ proxies:
     short-id: ""
   grpc-opts:
     grpc-service-name: beltimor.ispcamel.com
+- name: 🇳🇴 101
+  type: vless
+  server: 144.31.217.125
+  port: 443
+  uuid: "cec5e508-defc-44d5-b4bb-797665378013"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "www.sciencedirect.com"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "DVdaREsxnfqVa8gE6OI7hfX86bwrmwAbxwjVoX8QYnw"
+    short-id: "a1b2c4d4a1b2c3d5"
 - name: 🇩🇪 47a BP
   type: vless
   server: 152.236.3.30
@@ -104,107 +101,18 @@ proxies:
   reality-opts:
     public-key: "92bt1gYq9EAz3SSOtKDrmqnbetNcaStEDicwrFg0_Rc"
     short-id: ""
-- name: 🇩🇪 160i
+- name: 🇺🇸 62a BP
   type: vless
-  server: 51.250.91.220
-  port: 443
-  uuid: "b85ad1f4-101d-4ee3-86d7-86ed6190457b"
+  server: mtn.v2plus.ovh
+  port: 80
+  uuid: "40d36acd-5743-4b96-b8f6-b195e35e7336"
   udp: true
-  network: raw
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "www.vk.com"
-  client-fingerprint: random
-  reality-opts:
-    public-key: "bwuT_tpimT_uUeWpSn-HbRztfol4o4uCcUHcdvkeFx0"
-    short-id: "27e53bbcab7593d7"
-- name: 🇩🇪 154h
-  type: vless
-  server: 185.91.54.126
-  port: 8445
-  uuid: "b226bf18-c94e-45f3-8923-fad6b254e935"
-  udp: true
-  network: grpc
-  tls: true
-  servername: "360.yandex.ru"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: "-22oLFCHao66M820QocQMqCdKF0ckLuVYMtcth92vjk"
-    short-id: ""
-  grpc-opts:
-    grpc-service-name: ns
-- name: 🇩🇪 143d BP
-  type: vless
-  server: 185.229.9.222
-  port: 443
-  uuid: "1acece6a-f031-4299-a941-266a0254736c"
-  udp: true
-  network: raw
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "max.ru"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: "437aLH3no_OoVjc1kHenwwiLl02NVggpFLESF-Nu1Fs"
-    short-id: "27e53bbcab7593d7"
-- name: 🇩🇪 134a
-  type: vless
-  server: 158.160.249.252
-  port: 443
-  uuid: "1082cfe6-d888-4d96-ae24-dcccab896836"
-  udp: true
-  network: raw
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "smartcaptcha.yandexcloud.net"
-  client-fingerprint: random
-  reality-opts:
-    public-key: "iRbc5G3wZbluYutzDvrJlc356yJsEnhV1T4tvE-tCnM"
-    short-id: "27e53bbcab7593d7"
-- name: 🇩🇪 147f
-  type: vless
-  server: 87.228.101.33
-  port: 8444
-  uuid: "b226bf18-c94e-45f3-8923-fad6b254e935"
-  udp: true
-  network: grpc
-  tls: true
-  servername: "360.yandex.ru"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: "-22oLFCHao66M820QocQMqCdKF0ckLuVYMtcth92vjk"
-    short-id: ""
-  grpc-opts:
-    grpc-service-name: ns
-- name: 🇩🇪 140c
-  type: vless
-  server: 5.188.115.159
-  port: 8446
-  uuid: "b226bf18-c94e-45f3-8923-fad6b254e935"
-  udp: true
-  network: grpc
-  tls: true
-  servername: "360.yandex.ru"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "rUCHk3_64Wv_f_v46OfVNYldKu9fUqHpX937bmGeeDs"
-    short-id: ""
-  grpc-opts:
-    grpc-service-name: ''
-- name: 🇩🇪 144e
-  type: vless
-  server: 51.250.30.235
-  port: 443
-  uuid: "1acece6a-f031-4299-a941-266a0254736c"
-  udp: true
-  network: raw
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "yandex.ru"
-  client-fingerprint: random
-  reality-opts:
-    public-key: "Ec54Eop0jZft7rcJsPN4RHc4xG9smXhtenM52pJFUQI"
-    short-id: "27e53bbcab7593d7"
+  network: ws
+  tls: false
+  ws-opts:
+    path: /187o1HyKayf2hitk?ed=2560
+    headers:
+      Host: worker3.tacemor185.workers.dev
 - name: 🇩🇪 87
   type: vless
   server: de.cvb.pp.ua
@@ -218,35 +126,7 @@ proxies:
   reality-opts:
     public-key: "HkXO-Bo8yy9zda9SYoqnVFy4FiYq9wHYvH57GX5eTks"
     short-id: "6c710321"
-- name: 🇩🇪 173o
-  type: vless
-  server: 62.152.58.114
-  port: 443
-  uuid: "7725000a-1768-445b-b284-6237afd9b054"
-  udp: true
-  network: raw
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "wl-13-1.nodes.ac"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: "jAJoyWJ4nMGai3H9BOa6QMUr2Vvpgqs8VipbaO5mCVU"
-    short-id: "3130197867c23edb"
-- name: 🇩🇪 149g
-  type: vless
-  server: 84.201.153.33
-  port: 443
-  uuid: "b85ad1f4-101d-4ee3-86d7-86ed6190457b"
-  udp: true
-  network: raw
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "smartcaptcha.yandexcloud.net"
-  client-fingerprint: random
-  reality-opts:
-    public-key: "iRbc5G3wZbluYutzDvrJlc356yJsEnhV1T4tvE-tCnM"
-    short-id: "27e53bbcab7593d7"
-- name: 🇬🇧 117a
+- name: 🇬🇧 117c
   type: vless
   server: 45.206.52.204
   port: 443
@@ -260,102 +140,6 @@ proxies:
   reality-opts:
     public-key: "dY9SNEllJMW63xo-JdXufhmjAxB_4uFw_QMjgufjiD8"
     short-id: "ea10cd5686751ec5"
-- name: 🇩🇪 120c
-  type: vless
-  server: gorger.pupvup.ru
-  port: 8443
-  uuid: "54e7f948-b4ac-4747-9d09-0fe4c25ae832"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "www.google.com"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: "m8NlVgma3zCfxdXIzMreVvi_O4c2-lZqPh_9UHOsM1I"
-    short-id: "6b45455662"
-- name: 🇸🇪 93b
-  type: vless
-  server: 130.17.1.107
-  port: 443
-  uuid: "cec5e508-defc-44d5-b4bb-797665378013"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "www.sciencedirect.com"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "DVdaREsxnfqVa8gE6OI7hfX86bwrmwAbxwjVoX8QYnw"
-    short-id: "a1b2c4d4a1b2c3d5"
-- name: 🇩🇪 161j
-  type: vless
-  server: 84.201.164.23
-  port: 443
-  uuid: "1acece6a-f031-4299-a941-266a0254736c"
-  udp: true
-  network: raw
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "smartcaptcha.yandexcloud.net"
-  client-fingerprint: random
-  reality-opts:
-    public-key: "vyzsQLMRAuySJxAg0sNHXzgJuT8PGRakCay3rzUbT3k"
-    short-id: "27e53bbcab7593d7"
-- name: 🇩🇪 135b
-  type: vless
-  server: 84.201.178.175
-  port: 443
-  uuid: "b85ad1f4-101d-4ee3-86d7-86ed6190457b"
-  udp: true
-  network: raw
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "yandex.ru"
-  client-fingerprint: random
-  reality-opts:
-    public-key: "Ec54Eop0jZft7rcJsPN4RHc4xG9smXhtenM52pJFUQI"
-    short-id: "27e53bbcab7593d7"
-- name: 🇫🇮 100 BP
-  type: vless
-  server: 146.75.119.82
-  port: 80
-  uuid: "d2f61f87-57a5-4937-9aa9-c18a59504c24"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: ws/?ed=2048/@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr/?2048
-    headers:
-      Host: rb24.ir
-- name: 🇨🇭 121b
-  type: vless
-  server: 45.196.193.116
-  port: 8443
-  uuid: "b9a83acf-44ff-44a5-b8bc-417c9f82ae11"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "storage.yandex.net"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "IdqrygjwHBEMCOamBl7a504TVk6uMAtTRj0xLWcFcxY"
-    short-id: "40ce08cf20c67003"
-- name: 🇳🇱 169c
-  type: vless
-  server: 217.60.14.6
-  port: 443
-  uuid: "c0aaedc3-b357-4d6d-a07b-0ddbd872bbca"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "bol.com"
-  client-fingerprint: edge
-  reality-opts:
-    public-key: "yyXZsa238GRW90w5DweXAdRTtVSuK9oZF_dihKQ41So"
-    short-id: "9e5a335de26d1f5a"
 - name: 🇩🇪 104b
   type: vless
   server: 87.120.126.79
@@ -370,7 +154,43 @@ proxies:
   reality-opts:
     public-key: "DVdaREsxnfqVa8gE6OI7hfX86bwrmwAbxwjVoX8QYnw"
     short-id: "a1b2c4d4a1b2c3d5"
-- name: 🇫🇷 125a
+- name: 🇵🇱 233
+  type: vless
+  server: 2.59.163.45
+  port: 59992
+  uuid: "9a9fe945246a431ebd051cb981464c8d"
+  udp: true
+  network: tcp
+  tls: false
+- name: 🇨🇭 121d
+  type: vless
+  server: 45.196.193.116
+  port: 8443
+  uuid: "b9a83acf-44ff-44a5-b8bc-417c9f82ae11"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "storage.yandex.net"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "IdqrygjwHBEMCOamBl7a504TVk6uMAtTRj0xLWcFcxY"
+    short-id: "40ce08cf20c67003"
+- name: 🇸🇪 93b
+  type: vless
+  server: 130.17.1.107
+  port: 443
+  uuid: "cec5e508-defc-44d5-b4bb-797665378013"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "www.sciencedirect.com"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "DVdaREsxnfqVa8gE6OI7hfX86bwrmwAbxwjVoX8QYnw"
+    short-id: "a1b2c4d4a1b2c3d5"
+- name: 🇫🇷 125e
   type: vless
   server: 45.192.2.173
   port: 443
@@ -384,20 +204,59 @@ proxies:
   reality-opts:
     public-key: "1oUeBtHH4DskTM_jCh-6enWRkFMDX9l1OU5kWYl4kxA"
     short-id: "ece180c605b5453c"
-- name: 🇳🇱 152b
+- name: 🇳🇱 169b
   type: vless
-  server: 2.27.7.164
-  port: 8443
-  uuid: "fee5bf09-5d07-45e8-9a47-859b06694971"
+  server: 217.60.14.6
+  port: 443
+  uuid: "c0aaedc3-b357-4d6d-a07b-0ddbd872bbca"
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: "ads.x5.ru"
-  client-fingerprint: firefox
+  servername: "bol.com"
+  client-fingerprint: edge
   reality-opts:
-    public-key: "CzI1Zft9ToNgciMIfMhtn_Q5RRO0Q3AyURYvrvnKL14"
-    short-id: ""
+    public-key: "yyXZsa238GRW90w5DweXAdRTtVSuK9oZF_dihKQ41So"
+    short-id: "9e5a335de26d1f5a"
+- name: 🇩🇪 159a
+  type: vless
+  server: 144.31.87.16
+  port: 443
+  uuid: "c40f773e-3b96-417e-b22c-e48cb63ca7d9"
+  udp: true
+  network: tcp
+  tls: true
+  servername: "yandex.ru"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "l5eAOSPQMEyzEPvWGAKvCkcPpsJvR3DJfYo6elw1UTE"
+    short-id: "3b802dad547b0847"
+- name: 🇫🇮 120b
+  type: vless
+  server: 89.125.26.125
+  port: 8445
+  uuid: "c38dc844-5a64-4544-8d12-c06e6030a1c8"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "linkvault.fyi"
+  client-fingerprint: qq
+  reality-opts:
+    public-key: "_FzmVXpls1l8mxqqUBJP7BqU7Wd8eO6dCoo_5HW9X20"
+    short-id: "1e7e996a6760f20c"
+- name: 🇫🇮 100 BP
+  type: vless
+  server: 146.75.119.82
+  port: 80
+  uuid: "d2f61f87-57a5-4937-9aa9-c18a59504c24"
+  udp: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: ws/?ed=2048/@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr/?2048
+    headers:
+      Host: rb24.ir
 - name: 🇫🇮 94a
   type: vless
   server: 92.42.102.76
@@ -412,20 +271,6 @@ proxies:
   reality-opts:
     public-key: "DVdaREsxnfqVa8gE6OI7hfX86bwrmwAbxwjVoX8QYnw"
     short-id: "a1b2c4d4a1b2c3d5"
-- name: 🇳🇱 164c
-  type: vless
-  server: nagatoro.kosmojoy.ru
-  port: 443
-  uuid: "5f2e8fd5-f696-4c55-ac6c-56c2656648b0"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "www.tesla.com"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "6RnCVPCohP4zBcbSmEJD9RRia8gERSV3Q0IaZec4El0"
-    short-id: "be0191cc"
 - name: 🇳🇱 172d
   type: vless
   server: 31.56.184.19
@@ -440,19 +285,61 @@ proxies:
   reality-opts:
     public-key: "AYWvVCObGJ_5TnNMGj4z_UDSDzMJ3IcoRgIBCAeUWFs"
     short-id: ""
-- name: 🇩🇪 159b
+- name: 🇳🇱 152c
   type: vless
-  server: 144.31.87.16
-  port: 443
-  uuid: "c40f773e-3b96-417e-b22c-e48cb63ca7d9"
+  server: 2.27.7.164
+  port: 8443
+  uuid: "fee5bf09-5d07-45e8-9a47-859b06694971"
   udp: true
   network: tcp
   tls: true
-  servername: "yandex.ru"
-  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  servername: "ads.x5.ru"
+  client-fingerprint: firefox
   reality-opts:
-    public-key: "l5eAOSPQMEyzEPvWGAKvCkcPpsJvR3DJfYo6elw1UTE"
-    short-id: "3b802dad547b0847"
+    public-key: "CzI1Zft9ToNgciMIfMhtn_Q5RRO0Q3AyURYvrvnKL14"
+    short-id: ""
+- name: 🇳🇱 164
+  type: vless
+  server: nagatoro.kosmojoy.ru
+  port: 443
+  uuid: "5f2e8fd5-f696-4c55-ac6c-56c2656648b0"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "www.tesla.com"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "6RnCVPCohP4zBcbSmEJD9RRia8gERSV3Q0IaZec4El0"
+    short-id: "be0191cc"
+- name: 🇸🇮 23
+  type: vless
+  server: 92.42.201.27
+  port: 8443
+  uuid: "fee5bf09-5d07-45e8-9a47-859b06694971"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "ads.x5.ru"
+  client-fingerprint: qq
+  reality-opts:
+    public-key: "AYWvVCObGJ_5TnNMGj4z_UDSDzMJ3IcoRgIBCAeUWFs"
+    short-id: ""
+- name: 🇫🇮 171b
+  type: vless
+  server: 176.109.85.77
+  port: 5443
+  uuid: "a66e631c-9b5d-44ea-b08e-4368af9e26db"
+  udp: true
+  network: xhttp
+  tls: true
+  servername: "54.img.avito.st"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "B7pHgF6iDFjSK8QMq7XTDi_edqn5_gKOxtqXfaIDgxo"
+    short-id: "aabbccdd"
 - name: 🇩🇪 115a
   type: vless
   server: 144.31.136.35
@@ -467,107 +354,36 @@ proxies:
   reality-opts:
     public-key: "7rygtOYobZIUHyas9o8uzH5jV29s9l9p9DvcsEn1PGc"
     short-id: "7f7a0952d9d6f546"
-- name: 🇺🇸 62a BP
-  type: vless
-  server: mtn.v2plus.ovh
-  port: 80
-  uuid: "40d36acd-5743-4b96-b8f6-b195e35e7336"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /187o1HyKayf2hitk?ed=2560
-    headers:
-      Host: worker3.tacemor185.workers.dev
-- name: 🇵🇱 233
-  type: vless
-  server: 2.59.163.45
-  port: 59992
-  uuid: "9a9fe945246a431ebd051cb981464c8d"
-  udp: true
-  network: tcp
-  tls: false
-- name: 🇳🇱 170m
-  type: vless
-  server: 62.152.56.73
-  port: 443
-  uuid: "7725000a-1768-445b-b284-6237afd9b054"
-  udp: true
-  network: raw
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "wl-12.nodes.ac"
-  client-fingerprint: edge
-  reality-opts:
-    public-key: "lh3qj3VX335HGH2T3xQ8RHZ4v3zEStbz6ENiPwkILSg"
-    short-id: "cf43c0c197cd464a"
-- name: 🇰🇿 97b BP
-  type: vless
-  server: 31.43.179.0
-  port: 80
-  uuid: "40d36acd-5743-4b96-b8f6-b195e35e7336"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /187o1HyKayf2hitk?ed=2560
-    headers:
-      Host: worker3.tacemor185.workers.dev
-- name: 🇫🇮 171n
-  type: vless
-  server: 176.109.85.77
-  port: 5443
-  uuid: "a66e631c-9b5d-44ea-b08e-4368af9e26db"
-  udp: true
-  network: xhttp
-  tls: true
-  servername: "54.img.avito.st"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "B7pHgF6iDFjSK8QMq7XTDi_edqn5_gKOxtqXfaIDgxo"
-    short-id: "aabbccdd"
 proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - 🇫🇮 165k
-  - 🇳🇴 102b
+  - 🇰🇿 97b BP
   - 🇫🇮 25
-  - 🇳🇴 101a
-  - 🇩🇪 168l
+  - 🇳🇴 102
+  - 🇩🇪 168a
+  - 🇳🇴 101
   - 🇩🇪 47a BP
   - 🇩🇪 105
-  - 🇩🇪 160i
-  - 🇩🇪 154h
-  - 🇩🇪 143d BP
-  - 🇩🇪 134a
-  - 🇩🇪 147f
-  - 🇩🇪 140c
-  - 🇩🇪 144e
-  - 🇩🇪 87
-  - 🇩🇪 173o
-  - 🇩🇪 149g
-  - 🇬🇧 117a
-  - 🇩🇪 120c
-  - 🇸🇪 93b
-  - 🇩🇪 161j
-  - 🇩🇪 135b
-  - 🇫🇮 100 BP
-  - 🇨🇭 121b
-  - 🇳🇱 169c
-  - 🇩🇪 104b
-  - 🇫🇷 125a
-  - 🇳🇱 152b
-  - 🇫🇮 94a
-  - 🇳🇱 164c
-  - 🇳🇱 172d
-  - 🇩🇪 159b
-  - 🇩🇪 115a
   - 🇺🇸 62a BP
+  - 🇩🇪 87
+  - 🇬🇧 117c
+  - 🇩🇪 104b
   - 🇵🇱 233
-  - 🇳🇱 170m
-  - 🇰🇿 97b BP
-  - 🇫🇮 171n
+  - 🇨🇭 121d
+  - 🇸🇪 93b
+  - 🇫🇷 125e
+  - 🇳🇱 169b
+  - 🇩🇪 159a
+  - 🇫🇮 120b
+  - 🇫🇮 100 BP
+  - 🇫🇮 94a
+  - 🇳🇱 172d
+  - 🇳🇱 152c
+  - 🇳🇱 164
+  - 🇸🇮 23
+  - 🇫🇮 171b
+  - 🇩🇪 115a
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -576,12 +392,10 @@ proxy-groups:
   proxies:
   - 🇺🇸 62a BP
   - 🇫🇮 94a
-  - 🇬🇧 117a
-  - 🇳🇴 101a
-  - 🇩🇪 47a BP
+  - 🇩🇪 168a
   - 🇩🇪 115a
-  - 🇫🇷 125a
-  - 🇩🇪 134a
+  - 🇩🇪 159a
+  - 🇩🇪 47a BP
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -590,22 +404,10 @@ proxy-groups:
   proxies:
   - 🇰🇿 97b BP
   - 🇩🇪 104b
-  - 🇨🇭 121b
-  - 🇳🇴 102b
+  - 🇫🇮 171b
+  - 🇫🇮 120b
+  - 🇳🇱 169b
   - 🇸🇪 93b
-  - 🇩🇪 159b
-  - 🇳🇱 152b
-  - 🇩🇪 135b
-  url: https://www.gstatic.com/generate_204
-  interval: 60
-  tolerance: 80
-- name: 📁 Группа C
-  type: url-test
-  proxies:
-  - 🇩🇪 120c
-  - 🇳🇱 169c
-  - 🇳🇱 164c
-  - 🇩🇪 140c
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -615,44 +417,31 @@ proxy-groups:
   - 🚀 Авто (лучший)
   - 📁 Группа A
   - 📁 Группа B
-  - 📁 Группа C
-  - 🇫🇮 165k
-  - 🇳🇴 102b
+  - 🇰🇿 97b BP
   - 🇫🇮 25
-  - 🇳🇴 101a
-  - 🇩🇪 168l
+  - 🇳🇴 102
+  - 🇩🇪 168a
+  - 🇳🇴 101
   - 🇩🇪 47a BP
   - 🇩🇪 105
-  - 🇩🇪 160i
-  - 🇩🇪 154h
-  - 🇩🇪 143d BP
-  - 🇩🇪 134a
-  - 🇩🇪 147f
-  - 🇩🇪 140c
-  - 🇩🇪 144e
-  - 🇩🇪 87
-  - 🇩🇪 173o
-  - 🇩🇪 149g
-  - 🇬🇧 117a
-  - 🇩🇪 120c
-  - 🇸🇪 93b
-  - 🇩🇪 161j
-  - 🇩🇪 135b
-  - 🇫🇮 100 BP
-  - 🇨🇭 121b
-  - 🇳🇱 169c
-  - 🇩🇪 104b
-  - 🇫🇷 125a
-  - 🇳🇱 152b
-  - 🇫🇮 94a
-  - 🇳🇱 164c
-  - 🇳🇱 172d
-  - 🇩🇪 159b
-  - 🇩🇪 115a
   - 🇺🇸 62a BP
+  - 🇩🇪 87
+  - 🇬🇧 117c
+  - 🇩🇪 104b
   - 🇵🇱 233
-  - 🇳🇱 170m
-  - 🇰🇿 97b BP
-  - 🇫🇮 171n
+  - 🇨🇭 121d
+  - 🇸🇪 93b
+  - 🇫🇷 125e
+  - 🇳🇱 169b
+  - 🇩🇪 159a
+  - 🇫🇮 120b
+  - 🇫🇮 100 BP
+  - 🇫🇮 94a
+  - 🇳🇱 172d
+  - 🇳🇱 152c
+  - 🇳🇱 164
+  - 🇸🇮 23
+  - 🇫🇮 171b
+  - 🇩🇪 115a
 rules:
 - MATCH,PROXY
