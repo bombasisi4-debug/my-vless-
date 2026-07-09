@@ -141,7 +141,7 @@ proxies:
     short-id: "6b2f4e6ac9b1d2f0"
   grpc-opts:
     grpc-service-name: grpc
-- name: 🇨🇦 11a
+- name: 🇨🇦 11
   type: vless
   server: 172.66.200.130
   port: 8880
@@ -196,21 +196,6 @@ proxies:
   reality-opts:
     public-key: "J5ITJbg5FQFembAfkogKHHQB6DigsFXQxK7xu-QMWUs"
     short-id: "a20d3ed244c76426"
-- name: 🇵🇱 203
-  type: vless
-  server: 45.140.204.171
-  port: 57000
-  uuid: "d308fa78-5413-483e-b854-d55e6374295d"
-  udp: true
-  network: grpc
-  tls: true
-  servername: "finance.yahoo.com"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "hZ2suCOyxMqdLE9YexeRtoG5r5isMoztbDrfMbiOIEY"
-    short-id: "ba"
-  grpc-opts:
-    grpc-service-name: grpc-pl57k-9f3a
 - name: 🇵🇱 164g
   type: vless
   server: 144.31.5.45
@@ -275,7 +260,7 @@ proxies:
   reality-opts:
     public-key: "J5ITJbg5FQFembAfkogKHHQB6DigsFXQxK7xu-QMWUs"
     short-id: "a20d3ed244c76426"
-- name: 🇻🇳 226n
+- name: 🇻🇳 226l
   type: vless
   server: 144.31.50.117
   port: 6443
@@ -303,20 +288,6 @@ proxies:
   reality-opts:
     public-key: "J5ITJbg5FQFembAfkogKHHQB6DigsFXQxK7xu-QMWUs"
     short-id: "a20d3ed244c76426"
-- name: 🇫🇮 28b
-  type: vless
-  server: 144.31.128.14
-  port: 10443
-  uuid: "f6431ff1-dec0-4a6c-be4a-ce917913b589"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "www.cloudflare.com"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "WeShDM0MdunM6N8btrY8tXlL0GT1Ah-0jcplNQf9FEo"
-    short-id: ""
 - name: 🇵🇱 233
   type: vless
   server: 2.59.163.45
@@ -410,20 +381,6 @@ proxies:
   reality-opts:
     public-key: "J5ITJbg5FQFembAfkogKHHQB6DigsFXQxK7xu-QMWUs"
     short-id: "a20d3ed244c76426"
-- name: 🇳🇱 208l
-  type: vless
-  server: 144.124.233.205
-  port: 443
-  uuid: "b406bc51-9002-474c-beae-b194b02c91da"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "sun6-22.userapi.com"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "kY32I2PvI5UYqhjoZlcL0z6V6r1AV_lLZolQH78ApmU"
-    short-id: "ae575a16aa1a19a9"
 - name: 🇺🇸 62a BP
   type: vless
   server: mtn.v2plus.ovh
@@ -517,20 +474,6 @@ proxies:
   reality-opts:
     public-key: "J5ITJbg5FQFembAfkogKHHQB6DigsFXQxK7xu-QMWUs"
     short-id: "a20d3ed244c76426"
-- name: 🇪🇸 218m BP
-  type: vless
-  server: 144.31.50.114
-  port: 8443
-  uuid: "b406bc51-9002-474c-beae-b194b02c91da"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "sp.federal-usa.com"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "J5ITJbg5FQFembAfkogKHHQB6DigsFXQxK7xu-QMWUs"
-    short-id: "a20d3ed244c76426"
 - name: 🇱🇻 168i
   type: vless
   server: 62.60.234.102
@@ -585,19 +528,17 @@ proxy-groups:
   - 🇵🇱 224d BP
   - 🇳🇱 176c
   - 🇩🇪 171d
-  - 🇨🇦 11a
+  - 🇨🇦 11
   - 🇵🇱 149a
   - 🇩🇪 135a
   - 🇳🇱 109b BP
-  - 🇵🇱 203
   - 🇵🇱 164g
   - 🇸🇪 243
   - 🇫🇷 125
   - 🇩🇪 87
   - 🇳🇱 86a
-  - 🇻🇳 226n
+  - 🇻🇳 226l
   - 🇵🇱 95a
-  - 🇫🇮 28b
   - 🇵🇱 233
   - 🇧🇾 144d
   - 🇩🇪 170c
@@ -605,7 +546,6 @@ proxy-groups:
   - 🇵🇱 152b
   - 🇳🇱 190d
   - 🇨🇭 128c BP
-  - 🇳🇱 208l
   - 🇺🇸 62a BP
   - 🇳🇱 83
   - 🇭🇺 174j BP
@@ -613,7 +553,6 @@ proxy-groups:
   - 🇫🇮 225d BP
   - 🇫🇮 159e
   - 🇵🇱 175c
-  - 🇪🇸 218m BP
   - 🇱🇻 168i
   - 🇩🇪 110b
   - 🇰🇿 97b BP
@@ -628,7 +567,6 @@ proxy-groups:
   - 🇫🇮 154a BP
   - 🇩🇪 135a
   - 🇳🇱 86a
-  - 🇨🇦 11a
   - 🇵🇱 95a
   url: https://www.gstatic.com/generate_204
   interval: 60
@@ -641,7 +579,6 @@ proxy-groups:
   - 🇫🇮 169b
   - 🇵🇱 152b
   - 🇳🇱 109b BP
-  - 🇫🇮 28b
   - 🇩🇪 110b
   url: https://www.gstatic.com/generate_204
   interval: 60
@@ -686,19 +623,17 @@ proxy-groups:
   - 🇵🇱 224d BP
   - 🇳🇱 176c
   - 🇩🇪 171d
-  - 🇨🇦 11a
+  - 🇨🇦 11
   - 🇵🇱 149a
   - 🇩🇪 135a
   - 🇳🇱 109b BP
-  - 🇵🇱 203
   - 🇵🇱 164g
   - 🇸🇪 243
   - 🇫🇷 125
   - 🇩🇪 87
   - 🇳🇱 86a
-  - 🇻🇳 226n
+  - 🇻🇳 226l
   - 🇵🇱 95a
-  - 🇫🇮 28b
   - 🇵🇱 233
   - 🇧🇾 144d
   - 🇩🇪 170c
@@ -706,7 +641,6 @@ proxy-groups:
   - 🇵🇱 152b
   - 🇳🇱 190d
   - 🇨🇭 128c BP
-  - 🇳🇱 208l
   - 🇺🇸 62a BP
   - 🇳🇱 83
   - 🇭🇺 174j BP
@@ -714,7 +648,6 @@ proxy-groups:
   - 🇫🇮 225d BP
   - 🇫🇮 159e
   - 🇵🇱 175c
-  - 🇪🇸 218m BP
   - 🇱🇻 168i
   - 🇩🇪 110b
   - 🇰🇿 97b BP
