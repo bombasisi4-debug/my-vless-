@@ -3,7 +3,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇾 160
+- name: 🇮🇸 160
   type: vless
   server: rumulti.federal-usa.com
   port: 8443
@@ -16,11 +16,27 @@ proxies:
   reality-opts:
     public-key: "J5ITJbg5FQFembAfkogKHHQB6DigsFXQxK7xu-QMWUs"
     short-id: "6b2f4e6ac9b1d2f0"
+- name: 🇳🇱 90
+  type: vless
+  server: 141.98.6.115
+  port: 603
+  uuid: "e69b8598-2910-4e43-97b6-d4effda2e5dc"
+  udp: true
+  network: grpc
+  tls: true
+  servername: "www.amd.com"
+  client-fingerprint: edge
+  reality-opts:
+    public-key: "lWJaKBaMPs0NYHGCbfsrmn64R4juEQEvfmHNnL741Ek"
+    short-id: ""
+  grpc-opts:
+    grpc-service-name: ''
 proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - 🇸🇾 160
+  - 🇮🇸 160
+  - 🇳🇱 90
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -28,6 +44,7 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 Авто (лучший)
-  - 🇸🇾 160
+  - 🇮🇸 160
+  - 🇳🇱 90
 rules:
 - MATCH,PROXY
