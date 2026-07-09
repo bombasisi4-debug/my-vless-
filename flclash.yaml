@@ -3,7 +3,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇵🇱 14b BP
+- name: 🇵🇱 14a BP
   type: vless
   server: 185.42.14.46
   port: 443
@@ -17,7 +17,7 @@ proxies:
   reality-opts:
     public-key: "G9uQu7GdqkkvE6WH0gZ1kfzt2J50s6VgddYnqck5tjw"
     short-id: "a29991b068641259"
-- name: 🇩🇪 78c
+- name: 🇩🇪 78
   type: vless
   server: 144.31.87.16
   port: 2096
@@ -32,48 +32,6 @@ proxies:
     short-id: "a7bf40db1b0e566a"
   grpc-opts:
     grpc-service-name: grpc
-- name: 🇩🇪 93g
-  type: vless
-  server: 159.195.44.50
-  port: 443
-  uuid: "40adcab9-ea8c-4116-a985-346191e2b4c8"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "at.c2horizon.app"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "IuvAXlAWBpeXehmEk0P-FIGTctUhny2H3UilbWWfJC0"
-    short-id: "122218f4c1f172e4"
-- name: 🇩🇪 114h
-  type: vless
-  server: 87.120.126.218
-  port: 443
-  uuid: "0790e1d6-a2df-43c1-ba24-5e5a1e2c8287"
-  udp: true
-  network: grpc
-  tls: true
-  servername: "mageia.ubuntuhosting.host"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "QJW15WZWLNjA8KEpe4GqSdOe4rfW8KgqjjVmKxPk-ng"
-    short-id: "3fa234ea9feaa048"
-  grpc-opts:
-    grpc-service-name: gun
-- name: 🇩🇪 87
-  type: vless
-  server: de.cvb.pp.ua
-  port: 20811
-  uuid: "2a1e3833-c973-4e13-969d-4f80af9ff5db"
-  udp: true
-  network: tcp
-  tls: true
-  servername: "www.bing.com"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "HkXO-Bo8yy9zda9SYoqnVFy4FiYq9wHYvH57GX5eTks"
-    short-id: "6c710321"
 - name: 🇩🇪 22c
   type: vless
   server: 159.195.47.170
@@ -88,34 +46,19 @@ proxies:
   reality-opts:
     public-key: "IuvAXlAWBpeXehmEk0P-FIGTctUhny2H3UilbWWfJC0"
     short-id: "122218f4c1f172e4"
-- name: 🇩🇪 6a
+- name: 🇩🇪 87
   type: vless
-  server: 189.74.106.130
-  port: 443
-  uuid: "40adcab9-ea8c-4116-a985-346191e2b4c8"
+  server: de.cvb.pp.ua
+  port: 20811
+  uuid: "2a1e3833-c973-4e13-969d-4f80af9ff5db"
   udp: true
   network: tcp
   tls: true
-  flow: xtls-rprx-vision
-  servername: "api.yandex-cloud.org"
-  client-fingerprint: firefox
+  servername: "www.bing.com"
+  client-fingerprint: chrome
   reality-opts:
-    public-key: "IuvAXlAWBpeXehmEk0P-FIGTctUhny2H3UilbWWfJC0"
-    short-id: "122218f4c1f172e4"
-- name: 🇫🇷 125
-  type: vless
-  server: 45.192.2.173
-  port: 443
-  uuid: "cf0c0f54-6ac2-4bec-8ef6-436ef83e2eae"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "yandex.net"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "1oUeBtHH4DskTM_jCh-6enWRkFMDX9l1OU5kWYl4kxA"
-    short-id: "ece180c605b5453c"
+    public-key: "HkXO-Bo8yy9zda9SYoqnVFy4FiYq9wHYvH57GX5eTks"
+    short-id: "6c710321"
 - name: 🇩🇪 23d
   type: vless
   server: 189.74.106.98
@@ -130,41 +73,21 @@ proxies:
   reality-opts:
     public-key: "IuvAXlAWBpeXehmEk0P-FIGTctUhny2H3UilbWWfJC0"
     short-id: "122218f4c1f172e4"
-- name: 🇸🇪 243
+- name: 🇩🇪 93h
   type: vless
-  server: 89.19.223.145
-  port: 8443
-  uuid: "f0b752da-101e-46dd-9860-3f089e71ec91"
-  udp: true
-  network: tcp
-  tls: false
-- name: 🇺🇸 62 BP
-  type: vless
-  server: mtn.v2plus.ovh
-  port: 80
-  uuid: "40d36acd-5743-4b96-b8f6-b195e35e7336"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /187o1HyKayf2hitk?ed=2560
-    headers:
-      Host: worker3.tacemor185.workers.dev
-- name: 🇳🇱 94b
-  type: vless
-  server: xhttp-nl.feddos.ru
+  server: 159.195.44.50
   port: 443
-  uuid: "a3e03930-7645-4bf0-ad4d-40d44341fa88"
+  uuid: "40adcab9-ea8c-4116-a985-346191e2b4c8"
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: "kookas.fi"
+  servername: "at.c2horizon.app"
   client-fingerprint: firefox
   reality-opts:
-    public-key: "qB_eMu3ZO_wGITnyIqJ7Kt39-h9oHFnHlQQEqA-r3VA"
-    short-id: "43dcff53849b81e6"
-- name: 🇳🇱 90
+    public-key: "IuvAXlAWBpeXehmEk0P-FIGTctUhny2H3UilbWWfJC0"
+    short-id: "122218f4c1f172e4"
+- name: 🇳🇱 90b
   type: vless
   server: 141.98.6.115
   port: 603
@@ -179,21 +102,69 @@ proxies:
     short-id: ""
   grpc-opts:
     grpc-service-name: ''
-- name: 🇳🇱 47a
+- name: 🇩🇪 6a
   type: vless
-  server: 94.183.254.166
-  port: 603
-  uuid: "a3e03930-7645-4bf0-ad4d-40d44341fa88"
+  server: 189.74.106.130
+  port: 443
+  uuid: "40adcab9-ea8c-4116-a985-346191e2b4c8"
   udp: true
-  network: grpc
+  network: tcp
   tls: true
-  servername: "www.amd.com"
+  flow: xtls-rprx-vision
+  servername: "api.yandex-cloud.org"
   client-fingerprint: firefox
   reality-opts:
-    public-key: "qB_eMu3ZO_wGITnyIqJ7Kt39-h9oHFnHlQQEqA-r3VA"
-    short-id: ""
-  grpc-opts:
-    grpc-service-name: ''
+    public-key: "IuvAXlAWBpeXehmEk0P-FIGTctUhny2H3UilbWWfJC0"
+    short-id: "122218f4c1f172e4"
+- name: 🇳🇱 102
+  type: vless
+  server: kodama.proxy.rlwy.net
+  port: 12612
+  uuid: "a6a5f112-9319-4519-8640-7157ff33a422"
+  udp: true
+  network: tcp
+  tls: true
+  servername: "is1-ssl.mzstatic.com"
+  client-fingerprint: ios
+  reality-opts:
+    public-key: "jE7yxdPpWET4r2zjMuoqR8R8FyBTDLpt-SJ7noBrdyI"
+    short-id: "98ab7bb0b991221b"
+- name: 🇫🇷 125
+  type: vless
+  server: 45.192.2.173
+  port: 443
+  uuid: "cf0c0f54-6ac2-4bec-8ef6-436ef83e2eae"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "yandex.net"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "1oUeBtHH4DskTM_jCh-6enWRkFMDX9l1OU5kWYl4kxA"
+    short-id: "ece180c605b5453c"
+- name: 🇸🇪 243
+  type: vless
+  server: 89.19.223.145
+  port: 8443
+  uuid: "f0b752da-101e-46dd-9860-3f089e71ec91"
+  udp: true
+  network: tcp
+  tls: false
+- name: 🇳🇱 101
+  type: vless
+  server: 189.74.114.98
+  port: 443
+  uuid: "40adcab9-ea8c-4116-a985-346191e2b4c8"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "api.yandex-dev.org"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "IuvAXlAWBpeXehmEk0P-FIGTctUhny2H3UilbWWfJC0"
+    short-id: "122218f4c1f172e4"
 - name: 🇫🇮 28e
   type: vless
   server: 144.31.128.14
@@ -208,49 +179,33 @@ proxies:
   reality-opts:
     public-key: "WeShDM0MdunM6N8btrY8tXlL0GT1Ah-0jcplNQf9FEo"
     short-id: ""
-- name: 🇵🇱 61
+- name: 🇺🇸 62 BP
   type: vless
-  server: 152.233.43.71
-  port: 443
-  uuid: "8212df93-b748-430c-8099-ba49d56d2570"
+  server: mtn.v2plus.ovh
+  port: 80
+  uuid: "40d36acd-5743-4b96-b8f6-b195e35e7336"
   udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "api-maps.yandex.ru"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "DaQjKlJbC2ksBaItYb0fjt1xkIcxRh_STIQ4rkrydjY"
-    short-id: "7db44191"
-- name: 🇳🇱 3a
+  network: ws
+  tls: false
+  ws-opts:
+    path: /187o1HyKayf2hitk?ed=2560
+    headers:
+      Host: worker3.tacemor185.workers.dev
+- name: 🇦🇹 53f
   type: vless
-  server: 2.26.254.89
-  port: 443
-  uuid: "cb784d00-d34a-4389-b938-8717f7b28353"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "yastatic.net"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "Ulq3VvXRo14PiLx8Ymy8Z-UooTTAU6rjdJ_tIrJcJwA"
-    short-id: "e9fa03f679854462"
-- name: 🇹🇷 17b
-  type: vless
-  server: 138.124.107.46
+  server: 189.74.115.34
   port: 443
   uuid: "40adcab9-ea8c-4116-a985-346191e2b4c8"
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: "tr.c2horizon.app"
+  servername: "api.yandex-dev.online"
   client-fingerprint: firefox
   reality-opts:
     public-key: "IuvAXlAWBpeXehmEk0P-FIGTctUhny2H3UilbWWfJC0"
     short-id: "122218f4c1f172e4"
-- name: 🇷🇴 92f BP
+- name: 🇷🇴 92g BP
   type: vless
   server: 178.214.211.23
   port: 443
@@ -265,29 +220,56 @@ proxies:
     short-id: "c9e0a2f4b6d8"
   grpc-opts:
     grpc-service-name: vless
+- name: 🇹🇷 17b
+  type: vless
+  server: 138.124.107.46
+  port: 443
+  uuid: "40adcab9-ea8c-4116-a985-346191e2b4c8"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "tr.c2horizon.app"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "IuvAXlAWBpeXehmEk0P-FIGTctUhny2H3UilbWWfJC0"
+    short-id: "122218f4c1f172e4"
+- name: 🇩🇪 100
+  type: vless
+  server: de-vip-unlimited.relqino.ir
+  port: 1020
+  uuid: "af0ed84b-b07f-4b6f-8ca7-59560f2bc8fc"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "yahoo.com"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "jILgyIiDR7xY8WDrU9EMx_iXUi6nKr3LapCgglBVBAU"
+    short-id: "3fa2fdb7dce16b8b"
 proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - 🇵🇱 14b BP
-  - 🇩🇪 78c
-  - 🇩🇪 93g
-  - 🇩🇪 114h
-  - 🇩🇪 87
+  - 🇵🇱 14a BP
+  - 🇩🇪 78
   - 🇩🇪 22c
-  - 🇩🇪 6a
-  - 🇫🇷 125
+  - 🇩🇪 87
   - 🇩🇪 23d
+  - 🇩🇪 93h
+  - 🇳🇱 90b
+  - 🇩🇪 6a
+  - 🇳🇱 102
+  - 🇫🇷 125
   - 🇸🇪 243
-  - 🇺🇸 62 BP
-  - 🇳🇱 94b
-  - 🇳🇱 90
-  - 🇳🇱 47a
+  - 🇳🇱 101
   - 🇫🇮 28e
-  - 🇵🇱 61
-  - 🇳🇱 3a
+  - 🇺🇸 62 BP
+  - 🇦🇹 53f
+  - 🇷🇴 92g BP
   - 🇹🇷 17b
-  - 🇷🇴 92f BP
+  - 🇩🇪 100
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -295,24 +277,23 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 Авто (лучший)
-  - 🇵🇱 14b BP
-  - 🇩🇪 78c
-  - 🇩🇪 93g
-  - 🇩🇪 114h
-  - 🇩🇪 87
+  - 🇵🇱 14a BP
+  - 🇩🇪 78
   - 🇩🇪 22c
-  - 🇩🇪 6a
-  - 🇫🇷 125
+  - 🇩🇪 87
   - 🇩🇪 23d
+  - 🇩🇪 93h
+  - 🇳🇱 90b
+  - 🇩🇪 6a
+  - 🇳🇱 102
+  - 🇫🇷 125
   - 🇸🇪 243
-  - 🇺🇸 62 BP
-  - 🇳🇱 94b
-  - 🇳🇱 90
-  - 🇳🇱 47a
+  - 🇳🇱 101
   - 🇫🇮 28e
-  - 🇵🇱 61
-  - 🇳🇱 3a
+  - 🇺🇸 62 BP
+  - 🇦🇹 53f
+  - 🇷🇴 92g BP
   - 🇹🇷 17b
-  - 🇷🇴 92f BP
+  - 🇩🇪 100
 rules:
 - MATCH,PROXY
