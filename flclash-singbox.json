@@ -22,6 +22,27 @@
   "outbounds": [
     {
       "type": "vless",
+      "tag": "🇫🇮 6",
+      "server": "84.201.132.192",
+      "server_port": 8090,
+      "uuid": "b406bc51-9002-474c-beae-b194b02c91da",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "sun6-22.userapi.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "J5ITJbg5FQFembAfkogKHHQB6DigsFXQxK7xu-QMWUs",
+          "short_id": "6b2f4e6ac9b1d2f0"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇮🇸 160",
       "server": "rumulti.federal-usa.com",
       "server_port": 8443,
@@ -43,7 +64,178 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 90",
+      "tag": "🇩🇪 28a",
+      "server": "77.90.63.102",
+      "server_port": 443,
+      "uuid": "8bb61a65-81a2-4317-9258-f9668cdf0083",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "nlsk.mcqueenconnection.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "O2ttHpVFmwoAf-E1rHgOlv7NggcwxcWkHHen7jkIBjY",
+          "short_id": "59f5cda53ddadac7"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇹 53b",
+      "server": "45.155.71.170",
+      "server_port": 50443,
+      "uuid": "ab51054f-de76-4a0f-9f3a-b44c8df86a6c",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.icloud.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "hp9ht_jsxocTnQEbChb1G3JoDF50x-xDT8UYr66D1TQ",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 17a BP",
+      "server": "176.117.75.143",
+      "server_port": 2087,
+      "uuid": "3cabf01d-2245-418d-801b-dea9c57f6601",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "rIli6ATH6ttPnQ7AqIaWMjnCGu7LPMH082Zg4so0O00",
+          "short_id": "86f058f5"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 79d",
+      "server": "81.19.137.144",
+      "server_port": 40443,
+      "uuid": "ab51054f-de76-4a0f-9f3a-b44c8df86a6c",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "deepl.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "6AOnobBShzL_N96JRBNMfbL84_3myz8ZbKfZUEqRXiY",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 23 BP",
+      "server": "146.75.119.82",
+      "server_port": 80,
+      "uuid": "b003b30f-a71e-4196-986a-b0e504f945e0",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "ws/?ed=2048/@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr/?2048",
+        "headers": {
+          "Host": "rb24.ir"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 85e",
+      "server": "94.249.148.8",
+      "server_port": 22000,
+      "uuid": "c50b50c9-6868-4231-859a-691da85a2e60",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "xLCgdUiKeBpYK3YsT96d81yuhFuVgUeANbVeiQACRWw",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 47",
+      "server": "109.120.190.41",
+      "server_port": 1829,
+      "uuid": "db7cae85-3c1a-4e4f-b317-7cdeaf419c5a",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "max.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "dbe3HCS7E7QfvfN59Us7rV8Kasm_5CCUgKiGm8k8vRg",
+          "short_id": "c3607d"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇴 75c",
+      "server": "72.5.42.70",
+      "server_port": 40443,
+      "uuid": "ab51054f-de76-4a0f-9f3a-b44c8df86a6c",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "deepl.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "6AOnobBShzL_N96JRBNMfbL84_3myz8ZbKfZUEqRXiY",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 90b",
       "server": "141.98.6.115",
       "server_port": 603,
       "uuid": "e69b8598-2910-4e43-97b6-d4effda2e5dc",
@@ -70,8 +262,17 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇫🇮 6",
         "🇮🇸 160",
-        "🇳🇱 90"
+        "🇩🇪 28a",
+        "🇦🇹 53b",
+        "🇳🇱 17a BP",
+        "🇫🇷 79d",
+        "🇫🇮 23 BP",
+        "🇩🇪 85e",
+        "🇩🇪 47",
+        "🇷🇴 75c",
+        "🇳🇱 90b"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "1m",
@@ -82,8 +283,17 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇫🇮 6",
         "🇮🇸 160",
-        "🇳🇱 90"
+        "🇩🇪 28a",
+        "🇦🇹 53b",
+        "🇳🇱 17a BP",
+        "🇫🇷 79d",
+        "🇫🇮 23 BP",
+        "🇩🇪 85e",
+        "🇩🇪 47",
+        "🇷🇴 75c",
+        "🇳🇱 90b"
       ],
       "default": "auto"
     },
