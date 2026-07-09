@@ -22,7 +22,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇸🇾 1",
+      "tag": "🇮🇸 1",
       "server": "rumulti.federal-usa.com",
       "server_port": 8443,
       "uuid": "b406bc51-9002-474c-beae-b194b02c91da",
@@ -42,10 +42,36 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇳🇱 2",
+      "server": "141.98.6.115",
+      "server_port": 603,
+      "uuid": "e69b8598-2910-4e43-97b6-d4effda2e5dc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.amd.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "lWJaKBaMPs0NYHGCbfsrmn64R4juEQEvfmHNnL741Ek",
+          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": ""
+      }
+    },
+    {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇾 1"
+        "🇮🇸 1",
+        "🇳🇱 2"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "1m",
@@ -56,7 +82,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇾 1"
+        "🇮🇸 1",
+        "🇳🇱 2"
       ],
       "default": "auto"
     },
