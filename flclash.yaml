@@ -11,7 +11,7 @@ proxies:
   udp: true
   network: tcp
   tls: false
-- name: 🇸🇪 25b BP
+- name: 🇸🇪 25a BP
   type: vless
   server: 89.125.76.98
   port: 443
@@ -25,7 +25,7 @@ proxies:
   reality-opts:
     public-key: "BX8CqIiZTbjfp--_TsYmp5pPQzzIZZ6rW9ly5HxDM3E"
     short-id: "8c554321"
-- name: 🇩🇪 160
+- name: 🇩🇪 160a
   type: vless
   server: 167.82.95.99
   port: 80
@@ -37,7 +37,7 @@ proxies:
     path: /?ed=2048
     headers:
       Host: echopress-bot-4.global.ssl.fastly.net
-- name: 🇩🇪 152f BP
+- name: 🇩🇪 152h BP
   type: vless
   server: 192.142.12.89
   port: 443
@@ -51,6 +51,20 @@ proxies:
   reality-opts:
     public-key: "6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY"
     short-id: "1c3e8241a8743df9"
+- name: 🇩🇪 47b
+  type: vless
+  server: netcap.oblakoapp.com
+  port: 443
+  uuid: "838de912-398a-4c0e-9228-0fd44b0d1f8b"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "live.oblakoapp.com"
+  client-fingerprint: qq
+  reality-opts:
+    public-key: "HfuHCLrjmpMIqPbZ61f_MvdigyWZ3Oj_ZaxdlMdcdFA"
+    short-id: "3a03e85af8d9f63e"
 - name: 🇩🇪 87
   type: vless
   server: de.cvb.pp.ua
@@ -72,55 +86,6 @@ proxies:
   udp: true
   network: tcp
   tls: false
-- name: 🇲🇩 24
-  type: vless
-  server: 144.31.131.241
-  port: 8443
-  uuid: "b406bc51-9002-474c-beae-b194b02c91da"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "mold.speedload.online"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: "J5ITJbg5FQFembAfkogKHHQB6DigsFXQxK7xu-QMWUs"
-    short-id: "a20d3ed244c76426"
-- name: 🇱🇻 125 BP
-  type: vless
-  server: 85.159.228.250
-  port: 25703
-  uuid: "7e5964d036b843ff885b86c4d3bfd466"
-  udp: true
-  network: tcp
-  tls: false
-- name: 🇩🇪 173
-  type: vless
-  server: mhm0906.xyz
-  port: 80
-  uuid: "8babdee2-7a1b-4daa-a339-55e2975a5003"
-  udp: true
-  network: tcp
-  tls: true
-  servername: "mars.amd.com"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "6x5cty3-ch8Nba6e4v8PKeTFRlFz1OaslpEIbdQEGg8"
-    short-id: "969ad09863f939"
-- name: 🇬🇧 7a
-  type: vless
-  server: 138.124.114.29
-  port: 40443
-  uuid: "ab51054f-de76-4a0f-9f3a-b44c8df86a6c"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "deepl.com"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "6AOnobBShzL_N96JRBNMfbL84_3myz8ZbKfZUEqRXiY"
-    short-id: ""
 - name: 🇰🇿 97 BP
   type: vless
   server: 31.43.179.0
@@ -133,22 +98,39 @@ proxies:
     path: /187o1HyKayf2hitk?ed=2560
     headers:
       Host: worker3.tacemor185.workers.dev
-- name: 🇵🇱 110e
+- name: 🇱🇻 125 BP
   type: vless
-  server: 146.70.161.35
-  port: 14304
-  uuid: "a8db0cb9-8df1-4a88-b4af-d0512dffd245"
+  server: 85.159.228.250
+  port: 25703
+  uuid: "7e5964d036b843ff885b86c4d3bfd466"
   udp: true
-  network: grpc
-  tls: true
-  servername: "www.apple.com"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: "JXTa4KFDYIaOu9zwHosqTFvERbnxRW6qpo4dUJRIQkA"
-    short-id: "503b0853f3b2460d"
-  grpc-opts:
-    grpc-service-name: api
-- name: 🇫🇷 79d
+  network: tcp
+  tls: false
+- name: 🇩🇪 90c
+  type: vless
+  server: 199.232.79.11
+  port: 80
+  uuid: "3b940e86-7b0d-40da-acf1-12d334e41023"
+  udp: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: Fastapi.Org
+- name: 🇳🇱 83 BP
+  type: vless
+  server: 103.133.1.2
+  port: 80
+  uuid: "eaf76557-2219-4799-8171-d7020adfefd0"
+  udp: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /ws
+    headers:
+      Host: soft-shadow-1e33.xicav73335.workers.dev
+- name: 🇫🇷 79
   type: vless
   server: 81.19.137.144
   port: 40443
@@ -162,9 +144,23 @@ proxies:
   reality-opts:
     public-key: "6AOnobBShzL_N96JRBNMfbL84_3myz8ZbKfZUEqRXiY"
     short-id: ""
-- name: 🇩🇪 190
+- name: 🇵🇱 94e
   type: vless
-  server: 199.232.249.11
+  server: 82.40.62.196
+  port: 443
+  uuid: "7499f0a0-3670-4cf6-a31c-ad4cd943cf18"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "pl.hagrid-connected.com"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "nfkwd9xJCoNuWrvvieBB9VfpcDldsARAdFPL0dF5A1Q"
+    short-id: "305570274c0c72cc"
+- name: 🇩🇪 93d
+  type: vless
+  server: 199.232.24.11
   port: 80
   uuid: "3b940e86-7b0d-40da-acf1-12d334e41023"
   udp: true
@@ -174,21 +170,20 @@ proxies:
     path: /
     headers:
       Host: Fastapi.Org
-- name: 🇩🇪 174g BP
+- name: 🇫🇷 227b BP
   type: vless
-  server: 192.142.12.170
-  port: 443
-  uuid: "4f166057-2f4c-0004-b5b3-6eb4413022e1"
+  server: 104.253.74.186
+  port: 2089
+  uuid: "065d23e5-7151-46b2-b010-76300cdf0997"
   udp: true
   network: tcp
   tls: true
-  flow: xtls-rprx-vision
-  servername: "qr-gen.cc"
-  client-fingerprint: qq
+  servername: "www.sony.com"
+  client-fingerprint: chrome
   reality-opts:
-    public-key: "6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY"
-    short-id: "1c3e8241a8743df9"
-- name: 🇩🇪 53c
+    public-key: "EgU08aKdsWX7VkDnLhVjKfasViLjpBH_367vxFu5d1M"
+    short-id: ""
+- name: 🇩🇪 53
   type: vless
   server: evolus.oblakoapp.com
   port: 443
@@ -202,81 +197,69 @@ proxies:
   reality-opts:
     public-key: "KP-P4zenuMuYe3UxPCjDEVmgqI4GiRZ95UbsAfmL71g"
     short-id: "970098f31b96a3e8"
-- name: 🇩🇪 230i
+- name: 🇩🇪 174i BP
   type: vless
-  server: 3.66.164.71
-  port: 2053
-  uuid: "d4089cdb-48b6-46e7-b458-9c4c1b9fad56"
+  server: 192.142.12.170
+  port: 443
+  uuid: "4f166057-2f4c-0004-b5b3-6eb4413022e1"
   udp: true
   network: tcp
   tls: true
-  servername: "www.intel.com"
-  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  servername: "qr-gen.cc"
+  client-fingerprint: qq
   reality-opts:
-    public-key: "Fg8dfF_e8zjy830DZ3-iQh27U-xURRXYmjDwxWDFgFs"
-    short-id: "de"
-- name: 🇳🇱 83 BP
+    public-key: "6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY"
+    short-id: "1c3e8241a8743df9"
+- name: 🇸🇪 101f
   type: vless
-  server: 103.133.1.2
+  server: 62.60.159.137
+  port: 50443
+  uuid: "ab51054f-de76-4a0f-9f3a-b44c8df86a6c"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "www.icloud.com"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "hp9ht_jsxocTnQEbChb1G3JoDF50x-xDT8UYr66D1TQ"
+    short-id: ""
+- name: 🇩🇪 105g
+  type: vless
+  server: 199.232.245.11
   port: 80
-  uuid: "eaf76557-2219-4799-8171-d7020adfefd0"
+  uuid: "3b940e86-7b0d-40da-acf1-12d334e41023"
   udp: true
   network: ws
   tls: false
   ws-opts:
-    path: /ws
+    path: /
     headers:
-      Host: soft-shadow-1e33.xicav73335.workers.dev
-- name: 🇫🇷 227h BP
-  type: vless
-  server: 104.253.74.186
-  port: 2089
-  uuid: "065d23e5-7151-46b2-b010-76300cdf0997"
-  udp: true
-  network: tcp
-  tls: true
-  servername: "www.sony.com"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "EgU08aKdsWX7VkDnLhVjKfasViLjpBH_367vxFu5d1M"
-    short-id: ""
-- name: 🇩🇪 232
-  type: vless
-  server: 94.237.85.130
-  port: 35656
-  uuid: "6add3093-a6b5-430a-8bf7-0164bb1b3e28"
-  udp: true
-  network: tcp
-  tls: true
-  servername: "amazonaws-china.com"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "nC2lpTMb2bmqaq9Fb1izRDr6aYMCEKGCpQN5dzQWfh4"
-    short-id: "0d"
+      Host: Fastapi.Org
 proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
   - 🇫🇮 85 BP
-  - 🇸🇪 25b BP
-  - 🇩🇪 160
-  - 🇩🇪 152f BP
+  - 🇸🇪 25a BP
+  - 🇩🇪 160a
+  - 🇩🇪 152h BP
+  - 🇩🇪 47b
   - 🇩🇪 87
   - 🇸🇪 243
-  - 🇲🇩 24
-  - 🇱🇻 125 BP
-  - 🇩🇪 173
-  - 🇬🇧 7a
   - 🇰🇿 97 BP
-  - 🇵🇱 110e
-  - 🇫🇷 79d
-  - 🇩🇪 190
-  - 🇩🇪 174g BP
-  - 🇩🇪 53c
-  - 🇩🇪 230i
+  - 🇱🇻 125 BP
+  - 🇩🇪 90c
   - 🇳🇱 83 BP
-  - 🇫🇷 227h BP
-  - 🇩🇪 232
+  - 🇫🇷 79
+  - 🇵🇱 94e
+  - 🇩🇪 93d
+  - 🇫🇷 227b BP
+  - 🇩🇪 53
+  - 🇩🇪 174i BP
+  - 🇸🇪 101f
+  - 🇩🇪 105g
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -285,24 +268,23 @@ proxy-groups:
   proxies:
   - 🚀 Авто (лучший)
   - 🇫🇮 85 BP
-  - 🇸🇪 25b BP
-  - 🇩🇪 160
-  - 🇩🇪 152f BP
+  - 🇸🇪 25a BP
+  - 🇩🇪 160a
+  - 🇩🇪 152h BP
+  - 🇩🇪 47b
   - 🇩🇪 87
   - 🇸🇪 243
-  - 🇲🇩 24
-  - 🇱🇻 125 BP
-  - 🇩🇪 173
-  - 🇬🇧 7a
   - 🇰🇿 97 BP
-  - 🇵🇱 110e
-  - 🇫🇷 79d
-  - 🇩🇪 190
-  - 🇩🇪 174g BP
-  - 🇩🇪 53c
-  - 🇩🇪 230i
+  - 🇱🇻 125 BP
+  - 🇩🇪 90c
   - 🇳🇱 83 BP
-  - 🇫🇷 227h BP
-  - 🇩🇪 232
+  - 🇫🇷 79
+  - 🇵🇱 94e
+  - 🇩🇪 93d
+  - 🇫🇷 227b BP
+  - 🇩🇪 53
+  - 🇩🇪 174i BP
+  - 🇸🇪 101f
+  - 🇩🇪 105g
 rules:
 - MATCH,PROXY
