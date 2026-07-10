@@ -23,21 +23,39 @@
     {
       "type": "vless",
       "tag": "🇩🇪 1",
-      "server": "167.82.95.99",
-      "server_port": 80,
-      "uuid": "2cc86f73-ebf5-48a9-87a2-d54c7b49ab70",
+      "server": "152.236.3.13",
+      "server_port": 8443,
+      "uuid": "24a4e17f-a5ed-4083-9a88-5e2185183068",
       "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "echopress-bot-4.global.ssl.fastly.net"
+      "tls": {
+        "enabled": true,
+        "server_name": "addons.mozilla.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "56QUSkgaBUAruo4LoZnfo6z6Y4CGZRTx1zdNLYKKGRk",
+          "short_id": "530db35e324c3aa5"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "api.v1.telemetry.EventStream"
       }
     },
     {
       "type": "vless",
       "tag": "🇩🇪 2",
+      "server": "110.34.38.2",
+      "server_port": 1445,
+      "uuid": "d8b42cd5-a149-4356-9e61-111111111111",
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 3",
       "server": "192.142.12.89",
       "server_port": 443,
       "uuid": "4f166057-2f4c-0003-b5b3-6eb4413022e1",
@@ -59,7 +77,43 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 3",
+      "tag": "🇩🇪 4",
+      "server": "199.232.79.11",
+      "server_port": 80,
+      "uuid": "3b940e86-7b0d-40da-acf1-12d334e41023",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "Fastapi.Org"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 5",
+      "server": "de.cvb.pp.ua",
+      "server_port": 20811,
+      "uuid": "2a1e3833-c973-4e13-969d-4f80af9ff5db",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "HkXO-Bo8yy9zda9SYoqnVFy4FiYq9wHYvH57GX5eTks",
+          "short_id": "6c710321"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 6",
       "server": "netcap.oblakoapp.com",
       "server_port": 443,
       "uuid": "838de912-398a-4c0e-9228-0fd44b0d1f8b",
@@ -81,43 +135,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 4",
-      "server": "de.cvb.pp.ua",
-      "server_port": 20811,
-      "uuid": "2a1e3833-c973-4e13-969d-4f80af9ff5db",
+      "tag": "🇩🇪 7",
+      "server": "94.237.88.207",
+      "server_port": 24994,
+      "uuid": "d132d58c-26c7-4cfa-bbd9-8a2473526898",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "www.bing.com",
+        "server_name": "blogs.nvidia.co.jp",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "HkXO-Bo8yy9zda9SYoqnVFy4FiYq9wHYvH57GX5eTks",
-          "short_id": "6c710321"
+          "public_key": "RkiwxKVcDT8v-MSAUzwzZc3WfS0X585dsl78dGgDRyk",
+          "short_id": "0a"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 5",
-      "server": "199.232.79.11",
-      "server_port": 80,
-      "uuid": "3b940e86-7b0d-40da-acf1-12d334e41023",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "Fastapi.Org"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 6",
+      "tag": "🇩🇪 8",
       "server": "199.232.24.11",
       "server_port": 80,
       "uuid": "3b940e86-7b0d-40da-acf1-12d334e41023",
@@ -132,8 +171,8 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 7",
-      "server": "evolus.oblakoapp.com",
+      "tag": "🇩🇪 9",
+      "server": "157.173.27.148",
       "server_port": 443,
       "uuid": "838de912-398a-4c0e-9228-0fd44b0d1f8b",
       "packet_encoding": "xudp",
@@ -143,7 +182,7 @@
         "server_name": "travel.yandex.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -154,7 +193,51 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 8",
+      "tag": "🇩🇪 10",
+      "server": "199.232.11.11",
+      "server_port": 80,
+      "uuid": "3b940e86-7b0d-40da-acf1-12d334e41023",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "Fastapi.Org"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 11",
+      "server": "110.34.38.174",
+      "server_port": 2550,
+      "uuid": "d8b42cd5-a149-4356-9e61-000000000000",
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 12",
+      "server": "94.237.88.207",
+      "server_port": 31267,
+      "uuid": "d132d58c-26c7-4cfa-bbd9-8a2473526898",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ai.android",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "pQGIZBFKolmuKssxil4R2xwBc8NUV8u-8Q-OOwOPE3s",
+          "short_id": "cafed5c603"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 13",
       "server": "192.142.12.170",
       "server_port": 443,
       "uuid": "4f166057-2f4c-0004-b5b3-6eb4413022e1",
@@ -176,30 +259,43 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 9",
-      "server": "199.232.245.11",
-      "server_port": 80,
-      "uuid": "3b940e86-7b0d-40da-acf1-12d334e41023",
+      "tag": "🇩🇪 14",
+      "server": "94.237.88.207",
+      "server_port": 42294,
+      "uuid": "d132d58c-26c7-4cfa-bbd9-8a2473526898",
       "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "Fastapi.Org"
+      "tls": {
+        "enabled": true,
+        "server_name": "www.sony.com.ar",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ZpUyzo2yJMutSgIcK_3b9wANyBFaKu8dAS5hFixF1xo",
+          "short_id": "d937849c8b20"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 10",
-      "server": "192.144.13.35",
-      "server_port": 42942,
-      "uuid": "8a2af219-cff5-42a2-bf69-9ed749443ba5",
-      "packet_encoding": "xudp"
+      "tag": "🇫🇮 15",
+      "server": "146.75.119.82",
+      "server_port": 80,
+      "uuid": "845e9093-fbd8-494d-aa21-05f1da232bc3",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "ws/?ed=2048/@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr/?2048",
+        "headers": {
+          "Host": "rb24.ir"
+        }
+      }
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 11",
+      "tag": "🇫🇷 16",
       "server": "81.19.137.144",
       "server_port": 40443,
       "uuid": "ab51054f-de76-4a0f-9f3a-b44c8df86a6c",
@@ -221,28 +317,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 12",
-      "server": "104.253.74.186",
-      "server_port": 2089,
-      "uuid": "065d23e5-7151-46b2-b010-76300cdf0997",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.sony.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "EgU08aKdsWX7VkDnLhVjKfasViLjpBH_367vxFu5d1M",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇰🇿 13",
+      "tag": "🇰🇿 17",
       "server": "31.43.179.0",
       "server_port": 80,
       "uuid": "40d36acd-5743-4b96-b8f6-b195e35e7336",
@@ -257,7 +332,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇱🇻 14",
+      "tag": "🇱🇻 18",
       "server": "85.159.228.250",
       "server_port": 25703,
       "uuid": "7e5964d036b843ff885b86c4d3bfd466",
@@ -265,7 +340,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 15",
+      "tag": "🇳🇱 19",
       "server": "103.133.1.2",
       "server_port": 80,
       "uuid": "eaf76557-2219-4799-8171-d7020adfefd0",
@@ -280,7 +355,32 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 16",
+      "tag": "🇵🇱 20",
+      "server": "82.148.29.20",
+      "server_port": 8443,
+      "uuid": "89f91552-7260-433f-9dfd-9c4568cc1f39",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "gifs.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Ztky-VQmOq1xsCCvSVBHPuinJ9mRM7tck2Owa2NzO1w",
+          "short_id": "f6b8b9ff"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": ""
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 21",
       "server": "82.40.62.196",
       "server_port": 443,
       "uuid": "7499f0a0-3670-4cf6-a31c-ad4cd943cf18",
@@ -302,7 +402,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 17",
+      "tag": "🇸🇪 22",
       "server": "89.125.76.98",
       "server_port": 443,
       "uuid": "d9640a0a-b888-402d-8537-63ba0f946c3a",
@@ -324,7 +424,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 18",
+      "tag": "🇸🇪 23",
       "server": "89.19.223.145",
       "server_port": 8443,
       "uuid": "f0b752da-101e-46dd-9860-3f089e71ec91",
@@ -332,7 +432,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 19",
+      "tag": "🇸🇪 24",
       "server": "62.60.159.137",
       "server_port": 50443,
       "uuid": "ab51054f-de76-4a0f-9f3a-b44c8df86a6c",
@@ -365,16 +465,21 @@
         "🇩🇪 7",
         "🇩🇪 8",
         "🇩🇪 9",
-        "🇫🇮 10",
-        "🇫🇷 11",
-        "🇫🇷 12",
-        "🇰🇿 13",
-        "🇱🇻 14",
-        "🇳🇱 15",
-        "🇵🇱 16",
-        "🇸🇪 17",
-        "🇸🇪 18",
-        "🇸🇪 19"
+        "🇩🇪 10",
+        "🇩🇪 11",
+        "🇩🇪 12",
+        "🇩🇪 13",
+        "🇩🇪 14",
+        "🇫🇮 15",
+        "🇫🇷 16",
+        "🇰🇿 17",
+        "🇱🇻 18",
+        "🇳🇱 19",
+        "🇵🇱 20",
+        "🇵🇱 21",
+        "🇸🇪 22",
+        "🇸🇪 23",
+        "🇸🇪 24"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "1m",
@@ -394,16 +499,21 @@
         "🇩🇪 7",
         "🇩🇪 8",
         "🇩🇪 9",
-        "🇫🇮 10",
-        "🇫🇷 11",
-        "🇫🇷 12",
-        "🇰🇿 13",
-        "🇱🇻 14",
-        "🇳🇱 15",
-        "🇵🇱 16",
-        "🇸🇪 17",
-        "🇸🇪 18",
-        "🇸🇪 19"
+        "🇩🇪 10",
+        "🇩🇪 11",
+        "🇩🇪 12",
+        "🇩🇪 13",
+        "🇩🇪 14",
+        "🇫🇮 15",
+        "🇫🇷 16",
+        "🇰🇿 17",
+        "🇱🇻 18",
+        "🇳🇱 19",
+        "🇵🇱 20",
+        "🇵🇱 21",
+        "🇸🇪 22",
+        "🇸🇪 23",
+        "🇸🇪 24"
       ],
       "default": "auto"
     },
