@@ -47,19 +47,6 @@ proxies:
     grpc-service-name: api.v1.telemetry.EventStream
 - name: 🇩🇪 4
   type: vless
-  server: de.cvb.pp.ua
-  port: 20811
-  uuid: "2a1e3833-c973-4e13-969d-4f80af9ff5db"
-  udp: true
-  network: tcp
-  tls: true
-  servername: "www.bing.com"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "HkXO-Bo8yy9zda9SYoqnVFy4FiYq9wHYvH57GX5eTks"
-    short-id: "6c710321"
-- name: 🇩🇪 5
-  type: vless
   server: 192.142.12.89
   port: 443
   uuid: "4f166057-2f4c-0003-b5b3-6eb4413022e1"
@@ -72,34 +59,34 @@ proxies:
   reality-opts:
     public-key: "6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY"
     short-id: "1c3e8241a8743df9"
+- name: 🇩🇪 5
+  type: vless
+  server: de.cvb.pp.ua
+  port: 20811
+  uuid: "2a1e3833-c973-4e13-969d-4f80af9ff5db"
+  udp: true
+  network: tcp
+  tls: true
+  servername: "www.bing.com"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "HkXO-Bo8yy9zda9SYoqnVFy4FiYq9wHYvH57GX5eTks"
+    short-id: "6c710321"
 - name: 🇩🇪 6
   type: vless
-  server: 138.124.114.29
-  port: 40443
-  uuid: "ab51054f-de76-4a0f-9f3a-b44c8df86a6c"
+  server: evolus.oblakoapp.com
+  port: 443
+  uuid: "838de912-398a-4c0e-9228-0fd44b0d1f8b"
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: "deepl.com"
-  client-fingerprint: firefox
+  servername: "travel.yandex.ru"
+  client-fingerprint: qq
   reality-opts:
-    public-key: "6AOnobBShzL_N96JRBNMfbL84_3myz8ZbKfZUEqRXiY"
-    short-id: ""
+    public-key: "KP-P4zenuMuYe3UxPCjDEVmgqI4GiRZ95UbsAfmL71g"
+    short-id: "970098f31b96a3e8"
 - name: 🇩🇪 7
-  type: vless
-  server: upload.ansooyefilter.ir
-  port: 8443
-  uuid: "e37b91dc-9617-4e22-8c33-253fb0dd6fe2"
-  udp: true
-  network: tcp
-  tls: true
-  servername: "pre-prod.samsung.com"
-  client-fingerprint: random
-  reality-opts:
-    public-key: "9LyZjKAQkh2_FwDS21QVW05gfBRR77KjatFS8EtRyU4"
-    short-id: "63"
-- name: 🇩🇪 8
   type: vless
   server: 192.142.12.170
   port: 443
@@ -113,21 +100,7 @@ proxies:
   reality-opts:
     public-key: "6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY"
     short-id: "1c3e8241a8743df9"
-- name: 🇩🇪 9
-  type: vless
-  server: 185.233.106.243
-  port: 443
-  uuid: "8fad5032-f740-4df1-bb87-e02a21665ced"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "wikipedia.org"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "14mbxpFBwnpp817ZLgT-6dVqsOmNPIaH7ygYcYScjGg"
-    short-id: "2b4790ccbac1edb2"
-- name: 🇫🇮 10
+- name: 🇫🇮 8
   type: vless
   server: 146.75.119.82
   port: 80
@@ -139,7 +112,7 @@ proxies:
     path: ws/?ed=2048/@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr/?2048
     headers:
       Host: rb24.ir
-- name: 🇫🇷 11
+- name: 🇫🇷 9
   type: vless
   server: 81.19.137.144
   port: 40443
@@ -153,7 +126,21 @@ proxies:
   reality-opts:
     public-key: "6AOnobBShzL_N96JRBNMfbL84_3myz8ZbKfZUEqRXiY"
     short-id: ""
-- name: 🇰🇿 12
+- name: 🇬🇧 10
+  type: vless
+  server: 138.124.114.29
+  port: 40443
+  uuid: "ab51054f-de76-4a0f-9f3a-b44c8df86a6c"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "deepl.com"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "6AOnobBShzL_N96JRBNMfbL84_3myz8ZbKfZUEqRXiY"
+    short-id: ""
+- name: 🇰🇿 11
   type: vless
   server: 31.43.179.0
   port: 80
@@ -165,7 +152,7 @@ proxies:
     path: /187o1HyKayf2hitk?ed=2560
     headers:
       Host: worker3.tacemor185.workers.dev
-- name: 🇱🇻 13
+- name: 🇱🇻 12
   type: vless
   server: 85.159.228.250
   port: 25703
@@ -173,7 +160,7 @@ proxies:
   udp: true
   network: tcp
   tls: false
-- name: 🇲🇩 14
+- name: 🇲🇩 13
   type: vless
   server: 144.31.131.241
   port: 8443
@@ -187,7 +174,7 @@ proxies:
   reality-opts:
     public-key: "J5ITJbg5FQFembAfkogKHHQB6DigsFXQxK7xu-QMWUs"
     short-id: "a20d3ed244c76426"
-- name: 🇳🇱 15
+- name: 🇳🇱 14
   type: vless
   server: 103.133.1.2
   port: 80
@@ -199,35 +186,7 @@ proxies:
     path: /ws
     headers:
       Host: soft-shadow-1e33.xicav73335.workers.dev
-- name: 🇳🇱 16
-  type: vless
-  server: 192.142.8.67
-  port: 443
-  uuid: "4f166057-2f4c-0001-b5b3-6eb4413022e1"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "md-editor.xyz"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: "6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY"
-    short-id: "1c3e8241a8743df9"
-- name: 🇵🇱 17
-  type: vless
-  server: 94.183.209.37
-  port: 443
-  uuid: "cb784d00-d34a-4389-b938-8717f7b28353"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "www.twitch.tv"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "Fmn3VyIvCT-KpCwvmb1ZqqkQxOW8GEBvamSZYZrqcic"
-    short-id: "376d46f012a36cd2"
-- name: 🇵🇱 18
+- name: 🇵🇱 15
   type: vless
   server: 146.70.161.35
   port: 14304
@@ -242,29 +201,7 @@ proxies:
     short-id: "503b0853f3b2460d"
   grpc-opts:
     grpc-service-name: api
-- name: 🇵🇱 19
-  type: vless
-  server: 82.40.62.17
-  port: 443
-  uuid: "7499f0a0-3670-4cf6-a31c-ad4cd943cf18"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "pl.hagrid-connected.com"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "nfkwd9xJCoNuWrvvieBB9VfpcDldsARAdFPL0dF5A1Q"
-    short-id: "305570274c0c72cc"
-- name: 🇸🇪 20
-  type: vless
-  server: 89.19.223.145
-  port: 8443
-  uuid: "f0b752da-101e-46dd-9860-3f089e71ec91"
-  udp: true
-  network: tcp
-  tls: false
-- name: 🇸🇪 21
+- name: 🇸🇪 16
   type: vless
   server: 89.125.76.98
   port: 443
@@ -278,6 +215,14 @@ proxies:
   reality-opts:
     public-key: "BX8CqIiZTbjfp--_TsYmp5pPQzzIZZ6rW9ly5HxDM3E"
     short-id: "8c554321"
+- name: 🇸🇪 17
+  type: vless
+  server: 89.19.223.145
+  port: 8443
+  uuid: "f0b752da-101e-46dd-9860-3f089e71ec91"
+  udp: true
+  network: tcp
+  tls: false
 proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
@@ -289,20 +234,16 @@ proxy-groups:
   - 🇩🇪 5
   - 🇩🇪 6
   - 🇩🇪 7
-  - 🇩🇪 8
-  - 🇩🇪 9
-  - 🇫🇮 10
-  - 🇫🇷 11
-  - 🇰🇿 12
-  - 🇱🇻 13
-  - 🇲🇩 14
-  - 🇳🇱 15
-  - 🇳🇱 16
-  - 🇵🇱 17
-  - 🇵🇱 18
-  - 🇵🇱 19
-  - 🇸🇪 20
-  - 🇸🇪 21
+  - 🇫🇮 8
+  - 🇫🇷 9
+  - 🇬🇧 10
+  - 🇰🇿 11
+  - 🇱🇻 12
+  - 🇲🇩 13
+  - 🇳🇱 14
+  - 🇵🇱 15
+  - 🇸🇪 16
+  - 🇸🇪 17
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -317,19 +258,15 @@ proxy-groups:
   - 🇩🇪 5
   - 🇩🇪 6
   - 🇩🇪 7
-  - 🇩🇪 8
-  - 🇩🇪 9
-  - 🇫🇮 10
-  - 🇫🇷 11
-  - 🇰🇿 12
-  - 🇱🇻 13
-  - 🇲🇩 14
-  - 🇳🇱 15
-  - 🇳🇱 16
-  - 🇵🇱 17
-  - 🇵🇱 18
-  - 🇵🇱 19
-  - 🇸🇪 20
-  - 🇸🇪 21
+  - 🇫🇮 8
+  - 🇫🇷 9
+  - 🇬🇧 10
+  - 🇰🇿 11
+  - 🇱🇻 12
+  - 🇲🇩 13
+  - 🇳🇱 14
+  - 🇵🇱 15
+  - 🇸🇪 16
+  - 🇸🇪 17
 rules:
 - MATCH,PROXY
