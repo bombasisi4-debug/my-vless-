@@ -37,7 +37,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 160b",
+      "tag": "🇩🇪 160",
       "server": "167.82.95.99",
       "server_port": 80,
       "uuid": "2cc86f73-ebf5-48a9-87a2-d54c7b49ab70",
@@ -52,24 +52,27 @@
     },
     {
       "type": "vless",
-      "tag": "🇿🇦 152e BP",
-      "server": "192.142.12.89",
-      "server_port": 443,
-      "uuid": "4f166057-2f4c-0003-b5b3-6eb4413022e1",
+      "tag": "🇩🇪 203b",
+      "server": "152.236.3.13",
+      "server_port": 8443,
+      "uuid": "9813a0ca-b45d-447d-bc7b-2894de47965f",
       "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "qr-gen.cc",
+        "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY",
-          "short_id": "1c3e8241a8743df9"
+          "public_key": "56QUSkgaBUAruo4LoZnfo6z6Y4CGZRTx1zdNLYKKGRk",
+          "short_id": "530db35e324c3aa5"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "api.v1.telemetry.EventStream"
       }
     },
     {
@@ -95,45 +98,51 @@
     },
     {
       "type": "vless",
-      "tag": "🇱🇻 125 BP",
-      "server": "85.159.228.250",
-      "server_port": 25703,
-      "uuid": "7e5964d036b843ff885b86c4d3bfd466",
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 243",
-      "server": "89.19.223.145",
-      "server_port": 8443,
-      "uuid": "f0b752da-101e-46dd-9860-3f089e71ec91",
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇲🇩 24",
-      "server": "144.31.131.241",
-      "server_port": 8443,
-      "uuid": "b406bc51-9002-474c-beae-b194b02c91da",
+      "tag": "🇩🇪 152b BP",
+      "server": "192.142.12.89",
+      "server_port": 443,
+      "uuid": "4f166057-2f4c-0003-b5b3-6eb4413022e1",
       "packet_encoding": "xudp",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "mold.speedload.online",
+        "server_name": "qr-gen.cc",
         "utls": {
           "enabled": true,
           "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
-          "public_key": "J5ITJbg5FQFembAfkogKHHQB6DigsFXQxK7xu-QMWUs",
-          "short_id": "a20d3ed244c76426"
+          "public_key": "6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY",
+          "short_id": "1c3e8241a8743df9"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 79c",
+      "tag": "🇵🇱 147d BP",
+      "server": "94.183.209.37",
+      "server_port": 443,
+      "uuid": "cb784d00-d34a-4389-b938-8717f7b28353",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.twitch.tv",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Fmn3VyIvCT-KpCwvmb1ZqqkQxOW8GEBvamSZYZrqcic",
+          "short_id": "376d46f012a36cd2"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 79b",
       "server": "81.19.137.144",
       "server_port": 40443,
       "uuid": "ab51054f-de76-4a0f-9f3a-b44c8df86a6c",
@@ -177,51 +186,123 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 147d BP",
-      "server": "94.183.209.37",
-      "server_port": 443,
-      "uuid": "cb784d00-d34a-4389-b938-8717f7b28353",
+      "tag": "🇳🇱 83",
+      "server": "103.133.1.2",
+      "server_port": 80,
+      "uuid": "eaf76557-2219-4799-8171-d7020adfefd0",
       "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.twitch.tv",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Fmn3VyIvCT-KpCwvmb1ZqqkQxOW8GEBvamSZYZrqcic",
-          "short_id": "376d46f012a36cd2"
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "soft-shadow-1e33.xicav73335.workers.dev"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 25b BP",
-      "server": "89.125.76.98",
-      "server_port": 443,
-      "uuid": "d9640a0a-b888-402d-8537-63ba0f946c3a",
+      "tag": "🇸🇪 243",
+      "server": "89.19.223.145",
+      "server_port": 8443,
+      "uuid": "f0b752da-101e-46dd-9860-3f089e71ec91",
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 23a",
+      "server": "67.159.18.212",
+      "server_port": 2086,
+      "uuid": "9813a0ca-b45d-447d-bc7b-2894de47965f",
       "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "sto.nautilusvpn.ru",
+        "server_name": "2ip.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "BX8CqIiZTbjfp--_TsYmp5pPQzzIZZ6rW9ly5HxDM3E",
-          "short_id": "8c554321"
+          "public_key": "56QUSkgaBUAruo4LoZnfo6z6Y4CGZRTx1zdNLYKKGRk",
+          "short_id": "530db35e324c3aa5"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "api.v1.telemetry.EventStream"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 218c",
+      "server": "upload.ansooyefilter.ir",
+      "server_port": 8443,
+      "uuid": "e37b91dc-9617-4e22-8c33-253fb0dd6fe2",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "pre-prod.samsung.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "9LyZjKAQkh2_FwDS21QVW05gfBRR77KjatFS8EtRyU4",
+          "short_id": "63"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 174f BP",
+      "tag": "🇲🇩 24",
+      "server": "144.31.131.241",
+      "server_port": 8443,
+      "uuid": "b406bc51-9002-474c-beae-b194b02c91da",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "mold.speedload.online",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "J5ITJbg5FQFembAfkogKHHQB6DigsFXQxK7xu-QMWUs",
+          "short_id": "a20d3ed244c76426"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 110a",
+      "server": "146.70.161.35",
+      "server_port": 14304,
+      "uuid": "a8db0cb9-8df1-4a88-b4af-d0512dffd245",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "JXTa4KFDYIaOu9zwHosqTFvERbnxRW6qpo4dUJRIQkA",
+          "short_id": "503b0853f3b2460d"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "api"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 174b BP",
       "server": "192.142.12.170",
       "server_port": 443,
       "uuid": "4f166057-2f4c-0004-b5b3-6eb4413022e1",
@@ -243,7 +324,74 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 143",
+      "tag": "🇸🇪 25 BP",
+      "server": "89.125.76.98",
+      "server_port": 443,
+      "uuid": "d9640a0a-b888-402d-8537-63ba0f946c3a",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "sto.nautilusvpn.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "BX8CqIiZTbjfp--_TsYmp5pPQzzIZZ6rW9ly5HxDM3E",
+          "short_id": "8c554321"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 208b BP",
+      "server": "185.233.106.243",
+      "server_port": 443,
+      "uuid": "8fad5032-f740-4df1-bb87-e02a21665ced",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "wikipedia.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "14mbxpFBwnpp817ZLgT-6dVqsOmNPIaH7ygYcYScjGg",
+          "short_id": "2b4790ccbac1edb2"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇻 125 BP",
+      "server": "85.159.228.250",
+      "server_port": 25703,
+      "uuid": "7e5964d036b843ff885b86c4d3bfd466",
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 200a BP",
+      "server": "146.75.119.82",
+      "server_port": 80,
+      "uuid": "6ca782cc-f4f9-48b6-b84d-ca829059e503",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "ws/?ed=2048/@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr/?2048",
+        "headers": {
+          "Host": "rb24.ir"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 143c",
       "server": "192.142.8.67",
       "server_port": 443,
       "uuid": "4f166057-2f4c-0001-b5b3-6eb4413022e1",
@@ -265,37 +413,23 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 83",
-      "server": "103.133.1.2",
-      "server_port": 80,
-      "uuid": "eaf76557-2219-4799-8171-d7020adfefd0",
+      "tag": "🇵🇱 17a",
+      "server": "82.40.62.17",
+      "server_port": 443,
+      "uuid": "7499f0a0-3670-4cf6-a31c-ad4cd943cf18",
       "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "soft-shadow-1e33.xicav73335.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 135a BP",
-      "server": "fr1-azad.0xoddity.ir",
-      "server_port": 5666,
-      "uuid": "b6a37943-95a9-47da-9310-8263fe1f9ec5",
-      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "ca.rogers.yahoo.com",
+        "server_name": "pl.hagrid-connected.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "0qp2ibLJZMNQfIQYAbYmZzhyeeKRgVjm2AGxgbNDWhg",
-          "short_id": "2539f132f20e7271"
+          "public_key": "nfkwd9xJCoNuWrvvieBB9VfpcDldsARAdFPL0dF5A1Q",
+          "short_id": "305570274c0c72cc"
         }
       }
     },
@@ -304,20 +438,26 @@
       "tag": "auto",
       "outbounds": [
         "🇰🇿 97 BP",
-        "🇩🇪 160b",
-        "🇿🇦 152e BP",
+        "🇩🇪 160",
+        "🇩🇪 203b",
         "🇩🇪 87",
-        "🇱🇻 125 BP",
-        "🇸🇪 243",
-        "🇲🇩 24",
-        "🇫🇷 79c",
-        "🇩🇪 7a",
+        "🇩🇪 152b BP",
         "🇵🇱 147d BP",
-        "🇸🇪 25b BP",
-        "🇩🇪 174f BP",
-        "🇳🇱 143",
+        "🇫🇷 79b",
+        "🇩🇪 7a",
         "🇳🇱 83",
-        "🇫🇷 135a BP"
+        "🇸🇪 243",
+        "🇨🇿 23a",
+        "🇩🇪 218c",
+        "🇲🇩 24",
+        "🇵🇱 110a",
+        "🇩🇪 174b BP",
+        "🇸🇪 25 BP",
+        "🇩🇪 208b BP",
+        "🇱🇻 125 BP",
+        "🇫🇮 200a BP",
+        "🇳🇱 143c",
+        "🇵🇱 17a"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "1m",
@@ -329,20 +469,26 @@
       "outbounds": [
         "auto",
         "🇰🇿 97 BP",
-        "🇩🇪 160b",
-        "🇿🇦 152e BP",
+        "🇩🇪 160",
+        "🇩🇪 203b",
         "🇩🇪 87",
-        "🇱🇻 125 BP",
-        "🇸🇪 243",
-        "🇲🇩 24",
-        "🇫🇷 79c",
-        "🇩🇪 7a",
+        "🇩🇪 152b BP",
         "🇵🇱 147d BP",
-        "🇸🇪 25b BP",
-        "🇩🇪 174f BP",
-        "🇳🇱 143",
+        "🇫🇷 79b",
+        "🇩🇪 7a",
         "🇳🇱 83",
-        "🇫🇷 135a BP"
+        "🇸🇪 243",
+        "🇨🇿 23a",
+        "🇩🇪 218c",
+        "🇲🇩 24",
+        "🇵🇱 110a",
+        "🇩🇪 174b BP",
+        "🇸🇪 25 BP",
+        "🇩🇪 208b BP",
+        "🇱🇻 125 BP",
+        "🇫🇮 200a BP",
+        "🇳🇱 143c",
+        "🇵🇱 17a"
       ],
       "default": "auto"
     },
