@@ -17,35 +17,7 @@ proxies:
   reality-opts:
     public-key: "ShgC38ulwKG4MApqt3kb85py9GgEVHWmqZzaiAWtvns"
     short-id: "1299373a"
-- name: 🇩🇪 2
-  type: vless
-  server: de.monkeyvillage.pro
-  port: 443
-  uuid: "528ee6c3-7d3c-410e-b0de-0d5da09aeb14"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "de.monkeyvillage.pro"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "Q7-sRiaAcmlJ_iwqiA46kDKso_r2kJ7X1mrVjL2illo"
-    short-id: "11a646ca6678c507"
-- name: 🇪🇪 3
-  type: vless
-  server: 194.55.239.167
-  port: 8443
-  uuid: "ecad47b0-249e-0007-adff-e3c8f02b1897"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "rutube.ru"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc"
-    short-id: "43dcff53849b81e6"
-- name: 🇫🇮 4
+- name: 🇫🇮 2
   type: vless
   server: apanel.alphanistam.ir
   port: 2083
@@ -58,47 +30,7 @@ proxies:
   reality-opts:
     public-key: "EmKzkQ0z4Ng6t0jgLACRCvG5OueagvfaVRVVSfu1qHg"
     short-id: "12"
-- name: 🇫🇮 5
-  type: vless
-  server: 146.75.119.82
-  port: 80
-  uuid: "b049a690-f53e-4641-9f33-2b97cfa50f43"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: ws/?ed=2048/@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz/?2048
-    headers:
-      Host: rb24.ir
-- name: 🇬🇧 6
-  type: vless
-  server: 45.206.52.204
-  port: 443
-  uuid: "712bca50-174d-4a9c-9557-15ef8c6253ff"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "storage.yandex.net"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "dY9SNEllJMW63xo-JdXufhmjAxB_4uFw_QMjgufjiD8"
-    short-id: "37772edff71b4167"
-- name: 🇬🇧 7
-  type: vless
-  server: 194.55.239.191
-  port: 8443
-  uuid: "ecad47b0-249e-0019-adff-e3c8f02b1897"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "smartcaptcha.yandexcloud.net"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc"
-    short-id: "43dcff53849b81e6"
-- name: 🇮🇹 8
+- name: 🇮🇹 3
   type: vless
   server: 31.76.113.178
   port: 2087
@@ -113,50 +45,7 @@ proxies:
     short-id: "c226283c4de5b1ad"
   grpc-opts:
     grpc-service-name: grpc
-- name: 🇮🇹 9
-  type: vless
-  server: 31.76.113.136
-  port: 2087
-  uuid: "8d90a1bf-7d6a-4cb7-812a-afd355e73489"
-  udp: true
-  network: grpc
-  tls: true
-  servername: "ads.x5.ru"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "wXOV7-oBLNnuIy8smYrLLdK-NkN1j-NEf9MxePbAT2Y"
-    short-id: "c226283c4de5b1ad"
-  grpc-opts:
-    grpc-service-name: grpc
-- name: 🇳🇱 10
-  type: vless
-  server: 212.233.78.246
-  port: 8443
-  uuid: "68d3fcbe-f025-1f40-82d6-9455c5e5f6b5"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "secget.ru"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "vV3mxSgZ-8x3Gp373AXdMDM3FAdmLP0v5zIfI486SDI"
-    short-id: "f8a8ee8381529673"
-- name: 🇳🇱 11
-  type: vless
-  server: pobos-yezha.ru
-  port: 443
-  uuid: "11c3c90f-d681-4f71-929e-68834d18b5cd"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "pobos-yezha.ru"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: "QAuH8zM3gn1RhOc9g9gTU-8WCVVyRZ2gC4xFrS5C7mY"
-    short-id: "a1b2c3d4"
-- name: 🇺🇸 12
+- name: 🇺🇸 4
   type: vless
   server: chatgpt.com
   port: 8080
@@ -168,19 +57,7 @@ proxies:
     path: /9pnugtdlg8br
     headers:
       Host: spring-flower-3254.magicnight101.workers.dev
-- name: 🇺🇸 13
-  type: vless
-  server: codecanyon.net
-  port: 8880
-  uuid: "f12cc297-c9ce-4cdb-98d4-8e47c3f09644"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: weathered-union-5358.101-262.workers.dev
-- name: 🇺🇸 14
+- name: 🇺🇸 5
   type: vless
   server: mtn.v2plus.ovh
   port: 80
@@ -197,19 +74,10 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇩🇪 1
-  - 🇩🇪 2
-  - 🇪🇪 3
-  - 🇫🇮 4
-  - 🇫🇮 5
-  - 🇬🇧 6
-  - 🇬🇧 7
-  - 🇮🇹 8
-  - 🇮🇹 9
-  - 🇳🇱 10
-  - 🇳🇱 11
-  - 🇺🇸 12
-  - 🇺🇸 13
-  - 🇺🇸 14
+  - 🇫🇮 2
+  - 🇮🇹 3
+  - 🇺🇸 4
+  - 🇺🇸 5
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -218,18 +86,9 @@ proxy-groups:
   proxies:
   - 🚀 Авто (лучший)
   - 🇩🇪 1
-  - 🇩🇪 2
-  - 🇪🇪 3
-  - 🇫🇮 4
-  - 🇫🇮 5
-  - 🇬🇧 6
-  - 🇬🇧 7
-  - 🇮🇹 8
-  - 🇮🇹 9
-  - 🇳🇱 10
-  - 🇳🇱 11
-  - 🇺🇸 12
-  - 🇺🇸 13
-  - 🇺🇸 14
+  - 🇫🇮 2
+  - 🇮🇹 3
+  - 🇺🇸 4
+  - 🇺🇸 5
 rules:
 - MATCH,PROXY
