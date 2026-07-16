@@ -22,6 +22,28 @@
   "outbounds": [
     {
       "type": "vless",
+      "tag": "🇵🇱 17",
+      "server": "secget.ru",
+      "server_port": 8443,
+      "uuid": "68d3fcbe-f025-2710-82d6-9455c5e5f6b5",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "secget.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "vV3mxSgZ-8x3Gp373AXdMDM3FAdmLP0v5zIfI486SDI",
+          "short_id": "f8a8ee8381529673"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇺🇸 40 BP",
       "server": "chatgpt.com",
       "server_port": 8080,
@@ -37,65 +59,32 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 110 BP",
-      "server": "apanel.alphanistam.ir",
-      "server_port": 2083,
-      "uuid": "05da2e04-cb49-4450-826a-ec6fae866725",
+      "tag": "🇳🇱 48a",
+      "server": "nl.gruztrack.online",
+      "server_port": 2053,
+      "uuid": "d6b98f2c-53c7-11f1-91ee-561961d26415",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "cloudflare.com",
+        "server_name": "nl.gruztrack.online",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "EmKzkQ0z4Ng6t0jgLACRCvG5OueagvfaVRVVSfu1qHg",
-          "short_id": "12"
+          "public_key": "75W-x6PKwwG6fJJbrIkGcsBgMKP7pQnw2HlM8oevDjM",
+          "short_id": "609721e3a1a47bb1"
         }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 117a",
-      "server": "cdn.globalschool.edu.kg",
-      "server_port": 10001,
-      "uuid": "1ec334a4-f44b-4f7f-907d-315d0fb51149",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.icloud.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ShgC38ulwKG4MApqt3kb85py9GgEVHWmqZzaiAWtvns",
-          "short_id": "1299373a"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 62 BP",
-      "server": "mtn.v2plus.ovh",
-      "server_port": 80,
-      "uuid": "40d36acd-5743-4b96-b8f6-b195e35e7336",
-      "packet_encoding": "xudp",
+      },
       "transport": {
-        "type": "ws",
-        "path": "/187o1HyKayf2hitk?ed=2560",
-        "headers": {
-          "Host": "worker3.tacemor185.workers.dev"
-        }
+        "type": "grpc",
+        "service_name": "grpc-direct"
       }
     },
     {
       "type": "vless",
-      "tag": "🇮🇹 132b",
+      "tag": "🇮🇹 132",
       "server": "31.76.113.178",
       "server_port": 2087,
       "uuid": "04c75bdf-461f-417e-8bcd-b3bf89a8524a",
@@ -119,14 +108,75 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇳🇱 90",
+      "server": "2.27.7.207",
+      "server_port": 80,
+      "uuid": "ce7dcd95-2f9a-0920-9c3e-0caaf6428798",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "console.cloud.yandex.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "4iWZChsH0rnqtn89xiB1evDLkFjmgh-3WYjx8cknZC0",
+          "short_id": "a8b9c0d1e2f34567"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 62 BP",
+      "server": "mtn.v2plus.ovh",
+      "server_port": 80,
+      "uuid": "40d36acd-5743-4b96-b8f6-b195e35e7336",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/187o1HyKayf2hitk?ed=2560",
+        "headers": {
+          "Host": "worker3.tacemor185.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇬 93b",
+      "server": "free-bg.geodema.network",
+      "server_port": 443,
+      "uuid": "aa41a66a-69c3-48c1-a71e-f2d8e153f14b",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.btv.bg",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "zYNnGVEkMFCUR_9NcYeaXfm9A_L-PP6iG2sIIST6S0M",
+          "short_id": "1ed136481e0ede74"
+        }
+      }
+    },
+    {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇵🇱 17",
         "🇺🇸 40 BP",
-        "🇫🇮 110 BP",
-        "🇩🇪 117a",
+        "🇳🇱 48a",
+        "🇮🇹 132",
+        "🇳🇱 90",
         "🇺🇸 62 BP",
-        "🇮🇹 132b"
+        "🇧🇬 93b"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "1m",
@@ -137,11 +187,13 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇵🇱 17",
         "🇺🇸 40 BP",
-        "🇫🇮 110 BP",
-        "🇩🇪 117a",
+        "🇳🇱 48a",
+        "🇮🇹 132",
+        "🇳🇱 90",
         "🇺🇸 62 BP",
-        "🇮🇹 132b"
+        "🇧🇬 93b"
       ],
       "default": "auto"
     },
