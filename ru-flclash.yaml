@@ -3,6 +3,21 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
+- name: 🇷🇺 320a
+  type: vless
+  server: 217.168.247.209
+  port: 16923
+  uuid: "c1a60d3d-e15b-4d66-96b1-511678b7eac9"
+  udp: true
+  network: grpc
+  tls: true
+  servername: "api-maps.yandex.ru"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "_QeslG3rHGM7DoM99pYC8-jpc16pM2MbNZ6NRMoxmHA"
+    short-id: "10ffb85da1c2d986"
+  grpc-opts:
+    grpc-service-name: neurex
 - name: 🇷🇺 S 54
   type: vless
   server: www.speedtest.net
@@ -617,7 +632,7 @@ proxies:
     path: /?ed=2560
     headers:
       Host: va.zhuk.us.kg
-- name: 🇷🇺 S ✓ 91
+- name: 🇷🇺 S ✓ 91a
   type: vless
   server: 188.114.98.0
   port: 2083
@@ -877,7 +892,7 @@ proxies:
     path: /?ed=2560
     headers:
       Host: dalinceshi.icu
-- name: 🇷🇺 S ✓ 116b
+- name: 🇷🇺 S ✓ 116
   type: vless
   server: 104.21.90.68
   port: 2096
@@ -1232,7 +1247,7 @@ proxies:
     path: /
     headers:
       Host: Appxdn.global.ssl.fastly.net
-- name: 🇷🇺 S ✓ 77a
+- name: 🇷🇺 S ✓ 77
   type: vless
   server: 104.27.61.92
   port: 443
@@ -1492,7 +1507,7 @@ proxies:
     path: /rdfgtws
     headers:
       Host: vangoghhh.info
-- name: 🇷🇺 S 59b
+- name: 🇷🇺 S 59c
   type: vless
   server: 172.64.53.34
   port: 443
@@ -1520,7 +1535,7 @@ proxies:
     path: vless-ws/?ed=2048
     headers:
       Host: sinaazizporrr.bebzamhatmailir.worKeRS.dev
-- name: 🇷🇺 S ✓ 133d
+- name: 🇷🇺 S ✓ 133c
   type: vless
   server: 188.114.97.230
   port: 443
@@ -1858,7 +1873,7 @@ proxies:
     path: /
     headers:
       Host: venom90.pages.dev
-- name: 🇷🇺 S 155
+- name: 🇷🇺 S 155d
   type: vless
   server: 162.159.32.239
   port: 443
@@ -1942,6 +1957,20 @@ proxies:
     path: /Ale5m7x2x2lRFbMT?ed=2560
     headers:
       Host: b31d06d3-dawn-hill-9322cs.pifirib369.workers.dev
+- name: 🇷🇺 101
+  type: vless
+  server: 176.12.71.182
+  port: 443
+  uuid: "822cae5e-2fbf-4d4d-8f20-e9c89593e1ee"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "sun6-21.userapi.com"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "tFOva4mDqw-noGSk4B5gdh4X4WhyXHs0eNxM3QogyE4"
+    short-id: "f5563ddfa2847b32"
 - name: 🇷🇺 S 146
   type: vless
   server: 104.16.72.70
@@ -2173,7 +2202,7 @@ proxies:
   reality-opts:
     public-key: "AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk"
     short-id: ""
-- name: 🇷🇺 338
+- name: 🇷🇺 338c
   type: vless
   server: 5.35.18.193
   port: 1
@@ -2181,7 +2210,7 @@ proxies:
   udp: true
   network: tcp
   tls: false
-- name: 🇷🇺 109a
+- name: 🇷🇺 109b
   type: vless
   server: 158.160.198.58
   port: 443
@@ -2208,7 +2237,7 @@ proxies:
     path: /SVNTEAM,PROVIP,SVNTEAM?ed=1024
     headers:
       Host: Speed.Site
-- name: 🇷🇺 159e
+- name: 🇷🇺 159
   type: vless
   server: 51.250.29.180
   port: 443
@@ -2327,7 +2356,7 @@ proxies:
     path: /
     headers:
       Host: spb.oncloudvpn.com
-- name: 🇷🇺 120
+- name: 🇷🇺 S 120
   type: vless
   server: 193.168.46.180
   port: 443
@@ -2637,7 +2666,7 @@ proxies:
     path: /?ed=2560
     headers:
       Host: qaa.zhuk.us.kg
-- name: 🇷🇺 S 45
+- name: 🇷🇺 S 45b
   type: vless
   server: 162.159.36.166
   port: 8443
@@ -2651,7 +2680,7 @@ proxies:
     path: /
     headers:
       Host: t1s1.rittbo.kdns.fr
-- name: 🇷🇺 105
+- name: 🇷🇺 105a
   type: vless
   server: ru3.fast-cone.com
   port: 443
@@ -2777,7 +2806,7 @@ proxies:
     path: /youlingkaishi
     headers:
       Host: aaa.zhuk.us.kg
-- name: 🇷🇺 S ✓ 89c
+- name: 🇷🇺 S ✓ 89b
   type: vless
   server: 104.19.134.235
   port: 443
@@ -2791,6 +2820,20 @@ proxies:
     path: /jdhfyws
     headers:
       Host: amooaliii.net
+- name: 🇷🇺 328b BP
+  type: vless
+  server: 185.141.227.240
+  port: 9445
+  uuid: "312d6950-4cc3-42c2-9554-bb8d0c429073"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "max.ru"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+    short-id: ""
 - name: 🇷🇺 S 293b
   type: vless
   server: zmaoz.faculty.ucdavis.edu
@@ -2993,7 +3036,7 @@ proxies:
     path: /
     headers:
       Host: nova-orbit-bridge-a44f.nova-c6c0a6.workers.dev
-- name: 🇷🇺 S 32
+- name: 🇷🇺 S 32a
   type: vless
   server: 172.64.146.229
   port: 443
@@ -3035,7 +3078,7 @@ proxies:
   reality-opts:
     public-key: "AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk"
     short-id: ""
-- name: 🇷🇺 S ✓ 111
+- name: 🇷🇺 S ✓ 111b
   type: vless
   server: vipf1.phoenixgamer.ir
   port: 443
@@ -3087,7 +3130,7 @@ proxies:
   reality-opts:
     public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
     short-id: ""
-- name: 🇷🇺 164b
+- name: 🇷🇺 164
   type: vless
   server: 176.109.85.77
   port: 5443
@@ -3118,6 +3161,7 @@ proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
+  - 🇷🇺 320a
   - 🇷🇺 S 54
   - 🇷🇺 386
   - 🇷🇺 378
@@ -3163,7 +3207,7 @@ proxy-groups:
   - 🇷🇺 S ✓ 84
   - 🇷🇺 S ✓ 76
   - 🇷🇺 S 196c
-  - 🇷🇺 S ✓ 91
+  - 🇷🇺 S ✓ 91a
   - 🇷🇺 S 15
   - 🇷🇺 S 33a
   - 🇷🇺 S ✓ 179
@@ -3182,7 +3226,7 @@ proxy-groups:
   - 🇷🇺 S ✓ 60d
   - 🇷🇺 S 271x
   - 🇷🇺 S 294v
-  - 🇷🇺 S ✓ 116b
+  - 🇷🇺 S ✓ 116
   - 🇷🇺 172b
   - 🇷🇺 S 57
   - 🇷🇺 S 236f
@@ -3208,7 +3252,7 @@ proxy-groups:
   - 🇷🇺 S 183e
   - 🇷🇺 S 46
   - 🇷🇺 S ✓ 301
-  - 🇷🇺 S ✓ 77a
+  - 🇷🇺 S ✓ 77
   - 🇷🇺 S 239h
   - 🇷🇺 S ✓ 71
   - 🇷🇺 S 292
@@ -3227,9 +3271,9 @@ proxy-groups:
   - 🇷🇺 S ✓ 66
   - 🇷🇺 S 281r
   - 🇷🇺 S 251
-  - 🇷🇺 S 59b
+  - 🇷🇺 S 59c
   - 🇷🇺 S 277h
-  - 🇷🇺 S ✓ 133d
+  - 🇷🇺 S ✓ 133c
   - 🇷🇺 S 258b
   - 🇷🇺 S 98b BP
   - 🇷🇺 S ✓ 213c
@@ -3254,12 +3298,13 @@ proxy-groups:
   - 🇷🇺 S 242s
   - 🇷🇺 S ✓ 304b
   - 🇷🇺 S 221p
-  - 🇷🇺 S 155
+  - 🇷🇺 S 155d
   - 🇷🇺 S ✓ 150
   - 🇷🇺 S ✓ 142b
   - 🇷🇺 S 138
   - 🇷🇺 S 307x
   - 🇷🇺 S 288aa
+  - 🇷🇺 101
   - 🇷🇺 S 146
   - 🇷🇺 S ✓ 82
   - 🇷🇺 S 235e
@@ -3277,10 +3322,10 @@ proxy-groups:
   - 🇷🇺 S ✓ 58a
   - 🇷🇺 S 265w
   - 🇷🇺 S 21
-  - 🇷🇺 338
-  - 🇷🇺 109a
+  - 🇷🇺 338c
+  - 🇷🇺 109b
   - 🇷🇺 S 296
-  - 🇷🇺 159e
+  - 🇷🇺 159
   - 🇷🇺 S ✓ 36a
   - 🇷🇺 S 16
   - 🇷🇺 S ✓ 303j
@@ -3289,7 +3334,7 @@ proxy-groups:
   - 🇷🇺 S ✓ 35
   - 🇷🇺 376 BP
   - 🇷🇺 S 177b
-  - 🇷🇺 120
+  - 🇷🇺 S 120
   - 🇷🇺 S 56
   - 🇷🇺 S 44a
   - 🇷🇺 S 162a
@@ -3312,8 +3357,8 @@ proxy-groups:
   - 🇷🇺 S 305k
   - 🇷🇺 S 37b
   - 🇷🇺 S 1a
-  - 🇷🇺 S 45
-  - 🇷🇺 105
+  - 🇷🇺 S 45b
+  - 🇷🇺 105a
   - 🇷🇺 S ✓ 189
   - 🇷🇺 S ✓ 222
   - 🇷🇺 S ✓ 42
@@ -3322,7 +3367,8 @@ proxy-groups:
   - 🇷🇺 S 204b
   - 🇷🇺 S 199
   - 🇷🇺 S 256v
-  - 🇷🇺 S ✓ 89c
+  - 🇷🇺 S ✓ 89b
+  - 🇷🇺 328b BP
   - 🇷🇺 S 293b
   - 🇷🇺 S 300w
   - 🇷🇺 S 27a
@@ -3338,14 +3384,14 @@ proxy-groups:
   - 🇷🇺 297 BP
   - 🇷🇺 S ✓ 193
   - 🇷🇺 S ✓ 266
-  - 🇷🇺 S 32
+  - 🇷🇺 S 32a
   - 🇷🇺 272 BP
   - 🇷🇺 S 65b
-  - 🇷🇺 S ✓ 111
+  - 🇷🇺 S ✓ 111b
   - 🇷🇺 22 BP
   - 🇷🇺 S 43
   - 🇷🇺 333 BP
-  - 🇷🇺 164b
+  - 🇷🇺 164
   - 🇷🇺 309c
   url: https://www.gstatic.com/generate_204
   interval: 60
@@ -3369,20 +3415,22 @@ proxy-groups:
   - 🇷🇺 134a
   - 🇷🇺 S 3a BP
   - 🇷🇺 S 44a
-  - 🇷🇺 79a
   - 🇷🇺 S ✓ 202a
   - 🇷🇺 S 38a
   - 🇷🇺 S 1a
   - 🇷🇺 S 241a
   - 🇷🇺 S ✓ 153a
-  - 🇷🇺 S ✓ 118a
   - 🇷🇺 S 158a
-  - 🇷🇺 S ✓ 77a
-  - 🇷🇺 S 68a
-  - 🇷🇺 109a
+  - 🇷🇺 S ✓ 118a
   - 🇷🇺 S 8a BP
+  - 🇷🇺 320a
+  - 🇷🇺 S 68a
   - 🇷🇺 S 185a
+  - 🇷🇺 105a
+  - 🇷🇺 79a
   - 🇷🇺 S 18a
+  - 🇷🇺 S ✓ 91a
+  - 🇷🇺 S 32a
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -3405,20 +3453,22 @@ proxy-groups:
   - 🇷🇺 172b
   - 🇷🇺 S 98b BP
   - 🇷🇺 S 63b
-  - 🇷🇺 94b
   - 🇷🇺 S ✓ 275b
   - 🇷🇺 S 65b
   - 🇷🇺 S 184b
   - 🇷🇺 S 258b
   - 🇷🇺 S ✓ 163b
-  - 🇷🇺 S ✓ 304b
   - 🇷🇺 S 291b
-  - 🇷🇺 S ✓ 116b
-  - 🇷🇺 S 192b
-  - 🇷🇺 164b
+  - 🇷🇺 S ✓ 304b
   - 🇷🇺 S ✓ 26b
+  - 🇷🇺 328b BP
+  - 🇷🇺 S 192b
   - 🇷🇺 S 276b
-  - 🇷🇺 S 59b
+  - 🇷🇺 109b
+  - 🇷🇺 94b
+  - 🇷🇺 S ✓ 89b
+  - 🇷🇺 S ✓ 111b
+  - 🇷🇺 S 45b
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -3431,12 +3481,14 @@ proxy-groups:
   - 🇷🇺 S 178c
   - 🇷🇺 S 220c
   - 🇷🇺 S 129c
-  - 🇷🇺 309c
   - 🇷🇺 S 70c
   - 🇷🇺 S 196c
   - 🇷🇺 S 302c
   - 🇷🇺 S 49c BP
-  - 🇷🇺 S ✓ 89c
+  - 🇷🇺 309c
+  - 🇷🇺 S ✓ 133c
+  - 🇷🇺 338c
+  - 🇷🇺 S 59c
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -3450,7 +3502,7 @@ proxy-groups:
   - 🇷🇺 S 88d
   - 🇷🇺 S 206d
   - 🇷🇺 S ✓ 60d
-  - 🇷🇺 S ✓ 133d
+  - 🇷🇺 S 155d
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -3462,7 +3514,6 @@ proxy-groups:
   - 🇷🇺 S 219e
   - 🇷🇺 S 235e
   - 🇷🇺 S 223e
-  - 🇷🇺 159e
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -3475,6 +3526,7 @@ proxy-groups:
   - 📁 Группа C
   - 📁 Группа D
   - 📁 Группа E
+  - 🇷🇺 320a
   - 🇷🇺 S 54
   - 🇷🇺 386
   - 🇷🇺 378
@@ -3520,7 +3572,7 @@ proxy-groups:
   - 🇷🇺 S ✓ 84
   - 🇷🇺 S ✓ 76
   - 🇷🇺 S 196c
-  - 🇷🇺 S ✓ 91
+  - 🇷🇺 S ✓ 91a
   - 🇷🇺 S 15
   - 🇷🇺 S 33a
   - 🇷🇺 S ✓ 179
@@ -3539,7 +3591,7 @@ proxy-groups:
   - 🇷🇺 S ✓ 60d
   - 🇷🇺 S 271x
   - 🇷🇺 S 294v
-  - 🇷🇺 S ✓ 116b
+  - 🇷🇺 S ✓ 116
   - 🇷🇺 172b
   - 🇷🇺 S 57
   - 🇷🇺 S 236f
@@ -3565,7 +3617,7 @@ proxy-groups:
   - 🇷🇺 S 183e
   - 🇷🇺 S 46
   - 🇷🇺 S ✓ 301
-  - 🇷🇺 S ✓ 77a
+  - 🇷🇺 S ✓ 77
   - 🇷🇺 S 239h
   - 🇷🇺 S ✓ 71
   - 🇷🇺 S 292
@@ -3584,9 +3636,9 @@ proxy-groups:
   - 🇷🇺 S ✓ 66
   - 🇷🇺 S 281r
   - 🇷🇺 S 251
-  - 🇷🇺 S 59b
+  - 🇷🇺 S 59c
   - 🇷🇺 S 277h
-  - 🇷🇺 S ✓ 133d
+  - 🇷🇺 S ✓ 133c
   - 🇷🇺 S 258b
   - 🇷🇺 S 98b BP
   - 🇷🇺 S ✓ 213c
@@ -3611,12 +3663,13 @@ proxy-groups:
   - 🇷🇺 S 242s
   - 🇷🇺 S ✓ 304b
   - 🇷🇺 S 221p
-  - 🇷🇺 S 155
+  - 🇷🇺 S 155d
   - 🇷🇺 S ✓ 150
   - 🇷🇺 S ✓ 142b
   - 🇷🇺 S 138
   - 🇷🇺 S 307x
   - 🇷🇺 S 288aa
+  - 🇷🇺 101
   - 🇷🇺 S 146
   - 🇷🇺 S ✓ 82
   - 🇷🇺 S 235e
@@ -3634,10 +3687,10 @@ proxy-groups:
   - 🇷🇺 S ✓ 58a
   - 🇷🇺 S 265w
   - 🇷🇺 S 21
-  - 🇷🇺 338
-  - 🇷🇺 109a
+  - 🇷🇺 338c
+  - 🇷🇺 109b
   - 🇷🇺 S 296
-  - 🇷🇺 159e
+  - 🇷🇺 159
   - 🇷🇺 S ✓ 36a
   - 🇷🇺 S 16
   - 🇷🇺 S ✓ 303j
@@ -3646,7 +3699,7 @@ proxy-groups:
   - 🇷🇺 S ✓ 35
   - 🇷🇺 376 BP
   - 🇷🇺 S 177b
-  - 🇷🇺 120
+  - 🇷🇺 S 120
   - 🇷🇺 S 56
   - 🇷🇺 S 44a
   - 🇷🇺 S 162a
@@ -3669,8 +3722,8 @@ proxy-groups:
   - 🇷🇺 S 305k
   - 🇷🇺 S 37b
   - 🇷🇺 S 1a
-  - 🇷🇺 S 45
-  - 🇷🇺 105
+  - 🇷🇺 S 45b
+  - 🇷🇺 105a
   - 🇷🇺 S ✓ 189
   - 🇷🇺 S ✓ 222
   - 🇷🇺 S ✓ 42
@@ -3679,7 +3732,8 @@ proxy-groups:
   - 🇷🇺 S 204b
   - 🇷🇺 S 199
   - 🇷🇺 S 256v
-  - 🇷🇺 S ✓ 89c
+  - 🇷🇺 S ✓ 89b
+  - 🇷🇺 328b BP
   - 🇷🇺 S 293b
   - 🇷🇺 S 300w
   - 🇷🇺 S 27a
@@ -3695,14 +3749,14 @@ proxy-groups:
   - 🇷🇺 297 BP
   - 🇷🇺 S ✓ 193
   - 🇷🇺 S ✓ 266
-  - 🇷🇺 S 32
+  - 🇷🇺 S 32a
   - 🇷🇺 272 BP
   - 🇷🇺 S 65b
-  - 🇷🇺 S ✓ 111
+  - 🇷🇺 S ✓ 111b
   - 🇷🇺 22 BP
   - 🇷🇺 S 43
   - 🇷🇺 333 BP
-  - 🇷🇺 164b
+  - 🇷🇺 164
   - 🇷🇺 309c
 rules:
 - MATCH,PROXY
