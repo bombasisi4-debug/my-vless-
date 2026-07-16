@@ -3,6 +3,18 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
+- name: 🇺🇸 40 BP
+  type: vless
+  server: chatgpt.com
+  port: 8080
+  uuid: "7d47ff30-74b2-47c7-b5bd-b06ef8b8f80e"
+  udp: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /9pnugtdlg8br
+    headers:
+      Host: spring-flower-3254.magicnight101.workers.dev
 - name: 🇵🇱 17
   type: vless
   server: secget.ru
@@ -17,62 +29,6 @@ proxies:
   reality-opts:
     public-key: "vV3mxSgZ-8x3Gp373AXdMDM3FAdmLP0v5zIfI486SDI"
     short-id: "f8a8ee8381529673"
-- name: 🇺🇸 40 BP
-  type: vless
-  server: chatgpt.com
-  port: 8080
-  uuid: "7d47ff30-74b2-47c7-b5bd-b06ef8b8f80e"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /9pnugtdlg8br
-    headers:
-      Host: spring-flower-3254.magicnight101.workers.dev
-- name: 🇳🇱 48a
-  type: vless
-  server: nl.gruztrack.online
-  port: 2053
-  uuid: "d6b98f2c-53c7-11f1-91ee-561961d26415"
-  udp: true
-  network: grpc
-  tls: true
-  servername: "nl.gruztrack.online"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "75W-x6PKwwG6fJJbrIkGcsBgMKP7pQnw2HlM8oevDjM"
-    short-id: "609721e3a1a47bb1"
-  grpc-opts:
-    grpc-service-name: grpc-direct
-- name: 🇮🇹 132
-  type: vless
-  server: 31.76.113.178
-  port: 2087
-  uuid: "04c75bdf-461f-417e-8bcd-b3bf89a8524a"
-  udp: true
-  network: grpc
-  tls: true
-  servername: "ads.x5.ru"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "4qI0xhPUwTmO7yMwDlgf2eI-fFP9C9i0iu2d8WHoDTw"
-    short-id: "c226283c4de5b1ad"
-  grpc-opts:
-    grpc-service-name: grpc
-- name: 🇳🇱 90
-  type: vless
-  server: 2.27.7.207
-  port: 80
-  uuid: "ce7dcd95-2f9a-0920-9c3e-0caaf6428798"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "console.cloud.yandex.ru"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "4iWZChsH0rnqtn89xiB1evDLkFjmgh-3WYjx8cknZC0"
-    short-id: "a8b9c0d1e2f34567"
 - name: 🇺🇸 62 BP
   type: vless
   server: mtn.v2plus.ovh
@@ -85,31 +41,13 @@ proxies:
     path: /187o1HyKayf2hitk?ed=2560
     headers:
       Host: worker3.tacemor185.workers.dev
-- name: 🇧🇬 93b
-  type: vless
-  server: free-bg.geodema.network
-  port: 443
-  uuid: "aa41a66a-69c3-48c1-a71e-f2d8e153f14b"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "www.btv.bg"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "zYNnGVEkMFCUR_9NcYeaXfm9A_L-PP6iG2sIIST6S0M"
-    short-id: "1ed136481e0ede74"
 proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - 🇵🇱 17
   - 🇺🇸 40 BP
-  - 🇳🇱 48a
-  - 🇮🇹 132
-  - 🇳🇱 90
+  - 🇵🇱 17
   - 🇺🇸 62 BP
-  - 🇧🇬 93b
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -117,12 +55,8 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 Авто (лучший)
-  - 🇵🇱 17
   - 🇺🇸 40 BP
-  - 🇳🇱 48a
-  - 🇮🇹 132
-  - 🇳🇱 90
+  - 🇵🇱 17
   - 🇺🇸 62 BP
-  - 🇧🇬 93b
 rules:
 - MATCH,PROXY
