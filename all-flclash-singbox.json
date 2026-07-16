@@ -22,7 +22,54 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇵🇱 1",
+      "tag": "🇨🇭 1",
+      "server": "152.233.31.72",
+      "server_port": 16923,
+      "uuid": "8e7d2cc4-798d-4eb4-9b6b-d7cda7a7d2ff",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "api-maps.yandex.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "_QeslG3rHGM7DoM99pYC8-jpc16pM2MbNZ6NRMoxmHA",
+          "short_id": "10ffb85da1c2d986"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "neurex"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 2",
+      "server": "31.76.111.103",
+      "server_port": 7777,
+      "uuid": "ce7dcd95-2f9a-431f-9c3e-0caaf6428798",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "console.cloud.yandex.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "4iWZChsH0rnqtn89xiB1evDLkFjmgh-3WYjx8cknZC0",
+          "short_id": "a8b9c0d1e2f34567"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 3",
       "server": "secget.ru",
       "server_port": 8443,
       "uuid": "68d3fcbe-f025-2710-82d6-9455c5e5f6b5",
@@ -44,7 +91,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 2",
+      "tag": "🇺🇸 4",
       "server": "chatgpt.com",
       "server_port": 8080,
       "uuid": "7d47ff30-74b2-47c7-b5bd-b06ef8b8f80e",
@@ -59,7 +106,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 3",
+      "tag": "🇺🇸 5",
       "server": "mtn.v2plus.ovh",
       "server_port": 80,
       "uuid": "40d36acd-5743-4b96-b8f6-b195e35e7336",
@@ -76,9 +123,11 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇱 1",
-        "🇺🇸 2",
-        "🇺🇸 3"
+        "🇨🇭 1",
+        "🇩🇪 2",
+        "🇵🇱 3",
+        "🇺🇸 4",
+        "🇺🇸 5"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "1m",
@@ -89,9 +138,11 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇱 1",
-        "🇺🇸 2",
-        "🇺🇸 3"
+        "🇨🇭 1",
+        "🇩🇪 2",
+        "🇵🇱 3",
+        "🇺🇸 4",
+        "🇺🇸 5"
       ],
       "default": "auto"
     },
