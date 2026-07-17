@@ -21,32 +21,10 @@
   ],
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇳🇱 1460",
-      "server": "rezerv24.yunus.guru",
-      "server_port": 443,
-      "uuid": "861fd825-3828-4bc6-a48e-8295f357b6c7",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "rezerv24.yunus.guru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "OIpR2PehcH7DEsIeI1COw_XYihv7tG6cseNeGZIe220",
-          "short_id": "6cde62dda3f46929"
-        }
-      }
-    },
-    {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇱 1460"
+        "direct"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "1m",
@@ -56,8 +34,7 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "auto",
-        "🇳🇱 1460"
+        "direct"
       ],
       "default": "auto"
     },
