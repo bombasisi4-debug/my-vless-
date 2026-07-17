@@ -19,21 +19,6 @@ proxies:
     short-id: "8f9d033ad6d2cebf"
 - name: 🇩🇪 2
   type: vless
-  server: fetch.anotherok.com
-  port: 443
-  uuid: "86208db7-8bbc-42c2-9eb2-ffe5675502c3"
-  udp: true
-  network: grpc
-  tls: true
-  servername: "fetch.anotherok.com"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "U7O4wCUNinuk5M-ADV1e4sJ_iA7-JVBEXB8nev6kzzs"
-    short-id: "335555b164619360"
-  grpc-opts:
-    grpc-service-name: api.v1.StreamService
-- name: 🇩🇪 3
-  type: vless
   server: germ3.helper-internet.com
   port: 443
   uuid: "59da5351-5151-417d-b2f7-6923848b717e"
@@ -46,6 +31,20 @@ proxies:
   reality-opts:
     public-key: "W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE"
     short-id: "ff776ff77be48b88"
+- name: 🇪🇪 3
+  type: vless
+  server: 31.56.187.47
+  port: 8443
+  uuid: "a956a597-28d9-475c-86c8-664ca9577f0d"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "ndee.whit3.net"
+  client-fingerprint: random
+  reality-opts:
+    public-key: "scNn8MoJJIeabN5MkjwxmOXE3DdOyl2HJqzct3RsLyY"
+    short-id: "1e85a6f4a565e7e7"
 - name: 🇱🇹 4
   type: vless
   server: 84.32.209.210
@@ -60,66 +59,22 @@ proxies:
   reality-opts:
     public-key: "xFUmqmEPEKyv-5ReppEM1oTkc04HQcBUfySH-EwPBlE"
     short-id: "6ba85179e30d4fc2"
-- name: 🇱🇻 5
+- name: 🇳🇱 5
   type: vless
-  server: lit6.helper-internet.com
-  port: 443
-  uuid: "59da5351-5151-417d-b2f7-6923848b717e"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "lit6.helper-internet.com"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE"
-    short-id: "ff776ff77be48b88"
-- name: 🇳🇱 6
-  type: vless
-  server: mirror.oneokgames.com
+  server: assets.oneokgames.com
   port: 443
   uuid: "86208db7-8bbc-42c2-9eb2-ffe5675502c3"
   udp: true
   network: grpc
   tls: true
-  servername: "mirror.oneokgames.com"
+  servername: "assets.oneokgames.com"
   client-fingerprint: firefox
   reality-opts:
-    public-key: "2ByKrIVItayTLa4VxxsEpSMi5Anjk8tGqsUm9A2YU2I"
-    short-id: "acd160fedb4b4006"
+    public-key: "x9m8Vxk2YlwXy8CLrHeEMDzLJWuRQ3mh6CPWA34u2yY"
+    short-id: "ad613873130544ab"
   grpc-opts:
-    grpc-service-name: rpc.v1.StreamService
-- name: 🇳🇱 7
-  type: vless
-  server: content.reasonok.com
-  port: 443
-  uuid: "86208db7-8bbc-42c2-9eb2-ffe5675502c3"
-  udp: true
-  network: grpc
-  tls: true
-  servername: "content.reasonok.com"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "WDHKYZHG7i-daQ2JC5IXnQrVoYKuJSy_6IqQf41mTE8"
-    short-id: "83a2eadab79b2a8a"
-  grpc-opts:
-    grpc-service-name: node.v2.RelayService
-- name: 🇳🇱 8
-  type: vless
-  server: media.oneokgames.com
-  port: 443
-  uuid: "86208db7-8bbc-42c2-9eb2-ffe5675502c3"
-  udp: true
-  network: grpc
-  tls: true
-  servername: "media.oneokgames.com"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "aDNsk312UNfOEh0RiyGZdK6opt__mMyKBSglqFKFP38"
-    short-id: "dbdbeaf4aa6e1a5c"
-  grpc-opts:
-    grpc-service-name: api.v2.ObjectService
-- name: 🇵🇱 9
+    grpc-service-name: media.v1.SyncService
+- name: 🇵🇱 6
   type: vless
   server: 144.31.0.34
   port: 443
@@ -133,7 +88,7 @@ proxies:
   reality-opts:
     public-key: "8wD0IhR27ftD5LyJDq9CaFzi6DgA4vFtB-UP6QIdWVc"
     short-id: "e8ca5079a5e91481"
-- name: 🇸🇪 10
+- name: 🇸🇪 7
   type: vless
   server: cdn7-40.cache-node.online
   port: 54443
@@ -154,14 +109,11 @@ proxy-groups:
   proxies:
   - 🇨🇭 1
   - 🇩🇪 2
-  - 🇩🇪 3
+  - 🇪🇪 3
   - 🇱🇹 4
-  - 🇱🇻 5
-  - 🇳🇱 6
-  - 🇳🇱 7
-  - 🇳🇱 8
-  - 🇵🇱 9
-  - 🇸🇪 10
+  - 🇳🇱 5
+  - 🇵🇱 6
+  - 🇸🇪 7
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -171,13 +123,10 @@ proxy-groups:
   - 🚀 Авто (лучший)
   - 🇨🇭 1
   - 🇩🇪 2
-  - 🇩🇪 3
+  - 🇪🇪 3
   - 🇱🇹 4
-  - 🇱🇻 5
-  - 🇳🇱 6
-  - 🇳🇱 7
-  - 🇳🇱 8
-  - 🇵🇱 9
-  - 🇸🇪 10
+  - 🇳🇱 5
+  - 🇵🇱 6
+  - 🇸🇪 7
 rules:
 - MATCH,PROXY
