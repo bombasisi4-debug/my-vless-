@@ -2,33 +2,18 @@ mixed-port: 7890
 allow-lan: false
 mode: rule
 log-level: info
-proxies:
-- name: 🇳🇱 1460
-  type: vless
-  server: rezerv24.yunus.guru
-  port: 443
-  uuid: "861fd825-3828-4bc6-a48e-8295f357b6c7"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "rezerv24.yunus.guru"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "OIpR2PehcH7DEsIeI1COw_XYihv7tG6cseNeGZIe220"
-    short-id: "6cde62dda3f46929"
+proxies: []
 proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - 🇳🇱 1460
+  - DIRECT
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
 - name: PROXY
   type: select
   proxies:
-  - 🚀 Авто (лучший)
-  - 🇳🇱 1460
+  - DIRECT
 rules:
 - MATCH,PROXY
