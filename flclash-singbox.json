@@ -43,36 +43,10 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇸🇪 992",
-      "server": "cdn7-40.cache-node.online",
-      "server_port": 54443,
-      "uuid": "19fcb14a-f077-43da-80ca-daee6aea92a8",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.nvidia.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "-XvrPnfI7sBt6ikamJUhtoQmQ8r3LSdI8_DdEg4nP24",
-          "short_id": "3fed"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": ""
-      }
-    },
-    {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇱 1460",
-        "🇸🇪 992"
+        "🇳🇱 1460"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "1m",
@@ -83,8 +57,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇱 1460",
-        "🇸🇪 992"
+        "🇳🇱 1460"
       ],
       "default": "auto"
     },
