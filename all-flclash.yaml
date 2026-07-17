@@ -3,92 +3,21 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇭 1
+- name: 🇳🇱 1
   type: vless
-  server: 45.140.205.186
-  port: 2443
-  uuid: "8bba3194-4856-46d1-8319-075817d87eb1"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "sw2.cyphervpn.pro"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "USffNprEM08MHiuVy5bj6-kvxugxycuZcgQDFJyz2Wc"
-    short-id: "8f9d033ad6d2cebf"
-- name: 🇩🇪 2
-  type: vless
-  server: germ3.helper-internet.com
+  server: rezerv24.yunus.guru
   port: 443
-  uuid: "59da5351-5151-417d-b2f7-6923848b717e"
+  uuid: "861fd825-3828-4bc6-a48e-8295f357b6c7"
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: "germ3.helper-internet.com"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE"
-    short-id: "ff776ff77be48b88"
-- name: 🇪🇪 3
-  type: vless
-  server: 31.56.187.47
-  port: 8443
-  uuid: "a956a597-28d9-475c-86c8-664ca9577f0d"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "ndee.whit3.net"
-  client-fingerprint: random
-  reality-opts:
-    public-key: "scNn8MoJJIeabN5MkjwxmOXE3DdOyl2HJqzct3RsLyY"
-    short-id: "1e85a6f4a565e7e7"
-- name: 🇱🇹 4
-  type: vless
-  server: 84.32.209.210
-  port: 7443
-  uuid: "8f0560ec-ba22-4431-a6a7-318dc59d5233"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "statusdetector404.ru"
+  servername: "rezerv24.yunus.guru"
   client-fingerprint: firefox
   reality-opts:
-    public-key: "xFUmqmEPEKyv-5ReppEM1oTkc04HQcBUfySH-EwPBlE"
-    short-id: "6ba85179e30d4fc2"
-- name: 🇳🇱 5
-  type: vless
-  server: assets.oneokgames.com
-  port: 443
-  uuid: "86208db7-8bbc-42c2-9eb2-ffe5675502c3"
-  udp: true
-  network: grpc
-  tls: true
-  servername: "assets.oneokgames.com"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "x9m8Vxk2YlwXy8CLrHeEMDzLJWuRQ3mh6CPWA34u2yY"
-    short-id: "ad613873130544ab"
-  grpc-opts:
-    grpc-service-name: media.v1.SyncService
-- name: 🇵🇱 6
-  type: vless
-  server: 144.31.0.34
-  port: 443
-  uuid: "1fef5248-fdd2-40d6-b3b9-6c33d4e74724"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "_custom_"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: "8wD0IhR27ftD5LyJDq9CaFzi6DgA4vFtB-UP6QIdWVc"
-    short-id: "e8ca5079a5e91481"
-- name: 🇸🇪 7
+    public-key: "OIpR2PehcH7DEsIeI1COw_XYihv7tG6cseNeGZIe220"
+    short-id: "6cde62dda3f46929"
+- name: 🇸🇪 2
   type: vless
   server: cdn7-40.cache-node.online
   port: 54443
@@ -107,13 +36,8 @@ proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - 🇨🇭 1
-  - 🇩🇪 2
-  - 🇪🇪 3
-  - 🇱🇹 4
-  - 🇳🇱 5
-  - 🇵🇱 6
-  - 🇸🇪 7
+  - 🇳🇱 1
+  - 🇸🇪 2
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -121,12 +45,7 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 Авто (лучший)
-  - 🇨🇭 1
-  - 🇩🇪 2
-  - 🇪🇪 3
-  - 🇱🇹 4
-  - 🇳🇱 5
-  - 🇵🇱 6
-  - 🇸🇪 7
+  - 🇳🇱 1
+  - 🇸🇪 2
 rules:
 - MATCH,PROXY
