@@ -22,23 +22,585 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇳🇱 1",
-      "server": "rezerv24.yunus.guru",
+      "tag": "🇨🇭 1",
+      "server": "79.137.175.168",
       "server_port": 443,
-      "uuid": "861fd825-3828-4bc6-a48e-8295f357b6c7",
+      "uuid": "ffe5e6a2-2c19-4fc1-8e7f-2d0a5d787066",
       "packet_encoding": "xudp",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "rezerv24.yunus.guru",
+        "server_name": "eh.vk.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "OIpR2PehcH7DEsIeI1COw_XYihv7tG6cseNeGZIe220",
-          "short_id": "6cde62dda3f46929"
+          "public_key": "jyfiBUYiL1e88ru9_K3hrieKZVwiI6CkU5mhnH36qm8",
+          "short_id": "afee1a48fd42a87b"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇭 2",
+      "server": "45.140.205.186",
+      "server_port": 2443,
+      "uuid": "8bba3194-4856-46d1-8319-075817d87eb1",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "sw2.cyphervpn.pro",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "USffNprEM08MHiuVy5bj6-kvxugxycuZcgQDFJyz2Wc",
+          "short_id": "8f9d033ad6d2cebf"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇭 3",
+      "server": "www.speedtest.net",
+      "server_port": 80,
+      "uuid": "c392a7fc-460f-4318-b075-ddc70f6a4fea",
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 4",
+      "server": "185.121.132.162",
+      "server_port": 443,
+      "uuid": "8f0560ec-ba22-4431-a6a7-318dc59d5233",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "zaplio-gook.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "qm-zp2dNT8dDO9KWbfQrxN3IKT0JlNZkWT53aaCKfxM",
+          "short_id": "d9662905"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 5",
+      "server": "corelink.su",
+      "server_port": 443,
+      "uuid": "153560b0-1a33-4b44-b059-ca5b22e55c19",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "corelink.su",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "b0y3fVgL8jKbO3cNmh_qCoZWoWRsY6BYc6VDJFkNe2I",
+          "short_id": "b7fc0f11dda97edb"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 6",
+      "server": "31.76.77.31",
+      "server_port": 2087,
+      "uuid": "e361b972-87b4-4385-af8b-9b279ee2b1d6",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ads.x5.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ybKNAcvcgSY47nETC4WX6qLz3CdA5YgJkva_QSJDukA",
+          "short_id": "c226283c4de5b1ad"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 7",
+      "server": "api.oneoker.com",
+      "server_port": 443,
+      "uuid": "86208db7-8bbc-42c2-9eb2-ffe5675502c3",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "api.oneoker.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "pVc2H60-PlZ1gRiYyYc089xCwcck5BTs67k6B2-5ZRM",
+          "short_id": "7a7de52ae0e6c22f"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "api.v1.StreamService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 8",
+      "server": "add.oneoker.com",
+      "server_port": 443,
+      "uuid": "86208db7-8bbc-42c2-9eb2-ffe5675502c3",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "add.oneoker.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "W329R9_hAiG_wGLcIhfbm0AA8Si7DVhz4es2aASZACY",
+          "short_id": "9c478d3655bfa85d"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "api.v1.StreamService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇺 9",
+      "server": "152.233.41.30",
+      "server_port": 16923,
+      "uuid": "a2c05942-0ef0-4e11-89de-a981ff58b790",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "api-maps.yandex.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "_QeslG3rHGM7DoM99pYC8-jpc16pM2MbNZ6NRMoxmHA",
+          "short_id": "10ffb85da1c2d986"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "neurex"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇹 10",
+      "server": "84.32.209.210",
+      "server_port": 7443,
+      "uuid": "8f0560ec-ba22-4431-a6a7-318dc59d5233",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "statusdetector404.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "xFUmqmEPEKyv-5ReppEM1oTkc04HQcBUfySH-EwPBlE",
+          "short_id": "6ba85179e30d4fc2"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇻 11",
+      "server": "lit6.helper-internet.com",
+      "server_port": 443,
+      "uuid": "59da5351-5151-417d-b2f7-6923848b717e",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "lit6.helper-internet.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE",
+          "short_id": "ff776ff77be48b88"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 12",
+      "server": "static.oneokgames.com",
+      "server_port": 443,
+      "uuid": "86208db7-8bbc-42c2-9eb2-ffe5675502c3",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "static.oneokgames.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "2ByKrIVItayTLa4VxxsEpSMi5Anjk8tGqsUm9A2YU2I",
+          "short_id": "acd160fedb4b4006"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "rpc.v1.StreamService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 13",
+      "server": "cloud.reasonok.com",
+      "server_port": 443,
+      "uuid": "86208db7-8bbc-42c2-9eb2-ffe5675502c3",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "cloud.reasonok.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "WDHKYZHG7i-daQ2JC5IXnQrVoYKuJSy_6IqQf41mTE8",
+          "short_id": "83a2eadab79b2a8a"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "node.v2.RelayService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 14",
+      "server": "push.oneokgames.com",
+      "server_port": 443,
+      "uuid": "86208db7-8bbc-42c2-9eb2-ffe5675502c3",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "push.oneokgames.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "0ffnN7CdnOgEEFJ3AY1lnuTtsOPDL059UaTTxGxDjTA",
+          "short_id": "66ffd800ba2ec7c3"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "home.v1.ApiService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 15",
+      "server": "media.oneokgames.com",
+      "server_port": 443,
+      "uuid": "86208db7-8bbc-42c2-9eb2-ffe5675502c3",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "media.oneokgames.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "aDNsk312UNfOEh0RiyGZdK6opt__mMyKBSglqFKFP38",
+          "short_id": "dbdbeaf4aa6e1a5c"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "api.v2.ObjectService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 16",
+      "server": "upload.onetimeok.com",
+      "server_port": 443,
+      "uuid": "86208db7-8bbc-42c2-9eb2-ffe5675502c3",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "upload.onetimeok.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "nhw3l7ERW8NoAh5lBv3dxkF-mkNYifxsSxX_HNiOhAU",
+          "short_id": "82674cbe556a1209"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "app.v1.StreamService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 17",
+      "server": "images.oneokgames.com",
+      "server_port": 443,
+      "uuid": "86208db7-8bbc-42c2-9eb2-ffe5675502c3",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "images.oneokgames.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "x9m8Vxk2YlwXy8CLrHeEMDzLJWuRQ3mh6CPWA34u2yY",
+          "short_id": "ad613873130544ab"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "media.v1.SyncService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 18",
+      "server": "tracker.oneokgames.com",
+      "server_port": 443,
+      "uuid": "86208db7-8bbc-42c2-9eb2-ffe5675502c3",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "tracker.oneokgames.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "VTO26jBMVVnEnnHQON7k8lB3ED46_JHshPorJHHXSRU",
+          "short_id": "a30b344b5214d62f"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "push.v2.FeedService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 19",
+      "server": "117.55.202.176",
+      "server_port": 443,
+      "uuid": "8f0560ec-ba22-4431-a6a7-318dc59d5233",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "4ew328q3df43we11-topology-gslb-yccdn.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "zFLwkbK3WLlo4hRToZjwkauD4qCLdzkUgG0GisVL-nk",
+          "short_id": "d9662905"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 20",
+      "server": "us.onetimeok.com",
+      "server_port": 443,
+      "uuid": "86208db7-8bbc-42c2-9eb2-ffe5675502c3",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "us.onetimeok.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "8QJSXd0F3JScfRiyQFh_IXYq8Liwpa9EzhbC1MDRrnc",
+          "short_id": "8e4d75390b1e0547"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "media.v1.ObjectService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 21",
+      "server": "edge1.onetimeok.com",
+      "server_port": 443,
+      "uuid": "86208db7-8bbc-42c2-9eb2-ffe5675502c3",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "edge1.onetimeok.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "TLAYLGGk8xnADNCg4_7-E3YqlC8L4lVo4m7aauBL7kU",
+          "short_id": "ce7d5b58da528cf1"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "edge.v2.RelayService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 22",
+      "server": "grid.onetimeok.com",
+      "server_port": 443,
+      "uuid": "86208db7-8bbc-42c2-9eb2-ffe5675502c3",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "grid.onetimeok.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "28oR3ji9c2CneMNkbvcDL8WfvNWHS3GfA3RdtaF-pSg",
+          "short_id": "89e97b6542785ca6"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "gw.v1.MetricsService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 23",
+      "server": "2.26.5.207",
+      "server_port": 2087,
+      "uuid": "b7d6ce85-3c4e-4751-884f-26dfa8a011e2",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ads.x5.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "fgAGnqn2g6u4ZacmOsYR0yqA27FGZpKl7NvhD3rnRz0",
+          "short_id": "c226283c4de5b1ad"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 24",
+      "server": "cdn7-40.cache-node.online",
+      "server_port": 54443,
+      "uuid": "19fcb14a-f077-43da-80ca-daee6aea92a8",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.nvidia.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-XvrPnfI7sBt6ikamJUhtoQmQ8r3LSdI8_DdEg4nP24",
+          "short_id": "3fed"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": ""
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇦 25",
+      "server": "de-one.quiet-rogue.site",
+      "server_port": 443,
+      "uuid": "71cada65-d23e-418c-88e4-a06188d14689",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "de-one.quiet-rogue.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "quSgGKXdwtlVQYTJypimp3Er-PoMI4SP4EXPdOKLQwk",
+          "short_id": ""
         }
       }
     },
@@ -46,7 +608,31 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇱 1"
+        "🇨🇭 1",
+        "🇨🇭 2",
+        "🇨🇭 3",
+        "🇩🇪 4",
+        "🇫🇮 5",
+        "🇫🇮 6",
+        "🇬🇧 7",
+        "🇬🇧 8",
+        "🇭🇺 9",
+        "🇱🇹 10",
+        "🇱🇻 11",
+        "🇳🇱 12",
+        "🇳🇱 13",
+        "🇳🇱 14",
+        "🇳🇱 15",
+        "🇳🇱 16",
+        "🇳🇱 17",
+        "🇳🇱 18",
+        "🇳🇱 19",
+        "🇳🇱 20",
+        "🇳🇱 21",
+        "🇳🇱 22",
+        "🇵🇱 23",
+        "🇸🇪 24",
+        "🇺🇦 25"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "1m",
@@ -57,7 +643,31 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇱 1"
+        "🇨🇭 1",
+        "🇨🇭 2",
+        "🇨🇭 3",
+        "🇩🇪 4",
+        "🇫🇮 5",
+        "🇫🇮 6",
+        "🇬🇧 7",
+        "🇬🇧 8",
+        "🇭🇺 9",
+        "🇱🇹 10",
+        "🇱🇻 11",
+        "🇳🇱 12",
+        "🇳🇱 13",
+        "🇳🇱 14",
+        "🇳🇱 15",
+        "🇳🇱 16",
+        "🇳🇱 17",
+        "🇳🇱 18",
+        "🇳🇱 19",
+        "🇳🇱 20",
+        "🇳🇱 21",
+        "🇳🇱 22",
+        "🇵🇱 23",
+        "🇸🇪 24",
+        "🇺🇦 25"
       ],
       "default": "auto"
     },
