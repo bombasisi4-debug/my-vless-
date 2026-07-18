@@ -2,18 +2,34 @@ mixed-port: 7890
 allow-lan: false
 mode: rule
 log-level: info
-proxies: []
+proxies:
+- name: 🇩🇪 2
+  type: vless
+  server: 185.229.9.31
+  port: 49007
+  uuid: "40c10aa1-f6b9-4552-85b4-811348efe56d"
+  udp: true
+  network: grpc
+  tls: true
+  servername: "ads.x5.ru"
+  client-fingerprint: qq
+  reality-opts:
+    public-key: "t192lvTN6ZtCch9LSAkLOKnKuyYdLLaTJx8tn3VRHz0"
+    short-id: "dfdee30a27b11f0f"
+  grpc-opts:
+    grpc-service-name: grpc
 proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - DIRECT
+  - 🇩🇪 2
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
 - name: PROXY
   type: select
   proxies:
-  - DIRECT
+  - 🚀 Авто (лучший)
+  - 🇩🇪 2
 rules:
 - MATCH,PROXY
