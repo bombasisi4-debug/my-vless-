@@ -21,35 +21,10 @@
   ],
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇩🇪 2",
-      "server": "185.229.9.31",
-      "server_port": 49007,
-      "uuid": "40c10aa1-f6b9-4552-85b4-811348efe56d",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "ads.x5.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "t192lvTN6ZtCch9LSAkLOKnKuyYdLLaTJx8tn3VRHz0",
-          "short_id": "dfdee30a27b11f0f"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc"
-      }
-    },
-    {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇪 2"
+        "direct"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "1m",
@@ -59,8 +34,7 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "auto",
-        "🇩🇪 2"
+        "direct"
       ],
       "default": "auto"
     },
