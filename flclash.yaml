@@ -1215,6 +1215,49 @@ proxies:
     path: /Telegram🇨🇳+@WangCai2
     headers:
       Host: s5gydl.936.us.ci
+- name: '--->🇬🇧 ?b'
+  type: vless
+  server: den.homeston.space
+  port: 443
+  uuid: "441f6a72-53f4-4f63-9542-bf445eb16a3e"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "den.homeston.space"
+  client-fingerprint: edge
+  reality-opts:
+    public-key: "JZ-JMdenLtpZb6J991KB0-3T92rACohEpDtqt2M--hs"
+    short-id: "17"
+- name: '--->🇩🇪 ?'
+  type: vless
+  server: onfilter.a5vxwvx.ir
+  port: 443
+  uuid: "09f4aa25-6263-4ecc-abe1-be81d0def5c2"
+  udp: true
+  network: grpc
+  tls: true
+  servername: "www.yahoo.com"
+  client-fingerprint: safari
+  reality-opts:
+    public-key: "0ZV6j7jRqFvwJEeaMMU-dkTdOq9UW3uhjm3IKnCszkk"
+    short-id: "fac1618f0bbc06db"
+  grpc-opts:
+    grpc-service-name: grgc
+- name: 🇳🇱--->🇳🇱 ?d
+  type: vless
+  server: 94.183.208.60
+  port: 2443
+  uuid: "72e466d0-c7f7-489f-a9bb-393d2e0a9647"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "www.twitch.tv"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "o4B5nNF60AmdE2U_x3fVhGzF5x_nxkX02SeCO_DAT0U"
+    short-id: "a7d9c4e58b1f2036"
 - name: 🇬🇧---> ?br
   type: vless
   server: 91.193.59.36
@@ -1590,20 +1633,6 @@ proxies:
   reality-opts:
     public-key: "Fmn3VyIvCT-KpCwvmb1ZqqkQxOW8GEBvamSZYZrqcic"
     short-id: "376d46f012a36cd2"
-- name: 🇳🇱---> ?d
-  type: vless
-  server: 94.183.208.60
-  port: 2443
-  uuid: "72e466d0-c7f7-489f-a9bb-393d2e0a9647"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "www.twitch.tv"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "o4B5nNF60AmdE2U_x3fVhGzF5x_nxkX02SeCO_DAT0U"
-    short-id: "a7d9c4e58b1f2036"
 - name: 🇺🇸---> ?e
   type: vless
   server: 150.241.101.43
@@ -1640,35 +1669,6 @@ proxies:
   udp: true
   network: tcp
   tls: false
-- name: '? #2'
-  type: vless
-  server: onfilter.a5vxwvx.ir
-  port: 443
-  uuid: "09f4aa25-6263-4ecc-abe1-be81d0def5c2"
-  udp: true
-  network: grpc
-  tls: true
-  servername: "www.yahoo.com"
-  client-fingerprint: safari
-  reality-opts:
-    public-key: "0ZV6j7jRqFvwJEeaMMU-dkTdOq9UW3uhjm3IKnCszkk"
-    short-id: "fac1618f0bbc06db"
-  grpc-opts:
-    grpc-service-name: grgc
-- name: ?b
-  type: vless
-  server: den.homeston.space
-  port: 443
-  uuid: "441f6a72-53f4-4f63-9542-bf445eb16a3e"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "den.homeston.space"
-  client-fingerprint: edge
-  reality-opts:
-    public-key: "JZ-JMdenLtpZb6J991KB0-3T92rACohEpDtqt2M--hs"
-    short-id: "17"
 proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
@@ -1774,6 +1774,9 @@ proxy-groups:
   - 🇬🇧---> 2a
   - 🇬🇧---> 1452ah
   - 🇬🇧---> 1221g
+  - '--->🇬🇧 ?b'
+  - '--->🇩🇪 ?'
+  - 🇳🇱--->🇳🇱 ?d
   - 🇬🇧---> ?br
   - 🇬🇧---> ?bs
   - 🇬🇧---> ?r
@@ -1805,12 +1808,9 @@ proxy-groups:
   - '🇬🇧---> ?t #2'
   - 🇬🇧---> ?ck
   - 🇵🇱---> ?c
-  - 🇳🇱---> ?d
   - 🇺🇸---> ?e
   - 🇺🇸---> ?f
   - '?'
-  - '? #2'
-  - ?b
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -1820,12 +1820,12 @@ proxy-groups:
   - 🇬🇧---> 1200f
   - 🇬🇧---> 618f
   - 🇬🇧---> 433f
-  - ?b
-  - ?b
-  - ?b
-  - ?b
-  - ?b
-  - ?b
+  - 🇺🇸---> ?f
+  - 🇺🇸---> ?f
+  - 🇺🇸---> ?f
+  - 🇺🇸---> ?f
+  - 🇺🇸---> ?f
+  - 🇺🇸---> ?f
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -1979,6 +1979,9 @@ proxy-groups:
   - 🇬🇧---> 2a
   - 🇬🇧---> 1452ah
   - 🇬🇧---> 1221g
+  - '--->🇬🇧 ?b'
+  - '--->🇩🇪 ?'
+  - 🇳🇱--->🇳🇱 ?d
   - 🇬🇧---> ?br
   - 🇬🇧---> ?bs
   - 🇬🇧---> ?r
@@ -2010,11 +2013,8 @@ proxy-groups:
   - '🇬🇧---> ?t #2'
   - 🇬🇧---> ?ck
   - 🇵🇱---> ?c
-  - 🇳🇱---> ?d
   - 🇺🇸---> ?e
   - 🇺🇸---> ?f
   - '?'
-  - '? #2'
-  - ?b
 rules:
 - MATCH,PROXY
