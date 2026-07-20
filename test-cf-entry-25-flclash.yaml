@@ -1,0 +1,401 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+- name: 🇨🇭--->🇨🇭 ❌ 🚫 23
+  type: vless
+  server: 179.237.86.7
+  port: 443
+  uuid: "ecad47b0-249e-4f6f-adff-e3c8f02b1897"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "ch.quattro-tech.ru"
+  client-fingerprint: qq
+  reality-opts:
+    public-key: "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc"
+    short-id: "43dcff53849b81e6"
+- name: 🇨🇿--->🇨🇿 ❌ 🚫 9
+  type: vless
+  server: 194.87.52.81
+  port: 53844
+  uuid: "3ffe2ab7-5657-466f-ad71-75aa1717f51b"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "apple.com"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "24IQtal3G9sIlVqj2_fO-No3Oo6Sxofan80ivMLW_UY"
+    short-id: "893dd72a6ccb9fd0"
+- name: 🇩🇪--->🇩🇪 ❌ 🚫 16
+  type: vless
+  server: 109.163.239.64
+  port: 443
+  uuid: "c6a420c7-3bdb-40cd-8a57-f5ce870e9b83"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "cdn4-35.yahoo.com"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "CMkW1axrhEXoiJ6anMz9XEjlfqlAtEZya7L0b5ZPMyw"
+    short-id: "c252dea48965065b"
+- name: 🇪🇪--->🇪🇪 ❌ 🚫 7
+  type: vless
+  server: 185.93.33.8
+  port: 443
+  uuid: "ecad47b0-249e-0014-adff-e3c8f02b1897"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "auto.quattro-tech.ru"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc"
+    short-id: "43dcff53849b81e6"
+- name: 🇫🇮--->🇫🇮 🚫 13
+  type: vless
+  server: 31.76.240.234
+  port: 42548
+  uuid: "f9268eba-c60e-4ff2-8b10-d7f72ea4ca78"
+  udp: true
+  network: xhttp
+  tls: false
+- name: 🇫🇷--->🇫🇷 ❌ 🚫 25
+  type: vless
+  server: 76.164.202.211
+  port: 448
+  uuid: "ecfb4271-790e-4011-9364-6e168ed8a82a"
+  udp: true
+  network: tcp
+  tls: true
+  servername: "www.samsung.com"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "i34zHKfyydOveuaYnjEU4ocu662Wagkf7fIbj9qiQRA"
+    short-id: "9e96f30390d6be81"
+- name: 🇬🇧--->🇬🇧 ❌ 8
+  type: vless
+  server: uk.monkora.org
+  port: 443
+  uuid: "d89c9d5e-004f-4a02-8cd5-0c0d697862bb"
+  udp: true
+  network: tcp
+  tls: true
+  servername: "uk.monkora.org"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU"
+    short-id: ""
+- name: 🇬🇧--->🇬🇧 ❌ 🚫 15
+  type: vless
+  server: 45.86.159.132
+  port: 2085
+  uuid: "ae86f68e-84c7-41de-b69f-87285451fb71"
+  udp: true
+  network: grpc
+  tls: false
+  grpc-opts:
+    grpc-service-name: "vless"
+- name: 🇱🇹--->🇱🇹 ❌ 🚫 21
+  type: vless
+  server: 45.196.31.7
+  port: 8443
+  uuid: "7f5ddc3c-eac0-4da4-a78b-ee5e6fc3eea4"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "storage.yandex.net"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA"
+    short-id: "0d960275b7b0f9af"
+- name: 🇳🇱--->🇳🇱 ❌ 🚫 2
+  type: vless
+  server: 154.84.171.253
+  port: 8443
+  uuid: "49601021-a597-4551-b0ca-311cfa895273"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "storage.yandex.net"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "LT_0j3zQkaqgtJHvyaG24xz0IfmXUswVCTeC75Qsgjo"
+    short-id: "0905b6e16602f326"
+- name: 🇳🇱--->🇳🇱 ❌ 🚫 24
+  type: vless
+  server: 195.184.233.14
+  port: 443
+  uuid: "f055899d-026b-49b5-88ed-0227795082da"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "karapetik.mycdn-me.ru"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "x8V9jdSIUmz0pTfefPynLuMZNBPphuZcN6eSnbfk1hk"
+    short-id: "a111c0e21d7b6485"
+- name: 🇳🇱--->🇳🇱 ❌ 🚫 6
+  type: vless
+  server: nl2.janusgate.org
+  port: 443
+  uuid: "8220283b-dd8a-4d37-baf6-348958c8058e"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "nl2.janusgate.org"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "nilJ07r1KZ0-KhmRNYeICXGhM9HeG9uxnRaqjYz3fWg"
+    short-id: "04e65b7e170a5a4d"
+- name: 🇵🇱--->🇵🇱 ❌ 🚫 17
+  type: vless
+  server: 2.26.5.76
+  port: 8443
+  uuid: "75cb04de-68ff-4a79-b2b5-358a42cf0386"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "www.google.com"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "SVhmzKE4XM_kURZ3xpDi7oDgqeoDGdOk6el-6_bs_h4"
+    short-id: "6ba85179e30d4fc2"
+- name: 🇷🇺--->🇰🇿 ❌ 🚫 1
+  type: vless
+  server: 45.9.25.35
+  port: 7443
+  uuid: "f055899d-026b-0013-88ed-0227795082da"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "meltdown.mycdn-me.ru"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "ojgGt87b9Mhk8pl1hK7Ga_o9UvL5WjYDBuNegpLwuSM"
+    short-id: "128d3e824947a4cb"
+- name: 🇷🇺--->🇸🇪 ❌ 🚫 10
+  type: vless
+  server: 109.120.188.54
+  port: 443
+  uuid: "a17945f1-e8d3-4b7a-89a2-b2d4fecfaa92"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "ads.x5.ru"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "4woJiVyGtLro6qRQdUcM2EJDHI3CLOeeE-knmSHk8lE"
+    short-id: "1ca44564cda56661"
+- name: 🇹🇷--->🇹🇷 ❌ 🚫 22
+  type: vless
+  server: 213.142.150.73
+  port: 443
+  uuid: "d5b25051-c06c-4af5-9cd6-b6000310177c"
+  udp: true
+  network: tcp
+  tls: true
+  servername: "blog.api.www.cloudflare.com"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "-FkwzDH8lJExoLie681Fqrfrnm-Wj72TQdPyshWkO1c"
+    short-id: "ce310cc046141015"
+- name: '--->🇳🇱 3'
+  type: vless
+  server: nl.getsavesafe.com
+  port: 443
+  uuid: "39c42b0a-b823-4c93-bb99-74b4183e518d"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "nl.savesafe.space"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "6QnP4rZtnZt6XIfn246ODggMjbXbFPryxaF2whFhKGU"
+    short-id: "82f5d3a1e9c0b647"
+- name: 🇨🇭--->🇨🇭 11
+  type: vless
+  server: ch10.tunnely.ru
+  port: 443
+  uuid: "31649657-6c78-4c2c-b25b-5cd574b082b5"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "ch10.tunnely.ru"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "pPGE5Uacj1AGAB_WLOXB_UUnVBOmuJGH0vTSfmRBKzM"
+    short-id: "2e40144ddc07e8e1"
+- name: 🇬🇧--->🇬🇧 20
+  type: vless
+  server: 45.86.159.131
+  port: 2085
+  uuid: "ae86f68e-84c7-41de-b69f-87285451fb71"
+  udp: true
+  network: grpc
+  tls: false
+  grpc-opts:
+    grpc-service-name: "vless"
+- name: 🇬🇧--->🇬🇧 5
+  type: vless
+  server: 164.37.110.51
+  port: 443
+  uuid: "ecad47b0-249e-4f6f-adff-e3c8f02b1897"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "uk.quattro-tech.ru"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc"
+    short-id: "43dcff53849b81e6"
+- name: 🇱🇹--->🇱🇹 19
+  type: vless
+  server: 2.59.162.56
+  port: 443
+  uuid: "8bba3194-4856-46d1-8319-075817d87eb1"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "lt2.cyphervpn.pro"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "USffNprEM08MHiuVy5bj6-kvxugxycuZcgQDFJyz2Wc"
+    short-id: "8f9d033ad6d2cebf"
+- name: 🇳🇱--->🇳🇱 12
+  type: vless
+  server: 89.105.219.139
+  port: 443
+  uuid: "ecad47b0-249e-4f6f-adff-e3c8f02b1897"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "nl.quattro-tech.ru"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc"
+    short-id: "43dcff53849b81e6"
+- name: 🇳🇱--->🇳🇱 14
+  type: vless
+  server: nl03.tunnely.ru
+  port: 443
+  uuid: "31649657-6c78-4c2c-b25b-5cd574b082b5"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "nl03.tunnely.ru"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "pPGE5Uacj1AGAB_WLOXB_UUnVBOmuJGH0vTSfmRBKzM"
+    short-id: "2e40144ddc07e8e1"
+- name: 🇵🇱--->🇵🇱 18
+  type: vless
+  server: 193.111.117.8
+  port: 1443
+  uuid: "594b601b-b807-4998-a44e-9466f92ee4fa"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "pls.snowfall.top"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "jtEyL2mfSJ5rlvpMfYgkY6HaleCFRif0DnOOOXNHhxg"
+    short-id: "0441f3e34348cb45"
+- name: 🇸🇪--->🇸🇪 4
+  type: vless
+  server: se.monkeyisland.xyz
+  port: 443
+  uuid: "d89c9d5e-004f-4a02-8cd5-0c0d697862bb"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "se.monkeyisland.xyz"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "2AKBmK0PMf2zUMhRo1Ad-WNf_XoRk3AN-SGo6ZdhxA4"
+    short-id: "ecca56e9a9963ed7"
+proxy-groups:
+- name: 🚀 Авто (лучший)
+  type: url-test
+  proxies:
+  - 🇨🇭--->🇨🇭 ❌ 🚫 23
+  - 🇨🇿--->🇨🇿 ❌ 🚫 9
+  - 🇩🇪--->🇩🇪 ❌ 🚫 16
+  - 🇪🇪--->🇪🇪 ❌ 🚫 7
+  - 🇫🇮--->🇫🇮 🚫 13
+  - 🇫🇷--->🇫🇷 ❌ 🚫 25
+  - 🇬🇧--->🇬🇧 ❌ 8
+  - 🇬🇧--->🇬🇧 ❌ 🚫 15
+  - 🇱🇹--->🇱🇹 ❌ 🚫 21
+  - 🇳🇱--->🇳🇱 ❌ 🚫 2
+  - 🇳🇱--->🇳🇱 ❌ 🚫 24
+  - 🇳🇱--->🇳🇱 ❌ 🚫 6
+  - 🇵🇱--->🇵🇱 ❌ 🚫 17
+  - 🇷🇺--->🇰🇿 ❌ 🚫 1
+  - 🇷🇺--->🇸🇪 ❌ 🚫 10
+  - 🇹🇷--->🇹🇷 ❌ 🚫 22
+  - '--->🇳🇱 3'
+  - 🇨🇭--->🇨🇭 11
+  - 🇬🇧--->🇬🇧 20
+  - 🇬🇧--->🇬🇧 5
+  - 🇱🇹--->🇱🇹 19
+  - 🇳🇱--->🇳🇱 12
+  - 🇳🇱--->🇳🇱 14
+  - 🇵🇱--->🇵🇱 18
+  - 🇸🇪--->🇸🇪 4
+  url: https://www.gstatic.com/generate_204
+  interval: 60
+  tolerance: 80
+- name: PROXY
+  type: select
+  proxies:
+  - 🚀 Авто (лучший)
+  - 🇨🇭--->🇨🇭 ❌ 🚫 23
+  - 🇨🇿--->🇨🇿 ❌ 🚫 9
+  - 🇩🇪--->🇩🇪 ❌ 🚫 16
+  - 🇪🇪--->🇪🇪 ❌ 🚫 7
+  - 🇫🇮--->🇫🇮 🚫 13
+  - 🇫🇷--->🇫🇷 ❌ 🚫 25
+  - 🇬🇧--->🇬🇧 ❌ 8
+  - 🇬🇧--->🇬🇧 ❌ 🚫 15
+  - 🇱🇹--->🇱🇹 ❌ 🚫 21
+  - 🇳🇱--->🇳🇱 ❌ 🚫 2
+  - 🇳🇱--->🇳🇱 ❌ 🚫 24
+  - 🇳🇱--->🇳🇱 ❌ 🚫 6
+  - 🇵🇱--->🇵🇱 ❌ 🚫 17
+  - 🇷🇺--->🇰🇿 ❌ 🚫 1
+  - 🇷🇺--->🇸🇪 ❌ 🚫 10
+  - 🇹🇷--->🇹🇷 ❌ 🚫 22
+  - '--->🇳🇱 3'
+  - 🇨🇭--->🇨🇭 11
+  - 🇬🇧--->🇬🇧 20
+  - 🇬🇧--->🇬🇧 5
+  - 🇱🇹--->🇱🇹 19
+  - 🇳🇱--->🇳🇱 12
+  - 🇳🇱--->🇳🇱 14
+  - 🇵🇱--->🇵🇱 18
+  - 🇸🇪--->🇸🇪 4
+rules:
+- MATCH,PROXY
