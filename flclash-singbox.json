@@ -22,7 +22,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇩🇪--->🇸🇪 283d",
+      "tag": "🇩🇪--->🇸🇪 283b",
       "server": "170.168.99.3",
       "server_port": 443,
       "uuid": "e51796bb-3305-ac88-f39d-22fd9dd63b4f",
@@ -64,7 +64,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪--->🇩🇪 226c",
+      "tag": "🇩🇪--->🇩🇪 226b",
       "server": "144.31.217.155",
       "server_port": 443,
       "uuid": "e5afa6a0-a4a6-44e3-a3e0-e05b0c67cd02",
@@ -86,7 +86,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺--->🇪🇪 294a",
+      "tag": "🇷🇺--->🇧🇾 294b",
       "server": "89.208.231.82",
       "server_port": 2053,
       "uuid": "30825d3e-675c-11f1-a103-aef63c7126b0",
@@ -119,7 +119,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇪--->🇪🇪 235b",
+      "tag": "🇫🇮--->🇫🇮 235b",
       "server": "ice.noooo.win",
       "server_port": 443,
       "uuid": "6f98a077-004e-4b86-8b78-8d09308d3868",
@@ -162,7 +162,32 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱--->🇳🇱 264e",
+      "tag": "🇨🇭--->🇨🇭 307c",
+      "server": "152.233.31.68",
+      "server_port": 16923,
+      "uuid": "695d21df-7abf-423c-84f8-3a93382e5d46",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "api-maps.yandex.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "_QeslG3rHGM7DoM99pYC8-jpc16pM2MbNZ6NRMoxmHA",
+          "short_id": "10ffb85da1c2d986"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "neurex"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱--->🇳🇱 264d",
       "server": "nl.getsavesafe.com",
       "server_port": 443,
       "uuid": "39c42b0a-b823-4c93-bb99-74b4183e518d",
@@ -180,6 +205,31 @@
           "public_key": "6QnP4rZtnZt6XIfn246ODggMjbXbFPryxaF2whFhKGU",
           "short_id": "82f5d3a1e9c0b647"
         }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺--->🇩🇪 173a",
+      "server": "185.229.9.176",
+      "server_port": 8443,
+      "uuid": "0446dabb-be80-48e3-b33b-08908b5a7e82",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "id.pervye.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "K9vJ2zLFxi3VTmrguyLC1KrC920axeFSeA8x_xY4Xhw",
+          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "ns"
       }
     },
     {
@@ -234,7 +284,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪--->🇩🇪 221b",
+      "tag": "🇩🇪--->🇩🇪 221a",
       "server": "77.91.66.178",
       "server_port": 443,
       "uuid": "109c13c0-5ef7-47a3-b278-3d47a35136e5",
@@ -256,7 +306,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸--->🇺🇸 192b",
+      "tag": "🇺🇸--->🇺🇸 192a",
       "server": "82.40.23.174",
       "server_port": 443,
       "uuid": "2a77a470-315c-493d-b690-59b814a804cb",
@@ -278,6 +328,29 @@
     },
     {
       "type": "vless",
+      "tag": "🇱🇻--->🇫🇮 308",
+      "server": "5.178.96.226",
+      "server_port": 2090,
+      "uuid": "eab915bc-d2df-73d1-47d0-6eb240497055",
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪--->🇫🇮 310",
+      "server": "146.75.119.82",
+      "server_port": 80,
+      "uuid": "43675f40-8d50-438f-a741-b4627d91a445",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "ws/?ed=2048/@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz/?2048",
+        "headers": {
+          "Host": "rb24.ir"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇩🇪--->🇩🇪 295f",
       "server": "81.31.211.172",
       "server_port": 2085,
@@ -290,7 +363,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧--->🇬🇧 291a",
+      "tag": "🇬🇧--->🇬🇧 291b",
       "server": "uk1.panel11.ru",
       "server_port": 443,
       "uuid": "d385a48f-9f6f-406a-8d3c-e409b371c565",
@@ -337,15 +410,32 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷--->🇫🇷 181",
-      "server": "13.37.126.152",
-      "server_port": 22224,
-      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
-      "packet_encoding": "xudp"
+      "tag": "🇰🇿--->🇰🇿 292d",
+      "server": "45.94.23.111",
+      "server_port": 16923,
+      "uuid": "695d21df-7abf-423c-84f8-3a93382e5d46",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "api-maps.yandex.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "_QeslG3rHGM7DoM99pYC8-jpc16pM2MbNZ6NRMoxmHA",
+          "short_id": "10ffb85da1c2d986"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "neurex"
+      }
     },
     {
       "type": "vless",
-      "tag": "🇦🇹--->🇦🇹 236c",
+      "tag": "🇦🇹--->🇦🇹 236",
       "server": "152.53.47.153",
       "server_port": 16923,
       "uuid": "df16d19f-4f64-4655-9906-10922ae8fdb2",
@@ -370,7 +460,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇭🇺--->🇭🇺 77c",
+      "tag": "🇭🇺--->🇭🇺 77b",
       "server": "hu-1.124515.xyz",
       "server_port": 443,
       "uuid": "56b812e4-2d96-4ce5-b365-6c801663a37a",
@@ -392,7 +482,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱--->🇳🇱 228d",
+      "tag": "🇳🇱--->🇳🇱 228c",
       "server": "nl1.panel11.ru",
       "server_port": 443,
       "uuid": "d385a48f-9f6f-406a-8d3c-e409b371c565",
@@ -414,7 +504,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱--->🇳🇱 296e",
+      "tag": "🇳🇱--->🇳🇱 296d",
       "server": "31.77.198.251",
       "server_port": 443,
       "uuid": "a4c262c7-ec4d-485f-ae45-99a7c0e256cf",
@@ -456,7 +546,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺--->🇵🇱 293b",
+      "tag": "🇷🇺--->🇵🇱 293a",
       "server": "5.188.140.194",
       "server_port": 2053,
       "uuid": "30825d3e-675c-11f1-a103-aef63c7126b0",
@@ -477,6 +567,31 @@
       "transport": {
         "type": "grpc",
         "service_name": "grpc-direct"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇺--->🇭🇺 304b",
+      "server": "152.233.41.13",
+      "server_port": 16923,
+      "uuid": "695d21df-7abf-423c-84f8-3a93382e5d46",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "api-maps.yandex.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "_QeslG3rHGM7DoM99pYC8-jpc16pM2MbNZ6NRMoxmHA",
+          "short_id": "10ffb85da1c2d986"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "neurex"
       }
     },
     {
@@ -528,7 +643,22 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸--->🇺🇸 176b",
+      "tag": "🇩🇪--->🇬🇧 306",
+      "server": "45.80.111.175",
+      "server_port": 8880,
+      "uuid": "6ed59a5b-efef-4ddf-99f2-57d200caed47",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/cdn/assets/stream",
+        "headers": {
+          "Host": "cnd.uk.newwaycdn.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸--->🇺🇸 176a",
       "server": "194.55.189.249",
       "server_port": 40443,
       "uuid": "8212a50b-25bf-4739-bba1-aaffb5ffc84c",
@@ -583,7 +713,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷--->🇹🇷 157",
+      "tag": "🇹🇷--->🇹🇷 157b",
       "server": "alman.ribot1.ir",
       "server_port": 443,
       "uuid": "05bb2fce-8fdd-4f03-8e4b-967da5ee3785",
@@ -604,7 +734,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮--->🇫🇮 247d",
+      "tag": "🇫🇮--->🇫🇮 247c",
       "server": "45.128.235.44",
       "server_port": 443,
       "uuid": "f14737df-03af-4781-b2e7-b6b6cf64c0ac",
@@ -629,7 +759,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷--->🇫🇷 213a",
+      "tag": "🇫🇷--->🇫🇷 213",
       "server": "76.164.202.212",
       "server_port": 448,
       "uuid": "ecfb4271-790e-4011-9364-6e168ed8a82a",
@@ -693,7 +823,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱--->🇳🇱 210c",
+      "tag": "🇳🇱--->🇳🇱 210",
       "server": "212.34.147.118",
       "server_port": 5483,
       "uuid": "b3fe34a9-cda1-4ef3-b822-ddccc507a22d",
@@ -758,7 +888,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺--->🇩🇪 211d",
+      "tag": "🇷🇺--->🇩🇪 211c",
       "server": "45.131.212.4",
       "server_port": 443,
       "uuid": "2a77a470-315c-493d-b690-59b814a804cb",
@@ -802,7 +932,29 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇭--->🇨🇭 133a",
+      "tag": "🇷🇺--->🇳🇱 222a",
+      "server": "91.185.83.105",
+      "server_port": 443,
+      "uuid": "1db0a61e-05f5-43ad-870c-ceff6ce06939",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "m.vk.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "oqRus6Z_Q1jqJaTEPu7ENbRL0-XKOw54K0jwCCGLtEk",
+          "short_id": "a9c4f17e3b62d8"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇭--->🇨🇭 133",
       "server": "onkwo.ojcenter.com",
       "server_port": 3468,
       "uuid": "ef340ab7-b1a5-a3de-cdcd-5e5d4f2cf9fd",
@@ -888,7 +1040,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺--->🇺🇸 202c",
+      "tag": "🇷🇺--->🇺🇸 202b",
       "server": "45.131.212.14",
       "server_port": 443,
       "uuid": "2a77a470-315c-493d-b690-59b814a804cb",
@@ -910,7 +1062,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷--->🇹🇷 257b",
+      "tag": "🇹🇷--->🇹🇷 257c",
       "server": "213.142.150.73",
       "server_port": 443,
       "uuid": "d5b25051-c06c-4af5-9cd6-b6000310177c",
@@ -931,7 +1083,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷--->🇫🇷 212e",
+      "tag": "🇫🇷--->🇫🇷 212b",
       "server": "fr.raketa-balance.com",
       "server_port": 443,
       "uuid": "d7fc372d-c057-43ce-8070-9b96abbc60f3",
@@ -983,7 +1135,32 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺--->🇺🇸 215f",
+      "tag": "🇺🇸--->🇺🇸 288a",
+      "server": "159.195.12.98",
+      "server_port": 16923,
+      "uuid": "695d21df-7abf-423c-84f8-3a93382e5d46",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "api-maps.yandex.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "_QeslG3rHGM7DoM99pYC8-jpc16pM2MbNZ6NRMoxmHA",
+          "short_id": "10ffb85da1c2d986"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "neurex"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺--->🇨🇭 215d",
       "server": "45.131.212.6",
       "server_port": 443,
       "uuid": "2a77a470-315c-493d-b690-59b814a804cb",
@@ -1049,7 +1226,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪--->🇩🇪 57b",
+      "tag": "🇩🇪--->🇩🇪 57",
       "server": "de2.themesh.site",
       "server_port": 443,
       "uuid": "419bfbd4-3097-4cef-a6b3-aebd78506ed7",
@@ -1095,56 +1272,64 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇪--->🇸🇪 283d",
+        "🇩🇪--->🇸🇪 283b",
         "🇵🇱--->🇵🇱 233",
-        "🇩🇪--->🇩🇪 226c",
-        "🇷🇺--->🇪🇪 294a",
+        "🇩🇪--->🇩🇪 226b",
+        "🇷🇺--->🇧🇾 294b",
         "🇱🇻--->🇫🇮 227",
-        "🇪🇪--->🇪🇪 235b",
+        "🇫🇮--->🇫🇮 235b",
         "🇫🇷--->🇫🇷 290e",
-        "🇳🇱--->🇳🇱 264e",
+        "🇨🇭--->🇨🇭 307c",
+        "🇳🇱--->🇳🇱 264d",
+        "🇷🇺--->🇩🇪 173a",
         "🇳🇱--->🇳🇱 229a",
         "🇹🇷--->🇹🇷 284",
-        "🇩🇪--->🇩🇪 221b",
-        "🇺🇸--->🇺🇸 192b",
+        "🇩🇪--->🇩🇪 221a",
+        "🇺🇸--->🇺🇸 192a",
+        "🇱🇻--->🇫🇮 308",
+        "🇩🇪--->🇫🇮 310",
         "🇩🇪--->🇩🇪 295f",
-        "🇬🇧--->🇬🇧 291a",
+        "🇬🇧--->🇬🇧 291b",
         "🇨🇭--->🇨🇭 219",
-        "🇫🇷--->🇫🇷 181",
-        "🇦🇹--->🇦🇹 236c",
-        "🇭🇺--->🇭🇺 77c",
-        "🇳🇱--->🇳🇱 228d",
-        "🇳🇱--->🇳🇱 296e",
+        "🇰🇿--->🇰🇿 292d",
+        "🇦🇹--->🇦🇹 236",
+        "🇭🇺--->🇭🇺 77b",
+        "🇳🇱--->🇳🇱 228c",
+        "🇳🇱--->🇳🇱 296d",
         "🇩🇪--->🇩🇪 132a",
-        "🇷🇺--->🇵🇱 293b",
+        "🇷🇺--->🇵🇱 293a",
+        "🇭🇺--->🇭🇺 304b",
         "🇫🇮--->🇫🇮 285c",
         "🇫🇷--->🇫🇷 34a",
-        "🇺🇸--->🇺🇸 176b",
+        "🇩🇪--->🇬🇧 306",
+        "🇺🇸--->🇺🇸 176a",
         "🇩🇪--->🇩🇪 224a",
         "🇳🇱--->🇳🇱 170a",
-        "🇹🇷--->🇹🇷 157",
-        "🇫🇮--->🇫🇮 247d",
-        "🇫🇷--->🇫🇷 213a",
+        "🇹🇷--->🇹🇷 157b",
+        "🇫🇮--->🇫🇮 247c",
+        "🇫🇷--->🇫🇷 213",
         "🇺🇸--->🇩🇪 216",
         "🇳🇱--->🇳🇱 287d",
-        "🇳🇱--->🇳🇱 210c",
+        "🇳🇱--->🇳🇱 210",
         "🇵🇱--->🇵🇱 25a",
         "🇵🇱--->🇵🇱 66",
-        "🇷🇺--->🇩🇪 211d",
+        "🇷🇺--->🇩🇪 211c",
         "🇳🇱--->🇳🇱 225b",
-        "🇨🇭--->🇨🇭 133a",
+        "🇷🇺--->🇳🇱 222a",
+        "🇨🇭--->🇨🇭 133",
         "🇳🇱--->🇳🇱 151b",
         "🇱🇹--->🇱🇹 254",
         "🇵🇱--->🇵🇱 243b",
-        "🇷🇺--->🇺🇸 202c",
-        "🇹🇷--->🇹🇷 257b",
-        "🇫🇷--->🇫🇷 212e",
+        "🇷🇺--->🇺🇸 202b",
+        "🇹🇷--->🇹🇷 257c",
+        "🇫🇷--->🇫🇷 212b",
         "🇱🇻--->🇱🇻 28",
         "🇩🇪--->🇩🇪 220",
-        "🇷🇺--->🇺🇸 215f",
+        "🇺🇸--->🇺🇸 288a",
+        "🇷🇺--->🇨🇭 215d",
         "🇬🇧--->🇬🇧 231",
         "🇪🇪--->🇵🇱 5a",
-        "🇩🇪--->🇩🇪 57b",
+        "🇩🇪--->🇩🇪 57",
         "🇧🇷--->🇫🇷 305b"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -1156,56 +1341,64 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇪--->🇸🇪 283d",
+        "🇩🇪--->🇸🇪 283b",
         "🇵🇱--->🇵🇱 233",
-        "🇩🇪--->🇩🇪 226c",
-        "🇷🇺--->🇪🇪 294a",
+        "🇩🇪--->🇩🇪 226b",
+        "🇷🇺--->🇧🇾 294b",
         "🇱🇻--->🇫🇮 227",
-        "🇪🇪--->🇪🇪 235b",
+        "🇫🇮--->🇫🇮 235b",
         "🇫🇷--->🇫🇷 290e",
-        "🇳🇱--->🇳🇱 264e",
+        "🇨🇭--->🇨🇭 307c",
+        "🇳🇱--->🇳🇱 264d",
+        "🇷🇺--->🇩🇪 173a",
         "🇳🇱--->🇳🇱 229a",
         "🇹🇷--->🇹🇷 284",
-        "🇩🇪--->🇩🇪 221b",
-        "🇺🇸--->🇺🇸 192b",
+        "🇩🇪--->🇩🇪 221a",
+        "🇺🇸--->🇺🇸 192a",
+        "🇱🇻--->🇫🇮 308",
+        "🇩🇪--->🇫🇮 310",
         "🇩🇪--->🇩🇪 295f",
-        "🇬🇧--->🇬🇧 291a",
+        "🇬🇧--->🇬🇧 291b",
         "🇨🇭--->🇨🇭 219",
-        "🇫🇷--->🇫🇷 181",
-        "🇦🇹--->🇦🇹 236c",
-        "🇭🇺--->🇭🇺 77c",
-        "🇳🇱--->🇳🇱 228d",
-        "🇳🇱--->🇳🇱 296e",
+        "🇰🇿--->🇰🇿 292d",
+        "🇦🇹--->🇦🇹 236",
+        "🇭🇺--->🇭🇺 77b",
+        "🇳🇱--->🇳🇱 228c",
+        "🇳🇱--->🇳🇱 296d",
         "🇩🇪--->🇩🇪 132a",
-        "🇷🇺--->🇵🇱 293b",
+        "🇷🇺--->🇵🇱 293a",
+        "🇭🇺--->🇭🇺 304b",
         "🇫🇮--->🇫🇮 285c",
         "🇫🇷--->🇫🇷 34a",
-        "🇺🇸--->🇺🇸 176b",
+        "🇩🇪--->🇬🇧 306",
+        "🇺🇸--->🇺🇸 176a",
         "🇩🇪--->🇩🇪 224a",
         "🇳🇱--->🇳🇱 170a",
-        "🇹🇷--->🇹🇷 157",
-        "🇫🇮--->🇫🇮 247d",
-        "🇫🇷--->🇫🇷 213a",
+        "🇹🇷--->🇹🇷 157b",
+        "🇫🇮--->🇫🇮 247c",
+        "🇫🇷--->🇫🇷 213",
         "🇺🇸--->🇩🇪 216",
         "🇳🇱--->🇳🇱 287d",
-        "🇳🇱--->🇳🇱 210c",
+        "🇳🇱--->🇳🇱 210",
         "🇵🇱--->🇵🇱 25a",
         "🇵🇱--->🇵🇱 66",
-        "🇷🇺--->🇩🇪 211d",
+        "🇷🇺--->🇩🇪 211c",
         "🇳🇱--->🇳🇱 225b",
-        "🇨🇭--->🇨🇭 133a",
+        "🇷🇺--->🇳🇱 222a",
+        "🇨🇭--->🇨🇭 133",
         "🇳🇱--->🇳🇱 151b",
         "🇱🇹--->🇱🇹 254",
         "🇵🇱--->🇵🇱 243b",
-        "🇷🇺--->🇺🇸 202c",
-        "🇹🇷--->🇹🇷 257b",
-        "🇫🇷--->🇫🇷 212e",
+        "🇷🇺--->🇺🇸 202b",
+        "🇹🇷--->🇹🇷 257c",
+        "🇫🇷--->🇫🇷 212b",
         "🇱🇻--->🇱🇻 28",
         "🇩🇪--->🇩🇪 220",
-        "🇷🇺--->🇺🇸 215f",
+        "🇺🇸--->🇺🇸 288a",
+        "🇷🇺--->🇨🇭 215d",
         "🇬🇧--->🇬🇧 231",
         "🇪🇪--->🇵🇱 5a",
-        "🇩🇪--->🇩🇪 57b",
+        "🇩🇪--->🇩🇪 57",
         "🇧🇷--->🇫🇷 305b"
       ],
       "default": "auto"
