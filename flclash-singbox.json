@@ -22,7 +22,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇩🇪--->🇩🇪 226",
+      "tag": "🇩🇪--->🇩🇪 226b",
       "server": "144.31.217.155",
       "server_port": 443,
       "uuid": "e5afa6a0-a4a6-44e3-a3e0-e05b0c67cd02",
@@ -91,7 +91,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸--->🇩🇪 373",
+      "tag": "🇺🇸--->🇩🇪 373b",
       "server": "151.101.56.7",
       "server_port": 80,
       "uuid": "46445435-11cd-47e8-87dc-1acc159fc360",
@@ -106,7 +106,32 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇪--->🇪🇪 235a",
+      "tag": "🇫🇮--->🇫🇮 379e",
+      "server": "free02.tunnely.ru",
+      "server_port": 2096,
+      "uuid": "7134be64-859d-462d-8c83-97ada8b584c8",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "free02.tunnely.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mChFHtaRmeuO2aDuDPqZvBFaCz6f34sVJIKuJcAR130",
+          "short_id": "2e40144ddc07e8e1"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪--->🇪🇪 235",
       "server": "ice.noooo.win",
       "server_port": 443,
       "uuid": "6f98a077-004e-4b86-8b78-8d09308d3868",
@@ -127,7 +152,22 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷--->🇫🇷 290e",
+      "tag": "🇨🇦--->🇩🇪 378a",
+      "server": "151.101.193.54",
+      "server_port": 80,
+      "uuid": "4b1d39f2-42d4-4850-8b8a-fd4fa2f1ae55",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "",
+        "headers": {
+          "Host": "BankMelat.glObal.ssl.faStly.nEt."
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷--->🇫🇷 290f",
       "server": "144.31.214.196",
       "server_port": 443,
       "uuid": "e5afa6a0-a4a6-44e3-a3e0-e05b0c67cd02",
@@ -149,7 +189,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱--->🇳🇱 344",
+      "tag": "🇳🇱--->🇳🇱 344g",
       "server": "154.83.246.41",
       "server_port": 443,
       "uuid": "536c58c0-a41d-4381-bb80-0db76a4d6204",
@@ -210,18 +250,6 @@
           "public_key": "I6xuvEK1lvz04EGwYZPyC7ZrKk9_ApbGSB--xg3d6C8",
           "short_id": "7339cfd6516eeb"
         }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪--->🇩🇪 295",
-      "server": "81.31.211.172",
-      "server_port": 2085,
-      "uuid": "31a62aa2-c465-4c1f-b636-f90578922b5f",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless"
       }
     },
     {
@@ -295,22 +323,32 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇦--->🇩🇪 375",
-      "server": "151.101.193.54",
-      "server_port": 80,
-      "uuid": "46445435-11cd-47e8-87dc-1acc159fc360",
+      "tag": "🇪🇪--->🇪🇪 377d",
+      "server": "ee-t3.vinnypuxtomoon.today",
+      "server_port": 7444,
+      "uuid": "f7024ef7-dd35-4fe8-a18d-4186a0ae910c",
       "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "BankMelat.glObal.ssl.faStly.nEt."
+      "tls": {
+        "enabled": true,
+        "server_name": "ee-t3.vinnypuxtomoon.today",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "RwtMzZtTCmy9WRq3_27xeGF8-1l_qPXRVG3yIFp-6Go",
+          "short_id": "c0d1d1776fed0f6d"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc-md-8h3k4j6n2p4q8r5t"
       }
     },
     {
       "type": "vless",
-      "tag": "🇩🇪--->🇩🇪 240b",
+      "tag": "🇩🇪--->🇩🇪 240e",
       "server": "103.27.156.63",
       "server_port": 443,
       "uuid": "2d7c8eef-49c0-4d89-a74f-591ea805274d",
@@ -394,7 +432,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪--->🇩🇪 380",
+      "tag": "🇩🇪--->🇩🇪 380b",
       "server": "63.182.37.174",
       "server_port": 22223,
       "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
@@ -402,7 +440,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷--->🇫🇷 364",
+      "tag": "🇫🇷--->🇫🇷 364h",
       "server": "31.56.146.50",
       "server_port": 443,
       "uuid": "2d7c8eef-49c0-4d89-a74f-591ea805274d",
@@ -449,7 +487,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪--->🇩🇪 382b",
+      "tag": "🇩🇪--->🇩🇪 382",
       "server": "88.216.220.84",
       "server_port": 443,
       "uuid": "340e4de3-144b-49c4-ad72-b49b35713728",
@@ -563,11 +601,25 @@
     },
     {
       "type": "vless",
-      "tag": "🇱🇻--->🇫🇮 367",
-      "server": "188.130.154.239",
-      "server_port": 2090,
-      "uuid": "eab915bc-d2df-73d1-47d0-6eb240497055",
-      "packet_encoding": "xudp"
+      "tag": "🇫🇮--->🇫🇮 388h",
+      "server": "valenciatobcn.life",
+      "server_port": 443,
+      "uuid": "f3a8da6e-9557-43e3-b8d6-44350d0dc6f7",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "valenciatobcn.life",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "6lZ5dkQN2sH9tYca374W4N1n9eCanD_F2FfghcksKSo",
+          "short_id": "d07f01162ef4f126"
+        }
+      }
     },
     {
       "type": "vless",
@@ -593,7 +645,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷--->🇹🇷 257b",
+      "tag": "🇹🇷--->🇹🇷 257",
       "server": "213.142.150.73",
       "server_port": 443,
       "uuid": "d5b25051-c06c-4af5-9cd6-b6000310177c",
@@ -691,7 +743,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸--->🇫🇮 383h",
+      "tag": "🇺🇸--->🇩🇪 383c",
       "server": "167.82.0.17",
       "server_port": 80,
       "uuid": "66ea0b4c-8c39-4e8b-92f0-0a9065218d37",
@@ -708,41 +760,42 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇪--->🇩🇪 226",
+        "🇩🇪--->🇩🇪 226b",
         "🇷🇺--->🇸🇪 356a",
         "🇳🇱--->🇳🇱 348d",
-        "🇺🇸--->🇩🇪 373",
-        "🇪🇪--->🇪🇪 235a",
-        "🇫🇷--->🇫🇷 290e",
-        "🇳🇱--->🇳🇱 344",
+        "🇺🇸--->🇩🇪 373b",
+        "🇫🇮--->🇫🇮 379e",
+        "🇪🇪--->🇪🇪 235",
+        "🇨🇦--->🇩🇪 378a",
+        "🇫🇷--->🇫🇷 290f",
+        "🇳🇱--->🇳🇱 344g",
         "🇺🇸--->🇺🇸 192a",
         "🇩🇪--->🇩🇪 368",
-        "🇩🇪--->🇩🇪 295",
         "--->🇬🇧 371g",
         "--->🇳🇱 372b",
         "🇦🇹--->🇦🇹 236",
-        "🇨🇦--->🇩🇪 375",
-        "🇩🇪--->🇩🇪 240b",
+        "🇪🇪--->🇪🇪 377d",
+        "🇩🇪--->🇩🇪 240e",
         "🇩🇪--->🇩🇪 317",
         "🇫🇮--->🇫🇮 285c",
         "--->🇫🇷 34a",
-        "🇩🇪--->🇩🇪 380",
-        "🇫🇷--->🇫🇷 364",
+        "🇩🇪--->🇩🇪 380b",
+        "🇫🇷--->🇫🇷 364h",
         "--->🇵🇱 376c",
-        "🇩🇪--->🇩🇪 382b",
+        "🇩🇪--->🇩🇪 382",
         "🇷🇺--->🇩🇪 211c",
         "🇺🇸--->🇩🇪 370",
         "🇩🇪--->🇩🇪 387",
         "--->🇩🇪 369f",
         "🇺🇸--->🇩🇪 365a",
-        "🇱🇻--->🇫🇮 367",
+        "🇫🇮--->🇫🇮 388h",
         "🇷🇺--->🇨🇭 202b",
-        "🇹🇷--->🇹🇷 257b",
+        "🇹🇷--->🇹🇷 257",
         "🇱🇻--->🇱🇻 28",
         "🇫🇮--->🇫🇮 381",
         "🇷🇺--->🇨🇭 215d",
         "🇩🇪--->🇩🇪 355e",
-        "🇺🇸--->🇫🇮 383h"
+        "🇺🇸--->🇩🇪 383c"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "1m",
@@ -753,41 +806,42 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇪--->🇩🇪 226",
+        "🇩🇪--->🇩🇪 226b",
         "🇷🇺--->🇸🇪 356a",
         "🇳🇱--->🇳🇱 348d",
-        "🇺🇸--->🇩🇪 373",
-        "🇪🇪--->🇪🇪 235a",
-        "🇫🇷--->🇫🇷 290e",
-        "🇳🇱--->🇳🇱 344",
+        "🇺🇸--->🇩🇪 373b",
+        "🇫🇮--->🇫🇮 379e",
+        "🇪🇪--->🇪🇪 235",
+        "🇨🇦--->🇩🇪 378a",
+        "🇫🇷--->🇫🇷 290f",
+        "🇳🇱--->🇳🇱 344g",
         "🇺🇸--->🇺🇸 192a",
         "🇩🇪--->🇩🇪 368",
-        "🇩🇪--->🇩🇪 295",
         "--->🇬🇧 371g",
         "--->🇳🇱 372b",
         "🇦🇹--->🇦🇹 236",
-        "🇨🇦--->🇩🇪 375",
-        "🇩🇪--->🇩🇪 240b",
+        "🇪🇪--->🇪🇪 377d",
+        "🇩🇪--->🇩🇪 240e",
         "🇩🇪--->🇩🇪 317",
         "🇫🇮--->🇫🇮 285c",
         "--->🇫🇷 34a",
-        "🇩🇪--->🇩🇪 380",
-        "🇫🇷--->🇫🇷 364",
+        "🇩🇪--->🇩🇪 380b",
+        "🇫🇷--->🇫🇷 364h",
         "--->🇵🇱 376c",
-        "🇩🇪--->🇩🇪 382b",
+        "🇩🇪--->🇩🇪 382",
         "🇷🇺--->🇩🇪 211c",
         "🇺🇸--->🇩🇪 370",
         "🇩🇪--->🇩🇪 387",
         "--->🇩🇪 369f",
         "🇺🇸--->🇩🇪 365a",
-        "🇱🇻--->🇫🇮 367",
+        "🇫🇮--->🇫🇮 388h",
         "🇷🇺--->🇨🇭 202b",
-        "🇹🇷--->🇹🇷 257b",
+        "🇹🇷--->🇹🇷 257",
         "🇱🇻--->🇱🇻 28",
         "🇫🇮--->🇫🇮 381",
         "🇷🇺--->🇨🇭 215d",
         "🇩🇪--->🇩🇪 355e",
-        "🇺🇸--->🇫🇮 383h"
+        "🇺🇸--->🇩🇪 383c"
       ],
       "default": "auto"
     },
