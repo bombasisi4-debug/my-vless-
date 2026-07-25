@@ -23,22 +23,7 @@ proxies:
   udp: true
   network: tcp
   tls: false
-- name: 🇩🇪--->🇩🇪 3
-  type: vless
-  server: 88.216.220.84
-  port: 443
-  uuid: "340e4de3-144b-49c4-ad72-b49b35713728"
-  udp: true
-  network: grpc
-  tls: true
-  servername: "core.noneok.com"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "HAqqALwpxu_tx-IFcYaZWVshVKyKttGGrxoEfuP_Lgs"
-    short-id: "fde63d9c58210bf9"
-  grpc-opts:
-    grpc-service-name: "api.v1.StreamService"
-- name: '--->🇩🇪 4'
+- name: '--->🇩🇪 3'
   type: vless
   server: germany-guard.f1-connect.apruxdomain.xyz
   port: 27099
@@ -50,6 +35,18 @@ proxies:
     path: "/"
     headers:
       Host: "germany-guard.f1-connect.apruxdomain.xyz"
+- name: 🇺🇸--->🇩🇪 4
+  type: vless
+  server: 167.82.0.4
+  port: 80
+  uuid: "66ea0b4c-8c39-4e8b-92f0-0a9065218d37"
+  udp: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: "/"
+    headers:
+      Host: "BankMelat.glObal.ssl.faStly.nEt."
 - name: 🇺🇸--->🇩🇪 5
   type: vless
   server: 167.82.0.7
@@ -102,19 +99,7 @@ proxies:
   reality-opts:
     public-key: "OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw"
     short-id: "d67ec5a8fc40ebea"
-- name: 🇺🇸--->🇩🇪 9
-  type: vless
-  server: 167.82.0.1
-  port: 80
-  uuid: "46445435-11cd-47e8-87dc-1acc159fc360"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: "/"
-    headers:
-      Host: "BankMelat.glObal.ssl.faStly.nEt."
-- name: '--->🇩🇪 10'
+- name: '--->🇩🇪 9'
   type: vless
   server: ger03.myxasecure.space
   port: 443
@@ -128,6 +113,21 @@ proxies:
   reality-opts:
     public-key: "OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw"
     short-id: "d67ec5a8fc40ebea"
+- name: 🇷🇺--->🇩🇪 10
+  type: vless
+  server: 5.189.223.90
+  port: 9891
+  uuid: "884d811f-577b-421e-aabb-608660b0ecfa"
+  udp: true
+  network: grpc
+  tls: true
+  servername: "dl.google.com"
+  client-fingerprint: qq
+  reality-opts:
+    public-key: "Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0"
+    short-id: "aa"
+  grpc-opts:
+    grpc-service-name: "grpc-tunnel"
 - name: 🇺🇸--->🇩🇪 11
   type: vless
   server: 167.82.0.17
@@ -198,13 +198,33 @@ proxies:
       Host: "BankMelat.glObal.ssl.faStly.nEt."
 - name: 🇱🇻--->🇫🇮 16
   type: vless
+  server: 5.144.179.252
+  port: 2090
+  uuid: "09bbcf46-3896-4385-8bb2-b44284efb2f2"
+  udp: true
+  network: tcp
+  tls: false
+- name: 🇺🇸--->🇫🇮 17
+  type: vless
+  server: 167.82.0.1
+  port: 80
+  uuid: "46445435-11cd-47e8-87dc-1acc159fc360"
+  udp: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: "/"
+    headers:
+      Host: "BankMelat.glObal.ssl.faStly.nEt."
+- name: 🇱🇻--->🇫🇮 18
+  type: vless
   server: 31.57.26.215
   port: 2090
   uuid: "eab915bc-d2df-73d1-47d0-6eb240497055"
   udp: true
   network: tcp
   tls: false
-- name: '--->🇫🇮 17'
+- name: '--->🇫🇮 19'
   type: vless
   server: valenciatobcn.life
   port: 443
@@ -218,7 +238,7 @@ proxies:
   reality-opts:
     public-key: "6lZ5dkQN2sH9tYca374W4N1n9eCanD_F2FfghcksKSo"
     short-id: "d07f01162ef4f126"
-- name: 🇫🇮--->🇫🇮 18
+- name: 🇫🇮--->🇫🇮 20
   type: vless
   server: 95.181.167.171
   port: 9090
@@ -226,7 +246,7 @@ proxies:
   udp: true
   network: tcp
   tls: false
-- name: '--->🇫🇮 19'
+- name: '--->🇫🇮 21'
   type: vless
   server: node6.mxvpn.dev
   port: 443
@@ -240,7 +260,7 @@ proxies:
   reality-opts:
     public-key: "TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw"
     short-id: "bbc68cec8bb8d2e3"
-- name: '--->🇫🇷 20'
+- name: '--->🇫🇷 22'
   type: vless
   server: fr15.myxasecure.space
   port: 443
@@ -254,7 +274,7 @@ proxies:
   reality-opts:
     public-key: "OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw"
     short-id: "d67ec5a8fc40ebea"
-- name: '--->🇬🇧 21'
+- name: '--->🇬🇧 23'
   type: vless
   server: vl10.myxasecure.space
   port: 443
@@ -268,7 +288,7 @@ proxies:
   reality-opts:
     public-key: "OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw"
     short-id: "d67ec5a8fc40ebea"
-- name: '--->🇬🇧 22'
+- name: '--->🇬🇧 24'
   type: vless
   server: uk-t2.vinnypuxtomoon.today
   port: 2053
@@ -282,7 +302,7 @@ proxies:
   reality-opts:
     public-key: "RwtMzZtTCmy9WRq3_27xeGF8-1l_qPXRVG3yIFp-6Go"
     short-id: "c0d1d1776fed0f6d"
-- name: 🇮🇹--->🇮🇹 23
+- name: 🇮🇹--->🇮🇹 25
   type: vless
   server: 151.115.166.53
   port: 8880
@@ -292,7 +312,7 @@ proxies:
   tls: false
   grpc-opts:
     grpc-service-name: ""
-- name: 🇮🇹--->🇮🇹 24
+- name: 🇮🇹--->🇮🇹 26
   type: vless
   server: 151.115.167.252
   port: 8880
@@ -302,7 +322,7 @@ proxies:
   tls: false
   grpc-opts:
     grpc-service-name: ""
-- name: '--->🇮🇹 25'
+- name: '--->🇮🇹 27'
   type: vless
   server: it02.myxasecure.space
   port: 443
@@ -316,7 +336,7 @@ proxies:
   reality-opts:
     public-key: "OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw"
     short-id: "d67ec5a8fc40ebea"
-- name: 🇱🇻--->🇱🇻 26
+- name: 🇱🇻--->🇱🇻 28
   type: vless
   server: 90.156.255.166
   port: 36100
@@ -324,7 +344,7 @@ proxies:
   udp: true
   network: tcp
   tls: false
-- name: '--->🇳🇱 27'
+- name: '--->🇳🇱 29'
   type: vless
   server: node4.mxvpn.dev
   port: 443
@@ -338,7 +358,7 @@ proxies:
   reality-opts:
     public-key: "TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw"
     short-id: "bbc68cec8bb8d2e3"
-- name: 🇳🇱--->🇳🇱 28
+- name: 🇳🇱--->🇳🇱 30
   type: vless
   server: 89.110.84.36
   port: 31067
@@ -346,7 +366,7 @@ proxies:
   udp: true
   network: tcp
   tls: false
-- name: '--->🇳🇱 29'
+- name: '--->🇳🇱 31'
   type: vless
   server: node2.mxvpn.dev
   port: 443
@@ -360,7 +380,7 @@ proxies:
   reality-opts:
     public-key: "TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw"
     short-id: "bbc68cec8bb8d2e3"
-- name: 🇳🇱--->🇳🇱 30
+- name: 🇳🇱--->🇳🇱 32
   type: vless
   server: 144.31.14.168
   port: 25060
@@ -372,7 +392,7 @@ proxies:
     path: "/xray"
     headers:
       Host: "144.31.14.168"
-- name: 🇳🇱--->🇳🇱 31
+- name: 🇳🇱--->🇳🇱 33
   type: vless
   server: 64.188.77.157
   port: 2512
@@ -386,21 +406,36 @@ proxies:
   reality-opts:
     public-key: "P-RAcmPBLgrTjCjPewYaa6hgrC5xVH0xmNfr66HviT0"
     short-id: "290d"
-- name: '--->🇵🇱 32'
+- name: '--->🇵🇱 34'
   type: vless
-  server: pl.mcqueenconnection.ru
+  server: pl06.myxasecure.space
   port: 443
-  uuid: "12e410bf-0eb8-4b60-b52e-6951d96eb82c"
+  uuid: "06d44c57-8e1a-41f4-b9c4-65d35869e078"
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: "pl.mcqueenconnection.ru"
+  servername: "pl06.myxasecure.space"
   client-fingerprint: firefox
   reality-opts:
-    public-key: "O2ttHpVFmwoAf-E1rHgOlv7NggcwxcWkHHen7jkIBjY"
-    short-id: "1798724d1c2888c1"
-- name: '--->🇵🇱 33'
+    public-key: "OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw"
+    short-id: "d67ec5a8fc40ebea"
+- name: 🇷🇺--->🇵🇱 35
+  type: vless
+  server: 72.56.38.194
+  port: 9892
+  uuid: "884d811f-577b-421e-aabb-608660b0ecfa"
+  udp: true
+  network: grpc
+  tls: true
+  servername: "dl.google.com"
+  client-fingerprint: qq
+  reality-opts:
+    public-key: "bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU"
+    short-id: ""
+  grpc-opts:
+    grpc-service-name: "grpc-tunnel"
+- name: '--->🇵🇱 36'
   type: vless
   server: pl07.myxasecure.space
   port: 443
@@ -414,7 +449,36 @@ proxies:
   reality-opts:
     public-key: "OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw"
     short-id: "d67ec5a8fc40ebea"
-- name: '--->🇸🇪 34'
+- name: 🇷🇺--->🇸🇪 37
+  type: vless
+  server: 87.242.87.34
+  port: 443
+  uuid: "1bf44cb7-f947-441c-abb5-242c47e78292"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "se.sellflow.org"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+    short-id: ""
+- name: 🇷🇺--->🇸🇪 38
+  type: vless
+  server: 5.42.106.202
+  port: 9878
+  uuid: "884d811f-577b-421e-aabb-608660b0ecfa"
+  udp: true
+  network: grpc
+  tls: true
+  servername: "dl.google.com"
+  client-fingerprint: qq
+  reality-opts:
+    public-key: "bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU"
+    short-id: "aabbccdd"
+  grpc-opts:
+    grpc-service-name: "grpc-tunnel"
+- name: '--->🇸🇪 39'
   type: vless
   server: qyui.trumpvpn.online
   port: 24678
@@ -427,7 +491,22 @@ proxies:
   reality-opts:
     public-key: "7vfvdDCpxf8t5VA8sua9prHyP9Yzlb4_yiwxc-8ykXA"
     short-id: "f4a00dd2"
-- name: '--->🇹🇷 35'
+- name: 🇷🇺--->🇸🇪 40
+  type: vless
+  server: 85.208.85.227
+  port: 9879
+  uuid: "884d811f-577b-421e-aabb-608660b0ecfa"
+  udp: true
+  network: grpc
+  tls: true
+  servername: "dl.google.com"
+  client-fingerprint: qq
+  reality-opts:
+    public-key: "bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU"
+    short-id: ""
+  grpc-opts:
+    grpc-service-name: "grpc-tunnel"
+- name: '--->🇹🇷 41'
   type: vless
   server: tur02.myxasecure.space
   port: 443
@@ -447,39 +526,45 @@ proxy-groups:
   proxies:
   - 🇺🇸--->🇩🇪 1
   - 🇩🇪--->🇩🇪 2
-  - 🇩🇪--->🇩🇪 3
-  - '--->🇩🇪 4'
+  - '--->🇩🇪 3'
+  - 🇺🇸--->🇩🇪 4
   - 🇺🇸--->🇩🇪 5
   - '--->🇩🇪 6'
   - 🇩🇪--->🇩🇪 7
   - '--->🇩🇪 8'
-  - 🇺🇸--->🇩🇪 9
-  - '--->🇩🇪 10'
+  - '--->🇩🇪 9'
+  - 🇷🇺--->🇩🇪 10
   - 🇺🇸--->🇩🇪 11
   - '--->🇪🇪 12'
   - '--->🇪🇪 13'
   - '--->🇫🇮 14'
   - 🇨🇦--->🇫🇮 15
   - 🇱🇻--->🇫🇮 16
-  - '--->🇫🇮 17'
-  - 🇫🇮--->🇫🇮 18
+  - 🇺🇸--->🇫🇮 17
+  - 🇱🇻--->🇫🇮 18
   - '--->🇫🇮 19'
-  - '--->🇫🇷 20'
-  - '--->🇬🇧 21'
-  - '--->🇬🇧 22'
-  - 🇮🇹--->🇮🇹 23
-  - 🇮🇹--->🇮🇹 24
-  - '--->🇮🇹 25'
-  - 🇱🇻--->🇱🇻 26
-  - '--->🇳🇱 27'
-  - 🇳🇱--->🇳🇱 28
+  - 🇫🇮--->🇫🇮 20
+  - '--->🇫🇮 21'
+  - '--->🇫🇷 22'
+  - '--->🇬🇧 23'
+  - '--->🇬🇧 24'
+  - 🇮🇹--->🇮🇹 25
+  - 🇮🇹--->🇮🇹 26
+  - '--->🇮🇹 27'
+  - 🇱🇻--->🇱🇻 28
   - '--->🇳🇱 29'
   - 🇳🇱--->🇳🇱 30
-  - 🇳🇱--->🇳🇱 31
-  - '--->🇵🇱 32'
-  - '--->🇵🇱 33'
-  - '--->🇸🇪 34'
-  - '--->🇹🇷 35'
+  - '--->🇳🇱 31'
+  - 🇳🇱--->🇳🇱 32
+  - 🇳🇱--->🇳🇱 33
+  - '--->🇵🇱 34'
+  - 🇷🇺--->🇵🇱 35
+  - '--->🇵🇱 36'
+  - 🇷🇺--->🇸🇪 37
+  - 🇷🇺--->🇸🇪 38
+  - '--->🇸🇪 39'
+  - 🇷🇺--->🇸🇪 40
+  - '--->🇹🇷 41'
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -489,38 +574,44 @@ proxy-groups:
   - 🚀 Авто (лучший)
   - 🇺🇸--->🇩🇪 1
   - 🇩🇪--->🇩🇪 2
-  - 🇩🇪--->🇩🇪 3
-  - '--->🇩🇪 4'
+  - '--->🇩🇪 3'
+  - 🇺🇸--->🇩🇪 4
   - 🇺🇸--->🇩🇪 5
   - '--->🇩🇪 6'
   - 🇩🇪--->🇩🇪 7
   - '--->🇩🇪 8'
-  - 🇺🇸--->🇩🇪 9
-  - '--->🇩🇪 10'
+  - '--->🇩🇪 9'
+  - 🇷🇺--->🇩🇪 10
   - 🇺🇸--->🇩🇪 11
   - '--->🇪🇪 12'
   - '--->🇪🇪 13'
   - '--->🇫🇮 14'
   - 🇨🇦--->🇫🇮 15
   - 🇱🇻--->🇫🇮 16
-  - '--->🇫🇮 17'
-  - 🇫🇮--->🇫🇮 18
+  - 🇺🇸--->🇫🇮 17
+  - 🇱🇻--->🇫🇮 18
   - '--->🇫🇮 19'
-  - '--->🇫🇷 20'
-  - '--->🇬🇧 21'
-  - '--->🇬🇧 22'
-  - 🇮🇹--->🇮🇹 23
-  - 🇮🇹--->🇮🇹 24
-  - '--->🇮🇹 25'
-  - 🇱🇻--->🇱🇻 26
-  - '--->🇳🇱 27'
-  - 🇳🇱--->🇳🇱 28
+  - 🇫🇮--->🇫🇮 20
+  - '--->🇫🇮 21'
+  - '--->🇫🇷 22'
+  - '--->🇬🇧 23'
+  - '--->🇬🇧 24'
+  - 🇮🇹--->🇮🇹 25
+  - 🇮🇹--->🇮🇹 26
+  - '--->🇮🇹 27'
+  - 🇱🇻--->🇱🇻 28
   - '--->🇳🇱 29'
   - 🇳🇱--->🇳🇱 30
-  - 🇳🇱--->🇳🇱 31
-  - '--->🇵🇱 32'
-  - '--->🇵🇱 33'
-  - '--->🇸🇪 34'
-  - '--->🇹🇷 35'
+  - '--->🇳🇱 31'
+  - 🇳🇱--->🇳🇱 32
+  - 🇳🇱--->🇳🇱 33
+  - '--->🇵🇱 34'
+  - 🇷🇺--->🇵🇱 35
+  - '--->🇵🇱 36'
+  - 🇷🇺--->🇸🇪 37
+  - 🇷🇺--->🇸🇪 38
+  - '--->🇸🇪 39'
+  - 🇷🇺--->🇸🇪 40
+  - '--->🇹🇷 41'
 rules:
 - MATCH,PROXY
