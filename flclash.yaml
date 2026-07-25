@@ -3,7 +3,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸--->🇩🇪 373b
+- name: 🇺🇸--->🇩🇪 373d
   type: vless
   server: 151.101.56.7
   port: 80
@@ -30,7 +30,7 @@ proxies:
     short-id: "2e40144ddc07e8e1"
   grpc-opts:
     grpc-service-name: "grpc"
-- name: 🇨🇦--->🇩🇪 378e
+- name: 🇨🇦--->🇩🇪 378g
   type: vless
   server: 151.101.193.54
   port: 80
@@ -42,7 +42,7 @@ proxies:
     path: "/"
     headers:
       Host: "BankMelat.glObal.ssl.faStly.nEt."
-- name: '--->🇬🇧 371'
+- name: '--->🇬🇧 371b'
   type: vless
   server: vl10.myxasecure.space
   port: 443
@@ -56,7 +56,7 @@ proxies:
   reality-opts:
     public-key: "OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw"
     short-id: "d67ec5a8fc40ebea"
-- name: '--->🇳🇱 372a'
+- name: '--->🇳🇱 372c'
   type: vless
   server: node4.mxvpn.dev
   port: 443
@@ -70,7 +70,7 @@ proxies:
   reality-opts:
     public-key: "TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw"
     short-id: "bbc68cec8bb8d2e3"
-- name: '--->🇪🇪 377d'
+- name: '--->🇪🇪 377a'
   type: vless
   server: ee-t3.vinnypuxtomoon.today
   port: 7444
@@ -112,7 +112,15 @@ proxies:
   reality-opts:
     public-key: "7vfvdDCpxf8t5VA8sua9prHyP9Yzlb4_yiwxc-8ykXA"
     short-id: "f4a00dd2"
-- name: '--->🇵🇱 376c'
+- name: 🇩🇪--->🇩🇪 407b
+  type: vless
+  server: 91.107.135.249
+  port: 47677
+  uuid: "e4f851c2-69d6-4a8f-83c9-c1a9f78c0f98"
+  udp: true
+  network: tcp
+  tls: false
+- name: '--->🇵🇱 376f'
   type: vless
   server: pl.mcqueenconnection.ru
   port: 443
@@ -134,7 +142,7 @@ proxies:
   udp: true
   network: tcp
   tls: false
-- name: 🇩🇪--->🇩🇪 382
+- name: 🇩🇪--->🇩🇪 382c
   type: vless
   server: 88.216.220.84
   port: 443
@@ -161,7 +169,7 @@ proxies:
     path: "/"
     headers:
       Host: "BankMelat.glObal.ssl.faStly.nEt."
-- name: 🇩🇪--->🇩🇪 399b
+- name: 🇩🇪--->🇩🇪 399
   type: vless
   server: 176.124.221.208
   port: 58500
@@ -173,7 +181,7 @@ proxies:
     path: "/free"
     headers:
       Host: "176.124.221.208"
-- name: '--->🇩🇪 369'
+- name: '--->🇩🇪 369a'
   type: vless
   server: ger05.myxasecure.space
   port: 443
@@ -187,7 +195,7 @@ proxies:
   reality-opts:
     public-key: "OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw"
     short-id: "d67ec5a8fc40ebea"
-- name: 🇺🇸--->🇩🇪 365a
+- name: 🇺🇸--->🇩🇪 365b
   type: vless
   server: 167.82.0.1
   port: 80
@@ -199,7 +207,7 @@ proxies:
     path: "/"
     headers:
       Host: "BankMelat.glObal.ssl.faStly.nEt."
-- name: '--->🇩🇪 389c'
+- name: '--->🇩🇪 389b'
   type: vless
   server: ger03.myxasecure.space
   port: 443
@@ -213,6 +221,14 @@ proxies:
   reality-opts:
     public-key: "OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw"
     short-id: "d67ec5a8fc40ebea"
+- name: 🇱🇻--->🇫🇮 409b
+  type: vless
+  server: 31.57.26.215
+  port: 2090
+  uuid: "eab915bc-d2df-73d1-47d0-6eb240497055"
+  udp: true
+  network: tcp
+  tls: false
 - name: '--->🇫🇮 388b'
   type: vless
   server: valenciatobcn.life
@@ -227,7 +243,7 @@ proxies:
   reality-opts:
     public-key: "6lZ5dkQN2sH9tYca374W4N1n9eCanD_F2FfghcksKSo"
     short-id: "d07f01162ef4f126"
-- name: 🇱🇻--->🇫🇮 395
+- name: 🇱🇻--->🇫🇮 395a
   type: vless
   server: 31.56.197.217
   port: 2090
@@ -243,6 +259,14 @@ proxies:
   udp: true
   network: tcp
   tls: false
+- name: 🇫🇮--->🇫🇮 406a
+  type: vless
+  server: 95.181.167.171
+  port: 9090
+  uuid: "d3aebc17-a731-40fb-a755-aac1a4cf80f2"
+  udp: true
+  network: tcp
+  tls: false
 - name: 🇱🇻--->🇫🇮 400
   type: vless
   server: 5.144.179.252
@@ -251,7 +275,7 @@ proxies:
   udp: true
   network: tcp
   tls: false
-- name: 🇱🇻--->🇱🇻 28
+- name: 🇱🇻--->🇱🇻 28a
   type: vless
   server: 90.156.255.166
   port: 36100
@@ -273,7 +297,7 @@ proxies:
   reality-opts:
     public-key: "P-RAcmPBLgrTjCjPewYaa6hgrC5xVH0xmNfr66HviT0"
     short-id: "290d"
-- name: '--->🇪🇪 392g'
+- name: '--->🇪🇪 392b'
   type: vless
   server: ee-t3.vinnypuxtomoon.today
   port: 2053
@@ -287,7 +311,7 @@ proxies:
   reality-opts:
     public-key: "RwtMzZtTCmy9WRq3_27xeGF8-1l_qPXRVG3yIFp-6Go"
     short-id: "c0d1d1776fed0f6d"
-- name: '--->🇬🇧 393h'
+- name: '--->🇬🇧 393c'
   type: vless
   server: uk-t2.vinnypuxtomoon.today
   port: 2053
@@ -301,7 +325,7 @@ proxies:
   reality-opts:
     public-key: "RwtMzZtTCmy9WRq3_27xeGF8-1l_qPXRVG3yIFp-6Go"
     short-id: "c0d1d1776fed0f6d"
-- name: '--->🇵🇱 375b'
+- name: '--->🇵🇱 375e'
   type: vless
   server: pl07.myxasecure.space
   port: 443
@@ -329,7 +353,7 @@ proxies:
   reality-opts:
     public-key: "OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw"
     short-id: "d67ec5a8fc40ebea"
-- name: 🇺🇸--->🇩🇪 383f
+- name: 🇺🇸--->🇫🇮 383h
   type: vless
   server: 167.82.0.17
   port: 80
@@ -341,37 +365,55 @@ proxies:
     path: "/"
     headers:
       Host: "BankMelat.glObal.ssl.faStly.nEt."
+- name: '--->🇹🇷 405j'
+  type: vless
+  server: tur02.myxasecure.space
+  port: 443
+  uuid: "06d44c57-8e1a-41f4-b9c4-65d35869e078"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "tur02.myxasecure.space"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw"
+    short-id: "d67ec5a8fc40ebea"
 proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - 🇺🇸--->🇩🇪 373b
+  - 🇺🇸--->🇩🇪 373d
   - '--->🇫🇮 379a'
-  - 🇨🇦--->🇩🇪 378e
-  - '--->🇬🇧 371'
-  - '--->🇳🇱 372a'
-  - '--->🇪🇪 377d'
+  - 🇨🇦--->🇩🇪 378g
+  - '--->🇬🇧 371b'
+  - '--->🇳🇱 372c'
+  - '--->🇪🇪 377a'
   - '--->🇫🇷 34'
   - '--->🇸🇪 404b'
-  - '--->🇵🇱 376c'
+  - 🇩🇪--->🇩🇪 407b
+  - '--->🇵🇱 376f'
   - 🇳🇱--->🇳🇱 387
-  - 🇩🇪--->🇩🇪 382
+  - 🇩🇪--->🇩🇪 382c
   - 🇺🇸--->🇩🇪 370a
-  - 🇩🇪--->🇩🇪 399b
-  - '--->🇩🇪 369'
-  - 🇺🇸--->🇩🇪 365a
-  - '--->🇩🇪 389c'
+  - 🇩🇪--->🇩🇪 399
+  - '--->🇩🇪 369a'
+  - 🇺🇸--->🇩🇪 365b
+  - '--->🇩🇪 389b'
+  - 🇱🇻--->🇫🇮 409b
   - '--->🇫🇮 388b'
-  - 🇱🇻--->🇫🇮 395
+  - 🇱🇻--->🇫🇮 395a
   - 🇱🇻--->🇫🇮 398
+  - 🇫🇮--->🇫🇮 406a
   - 🇱🇻--->🇫🇮 400
-  - 🇱🇻--->🇱🇻 28
+  - 🇱🇻--->🇱🇻 28a
   - 🇳🇱--->🇳🇱 402a
-  - '--->🇪🇪 392g'
-  - '--->🇬🇧 393h'
-  - '--->🇵🇱 375b'
+  - '--->🇪🇪 392b'
+  - '--->🇬🇧 393c'
+  - '--->🇵🇱 375e'
   - '--->🇮🇹 394i'
-  - 🇺🇸--->🇩🇪 383f
+  - 🇺🇸--->🇫🇮 383h
+  - '--->🇹🇷 405j'
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -379,21 +421,27 @@ proxy-groups:
   type: url-test
   proxies:
   - '--->🇫🇮 379a'
-  - '--->🇳🇱 372a'
-  - 🇺🇸--->🇩🇪 370a
   - 🇳🇱--->🇳🇱 402a
-  - 🇺🇸--->🇩🇪 365a
+  - 🇱🇻--->🇫🇮 395a
+  - '--->🇩🇪 369a'
+  - '--->🇪🇪 377a'
+  - 🇺🇸--->🇩🇪 370a
+  - 🇱🇻--->🇱🇻 28a
+  - 🇫🇮--->🇫🇮 406a
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
 - name: 📁 Группа B
   type: url-test
   proxies:
-  - '--->🇫🇮 388b'
-  - 🇩🇪--->🇩🇪 399b
-  - '--->🇵🇱 375b'
+  - '--->🇩🇪 389b'
   - '--->🇸🇪 404b'
-  - 🇺🇸--->🇩🇪 373b
+  - 🇱🇻--->🇫🇮 409b
+  - '--->🇫🇮 388b'
+  - '--->🇪🇪 392b'
+  - '--->🇬🇧 371b'
+  - 🇺🇸--->🇩🇪 365b
+  - 🇩🇪--->🇩🇪 407b
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -403,32 +451,36 @@ proxy-groups:
   - 🚀 Авто (лучший)
   - 📁 Группа A
   - 📁 Группа B
-  - 🇺🇸--->🇩🇪 373b
+  - 🇺🇸--->🇩🇪 373d
   - '--->🇫🇮 379a'
-  - 🇨🇦--->🇩🇪 378e
-  - '--->🇬🇧 371'
-  - '--->🇳🇱 372a'
-  - '--->🇪🇪 377d'
+  - 🇨🇦--->🇩🇪 378g
+  - '--->🇬🇧 371b'
+  - '--->🇳🇱 372c'
+  - '--->🇪🇪 377a'
   - '--->🇫🇷 34'
   - '--->🇸🇪 404b'
-  - '--->🇵🇱 376c'
+  - 🇩🇪--->🇩🇪 407b
+  - '--->🇵🇱 376f'
   - 🇳🇱--->🇳🇱 387
-  - 🇩🇪--->🇩🇪 382
+  - 🇩🇪--->🇩🇪 382c
   - 🇺🇸--->🇩🇪 370a
-  - 🇩🇪--->🇩🇪 399b
-  - '--->🇩🇪 369'
-  - 🇺🇸--->🇩🇪 365a
-  - '--->🇩🇪 389c'
+  - 🇩🇪--->🇩🇪 399
+  - '--->🇩🇪 369a'
+  - 🇺🇸--->🇩🇪 365b
+  - '--->🇩🇪 389b'
+  - 🇱🇻--->🇫🇮 409b
   - '--->🇫🇮 388b'
-  - 🇱🇻--->🇫🇮 395
+  - 🇱🇻--->🇫🇮 395a
   - 🇱🇻--->🇫🇮 398
+  - 🇫🇮--->🇫🇮 406a
   - 🇱🇻--->🇫🇮 400
-  - 🇱🇻--->🇱🇻 28
+  - 🇱🇻--->🇱🇻 28a
   - 🇳🇱--->🇳🇱 402a
-  - '--->🇪🇪 392g'
-  - '--->🇬🇧 393h'
-  - '--->🇵🇱 375b'
+  - '--->🇪🇪 392b'
+  - '--->🇬🇧 393c'
+  - '--->🇵🇱 375e'
   - '--->🇮🇹 394i'
-  - 🇺🇸--->🇩🇪 383f
+  - 🇺🇸--->🇫🇮 383h
+  - '--->🇹🇷 405j'
 rules:
 - MATCH,PROXY
