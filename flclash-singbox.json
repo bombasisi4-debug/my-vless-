@@ -22,7 +22,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇺🇸--->🇩🇪 373d",
+      "tag": "🇺🇸--->🇩🇪 373c",
       "server": "151.101.56.7",
       "server_port": 80,
       "uuid": "46445435-11cd-47e8-87dc-1acc159fc360",
@@ -62,7 +62,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇦--->🇩🇪 378g",
+      "tag": "🇨🇦--->🇫🇮 378d",
       "server": "151.101.193.54",
       "server_port": 80,
       "uuid": "4b1d39f2-42d4-4850-8b8a-fd4fa2f1ae55",
@@ -99,7 +99,7 @@
     },
     {
       "type": "vless",
-      "tag": "--->🇳🇱 372c",
+      "tag": "--->🇳🇱 372b",
       "server": "node4.mxvpn.dev",
       "server_port": 443,
       "uuid": "564082ff-cf3c-48db-9e10-8ad2312847b4",
@@ -121,7 +121,7 @@
     },
     {
       "type": "vless",
-      "tag": "--->🇪🇪 377a",
+      "tag": "--->🇪🇪 377c",
       "server": "ee-t3.vinnypuxtomoon.today",
       "server_port": 7444,
       "uuid": "f7024ef7-dd35-4fe8-a18d-4186a0ae910c",
@@ -189,7 +189,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪--->🇩🇪 407b",
+      "tag": "🇩🇪--->🇩🇪 407e",
       "server": "91.107.135.249",
       "server_port": 47677,
       "uuid": "e4f851c2-69d6-4a8f-83c9-c1a9f78c0f98",
@@ -197,7 +197,7 @@
     },
     {
       "type": "vless",
-      "tag": "--->🇵🇱 376f",
+      "tag": "--->🇵🇱 376b",
       "server": "pl.mcqueenconnection.ru",
       "server_port": 443,
       "uuid": "12e410bf-0eb8-4b60-b52e-6951d96eb82c",
@@ -252,6 +252,58 @@
     },
     {
       "type": "vless",
+      "tag": "--->🇳🇱 410h",
+      "server": "node2.mxvpn.dev",
+      "server_port": 443,
+      "uuid": "564082ff-cf3c-48db-9e10-8ad2312847b4",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "node2.mxvpn.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw",
+          "short_id": "bbc68cec8bb8d2e3"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "--->🇩🇪 415a",
+      "server": "germany-guard.f1-connect.apruxdomain.xyz",
+      "server_port": 27099,
+      "uuid": "7ed3d3b3-1aa5-4046-901e-17d0b14f4e5c",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "germany-guard.f1-connect.apruxdomain.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱--->🇳🇱 416b",
+      "server": "144.31.14.168",
+      "server_port": 25060,
+      "uuid": "deb9c015-1ffe-4e41-9d21-310eb0422a4c",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/xray",
+        "headers": {
+          "Host": "144.31.14.168"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇺🇸--->🇩🇪 370a",
       "server": "167.82.0.7",
       "server_port": 80,
@@ -267,7 +319,29 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪--->🇩🇪 399",
+      "tag": "--->🇩🇪 412c",
+      "server": "germ.skysafe.online",
+      "server_port": 2027,
+      "uuid": "806b803b-7dad-4f13-b525-f3b1ab50e44e",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "germ.skysafe.online",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "EApxy12MeXpqt-78odxizwcXT6hX9f8XeAcbMDVRAV0",
+          "short_id": "6ba7b8109dad11d1"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪--->🇩🇪 399g",
       "server": "176.124.221.208",
       "server_port": 58500,
       "uuid": "c19cbde1-4177-4dc5-9e2f-cbae45f5dbc1",
@@ -341,7 +415,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇱🇻--->🇫🇮 409b",
+      "tag": "🇱🇻--->🇫🇮 409",
       "server": "31.57.26.215",
       "server_port": 2090,
       "uuid": "eab915bc-d2df-73d1-47d0-6eb240497055",
@@ -349,7 +423,7 @@
     },
     {
       "type": "vless",
-      "tag": "--->🇫🇮 388b",
+      "tag": "--->🇫🇮 388",
       "server": "valenciatobcn.life",
       "server_port": 443,
       "uuid": "f3a8da6e-9557-43e3-b8d6-44350d0dc6f7",
@@ -371,15 +445,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇱🇻--->🇫🇮 395a",
-      "server": "31.56.197.217",
-      "server_port": 2090,
-      "uuid": "eab915bc-d2df-73d1-47d0-6eb240497055",
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇱🇻--->🇫🇮 398",
+      "tag": "🇱🇻--->🇫🇮 398f",
       "server": "46.8.70.50",
       "server_port": 2090,
       "uuid": "eab915bc-d2df-73d1-47d0-6eb240497055",
@@ -387,18 +453,10 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮--->🇫🇮 406a",
+      "tag": "🇫🇮--->🇫🇮 406d",
       "server": "95.181.167.171",
       "server_port": 9090,
       "uuid": "d3aebc17-a731-40fb-a755-aac1a4cf80f2",
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇱🇻--->🇫🇮 400",
-      "server": "5.144.179.252",
-      "server_port": 2090,
-      "uuid": "eab915bc-d2df-73d1-47d0-6eb240497055",
       "packet_encoding": "xudp"
     },
     {
@@ -433,7 +491,7 @@
     },
     {
       "type": "vless",
-      "tag": "--->🇪🇪 392b",
+      "tag": "--->🇪🇪 392d",
       "server": "ee-t3.vinnypuxtomoon.today",
       "server_port": 2053,
       "uuid": "f7024ef7-dd35-4fe8-a18d-4186a0ae910c",
@@ -455,7 +513,7 @@
     },
     {
       "type": "vless",
-      "tag": "--->🇬🇧 393c",
+      "tag": "--->🇬🇧 393e",
       "server": "uk-t2.vinnypuxtomoon.today",
       "server_port": 2053,
       "uuid": "f7024ef7-dd35-4fe8-a18d-4186a0ae910c",
@@ -477,7 +535,7 @@
     },
     {
       "type": "vless",
-      "tag": "--->🇵🇱 375e",
+      "tag": "--->🇵🇱 375a",
       "server": "pl07.myxasecure.space",
       "server_port": 443,
       "uuid": "06d44c57-8e1a-41f4-b9c4-65d35869e078",
@@ -499,7 +557,29 @@
     },
     {
       "type": "vless",
-      "tag": "--->🇮🇹 394i",
+      "tag": "--->🇫🇮 411i",
+      "server": "node6.mxvpn.dev",
+      "server_port": 443,
+      "uuid": "564082ff-cf3c-48db-9e10-8ad2312847b4",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "node6.mxvpn.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw",
+          "short_id": "bbc68cec8bb8d2e3"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "--->🇮🇹 394f",
       "server": "it02.myxasecure.space",
       "server_port": 443,
       "uuid": "06d44c57-8e1a-41f4-b9c4-65d35869e078",
@@ -521,7 +601,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸--->🇫🇮 383h",
+      "tag": "🇺🇸--->🇩🇪 383e",
       "server": "167.82.0.17",
       "server_port": 80,
       "uuid": "66ea0b4c-8c39-4e8b-92f0-0a9065218d37",
@@ -536,7 +616,7 @@
     },
     {
       "type": "vless",
-      "tag": "--->🇹🇷 405j",
+      "tag": "--->🇹🇷 405",
       "server": "tur02.myxasecure.space",
       "server_port": 443,
       "uuid": "06d44c57-8e1a-41f4-b9c4-65d35869e078",
@@ -560,37 +640,40 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸--->🇩🇪 373d",
+        "🇺🇸--->🇩🇪 373c",
         "--->🇫🇮 379a",
-        "🇨🇦--->🇩🇪 378g",
+        "🇨🇦--->🇫🇮 378d",
         "--->🇬🇧 371b",
-        "--->🇳🇱 372c",
-        "--->🇪🇪 377a",
+        "--->🇳🇱 372b",
+        "--->🇪🇪 377c",
         "--->🇫🇷 34",
         "--->🇸🇪 404b",
-        "🇩🇪--->🇩🇪 407b",
-        "--->🇵🇱 376f",
+        "🇩🇪--->🇩🇪 407e",
+        "--->🇵🇱 376b",
         "🇳🇱--->🇳🇱 387",
         "🇩🇪--->🇩🇪 382c",
+        "--->🇳🇱 410h",
+        "--->🇩🇪 415a",
+        "🇳🇱--->🇳🇱 416b",
         "🇺🇸--->🇩🇪 370a",
-        "🇩🇪--->🇩🇪 399",
+        "--->🇩🇪 412c",
+        "🇩🇪--->🇩🇪 399g",
         "--->🇩🇪 369a",
         "🇺🇸--->🇩🇪 365b",
         "--->🇩🇪 389b",
-        "🇱🇻--->🇫🇮 409b",
-        "--->🇫🇮 388b",
-        "🇱🇻--->🇫🇮 395a",
-        "🇱🇻--->🇫🇮 398",
-        "🇫🇮--->🇫🇮 406a",
-        "🇱🇻--->🇫🇮 400",
+        "🇱🇻--->🇫🇮 409",
+        "--->🇫🇮 388",
+        "🇱🇻--->🇫🇮 398f",
+        "🇫🇮--->🇫🇮 406d",
         "🇱🇻--->🇱🇻 28a",
         "🇳🇱--->🇳🇱 402a",
-        "--->🇪🇪 392b",
-        "--->🇬🇧 393c",
-        "--->🇵🇱 375e",
-        "--->🇮🇹 394i",
-        "🇺🇸--->🇫🇮 383h",
-        "--->🇹🇷 405j"
+        "--->🇪🇪 392d",
+        "--->🇬🇧 393e",
+        "--->🇵🇱 375a",
+        "--->🇫🇮 411i",
+        "--->🇮🇹 394f",
+        "🇺🇸--->🇩🇪 383e",
+        "--->🇹🇷 405"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "1m",
@@ -601,37 +684,40 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸--->🇩🇪 373d",
+        "🇺🇸--->🇩🇪 373c",
         "--->🇫🇮 379a",
-        "🇨🇦--->🇩🇪 378g",
+        "🇨🇦--->🇫🇮 378d",
         "--->🇬🇧 371b",
-        "--->🇳🇱 372c",
-        "--->🇪🇪 377a",
+        "--->🇳🇱 372b",
+        "--->🇪🇪 377c",
         "--->🇫🇷 34",
         "--->🇸🇪 404b",
-        "🇩🇪--->🇩🇪 407b",
-        "--->🇵🇱 376f",
+        "🇩🇪--->🇩🇪 407e",
+        "--->🇵🇱 376b",
         "🇳🇱--->🇳🇱 387",
         "🇩🇪--->🇩🇪 382c",
+        "--->🇳🇱 410h",
+        "--->🇩🇪 415a",
+        "🇳🇱--->🇳🇱 416b",
         "🇺🇸--->🇩🇪 370a",
-        "🇩🇪--->🇩🇪 399",
+        "--->🇩🇪 412c",
+        "🇩🇪--->🇩🇪 399g",
         "--->🇩🇪 369a",
         "🇺🇸--->🇩🇪 365b",
         "--->🇩🇪 389b",
-        "🇱🇻--->🇫🇮 409b",
-        "--->🇫🇮 388b",
-        "🇱🇻--->🇫🇮 395a",
-        "🇱🇻--->🇫🇮 398",
-        "🇫🇮--->🇫🇮 406a",
-        "🇱🇻--->🇫🇮 400",
+        "🇱🇻--->🇫🇮 409",
+        "--->🇫🇮 388",
+        "🇱🇻--->🇫🇮 398f",
+        "🇫🇮--->🇫🇮 406d",
         "🇱🇻--->🇱🇻 28a",
         "🇳🇱--->🇳🇱 402a",
-        "--->🇪🇪 392b",
-        "--->🇬🇧 393c",
-        "--->🇵🇱 375e",
-        "--->🇮🇹 394i",
-        "🇺🇸--->🇫🇮 383h",
-        "--->🇹🇷 405j"
+        "--->🇪🇪 392d",
+        "--->🇬🇧 393e",
+        "--->🇵🇱 375a",
+        "--->🇫🇮 411i",
+        "--->🇮🇹 394f",
+        "🇺🇸--->🇩🇪 383e",
+        "--->🇹🇷 405"
       ],
       "default": "auto"
     },
