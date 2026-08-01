@@ -3,36 +3,35 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇩🇰--->🇩🇰 533b
+- name: 🇩🇪--->🇩🇪 624a
   type: vless
-  server: 84.75.161.38
+  server: 2.58.66.76
   port: 443
-  uuid: "da7685a7-15ef-41e4-a0d9-009bb4be7220"
+  uuid: "95264324-a5ac-4825-aa0d-768025a568d8"
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: "auto.malina24.xyz"
-  client-fingerprint: edge
+  servername: "pl.node.ghostsyvpn.org"
+  client-fingerprint: safari
   reality-opts:
-    public-key: "V6FabatADtcX7aO9KMjGCadJC4LuQ_5nRViab-z-nFQ"
-    short-id: "5678"
-- name: 🇷🇺--->🇸🇪 431a
+    public-key: "03MJy26A8kc5c8aMMdkY3s_CX3qiw0eTmjrc3UCBLm0"
+    short-id: ""
+- name: '--->🇸🇪 628b'
   type: vless
-  server: 5.42.106.202
-  port: 9878
-  uuid: "884d811f-577b-421e-aabb-608660b0ecfa"
+  server: sw1-chr.astralweb.tech
+  port: 443
+  uuid: "3ad1d277-5715-4ca1-84db-5baea72f822d"
   udp: true
-  network: grpc
+  network: tcp
   tls: true
-  servername: "dl.google.com"
-  client-fingerprint: qq
+  flow: xtls-rprx-vision
+  servername: "sw1-chr.astralweb.tech"
+  client-fingerprint: firefox
   reality-opts:
-    public-key: "bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU"
-    short-id: "aabbccdd"
-  grpc-opts:
-    grpc-service-name: "grpc-tunnel"
-- name: '--->🇩🇪 590c'
+    public-key: "Z2c9dK70_0OWBEZGgeaXJyt9dup9h2-hZlCCvIGLg1Q"
+    short-id: "496ee75c2f91f51d"
+- name: '--->🇩🇪 590'
   type: vless
   server: free-de-04.la-la-land.top
   port: 443
@@ -45,33 +44,90 @@ proxies:
   reality-opts:
     public-key: "uRuW2K9JNw64jgAVEdV39NMh_udtVD6xxEV-dQFATHY"
     short-id: ""
-- name: 🇩🇪--->🇩🇪 585c
+- name: '--->🇧🇬 623a'
   type: vless
-  server: 148.251.92.94
+  server: dednd.skorostnet.space
   port: 443
-  uuid: "d80168e3-0951-4643-aa85-74129913ea09"
-  udp: true
-  network: xhttp
-  tls: true
-  servername: "de.yahoo.com"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "26JK4XYqYlsUHAD9HUqRl7BeD5OXPOdP61t3m82tRjo"
-    short-id: "e738784df9e7ac"
-- name: 🇷🇺--->🇳🇱 549g
-  type: vless
-  server: 94.126.205.65
-  port: 443
-  uuid: "d6dc1358-1bb5-4a9d-92fd-3e255567e3fc"
+  uuid: "06d44c57-8e1a-41f4-b9c4-65d35869e078"
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: "apple.com"
+  servername: "dednd.skorostnet.space"
   client-fingerprint: qq
   reality-opts:
-    public-key: "M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w"
-    short-id: ""
+    public-key: "OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw"
+    short-id: "d67ec5a8fc40ebea"
+- name: 🇫🇷--->🇫🇷 640a
+  type: vless
+  server: 147.45.42.27
+  port: 443
+  uuid: "564082ff-cf3c-48db-9e10-8ad2312847b4"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "node12.mxvpn.dev"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw"
+    short-id: "bbc68cec8bb8d2e3"
+- name: 🇳🇱--->🇳🇱 629b
+  type: vless
+  server: 85.155.226.113
+  port: 443
+  uuid: "39c42b0a-b823-4c93-bb99-74b4183e518d"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "getsavesafe.net"
+  client-fingerprint: qq
+  reality-opts:
+    public-key: "5Z6PwoPSNBLPIsX8lZtHM7-Y-psMMR1vz5Pit0EVISs"
+    short-id: "82f5d3a1e9c0b661"
+- name: 🇷🇺--->🇳🇱 638b
+  type: vless
+  server: 95.213.143.18
+  port: 443
+  uuid: "aa91b870-8658-4dcb-a53a-423df017e35b"
+  udp: true
+  network: raw
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "findmypackets.com"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0"
+    short-id: "93ae75024604f796"
+- name: 🇸🇪--->🇸🇪 644c
+  type: vless
+  server: 185.189.45.159
+  port: 443
+  uuid: "3ad1d277-5715-4ca1-84db-5baea72f822d"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "sw1-chr.astralweb.tech"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "Z2c9dK70_0OWBEZGgeaXJyt9dup9h2-hZlCCvIGLg1Q"
+    short-id: "496ee75c2f91f51d"
+- name: 🇪🇪--->🇪🇪 626
+  type: vless
+  server: 5.181.202.15
+  port: 443
+  uuid: "a03df445-0666-4d61-acde-9705009e409c"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "eston3.o4ka-internet.com"
+  client-fingerprint: random
+  reality-opts:
+    public-key: "V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8"
+    short-id: "5629431325884ff0"
 - name: '--->🇳🇱 568b'
   type: vless
   server: test.skorostnet.space
@@ -86,130 +142,60 @@ proxies:
   reality-opts:
     public-key: "OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw"
     short-id: "d67ec5a8fc40ebea"
-- name: '--->🇳🇱 496a'
+- name: '--->🇩🇪 637b'
   type: vless
-  server: nd06.myxasecure.space
-  port: 443
-  uuid: "06d44c57-8e1a-41f4-b9c4-65d35869e078"
+  server: s1.esantion.info
+  port: 24206
+  uuid: "9913a211-19e0-4c7f-b813-841d30d28168"
   udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "nd06.myxasecure.space"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw"
-    short-id: "d67ec5a8fc40ebea"
-- name: 🇺🇸--->🇺🇸 555h
-  type: vless
-  server: 88.218.44.4
-  port: 8443
-  uuid: "7c74b0e4-f132-5583-4692-622a7d6b71a4"
-  udp: true
-  network: grpc
-  tls: true
-  servername: "dl.google.com"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "Rt2wltCWOxIroFggNWMudZDBJXls8DsF4icaWqxKDk8"
-    short-id: ""
-  grpc-opts:
-    grpc-service-name: "TunService"
-- name: 🇭🇺--->🇭🇺 513d
-  type: vless
-  server: 37.221.210.181
-  port: 443
-  uuid: "52d0b2d5-a003-4509-ab70-d1d720a14cd7"
-  udp: true
-  network: xhttp
-  tls: true
-  servername: "hu007.bearbeer.digital"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: "z-TKWOWgZLfzQ-wNdwXQqVwaUgCmbchM2Xtrk1NGynU"
-    short-id: ""
-- name: 🇷🇺--->🇳🇱 534
-  type: vless
-  server: ruded2.onlinestreamself.com
-  port: 443
-  uuid: "64b6f905-94d5-4745-8f92-cafa107b7c16"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "apple.com"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: "M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w"
-    short-id: ""
-- name: 🇫🇷--->🇩🇪 569h
-  type: vless
-  server: 199.232.170.53
-  port: 80
-  uuid: "cfde0aba-0985-4034-ab92-50b1534b126c"
-  udp: true
-  network: ws
+  network: httpupgrade
   tls: false
-  ws-opts:
-    path: "/?Telegram-WangCai2🇨🇳"
-    headers:
-      Host: "BankMelat.glObal.ssl.faStly.nEt"
-- name: 🇷🇺--->🇳🇱 575j
+  httpupgrade-opts:
+    path: "/?ed=2048?@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn"
+    host: "s1.esantion.info"
+- name: 🇨🇭--->🇨🇭 621a
   type: vless
-  server: 94.126.204.43
-  port: 443
-  uuid: "eadcacfa-ef1a-4901-a28b-8815fa1962a5"
+  server: 83.228.246.208
+  port: 50170
+  uuid: "ee6950b1-5a5a-4bb6-ae54-814070840281"
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: "apple.com"
-  client-fingerprint: chrome
+  servername: "sweic.lodkirmm.ru"
+  client-fingerprint: firefox
   reality-opts:
-    public-key: "m_Xgh5XeqmN9JaDxkct4yTup2YPVxCV5fGnUnMZ3pWE"
-    short-id: ""
-- name: '--->🇳🇱 372a'
+    public-key: "7U__DL9_dFdZ2rMLH8TRPEOY24EJfg7ESXslAdujgzk"
+    short-id: "dc36bfb153f31f9a"
+- name: '--->🇮🇹 641b'
   type: vless
-  server: node4.mxvpn.dev
+  server: italia.lodkirmm.ru
   port: 443
-  uuid: "564082ff-cf3c-48db-9e10-8ad2312847b4"
+  uuid: "ee6950b1-5a5a-4bb6-ae54-814070840281"
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: "node4.mxvpn.dev"
+  servername: "italia.lodkirmm.ru"
   client-fingerprint: firefox
   reality-opts:
-    public-key: "TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw"
-    short-id: "bbc68cec8bb8d2e3"
-- name: 🇷🇺--->🇩🇪 594k
-  type: vless
-  server: 185.229.9.176
-  port: 8443
-  uuid: "c2074fa1-90b7-4add-a840-194a671385ea"
-  udp: true
-  network: grpc
-  tls: true
-  servername: "id.pervye.ru"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "K9vJ2zLFxi3VTmrguyLC1KrC920axeFSeA8x_xY4Xhw"
+    public-key: "6fwpt8WW46VND7VgVV5lQSteCUgJsZbRR092VDZ2nFs"
     short-id: ""
-  grpc-opts:
-    grpc-service-name: "ns"
-- name: 🇫🇷--->🇩🇪 559f
+- name: '--->🇪🇪 622'
   type: vless
-  server: 199.232.170.161
-  port: 80
-  uuid: "cfde0aba-0985-4034-ab92-50b1534b126c"
+  server: eston3.o4ka-internet.com
+  port: 443
+  uuid: "a03df445-0666-4d61-acde-9705009e409c"
   udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: "/?Telegram-WangCai2🇨🇳"
-    headers:
-      Host: "BankMelat.glObal.ssl.faStly.nEt"
-- name: 🇫🇷--->🇩🇪 558e
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "eston3.o4ka-internet.com"
+  client-fingerprint: random
+  reality-opts:
+    public-key: "V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8"
+    short-id: "5629431325884ff0"
+- name: 🇫🇷--->🇩🇪 558a
   type: vless
   server: 199.232.170.136
   port: 80
@@ -221,21 +207,7 @@ proxies:
     path: "/?Telegram-WangCai2🇨🇳"
     headers:
       Host: "BankMelat.glObal.ssl.faStly.nEt"
-- name: 🇷🇺--->🇳🇱 566i
-  type: vless
-  server: 94.139.251.23
-  port: 443
-  uuid: "d6dc1358-1bb5-4a9d-92fd-3e255567e3fc"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "apple.com"
-  client-fingerprint: safari
-  reality-opts:
-    public-key: "6ycuxfrEPsqE9eXZ5_Osbnx4g6hXWmkc8pFuAJkJ4jY"
-    short-id: ""
-- name: 🇳🇱--->🇳🇱 560d
+- name: 🇳🇱--->🇳🇱 560a
   type: vless
   server: 95.85.228.161
   port: 8443
@@ -245,72 +217,49 @@ proxies:
   tls: false
   grpc-opts:
     grpc-service-name: "grpc"
-- name: 🇫🇷--->🇩🇪 565g
+- name: '--->🇩🇪 627a'
   type: vless
-  server: 199.232.170.121
-  port: 80
-  uuid: "cfde0aba-0985-4034-ab92-50b1534b126c"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: "/?Telegram-WangCai2🇨🇳"
-    headers:
-      Host: "BankMelat.glObal.ssl.faStly.nEt"
-- name: 🇵🇱--->🇵🇱 490c
-  type: vless
-  server: 31.76.122.42
-  port: 2053
-  uuid: "10eabb0e-25cc-4210-82c9-f05d964572d8"
-  udp: true
-  network: grpc
-  tls: true
-  servername: "play.overcloud.cloud"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "ivgTfLR13A6xBsicIA28OPoav2tXlsstTTmGuETfnSk"
-    short-id: "5c766813929a1fdd"
-  grpc-opts:
-    grpc-service-name: "grpc"
-- name: 🇸🇪--->🇸🇪 592b
-  type: vless
-  server: 109.120.157.207
-  port: 26978
-  uuid: "28204a34-3eee-4864-92e5-4884676e53ca"
+  server: pl.node.ghostsyvpn.org
+  port: 443
+  uuid: "95264324-a5ac-4825-aa0d-768025a568d8"
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: "ikea.com"
+  servername: "pl.node.ghostsyvpn.org"
+  client-fingerprint: safari
+  reality-opts:
+    public-key: "03MJy26A8kc5c8aMMdkY3s_CX3qiw0eTmjrc3UCBLm0"
+    short-id: ""
+- name: '--->🇫🇮 636b'
+  type: vless
+  server: tir.tunnelpoint.space
+  port: 443
+  uuid: "06d44c57-8e1a-41f4-b9c4-65d35869e078"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "tir.tunnelpoint.space"
   client-fingerprint: firefox
   reality-opts:
-    public-key: "5FP1JM9_sA8Y30vJ3dmAzcpVok0_aT2PRKA__bovYSA"
-    short-id: "84f6"
-- name: 🇫🇷--->🇩🇪 553d
+    public-key: "aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o"
+    short-id: "fdda9806fe5d8584"
+- name: 🇫🇮--->🇫🇮 630b
   type: vless
-  server: 199.232.170.110
-  port: 80
-  uuid: "cfde0aba-0985-4034-ab92-50b1534b126c"
+  server: 138.124.112.196
+  port: 443
+  uuid: "564082ff-cf3c-48db-9e10-8ad2312847b4"
   udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: "/?Telegram-WangCai2🇨🇳"
-    headers:
-      Host: "BankMelat.glObal.ssl.faStly.nEt"
-- name: 🇫🇷--->🇫🇮 583m
-  type: vless
-  server: 199.232.170.125
-  port: 80
-  uuid: "cfde0aba-0985-4034-ab92-50b1534b126c"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: "/?Telegram-WangCai2🇨🇳"
-    headers:
-      Host: "BankMelat.glObal.ssl.faStly.nEt"
-- name: 🇮🇹--->🇮🇹 599f
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "node5.mxvpn.dev"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw"
+    short-id: "bbc68cec8bb8d2e3"
+- name: 🇮🇹--->🇮🇹 599b
   type: vless
   server: 151.115.166.46
   port: 8880
@@ -320,7 +269,7 @@ proxies:
   tls: false
   grpc-opts:
     grpc-service-name: ""
-- name: 🇮🇹--->🇮🇹 419a
+- name: 🇮🇹--->🇮🇹 S 419
   type: vless
   server: 151.115.166.53
   port: 8880
@@ -330,69 +279,6 @@ proxies:
   tls: false
   grpc-opts:
     grpc-service-name: ""
-- name: 🇫🇷--->🇩🇪 578k
-  type: vless
-  server: 199.232.170.228
-  port: 80
-  uuid: "cfde0aba-0985-4034-ab92-50b1534b126c"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: "/?Telegram-WangCai2🇨🇳"
-    headers:
-      Host: "BankMelat.glObal.ssl.faStly.nEt"
-- name: 🇫🇷--->🇩🇪 564e
-  type: vless
-  server: 199.232.170.223
-  port: 80
-  uuid: "cfde0aba-0985-4034-ab92-50b1534b126c"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: "/?Telegram-WangCai2🇨🇳"
-    headers:
-      Host: "BankMelat.glObal.ssl.faStly.nEt"
-- name: 🇳🇱--->🇳🇱 455b
-  type: vless
-  server: 195.123.216.28
-  port: 443
-  uuid: "74ae950f-95c6-417b-9409-a0f58be33429"
-  udp: true
-  network: grpc
-  tls: true
-  servername: "www.intel.com"
-  client-fingerprint: edge
-  reality-opts:
-    public-key: "RRhxkmf4YgwjyNSikyomlL6Me9329CTvZbAMFWakWjE"
-    short-id: "4e6e39c4"
-  grpc-opts:
-    grpc-service-name: ""
-- name: 🇫🇷--->🇩🇪 572i
-  type: vless
-  server: 199.232.170.134
-  port: 80
-  uuid: "cfde0aba-0985-4034-ab92-50b1534b126c"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: "/?Telegram-WangCai2🇨🇳"
-    headers:
-      Host: "BankMelat.glObal.ssl.faStly.nEt"
-- name: 🇫🇷--->🇫🇮 548c
-  type: vless
-  server: 199.232.170.127
-  port: 80
-  uuid: "cfde0aba-0985-4034-ab92-50b1534b126c"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: "/?Telegram-WangCai2🇨🇳"
-    headers:
-      Host: "BankMelat.glObal.ssl.faStly.nEt"
 - name: 🇩🇪--->🇩🇪 500a
   type: vless
   server: 5.175.249.199
@@ -405,7 +291,7 @@ proxies:
     path: "/"
     headers:
       Host: "5.175.249.199"
-- name: 🇫🇷--->🇩🇪 586n
+- name: 🇫🇷--->🇩🇪 586d
   type: vless
   server: 199.232.170.213
   port: 80
@@ -417,48 +303,7 @@ proxies:
     path: "/?Telegram-WangCai2🇨🇳"
     headers:
       Host: "BankMelat.glObal.ssl.faStly.nEt"
-- name: '--->🇩🇪 479b'
-  type: vless
-  server: m5r.speedtestmark.com
-  port: 443
-  uuid: "de6de747-2658-4a42-99de-9ad7ba046d1b"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "m5r.speedtestmark.com"
-  client-fingerprint: randomized
-  reality-opts:
-    public-key: "Bp49BC_XtsdC4Jvp5p-vfR1voCti6QrYyIPKQSIt_Hw"
-    short-id: "4326"
-- name: 🇫🇮--->🇫🇮 546a
-  type: vless
-  server: vs-fl7.vibesignal.space
-  port: 443
-  uuid: "bf0899bc-5abd-40b8-b376-f108e2d8cb6f"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "cdnjs.cloudflare.com"
-  client-fingerprint: edge
-  reality-opts:
-    public-key: "BkBoqDEAf-yxRoT0tLnA6FqqfEP7bG29VyJaqiyz7hk"
-    short-id: "e74b241227bef7fc"
-- name: 🇩🇪--->🇩🇪 563
-  type: vless
-  server: 82.115.26.124
-  port: 433
-  uuid: "2fb418f6-e2b1-4cf2-8266-004c84820269"
-  udp: true
-  network: tcp
-  tls: true
-  servername: "www.cloudflare.com"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "bJBl6D2TT83PFMIYVDGkKGC35ShJMw6b8i0pG5uzlm8"
-    short-id: "87a61c1307e0e1"
-- name: 🇫🇷--->🇩🇪 573j
+- name: 🇫🇷--->🇩🇪 573b
   type: vless
   server: 199.232.170.74
   port: 80
@@ -478,19 +323,7 @@ proxies:
   udp: true
   network: tcp
   tls: false
-- name: 🇫🇷--->🇩🇪 587o
-  type: vless
-  server: 199.232.170.18
-  port: 80
-  uuid: "cfde0aba-0985-4034-ab92-50b1534b126c"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: "/?Telegram-WangCai2🇨🇳"
-    headers:
-      Host: "BankMelat.glObal.ssl.faStly.nEt"
-- name: 🇮🇹--->🇮🇹 600d
+- name: 🇮🇹--->🇮🇹 600b
   type: vless
   server: 151.115.166.127
   port: 8880
@@ -500,7 +333,7 @@ proxies:
   tls: false
   grpc-opts:
     grpc-service-name: ""
-- name: '--->🇳🇱 410a'
+- name: '--->🇳🇱 S 410a'
   type: vless
   server: node2.mxvpn.dev
   port: 443
@@ -514,7 +347,7 @@ proxies:
   reality-opts:
     public-key: "TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw"
     short-id: "bbc68cec8bb8d2e3"
-- name: 🇵🇱--->🇵🇱 557c
+- name: 🇵🇱--->🇵🇱 557a
   type: vless
   server: 77.83.246.92
   port: 8443
@@ -524,7 +357,23 @@ proxies:
   tls: false
   grpc-opts:
     grpc-service-name: "grpc"
-- name: 🇫🇷--->🇩🇪 488b
+- name: 🇱🇻--->🇫🇮 615
+  type: vless
+  server: 31.57.26.204
+  port: 2090
+  uuid: "eab915bc-d2df-73d1-47d0-6eb240497055"
+  udp: true
+  network: tcp
+  tls: false
+- name: 🇳🇱--->🇳🇱 618
+  type: vless
+  server: 141.148.232.142
+  port: 62145
+  uuid: "8fb65472-5957-4f64-ba2d-b5812b2f155a"
+  udp: true
+  network: tcp
+  tls: false
+- name: 🇫🇷--->🇩🇪 488
   type: vless
   server: 199.232.170.246
   port: 80
@@ -536,7 +385,7 @@ proxies:
     path: "/?Telegram-TGRVPN🇨🇳"
     headers:
       Host: "BankMelat.glObal.ssl.faStly.nEt"
-- name: 🇫🇷--->🇫🇷 598a
+- name: 🇫🇷--->🇫🇷 598b
   type: vless
   server: 13.36.44.201
   port: 22222
@@ -544,7 +393,7 @@ proxies:
   udp: true
   network: tcp
   tls: false
-- name: 🇳🇱--->🇳🇱 416a
+- name: 🇳🇱--->🇳🇱 S 416a
   type: vless
   server: 144.31.14.168
   port: 25060
@@ -556,48 +405,23 @@ proxies:
     path: "/xray"
     headers:
       Host: "144.31.14.168"
-- name: '--->🇩🇪 471a'
+- name: 🇱🇻--->🇫🇮 609c
   type: vless
-  server: get.noneok.com
-  port: 443
-  uuid: "ad5ff95a-81a8-4006-8771-8e33f0bcd9aa"
-  udp: true
-  network: grpc
-  tls: true
-  servername: "get.noneok.com"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "8foPheDUi9ULJfe5UuxfspzwQ7J5JZg-2J1XkhL1B1I"
-    short-id: "0768452b5e736e7f"
-  grpc-opts:
-    grpc-service-name: "api.v1.StreamService"
-- name: 🇫🇷--->🇩🇪 589p
-  type: vless
-  server: 199.232.170.222
-  port: 80
-  uuid: "cfde0aba-0985-4034-ab92-50b1534b126c"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: "/?Telegram-WangCai2🇨🇳"
-    headers:
-      Host: "BankMelat.glObal.ssl.faStly.nEt"
-- name: '--->🇩🇪 412c'
-  type: vless
-  server: germ.skysafe.online
-  port: 2027
-  uuid: "806b803b-7dad-4f13-b525-f3b1ab50e44e"
+  server: 31.57.61.146
+  port: 2090
+  uuid: "eab915bc-d2df-73d1-47d0-6eb240497055"
   udp: true
   network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "germ.skysafe.online"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: "EApxy12MeXpqt-78odxizwcXT6hX9f8XeAcbMDVRAV0"
-    short-id: "6ba7b8109dad11d1"
-- name: 🇫🇷--->🇩🇪 580l
+  tls: false
+- name: 🇱🇻--->🇫🇮 612b
+  type: vless
+  server: 46.8.232.168
+  port: 2090
+  uuid: "eab915bc-d2df-73d1-47d0-6eb240497055"
+  udp: true
+  network: tcp
+  tls: false
+- name: 🇫🇷--->🇩🇪 580c
   type: vless
   server: 199.232.170.162
   port: 80
@@ -609,7 +433,31 @@ proxies:
     path: "/?Telegram-WangCai2🇨🇳"
     headers:
       Host: "BankMelat.glObal.ssl.faStly.nEt"
-- name: 🇫🇷--->🇩🇪 567b
+- name: 🇫🇮--->🇫🇮 642b
+  type: vless
+  server: 138.124.112.198
+  port: 443
+  uuid: "564082ff-cf3c-48db-9e10-8ad2312847b4"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "node7.mxvpn.dev"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw"
+    short-id: "bbc68cec8bb8d2e3"
+- name: '--->🇮🇹 632a'
+  type: vless
+  server: ronaldo37.fordnsdirect.shop
+  port: 8880
+  uuid: "8dc7722c-2767-4eea-a28b-2f8daacc07e3"
+  udp: true
+  network: grpc
+  tls: false
+  grpc-opts:
+    grpc-service-name: ""
+- name: 🇫🇷--->🇩🇪 567a
   type: vless
   server: 199.232.170.4
   port: 80
@@ -621,60 +469,21 @@ proxies:
     path: "/?Telegram-WangCai2🇨🇳"
     headers:
       Host: "BankMelat.glObal.ssl.faStly.nEt"
-- name: '--->🇸🇪 530d'
+- name: '--->🇫🇮 639c'
   type: vless
-  server: m4r.speedtestmark.com
+  server: dev.tunnelpoint.space
   port: 443
-  uuid: "de6de747-2658-4a42-99de-9ad7ba046d1b"
+  uuid: "c04bf2df-2b7f-44da-a893-3792d3910fd8"
   udp: true
-  network: tcp
+  network: raw
   tls: true
   flow: xtls-rprx-vision
-  servername: "m4r.speedtestmark.com"
-  client-fingerprint: randomized
+  servername: "dev.tunnelpoint.space"
+  client-fingerprint: qq
   reality-opts:
-    public-key: "Bp49BC_XtsdC4Jvp5p-vfR1voCti6QrYyIPKQSIt_Hw"
-    short-id: "4326"
-- name: 🇺🇸--->🇩🇪 535
-  type: vless
-  server: 167.82.0.1
-  port: 80
-  uuid: "d708b514-62c1-41dd-82c5-8211fcfd94f5"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: "/"
-    headers:
-      Host: "BankMelat.glObal.ssl.faStly.nEt."
-- name: '--->🇩🇪 448a'
-  type: vless
-  server: m2r.speedtestmark.com
-  port: 443
-  uuid: "de6de747-2658-4a42-99de-9ad7ba046d1b"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "m2r.speedtestmark.com"
-  client-fingerprint: randomized
-  reality-opts:
-    public-key: "Bp49BC_XtsdC4Jvp5p-vfR1voCti6QrYyIPKQSIt_Hw"
-    short-id: "4326"
-- name: 🇳🇱--->🇳🇱 571e
-  type: vless
-  server: 107.189.23.210
-  port: 443
-  uuid: "9d23528b-1a56-41f1-9fd7-bc3f372d1184"
-  udp: true
-  network: xhttp
-  tls: true
-  servername: "www.sony.com"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "v7Zp9KulAizz5T4wa8BGJ0wn4kRc-9lPJFgwciY32lw"
-    short-id: "7f34c757015fd2"
-- name: 🇮🇹--->🇮🇹 597c
+    public-key: "aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o"
+    short-id: "fdda9806fe5d8584"
+- name: 🇮🇹--->🇮🇹 597a
   type: vless
   server: 151.115.166.5
   port: 8880
@@ -684,57 +493,31 @@ proxies:
   tls: false
   grpc-opts:
     grpc-service-name: ""
-- name: 🇫🇷--->🇩🇪 542b
+- name: 🇱🇻--->🇫🇮 607
   type: vless
-  server: 199.232.170.182
-  port: 80
-  uuid: "cfde0aba-0985-4034-ab92-50b1534b126c"
+  server: 31.57.62.134
+  port: 2090
+  uuid: "eab915bc-d2df-73d1-47d0-6eb240497055"
   udp: true
-  network: ws
+  network: tcp
   tls: false
-  ws-opts:
-    path: "/?Telegram-WangCai2🇨🇳"
-    headers:
-      Host: "BankMelat.glObal.ssl.faStly.nEt"
-- name: 🇨🇦--->🇩🇪 596l
+- name: 🇫🇷--->🇫🇷 631
   type: vless
-  server: 172.67.157.241
-  port: 2052
-  uuid: "5cdcbd83-0742-4f45-a098-02340aa18f2b"
+  server: 13.38.194.199
+  port: 22223
+  uuid: "e4514801-0d5a-42ba-869f-39bd605aef9e"
   udp: true
-  network: ws
+  network: tcp
   tls: false
-  ws-opts:
-    path: "/"
-    headers:
-      Host: "n5.droonix.ir"
-- name: 🇫🇷--->🇩🇪 538a
+- name: 🇱🇻--->🇫🇮 611
   type: vless
-  server: 199.232.170.201
-  port: 80
-  uuid: "cfde0aba-0985-4034-ab92-50b1534b126c"
+  server: 91.108.189.5
+  port: 2090
+  uuid: "eab915bc-d2df-73d1-47d0-6eb240497055"
   udp: true
-  network: ws
+  network: tcp
   tls: false
-  ws-opts:
-    path: "/?Telegram-WangCai2🇨🇳"
-    headers:
-      Host: "BankMelat.glObal.ssl.faStly.nEt"
-- name: 🇺🇸--->🇵🇱 517b
-  type: vless
-  server: 151.245.192.193
-  port: 443
-  uuid: "da7685a7-15ef-41e4-a0d9-009bb4be7220"
-  udp: true
-  network: raw
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "auto.malina24.xyz"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: "V6FabatADtcX7aO9KMjGCadJC4LuQ_5nRViab-z-nFQ"
-    short-id: "5678"
-- name: 🇫🇷--->🇫🇮 593r
+- name: 🇫🇷--->🇩🇪 593e
   type: vless
   server: 199.232.170.75
   port: 80
@@ -746,19 +529,7 @@ proxies:
     path: "/?Telegram-WangCai2🇨🇳"
     headers:
       Host: "BankMelat.glObal.ssl.faStly.nEt"
-- name: 🇨🇦--->🇩🇪 537e
-  type: vless
-  server: 104.21.74.116
-  port: 2052
-  uuid: "5cdcbd83-0742-4f45-a098-02340aa18f2b"
-  udp: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: "/"
-    headers:
-      Host: "n5.droonix.ir"
-- name: '--->🇩🇪 515d'
+- name: '--->🇩🇪 515'
   type: vless
   server: store.noneok.com
   port: 443
@@ -773,6 +544,22 @@ proxies:
     short-id: "5bc76436f2905fba"
   grpc-opts:
     grpc-service-name: "api.v1.StreamService"
+- name: 🇫🇷--->🇫🇷 613c
+  type: vless
+  server: 35.181.156.38
+  port: 22223
+  uuid: "e4514801-0d5a-42ba-869f-39bd605aef9e"
+  udp: true
+  network: tcp
+  tls: false
+- name: 🇫🇷--->🇫🇷 643
+  type: vless
+  server: 89.208.113.16
+  port: 443
+  uuid: "adce7c2a-3191-49ae-b61c-9b8258ea1b0e"
+  udp: true
+  network: tcp
+  tls: false
 - name: 🇩🇪--->🇩🇪 459
   type: vless
   server: 5.75.201.77
@@ -781,65 +568,15 @@ proxies:
   udp: true
   network: tcp
   tls: false
-- name: 🇳🇱--->🇳🇱 449
+- name: 🇱🇻--->🇫🇮 604
   type: vless
-  server: getsavesafe.net
-  port: 443
-  uuid: "39c42b0a-b823-4c93-bb99-74b4183e518d"
+  server: 31.57.107.134
+  port: 2090
+  uuid: "eab915bc-d2df-73d1-47d0-6eb240497055"
   udp: true
   network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "getsavesafe.net"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: "5Z6PwoPSNBLPIsX8lZtHM7-Y-psMMR1vz5Pit0EVISs"
-    short-id: "82f5d3a1e9c0b661"
-- name: 🇷🇺--->🇵🇱 434b
-  type: vless
-  server: 72.56.38.194
-  port: 9892
-  uuid: "884d811f-577b-421e-aabb-608660b0ecfa"
-  udp: true
-  network: grpc
-  tls: true
-  servername: "dl.google.com"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: "bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU"
-    short-id: ""
-  grpc-opts:
-    grpc-service-name: "grpc-tunnel"
-- name: 🇷🇺--->🇩🇪 437c
-  type: vless
-  server: 5.189.223.90
-  port: 9891
-  uuid: "884d811f-577b-421e-aabb-608660b0ecfa"
-  udp: true
-  network: grpc
-  tls: true
-  servername: "dl.google.com"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: "Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0"
-    short-id: "aa"
-  grpc-opts:
-    grpc-service-name: "grpc-tunnel"
-- name: 🇪🇪--->🇪🇪 531
-  type: vless
-  server: 185.223.171.15
-  port: 443
-  uuid: "56b812e4-2d96-4ce5-b365-6c801663a37a"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "ee-1.124515.xyz"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "qVSnKdHTBIF_RG9lBpAhISXE3T_h11danCgBitXP6Tc"
-    short-id: "c092a032a8c54f53"
-- name: '--->🇫🇮 411b'
+  tls: false
+- name: '--->🇫🇮 S 411a'
   type: vless
   server: node6.mxvpn.dev
   port: 443
@@ -853,151 +590,99 @@ proxies:
   reality-opts:
     public-key: "TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw"
     short-id: "bbc68cec8bb8d2e3"
-- name: 🇫🇷--->🇫🇮 591q
+- name: 🇱🇻--->🇫🇮 605
   type: vless
-  server: 199.232.170.73
-  port: 80
-  uuid: "cfde0aba-0985-4034-ab92-50b1534b126c"
+  server: 31.57.62.25
+  port: 2090
+  uuid: "eab915bc-d2df-73d1-47d0-6eb240497055"
   udp: true
-  network: ws
+  network: tcp
   tls: false
-  ws-opts:
-    path: "/?Telegram-WangCai2🇨🇳"
-    headers:
-      Host: "BankMelat.glObal.ssl.faStly.nEt"
-- name: '--->🇪🇪 510c'
+- name: 🇱🇻--->🇫🇮 603
   type: vless
-  server: m12r.speedtestmark.com
-  port: 443
-  uuid: "de6de747-2658-4a42-99de-9ad7ba046d1b"
+  server: 193.164.155.102
+  port: 2090
+  uuid: "eab915bc-d2df-73d1-47d0-6eb240497055"
   udp: true
   network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "m12r.speedtestmark.com"
-  client-fingerprint: randomized
-  reality-opts:
-    public-key: "Bp49BC_XtsdC4Jvp5p-vfR1voCti6QrYyIPKQSIt_Hw"
-    short-id: "4326"
-- name: 🇺🇸--->🇺🇸 584f
-  type: vless
-  server: 88.218.44.4
-  port: 443
-  uuid: "7c74b0e4-f132-5583-4692-622a7d6b71a4"
-  udp: true
-  network: xhttp
-  tls: true
-  servername: "dl.google.com"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "Rt2wltCWOxIroFggNWMudZDBJXls8DsF4icaWqxKDk8"
-    short-id: ""
-- name: 🇭🇺--->🇭🇺 545f
-  type: vless
-  server: 37.221.210.188
-  port: 443
-  uuid: "fc64e874-656e-402e-a303-e0d161f907fb"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "hu888.bearbeer.digital"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: "z-TKWOWgZLfzQ-wNdwXQqVwaUgCmbchM2Xtrk1NGynU"
-    short-id: ""
+  tls: false
 proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - 🇩🇰--->🇩🇰 533b
-  - 🇷🇺--->🇸🇪 431a
-  - '--->🇩🇪 590c'
-  - 🇩🇪--->🇩🇪 585c
-  - 🇷🇺--->🇳🇱 549g
+  - 🇩🇪--->🇩🇪 624a
+  - '--->🇸🇪 628b'
+  - '--->🇩🇪 590'
+  - '--->🇧🇬 623a'
+  - 🇫🇷--->🇫🇷 640a
+  - 🇳🇱--->🇳🇱 629b
+  - 🇷🇺--->🇳🇱 638b
+  - 🇸🇪--->🇸🇪 644c
+  - 🇪🇪--->🇪🇪 626
   - '--->🇳🇱 568b'
-  - '--->🇳🇱 496a'
-  - 🇺🇸--->🇺🇸 555h
-  - 🇭🇺--->🇭🇺 513d
-  - 🇷🇺--->🇳🇱 534
-  - 🇫🇷--->🇩🇪 569h
-  - 🇷🇺--->🇳🇱 575j
-  - '--->🇳🇱 372a'
-  - 🇷🇺--->🇩🇪 594k
-  - 🇫🇷--->🇩🇪 559f
-  - 🇫🇷--->🇩🇪 558e
-  - 🇷🇺--->🇳🇱 566i
-  - 🇳🇱--->🇳🇱 560d
-  - 🇫🇷--->🇩🇪 565g
-  - 🇵🇱--->🇵🇱 490c
-  - 🇸🇪--->🇸🇪 592b
-  - 🇫🇷--->🇩🇪 553d
-  - 🇫🇷--->🇫🇮 583m
-  - 🇮🇹--->🇮🇹 599f
-  - 🇮🇹--->🇮🇹 419a
-  - 🇫🇷--->🇩🇪 578k
-  - 🇫🇷--->🇩🇪 564e
-  - 🇳🇱--->🇳🇱 455b
-  - 🇫🇷--->🇩🇪 572i
-  - 🇫🇷--->🇫🇮 548c
+  - '--->🇩🇪 637b'
+  - 🇨🇭--->🇨🇭 621a
+  - '--->🇮🇹 641b'
+  - '--->🇪🇪 622'
+  - 🇫🇷--->🇩🇪 558a
+  - 🇳🇱--->🇳🇱 560a
+  - '--->🇩🇪 627a'
+  - '--->🇫🇮 636b'
+  - 🇫🇮--->🇫🇮 630b
+  - 🇮🇹--->🇮🇹 599b
+  - 🇮🇹--->🇮🇹 S 419
   - 🇩🇪--->🇩🇪 500a
-  - 🇫🇷--->🇩🇪 586n
-  - '--->🇩🇪 479b'
-  - 🇫🇮--->🇫🇮 546a
-  - 🇩🇪--->🇩🇪 563
-  - 🇫🇷--->🇩🇪 573j
+  - 🇫🇷--->🇩🇪 586d
+  - 🇫🇷--->🇩🇪 573b
   - 🇫🇷--->🇫🇷 601b
-  - 🇫🇷--->🇩🇪 587o
-  - 🇮🇹--->🇮🇹 600d
-  - '--->🇳🇱 410a'
-  - 🇵🇱--->🇵🇱 557c
-  - 🇫🇷--->🇩🇪 488b
-  - 🇫🇷--->🇫🇷 598a
-  - 🇳🇱--->🇳🇱 416a
-  - '--->🇩🇪 471a'
-  - 🇫🇷--->🇩🇪 589p
-  - '--->🇩🇪 412c'
-  - 🇫🇷--->🇩🇪 580l
-  - 🇫🇷--->🇩🇪 567b
-  - '--->🇸🇪 530d'
-  - 🇺🇸--->🇩🇪 535
-  - '--->🇩🇪 448a'
-  - 🇳🇱--->🇳🇱 571e
-  - 🇮🇹--->🇮🇹 597c
-  - 🇫🇷--->🇩🇪 542b
-  - 🇨🇦--->🇩🇪 596l
-  - 🇫🇷--->🇩🇪 538a
-  - 🇺🇸--->🇵🇱 517b
-  - 🇫🇷--->🇫🇮 593r
-  - 🇨🇦--->🇩🇪 537e
-  - '--->🇩🇪 515d'
+  - 🇮🇹--->🇮🇹 600b
+  - '--->🇳🇱 S 410a'
+  - 🇵🇱--->🇵🇱 557a
+  - 🇱🇻--->🇫🇮 615
+  - 🇳🇱--->🇳🇱 618
+  - 🇫🇷--->🇩🇪 488
+  - 🇫🇷--->🇫🇷 598b
+  - 🇳🇱--->🇳🇱 S 416a
+  - 🇱🇻--->🇫🇮 609c
+  - 🇱🇻--->🇫🇮 612b
+  - 🇫🇷--->🇩🇪 580c
+  - 🇫🇮--->🇫🇮 642b
+  - '--->🇮🇹 632a'
+  - 🇫🇷--->🇩🇪 567a
+  - '--->🇫🇮 639c'
+  - 🇮🇹--->🇮🇹 597a
+  - 🇱🇻--->🇫🇮 607
+  - 🇫🇷--->🇫🇷 631
+  - 🇱🇻--->🇫🇮 611
+  - 🇫🇷--->🇩🇪 593e
+  - '--->🇩🇪 515'
+  - 🇫🇷--->🇫🇷 613c
+  - 🇫🇷--->🇫🇷 643
   - 🇩🇪--->🇩🇪 459
-  - 🇳🇱--->🇳🇱 449
-  - 🇷🇺--->🇵🇱 434b
-  - 🇷🇺--->🇩🇪 437c
-  - 🇪🇪--->🇪🇪 531
-  - '--->🇫🇮 411b'
-  - 🇫🇷--->🇫🇮 591q
-  - '--->🇪🇪 510c'
-  - 🇺🇸--->🇺🇸 584f
-  - 🇭🇺--->🇭🇺 545f
+  - 🇱🇻--->🇫🇮 604
+  - '--->🇫🇮 S 411a'
+  - 🇱🇻--->🇫🇮 605
+  - 🇱🇻--->🇫🇮 603
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
 - name: 📁 Группа A
   type: url-test
   proxies:
-  - 🇫🇮--->🇫🇮 546a
-  - '--->🇩🇪 448a'
-  - '--->🇳🇱 372a'
-  - 🇫🇷--->🇫🇷 598a
-  - 🇫🇷--->🇩🇪 538a
-  - '--->🇳🇱 496a'
-  - 🇮🇹--->🇮🇹 419a
-  - 🇷🇺--->🇸🇪 431a
-  - 🇳🇱--->🇳🇱 416a
-  - '--->🇳🇱 410a'
-  - '--->🇩🇪 471a'
+  - 🇮🇹--->🇮🇹 597a
+  - 🇫🇷--->🇩🇪 558a
+  - 🇫🇷--->🇩🇪 567a
+  - 🇵🇱--->🇵🇱 557a
+  - 🇳🇱--->🇳🇱 S 416a
+  - '--->🇳🇱 S 410a'
+  - '--->🇩🇪 627a'
+  - '--->🇮🇹 632a'
+  - 🇨🇭--->🇨🇭 621a
+  - 🇩🇪--->🇩🇪 624a
+  - '--->🇧🇬 623a'
+  - '--->🇫🇮 S 411a'
+  - 🇫🇷--->🇫🇷 640a
+  - 🇳🇱--->🇳🇱 560a
   - 🇩🇪--->🇩🇪 500a
   url: https://www.gstatic.com/generate_204
   interval: 60
@@ -1005,65 +690,32 @@ proxy-groups:
 - name: 📁 Группа B
   type: url-test
   proxies:
+  - 🇮🇹--->🇮🇹 600b
+  - 🇫🇷--->🇩🇪 573b
   - '--->🇳🇱 568b'
-  - '--->🇩🇪 479b'
-  - '--->🇫🇮 411b'
+  - 🇫🇷--->🇫🇷 598b
+  - 🇮🇹--->🇮🇹 599b
+  - '--->🇩🇪 637b'
+  - '--->🇸🇪 628b'
+  - 🇫🇮--->🇫🇮 642b
+  - 🇳🇱--->🇳🇱 629b
+  - 🇷🇺--->🇳🇱 638b
+  - '--->🇫🇮 636b'
+  - 🇫🇮--->🇫🇮 630b
+  - '--->🇮🇹 641b'
   - 🇫🇷--->🇫🇷 601b
-  - 🇫🇷--->🇩🇪 542b
-  - 🇫🇷--->🇩🇪 567b
-  - 🇸🇪--->🇸🇪 592b
-  - 🇳🇱--->🇳🇱 455b
-  - 🇷🇺--->🇵🇱 434b
-  - 🇩🇰--->🇩🇰 533b
-  - 🇫🇷--->🇩🇪 488b
-  - 🇺🇸--->🇵🇱 517b
+  - 🇱🇻--->🇫🇮 612b
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
 - name: 📁 Группа C
   type: url-test
   proxies:
-  - '--->🇩🇪 590c'
-  - '--->🇪🇪 510c'
-  - '--->🇩🇪 412c'
-  - 🇫🇷--->🇫🇮 548c
-  - 🇮🇹--->🇮🇹 597c
-  - 🇵🇱--->🇵🇱 490c
-  - 🇷🇺--->🇩🇪 437c
-  - 🇩🇪--->🇩🇪 585c
-  - 🇵🇱--->🇵🇱 557c
-  url: https://www.gstatic.com/generate_204
-  interval: 60
-  tolerance: 80
-- name: 📁 Группа D
-  type: url-test
-  proxies:
-  - '--->🇸🇪 530d'
-  - 🇫🇷--->🇩🇪 553d
-  - 🇮🇹--->🇮🇹 600d
-  - '--->🇩🇪 515d'
-  - 🇭🇺--->🇭🇺 513d
-  - 🇳🇱--->🇳🇱 560d
-  url: https://www.gstatic.com/generate_204
-  interval: 60
-  tolerance: 80
-- name: 📁 Группа E
-  type: url-test
-  proxies:
-  - 🇫🇷--->🇩🇪 558e
-  - 🇨🇦--->🇩🇪 537e
-  - 🇫🇷--->🇩🇪 564e
-  - 🇳🇱--->🇳🇱 571e
-  url: https://www.gstatic.com/generate_204
-  interval: 60
-  tolerance: 80
-- name: 📁 Группа F
-  type: url-test
-  proxies:
-  - 🇫🇷--->🇩🇪 559f
-  - 🇭🇺--->🇭🇺 545f
-  - 🇮🇹--->🇮🇹 599f
-  - 🇺🇸--->🇺🇸 584f
+  - 🇫🇷--->🇩🇪 580c
+  - 🇫🇷--->🇫🇷 613c
+  - 🇱🇻--->🇫🇮 609c
+  - 🇸🇪--->🇸🇪 644c
+  - '--->🇫🇮 639c'
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -1074,79 +726,58 @@ proxy-groups:
   - 📁 Группа A
   - 📁 Группа B
   - 📁 Группа C
-  - 📁 Группа D
-  - 📁 Группа E
-  - 📁 Группа F
-  - 🇩🇰--->🇩🇰 533b
-  - 🇷🇺--->🇸🇪 431a
-  - '--->🇩🇪 590c'
-  - 🇩🇪--->🇩🇪 585c
-  - 🇷🇺--->🇳🇱 549g
+  - 🇩🇪--->🇩🇪 624a
+  - '--->🇸🇪 628b'
+  - '--->🇩🇪 590'
+  - '--->🇧🇬 623a'
+  - 🇫🇷--->🇫🇷 640a
+  - 🇳🇱--->🇳🇱 629b
+  - 🇷🇺--->🇳🇱 638b
+  - 🇸🇪--->🇸🇪 644c
+  - 🇪🇪--->🇪🇪 626
   - '--->🇳🇱 568b'
-  - '--->🇳🇱 496a'
-  - 🇺🇸--->🇺🇸 555h
-  - 🇭🇺--->🇭🇺 513d
-  - 🇷🇺--->🇳🇱 534
-  - 🇫🇷--->🇩🇪 569h
-  - 🇷🇺--->🇳🇱 575j
-  - '--->🇳🇱 372a'
-  - 🇷🇺--->🇩🇪 594k
-  - 🇫🇷--->🇩🇪 559f
-  - 🇫🇷--->🇩🇪 558e
-  - 🇷🇺--->🇳🇱 566i
-  - 🇳🇱--->🇳🇱 560d
-  - 🇫🇷--->🇩🇪 565g
-  - 🇵🇱--->🇵🇱 490c
-  - 🇸🇪--->🇸🇪 592b
-  - 🇫🇷--->🇩🇪 553d
-  - 🇫🇷--->🇫🇮 583m
-  - 🇮🇹--->🇮🇹 599f
-  - 🇮🇹--->🇮🇹 419a
-  - 🇫🇷--->🇩🇪 578k
-  - 🇫🇷--->🇩🇪 564e
-  - 🇳🇱--->🇳🇱 455b
-  - 🇫🇷--->🇩🇪 572i
-  - 🇫🇷--->🇫🇮 548c
+  - '--->🇩🇪 637b'
+  - 🇨🇭--->🇨🇭 621a
+  - '--->🇮🇹 641b'
+  - '--->🇪🇪 622'
+  - 🇫🇷--->🇩🇪 558a
+  - 🇳🇱--->🇳🇱 560a
+  - '--->🇩🇪 627a'
+  - '--->🇫🇮 636b'
+  - 🇫🇮--->🇫🇮 630b
+  - 🇮🇹--->🇮🇹 599b
+  - 🇮🇹--->🇮🇹 S 419
   - 🇩🇪--->🇩🇪 500a
-  - 🇫🇷--->🇩🇪 586n
-  - '--->🇩🇪 479b'
-  - 🇫🇮--->🇫🇮 546a
-  - 🇩🇪--->🇩🇪 563
-  - 🇫🇷--->🇩🇪 573j
+  - 🇫🇷--->🇩🇪 586d
+  - 🇫🇷--->🇩🇪 573b
   - 🇫🇷--->🇫🇷 601b
-  - 🇫🇷--->🇩🇪 587o
-  - 🇮🇹--->🇮🇹 600d
-  - '--->🇳🇱 410a'
-  - 🇵🇱--->🇵🇱 557c
-  - 🇫🇷--->🇩🇪 488b
-  - 🇫🇷--->🇫🇷 598a
-  - 🇳🇱--->🇳🇱 416a
-  - '--->🇩🇪 471a'
-  - 🇫🇷--->🇩🇪 589p
-  - '--->🇩🇪 412c'
-  - 🇫🇷--->🇩🇪 580l
-  - 🇫🇷--->🇩🇪 567b
-  - '--->🇸🇪 530d'
-  - 🇺🇸--->🇩🇪 535
-  - '--->🇩🇪 448a'
-  - 🇳🇱--->🇳🇱 571e
-  - 🇮🇹--->🇮🇹 597c
-  - 🇫🇷--->🇩🇪 542b
-  - 🇨🇦--->🇩🇪 596l
-  - 🇫🇷--->🇩🇪 538a
-  - 🇺🇸--->🇵🇱 517b
-  - 🇫🇷--->🇫🇮 593r
-  - 🇨🇦--->🇩🇪 537e
-  - '--->🇩🇪 515d'
+  - 🇮🇹--->🇮🇹 600b
+  - '--->🇳🇱 S 410a'
+  - 🇵🇱--->🇵🇱 557a
+  - 🇱🇻--->🇫🇮 615
+  - 🇳🇱--->🇳🇱 618
+  - 🇫🇷--->🇩🇪 488
+  - 🇫🇷--->🇫🇷 598b
+  - 🇳🇱--->🇳🇱 S 416a
+  - 🇱🇻--->🇫🇮 609c
+  - 🇱🇻--->🇫🇮 612b
+  - 🇫🇷--->🇩🇪 580c
+  - 🇫🇮--->🇫🇮 642b
+  - '--->🇮🇹 632a'
+  - 🇫🇷--->🇩🇪 567a
+  - '--->🇫🇮 639c'
+  - 🇮🇹--->🇮🇹 597a
+  - 🇱🇻--->🇫🇮 607
+  - 🇫🇷--->🇫🇷 631
+  - 🇱🇻--->🇫🇮 611
+  - 🇫🇷--->🇩🇪 593e
+  - '--->🇩🇪 515'
+  - 🇫🇷--->🇫🇷 613c
+  - 🇫🇷--->🇫🇷 643
   - 🇩🇪--->🇩🇪 459
-  - 🇳🇱--->🇳🇱 449
-  - 🇷🇺--->🇵🇱 434b
-  - 🇷🇺--->🇩🇪 437c
-  - 🇪🇪--->🇪🇪 531
-  - '--->🇫🇮 411b'
-  - 🇫🇷--->🇫🇮 591q
-  - '--->🇪🇪 510c'
-  - 🇺🇸--->🇺🇸 584f
-  - 🇭🇺--->🇭🇺 545f
+  - 🇱🇻--->🇫🇮 604
+  - '--->🇫🇮 S 411a'
+  - 🇱🇻--->🇫🇮 605
+  - 🇱🇻--->🇫🇮 603
 rules:
 - MATCH,PROXY
