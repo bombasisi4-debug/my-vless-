@@ -3,7 +3,21 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: '--->🇧🇬 1'
+- name: '--->🇦🇹 1'
+  type: vless
+  server: api.yandex-dev.online
+  port: 443
+  uuid: "9c4c3007-ad10-443b-bdbf-4787e6d40aa7"
+  udp: true
+  network: raw
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "api.yandex-dev.online"
+  client-fingerprint: qq
+  reality-opts:
+    public-key: "IuvAXlAWBpeXehmEk0P-FIGTctUhny2H3UilbWWfJC0"
+    short-id: "122218f4c1f172e4"
+- name: '--->🇧🇬 2'
   type: vless
   server: dednd.skorostnet.space
   port: 443
@@ -17,7 +31,21 @@ proxies:
   reality-opts:
     public-key: "OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw"
     short-id: "d67ec5a8fc40ebea"
-- name: 🇨🇭--->🇨🇭 2
+- name: '--->🇨🇭 3'
+  type: vless
+  server: sweic.lodkirmm.ru
+  port: 50170
+  uuid: "ee6950b1-5a5a-4bb6-ae54-814070840281"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "sweic.lodkirmm.ru"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "7U__DL9_dFdZ2rMLH8TRPEOY24EJfg7ESXslAdujgzk"
+    short-id: "dc36bfb153f31f9a"
+- name: 🇨🇭--->🇨🇭 4
   type: vless
   server: 83.228.246.208
   port: 50170
@@ -31,7 +59,7 @@ proxies:
   reality-opts:
     public-key: "7U__DL9_dFdZ2rMLH8TRPEOY24EJfg7ESXslAdujgzk"
     short-id: "dc36bfb153f31f9a"
-- name: 🇩🇪--->🇩🇪 3
+- name: 🇩🇪--->🇩🇪 5
   type: vless
   server: 2.58.66.76
   port: 443
@@ -45,7 +73,7 @@ proxies:
   reality-opts:
     public-key: "03MJy26A8kc5c8aMMdkY3s_CX3qiw0eTmjrc3UCBLm0"
     short-id: ""
-- name: '--->🇩🇪 4'
+- name: '--->🇩🇪 6'
   type: vless
   server: free-de-04.la-la-land.top
   port: 443
@@ -58,7 +86,7 @@ proxies:
   reality-opts:
     public-key: "uRuW2K9JNw64jgAVEdV39NMh_udtVD6xxEV-dQFATHY"
     short-id: ""
-- name: '--->🇩🇪 5'
+- name: '--->🇩🇪 7'
   type: vless
   server: s1.esantion.info
   port: 24206
@@ -69,7 +97,21 @@ proxies:
   httpupgrade-opts:
     path: "/?ed=2048?@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn"
     host: "s1.esantion.info"
-- name: 🇫🇷--->🇩🇪 6
+- name: '--->🇩🇪 8'
+  type: vless
+  server: german.lodkirmm.ru
+  port: 443
+  uuid: "ee6950b1-5a5a-4bb6-ae54-814070840281"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "german.lodkirmm.ru"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "6fwpt8WW46VND7VgVV5lQSteCUgJsZbRR092VDZ2nFs"
+    short-id: ""
+- name: 🇫🇷--->🇩🇪 9
   type: vless
   server: 199.232.170.136
   port: 80
@@ -81,7 +123,7 @@ proxies:
     path: "/?Telegram-WangCai2🇨🇳"
     headers:
       Host: "BankMelat.glObal.ssl.faStly.nEt"
-- name: '--->🇩🇪 7'
+- name: '--->🇩🇪 10'
   type: vless
   server: pl.node.ghostsyvpn.org
   port: 443
@@ -95,7 +137,7 @@ proxies:
   reality-opts:
     public-key: "03MJy26A8kc5c8aMMdkY3s_CX3qiw0eTmjrc3UCBLm0"
     short-id: ""
-- name: 🇩🇪--->🇩🇪 8
+- name: 🇩🇪--->🇩🇪 11
   type: vless
   server: 5.175.249.199
   port: 52315
@@ -107,7 +149,7 @@ proxies:
     path: "/"
     headers:
       Host: "5.175.249.199"
-- name: 🇫🇷--->🇩🇪 9
+- name: 🇫🇷--->🇩🇪 12
   type: vless
   server: 199.232.170.213
   port: 80
@@ -119,7 +161,7 @@ proxies:
     path: "/?Telegram-WangCai2🇨🇳"
     headers:
       Host: "BankMelat.glObal.ssl.faStly.nEt"
-- name: 🇫🇷--->🇩🇪 10
+- name: 🇫🇷--->🇩🇪 13
   type: vless
   server: 199.232.170.74
   port: 80
@@ -131,7 +173,7 @@ proxies:
     path: "/?Telegram-WangCai2🇨🇳"
     headers:
       Host: "BankMelat.glObal.ssl.faStly.nEt"
-- name: 🇫🇷--->🇩🇪 11
+- name: 🇫🇷--->🇩🇪 14
   type: vless
   server: 199.232.170.246
   port: 80
@@ -143,7 +185,7 @@ proxies:
     path: "/?Telegram-TGRVPN🇨🇳"
     headers:
       Host: "BankMelat.glObal.ssl.faStly.nEt"
-- name: 🇫🇷--->🇩🇪 12
+- name: 🇫🇷--->🇩🇪 15
   type: vless
   server: 199.232.170.162
   port: 80
@@ -155,7 +197,7 @@ proxies:
     path: "/?Telegram-WangCai2🇨🇳"
     headers:
       Host: "BankMelat.glObal.ssl.faStly.nEt"
-- name: 🇫🇷--->🇩🇪 13
+- name: 🇫🇷--->🇩🇪 16
   type: vless
   server: 199.232.170.4
   port: 80
@@ -167,7 +209,7 @@ proxies:
     path: "/?Telegram-WangCai2🇨🇳"
     headers:
       Host: "BankMelat.glObal.ssl.faStly.nEt"
-- name: 🇫🇷--->🇩🇪 14
+- name: 🇫🇷--->🇩🇪 17
   type: vless
   server: 199.232.170.75
   port: 80
@@ -179,7 +221,7 @@ proxies:
     path: "/?Telegram-WangCai2🇨🇳"
     headers:
       Host: "BankMelat.glObal.ssl.faStly.nEt"
-- name: '--->🇩🇪 15'
+- name: '--->🇩🇪 18'
   type: vless
   server: store.noneok.com
   port: 443
@@ -194,7 +236,7 @@ proxies:
     short-id: "5bc76436f2905fba"
   grpc-opts:
     grpc-service-name: "api.v1.StreamService"
-- name: 🇩🇪--->🇩🇪 16
+- name: 🇩🇪--->🇩🇪 19
   type: vless
   server: 5.75.201.77
   port: 51822
@@ -202,7 +244,35 @@ proxies:
   udp: true
   network: tcp
   tls: false
-- name: 🇪🇪--->🇪🇪 17
+- name: '--->🇩🇰 20'
+  type: vless
+  server: dania.lodkirmm.ru
+  port: 443
+  uuid: "ee6950b1-5a5a-4bb6-ae54-814070840281"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "dania.lodkirmm.ru"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "6fwpt8WW46VND7VgVV5lQSteCUgJsZbRR092VDZ2nFs"
+    short-id: ""
+- name: '--->🇪🇪 21'
+  type: vless
+  server: soskeynets.o4ka-internet.com
+  port: 443
+  uuid: "a03df445-0666-4d61-acde-9705009e409c"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "eston3.o4ka-internet.com"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8"
+    short-id: "5629431325884ff0"
+- name: 🇪🇪--->🇪🇪 22
   type: vless
   server: 5.181.202.15
   port: 443
@@ -216,7 +286,21 @@ proxies:
   reality-opts:
     public-key: "V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8"
     short-id: "5629431325884ff0"
-- name: '--->🇪🇪 18'
+- name: '--->🇪🇪 23'
+  type: vless
+  server: est.lodkirmm.ru
+  port: 443
+  uuid: "ee6950b1-5a5a-4bb6-ae54-814070840281"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "est.lodkirmm.ru"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "6fwpt8WW46VND7VgVV5lQSteCUgJsZbRR092VDZ2nFs"
+    short-id: ""
+- name: '--->🇪🇪 24'
   type: vless
   server: eston3.o4ka-internet.com
   port: 443
@@ -230,7 +314,15 @@ proxies:
   reality-opts:
     public-key: "V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8"
     short-id: "5629431325884ff0"
-- name: '--->🇫🇮 19'
+- name: 🇫🇮--->🇫🇮 25
+  type: vless
+  server: 65.109.201.234
+  port: 24508
+  uuid: "8d0718bd-5b4b-4e6a-92af-669a65740869"
+  udp: true
+  network: xhttp
+  tls: false
+- name: '--->🇫🇮 26'
   type: vless
   server: tir.tunnelpoint.space
   port: 443
@@ -244,7 +336,7 @@ proxies:
   reality-opts:
     public-key: "aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o"
     short-id: "fdda9806fe5d8584"
-- name: 🇫🇮--->🇫🇮 20
+- name: 🇫🇮--->🇫🇮 27
   type: vless
   server: 138.124.112.196
   port: 443
@@ -258,7 +350,7 @@ proxies:
   reality-opts:
     public-key: "TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw"
     short-id: "bbc68cec8bb8d2e3"
-- name: 🇱🇻--->🇫🇮 21
+- name: 🇱🇻--->🇫🇮 28
   type: vless
   server: 31.57.26.204
   port: 2090
@@ -266,7 +358,15 @@ proxies:
   udp: true
   network: tcp
   tls: false
-- name: 🇱🇻--->🇫🇮 22
+- name: '--->🇫🇮 29'
+  type: vless
+  server: h.telegram-tirexnet.kdns.fr
+  port: 24508
+  uuid: "8d0718bd-5b4b-4e6a-92af-669a65740869"
+  udp: true
+  network: xhttp
+  tls: false
+- name: 🇱🇻--->🇫🇮 30
   type: vless
   server: 31.57.61.146
   port: 2090
@@ -274,7 +374,7 @@ proxies:
   udp: true
   network: tcp
   tls: false
-- name: 🇱🇻--->🇫🇮 23
+- name: 🇱🇻--->🇫🇮 31
   type: vless
   server: 46.8.232.168
   port: 2090
@@ -282,7 +382,7 @@ proxies:
   udp: true
   network: tcp
   tls: false
-- name: 🇫🇮--->🇫🇮 24
+- name: 🇫🇮--->🇫🇮 32
   type: vless
   server: 138.124.112.198
   port: 443
@@ -296,7 +396,19 @@ proxies:
   reality-opts:
     public-key: "TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw"
     short-id: "bbc68cec8bb8d2e3"
-- name: '--->🇫🇮 25'
+- name: '--->🇫🇮 33'
+  type: vless
+  server: h.telegram-tirexnet.kdns.fr
+  port: 24056
+  uuid: "8d0718bd-5b4b-4e6a-92af-669a65740869"
+  udp: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: "/"
+    headers:
+      Host: "h.telegram-tirexnet.kdns.fr"
+- name: '--->🇫🇮 34'
   type: vless
   server: dev.tunnelpoint.space
   port: 443
@@ -310,7 +422,7 @@ proxies:
   reality-opts:
     public-key: "aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o"
     short-id: "fdda9806fe5d8584"
-- name: 🇱🇻--->🇫🇮 26
+- name: 🇱🇻--->🇫🇮 35
   type: vless
   server: 31.57.62.134
   port: 2090
@@ -318,7 +430,7 @@ proxies:
   udp: true
   network: tcp
   tls: false
-- name: 🇱🇻--->🇫🇮 27
+- name: 🇱🇻--->🇫🇮 36
   type: vless
   server: 91.108.189.5
   port: 2090
@@ -326,7 +438,7 @@ proxies:
   udp: true
   network: tcp
   tls: false
-- name: 🇱🇻--->🇫🇮 28
+- name: 🇱🇻--->🇫🇮 37
   type: vless
   server: 31.57.107.134
   port: 2090
@@ -334,7 +446,17 @@ proxies:
   udp: true
   network: tcp
   tls: false
-- name: '--->🇫🇮 29'
+- name: '--->🇫🇮 38'
+  type: vless
+  server: h.telegram-tirexnet.kdns.fr
+  port: 23961
+  uuid: "8d0718bd-5b4b-4e6a-92af-669a65740869"
+  udp: true
+  network: grpc
+  tls: false
+  grpc-opts:
+    grpc-service-name: ""
+- name: '--->🇫🇮 39'
   type: vless
   server: node6.mxvpn.dev
   port: 443
@@ -348,7 +470,7 @@ proxies:
   reality-opts:
     public-key: "TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw"
     short-id: "bbc68cec8bb8d2e3"
-- name: 🇱🇻--->🇫🇮 30
+- name: 🇱🇻--->🇫🇮 40
   type: vless
   server: 31.57.62.25
   port: 2090
@@ -356,7 +478,7 @@ proxies:
   udp: true
   network: tcp
   tls: false
-- name: 🇱🇻--->🇫🇮 31
+- name: 🇱🇻--->🇫🇮 41
   type: vless
   server: 193.164.155.102
   port: 2090
@@ -364,7 +486,23 @@ proxies:
   udp: true
   network: tcp
   tls: false
-- name: 🇫🇷--->🇫🇷 32
+- name: 🇫🇷--->🇫🇷 42
+  type: vless
+  server: 15.237.147.218
+  port: 22223
+  uuid: "e4514801-0d5a-42ba-869f-39bd605aef9e"
+  udp: true
+  network: tcp
+  tls: false
+- name: 🇫🇷--->🇫🇷 43
+  type: vless
+  server: 15.237.147.218
+  port: 22224
+  uuid: "e4514801-0d5a-42ba-869f-39bd605aef9e"
+  udp: true
+  network: tcp
+  tls: false
+- name: 🇫🇷--->🇫🇷 44
   type: vless
   server: 147.45.42.27
   port: 443
@@ -378,7 +516,15 @@ proxies:
   reality-opts:
     public-key: "TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw"
     short-id: "bbc68cec8bb8d2e3"
-- name: 🇫🇷--->🇫🇷 33
+- name: 🇫🇷--->🇫🇷 45
+  type: vless
+  server: 15.237.147.218
+  port: 22222
+  uuid: "e4514801-0d5a-42ba-869f-39bd605aef9e"
+  udp: true
+  network: tcp
+  tls: false
+- name: 🇫🇷--->🇫🇷 46
   type: vless
   server: 13.36.44.201
   port: 22223
@@ -386,7 +532,7 @@ proxies:
   udp: true
   network: tcp
   tls: false
-- name: 🇫🇷--->🇫🇷 34
+- name: 🇫🇷--->🇫🇷 47
   type: vless
   server: 13.36.44.201
   port: 22222
@@ -394,7 +540,7 @@ proxies:
   udp: true
   network: tcp
   tls: false
-- name: 🇫🇷--->🇫🇷 35
+- name: 🇫🇷--->🇫🇷 48
   type: vless
   server: 13.38.194.199
   port: 22223
@@ -402,7 +548,7 @@ proxies:
   udp: true
   network: tcp
   tls: false
-- name: 🇫🇷--->🇫🇷 36
+- name: 🇫🇷--->🇫🇷 49
   type: vless
   server: 35.181.156.38
   port: 22223
@@ -410,7 +556,7 @@ proxies:
   udp: true
   network: tcp
   tls: false
-- name: 🇫🇷--->🇫🇷 37
+- name: 🇫🇷--->🇫🇷 50
   type: vless
   server: 89.208.113.16
   port: 443
@@ -418,7 +564,21 @@ proxies:
   udp: true
   network: tcp
   tls: false
-- name: '--->🇮🇹 38'
+- name: '--->🇬🇧 51'
+  type: vless
+  server: rt.tunnelpoint.space
+  port: 443
+  uuid: "c04bf2df-2b7f-44da-a893-3792d3910fd8"
+  udp: true
+  network: raw
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "rt.tunnelpoint.space"
+  client-fingerprint: qq
+  reality-opts:
+    public-key: "aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o"
+    short-id: "fdda9806fe5d8584"
+- name: '--->🇮🇹 52'
   type: vless
   server: italia.lodkirmm.ru
   port: 443
@@ -432,7 +592,7 @@ proxies:
   reality-opts:
     public-key: "6fwpt8WW46VND7VgVV5lQSteCUgJsZbRR092VDZ2nFs"
     short-id: ""
-- name: 🇮🇹--->🇮🇹 39
+- name: 🇮🇹--->🇮🇹 53
   type: vless
   server: 151.115.166.46
   port: 8880
@@ -442,7 +602,7 @@ proxies:
   tls: false
   grpc-opts:
     grpc-service-name: ""
-- name: 🇮🇹--->🇮🇹 40
+- name: 🇮🇹--->🇮🇹 54
   type: vless
   server: 151.115.166.53
   port: 8880
@@ -452,7 +612,7 @@ proxies:
   tls: false
   grpc-opts:
     grpc-service-name: ""
-- name: 🇮🇹--->🇮🇹 41
+- name: 🇮🇹--->🇮🇹 55
   type: vless
   server: 151.115.166.127
   port: 8880
@@ -462,7 +622,17 @@ proxies:
   tls: false
   grpc-opts:
     grpc-service-name: ""
-- name: '--->🇮🇹 42'
+- name: '--->🇮🇹 56'
+  type: vless
+  server: ronaldo33.fordnsdirect.shop
+  port: 8880
+  uuid: "8dc7722c-2767-4eea-a28b-2f8daacc07e3"
+  udp: true
+  network: grpc
+  tls: false
+  grpc-opts:
+    grpc-service-name: ""
+- name: '--->🇮🇹 57'
   type: vless
   server: ronaldo37.fordnsdirect.shop
   port: 8880
@@ -472,7 +642,7 @@ proxies:
   tls: false
   grpc-opts:
     grpc-service-name: ""
-- name: 🇮🇹--->🇮🇹 43
+- name: 🇮🇹--->🇮🇹 58
   type: vless
   server: 151.115.166.5
   port: 8880
@@ -482,7 +652,83 @@ proxies:
   tls: false
   grpc-opts:
     grpc-service-name: ""
-- name: 🇳🇱--->🇳🇱 44
+- name: '--->🇮🇹 59'
+  type: vless
+  server: ronaldo36.fordnsdirect.shop
+  port: 8880
+  uuid: "8dc7722c-2767-4eea-a28b-2f8daacc07e3"
+  udp: true
+  network: grpc
+  tls: false
+  grpc-opts:
+    grpc-service-name: ""
+- name: 🇮🇹--->🇮🇹 60
+  type: vless
+  server: 151.115.166.130
+  port: 8880
+  uuid: "8dc7722c-2767-4eea-a28b-2f8daacc07e3"
+  udp: true
+  network: grpc
+  tls: false
+  grpc-opts:
+    grpc-service-name: ""
+- name: '--->🇳🇱 61'
+  type: vless
+  server: nlau.lodkirmm.ru
+  port: 443
+  uuid: "ee6950b1-5a5a-4bb6-ae54-814070840281"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "nlau.lodkirmm.ru"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "6fwpt8WW46VND7VgVV5lQSteCUgJsZbRR092VDZ2nFs"
+    short-id: ""
+- name: 🇳🇱--->🇳🇱 62
+  type: vless
+  server: 85.155.226.78
+  port: 443
+  uuid: "39c42b0a-b823-4c93-bb99-74b4183e518d"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "getsavesafe.net"
+  client-fingerprint: qq
+  reality-opts:
+    public-key: "5Z6PwoPSNBLPIsX8lZtHM7-Y-psMMR1vz5Pit0EVISs"
+    short-id: "82f5d3a1e9c0b661"
+- name: 🇳🇱--->🇳🇱 63
+  type: vless
+  server: 213.176.64.244
+  port: 443
+  uuid: "564082ff-cf3c-48db-9e10-8ad2312847b4"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "node2.mxvpn.dev"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw"
+    short-id: "bbc68cec8bb8d2e3"
+- name: 🇳🇱--->🇳🇱 64
+  type: vless
+  server: 85.155.226.86
+  port: 443
+  uuid: "39c42b0a-b823-4c93-bb99-74b4183e518d"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "getsavesafe.net"
+  client-fingerprint: qq
+  reality-opts:
+    public-key: "5Z6PwoPSNBLPIsX8lZtHM7-Y-psMMR1vz5Pit0EVISs"
+    short-id: "82f5d3a1e9c0b661"
+- name: 🇳🇱--->🇳🇱 65
   type: vless
   server: 85.155.226.113
   port: 443
@@ -496,7 +742,7 @@ proxies:
   reality-opts:
     public-key: "5Z6PwoPSNBLPIsX8lZtHM7-Y-psMMR1vz5Pit0EVISs"
     short-id: "82f5d3a1e9c0b661"
-- name: 🇷🇺--->🇳🇱 45
+- name: 🇷🇺--->🇳🇱 66
   type: vless
   server: 95.213.143.18
   port: 443
@@ -510,7 +756,55 @@ proxies:
   reality-opts:
     public-key: "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0"
     short-id: "93ae75024604f796"
-- name: '--->🇳🇱 46'
+- name: 🇳🇱--->🇳🇱 67
+  type: vless
+  server: 158.178.149.200
+  port: 62145
+  uuid: "8fb65472-5957-4f64-ba2d-b5812b2f155a"
+  udp: true
+  network: tcp
+  tls: false
+- name: '--->🇳🇱 68'
+  type: vless
+  server: dl.nl.cdn.doctor-alan.ir
+  port: 8080
+  uuid: "312eed52-b74a-41d7-a399-62efdc8f0122"
+  udp: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: "/v-ws"
+    headers:
+      Host: "nl-cdn.doctor-alan-cloud.ir"
+- name: 🇳🇱--->🇳🇱 69
+  type: vless
+  server: 85.155.226.144
+  port: 443
+  uuid: "39c42b0a-b823-4c93-bb99-74b4183e518d"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "getsavesafe.net"
+  client-fingerprint: qq
+  reality-opts:
+    public-key: "5Z6PwoPSNBLPIsX8lZtHM7-Y-psMMR1vz5Pit0EVISs"
+    short-id: "82f5d3a1e9c0b661"
+- name: '--->🇳🇱 70'
+  type: vless
+  server: nl1.vpnchinazes.ru
+  port: 443
+  uuid: "ee6950b1-5a5a-4bb6-ae54-814070840281"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "nl1.vpnchinazes.ru"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "6fwpt8WW46VND7VgVV5lQSteCUgJsZbRR092VDZ2nFs"
+    short-id: ""
+- name: '--->🇳🇱 71'
   type: vless
   server: test.skorostnet.space
   port: 443
@@ -524,7 +818,91 @@ proxies:
   reality-opts:
     public-key: "OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw"
     short-id: "d67ec5a8fc40ebea"
-- name: 🇳🇱--->🇳🇱 47
+- name: 🇳🇱--->🇳🇱 72
+  type: vless
+  server: 85.155.226.207
+  port: 443
+  uuid: "39c42b0a-b823-4c93-bb99-74b4183e518d"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "getsavesafe.net"
+  client-fingerprint: qq
+  reality-opts:
+    public-key: "5Z6PwoPSNBLPIsX8lZtHM7-Y-psMMR1vz5Pit0EVISs"
+    short-id: "82f5d3a1e9c0b661"
+- name: '--->🇳🇱 73'
+  type: vless
+  server: nl3.freekeysh110.online
+  port: 443
+  uuid: "39ff715b-2fcc-4954-b739-399cc4b67d53"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "nl3.freekeysh110.online"
+  client-fingerprint: edge
+  reality-opts:
+    public-key: "zVEDSKwQEIM6xRD7YEhJakteNI2xPK3xhhKulDo_vWg"
+    short-id: "b664d93e9d7a04f1"
+- name: 🇳🇱--->🇳🇱 74
+  type: vless
+  server: 85.155.226.6
+  port: 443
+  uuid: "39c42b0a-b823-4c93-bb99-74b4183e518d"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "getsavesafe.net"
+  client-fingerprint: qq
+  reality-opts:
+    public-key: "5Z6PwoPSNBLPIsX8lZtHM7-Y-psMMR1vz5Pit0EVISs"
+    short-id: "82f5d3a1e9c0b661"
+- name: 🇳🇱--->🇳🇱 75
+  type: vless
+  server: 85.155.226.96
+  port: 443
+  uuid: "39c42b0a-b823-4c93-bb99-74b4183e518d"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "getsavesafe.net"
+  client-fingerprint: qq
+  reality-opts:
+    public-key: "5Z6PwoPSNBLPIsX8lZtHM7-Y-psMMR1vz5Pit0EVISs"
+    short-id: "82f5d3a1e9c0b661"
+- name: 🇳🇱--->🇳🇱 76
+  type: vless
+  server: 85.155.226.22
+  port: 443
+  uuid: "39c42b0a-b823-4c93-bb99-74b4183e518d"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "getsavesafe.net"
+  client-fingerprint: qq
+  reality-opts:
+    public-key: "5Z6PwoPSNBLPIsX8lZtHM7-Y-psMMR1vz5Pit0EVISs"
+    short-id: "82f5d3a1e9c0b661"
+- name: 🇳🇱--->🇳🇱 77
+  type: vless
+  server: 85.155.226.30
+  port: 443
+  uuid: "39c42b0a-b823-4c93-bb99-74b4183e518d"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "getsavesafe.net"
+  client-fingerprint: qq
+  reality-opts:
+    public-key: "5Z6PwoPSNBLPIsX8lZtHM7-Y-psMMR1vz5Pit0EVISs"
+    short-id: "82f5d3a1e9c0b661"
+- name: 🇳🇱--->🇳🇱 78
   type: vless
   server: 95.85.228.161
   port: 8443
@@ -534,7 +912,7 @@ proxies:
   tls: false
   grpc-opts:
     grpc-service-name: "grpc"
-- name: '--->🇳🇱 48'
+- name: '--->🇳🇱 79'
   type: vless
   server: node2.mxvpn.dev
   port: 443
@@ -548,7 +926,7 @@ proxies:
   reality-opts:
     public-key: "TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw"
     short-id: "bbc68cec8bb8d2e3"
-- name: 🇳🇱--->🇳🇱 49
+- name: 🇳🇱--->🇳🇱 80
   type: vless
   server: 141.148.232.142
   port: 62145
@@ -556,7 +934,7 @@ proxies:
   udp: true
   network: tcp
   tls: false
-- name: 🇳🇱--->🇳🇱 50
+- name: 🇳🇱--->🇳🇱 81
   type: vless
   server: 144.31.14.168
   port: 25060
@@ -568,7 +946,33 @@ proxies:
     path: "/xray"
     headers:
       Host: "144.31.14.168"
-- name: 🇵🇱--->🇵🇱 51
+- name: 🇳🇱--->🇳🇱 82
+  type: vless
+  server: 62.84.99.42
+  port: 443
+  uuid: "6b63bd24-09b7-4b7d-81e0-d994a67f17a9"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "nid3.pinkmoon.pro"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "DS9mX6cMb5wvwFzga8yN2NLbs7soXM7038_P23yPKwk"
+    short-id: "8ffa160e608bf539"
+- name: '--->🇵🇱 83'
+  type: vless
+  server: cdn-cloudflare91.korvexe.ir
+  port: 2086
+  uuid: "28926c34-865c-447e-8d42-a17240af743b"
+  udp: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: "/"
+    headers:
+      Host: "cdn-cloudflare91.korvexe.ir"
+- name: 🇵🇱--->🇵🇱 84
   type: vless
   server: 77.83.246.92
   port: 8443
@@ -578,7 +982,7 @@ proxies:
   tls: false
   grpc-opts:
     grpc-service-name: "grpc"
-- name: '--->🇸🇪 52'
+- name: '--->🇸🇪 85'
   type: vless
   server: sw1-chr.astralweb.tech
   port: 443
@@ -592,7 +996,7 @@ proxies:
   reality-opts:
     public-key: "Z2c9dK70_0OWBEZGgeaXJyt9dup9h2-hZlCCvIGLg1Q"
     short-id: "496ee75c2f91f51d"
-- name: 🇸🇪--->🇸🇪 53
+- name: 🇸🇪--->🇸🇪 86
   type: vless
   server: 185.189.45.159
   port: 443
@@ -606,63 +1010,120 @@ proxies:
   reality-opts:
     public-key: "Z2c9dK70_0OWBEZGgeaXJyt9dup9h2-hZlCCvIGLg1Q"
     short-id: "496ee75c2f91f51d"
+- name: 🇺🇸--->🇺🇸 87
+  type: vless
+  server: 31.59.175.198
+  port: 44387
+  uuid: "e6743f53-e66d-4ef9-8797-b891b19c5807"
+  udp: true
+  network: tcp
+  tls: false
+- name: 🇺🇸--->🇺🇸 88
+  type: vless
+  server: 201.3.225.13
+  port: 443
+  uuid: "76713d07-5a6b-49c2-abd8-bc450a2fa7fc"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "uwu.spectrumproxy.shop"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "EyzTSZxq5qlUT2xW0l7VP-DzIh2ucabMan9ekEv9Owo"
+    short-id: "143627f1"
 proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - '--->🇧🇬 1'
-  - 🇨🇭--->🇨🇭 2
-  - 🇩🇪--->🇩🇪 3
-  - '--->🇩🇪 4'
-  - '--->🇩🇪 5'
-  - 🇫🇷--->🇩🇪 6
+  - '--->🇦🇹 1'
+  - '--->🇧🇬 2'
+  - '--->🇨🇭 3'
+  - 🇨🇭--->🇨🇭 4
+  - 🇩🇪--->🇩🇪 5
+  - '--->🇩🇪 6'
   - '--->🇩🇪 7'
-  - 🇩🇪--->🇩🇪 8
+  - '--->🇩🇪 8'
   - 🇫🇷--->🇩🇪 9
-  - 🇫🇷--->🇩🇪 10
-  - 🇫🇷--->🇩🇪 11
+  - '--->🇩🇪 10'
+  - 🇩🇪--->🇩🇪 11
   - 🇫🇷--->🇩🇪 12
   - 🇫🇷--->🇩🇪 13
   - 🇫🇷--->🇩🇪 14
-  - '--->🇩🇪 15'
-  - 🇩🇪--->🇩🇪 16
-  - 🇪🇪--->🇪🇪 17
-  - '--->🇪🇪 18'
-  - '--->🇫🇮 19'
-  - 🇫🇮--->🇫🇮 20
-  - 🇱🇻--->🇫🇮 21
-  - 🇱🇻--->🇫🇮 22
-  - 🇱🇻--->🇫🇮 23
-  - 🇫🇮--->🇫🇮 24
-  - '--->🇫🇮 25'
-  - 🇱🇻--->🇫🇮 26
-  - 🇱🇻--->🇫🇮 27
+  - 🇫🇷--->🇩🇪 15
+  - 🇫🇷--->🇩🇪 16
+  - 🇫🇷--->🇩🇪 17
+  - '--->🇩🇪 18'
+  - 🇩🇪--->🇩🇪 19
+  - '--->🇩🇰 20'
+  - '--->🇪🇪 21'
+  - 🇪🇪--->🇪🇪 22
+  - '--->🇪🇪 23'
+  - '--->🇪🇪 24'
+  - 🇫🇮--->🇫🇮 25
+  - '--->🇫🇮 26'
+  - 🇫🇮--->🇫🇮 27
   - 🇱🇻--->🇫🇮 28
   - '--->🇫🇮 29'
   - 🇱🇻--->🇫🇮 30
   - 🇱🇻--->🇫🇮 31
-  - 🇫🇷--->🇫🇷 32
-  - 🇫🇷--->🇫🇷 33
-  - 🇫🇷--->🇫🇷 34
-  - 🇫🇷--->🇫🇷 35
-  - 🇫🇷--->🇫🇷 36
-  - 🇫🇷--->🇫🇷 37
-  - '--->🇮🇹 38'
-  - 🇮🇹--->🇮🇹 39
-  - 🇮🇹--->🇮🇹 40
-  - 🇮🇹--->🇮🇹 41
-  - '--->🇮🇹 42'
-  - 🇮🇹--->🇮🇹 43
-  - 🇳🇱--->🇳🇱 44
-  - 🇷🇺--->🇳🇱 45
-  - '--->🇳🇱 46'
-  - 🇳🇱--->🇳🇱 47
-  - '--->🇳🇱 48'
-  - 🇳🇱--->🇳🇱 49
-  - 🇳🇱--->🇳🇱 50
-  - 🇵🇱--->🇵🇱 51
-  - '--->🇸🇪 52'
-  - 🇸🇪--->🇸🇪 53
+  - 🇫🇮--->🇫🇮 32
+  - '--->🇫🇮 33'
+  - '--->🇫🇮 34'
+  - 🇱🇻--->🇫🇮 35
+  - 🇱🇻--->🇫🇮 36
+  - 🇱🇻--->🇫🇮 37
+  - '--->🇫🇮 38'
+  - '--->🇫🇮 39'
+  - 🇱🇻--->🇫🇮 40
+  - 🇱🇻--->🇫🇮 41
+  - 🇫🇷--->🇫🇷 42
+  - 🇫🇷--->🇫🇷 43
+  - 🇫🇷--->🇫🇷 44
+  - 🇫🇷--->🇫🇷 45
+  - 🇫🇷--->🇫🇷 46
+  - 🇫🇷--->🇫🇷 47
+  - 🇫🇷--->🇫🇷 48
+  - 🇫🇷--->🇫🇷 49
+  - 🇫🇷--->🇫🇷 50
+  - '--->🇬🇧 51'
+  - '--->🇮🇹 52'
+  - 🇮🇹--->🇮🇹 53
+  - 🇮🇹--->🇮🇹 54
+  - 🇮🇹--->🇮🇹 55
+  - '--->🇮🇹 56'
+  - '--->🇮🇹 57'
+  - 🇮🇹--->🇮🇹 58
+  - '--->🇮🇹 59'
+  - 🇮🇹--->🇮🇹 60
+  - '--->🇳🇱 61'
+  - 🇳🇱--->🇳🇱 62
+  - 🇳🇱--->🇳🇱 63
+  - 🇳🇱--->🇳🇱 64
+  - 🇳🇱--->🇳🇱 65
+  - 🇷🇺--->🇳🇱 66
+  - 🇳🇱--->🇳🇱 67
+  - '--->🇳🇱 68'
+  - 🇳🇱--->🇳🇱 69
+  - '--->🇳🇱 70'
+  - '--->🇳🇱 71'
+  - 🇳🇱--->🇳🇱 72
+  - '--->🇳🇱 73'
+  - 🇳🇱--->🇳🇱 74
+  - 🇳🇱--->🇳🇱 75
+  - 🇳🇱--->🇳🇱 76
+  - 🇳🇱--->🇳🇱 77
+  - 🇳🇱--->🇳🇱 78
+  - '--->🇳🇱 79'
+  - 🇳🇱--->🇳🇱 80
+  - 🇳🇱--->🇳🇱 81
+  - 🇳🇱--->🇳🇱 82
+  - '--->🇵🇱 83'
+  - 🇵🇱--->🇵🇱 84
+  - '--->🇸🇪 85'
+  - 🇸🇪--->🇸🇪 86
+  - 🇺🇸--->🇺🇸 87
+  - 🇺🇸--->🇺🇸 88
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -670,58 +1131,93 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 Авто (лучший)
-  - '--->🇧🇬 1'
-  - 🇨🇭--->🇨🇭 2
-  - 🇩🇪--->🇩🇪 3
-  - '--->🇩🇪 4'
-  - '--->🇩🇪 5'
-  - 🇫🇷--->🇩🇪 6
+  - '--->🇦🇹 1'
+  - '--->🇧🇬 2'
+  - '--->🇨🇭 3'
+  - 🇨🇭--->🇨🇭 4
+  - 🇩🇪--->🇩🇪 5
+  - '--->🇩🇪 6'
   - '--->🇩🇪 7'
-  - 🇩🇪--->🇩🇪 8
+  - '--->🇩🇪 8'
   - 🇫🇷--->🇩🇪 9
-  - 🇫🇷--->🇩🇪 10
-  - 🇫🇷--->🇩🇪 11
+  - '--->🇩🇪 10'
+  - 🇩🇪--->🇩🇪 11
   - 🇫🇷--->🇩🇪 12
   - 🇫🇷--->🇩🇪 13
   - 🇫🇷--->🇩🇪 14
-  - '--->🇩🇪 15'
-  - 🇩🇪--->🇩🇪 16
-  - 🇪🇪--->🇪🇪 17
-  - '--->🇪🇪 18'
-  - '--->🇫🇮 19'
-  - 🇫🇮--->🇫🇮 20
-  - 🇱🇻--->🇫🇮 21
-  - 🇱🇻--->🇫🇮 22
-  - 🇱🇻--->🇫🇮 23
-  - 🇫🇮--->🇫🇮 24
-  - '--->🇫🇮 25'
-  - 🇱🇻--->🇫🇮 26
-  - 🇱🇻--->🇫🇮 27
+  - 🇫🇷--->🇩🇪 15
+  - 🇫🇷--->🇩🇪 16
+  - 🇫🇷--->🇩🇪 17
+  - '--->🇩🇪 18'
+  - 🇩🇪--->🇩🇪 19
+  - '--->🇩🇰 20'
+  - '--->🇪🇪 21'
+  - 🇪🇪--->🇪🇪 22
+  - '--->🇪🇪 23'
+  - '--->🇪🇪 24'
+  - 🇫🇮--->🇫🇮 25
+  - '--->🇫🇮 26'
+  - 🇫🇮--->🇫🇮 27
   - 🇱🇻--->🇫🇮 28
   - '--->🇫🇮 29'
   - 🇱🇻--->🇫🇮 30
   - 🇱🇻--->🇫🇮 31
-  - 🇫🇷--->🇫🇷 32
-  - 🇫🇷--->🇫🇷 33
-  - 🇫🇷--->🇫🇷 34
-  - 🇫🇷--->🇫🇷 35
-  - 🇫🇷--->🇫🇷 36
-  - 🇫🇷--->🇫🇷 37
-  - '--->🇮🇹 38'
-  - 🇮🇹--->🇮🇹 39
-  - 🇮🇹--->🇮🇹 40
-  - 🇮🇹--->🇮🇹 41
-  - '--->🇮🇹 42'
-  - 🇮🇹--->🇮🇹 43
-  - 🇳🇱--->🇳🇱 44
-  - 🇷🇺--->🇳🇱 45
-  - '--->🇳🇱 46'
-  - 🇳🇱--->🇳🇱 47
-  - '--->🇳🇱 48'
-  - 🇳🇱--->🇳🇱 49
-  - 🇳🇱--->🇳🇱 50
-  - 🇵🇱--->🇵🇱 51
-  - '--->🇸🇪 52'
-  - 🇸🇪--->🇸🇪 53
+  - 🇫🇮--->🇫🇮 32
+  - '--->🇫🇮 33'
+  - '--->🇫🇮 34'
+  - 🇱🇻--->🇫🇮 35
+  - 🇱🇻--->🇫🇮 36
+  - 🇱🇻--->🇫🇮 37
+  - '--->🇫🇮 38'
+  - '--->🇫🇮 39'
+  - 🇱🇻--->🇫🇮 40
+  - 🇱🇻--->🇫🇮 41
+  - 🇫🇷--->🇫🇷 42
+  - 🇫🇷--->🇫🇷 43
+  - 🇫🇷--->🇫🇷 44
+  - 🇫🇷--->🇫🇷 45
+  - 🇫🇷--->🇫🇷 46
+  - 🇫🇷--->🇫🇷 47
+  - 🇫🇷--->🇫🇷 48
+  - 🇫🇷--->🇫🇷 49
+  - 🇫🇷--->🇫🇷 50
+  - '--->🇬🇧 51'
+  - '--->🇮🇹 52'
+  - 🇮🇹--->🇮🇹 53
+  - 🇮🇹--->🇮🇹 54
+  - 🇮🇹--->🇮🇹 55
+  - '--->🇮🇹 56'
+  - '--->🇮🇹 57'
+  - 🇮🇹--->🇮🇹 58
+  - '--->🇮🇹 59'
+  - 🇮🇹--->🇮🇹 60
+  - '--->🇳🇱 61'
+  - 🇳🇱--->🇳🇱 62
+  - 🇳🇱--->🇳🇱 63
+  - 🇳🇱--->🇳🇱 64
+  - 🇳🇱--->🇳🇱 65
+  - 🇷🇺--->🇳🇱 66
+  - 🇳🇱--->🇳🇱 67
+  - '--->🇳🇱 68'
+  - 🇳🇱--->🇳🇱 69
+  - '--->🇳🇱 70'
+  - '--->🇳🇱 71'
+  - 🇳🇱--->🇳🇱 72
+  - '--->🇳🇱 73'
+  - 🇳🇱--->🇳🇱 74
+  - 🇳🇱--->🇳🇱 75
+  - 🇳🇱--->🇳🇱 76
+  - 🇳🇱--->🇳🇱 77
+  - 🇳🇱--->🇳🇱 78
+  - '--->🇳🇱 79'
+  - 🇳🇱--->🇳🇱 80
+  - 🇳🇱--->🇳🇱 81
+  - 🇳🇱--->🇳🇱 82
+  - '--->🇵🇱 83'
+  - 🇵🇱--->🇵🇱 84
+  - '--->🇸🇪 85'
+  - 🇸🇪--->🇸🇪 86
+  - 🇺🇸--->🇺🇸 87
+  - 🇺🇸--->🇺🇸 88
 rules:
 - MATCH,PROXY
