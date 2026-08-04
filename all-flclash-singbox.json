@@ -66,6 +66,31 @@
     {
       "type": "vless",
       "tag": "🇩🇪--->🇩🇪 3",
+      "server": "api.noneok.com",
+      "server_port": 443,
+      "uuid": "a8e3155b-ceb1-4fcb-bc0c-2e77ec005401",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "api.noneok.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "S8O8R938N960cpQfIIDXsJTxeGAkbVv6PlIqP0-d30w",
+          "short_id": "1ea59febb8d4fc8e"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "api.v1.StreamService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪--->🇩🇪 4",
       "server": "191.44.109.194",
       "server_port": 443,
       "uuid": "06d44c57-8e1a-41f4-b9c4-65d35869e078",
@@ -74,28 +99,6 @@
       "tls": {
         "enabled": true,
         "server_name": "ger11.skorostnet.space",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o",
-          "short_id": "fdda9806fe5d8584"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪--->🇩🇪 4",
-      "server": "191.44.109.195",
-      "server_port": 443,
-      "uuid": "06d44c57-8e1a-41f4-b9c4-65d35869e078",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "ger12.skorostnet.space",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
