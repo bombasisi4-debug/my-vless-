@@ -3,7 +3,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇺--->🇱🇻 747
+- name: 🇷🇺--->🇱🇻 747c
   type: vless
   server: 89.208.229.243
   port: 2053
@@ -31,9 +31,9 @@ proxies:
   reality-opts:
     public-key: "sRTNjrosfFSiuQX7Yt7Ub5DJvFznfHSC3nlzFQ3H2WU"
     short-id: ""
-- name: 🇸🇪--->🇸🇪 689b
+- name: 🇸🇪--->🇸🇪 776h
   type: vless
-  server: 207.2.123.28
+  server: sa.ch-moltisanti.ru
   port: 443
   uuid: "94d2d711-76e5-4d82-a3c9-4f06fd5558c8"
   udp: true
@@ -45,7 +45,7 @@ proxies:
   reality-opts:
     public-key: "zb1esVBjrdlitl7Z_YkRi44kC0NXVvF5U17LAXW6fDQ"
     short-id: "825d392c67e4"
-- name: 🇫🇮--->🇫🇮 763j
+- name: 🇫🇮--->🇫🇮 763g
   type: vless
   server: 185.212.119.177
   port: 443
@@ -59,7 +59,7 @@ proxies:
   reality-opts:
     public-key: "aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o"
     short-id: "fdda9806fe5d8584"
-- name: 🇬🇧--->🇬🇧 711c
+- name: 🇬🇧--->🇬🇧 711a
   type: vless
   server: dec.kosmosapp.ru
   port: 16923
@@ -74,7 +74,7 @@ proxies:
     short-id: "10ffb85da1c2d986"
   grpc-opts:
     grpc-service-name: "neurex"
-- name: 🇩🇪--->🇩🇪 753i
+- name: 🇩🇪--->🇩🇪 753f
   type: vless
   server: 79.137.203.64
   port: 443
@@ -89,7 +89,7 @@ proxies:
     short-id: "9a44c802e4756255"
   grpc-opts:
     grpc-service-name: "grpc"
-- name: 🇬🇧--->🇬🇧 757d
+- name: 🇬🇧--->🇬🇧 757f
   type: vless
   server: ded.kosmosapp.ru
   port: 16923
@@ -104,7 +104,7 @@ proxies:
     short-id: "10ffb85da1c2d986"
   grpc-opts:
     grpc-service-name: "neurex"
-- name: 🇷🇺--->🇩🇪 717
+- name: 🇷🇺--->🇩🇪 717b
   type: vless
   server: 185.229.9.176
   port: 8443
@@ -119,7 +119,7 @@ proxies:
     short-id: ""
   grpc-opts:
     grpc-service-name: "ns"
-- name: 🇳🇱--->🇳🇱 702a
+- name: 🇳🇱--->🇳🇱 702d
   type: vless
   server: 45.137.43.70
   port: 30160
@@ -132,6 +132,21 @@ proxies:
   reality-opts:
     public-key: "vqr3sFlSCpzBjw61NnufMWLDfevzkuT24qo1SaEhp1k"
     short-id: ""
+- name: 🇨🇭--->🇨🇭 777b
+  type: vless
+  server: cha.kosmosapp.ru
+  port: 16923
+  uuid: "cf0310b0-2cd6-4ae1-b4c4-e029e7fb0ee3"
+  udp: true
+  network: grpc
+  tls: true
+  servername: "auto.yandex.ru"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "_QeslG3rHGM7DoM99pYC8-jpc16pM2MbNZ6NRMoxmHA"
+    short-id: "10ffb85da1c2d986"
+  grpc-opts:
+    grpc-service-name: "neurex"
 - name: 🇫🇮--->🇫🇮 765
   type: vless
   server: 185.218.194.70
@@ -146,7 +161,7 @@ proxies:
   reality-opts:
     public-key: "b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4"
     short-id: "e1f8a3b6"
-- name: 🇬🇧--->🇬🇧 718a
+- name: 🇬🇧--->🇬🇧 718c
   type: vless
   server: deb.kosmosapp.ru
   port: 16923
@@ -175,21 +190,7 @@ proxies:
   reality-opts:
     public-key: "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0"
     short-id: "64c1fe36c7846400"
-- name: 🇷🇺--->🇳🇱 733c
-  type: vless
-  server: kino.memhd.store
-  port: 33729
-  uuid: "cf8906f5-63d3-44c2-8c1f-d2906cb3a229"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "ymail.com"
-  client-fingerprint: random
-  reality-opts:
-    public-key: "b5vvvll6WHFXYBOc-P4iEYNFw_uVALgypTESN0Nup2s"
-    short-id: "0bd4698a48"
-- name: 🇩🇪--->🇩🇪 740g
+- name: 🇩🇪--->🇩🇪 740d
   type: vless
   server: 2.26.78.69
   port: 443
@@ -258,18 +259,7 @@ proxies:
   reality-opts:
     public-key: "pPi-WO8qQFFZ9UJWNLW9YClbjcoAAZWJQ2_FM3Kjhz8"
     short-id: "500aec9e9e5e2212"
-- name: 🇬🇧--->🇹🇷 758
-  type: vless
-  server: 164.38.155.84
-  port: 2052
-  uuid: "e05b67e6-09e4-44d6-b993-a30ec87c2bb0"
-  udp: true
-  network: httpupgrade
-  tls: false
-  httpupgrade-opts:
-    path: "/playlist"
-    host: "uigzz.pistania.ir"
-- name: 🇩🇪--->🇩🇪 741d
+- name: 🇩🇪--->🇩🇪 741c
   type: vless
   server: 2.26.78.11
   port: 443
@@ -282,7 +272,7 @@ proxies:
   reality-opts:
     public-key: "F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I"
     short-id: ""
-- name: 🇳🇱--->🇳🇱 709d
+- name: 🇳🇱--->🇳🇱 709c
   type: vless
   server: 89.124.116.234
   port: 443
@@ -296,7 +286,7 @@ proxies:
   reality-opts:
     public-key: "8EPzwlenieiAy21ktdbQITnHJHA_biE4TVbN6OcDSSY"
     short-id: "4e40ed8b114da1ae"
-- name: 🇬🇧--->🇬🇧 726e
+- name: 🇬🇧--->🇬🇧 726c
   type: vless
   server: 2.26.127.13
   port: 443
@@ -309,7 +299,7 @@ proxies:
   reality-opts:
     public-key: "RYnbBzo-UTB4nVMymzJ5B6TgYed7DfOc6O5Pr_htYSc"
     short-id: ""
-- name: 🇩🇪--->🇩🇪 723d
+- name: 🇩🇪--->🇩🇪 723b
   type: vless
   server: 2.26.78.151
   port: 443
@@ -321,20 +311,6 @@ proxies:
   client-fingerprint: qq
   reality-opts:
     public-key: "F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I"
-    short-id: ""
-- name: 🇷🇺--->🇳🇱 752
-  type: vless
-  server: 94.139.250.35
-  port: 443
-  uuid: "eadcacfa-ef1a-4901-a28b-8815fa1962a5"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "apple.com"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w"
     short-id: ""
 - name: 🇩🇪--->🇫🇮 754
   type: vless
@@ -348,7 +324,7 @@ proxies:
     path: "ws/?ed=2048/@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr/?2048"
     headers:
       Host: "rb24.ir"
-- name: 🇷🇺--->🇳🇱 691b
+- name: 🇷🇺--->🇳🇱 691a
   type: vless
   server: 94.126.205.65
   port: 443
@@ -362,7 +338,7 @@ proxies:
   reality-opts:
     public-key: "M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w"
     short-id: ""
-- name: 🇷🇺--->🇳🇱 692
+- name: 🇷🇺--->🇳🇱 692b
   type: vless
   server: 94.126.206.29
   port: 443
@@ -376,7 +352,7 @@ proxies:
   reality-opts:
     public-key: "6ycuxfrEPsqE9eXZ5_Osbnx4g6hXWmkc8pFuAJkJ4jY"
     short-id: ""
-- name: 🇷🇺--->🇳🇱 728e
+- name: 🇷🇺--->🇳🇱 728
   type: vless
   server: 94.126.206.41
   port: 443
@@ -390,7 +366,7 @@ proxies:
   reality-opts:
     public-key: "6ycuxfrEPsqE9eXZ5_Osbnx4g6hXWmkc8pFuAJkJ4jY"
     short-id: ""
-- name: 🇩🇪--->🇩🇪 767b
+- name: 🇩🇪--->🇩🇪 767e
   type: vless
   server: 45.80.111.82
   port: 8880
@@ -443,7 +419,7 @@ proxies:
   reality-opts:
     public-key: "GDlgvx8exl9BJ5dD2HSVqE2oUbZyZZOFX5EdnCn5j2M"
     short-id: "9748e0984bc655c9"
-- name: 🇩🇪--->🇩🇪 697d
+- name: 🇩🇪--->🇩🇪 697b
   type: vless
   server: 87.120.92.181
   port: 443
@@ -457,7 +433,7 @@ proxies:
   reality-opts:
     public-key: "oEZR7FpSd4ZrBKHrBLJqfGq_23-xf7DQy0bkqkiq0mw"
     short-id: "825d392c67e4"
-- name: 🇵🇱--->🇵🇱 761e
+- name: 🇵🇱--->🇵🇱 761g
   type: vless
   server: plb.kosmosapp.ru
   port: 16923
@@ -472,7 +448,7 @@ proxies:
     short-id: "10ffb85da1c2d986"
   grpc-opts:
     grpc-service-name: "neurex"
-- name: 🇫🇮--->🇫🇮 732c
+- name: 🇫🇮--->🇫🇮 732
   type: vless
   server: 138.124.6.176
   port: 443
@@ -486,7 +462,7 @@ proxies:
   reality-opts:
     public-key: "hRllSmqS51Qaj-QyVKUxaB3NxHXY6yi-eITBeFPqnXQ"
     short-id: "825d392c67e4"
-- name: 🇵🇱--->🇵🇱 742b
+- name: 🇵🇱--->🇵🇱 742
   type: vless
   server: 152.233.43.90
   port: 16923
@@ -501,7 +477,7 @@ proxies:
     short-id: "10ffb85da1c2d986"
   grpc-opts:
     grpc-service-name: "neurex"
-- name: 🇫🇮--->🇫🇮 744h
+- name: 🇫🇮--->🇫🇮 744e
   type: vless
   server: 2.57.242.77
   port: 443
@@ -529,7 +505,7 @@ proxies:
   reality-opts:
     public-key: "aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o"
     short-id: "fdda9806fe5d8584"
-- name: 🇳🇱--->🇳🇱 734f
+- name: 🇳🇱--->🇳🇱 734d
   type: vless
   server: 79.137.194.244
   port: 443
@@ -543,22 +519,7 @@ proxies:
   reality-opts:
     public-key: "xYX_a1I1zrjQ3sn9eBXMXE1rBKBq6jGrnf_LN0uRS3U"
     short-id: "a1b2c3d4e5f60789"
-- name: 🇷🇺--->🇳🇱 707a
-  type: vless
-  server: kino.memhd.store
-  port: 56139
-  uuid: "3c1b7d06-04fe-4eb4-8168-88fcf2e6de30"
-  udp: true
-  network: grpc
-  tls: true
-  servername: "ymail.com"
-  client-fingerprint: random
-  reality-opts:
-    public-key: "VGgITHXeTkrdpV5kbe61YWS0AuMmls6B5UIIeWY3AVs"
-    short-id: "3ee4e040"
-  grpc-opts:
-    grpc-service-name: ""
-- name: 🇫🇷--->🇫🇷 710d
+- name: 🇫🇷--->🇫🇷 710
   type: vless
   server: 193.177.0.251
   port: 443
@@ -586,7 +547,7 @@ proxies:
   reality-opts:
     public-key: "aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o"
     short-id: "fdda9806fe5d8584"
-- name: 🇭🇺--->🇭🇺 751c
+- name: 🇭🇺--->🇭🇺 751e
   type: vless
   server: hua.kosmosapp.ru
   port: 16923
@@ -601,7 +562,7 @@ proxies:
     short-id: "10ffb85da1c2d986"
   grpc-opts:
     grpc-service-name: "neurex"
-- name: 🇸🇪--->🇸🇪 695c
+- name: 🇸🇪--->🇸🇪 695
   type: vless
   server: admin.kermanshahi.org
   port: 1000
@@ -642,7 +603,7 @@ proxies:
   reality-opts:
     public-key: "aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o"
     short-id: "fdda9806fe5d8584"
-- name: 🇭🇺--->🇭🇺 735f
+- name: 🇭🇺--->🇭🇺 735d
   type: vless
   server: huc.kosmosapp.ru
   port: 16923
@@ -657,21 +618,6 @@ proxies:
     short-id: "10ffb85da1c2d986"
   grpc-opts:
     grpc-service-name: "neurex"
-- name: 🇷🇺--->🇫🇮 708
-  type: vless
-  server: ultimate.warriorofblacksun.run
-  port: 443
-  uuid: "375bc6e9-f77b-4b2b-9df0-f286f5a41e87"
-  udp: true
-  network: grpc
-  tls: true
-  servername: "ultimate.warriorofblacksun.run"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "Ww_HS9_n7ob3uESSXtbU23EPM-BOJ5ZYLp-RFB0L0SY"
-    short-id: ""
-  grpc-opts:
-    grpc-service-name: "xyz"
 - name: 🇪🇸--->🇪🇸 410a
   type: vless
   server: isp05.skorostnet.space
@@ -701,7 +647,7 @@ proxies:
     short-id: "abcd"
   grpc-opts:
     grpc-service-name: "5post.gate.v1"
-- name: 🇷🇺--->🇬🇧 719b
+- name: 🇷🇺--->🇬🇧 719
   type: vless
   server: 193.233.218.124
   port: 9444
@@ -735,7 +681,7 @@ proxies:
   reality-opts:
     public-key: "th2Eu0Zvmu02_hA8MEjlFahwjXl37ck9W1JD7k2BhEg"
     short-id: "12334e"
-- name: 🇩🇪--->🇩🇪 700e
+- name: 🇩🇪--->🇩🇪 700c
   type: vless
   server: 185.65.202.156
   port: 443
@@ -749,7 +695,7 @@ proxies:
   reality-opts:
     public-key: "gtKMi9Q9ZMYxe-ZvzmbpPI-uE6YcFM84xYSw7bpKF3w"
     short-id: "52c579ed2ce06c26"
-- name: 🇪🇸--->🇪🇸 737g
+- name: 🇪🇸--->🇪🇸 737d
   type: vless
   server: 78.17.180.106
   port: 443
@@ -776,6 +722,21 @@ proxies:
   reality-opts:
     public-key: "WrOqucxSJjag_N6FYt9ErHwRF97CZv5_nIhcL1im9Ao"
     short-id: "12294e"
+- name: 🇺🇸--->🇺🇸 775a
+  type: vless
+  server: usa-f1-connect.jo3.org
+  port: 25265
+  uuid: "41551743-53d4-4e0c-b426-2dd003405cee"
+  udp: true
+  network: grpc
+  tls: true
+  servername: "www.radeon.com"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "2IwI2xEMLpb7ehLAVnX1-RuS6i7zXDOnTQnFZXMc1C8"
+    short-id: "0afd3a664c6395c5"
+  grpc-opts:
+    grpc-service-name: ""
 - name: 🇹🇷--->🇹🇷 699b
   type: vless
   server: 144.225.65.214
@@ -809,62 +770,59 @@ proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - 🇷🇺--->🇱🇻 747
+  - 🇷🇺--->🇱🇻 747c
   - 🇫🇮--->🇩🇪 759
-  - 🇸🇪--->🇸🇪 689b
-  - 🇫🇮--->🇫🇮 763j
-  - 🇬🇧--->🇬🇧 711c
-  - 🇩🇪--->🇩🇪 753i
-  - 🇬🇧--->🇬🇧 757d
-  - 🇷🇺--->🇩🇪 717
-  - 🇳🇱--->🇳🇱 702a
+  - 🇸🇪--->🇸🇪 776h
+  - 🇫🇮--->🇫🇮 763g
+  - 🇬🇧--->🇬🇧 711a
+  - 🇩🇪--->🇩🇪 753f
+  - 🇬🇧--->🇬🇧 757f
+  - 🇷🇺--->🇩🇪 717b
+  - 🇳🇱--->🇳🇱 702d
+  - 🇨🇭--->🇨🇭 777b
   - 🇫🇮--->🇫🇮 765
-  - 🇬🇧--->🇬🇧 718a
+  - 🇬🇧--->🇬🇧 718c
   - 🇳🇱--->🇳🇱 627b
-  - 🇷🇺--->🇳🇱 733c
-  - 🇩🇪--->🇩🇪 740g
+  - 🇩🇪--->🇩🇪 740d
   - 🇩🇪--->🇩🇪 645a
   - 🇬🇧--->🇬🇧 622a
   - 🇪🇸--->🇹🇷 698b
   - 🇳🇱--->🇳🇱 766
-  - 🇬🇧--->🇹🇷 758
-  - 🇩🇪--->🇩🇪 741d
-  - 🇳🇱--->🇳🇱 709d
-  - 🇬🇧--->🇬🇧 726e
-  - 🇩🇪--->🇩🇪 723d
-  - 🇷🇺--->🇳🇱 752
+  - 🇩🇪--->🇩🇪 741c
+  - 🇳🇱--->🇳🇱 709c
+  - 🇬🇧--->🇬🇧 726c
+  - 🇩🇪--->🇩🇪 723b
   - 🇩🇪--->🇫🇮 754
-  - 🇷🇺--->🇳🇱 691b
-  - 🇷🇺--->🇳🇱 692
-  - 🇷🇺--->🇳🇱 728e
-  - 🇩🇪--->🇩🇪 767b
+  - 🇷🇺--->🇳🇱 691a
+  - 🇷🇺--->🇳🇱 692b
+  - 🇷🇺--->🇳🇱 728
+  - 🇩🇪--->🇩🇪 767e
   - 🇷🇺--->🇳🇱 720
   - 🇫🇮--->🇫🇮 694a
   - 🇷🇺--->🇸🇰 771b
-  - 🇩🇪--->🇩🇪 697d
-  - 🇵🇱--->🇵🇱 761e
-  - 🇫🇮--->🇫🇮 732c
-  - 🇵🇱--->🇵🇱 742b
-  - 🇫🇮--->🇫🇮 744h
+  - 🇩🇪--->🇩🇪 697b
+  - 🇵🇱--->🇵🇱 761g
+  - 🇫🇮--->🇫🇮 732
+  - 🇵🇱--->🇵🇱 742
+  - 🇫🇮--->🇫🇮 744e
   - 🇩🇪--->🇩🇪 743a
-  - 🇳🇱--->🇳🇱 734f
-  - 🇷🇺--->🇳🇱 707a
-  - 🇫🇷--->🇫🇷 710d
+  - 🇳🇱--->🇳🇱 734d
+  - 🇫🇷--->🇫🇷 710
   - 🇫🇷--->🇫🇷 690c
-  - 🇭🇺--->🇭🇺 751c
-  - 🇸🇪--->🇸🇪 695c
+  - 🇭🇺--->🇭🇺 751e
+  - 🇸🇪--->🇸🇪 695
   - 🇦🇹--->🇦🇹 774c
   - 🇫🇷--->🇫🇷 662b
-  - 🇭🇺--->🇭🇺 735f
-  - 🇷🇺--->🇫🇮 708
+  - 🇭🇺--->🇭🇺 735d
   - 🇪🇸--->🇪🇸 410a
   - 🇷🇺--->🇫🇮 688c
-  - 🇷🇺--->🇬🇧 719b
+  - 🇷🇺--->🇬🇧 719
   - 🇱🇻--->🇫🇮 612
   - 🇷🇺--->🇫🇮 713
-  - 🇩🇪--->🇩🇪 700e
-  - 🇪🇸--->🇪🇸 737g
+  - 🇩🇪--->🇩🇪 700c
+  - 🇪🇸--->🇪🇸 737d
   - 🇫🇮--->🇫🇮 724
+  - 🇺🇸--->🇺🇸 775a
   - 🇹🇷--->🇹🇷 699b
   - 🇫🇷--->🇫🇷 643a
   - 🇩🇪--->🇩🇪 S 459a
@@ -874,31 +832,31 @@ proxy-groups:
 - name: 📁 Группа A
   type: url-test
   proxies:
-  - 🇪🇸--->🇪🇸 410a
   - 🇬🇧--->🇬🇧 622a
-  - 🇷🇺--->🇳🇱 707a
   - 🇩🇪--->🇩🇪 S 459a
-  - 🇫🇮--->🇫🇮 694a
-  - 🇬🇧--->🇬🇧 718a
-  - 🇳🇱--->🇳🇱 702a
   - 🇩🇪--->🇩🇪 743a
+  - 🇺🇸--->🇺🇸 775a
   - 🇩🇪--->🇩🇪 645a
   - 🇫🇷--->🇫🇷 643a
+  - 🇫🇮--->🇫🇮 694a
+  - 🇷🇺--->🇳🇱 691a
+  - 🇬🇧--->🇬🇧 711a
+  - 🇪🇸--->🇪🇸 410a
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
 - name: 📁 Группа B
   type: url-test
   proxies:
-  - 🇷🇺--->🇳🇱 691b
   - 🇳🇱--->🇳🇱 627b
-  - 🇷🇺--->🇬🇧 719b
-  - 🇸🇪--->🇸🇪 689b
-  - 🇹🇷--->🇹🇷 699b
-  - 🇵🇱--->🇵🇱 742b
-  - 🇩🇪--->🇩🇪 767b
+  - 🇩🇪--->🇩🇪 697b
   - 🇷🇺--->🇸🇰 771b
+  - 🇨🇭--->🇨🇭 777b
+  - 🇩🇪--->🇩🇪 723b
   - 🇪🇸--->🇹🇷 698b
+  - 🇹🇷--->🇹🇷 699b
+  - 🇷🇺--->🇳🇱 692b
+  - 🇷🇺--->🇩🇪 717b
   - 🇫🇷--->🇫🇷 662b
   url: https://www.gstatic.com/generate_204
   interval: 60
@@ -907,12 +865,13 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇷🇺--->🇫🇮 688c
-  - 🇷🇺--->🇳🇱 733c
-  - 🇸🇪--->🇸🇪 695c
-  - 🇫🇮--->🇫🇮 732c
-  - 🇭🇺--->🇭🇺 751c
+  - 🇩🇪--->🇩🇪 700c
   - 🇦🇹--->🇦🇹 774c
-  - 🇬🇧--->🇬🇧 711c
+  - 🇬🇧--->🇬🇧 726c
+  - 🇳🇱--->🇳🇱 709c
+  - 🇩🇪--->🇩🇪 741c
+  - 🇷🇺--->🇱🇻 747c
+  - 🇬🇧--->🇬🇧 718c
   - 🇫🇷--->🇫🇷 690c
   url: https://www.gstatic.com/generate_204
   interval: 60
@@ -920,22 +879,11 @@ proxy-groups:
 - name: 📁 Группа D
   type: url-test
   proxies:
-  - 🇳🇱--->🇳🇱 709d
-  - 🇩🇪--->🇩🇪 697d
-  - 🇩🇪--->🇩🇪 741d
-  - 🇬🇧--->🇬🇧 757d
-  - 🇩🇪--->🇩🇪 723d
-  - 🇫🇷--->🇫🇷 710d
-  url: https://www.gstatic.com/generate_204
-  interval: 60
-  tolerance: 80
-- name: 📁 Группа E
-  type: url-test
-  proxies:
-  - 🇷🇺--->🇳🇱 728e
-  - 🇩🇪--->🇩🇪 700e
-  - 🇵🇱--->🇵🇱 761e
-  - 🇬🇧--->🇬🇧 726e
+  - 🇳🇱--->🇳🇱 734d
+  - 🇳🇱--->🇳🇱 702d
+  - 🇩🇪--->🇩🇪 740d
+  - 🇭🇺--->🇭🇺 735d
+  - 🇪🇸--->🇪🇸 737d
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -947,63 +895,59 @@ proxy-groups:
   - 📁 Группа B
   - 📁 Группа C
   - 📁 Группа D
-  - 📁 Группа E
-  - 🇷🇺--->🇱🇻 747
+  - 🇷🇺--->🇱🇻 747c
   - 🇫🇮--->🇩🇪 759
-  - 🇸🇪--->🇸🇪 689b
-  - 🇫🇮--->🇫🇮 763j
-  - 🇬🇧--->🇬🇧 711c
-  - 🇩🇪--->🇩🇪 753i
-  - 🇬🇧--->🇬🇧 757d
-  - 🇷🇺--->🇩🇪 717
-  - 🇳🇱--->🇳🇱 702a
+  - 🇸🇪--->🇸🇪 776h
+  - 🇫🇮--->🇫🇮 763g
+  - 🇬🇧--->🇬🇧 711a
+  - 🇩🇪--->🇩🇪 753f
+  - 🇬🇧--->🇬🇧 757f
+  - 🇷🇺--->🇩🇪 717b
+  - 🇳🇱--->🇳🇱 702d
+  - 🇨🇭--->🇨🇭 777b
   - 🇫🇮--->🇫🇮 765
-  - 🇬🇧--->🇬🇧 718a
+  - 🇬🇧--->🇬🇧 718c
   - 🇳🇱--->🇳🇱 627b
-  - 🇷🇺--->🇳🇱 733c
-  - 🇩🇪--->🇩🇪 740g
+  - 🇩🇪--->🇩🇪 740d
   - 🇩🇪--->🇩🇪 645a
   - 🇬🇧--->🇬🇧 622a
   - 🇪🇸--->🇹🇷 698b
   - 🇳🇱--->🇳🇱 766
-  - 🇬🇧--->🇹🇷 758
-  - 🇩🇪--->🇩🇪 741d
-  - 🇳🇱--->🇳🇱 709d
-  - 🇬🇧--->🇬🇧 726e
-  - 🇩🇪--->🇩🇪 723d
-  - 🇷🇺--->🇳🇱 752
+  - 🇩🇪--->🇩🇪 741c
+  - 🇳🇱--->🇳🇱 709c
+  - 🇬🇧--->🇬🇧 726c
+  - 🇩🇪--->🇩🇪 723b
   - 🇩🇪--->🇫🇮 754
-  - 🇷🇺--->🇳🇱 691b
-  - 🇷🇺--->🇳🇱 692
-  - 🇷🇺--->🇳🇱 728e
-  - 🇩🇪--->🇩🇪 767b
+  - 🇷🇺--->🇳🇱 691a
+  - 🇷🇺--->🇳🇱 692b
+  - 🇷🇺--->🇳🇱 728
+  - 🇩🇪--->🇩🇪 767e
   - 🇷🇺--->🇳🇱 720
   - 🇫🇮--->🇫🇮 694a
   - 🇷🇺--->🇸🇰 771b
-  - 🇩🇪--->🇩🇪 697d
-  - 🇵🇱--->🇵🇱 761e
-  - 🇫🇮--->🇫🇮 732c
-  - 🇵🇱--->🇵🇱 742b
-  - 🇫🇮--->🇫🇮 744h
+  - 🇩🇪--->🇩🇪 697b
+  - 🇵🇱--->🇵🇱 761g
+  - 🇫🇮--->🇫🇮 732
+  - 🇵🇱--->🇵🇱 742
+  - 🇫🇮--->🇫🇮 744e
   - 🇩🇪--->🇩🇪 743a
-  - 🇳🇱--->🇳🇱 734f
-  - 🇷🇺--->🇳🇱 707a
-  - 🇫🇷--->🇫🇷 710d
+  - 🇳🇱--->🇳🇱 734d
+  - 🇫🇷--->🇫🇷 710
   - 🇫🇷--->🇫🇷 690c
-  - 🇭🇺--->🇭🇺 751c
-  - 🇸🇪--->🇸🇪 695c
+  - 🇭🇺--->🇭🇺 751e
+  - 🇸🇪--->🇸🇪 695
   - 🇦🇹--->🇦🇹 774c
   - 🇫🇷--->🇫🇷 662b
-  - 🇭🇺--->🇭🇺 735f
-  - 🇷🇺--->🇫🇮 708
+  - 🇭🇺--->🇭🇺 735d
   - 🇪🇸--->🇪🇸 410a
   - 🇷🇺--->🇫🇮 688c
-  - 🇷🇺--->🇬🇧 719b
+  - 🇷🇺--->🇬🇧 719
   - 🇱🇻--->🇫🇮 612
   - 🇷🇺--->🇫🇮 713
-  - 🇩🇪--->🇩🇪 700e
-  - 🇪🇸--->🇪🇸 737g
+  - 🇩🇪--->🇩🇪 700c
+  - 🇪🇸--->🇪🇸 737d
   - 🇫🇮--->🇫🇮 724
+  - 🇺🇸--->🇺🇸 775a
   - 🇹🇷--->🇹🇷 699b
   - 🇫🇷--->🇫🇷 643a
   - 🇩🇪--->🇩🇪 S 459a
