@@ -66,29 +66,7 @@
     },
     {
       "type": "vless",
-      "tag": "--->🇯🇵 800",
-      "server": "jp.musicwave.net",
-      "server_port": 443,
-      "uuid": "94d2d711-76e5-4d82-a3c9-4f06fd5558c8",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "jp.musicwave.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "qBtxq4RZxDLCJT8i48iaGMhacv8MOI0yhIFiuwYJm08",
-          "short_id": "825d392c67e4"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "--->🇩🇪 801d",
+      "tag": "--->🇩🇪 801",
       "server": "api.noneok.com",
       "server_port": 443,
       "uuid": "a8e3155b-ceb1-4fcb-bc0c-2e77ec005401",
@@ -121,28 +99,6 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪--->🇩🇪 697",
-      "server": "87.120.92.181",
-      "server_port": 443,
-      "uuid": "94d2d711-76e5-4d82-a3c9-4f06fd5558c8",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "e-spectacular.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "oEZR7FpSd4ZrBKHrBLJqfGq_23-xf7DQy0bkqkiq0mw",
-          "short_id": "825d392c67e4"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇫🇮--->🇫🇮 732",
       "server": "138.124.6.176",
       "server_port": 443,
@@ -161,6 +117,31 @@
           "public_key": "hRllSmqS51Qaj-QyVKUxaB3NxHXY6yi-eITBeFPqnXQ",
           "short_id": "825d392c67e4"
         }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪--->🇩🇪 810",
+      "server": "88.216.220.88",
+      "server_port": 443,
+      "uuid": "a8e3155b-ceb1-4fcb-bc0c-2e77ec005401",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "files.noneok.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "q3kOYHdjmqWLLYj8oikvna1bTjofk45ktegGaJE611g",
+          "short_id": "d3b394558cfe0266"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "api.v1.StreamService"
       }
     },
     {
@@ -209,7 +190,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷--->🇫🇷 690",
+      "tag": "🇫🇷--->🇫🇷 690b",
       "server": "78.17.208.22",
       "server_port": 443,
       "uuid": "c04bf2df-2b7f-44da-a893-3792d3910fd8",
@@ -231,7 +212,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇹--->🇦🇹 774",
+      "tag": "🇦🇹--->🇦🇹 774b",
       "server": "67.159.17.223",
       "server_port": 443,
       "uuid": "94d2d711-76e5-4d82-a3c9-4f06fd5558c8",
@@ -341,7 +322,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇸--->🇪🇸 737b",
+      "tag": "🇪🇸--->🇪🇸 737a",
       "server": "78.17.180.106",
       "server_port": 443,
       "uuid": "06d44c57-8e1a-41f4-b9c4-65d35869e078",
@@ -360,6 +341,14 @@
           "short_id": "fdda9806fe5d8584"
         }
       }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱--->🇳🇱 809",
+      "server": "134.98.158.207",
+      "server_port": 62145,
+      "uuid": "8fb65472-5957-4f64-ba2d-b5812b2f155a",
+      "packet_encoding": "xudp"
     },
     {
       "type": "vless",
@@ -441,20 +430,20 @@
       "outbounds": [
         "--->🇸🇪 776",
         "🇫🇮--->🇫🇮 763c",
-        "--->🇯🇵 800",
-        "--->🇩🇪 801d",
+        "--->🇩🇪 801",
         "🇩🇪--->🇩🇪 807",
-        "🇩🇪--->🇩🇪 697",
         "🇫🇮--->🇫🇮 732",
+        "🇩🇪--->🇩🇪 810",
         "🇫🇮--->🇫🇮 744b",
         "🇩🇪--->🇩🇪 743a",
-        "🇫🇷--->🇫🇷 690",
-        "🇦🇹--->🇦🇹 774",
+        "🇫🇷--->🇫🇷 690b",
+        "🇦🇹--->🇦🇹 774b",
         "🇫🇷--->🇫🇷 662a",
         "🇩🇪--->🇩🇪 754",
         "🇸🇪--->🇸🇪 791",
         "🇩🇪--->🇩🇪 700",
-        "🇪🇸--->🇪🇸 737b",
+        "🇪🇸--->🇪🇸 737a",
+        "🇳🇱--->🇳🇱 809",
         "--->🇳🇱 795c",
         "--->🇳🇱 793b",
         "--->🇵🇱 792a",
@@ -471,20 +460,20 @@
         "auto",
         "--->🇸🇪 776",
         "🇫🇮--->🇫🇮 763c",
-        "--->🇯🇵 800",
-        "--->🇩🇪 801d",
+        "--->🇩🇪 801",
         "🇩🇪--->🇩🇪 807",
-        "🇩🇪--->🇩🇪 697",
         "🇫🇮--->🇫🇮 732",
+        "🇩🇪--->🇩🇪 810",
         "🇫🇮--->🇫🇮 744b",
         "🇩🇪--->🇩🇪 743a",
-        "🇫🇷--->🇫🇷 690",
-        "🇦🇹--->🇦🇹 774",
+        "🇫🇷--->🇫🇷 690b",
+        "🇦🇹--->🇦🇹 774b",
         "🇫🇷--->🇫🇷 662a",
         "🇩🇪--->🇩🇪 754",
         "🇸🇪--->🇸🇪 791",
         "🇩🇪--->🇩🇪 700",
-        "🇪🇸--->🇪🇸 737b",
+        "🇪🇸--->🇪🇸 737a",
+        "🇳🇱--->🇳🇱 809",
         "--->🇳🇱 795c",
         "--->🇳🇱 793b",
         "--->🇵🇱 792a",
