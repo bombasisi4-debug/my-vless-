@@ -3,21 +3,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: '--->🇸🇪 776'
-  type: vless
-  server: sa.ch-moltisanti.ru
-  port: 443
-  uuid: "94d2d711-76e5-4d82-a3c9-4f06fd5558c8"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "sa.ch-moltisanti.ru"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "zb1esVBjrdlitl7Z_YkRi44kC0NXVvF5U17LAXW6fDQ"
-    short-id: "825d392c67e4"
-- name: 🇫🇮--->🇫🇮 763c
+- name: 🇫🇮--->🇫🇮 763f
   type: vless
   server: 185.212.119.177
   port: 443
@@ -54,21 +40,7 @@ proxies:
   udp: true
   network: tcp
   tls: false
-- name: 🇫🇮--->🇫🇮 732
-  type: vless
-  server: 138.124.6.176
-  port: 443
-  uuid: "94d2d711-76e5-4d82-a3c9-4f06fd5558c8"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "fw.ch-moltisanti.ru"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "hRllSmqS51Qaj-QyVKUxaB3NxHXY6yi-eITBeFPqnXQ"
-    short-id: "825d392c67e4"
-- name: 🇩🇪--->🇩🇪 810
+- name: 🇩🇪--->🇩🇪 810g
   type: vless
   server: 88.216.220.88
   port: 443
@@ -83,7 +55,7 @@ proxies:
     short-id: "d3b394558cfe0266"
   grpc-opts:
     grpc-service-name: "api.v1.StreamService"
-- name: 🇫🇮--->🇫🇮 744b
+- name: 🇫🇮--->🇫🇮 744d
   type: vless
   server: 2.57.242.77
   port: 443
@@ -97,7 +69,7 @@ proxies:
   reality-opts:
     public-key: "aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o"
     short-id: "fdda9806fe5d8584"
-- name: 🇩🇪--->🇩🇪 743a
+- name: 🇩🇪--->🇩🇪 743
   type: vless
   server: 191.44.112.193
   port: 443
@@ -125,20 +97,21 @@ proxies:
   reality-opts:
     public-key: "aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o"
     short-id: "fdda9806fe5d8584"
-- name: 🇦🇹--->🇦🇹 774b
+- name: 🇩🇪--->🇩🇪 811
   type: vless
-  server: 67.159.17.223
+  server: 88.216.220.87
   port: 443
-  uuid: "94d2d711-76e5-4d82-a3c9-4f06fd5558c8"
+  uuid: "a8e3155b-ceb1-4fcb-bc0c-2e77ec005401"
   udp: true
-  network: tcp
+  network: grpc
   tls: true
-  flow: xtls-rprx-vision
-  servername: "au.musicwave.net"
+  servername: "api.noneok.com"
   client-fingerprint: firefox
   reality-opts:
-    public-key: "ukD87Vk-vZlpFizTh-zSjst2lEN39Cfyjd4mNiu2CS0"
-    short-id: "825d392c67e4"
+    public-key: "S8O8R938N960cpQfIIDXsJTxeGAkbVv6PlIqP0-d30w"
+    short-id: "1ea59febb8d4fc8e"
+  grpc-opts:
+    grpc-service-name: "api.v1.StreamService"
 - name: 🇫🇷--->🇫🇷 662a
   type: vless
   server: 78.17.208.20
@@ -153,7 +126,7 @@ proxies:
   reality-opts:
     public-key: "aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o"
     short-id: "fdda9806fe5d8584"
-- name: 🇩🇪--->🇩🇪 754
+- name: 🇩🇪--->🇩🇪 754e
   type: vless
   server: 192.142.12.198
   port: 443
@@ -167,6 +140,20 @@ proxies:
   reality-opts:
     public-key: "6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY"
     short-id: "1c3e8241a8743df9"
+- name: '--->🇩🇪 812'
+  type: vless
+  server: ger09.skorostnet.space
+  port: 443
+  uuid: "06d44c57-8e1a-41f4-b9c4-65d35869e078"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "ger09.skorostnet.space"
+  client-fingerprint: edge
+  reality-opts:
+    public-key: "aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o"
+    short-id: "fdda9806fe5d8584"
 - name: 🇸🇪--->🇸🇪 791
   type: vless
   server: 81.90.21.225
@@ -195,7 +182,7 @@ proxies:
   reality-opts:
     public-key: "gtKMi9Q9ZMYxe-ZvzmbpPI-uE6YcFM84xYSw7bpKF3w"
     short-id: "52c579ed2ce06c26"
-- name: 🇪🇸--->🇪🇸 737a
+- name: 🇪🇸--->🇪🇸 737c
   type: vless
   server: 78.17.180.106
   port: 443
@@ -271,21 +258,20 @@ proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - '--->🇸🇪 776'
-  - 🇫🇮--->🇫🇮 763c
+  - 🇫🇮--->🇫🇮 763f
   - '--->🇩🇪 801'
   - 🇩🇪--->🇩🇪 807
-  - 🇫🇮--->🇫🇮 732
-  - 🇩🇪--->🇩🇪 810
-  - 🇫🇮--->🇫🇮 744b
-  - 🇩🇪--->🇩🇪 743a
+  - 🇩🇪--->🇩🇪 810g
+  - 🇫🇮--->🇫🇮 744d
+  - 🇩🇪--->🇩🇪 743
   - 🇫🇷--->🇫🇷 690b
-  - 🇦🇹--->🇦🇹 774b
+  - 🇩🇪--->🇩🇪 811
   - 🇫🇷--->🇫🇷 662a
-  - 🇩🇪--->🇩🇪 754
+  - 🇩🇪--->🇩🇪 754e
+  - '--->🇩🇪 812'
   - 🇸🇪--->🇸🇪 791
   - 🇩🇪--->🇩🇪 700
-  - 🇪🇸--->🇪🇸 737a
+  - 🇪🇸--->🇪🇸 737c
   - 🇳🇱--->🇳🇱 809
   - '--->🇳🇱 795c'
   - '--->🇳🇱 793b'
@@ -294,47 +280,24 @@ proxy-groups:
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
-- name: 📁 Группа A
-  type: url-test
-  proxies:
-  - '--->🇵🇱 792a'
-  - 🇫🇷--->🇫🇷 662a
-  - 🇩🇪--->🇩🇪 743a
-  - 🇪🇸--->🇪🇸 737a
-  url: https://www.gstatic.com/generate_204
-  interval: 60
-  tolerance: 80
-- name: 📁 Группа B
-  type: url-test
-  proxies:
-  - '--->🇳🇱 793b'
-  - 🇫🇷--->🇫🇷 690b
-  - 🇦🇹--->🇦🇹 774b
-  - 🇫🇮--->🇫🇮 744b
-  url: https://www.gstatic.com/generate_204
-  interval: 60
-  tolerance: 80
 - name: PROXY
   type: select
   proxies:
   - 🚀 Авто (лучший)
-  - 📁 Группа A
-  - 📁 Группа B
-  - '--->🇸🇪 776'
-  - 🇫🇮--->🇫🇮 763c
+  - 🇫🇮--->🇫🇮 763f
   - '--->🇩🇪 801'
   - 🇩🇪--->🇩🇪 807
-  - 🇫🇮--->🇫🇮 732
-  - 🇩🇪--->🇩🇪 810
-  - 🇫🇮--->🇫🇮 744b
-  - 🇩🇪--->🇩🇪 743a
+  - 🇩🇪--->🇩🇪 810g
+  - 🇫🇮--->🇫🇮 744d
+  - 🇩🇪--->🇩🇪 743
   - 🇫🇷--->🇫🇷 690b
-  - 🇦🇹--->🇦🇹 774b
+  - 🇩🇪--->🇩🇪 811
   - 🇫🇷--->🇫🇷 662a
-  - 🇩🇪--->🇩🇪 754
+  - 🇩🇪--->🇩🇪 754e
+  - '--->🇩🇪 812'
   - 🇸🇪--->🇸🇪 791
   - 🇩🇪--->🇩🇪 700
-  - 🇪🇸--->🇪🇸 737a
+  - 🇪🇸--->🇪🇸 737c
   - 🇳🇱--->🇳🇱 809
   - '--->🇳🇱 795c'
   - '--->🇳🇱 793b'
