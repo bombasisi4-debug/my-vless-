@@ -19,7 +19,7 @@ proxies:
   udp: true
   network: tcp
   tls: false
-- name: 🇳🇱--->🇳🇱 817c
+- name: 🇳🇱--->🇳🇱 817
   type: vless
   server: 158.178.144.99
   port: 62145
@@ -27,7 +27,7 @@ proxies:
   udp: true
   network: tcp
   tls: false
-- name: 🇩🇪--->🇩🇪 810c
+- name: 🇩🇪--->🇩🇪 810b
   type: vless
   server: 88.216.220.88
   port: 443
@@ -42,7 +42,7 @@ proxies:
     short-id: "d3b394558cfe0266"
   grpc-opts:
     grpc-service-name: "api.v1.StreamService"
-- name: 🇫🇮--->🇫🇮 744b
+- name: 🇫🇮--->🇫🇮 744c
   type: vless
   server: 2.57.242.77
   port: 443
@@ -56,7 +56,7 @@ proxies:
   reality-opts:
     public-key: "aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o"
     short-id: "fdda9806fe5d8584"
-- name: 🇩🇪--->🇩🇪 743c
+- name: 🇩🇪--->🇩🇪 743
   type: vless
   server: 191.44.112.193
   port: 443
@@ -182,28 +182,6 @@ proxies:
   reality-opts:
     public-key: "aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o"
     short-id: "fdda9806fe5d8584"
-- name: 🇳🇱--->🇳🇱 809a
-  type: vless
-  server: 134.98.158.207
-  port: 62145
-  uuid: "8fb65472-5957-4f64-ba2d-b5812b2f155a"
-  udp: true
-  network: tcp
-  tls: false
-- name: '--->🇳🇱 795c'
-  type: vless
-  server: nl02.port-server.online
-  port: 443
-  uuid: "45c876f9-4900-40c0-b269-94871e78df54"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "nl02.port-server.online"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "q8UxCgHpEfppsmuMR8nWyMlcMdpWgzFChQqiTkA9Nkw"
-    short-id: "f4c9f048e3385ee1"
 - name: '--->🇳🇱 793b'
   type: vless
   server: nl01.port-server.online
@@ -232,7 +210,7 @@ proxies:
   reality-opts:
     public-key: "wJP3dHSebpXt0VzXPkQQV641qIse5haPAUnJl4O4CBM"
     short-id: "a3b6822086b8b1a9"
-- name: 🇩🇪--->🇩🇪 S 459
+- name: 🇩🇪--->🇩🇪 S 459a
   type: vless
   server: 5.75.201.77
   port: 51822
@@ -246,10 +224,10 @@ proxy-groups:
   proxies:
   - 🇩🇪--->🇩🇪 807
   - 🇳🇱--->🇳🇱 816b
-  - 🇳🇱--->🇳🇱 817c
-  - 🇩🇪--->🇩🇪 810c
-  - 🇫🇮--->🇫🇮 744b
-  - 🇩🇪--->🇩🇪 743c
+  - 🇳🇱--->🇳🇱 817
+  - 🇩🇪--->🇩🇪 810b
+  - 🇫🇮--->🇫🇮 744c
+  - 🇩🇪--->🇩🇪 743
   - 🇫🇷--->🇫🇷 690b
   - '--->🇸🇪 815'
   - 🇩🇪--->🇩🇪 811
@@ -258,11 +236,9 @@ proxy-groups:
   - 🇸🇪--->🇸🇪 791
   - 🇩🇪--->🇩🇪 700
   - 🇪🇸--->🇪🇸 737a
-  - 🇳🇱--->🇳🇱 809a
-  - '--->🇳🇱 795c'
   - '--->🇳🇱 793b'
   - '--->🇵🇱 792a'
-  - 🇩🇪--->🇩🇪 S 459
+  - 🇩🇪--->🇩🇪 S 459a
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -271,7 +247,7 @@ proxy-groups:
   proxies:
   - '--->🇵🇱 792a'
   - 🇪🇸--->🇪🇸 737a
-  - 🇳🇱--->🇳🇱 809a
+  - 🇩🇪--->🇩🇪 S 459a
   - 🇫🇷--->🇫🇷 662a
   url: https://www.gstatic.com/generate_204
   interval: 60
@@ -280,19 +256,9 @@ proxy-groups:
   type: url-test
   proxies:
   - '--->🇳🇱 793b'
-  - 🇫🇮--->🇫🇮 744b
+  - 🇩🇪--->🇩🇪 810b
   - 🇳🇱--->🇳🇱 816b
   - 🇫🇷--->🇫🇷 690b
-  url: https://www.gstatic.com/generate_204
-  interval: 60
-  tolerance: 80
-- name: 📁 Группа C
-  type: url-test
-  proxies:
-  - '--->🇳🇱 795c'
-  - 🇩🇪--->🇩🇪 810c
-  - 🇳🇱--->🇳🇱 817c
-  - 🇩🇪--->🇩🇪 743c
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -302,13 +268,12 @@ proxy-groups:
   - 🚀 Авто (лучший)
   - 📁 Группа A
   - 📁 Группа B
-  - 📁 Группа C
   - 🇩🇪--->🇩🇪 807
   - 🇳🇱--->🇳🇱 816b
-  - 🇳🇱--->🇳🇱 817c
-  - 🇩🇪--->🇩🇪 810c
-  - 🇫🇮--->🇫🇮 744b
-  - 🇩🇪--->🇩🇪 743c
+  - 🇳🇱--->🇳🇱 817
+  - 🇩🇪--->🇩🇪 810b
+  - 🇫🇮--->🇫🇮 744c
+  - 🇩🇪--->🇩🇪 743
   - 🇫🇷--->🇫🇷 690b
   - '--->🇸🇪 815'
   - 🇩🇪--->🇩🇪 811
@@ -317,10 +282,8 @@ proxy-groups:
   - 🇸🇪--->🇸🇪 791
   - 🇩🇪--->🇩🇪 700
   - 🇪🇸--->🇪🇸 737a
-  - 🇳🇱--->🇳🇱 809a
-  - '--->🇳🇱 795c'
   - '--->🇳🇱 793b'
   - '--->🇵🇱 792a'
-  - 🇩🇪--->🇩🇪 S 459
+  - 🇩🇪--->🇩🇪 S 459a
 rules:
 - MATCH,PROXY
