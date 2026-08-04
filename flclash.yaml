@@ -3,7 +3,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇩🇪--->🇩🇪 807
+- name: 🇩🇪--->🇩🇪 807a
   type: vless
   server: 91.107.178.22
   port: 2087
@@ -27,7 +27,7 @@ proxies:
   udp: true
   network: tcp
   tls: false
-- name: 🇩🇪--->🇩🇪 810b
+- name: 🇩🇪--->🇩🇪 810c
   type: vless
   server: 88.216.220.88
   port: 443
@@ -42,7 +42,7 @@ proxies:
     short-id: "d3b394558cfe0266"
   grpc-opts:
     grpc-service-name: "api.v1.StreamService"
-- name: 🇫🇮--->🇫🇮 744c
+- name: 🇫🇮--->🇫🇮 744b
   type: vless
   server: 2.57.242.77
   port: 443
@@ -56,7 +56,7 @@ proxies:
   reality-opts:
     public-key: "aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o"
     short-id: "fdda9806fe5d8584"
-- name: 🇩🇪--->🇩🇪 743
+- name: 🇩🇪--->🇩🇪 743c
   type: vless
   server: 191.44.112.193
   port: 443
@@ -140,6 +140,17 @@ proxies:
   reality-opts:
     public-key: "aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o"
     short-id: "fdda9806fe5d8584"
+- name: 🇳🇱--->🇩🇪 818b
+  type: vless
+  server: 193.227.99.54
+  port: 8880
+  uuid: "a733d1a0-6321-46ab-b525-f9da2b44b9c2"
+  udp: true
+  network: httpupgrade
+  tls: false
+  httpupgrade-opts:
+    path: "mmd"
+    host: "bgphajik.lorqino.ir"
 - name: 🇸🇪--->🇸🇪 791
   type: vless
   server: 81.90.21.225
@@ -222,17 +233,18 @@ proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - 🇩🇪--->🇩🇪 807
+  - 🇩🇪--->🇩🇪 807a
   - 🇳🇱--->🇳🇱 816b
   - 🇳🇱--->🇳🇱 817
-  - 🇩🇪--->🇩🇪 810b
-  - 🇫🇮--->🇫🇮 744c
-  - 🇩🇪--->🇩🇪 743
+  - 🇩🇪--->🇩🇪 810c
+  - 🇫🇮--->🇫🇮 744b
+  - 🇩🇪--->🇩🇪 743c
   - 🇫🇷--->🇫🇷 690b
   - '--->🇸🇪 815'
   - 🇩🇪--->🇩🇪 811
   - 🇫🇷--->🇫🇷 662a
   - '--->🇩🇪 812'
+  - 🇳🇱--->🇩🇪 818b
   - 🇸🇪--->🇸🇪 791
   - 🇩🇪--->🇩🇪 700
   - 🇪🇸--->🇪🇸 737a
@@ -246,9 +258,10 @@ proxy-groups:
   type: url-test
   proxies:
   - '--->🇵🇱 792a'
-  - 🇪🇸--->🇪🇸 737a
-  - 🇩🇪--->🇩🇪 S 459a
   - 🇫🇷--->🇫🇷 662a
+  - 🇩🇪--->🇩🇪 S 459a
+  - 🇩🇪--->🇩🇪 807a
+  - 🇪🇸--->🇪🇸 737a
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -256,9 +269,10 @@ proxy-groups:
   type: url-test
   proxies:
   - '--->🇳🇱 793b'
-  - 🇩🇪--->🇩🇪 810b
-  - 🇳🇱--->🇳🇱 816b
   - 🇫🇷--->🇫🇷 690b
+  - 🇳🇱--->🇳🇱 816b
+  - 🇳🇱--->🇩🇪 818b
+  - 🇫🇮--->🇫🇮 744b
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -268,17 +282,18 @@ proxy-groups:
   - 🚀 Авто (лучший)
   - 📁 Группа A
   - 📁 Группа B
-  - 🇩🇪--->🇩🇪 807
+  - 🇩🇪--->🇩🇪 807a
   - 🇳🇱--->🇳🇱 816b
   - 🇳🇱--->🇳🇱 817
-  - 🇩🇪--->🇩🇪 810b
-  - 🇫🇮--->🇫🇮 744c
-  - 🇩🇪--->🇩🇪 743
+  - 🇩🇪--->🇩🇪 810c
+  - 🇫🇮--->🇫🇮 744b
+  - 🇩🇪--->🇩🇪 743c
   - 🇫🇷--->🇫🇷 690b
   - '--->🇸🇪 815'
   - 🇩🇪--->🇩🇪 811
   - 🇫🇷--->🇫🇷 662a
   - '--->🇩🇪 812'
+  - 🇳🇱--->🇩🇪 818b
   - 🇸🇪--->🇸🇪 791
   - 🇩🇪--->🇩🇪 700
   - 🇪🇸--->🇪🇸 737a
