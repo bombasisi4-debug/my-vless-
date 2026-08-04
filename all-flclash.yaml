@@ -69,7 +69,18 @@ proxies:
   reality-opts:
     public-key: "aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o"
     short-id: "fdda9806fe5d8584"
-- name: 🇩🇪--->🇩🇪 6
+- name: 🇳🇱--->🇩🇪 6
+  type: vless
+  server: 193.227.99.54
+  port: 8880
+  uuid: "a733d1a0-6321-46ab-b525-f9da2b44b9c2"
+  udp: true
+  network: httpupgrade
+  tls: false
+  httpupgrade-opts:
+    path: "mmd"
+    host: "bgphajik.lorqino.ir"
+- name: 🇩🇪--->🇩🇪 7
   type: vless
   server: 185.65.202.156
   port: 443
@@ -83,7 +94,7 @@ proxies:
   reality-opts:
     public-key: "gtKMi9Q9ZMYxe-ZvzmbpPI-uE6YcFM84xYSw7bpKF3w"
     short-id: "52c579ed2ce06c26"
-- name: 🇩🇪--->🇩🇪 7
+- name: 🇩🇪--->🇩🇪 8
   type: vless
   server: 5.75.201.77
   port: 51822
@@ -91,7 +102,7 @@ proxies:
   udp: true
   network: tcp
   tls: false
-- name: 🇪🇸--->🇪🇸 8
+- name: 🇪🇸--->🇪🇸 9
   type: vless
   server: 78.17.180.106
   port: 443
@@ -105,7 +116,7 @@ proxies:
   reality-opts:
     public-key: "aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o"
     short-id: "fdda9806fe5d8584"
-- name: 🇫🇮--->🇫🇮 9
+- name: 🇫🇮--->🇫🇮 10
   type: vless
   server: 2.57.242.77
   port: 443
@@ -119,7 +130,7 @@ proxies:
   reality-opts:
     public-key: "aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o"
     short-id: "fdda9806fe5d8584"
-- name: 🇫🇷--->🇫🇷 10
+- name: 🇫🇷--->🇫🇷 11
   type: vless
   server: 78.17.208.22
   port: 443
@@ -133,7 +144,7 @@ proxies:
   reality-opts:
     public-key: "aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o"
     short-id: "fdda9806fe5d8584"
-- name: 🇫🇷--->🇫🇷 11
+- name: 🇫🇷--->🇫🇷 12
   type: vless
   server: 78.17.208.20
   port: 443
@@ -147,7 +158,7 @@ proxies:
   reality-opts:
     public-key: "aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o"
     short-id: "fdda9806fe5d8584"
-- name: 🇳🇱--->🇳🇱 12
+- name: 🇳🇱--->🇳🇱 13
   type: vless
   server: 158.178.149.146
   port: 62145
@@ -155,7 +166,7 @@ proxies:
   udp: true
   network: tcp
   tls: false
-- name: 🇳🇱--->🇳🇱 13
+- name: 🇳🇱--->🇳🇱 14
   type: vless
   server: 158.178.144.99
   port: 62145
@@ -163,7 +174,7 @@ proxies:
   udp: true
   network: tcp
   tls: false
-- name: '--->🇳🇱 14'
+- name: '--->🇳🇱 15'
   type: vless
   server: nl01.port-server.online
   port: 443
@@ -177,7 +188,7 @@ proxies:
   reality-opts:
     public-key: "DuBWDQyWu_GSuXJ1obaGfRsaLuAUjM9-FfjNaDhTC34"
     short-id: "2474ace4845fcdef"
-- name: '--->🇵🇱 15'
+- name: '--->🇵🇱 16'
   type: vless
   server: pol01.port-server.online
   port: 443
@@ -191,7 +202,7 @@ proxies:
   reality-opts:
     public-key: "wJP3dHSebpXt0VzXPkQQV641qIse5haPAUnJl4O4CBM"
     short-id: "a3b6822086b8b1a9"
-- name: '--->🇸🇪 16'
+- name: '--->🇸🇪 17'
   type: vless
   server: pro-se.emrata.top
   port: 443
@@ -204,7 +215,7 @@ proxies:
   reality-opts:
     public-key: "AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk"
     short-id: ""
-- name: 🇸🇪--->🇸🇪 17
+- name: 🇸🇪--->🇸🇪 18
   type: vless
   server: 81.90.21.225
   port: 443
@@ -227,18 +238,19 @@ proxy-groups:
   - 🇩🇪--->🇩🇪 3
   - 🇩🇪--->🇩🇪 4
   - '--->🇩🇪 5'
-  - 🇩🇪--->🇩🇪 6
+  - 🇳🇱--->🇩🇪 6
   - 🇩🇪--->🇩🇪 7
-  - 🇪🇸--->🇪🇸 8
-  - 🇫🇮--->🇫🇮 9
-  - 🇫🇷--->🇫🇷 10
+  - 🇩🇪--->🇩🇪 8
+  - 🇪🇸--->🇪🇸 9
+  - 🇫🇮--->🇫🇮 10
   - 🇫🇷--->🇫🇷 11
-  - 🇳🇱--->🇳🇱 12
+  - 🇫🇷--->🇫🇷 12
   - 🇳🇱--->🇳🇱 13
-  - '--->🇳🇱 14'
-  - '--->🇵🇱 15'
-  - '--->🇸🇪 16'
-  - 🇸🇪--->🇸🇪 17
+  - 🇳🇱--->🇳🇱 14
+  - '--->🇳🇱 15'
+  - '--->🇵🇱 16'
+  - '--->🇸🇪 17'
+  - 🇸🇪--->🇸🇪 18
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -251,17 +263,18 @@ proxy-groups:
   - 🇩🇪--->🇩🇪 3
   - 🇩🇪--->🇩🇪 4
   - '--->🇩🇪 5'
-  - 🇩🇪--->🇩🇪 6
+  - 🇳🇱--->🇩🇪 6
   - 🇩🇪--->🇩🇪 7
-  - 🇪🇸--->🇪🇸 8
-  - 🇫🇮--->🇫🇮 9
-  - 🇫🇷--->🇫🇷 10
+  - 🇩🇪--->🇩🇪 8
+  - 🇪🇸--->🇪🇸 9
+  - 🇫🇮--->🇫🇮 10
   - 🇫🇷--->🇫🇷 11
-  - 🇳🇱--->🇳🇱 12
+  - 🇫🇷--->🇫🇷 12
   - 🇳🇱--->🇳🇱 13
-  - '--->🇳🇱 14'
-  - '--->🇵🇱 15'
-  - '--->🇸🇪 16'
-  - 🇸🇪--->🇸🇪 17
+  - 🇳🇱--->🇳🇱 14
+  - '--->🇳🇱 15'
+  - '--->🇵🇱 16'
+  - '--->🇸🇪 17'
+  - 🇸🇪--->🇸🇪 18
 rules:
 - MATCH,PROXY
