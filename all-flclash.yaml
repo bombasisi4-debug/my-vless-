@@ -32,6 +32,21 @@ proxies:
     short-id: ""
 - name: 🇩🇪--->🇩🇪 3
   type: vless
+  server: api.noneok.com
+  port: 443
+  uuid: "a8e3155b-ceb1-4fcb-bc0c-2e77ec005401"
+  udp: true
+  network: grpc
+  tls: true
+  servername: "api.noneok.com"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "S8O8R938N960cpQfIIDXsJTxeGAkbVv6PlIqP0-d30w"
+    short-id: "1ea59febb8d4fc8e"
+  grpc-opts:
+    grpc-service-name: "api.v1.StreamService"
+- name: 🇩🇪--->🇩🇪 4
+  type: vless
   server: 191.44.109.194
   port: 443
   uuid: "06d44c57-8e1a-41f4-b9c4-65d35869e078"
@@ -40,20 +55,6 @@ proxies:
   tls: true
   flow: xtls-rprx-vision
   servername: "ger11.skorostnet.space"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o"
-    short-id: "fdda9806fe5d8584"
-- name: 🇩🇪--->🇩🇪 4
-  type: vless
-  server: 191.44.109.195
-  port: 443
-  uuid: "06d44c57-8e1a-41f4-b9c4-65d35869e078"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "ger12.skorostnet.space"
   client-fingerprint: firefox
   reality-opts:
     public-key: "aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o"
