@@ -3,35 +3,6 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇫🇮--->🇫🇮 763f
-  type: vless
-  server: 185.212.119.177
-  port: 443
-  uuid: "c04bf2df-2b7f-44da-a893-3792d3910fd8"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "fl10.skorostnet.space"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o"
-    short-id: "fdda9806fe5d8584"
-- name: '--->🇩🇪 801'
-  type: vless
-  server: api.noneok.com
-  port: 443
-  uuid: "a8e3155b-ceb1-4fcb-bc0c-2e77ec005401"
-  udp: true
-  network: grpc
-  tls: true
-  servername: "api.noneok.com"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "S8O8R938N960cpQfIIDXsJTxeGAkbVv6PlIqP0-d30w"
-    short-id: "1ea59febb8d4fc8e"
-  grpc-opts:
-    grpc-service-name: "api.v1.StreamService"
 - name: 🇩🇪--->🇩🇪 807
   type: vless
   server: 91.107.178.22
@@ -40,7 +11,23 @@ proxies:
   udp: true
   network: tcp
   tls: false
-- name: 🇩🇪--->🇩🇪 810g
+- name: 🇳🇱--->🇳🇱 816b
+  type: vless
+  server: 158.178.149.146
+  port: 62145
+  uuid: "8fb65472-5957-4f64-ba2d-b5812b2f155a"
+  udp: true
+  network: tcp
+  tls: false
+- name: 🇳🇱--->🇳🇱 817c
+  type: vless
+  server: 158.178.144.99
+  port: 62145
+  uuid: "8fb65472-5957-4f64-ba2d-b5812b2f155a"
+  udp: true
+  network: tcp
+  tls: false
+- name: 🇩🇪--->🇩🇪 810c
   type: vless
   server: 88.216.220.88
   port: 443
@@ -55,7 +42,7 @@ proxies:
     short-id: "d3b394558cfe0266"
   grpc-opts:
     grpc-service-name: "api.v1.StreamService"
-- name: 🇫🇮--->🇫🇮 744d
+- name: 🇫🇮--->🇫🇮 744b
   type: vless
   server: 2.57.242.77
   port: 443
@@ -69,7 +56,7 @@ proxies:
   reality-opts:
     public-key: "aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o"
     short-id: "fdda9806fe5d8584"
-- name: 🇩🇪--->🇩🇪 743
+- name: 🇩🇪--->🇩🇪 743c
   type: vless
   server: 191.44.112.193
   port: 443
@@ -97,6 +84,19 @@ proxies:
   reality-opts:
     public-key: "aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o"
     short-id: "fdda9806fe5d8584"
+- name: '--->🇸🇪 815'
+  type: vless
+  server: pro-se.emrata.top
+  port: 443
+  uuid: "5f08a5b9-774a-4587-86d1-d08880d48cb1"
+  udp: true
+  network: tcp
+  tls: true
+  servername: "pro-se.emrata.top"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk"
+    short-id: ""
 - name: 🇩🇪--->🇩🇪 811
   type: vless
   server: 88.216.220.87
@@ -126,20 +126,6 @@ proxies:
   reality-opts:
     public-key: "aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o"
     short-id: "fdda9806fe5d8584"
-- name: 🇩🇪--->🇩🇪 754e
-  type: vless
-  server: 192.142.12.198
-  port: 443
-  uuid: "f0dc4d4f-c956-0004-bc3a-021424b8e879"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "jsonstudio.site"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: "6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY"
-    short-id: "1c3e8241a8743df9"
 - name: '--->🇩🇪 812'
   type: vless
   server: ger09.skorostnet.space
@@ -182,7 +168,7 @@ proxies:
   reality-opts:
     public-key: "gtKMi9Q9ZMYxe-ZvzmbpPI-uE6YcFM84xYSw7bpKF3w"
     short-id: "52c579ed2ce06c26"
-- name: 🇪🇸--->🇪🇸 737c
+- name: 🇪🇸--->🇪🇸 737a
   type: vless
   server: 78.17.180.106
   port: 443
@@ -196,7 +182,7 @@ proxies:
   reality-opts:
     public-key: "aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o"
     short-id: "fdda9806fe5d8584"
-- name: 🇳🇱--->🇳🇱 809
+- name: 🇳🇱--->🇳🇱 809a
   type: vless
   server: 134.98.158.207
   port: 62145
@@ -258,21 +244,21 @@ proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
   proxies:
-  - 🇫🇮--->🇫🇮 763f
-  - '--->🇩🇪 801'
   - 🇩🇪--->🇩🇪 807
-  - 🇩🇪--->🇩🇪 810g
-  - 🇫🇮--->🇫🇮 744d
-  - 🇩🇪--->🇩🇪 743
+  - 🇳🇱--->🇳🇱 816b
+  - 🇳🇱--->🇳🇱 817c
+  - 🇩🇪--->🇩🇪 810c
+  - 🇫🇮--->🇫🇮 744b
+  - 🇩🇪--->🇩🇪 743c
   - 🇫🇷--->🇫🇷 690b
+  - '--->🇸🇪 815'
   - 🇩🇪--->🇩🇪 811
   - 🇫🇷--->🇫🇷 662a
-  - 🇩🇪--->🇩🇪 754e
   - '--->🇩🇪 812'
   - 🇸🇪--->🇸🇪 791
   - 🇩🇪--->🇩🇪 700
-  - 🇪🇸--->🇪🇸 737c
-  - 🇳🇱--->🇳🇱 809
+  - 🇪🇸--->🇪🇸 737a
+  - 🇳🇱--->🇳🇱 809a
   - '--->🇳🇱 795c'
   - '--->🇳🇱 793b'
   - '--->🇵🇱 792a'
@@ -280,25 +266,58 @@ proxy-groups:
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
+- name: 📁 Группа A
+  type: url-test
+  proxies:
+  - '--->🇵🇱 792a'
+  - 🇪🇸--->🇪🇸 737a
+  - 🇳🇱--->🇳🇱 809a
+  - 🇫🇷--->🇫🇷 662a
+  url: https://www.gstatic.com/generate_204
+  interval: 60
+  tolerance: 80
+- name: 📁 Группа B
+  type: url-test
+  proxies:
+  - '--->🇳🇱 793b'
+  - 🇫🇮--->🇫🇮 744b
+  - 🇳🇱--->🇳🇱 816b
+  - 🇫🇷--->🇫🇷 690b
+  url: https://www.gstatic.com/generate_204
+  interval: 60
+  tolerance: 80
+- name: 📁 Группа C
+  type: url-test
+  proxies:
+  - '--->🇳🇱 795c'
+  - 🇩🇪--->🇩🇪 810c
+  - 🇳🇱--->🇳🇱 817c
+  - 🇩🇪--->🇩🇪 743c
+  url: https://www.gstatic.com/generate_204
+  interval: 60
+  tolerance: 80
 - name: PROXY
   type: select
   proxies:
   - 🚀 Авто (лучший)
-  - 🇫🇮--->🇫🇮 763f
-  - '--->🇩🇪 801'
+  - 📁 Группа A
+  - 📁 Группа B
+  - 📁 Группа C
   - 🇩🇪--->🇩🇪 807
-  - 🇩🇪--->🇩🇪 810g
-  - 🇫🇮--->🇫🇮 744d
-  - 🇩🇪--->🇩🇪 743
+  - 🇳🇱--->🇳🇱 816b
+  - 🇳🇱--->🇳🇱 817c
+  - 🇩🇪--->🇩🇪 810c
+  - 🇫🇮--->🇫🇮 744b
+  - 🇩🇪--->🇩🇪 743c
   - 🇫🇷--->🇫🇷 690b
+  - '--->🇸🇪 815'
   - 🇩🇪--->🇩🇪 811
   - 🇫🇷--->🇫🇷 662a
-  - 🇩🇪--->🇩🇪 754e
   - '--->🇩🇪 812'
   - 🇸🇪--->🇸🇪 791
   - 🇩🇪--->🇩🇪 700
-  - 🇪🇸--->🇪🇸 737c
-  - 🇳🇱--->🇳🇱 809
+  - 🇪🇸--->🇪🇸 737a
+  - 🇳🇱--->🇳🇱 809a
   - '--->🇳🇱 795c'
   - '--->🇳🇱 793b'
   - '--->🇵🇱 792a'
