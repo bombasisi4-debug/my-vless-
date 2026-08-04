@@ -31,21 +31,7 @@ proxies:
   reality-opts:
     public-key: "aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o"
     short-id: "fdda9806fe5d8584"
-- name: '--->🇯🇵 800'
-  type: vless
-  server: jp.musicwave.net
-  port: 443
-  uuid: "94d2d711-76e5-4d82-a3c9-4f06fd5558c8"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "jp.musicwave.net"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "qBtxq4RZxDLCJT8i48iaGMhacv8MOI0yhIFiuwYJm08"
-    short-id: "825d392c67e4"
-- name: '--->🇩🇪 801d'
+- name: '--->🇩🇪 801'
   type: vless
   server: api.noneok.com
   port: 443
@@ -68,20 +54,6 @@ proxies:
   udp: true
   network: tcp
   tls: false
-- name: 🇩🇪--->🇩🇪 697
-  type: vless
-  server: 87.120.92.181
-  port: 443
-  uuid: "94d2d711-76e5-4d82-a3c9-4f06fd5558c8"
-  udp: true
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "e-spectacular.ru"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "oEZR7FpSd4ZrBKHrBLJqfGq_23-xf7DQy0bkqkiq0mw"
-    short-id: "825d392c67e4"
 - name: 🇫🇮--->🇫🇮 732
   type: vless
   server: 138.124.6.176
@@ -96,6 +68,21 @@ proxies:
   reality-opts:
     public-key: "hRllSmqS51Qaj-QyVKUxaB3NxHXY6yi-eITBeFPqnXQ"
     short-id: "825d392c67e4"
+- name: 🇩🇪--->🇩🇪 810
+  type: vless
+  server: 88.216.220.88
+  port: 443
+  uuid: "a8e3155b-ceb1-4fcb-bc0c-2e77ec005401"
+  udp: true
+  network: grpc
+  tls: true
+  servername: "files.noneok.com"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "q3kOYHdjmqWLLYj8oikvna1bTjofk45ktegGaJE611g"
+    short-id: "d3b394558cfe0266"
+  grpc-opts:
+    grpc-service-name: "api.v1.StreamService"
 - name: 🇫🇮--->🇫🇮 744b
   type: vless
   server: 2.57.242.77
@@ -124,7 +111,7 @@ proxies:
   reality-opts:
     public-key: "aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o"
     short-id: "fdda9806fe5d8584"
-- name: 🇫🇷--->🇫🇷 690
+- name: 🇫🇷--->🇫🇷 690b
   type: vless
   server: 78.17.208.22
   port: 443
@@ -138,7 +125,7 @@ proxies:
   reality-opts:
     public-key: "aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o"
     short-id: "fdda9806fe5d8584"
-- name: 🇦🇹--->🇦🇹 774
+- name: 🇦🇹--->🇦🇹 774b
   type: vless
   server: 67.159.17.223
   port: 443
@@ -208,7 +195,7 @@ proxies:
   reality-opts:
     public-key: "gtKMi9Q9ZMYxe-ZvzmbpPI-uE6YcFM84xYSw7bpKF3w"
     short-id: "52c579ed2ce06c26"
-- name: 🇪🇸--->🇪🇸 737b
+- name: 🇪🇸--->🇪🇸 737a
   type: vless
   server: 78.17.180.106
   port: 443
@@ -222,6 +209,14 @@ proxies:
   reality-opts:
     public-key: "aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o"
     short-id: "fdda9806fe5d8584"
+- name: 🇳🇱--->🇳🇱 809
+  type: vless
+  server: 134.98.158.207
+  port: 62145
+  uuid: "8fb65472-5957-4f64-ba2d-b5812b2f155a"
+  udp: true
+  network: tcp
+  tls: false
 - name: '--->🇳🇱 795c'
   type: vless
   server: nl02.port-server.online
@@ -278,20 +273,20 @@ proxy-groups:
   proxies:
   - '--->🇸🇪 776'
   - 🇫🇮--->🇫🇮 763c
-  - '--->🇯🇵 800'
-  - '--->🇩🇪 801d'
+  - '--->🇩🇪 801'
   - 🇩🇪--->🇩🇪 807
-  - 🇩🇪--->🇩🇪 697
   - 🇫🇮--->🇫🇮 732
+  - 🇩🇪--->🇩🇪 810
   - 🇫🇮--->🇫🇮 744b
   - 🇩🇪--->🇩🇪 743a
-  - 🇫🇷--->🇫🇷 690
-  - 🇦🇹--->🇦🇹 774
+  - 🇫🇷--->🇫🇷 690b
+  - 🇦🇹--->🇦🇹 774b
   - 🇫🇷--->🇫🇷 662a
   - 🇩🇪--->🇩🇪 754
   - 🇸🇪--->🇸🇪 791
   - 🇩🇪--->🇩🇪 700
-  - 🇪🇸--->🇪🇸 737b
+  - 🇪🇸--->🇪🇸 737a
+  - 🇳🇱--->🇳🇱 809
   - '--->🇳🇱 795c'
   - '--->🇳🇱 793b'
   - '--->🇵🇱 792a'
@@ -299,26 +294,48 @@ proxy-groups:
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
+- name: 📁 Группа A
+  type: url-test
+  proxies:
+  - '--->🇵🇱 792a'
+  - 🇫🇷--->🇫🇷 662a
+  - 🇩🇪--->🇩🇪 743a
+  - 🇪🇸--->🇪🇸 737a
+  url: https://www.gstatic.com/generate_204
+  interval: 60
+  tolerance: 80
+- name: 📁 Группа B
+  type: url-test
+  proxies:
+  - '--->🇳🇱 793b'
+  - 🇫🇷--->🇫🇷 690b
+  - 🇦🇹--->🇦🇹 774b
+  - 🇫🇮--->🇫🇮 744b
+  url: https://www.gstatic.com/generate_204
+  interval: 60
+  tolerance: 80
 - name: PROXY
   type: select
   proxies:
   - 🚀 Авто (лучший)
+  - 📁 Группа A
+  - 📁 Группа B
   - '--->🇸🇪 776'
   - 🇫🇮--->🇫🇮 763c
-  - '--->🇯🇵 800'
-  - '--->🇩🇪 801d'
+  - '--->🇩🇪 801'
   - 🇩🇪--->🇩🇪 807
-  - 🇩🇪--->🇩🇪 697
   - 🇫🇮--->🇫🇮 732
+  - 🇩🇪--->🇩🇪 810
   - 🇫🇮--->🇫🇮 744b
   - 🇩🇪--->🇩🇪 743a
-  - 🇫🇷--->🇫🇷 690
-  - 🇦🇹--->🇦🇹 774
+  - 🇫🇷--->🇫🇷 690b
+  - 🇦🇹--->🇦🇹 774b
   - 🇫🇷--->🇫🇷 662a
   - 🇩🇪--->🇩🇪 754
   - 🇸🇪--->🇸🇪 791
   - 🇩🇪--->🇩🇪 700
-  - 🇪🇸--->🇪🇸 737b
+  - 🇪🇸--->🇪🇸 737a
+  - 🇳🇱--->🇳🇱 809
   - '--->🇳🇱 795c'
   - '--->🇳🇱 793b'
   - '--->🇵🇱 792a'
