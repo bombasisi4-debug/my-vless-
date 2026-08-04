@@ -5,19 +5,18 @@ log-level: info
 proxies:
 - name: 🇩🇪--->🇩🇪 1
   type: vless
-  server: 88.216.220.88
+  server: 185.23.239.129
   port: 443
-  uuid: "a8e3155b-ceb1-4fcb-bc0c-2e77ec005401"
+  uuid: "c04bf2df-2b7f-44da-a893-3792d3910fd8"
   udp: true
-  network: grpc
+  network: tcp
   tls: true
-  servername: "files.noneok.com"
+  flow: xtls-rprx-vision
+  servername: "ger06.skorostnet.space"
   client-fingerprint: firefox
   reality-opts:
-    public-key: "q3kOYHdjmqWLLYj8oikvna1bTjofk45ktegGaJE611g"
-    short-id: "d3b394558cfe0266"
-  grpc-opts:
-    grpc-service-name: "api.v1.StreamService"
+    public-key: "aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o"
+    short-id: "fdda9806fe5d8584"
 - name: 🇩🇪--->🇩🇪 2
   type: vless
   server: 191.44.112.193
@@ -34,6 +33,33 @@ proxies:
     short-id: "fdda9806fe5d8584"
 - name: '--->🇩🇪 3'
   type: vless
+  server: pro-de.emrata.top
+  port: 443
+  uuid: "18f71148-a3c7-0032-b02a-be04da72efe3"
+  udp: true
+  network: tcp
+  tls: true
+  servername: "pro-de.emrata.top"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I"
+    short-id: ""
+- name: 🇩🇪--->🇩🇪 4
+  type: vless
+  server: 144.31.168.39
+  port: 443
+  uuid: "45c876f9-4900-40c0-b269-94871e78df54"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "ger2.port-server.online"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "X8xlnrW8OQzpZ3n0BgXfdiYDflD8vZ1nHyxkyjGjKBQ"
+    short-id: "0dba08e5981ba160"
+- name: '--->🇩🇪 5'
+  type: vless
   server: ger09.skorostnet.space
   port: 443
   uuid: "06d44c57-8e1a-41f4-b9c4-65d35869e078"
@@ -46,7 +72,7 @@ proxies:
   reality-opts:
     public-key: "aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o"
     short-id: "fdda9806fe5d8584"
-- name: 🇳🇱--->🇩🇪 4
+- name: 🇳🇱--->🇩🇪 6
   type: vless
   server: 193.227.99.54
   port: 8880
@@ -57,7 +83,35 @@ proxies:
   httpupgrade-opts:
     path: "mmd"
     host: "bgphajik.lorqino.ir"
-- name: 🇪🇸--->🇪🇸 5
+- name: '--->🇩🇪 7'
+  type: vless
+  server: ger06.skorostnet.space
+  port: 443
+  uuid: "c04bf2df-2b7f-44da-a893-3792d3910fd8"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "ger06.skorostnet.space"
+  client-fingerprint: edge
+  reality-opts:
+    public-key: "aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o"
+    short-id: "fdda9806fe5d8584"
+- name: 🇩🇪--->🇩🇪 8
+  type: vless
+  server: 78.17.13.189
+  port: 443
+  uuid: "c04bf2df-2b7f-44da-a893-3792d3910fd8"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "ger04.skorostnet.space"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o"
+    short-id: "fdda9806fe5d8584"
+- name: 🇪🇸--->🇪🇸 9
   type: vless
   server: 78.17.180.106
   port: 443
@@ -71,21 +125,21 @@ proxies:
   reality-opts:
     public-key: "aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o"
     short-id: "fdda9806fe5d8584"
-- name: 🇫🇮--->🇫🇮 6
+- name: '--->🇫🇮 10'
   type: vless
-  server: 2.57.242.77
+  server: pro-fi.emrata.top
   port: 443
-  uuid: "c04bf2df-2b7f-44da-a893-3792d3910fd8"
+  uuid: "18f71148-a3c7-40c7-b02a-be04da72efe3"
   udp: true
   network: tcp
   tls: true
   flow: xtls-rprx-vision
-  servername: "fl07.skorostnet.space"
+  servername: "pro-fi.emrata.top"
   client-fingerprint: firefox
   reality-opts:
-    public-key: "aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o"
-    short-id: "fdda9806fe5d8584"
-- name: 🇫🇷--->🇫🇷 7
+    public-key: "F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I"
+    short-id: ""
+- name: 🇫🇷--->🇫🇷 11
   type: vless
   server: 78.17.208.22
   port: 443
@@ -99,7 +153,7 @@ proxies:
   reality-opts:
     public-key: "aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o"
     short-id: "fdda9806fe5d8584"
-- name: 🇫🇷--->🇫🇷 8
+- name: 🇫🇷--->🇫🇷 12
   type: vless
   server: 78.17.208.20
   port: 443
@@ -113,11 +167,79 @@ proxies:
   reality-opts:
     public-key: "aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o"
     short-id: "fdda9806fe5d8584"
-- name: '--->🇸🇪 9'
+- name: 🇫🇷--->🇫🇷 13
+  type: vless
+  server: 78.17.208.23
+  port: 443
+  uuid: "c04bf2df-2b7f-44da-a893-3792d3910fd8"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "fr06.skorostnet.space"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o"
+    short-id: "fdda9806fe5d8584"
+- name: 🇬🇧--->🇬🇧 14
+  type: vless
+  server: 2.26.127.12
+  port: 443
+  uuid: "18f71148-a3c7-40c7-b02a-be04da72efe3"
+  udp: true
+  network: tcp
+  tls: true
+  servername: "pro-uk.emrata.top"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "RYnbBzo-UTB4nVMymzJ5B6TgYed7DfOc6O5Pr_htYSc"
+    short-id: ""
+- name: '--->🇮🇹 15'
+  type: vless
+  server: pro-it.emrata.top
+  port: 443
+  uuid: "18f71148-a3c7-40c7-b02a-be04da72efe3"
+  udp: true
+  network: tcp
+  tls: true
+  servername: "pro-it.emrata.top"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I"
+    short-id: ""
+- name: 🇳🇱--->🇳🇱 16
+  type: vless
+  server: 194.104.10.68
+  port: 443
+  uuid: "68b4b16e-2759-47a4-8a69-33118edf5ce6"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "ned.leontunel.ru"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "z3U2vV7PRNvOraeAs6RnjM8aQbkOFdyp82ogXdS40mI"
+    short-id: "f64c0c7635cbddf5"
+- name: 🇵🇱--->🇵🇱 17
+  type: vless
+  server: 2.26.148.173
+  port: 443
+  uuid: "45c876f9-4900-40c0-b269-94871e78df54"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "pol01.port-server.online"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "wJP3dHSebpXt0VzXPkQQV641qIse5haPAUnJl4O4CBM"
+    short-id: "a3b6822086b8b1a9"
+- name: '--->🇸🇪 18'
   type: vless
   server: pro-se.emrata.top
   port: 443
-  uuid: "5f08a5b9-774a-4587-86d1-d08880d48cb1"
+  uuid: "18f71148-a3c7-40c7-b02a-be04da72efe3"
   udp: true
   network: tcp
   tls: true
@@ -126,6 +248,34 @@ proxies:
   reality-opts:
     public-key: "AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk"
     short-id: ""
+- name: '--->🇸🇪 19'
+  type: vless
+  server: swe03.skorostnet.space
+  port: 443
+  uuid: "06d44c57-8e1a-41f4-b9c4-65d35869e078"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "swe03.skorostnet.space"
+  client-fingerprint: qq
+  reality-opts:
+    public-key: "aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o"
+    short-id: "fdda9806fe5d8584"
+- name: '--->🇹🇷 20'
+  type: vless
+  server: pro-tr.emrata.top
+  port: 443
+  uuid: "18f71148-a3c7-40c7-b02a-be04da72efe3"
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  servername: "pro-tr.emrata.top"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "da5UVhoC5QOCDm84AxB-RRxf0z2nySZ3lOemgqizLS4"
+    short-id: ""
 proxy-groups:
 - name: 🚀 Авто (лучший)
   type: url-test
@@ -133,12 +283,23 @@ proxy-groups:
   - 🇩🇪--->🇩🇪 1
   - 🇩🇪--->🇩🇪 2
   - '--->🇩🇪 3'
-  - 🇳🇱--->🇩🇪 4
-  - 🇪🇸--->🇪🇸 5
-  - 🇫🇮--->🇫🇮 6
-  - 🇫🇷--->🇫🇷 7
-  - 🇫🇷--->🇫🇷 8
-  - '--->🇸🇪 9'
+  - 🇩🇪--->🇩🇪 4
+  - '--->🇩🇪 5'
+  - 🇳🇱--->🇩🇪 6
+  - '--->🇩🇪 7'
+  - 🇩🇪--->🇩🇪 8
+  - 🇪🇸--->🇪🇸 9
+  - '--->🇫🇮 10'
+  - 🇫🇷--->🇫🇷 11
+  - 🇫🇷--->🇫🇷 12
+  - 🇫🇷--->🇫🇷 13
+  - 🇬🇧--->🇬🇧 14
+  - '--->🇮🇹 15'
+  - 🇳🇱--->🇳🇱 16
+  - 🇵🇱--->🇵🇱 17
+  - '--->🇸🇪 18'
+  - '--->🇸🇪 19'
+  - '--->🇹🇷 20'
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -149,11 +310,22 @@ proxy-groups:
   - 🇩🇪--->🇩🇪 1
   - 🇩🇪--->🇩🇪 2
   - '--->🇩🇪 3'
-  - 🇳🇱--->🇩🇪 4
-  - 🇪🇸--->🇪🇸 5
-  - 🇫🇮--->🇫🇮 6
-  - 🇫🇷--->🇫🇷 7
-  - 🇫🇷--->🇫🇷 8
-  - '--->🇸🇪 9'
+  - 🇩🇪--->🇩🇪 4
+  - '--->🇩🇪 5'
+  - 🇳🇱--->🇩🇪 6
+  - '--->🇩🇪 7'
+  - 🇩🇪--->🇩🇪 8
+  - 🇪🇸--->🇪🇸 9
+  - '--->🇫🇮 10'
+  - 🇫🇷--->🇫🇷 11
+  - 🇫🇷--->🇫🇷 12
+  - 🇫🇷--->🇫🇷 13
+  - 🇬🇧--->🇬🇧 14
+  - '--->🇮🇹 15'
+  - 🇳🇱--->🇳🇱 16
+  - 🇵🇱--->🇵🇱 17
+  - '--->🇸🇪 18'
+  - '--->🇸🇪 19'
+  - '--->🇹🇷 20'
 rules:
 - MATCH,PROXY
