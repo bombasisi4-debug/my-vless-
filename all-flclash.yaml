@@ -174,21 +174,7 @@ proxies:
   reality-opts:
     public-key: "gtKMi9Q9ZMYxe-ZvzmbpPI-uE6YcFM84xYSw7bpKF3w"
     short-id: "52c579ed2ce06c26"
-- name: 🇷🇺--->🇩🇪 13
-  type: vless
-  server: 176.109.94.150
-  port: 443
-  uuid: "65761043-f5c1-4e7b-8c16-b72c7a3fa4b7"
-  udp: true
-  network: raw
-  tls: true
-  flow: xtls-rprx-vision
-  servername: "api.ok.ru"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "SGke3Xg-FLnDu0-T7zXLF7tgqKDMqaPDDxYDUE2uSzc"
-    short-id: "b0c41ea19f63efc4"
-- name: 🇩🇪--->🇩🇪 14
+- name: 🇩🇪--->🇩🇪 13
   type: vless
   server: 5.75.201.77
   port: 51822
@@ -196,7 +182,7 @@ proxies:
   udp: true
   network: tcp
   tls: false
-- name: 🇪🇸--->🇪🇸 15
+- name: 🇪🇸--->🇪🇸 14
   type: vless
   server: isp05.skorostnet.space
   port: 443
@@ -210,7 +196,7 @@ proxies:
   reality-opts:
     public-key: "aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o"
     short-id: "fdda9806fe5d8584"
-- name: 🇪🇸--->🇪🇸 16
+- name: 🇪🇸--->🇪🇸 15
   type: vless
   server: 78.17.180.106
   port: 443
@@ -224,7 +210,7 @@ proxies:
   reality-opts:
     public-key: "aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o"
     short-id: "fdda9806fe5d8584"
-- name: 🇫🇮--->🇫🇮 17
+- name: 🇫🇮--->🇫🇮 16
   type: vless
   server: 185.212.119.177
   port: 443
@@ -238,7 +224,7 @@ proxies:
   reality-opts:
     public-key: "aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o"
     short-id: "fdda9806fe5d8584"
-- name: 🇫🇮--->🇫🇮 18
+- name: 🇫🇮--->🇫🇮 17
   type: vless
   server: 45.149.147.59
   port: 30160
@@ -251,6 +237,18 @@ proxies:
   reality-opts:
     public-key: "WrOqucxSJjag_N6FYt9ErHwRF97CZv5_nIhcL1im9Ao"
     short-id: "12294e"
+- name: 🇩🇪--->🇫🇮 18
+  type: vless
+  server: 146.75.119.82
+  port: 80
+  uuid: "b334d1aa-aa87-4802-ac8a-d739378e658d"
+  udp: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: "ws/?ed=2048/@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz/?2048"
+    headers:
+      Host: "rb24.ir"
 - name: 🇫🇮--->🇫🇮 19
   type: vless
   server: 91.103.140.243
@@ -355,22 +353,7 @@ proxies:
   udp: true
   network: tcp
   tls: false
-- name: 🇩🇪--->🇬🇧 27
-  type: vless
-  server: ded.kosmosapp.ru
-  port: 16923
-  uuid: "cf0310b0-2cd6-4ae1-b4c4-e029e7fb0ee3"
-  udp: true
-  network: grpc
-  tls: true
-  servername: "yandex.ru"
-  client-fingerprint: safari
-  reality-opts:
-    public-key: "_QeslG3rHGM7DoM99pYC8-jpc16pM2MbNZ6NRMoxmHA"
-    short-id: "10ffb85da1c2d986"
-  grpc-opts:
-    grpc-service-name: "neurex"
-- name: 🇬🇧--->🇬🇧 28
+- name: 🇬🇧--->🇬🇧 27
   type: vless
   server: 185.232.117.117
   port: 443
@@ -384,22 +367,21 @@ proxies:
   reality-opts:
     public-key: "aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o"
     short-id: "fdda9806fe5d8584"
-- name: 🇭🇺--->🇭🇺 29
+- name: 🇯🇵--->🇯🇵 28
   type: vless
-  server: 152.233.41.35
-  port: 16923
-  uuid: "cf0310b0-2cd6-4ae1-b4c4-e029e7fb0ee3"
+  server: jp.musicwave.net
+  port: 443
+  uuid: "94d2d711-76e5-4d82-a3c9-4f06fd5558c8"
   udp: true
-  network: grpc
+  network: tcp
   tls: true
-  servername: "mail.yandex.ru"
+  flow: xtls-rprx-vision
+  servername: "jp.musicwave.net"
   client-fingerprint: firefox
   reality-opts:
-    public-key: "_QeslG3rHGM7DoM99pYC8-jpc16pM2MbNZ6NRMoxmHA"
-    short-id: "10ffb85da1c2d986"
-  grpc-opts:
-    grpc-service-name: "neurex"
-- name: 🇳🇱--->🇳🇱 30
+    public-key: "qBtxq4RZxDLCJT8i48iaGMhacv8MOI0yhIFiuwYJm08"
+    short-id: "825d392c67e4"
+- name: 🇳🇱--->🇳🇱 29
   type: vless
   server: 89.105.197.203
   port: 443
@@ -413,7 +395,7 @@ proxies:
   reality-opts:
     public-key: "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0"
     short-id: "64c1fe36c7846400"
-- name: 🇳🇱--->🇳🇱 31
+- name: 🇳🇱--->🇳🇱 30
   type: vless
   server: 154.83.246.52
   port: 443
@@ -427,7 +409,7 @@ proxies:
   reality-opts:
     public-key: "pPi-WO8qQFFZ9UJWNLW9YClbjcoAAZWJQ2_FM3Kjhz8"
     short-id: "500aec9e9e5e2212"
-- name: 🇳🇱--->🇳🇱 32
+- name: 🇳🇱--->🇳🇱 31
   type: vless
   server: 89.124.116.234
   port: 443
@@ -441,6 +423,19 @@ proxies:
   reality-opts:
     public-key: "8EPzwlenieiAy21ktdbQITnHJHA_biE4TVbN6OcDSSY"
     short-id: "4e40ed8b114da1ae"
+- name: 🇳🇱--->🇳🇱 32
+  type: vless
+  server: 107.189.19.254
+  port: 2083
+  uuid: "bc2c8b83-07b7-47bd-841f-9d5d1270917f"
+  udp: true
+  network: xhttp
+  tls: true
+  servername: "www.amd.com"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "g2GBIGI6smS4p_nqwJYqFQFHx_n-QXWSnCfn0AJ7r38"
+    short-id: "ea74f323d2"
 - name: 🇳🇱--->🇳🇱 33
   type: vless
   server: 79.137.194.244
@@ -513,6 +508,21 @@ proxies:
     grpc-service-name: "neurex"
 - name: 🇵🇱--->🇵🇱 38
   type: vless
+  server: 152.233.43.88
+  port: 16923
+  uuid: "0f4aeb95-32ae-457c-8d71-b66bb9ff1073"
+  udp: true
+  network: grpc
+  tls: true
+  servername: "yandex.ru"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "_QeslG3rHGM7DoM99pYC8-jpc16pM2MbNZ6NRMoxmHA"
+    short-id: "10ffb85da1c2d986"
+  grpc-opts:
+    grpc-service-name: "neurex"
+- name: 🇵🇱--->🇵🇱 39
+  type: vless
   server: pol01.port-server.online
   port: 443
   uuid: "45c876f9-4900-40c0-b269-94871e78df54"
@@ -525,7 +535,7 @@ proxies:
   reality-opts:
     public-key: "wJP3dHSebpXt0VzXPkQQV641qIse5haPAUnJl4O4CBM"
     short-id: "a3b6822086b8b1a9"
-- name: 🇷🇺--->🇸🇪 39
+- name: 🇷🇺--->🇸🇪 40
   type: vless
   server: 151.236.114.211
   port: 8443
@@ -539,7 +549,7 @@ proxies:
   reality-opts:
     public-key: "ZSzB9TQPGNcCiC0WLmciF5Jc8doJDvdRgbqTi8SCoEM"
     short-id: "a1b2c3d4e5f6789a"
-- name: 🇸🇪--->🇸🇪 40
+- name: 🇸🇪--->🇸🇪 41
   type: vless
   server: sa.ch-moltisanti.ru
   port: 443
@@ -553,7 +563,7 @@ proxies:
   reality-opts:
     public-key: "zb1esVBjrdlitl7Z_YkRi44kC0NXVvF5U17LAXW6fDQ"
     short-id: "825d392c67e4"
-- name: 🇸🇪--->🇸🇪 41
+- name: 🇸🇪--->🇸🇪 42
   type: vless
   server: 81.90.21.225
   port: 443
@@ -567,7 +577,7 @@ proxies:
   reality-opts:
     public-key: "aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o"
     short-id: "fdda9806fe5d8584"
-- name: 🇪🇸--->🇹🇷 42
+- name: 🇪🇸--->🇹🇷 43
   type: vless
   server: 170.168.97.5
   port: 8443
@@ -582,7 +592,7 @@ proxies:
     short-id: ""
   grpc-opts:
     grpc-service-name: "TunService"
-- name: 🇹🇷--->🇹🇷 43
+- name: 🇹🇷--->🇹🇷 44
   type: vless
   server: 62.133.63.202
   port: 13868
@@ -612,12 +622,12 @@ proxy-groups:
   - 🇩🇪--->🇩🇪 10
   - 🇩🇪--->🇩🇪 11
   - 🇩🇪--->🇩🇪 12
-  - 🇷🇺--->🇩🇪 13
-  - 🇩🇪--->🇩🇪 14
+  - 🇩🇪--->🇩🇪 13
+  - 🇪🇸--->🇪🇸 14
   - 🇪🇸--->🇪🇸 15
-  - 🇪🇸--->🇪🇸 16
+  - 🇫🇮--->🇫🇮 16
   - 🇫🇮--->🇫🇮 17
-  - 🇫🇮--->🇫🇮 18
+  - 🇩🇪--->🇫🇮 18
   - 🇫🇮--->🇫🇮 19
   - 🇫🇮--->🇫🇮 20
   - 🇫🇮--->🇫🇮 21
@@ -626,9 +636,9 @@ proxy-groups:
   - 🇫🇷--->🇫🇷 24
   - 🇫🇷--->🇫🇷 25
   - 🇫🇷--->🇫🇷 26
-  - 🇩🇪--->🇬🇧 27
-  - 🇬🇧--->🇬🇧 28
-  - 🇭🇺--->🇭🇺 29
+  - 🇬🇧--->🇬🇧 27
+  - 🇯🇵--->🇯🇵 28
+  - 🇳🇱--->🇳🇱 29
   - 🇳🇱--->🇳🇱 30
   - 🇳🇱--->🇳🇱 31
   - 🇳🇱--->🇳🇱 32
@@ -638,11 +648,12 @@ proxy-groups:
   - 🇵🇱--->🇵🇱 36
   - 🇵🇱--->🇵🇱 37
   - 🇵🇱--->🇵🇱 38
-  - 🇷🇺--->🇸🇪 39
-  - 🇸🇪--->🇸🇪 40
+  - 🇵🇱--->🇵🇱 39
+  - 🇷🇺--->🇸🇪 40
   - 🇸🇪--->🇸🇪 41
-  - 🇪🇸--->🇹🇷 42
-  - 🇹🇷--->🇹🇷 43
+  - 🇸🇪--->🇸🇪 42
+  - 🇪🇸--->🇹🇷 43
+  - 🇹🇷--->🇹🇷 44
   url: https://www.gstatic.com/generate_204
   interval: 60
   tolerance: 80
@@ -662,12 +673,12 @@ proxy-groups:
   - 🇩🇪--->🇩🇪 10
   - 🇩🇪--->🇩🇪 11
   - 🇩🇪--->🇩🇪 12
-  - 🇷🇺--->🇩🇪 13
-  - 🇩🇪--->🇩🇪 14
+  - 🇩🇪--->🇩🇪 13
+  - 🇪🇸--->🇪🇸 14
   - 🇪🇸--->🇪🇸 15
-  - 🇪🇸--->🇪🇸 16
+  - 🇫🇮--->🇫🇮 16
   - 🇫🇮--->🇫🇮 17
-  - 🇫🇮--->🇫🇮 18
+  - 🇩🇪--->🇫🇮 18
   - 🇫🇮--->🇫🇮 19
   - 🇫🇮--->🇫🇮 20
   - 🇫🇮--->🇫🇮 21
@@ -676,9 +687,9 @@ proxy-groups:
   - 🇫🇷--->🇫🇷 24
   - 🇫🇷--->🇫🇷 25
   - 🇫🇷--->🇫🇷 26
-  - 🇩🇪--->🇬🇧 27
-  - 🇬🇧--->🇬🇧 28
-  - 🇭🇺--->🇭🇺 29
+  - 🇬🇧--->🇬🇧 27
+  - 🇯🇵--->🇯🇵 28
+  - 🇳🇱--->🇳🇱 29
   - 🇳🇱--->🇳🇱 30
   - 🇳🇱--->🇳🇱 31
   - 🇳🇱--->🇳🇱 32
@@ -688,10 +699,11 @@ proxy-groups:
   - 🇵🇱--->🇵🇱 36
   - 🇵🇱--->🇵🇱 37
   - 🇵🇱--->🇵🇱 38
-  - 🇷🇺--->🇸🇪 39
-  - 🇸🇪--->🇸🇪 40
+  - 🇵🇱--->🇵🇱 39
+  - 🇷🇺--->🇸🇪 40
   - 🇸🇪--->🇸🇪 41
-  - 🇪🇸--->🇹🇷 42
-  - 🇹🇷--->🇹🇷 43
+  - 🇸🇪--->🇸🇪 42
+  - 🇪🇸--->🇹🇷 43
+  - 🇹🇷--->🇹🇷 44
 rules:
 - MATCH,PROXY
