@@ -59,6 +59,7 @@ SEED_FILE = Path(os.environ.get("SEED_FILE") or HERE / "seed.json")
 
 Path(DB_PATH).parent.mkdir(parents=True, exist_ok=True)
 game = Game(DB_PATH)
+game.owner_lookup = lambda: owner_id()
 router = Router()
 BOT_USERNAME = "bot"
 
@@ -236,6 +237,11 @@ async def cleanup_worker(bot: Bot) -> None:
     """Раз в 5 секунд превращает просроченные сообщения в «🧹 вычищено»: инлайн-сообщения
     можно только отредактировать, обычные — удаляются (а если нельзя — тоже редактируются)."""
     while True:
+        try:
+            for chat, payers, total in game.apply_daily_taxes():
+                logging.info("Ежедневный налог в %s: %s чел., %s см", chat, payers, total)
+        except Exception:
+            logging.exception("Ошибка при сборе налога")
         try:
             for row in game.due_cleanups(time.time()):
                 try:

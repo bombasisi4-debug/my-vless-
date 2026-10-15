@@ -192,6 +192,8 @@ class Game:
                 self.db.execute(f"ALTER TABLE players ADD COLUMN {col} {ddl}")
         self.rng = rng or random.SystemRandom()
         self.today = today
+        # кто владелец (он же казна для налогов); bot.py подменяет на свою функцию
+        self.owner_lookup = lambda: int(self.setting("owner") or 0)
 
     # --- настройки ---------------------------------------------------------
 
@@ -310,6 +312,10 @@ class Game:
                 note += f"; +{bonus + 1} с {nxt}-го дня"
             if bonus:
                 perks.append(Perk("streak", bonus, note))
+            tax = self._growth_tax(row, base)
+            if tax:
+                pct = self.setting("tax_grow:" + row["chat"])
+                perks.append(Perk("tax", -tax, f"{pct}% в казну"))
         total = base + sum(p.change for p in perks)
         return total, perks, updates
 
@@ -656,3 +662,73 @@ class Game:
         except Exception:
             self.db.execute("ROLLBACK")
             raise
+
+    # --- налоги ------------------------------------------------------------------
+
+    def _treasury(self, chat: str) -> sqlite3.Row | None:
+        owner = self.owner_lookup()
+        return self.find(chat, owner) if owner else None
+
+    def _growth_tax(self, row: sqlite3.Row, base: int) -> int:
+        """Сколько см забрать с прироста (и отдать в казну)."""
+        pct = self.setting(f"tax_grow:{row['chat']}")
+        if not pct or base <= 0 or row["user_id"] == self.owner_lookup():
+            return 0
+        tax = round(base * float(pct) / 100)
+        treasury = self._treasury(row["chat"])
+        if tax and treasury:
+            self.add_length(treasury["id"], tax)
+        return tax
+
+    def tax_once(self, chat: str, percent: float | None = None, cm: int | None = None,
+                 burn: bool = False) -> tuple[int, int]:
+        """Списывает налог со всех, у кого длина больше нуля (кроме владельца).
+        percent — процент от длины, cm — фиксированная сумма (но не больше длины).
+        Возвращает (сколько человек заплатили, сколько см собрано)."""
+        treasury = self._treasury(chat)
+        payers, total = 0, 0
+        for r in self.db.execute("SELECT id, length FROM players WHERE chat = ? AND length > 0", (chat,)).fetchall():
+            if treasury and r["id"] == treasury["id"]:
+                continue
+            cut = round(r["length"] * percent / 100) if percent is not None else min(cm or 0, r["length"])
+            if cut <= 0:
+                continue
+            self.add_length(r["id"], -cut)
+            payers, total = payers + 1, total + cut
+        if total and treasury and not burn:
+            self.add_length(treasury["id"], total)
+        return payers, total
+
+    def set_daily_tax(self, chat: str, spec: str | None) -> None:
+        """spec: '2%' или '3' (см); None — отменить. Первый сбор — завтра."""
+        if spec is None:
+            self.db.execute("DELETE FROM settings WHERE key = ?", (f"tax_daily:{chat}",))
+            return
+        self.set_setting(f"tax_daily:{chat}", spec)
+        self.set_setting(f"tax_daily_last:{chat}", self.today().isoformat())
+
+    def set_growth_tax(self, chat: str, percent: float | None) -> None:
+        if percent is None:
+            self.db.execute("DELETE FROM settings WHERE key = ?", (f"tax_grow:{chat}",))
+        else:
+            self.set_setting(f"tax_grow:{chat}", f"{percent:g}")
+
+    def apply_daily_taxes(self) -> list[tuple[str, int, int]]:
+        """Собирает ежедневные налоги, если сегодня ещё не собирали."""
+        done = []
+        today = self.today().isoformat()
+        for r in self.db.execute("SELECT key, value FROM settings WHERE key LIKE 'tax_daily:%'").fetchall():
+            chat = r["key"].split(":", 1)[1]
+            if (self.setting(f"tax_daily_last:{chat}") or "") >= today:
+                continue
+            spec = r["value"]
+            if spec.endswith("%"):
+                payers, total = self.tax_once(chat, percent=float(spec[:-1]))
+            else:
+                payers, total = self.tax_once(chat, cm=int(spec))
+            self.set_setting(f"tax_daily_last:{chat}", today)
+            done.append((chat, payers, total))
+        return done
+
+    def tax_status(self, chat: str) -> tuple[str | None, str | None]:
+        return self.setting(f"tax_daily:{chat}"), self.setting(f"tax_grow:{chat}")

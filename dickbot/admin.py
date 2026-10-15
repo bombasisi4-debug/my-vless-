@@ -156,6 +156,9 @@ def parse(game: Game, chat: str | None, text: str, owner_id: int) -> Action | No
     if chat is None:
         return err("Пока нет ни одного чата с игроками")
 
+    if cmd in ("налог", "налоги", "tax"):
+        return parse_tax(game, chat, rest)
+
     def target(spec: str) -> tuple[sqlite3.Row | None, Action | None]:
         row, e = find_target(game, chat, spec, owner_id)
         return row, (err(e) if e else None)
@@ -327,6 +330,94 @@ def parse(game: Game, chat: str | None, text: str, owner_id: int) -> Action | No
         return Action(title="Топ чата", info_only=True, run=lambda: "")
 
     return None
+
+
+TAX_AMOUNT = re.compile(r"^(\d+(?:[.,]\d+)?)\s*(%|см)?$")
+
+
+def tax_amount(token: str) -> tuple[float | None, int | None] | None:
+    """'10%' -> (10.0, None), '5' / '5см' -> (None, 5)."""
+    m = TAX_AMOUNT.match(token.replace(" ", ""))
+    if not m:
+        return None
+    value = float(m.group(1).replace(",", "."))
+    if m.group(2) == "%":
+        return (value, None) if 0 < value <= 100 else None
+    return (None, int(value)) if value >= 1 else None
+
+
+def tax_what(amount: tuple[float | None, int | None]) -> str:
+    pct, cm = amount
+    return f"{pct:g}%" if pct is not None else f"{cm} см"
+
+
+def parse_tax(game: Game, chat: str, rest: str) -> Action:
+    words = rest.casefold().split()
+    daily, grow = game.tax_status(chat)
+    if not words:
+        lines = ["Налоги сейчас:",
+                 "— ежедневный: " + (daily or "нет"),
+                 "— с роста: " + (f"{grow}%" if grow else "нет")]
+        return Action(title=" | ".join(lines), info_only=True, run=lambda: "\n".join(lines))
+    if words[0] in ("стоп", "отмена", "отменить", "выкл", "нет", "0"):
+        def run_off() -> str:
+            game.set_daily_tax(chat, None)
+            game.set_growth_tax(chat, None)
+            return "Налоги отменены: ежедневного и налога с роста больше нет."
+        return Action(title="Отменить все налоги", run=run_off, announce=lambda: T.ANN_TAX_OFF)
+
+    burn = words[-1] in ("сжечь", "сжигать", "сгорает", "burn")
+    if burn:
+        words = words[:-1]
+    joined = " ".join(words)
+    m = re.match(r"^(каждый день|ежедневно|ежедневный|в день|daily)\s+(.+)$", joined)
+    if m:
+        amount = tax_amount(m.group(2))
+        if not amount:
+            return err("Формат: налог каждый день 2% или налог каждый день 3")
+        what = tax_what(amount)
+
+        def run_daily() -> str:
+            game.set_daily_tax(chat, what.replace(" см", ""))
+            return f"Ежедневный налог {what}: первый сбор завтра, всё уходит в казну (тебе)."
+        return Action(title=f"🏛 Ежедневный налог {what} со всех", run=run_daily,
+                      announce=lambda: T.ANN_TAX_DAILY.format(what=T.b(what)))
+    m = re.match(r"^(с роста|на рост|рост|с прироста)\s+(.+)$", joined)
+    if m:
+        amount = tax_amount(m.group(2))
+        if not amount or amount[0] is None:
+            return err("Налог с роста — только в процентах: налог с роста 20%")
+        pct = amount[0]
+
+        def run_grow() -> str:
+            game.set_growth_tax(chat, pct)
+            return f"Налог с роста {pct:g}%: забирается с каждого прироста и уходит в казну (тебе)."
+        return Action(title=f"🏛 Налог с роста {pct:g}%", run=run_grow,
+                      announce=lambda: T.ANN_TAX_GROW.format(what=T.b(f"{pct:g}%")))
+
+    amount = tax_amount(joined)
+    if not amount:
+        return err("Формат: налог 10% / налог 5 / налог каждый день 2% / налог с роста 20% / налог стоп")
+    pct, cm = amount
+    what = tax_what(amount)
+    # прикидка для превью: сколько соберём
+    treasury_owner = game.owner_lookup()
+    estimate = sum(
+        (round(r["length"] * pct / 100) if pct is not None else min(cm, r["length"]))
+        for r in game.all_players(chat) if r["length"] > 0 and r["user_id"] != treasury_owner
+    )
+    dest = "сгорит" if burn else "в казну"
+    result: dict[str, int] = {}
+
+    def run_once() -> str:
+        payers, total = game.tax_once(chat, percent=pct, cm=cm, burn=burn)
+        result["total"] = total
+        return f"Налог {what}: заплатили {payers} чел., собрано {total} см ({dest})."
+
+    def ann_once() -> str:
+        tmpl = T.ANN_TAX_BURN if burn else T.ANN_TAX
+        return tmpl.format(what=T.b(what), total=T.b(f"{result.get('total', estimate)} см"))
+    return Action(title=f"🏛 Налог {what} со всех ≈ {estimate} см {dest}", run=run_once, announce=ann_once)
 
 
 def player_card(game: Game, chat: str, row: sqlite3.Row) -> str:
