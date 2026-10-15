@@ -64,16 +64,6 @@ CREATE TABLE IF NOT EXISTS settings (
     key TEXT PRIMARY KEY,
     value TEXT NOT NULL
 );
-CREATE TABLE IF NOT EXISTS payments (
-    charge_id TEXT PRIMARY KEY,
-    user_id INTEGER NOT NULL,
-    user_name TEXT NOT NULL,
-    item TEXT NOT NULL,
-    stars INTEGER NOT NULL,
-    chat TEXT,
-    created REAL NOT NULL,
-    refunded INTEGER NOT NULL DEFAULT 0
-);
 CREATE TABLE IF NOT EXISTS cleanup (
     key TEXT PRIMARY KEY,
     inline_id TEXT,
@@ -749,30 +739,8 @@ class Game:
     def tax_status(self, chat: str) -> tuple[str | None, str | None]:
         return self.setting(f"tax_daily:{chat}"), self.setting(f"tax_grow:{chat}")
 
-    # --- донат ---------------------------------------------------------------
+    # --- префиксы ------------------------------------------------------------
 
     def set_prefix(self, pid: int, prefix: str | None) -> None:
         self._update(pid, prefix=(prefix or None) and prefix.strip()[:24])
 
-    def record_payment(self, charge_id: str, user_id: int, user_name: str, item: str, stars: int,
-                       chat: str | None, now: float) -> bool:
-        """False — этот платёж уже засчитан (Telegram прислал его повторно)."""
-        try:
-            self.db.execute(
-                "INSERT INTO payments (charge_id, user_id, user_name, item, stars, chat, created) "
-                "VALUES (?, ?, ?, ?, ?, ?, ?)", (charge_id, user_id, user_name, item, stars, chat, now),
-            )
-            return True
-        except sqlite3.IntegrityError:
-            return False
-
-    def payments(self, limit: int = 10) -> tuple[int, list[sqlite3.Row]]:
-        total = self.db.execute("SELECT COALESCE(SUM(stars), 0) FROM payments WHERE refunded = 0").fetchone()[0]
-        rows = self.db.execute("SELECT * FROM payments ORDER BY created DESC LIMIT ?", (limit,)).fetchall()
-        return total, rows
-
-    def payment(self, charge_id: str) -> sqlite3.Row | None:
-        return self.db.execute("SELECT * FROM payments WHERE charge_id = ?", (charge_id,)).fetchone()
-
-    def mark_refunded(self, charge_id: str) -> None:
-        self.db.execute("UPDATE payments SET refunded = 1 WHERE charge_id = ?", (charge_id,))

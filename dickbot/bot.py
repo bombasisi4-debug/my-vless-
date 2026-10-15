@@ -21,13 +21,11 @@ from aiogram.filters import Command, CommandObject, CommandStart
 from aiogram.types import (
     ErrorEvent, BotCommand, BotCommandScopeAllGroupChats, CallbackQuery, ChosenInlineResult, InlineKeyboardButton,
     InlineKeyboardMarkup, InlineQuery, InlineQueryResultArticle, InlineQueryResultsButton,
-    InputTextMessageContent, LabeledPrice, Message, PreCheckoutQuery, User,
+    InputTextMessageContent, Message, User,
 )
 
 import admin
 import texts as T
-import shop
-from pyramid import AMOUNTS, Pyramids
 from game import INACTIVITY_DAYS, LOAN_PAYOUT_COEF, Game, GrowResult, decode_inline_chat, time_till_next_day
 
 HERE = Path(__file__).resolve().parent
@@ -63,7 +61,6 @@ SEED_FILE = Path(os.environ.get("SEED_FILE") or HERE / "seed.json")
 Path(DB_PATH).parent.mkdir(parents=True, exist_ok=True)
 game = Game(DB_PATH)
 game.owner_lookup = lambda: owner_id()
-pyramids = Pyramids(game)
 router = Router()
 BOT_USERNAME = "bot"
 
@@ -252,16 +249,6 @@ async def cleanup_worker(bot: Bot) -> None:
         except Exception:
             logging.exception("Ошибка при сборе налога")
         try:
-            for pyr_id in pyramids.collapse_idle():
-                pyr = pyramids.get(pyr_id)
-                if pyr["inline_id"]:
-                    try:
-                        await bot.edit_message_text(text=pyramids.card(pyr_id), inline_message_id=pyr["inline_id"])
-                    except Exception as e:
-                        logging.debug("pyramid card %s: %s", pyr_id, e)
-        except Exception:
-            logging.exception("Ошибка при обрушении пирамид")
-        try:
             for row in game.due_cleanups(time.time()):
                 try:
                     if row["inline_id"]:
@@ -300,41 +287,6 @@ async def group_guard(msg: Message) -> bool:
 async def send_reply(msg: Message, reply: Reply) -> None:
     text, markup, cat = reply
     schedule_message(await msg.reply(text, reply_markup=markup), cat)
-
-
-def shop_kb() -> InlineKeyboardMarkup:
-    rows, row = [], []
-    for item in shop.PREFIXES + shop.PACKS:
-        row.append((f"{item.title} · {item.stars}⭐", f"buy:{item.key}"))
-        if len(row) == 2:
-            rows.append(row)
-            row = []
-    if row:
-        rows.append(row)
-    return kb(*rows)
-
-
-async def send_shop(msg: Message) -> None:
-    await msg.answer(shop.catalog_text(), reply_markup=shop_kb())
-
-
-@router.message(CommandStart(deep_link=True, magic=F.args == "shop"))
-@router.message(Command("shop", "donate"))
-async def cmd_shop(msg: Message) -> None:
-    if msg.chat.type != "private":
-        await msg.reply(f"Магазин открывается в личке: https://t.me/{BOT_USERNAME}?start=shop")
-        return
-    await send_shop(msg)
-
-
-@router.message(Command("paysupport"))
-async def cmd_paysupport(msg: Message) -> None:
-    await msg.answer(T.PAYSUPPORT)
-
-
-@router.message(Command("terms"))
-async def cmd_terms(msg: Message) -> None:
-    await msg.answer(T.TERMS)
 
 
 @router.message(CommandStart())
@@ -500,22 +452,8 @@ async def dm_admin(msg: Message) -> None:
     """Админка в личке: всё то же, что в инлайне, но без следов в чате."""
     text = msg.text.strip()
     low = text.casefold()
-    if low.startswith(("магазин", "донат", "префикс", "shop")) and not (is_owner(msg.from_user) and low.startswith("префикс ")):
-        await send_shop(msg)
-        return
-    if low.startswith("оплата") and not is_owner(msg.from_user):
-        if owner_id():
-            u = msg.from_user
-            await msg.bot.send_message(
-                owner_id(), f"🆘 Вопрос по оплате от {T.name(u.full_name)} (id <code>{u.id}</code>, "
-                            f"@{u.username or '—'}):\n\n{T.name(text)}")
-        await msg.reply("Передал владельцу бота — он ответит в личке.")
-        return
     if not is_owner(msg.from_user):
         await msg.reply(T.HELP.format(bot=BOT_USERNAME))
-        return
-    if low.startswith("возврат "):
-        await refund(msg, text.split(maxsplit=1)[1].strip())
         return
     if low in ("чаты", "чат"):
         await msg.reply(chats_text())
@@ -535,12 +473,6 @@ async def dm_admin(msg: Message) -> None:
         game.set_setting("main_chat", main)
         game.db.execute("DELETE FROM settings WHERE key = 'admin_chat'")
         await msg.reply(f"Слил в главный топ чатов: {len(merged)}.\n\n" + chats_text())
-        return
-    if low in ("пирамиды", "пирамида", "ммм"):
-        active = pyramids.active_list()
-        lines = [f"🔺 «{T.name(p['name'])}» — касса {p['fund']} см, выплачено {p['paid_out']} см, "
-                 f"основатель: {T.name((game.get(p['founder']) or {'name': '???'})['name'])}" for p in active]
-        await msg.reply("\n".join(lines) or "Действующих пирамид нет. Основать: <code>@" + BOT_USERNAME + " пирамида МММ</code>")
         return
     if low in ("топ", "top"):
         chat = game.admin_chat()
@@ -598,10 +530,6 @@ async def inline(query: InlineQuery) -> None:
             await query.answer(admin_results(act), cache_time=0, is_personal=True, button=button)
             return
     results = []
-    low = q.casefold()
-    if low.startswith(("пирамида", "ммм", "mmm", "пирамиду")):
-        name = q.split(maxsplit=1)[1] if len(q.split(maxsplit=1)) > 1 else "МММ"
-        results.append(pyramid_invite(u, name))
     if q.isdigit():
         text, markup = pvp_offer(u, int(q))
         results.append(article("pvp", T.INLINE_PVP_TITLE.format(bet=int(q)), text, markup))
@@ -611,29 +539,7 @@ async def inline(query: InlineQuery) -> None:
                                kb([("Загрузить", f"seed:{u.id}:{flag}")])))
     for kind, title in T.INLINE_TITLES.items():
         results.append(article(kind, title, T.INLINE_TEXT, kb([(T.INLINE_BUTTON, f"in:{kind}:{u.id}")])))
-    is_shop = low.startswith(("донат", "магазин", "префикс", "звезд", "звёзд", "скин", "shop"))
-    if is_shop:
-        results.insert(0, shop_result())
-    if not low.startswith(("пирамида", "ммм", "mmm", "пирамиду")):
-        results.append(pyramid_invite(u, "МММ"))
-    if not is_shop:
-        results.append(shop_result())
     await query.answer(results, cache_time=0, is_personal=True, button=button)
-
-
-def shop_result() -> InlineQueryResultArticle:
-    button = InlineKeyboardMarkup(inline_keyboard=[[
-        InlineKeyboardButton(text=T.SHOP_OPEN, url=f"https://t.me/{BOT_USERNAME}?start=shop")
-    ]])
-    return article("shop", T.SHOP_INLINE_TITLE, T.SHOP_INLINE_TEXT, button, description=T.SHOP_INLINE_DESC)
-
-
-def pyramid_invite(u: User, name: str) -> InlineQueryResultArticle:
-    token = pyramids.draft(u.id, name)
-    title = pyramids.take_draft(token)["name"]
-    text = T.PYR_INVITE.format(name=T.b(T.name(u.full_name)), title=T.name(title))
-    return article(f"pyr{token}", T.PYR_INLINE_TITLE.format(title=title), text,
-                   kb([(T.PYR_FOUND_BUTTON, f"pyr:new:{token}")]), description=T.PYR_INLINE_DESC)
 
 
 @router.chosen_inline_result()
@@ -761,122 +667,10 @@ async def cb_inline(cq: CallbackQuery) -> None:
     await edit(cq, text, markup, cat)
 
 
-def pyramid_kb(pyr_id: int) -> InlineKeyboardMarkup:
-    return kb(
-        [(T.PYR_INVEST.format(amount=a), f"pyr:inv:{pyr_id}:{a}") for a in AMOUNTS],
-        [(T.PYR_WHO, f"pyr:who:{pyr_id}"), (T.PYR_RUN, f"pyr:run:{pyr_id}")],
-    )
-
-
-@router.callback_query(F.data.startswith("pyr:"))
-async def cb_pyramid(cq: CallbackQuery) -> None:
-    parts = cq.data.split(":")
-    action, u = parts[1], cq.from_user
-    chat = callback_chat(cq)
-    ban = banned_text(chat, u)
-    if ban:
-        await answer(cq, ban, alert=True)
-        return
-    if action == "new":
-        draft = pyramids.take_draft(parts[2])
-        if not draft:
-            await answer(cq, "Эта заявка устарела — создай пирамиду заново", alert=True)
-            return
-        if draft["uid"] != u.id:
-            await answer(cq, T.ANOTHER_USER, alert=True)
-            return
-        founder = game.player(chat, u.id, u.full_name, create=True)
-        pyr_id, error = pyramids.create(chat, founder["id"], draft["name"], cq.inline_message_id)
-        if error:
-            await answer(cq, error, alert=True)
-            return
-        await answer(cq, "Пирамида открыта! Зазывай вкладчиков 🔺")
-        await edit(cq, pyramids.card(pyr_id), pyramid_kb(pyr_id), cat="event")
-        return
-    pyr_id = int(parts[2])
-    if action == "who":
-        await answer(cq, pyramids.investors_text(pyr_id), alert=True)
-        return
-    if action == "run":
-        me = game.find(chat, u.id)
-        fund, error = pyramids.run_away(pyr_id, me["id"] if me else -1)
-        if error:
-            await answer(cq, error, alert=True)
-            return
-        await answer(cq, f"Ты сбежал с кассой: {fund} см 🏃💨", alert=True)
-        await edit(cq, pyramids.card(pyr_id), cat="event")
-        return
-    if action == "inv":
-        me = game.player(chat, u.id, u.full_name, create=False)
-        if not me:
-            await answer(cq, T.PVP_NO_DICK, alert=True)
-            return
-        res = pyramids.invest(pyr_id, me, int(parts[3]))
-        if res.error:
-            await answer(cq, res.error, alert=True)
-            return
-        await answer(cq, res.toast)
-        pyr = pyramids.get(pyr_id)
-        await edit(cq, pyramids.card(pyr_id), pyramid_kb(pyr_id) if pyr["status"] == "active" else None, cat="event")
-
-
-@router.callback_query(F.data.startswith("buy:"))
-async def cb_buy(cq: CallbackQuery) -> None:
-    item = shop.ITEMS.get(cq.data.split(":", 1)[1])
-    if not item:
-        await answer(cq, "Такого товара больше нет", alert=True)
-        return
-    await answer(cq)
-    description = (f"Префикс «{item.prefix}» перед ником в топе и батлах" if item.prefix
-                   else f"{item.cm} см к твоей пиписе")
-    await cq.bot.send_invoice(
-        chat_id=cq.from_user.id, title=item.title, description=description, payload=item.key,
-        currency="XTR", prices=[LabeledPrice(label=item.title, amount=item.stars)],
-    )
-
-
-@router.pre_checkout_query()
-async def pre_checkout(q: PreCheckoutQuery) -> None:
-    ok = q.invoice_payload in shop.ITEMS and game.admin_chat() is not None
-    await q.answer(ok=ok, error_message=None if ok else T.SHOP_NO_CHAT)
-
-
-@router.message(F.successful_payment)
-async def on_payment(msg: Message) -> None:
-    pay, u = msg.successful_payment, msg.from_user
-    item = shop.ITEMS.get(pay.invoice_payload)
-    chat = game.admin_chat()
-    if not game.record_payment(pay.telegram_payment_charge_id, u.id, u.full_name, pay.invoice_payload,
-                               pay.total_amount, chat, time.time()):
-        return  # повтор того же платежа
-    if not item or not chat:
-        await msg.answer(T.SHOP_NO_CHAT)
-        return
-    row = game.player(chat, u.id, u.full_name, create=True)
-    if item.prefix:
-        game.set_prefix(row["id"], item.prefix)
-        await msg.answer(T.SHOP_THANKS_PREFIX.format(prefix=T.name(item.prefix), name=T.name(u.full_name)))
-    else:
-        game.add_length(row["id"], item.cm)
-        await msg.answer(T.SHOP_THANKS_CM.format(cm=item.cm, length=game.get(row["id"])["length"]))
-    if owner_id() and owner_id() != u.id:
-        await msg.bot.send_message(owner_id(), f"💰 {T.name(u.full_name)} купил «{T.name(item.title)}» за {pay.total_amount}⭐")
-    logging.info("Оплата: %s купил %s за %s⭐", u.id, item.key, pay.total_amount)
-
-
-async def refund(msg: Message, charge_id: str) -> None:
-    p = game.payment(charge_id)
-    if not p:
-        await msg.reply("Не нашёл такой платёж. Список: <code>звезды</code>")
-        return
-    try:
-        await msg.bot.refund_star_payment(user_id=p["user_id"], telegram_payment_charge_id=charge_id)
-    except TelegramBadRequest as e:
-        await msg.reply(f"Telegram не дал вернуть: {T.name(e.message)}")
-        return
-    game.mark_refunded(charge_id)
-    await msg.reply(f"Вернул {p['stars']}⭐ пользователю {T.name(p['user_name'])}. "
-                    "Префикс/сантиметры при необходимости сними вручную.")
+@router.callback_query(F.data.startswith(("pyr:", "buy:")))
+async def cb_removed(cq: CallbackQuery) -> None:
+    """Кнопки старых карточек пирамид и магазина — эти функции убраны."""
+    await answer(cq, "Данная функция пока временно отключена.", alert=True)
 
 
 @router.errors()

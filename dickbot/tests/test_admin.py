@@ -154,7 +154,7 @@ def test_migration_adds_columns(tmp_path):
     assert row["luck"] == 0 and row["banned_until"] is None
 
 
-def test_prefix_admin_and_payment_dedupe():
+def test_prefix_admin():
     g, _ = seeded()
     run(g, "префикс я 1")
     assert g.find(CHAT, OWNER)["prefix"] == "👑 Король"
@@ -165,9 +165,6 @@ def test_prefix_admin_and_payment_dedupe():
     assert [r for r in g.all_players(CHAT) if r["name"] == "Оболдуй"][0]["prefix"] is None
     assert A.parse(g, CHAT, "префикс я 99", OWNER).error
     assert A.parse(g, CHAT, "префикс я Король", OWNER).error   # свой текст — только в кавычках
-    assert g.record_payment("c1", 5, "x", "crown", 50, CHAT, 1.0)
-    assert not g.record_payment("c1", 5, "x", "crown", 50, CHAT, 1.0)
-    assert g.payments()[0] == 50
 
 
 def test_zero_bet_battle_for_negative_player():

@@ -157,18 +157,6 @@ def parse(game: Game, chat: str | None, text: str, owner_id: int) -> Action | No
     if cmd in ("префиксы", "скины"):
         return Action(title="Список префиксов", info_only=True, run=shop.catalog_text)
 
-    if cmd in ("звезды", "звёзды", "донаты"):
-        def run_stars() -> str:
-            total, rows = game.payments()
-            lines = [f"⭐ Всего задонатили: <b>{total}</b>"]
-            for r in rows:
-                item = shop.ITEMS.get(r["item"])
-                mark = " (возвращено)" if r["refunded"] else ""
-                lines.append(f"— {T.name(r['user_name'])}: {item.title if item else r['item']} за {r['stars']}⭐{mark}\n"
-                             f"  <code>{r['charge_id']}</code>")
-            return "\n".join(lines)
-        return Action(title="Донаты", info_only=True, run=run_stars)
-
     if chat is None:
         return err("Пока нет ни одного чата с игроками")
 
@@ -364,10 +352,9 @@ def parse_prefix(game: Game, chat: str, rest: str, owner_id: int) -> Action:
         if last in ("-", "снять", "нет", "убрать"):
             prefix = None
         elif last.isdigit():
-            item = shop.by_number(int(last))
-            if not item:
+            prefix = shop.by_number(int(last))
+            if not prefix:
                 return err(f"Нет префикса №{last}. Список: префиксы")
-            prefix = item.prefix
         elif not any(ch.isalnum() for ch in last):
             prefix = last  # одиночный эмодзи
         else:
