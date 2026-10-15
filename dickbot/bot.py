@@ -16,9 +16,10 @@ from pathlib import Path
 from aiogram import Bot, Dispatcher, F, Router
 from aiogram.client.default import DefaultBotProperties
 from aiogram.enums import ParseMode
+from aiogram.exceptions import TelegramBadRequest, TelegramRetryAfter
 from aiogram.filters import Command, CommandObject, CommandStart
 from aiogram.types import (
-    BotCommand, BotCommandScopeAllGroupChats, CallbackQuery, ChosenInlineResult, InlineKeyboardButton,
+    ErrorEvent, BotCommand, BotCommandScopeAllGroupChats, CallbackQuery, ChosenInlineResult, InlineKeyboardButton,
     InlineKeyboardMarkup, InlineQuery, InlineQueryResultArticle, InlineQueryResultsButton,
     InputTextMessageContent, Message, User,
 )
@@ -563,64 +564,77 @@ def callback_chat(cq: CallbackQuery) -> str:
     return chat
 
 
+async def answer(cq: CallbackQuery, text: str | None = None, alert: bool = False) -> None:
+    """Ответ на нажатие кнопки. Если бот не успел (Telegram ждёт ~15 с), просто молчим —
+    результат всё равно появится в сообщении."""
+    try:
+        await cq.answer(text, show_alert=alert)
+    except TelegramBadRequest as e:
+        logging.warning("Не успел ответить на кнопку: %s", e.message)
+
+
 async def edit(cq: CallbackQuery, text: str, markup: InlineKeyboardMarkup | None = None,
                cat: str = "event") -> None:
-    if cq.inline_message_id:
-        await cq.bot.edit_message_text(text=text, inline_message_id=cq.inline_message_id, reply_markup=markup)
-        schedule_inline(cq.inline_message_id, cat)
-    elif cq.message:
-        await cq.message.edit_text(text, reply_markup=markup)
-        schedule_message(cq.message, cat)
+    try:
+        if cq.inline_message_id:
+            await cq.bot.edit_message_text(text=text, inline_message_id=cq.inline_message_id, reply_markup=markup)
+            schedule_inline(cq.inline_message_id, cat)
+        elif cq.message:
+            await cq.message.edit_text(text, reply_markup=markup)
+            schedule_message(cq.message, cat)
+    except TelegramBadRequest as e:
+        if "not modified" not in e.message:  # нажали ту же страницу топа ещё раз — это не ошибка
+            logging.warning("Не смог обновить сообщение: %s", e.message)
 
 
 @router.callback_query(F.data == "act")
 async def cb_activate(cq: CallbackQuery) -> None:
+    await answer(cq, T.ACTIVATED)
     callback_chat(cq)
-    await cq.answer(T.ACTIVATED)
     await edit(cq, T.ACTIVATED, cat="notice")
 
 
 @router.callback_query(F.data.startswith("top:"))
 async def cb_top(cq: CallbackQuery) -> None:
+    await answer(cq)
     text, markup, cat = render_top(callback_chat(cq), int(cq.data.split(":")[1]))
     await edit(cq, text, markup, cat)
-    await cq.answer()
 
 
 @router.callback_query(F.data.startswith("pvp:"))
 async def cb_pvp(cq: CallbackQuery) -> None:
     text, alert = render_battle(callback_chat(cq), cq.data, cq.from_user)
     if alert:
-        await cq.answer(alert, show_alert=True)
+        await answer(cq, alert, alert=True)
         return
-    await cq.answer()
+    await answer(cq)
     await edit(cq, text, cat="event")
 
 
 @router.callback_query(F.data.startswith("loan:"))
 async def cb_loan(cq: CallbackQuery) -> None:
-    _, uid, answer = cq.data.split(":")
+    _, uid, choice = cq.data.split(":")
     if int(uid) != cq.from_user.id:
-        await cq.answer(T.ANOTHER_USER, show_alert=True)
+        await answer(cq, T.ANOTHER_USER, alert=True)
         return
+    await answer(cq)
     chat = callback_chat(cq)
-    if answer != "y":
+    if choice != "y":
         await edit(cq, T.LOAN_REFUSED, cat="event")
     else:
         row = game.player(chat, cq.from_user.id, cq.from_user.full_name, create=False)
         ok = row is not None and not row["debt"] and game.take_loan(row["id"])
         await edit(cq, T.LOAN_SUCCESS if ok else T.LOAN_POSITIVE, cat="event" if ok else "notice")
-    await cq.answer()
 
 
 @router.callback_query(F.data.startswith("seed:"))
 async def cb_seed(cq: CallbackQuery) -> None:
     _, uid, flag = cq.data.split(":")
     if int(uid) != cq.from_user.id or not is_owner(cq.from_user):
-        await cq.answer(T.ANOTHER_USER, show_alert=True)
+        await answer(cq, T.ANOTHER_USER, alert=True)
         return
+    await answer(cq)
     await edit(cq, do_seed(callback_chat(cq), cq.from_user, flag == "f"), cat="notice")
-    await cq.answer()
 
 
 RENDERERS = {
@@ -636,16 +650,27 @@ RENDERERS = {
 async def cb_inline(cq: CallbackQuery) -> None:
     _, kind, uid = cq.data.split(":")
     if int(uid) != cq.from_user.id:
-        await cq.answer(T.ANOTHER_USER, show_alert=True)
+        await answer(cq, T.ANOTHER_USER, alert=True)
         return
     if kind not in RENDERERS:
-        await cq.answer("Неизвестная команда")
+        await answer(cq, "Неизвестная команда")
         return
+    await answer(cq)
     chat, u = callback_chat(cq), cq.from_user
     ban = banned_text(chat, u)
     text, markup, cat = (ban, None, "notice") if ban else RENDERERS[kind](chat, u)
     await edit(cq, text, markup, cat)
-    await cq.answer()
+
+
+@router.errors()
+async def on_error(event: ErrorEvent) -> bool:
+    """Ошибки Telegram вроде «сообщение не изменилось» — одной строкой, без простыни."""
+    e = event.exception
+    if isinstance(e, (TelegramBadRequest, TelegramRetryAfter)):
+        logging.warning("Telegram: %s", e)
+    else:
+        logging.exception("Ошибка при обработке апдейта", exc_info=e)
+    return True
 
 
 # --- запуск --------------------------------------------------------------------

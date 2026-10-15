@@ -185,6 +185,10 @@ class Game:
         self.db = sqlite3.connect(path, isolation_level=None)
         self.db.row_factory = sqlite3.Row
         self.db.execute("PRAGMA journal_mode=WAL")
+        # в WAL это безопасно и убирает fsync на каждую запись — на медленном диске хостинга
+        # именно они подвешивали бота на секунды
+        self.db.execute("PRAGMA synchronous=NORMAL")
+        self.db.execute("PRAGMA busy_timeout=5000")
         self.db.executescript(SCHEMA)
         have = {r[1] for r in self.db.execute("PRAGMA table_info(players)")}
         for col, ddl in NEW_PLAYER_COLUMNS.items():
