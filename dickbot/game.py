@@ -3,9 +3,11 @@
 
 from __future__ import annotations
 
+import base64
 import random
 import re
 import sqlite3
+import struct
 import unicodedata
 from dataclasses import dataclass, field
 from datetime import date, datetime, timedelta, timezone
@@ -97,6 +99,27 @@ def letters_only(s: str) -> str:
         ch for ch in normalize_name(s)
         if ch.isdigit() or unicodedata.name(ch, "").startswith(("LATIN", "CYRILLIC"))
     )
+
+
+SUPERGROUP_ID_SHIFT = -1_000_000_000_000
+
+
+def decode_inline_chat(inline_message_id: str | None) -> str | None:
+    """Настоящий id супергруппы, зашитый в inline_message_id (так делает и оригинальный бот).
+    Для обычных групп и личек Telegram его туда не кладёт — тогда None."""
+    if not inline_message_id:
+        return None
+    try:
+        raw = base64.urlsafe_b64decode(inline_message_id + "=" * (-len(inline_message_id) % 4))
+        if len(raw) == 24:
+            _dc, peer, _msg, _hash = struct.unpack("<iqiq", raw)
+        elif len(raw) == 20:
+            _dc, _msg, peer, _hash = struct.unpack("<iiiq", raw)
+        else:
+            return None
+    except (ValueError, struct.error):
+        return None
+    return str(SUPERGROUP_ID_SHIFT + peer) if peer < 0 else None
 
 
 def utc_today() -> date:
@@ -513,7 +536,7 @@ class Game:
     def admin_chat(self) -> str | None:
         """Чат, к которому применяются команды владельца: последний, где он нажимал
         кнопки бота, иначе самый большой."""
-        chosen = self.setting("admin_chat")
+        chosen = self.setting("admin_chat") or self.setting("main_chat")
         if chosen:
             return chosen
         chats = self.chats()
@@ -542,3 +565,94 @@ class Game:
 
     def cleanup_done(self, key: str) -> None:
         self.db.execute("DELETE FROM cleanup WHERE key = ?", (key,))
+
+    # --- один топ на чат -----------------------------------------------------
+
+    def resolve_chat(self, real: str | None, chat_instance: str | None) -> str:
+        """Ключ чата для действия. real — настоящий id группы, если он известен
+        (из сообщения или из inline_message_id); chat_instance — то, что Telegram
+        прислал в нажатии кнопки.
+
+        Всё, что нельзя привязать к настоящему id, идёт в главный чат, а при первой
+        возможности все разъехавшиеся по chat_instance топы сливаются в один."""
+        main = self.setting("main_chat")
+        if main is None:
+            biggest = next((k for k, _ in self.chats() if k.startswith("ci:")), None)
+            base = real or biggest or f"ci:{chat_instance}"
+            self.consolidate(base)
+            self.set_setting("main_chat", base)
+            main = base
+        elif real and real != main and main.startswith("ci:"):
+            # главный чат знали только по chat_instance — теперь известен его настоящий id
+            self.consolidate(real)
+            self.set_setting("main_chat", real)
+            main = real
+        if real:
+            if chat_instance:
+                self.remember_chat_instance(chat_instance, real)
+            return real
+        return main
+
+    def consolidate(self, base: str) -> list[str]:
+        """Сливает все топы, привязанные к chat_instance, в base. Самый большой из них
+        становится основой, если в base ещё пусто. Возвращает слитые ключи."""
+        keys = [k for k, _ in self.chats() if k.startswith("ci:") and k != base]
+        has_base = self.db.execute("SELECT 1 FROM players WHERE chat = ? LIMIT 1", (base,)).fetchone()
+        for k in keys:
+            self.merge_chat(k, base) if has_base else self._rename_chat(k, base)
+            has_base = True
+        if self.setting("admin_chat") in keys:
+            self.db.execute("DELETE FROM settings WHERE key = 'admin_chat'")
+        return keys
+
+    def _rename_chat(self, src: str, dst: str) -> None:
+        self.db.execute("UPDATE players SET chat = ? WHERE chat = ?", (dst, src))
+        self._move_chat_extras(src, dst)
+
+    def _move_chat_extras(self, src: str, dst: str) -> None:
+        self.db.execute("DELETE FROM dod WHERE chat = ?", (src,))
+        self.db.execute("UPDATE chat_instances SET chat = ? WHERE chat = ?", (dst, src))
+        self.db.execute(
+            "UPDATE OR IGNORE settings SET key = ? WHERE key = ?", (f"force_dod:{dst}", f"force_dod:{src}")
+        )
+
+    def merge_chat(self, src: str, dst: str) -> None:
+        """Переносит игроков src в dst. Если человек уже есть в dst (или там лежит его
+        запись из старого топа), его сантиметры и статистика из src прибавляются."""
+        if src == dst:
+            return
+        self.db.execute("BEGIN")
+        try:
+            for r in self.db.execute("SELECT * FROM players WHERE chat = ?", (src,)).fetchall():
+                if r["user_id"] is not None:
+                    t = self.find(dst, r["user_id"]) or self._unclaimed_by_name(dst, r["name"])
+                    if t is None:
+                        self._update(r["id"], chat=dst)
+                        continue
+                    self.db.execute("DELETE FROM players WHERE id = ?", (r["id"],))
+                    self._update(
+                        t["id"], user_id=r["user_id"], name=r["name"],
+                        username=r["username"] or t["username"],
+                        length=t["length"] + r["length"],
+                        grown_at=max(filter(None, [t["grown_at"], r["grown_at"]]), default=None),
+                        streak=max(t["streak"], r["streak"]), streak_max=max(t["streak_max"], r["streak_max"]),
+                        debt=t["debt"] + r["debt"], battles=t["battles"] + r["battles"], wins=t["wins"] + r["wins"],
+                        win_streak=max(t["win_streak"], r["win_streak"]),
+                        win_streak_max=max(t["win_streak_max"], r["win_streak_max"]),
+                        acquired=t["acquired"] + r["acquired"], lost=t["lost"] + r["lost"],
+                        luck=t["luck"] or r["luck"], mode=t["mode"] or r["mode"],
+                        mode_until=t["mode_until"] or r["mode_until"],
+                        banned_until=t["banned_until"] or r["banned_until"],
+                    )
+                else:
+                    same = any(normalize_name(x["name"]) == normalize_name(r["name"])
+                               for x in self.db.execute("SELECT name FROM players WHERE chat = ?", (dst,)))
+                    if same:
+                        self.db.execute("DELETE FROM players WHERE id = ?", (r["id"],))
+                    else:
+                        self._update(r["id"], chat=dst)
+            self._move_chat_extras(src, dst)
+            self.db.execute("COMMIT")
+        except Exception:
+            self.db.execute("ROLLBACK")
+            raise

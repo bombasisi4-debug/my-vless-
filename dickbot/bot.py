@@ -25,7 +25,7 @@ from aiogram.types import (
 
 import admin
 import texts as T
-from game import INACTIVITY_DAYS, LOAN_PAYOUT_COEF, Game, GrowResult, time_till_next_day
+from game import INACTIVITY_DAYS, LOAN_PAYOUT_COEF, Game, GrowResult, decode_inline_chat, time_till_next_day
 
 HERE = Path(__file__).resolve().parent
 
@@ -71,6 +71,11 @@ def kb(*rows: list[tuple[str, str]]) -> InlineKeyboardMarkup:
 
 def is_group(msg: Message) -> bool:
     return msg.chat.type in ("group", "supergroup")
+
+
+def msg_chat(msg: Message) -> str:
+    """Ключ топа для сообщения в группе — тот же, что и для инлайна из этой группы."""
+    return game.resolve_chat(str(msg.chat.id), None)
 
 
 # --- ответы (общие для команд и инлайна) -------------------------------------
@@ -259,11 +264,11 @@ async def group_guard(msg: Message) -> bool:
     if msg.sender_chat or not msg.from_user:
         await msg.reply(T.GROUP_ACCOUNT)
         return False
-    ban = banned_text(str(msg.chat.id), msg.from_user)
+    ban = banned_text(msg_chat(msg), msg.from_user)
     if ban:
         schedule_message(await msg.reply(ban), "notice")
         return False
-    game.touch_username(str(msg.chat.id), msg.from_user.id, msg.from_user.username)
+    game.touch_username(msg_chat(msg), msg.from_user.id, msg.from_user.username)
     return True
 
 
@@ -299,31 +304,31 @@ async def cmd_myid(msg: Message) -> None:
 @router.message(Command("grow"))
 async def cmd_grow(msg: Message) -> None:
     if await group_guard(msg):
-        await send_reply(msg, render_grow(str(msg.chat.id), msg.from_user))
+        await send_reply(msg, render_grow(msg_chat(msg), msg.from_user))
 
 
 @router.message(Command("top"))
 async def cmd_top(msg: Message) -> None:
     if await group_guard(msg):
-        await send_reply(msg, render_top(str(msg.chat.id), 0))
+        await send_reply(msg, render_top(msg_chat(msg), 0))
 
 
 @router.message(Command("dod", "dick_of_day"))
 async def cmd_dod(msg: Message) -> None:
     if await group_guard(msg):
-        await send_reply(msg, render_dod(str(msg.chat.id)))
+        await send_reply(msg, render_dod(msg_chat(msg)))
 
 
 @router.message(Command("stats"))
 async def cmd_stats(msg: Message) -> None:
     if await group_guard(msg):
-        await send_reply(msg, render_stats(str(msg.chat.id), msg.from_user))
+        await send_reply(msg, render_stats(msg_chat(msg), msg.from_user))
 
 
 @router.message(Command("loan"))
 async def cmd_loan(msg: Message) -> None:
     if await group_guard(msg):
-        await send_reply(msg, render_loan(str(msg.chat.id), msg.from_user))
+        await send_reply(msg, render_loan(msg_chat(msg), msg.from_user))
 
 
 @router.message(Command("pvp", "battle", "attack", "fight"))
@@ -334,7 +339,7 @@ async def cmd_pvp(msg: Message, command: CommandObject) -> None:
     if not arg.isdigit() or int(arg) <= 0:
         await send_reply(msg, (T.PVP_NO_ARGS, None, "notice"))
         return
-    chat, bet = str(msg.chat.id), int(arg)
+    chat, bet = msg_chat(msg), int(arg)
     game.player(chat, msg.from_user.id, msg.from_user.full_name, create=False)
     if not game.has_enough(chat, msg.from_user.id, bet):
         await send_reply(msg, (T.PVP_NOT_ENOUGH_INITIATOR, None, "notice"))
@@ -367,7 +372,8 @@ def do_seed(chat: str, owner: User, force: bool) -> str:
         n = game.seed(chat, data["players"], owner.id, owner.full_name, length, force=force)
     except ValueError as e:
         return f"Не загрузил: {e}. Чтобы перезаписать — /seed force (или инлайн <code>seed force</code>)."
-    game.set_setting("admin_chat", chat)
+    game.set_setting("main_chat", chat)
+    game.db.execute("DELETE FROM settings WHERE key = 'admin_chat'")
     return f"Топ загружен: {n} игроков. Ты на первом месте с {T.b(f'{length} см')} 😎"
 
 
@@ -379,7 +385,7 @@ async def cmd_seed(msg: Message, command: CommandObject) -> None:
     if not is_group(msg):
         await msg.reply(T.NOT_GROUP)
         return
-    await msg.reply(do_seed(str(msg.chat.id), msg.from_user, (command.args or "").strip() == "force"))
+    await msg.reply(do_seed(msg_chat(msg), msg.from_user, (command.args or "").strip() == "force"))
     await cmd_activate(msg)
 
 
@@ -394,7 +400,7 @@ async def cmd_link(msg: Message, command: CommandObject) -> None:
     if not is_group(msg) or not target_user or not arg:
         await msg.reply("Ответь на сообщение человека: <code>/link 15</code> или <code>/link Назар</code>")
         return
-    row = game.link(str(msg.chat.id), arg, target_user.id, target_user.full_name)
+    row = game.link(msg_chat(msg), arg, target_user.id, target_user.full_name)
     if not row:
         await msg.reply("Не нашёл такую запись в топе.")
         return
@@ -413,7 +419,7 @@ async def cmd_setcm(msg: Message, command: CommandObject) -> None:
         await msg.reply("Использование: <code>/setcm 100</code> (можно ответом на сообщение человека)")
         return
     who = msg.reply_to_message.from_user if msg.reply_to_message else msg.from_user
-    row = game.player(str(msg.chat.id), who.id, who.full_name, create=True)
+    row = game.player(msg_chat(msg), who.id, who.full_name, create=True)
     game.set_length(row["id"], int(arg))
     await msg.reply(f"{T.b(T.name(who.full_name))}: теперь {T.b(f'{int(arg)} см')}.")
 
@@ -423,8 +429,9 @@ def chats_text() -> str:
     lines = ["Чаты с игроками:"]
     for i, (chat, n) in enumerate(game.chats(), start=1):
         mark = " ← сейчас управляешь этим" if chat == current else ""
-        lines.append(f"{i}. чат {i} — {n} игроков{mark}")
-    lines.append("\nПереключиться: <code>чат 2</code>")
+        kind = "группа" if chat.startswith("-100") else ("инлайн" if chat.startswith("ci:") else "чат")
+        lines.append(f"{i}. {kind} <code>{T.name(chat[:20])}</code> — {n} игроков{mark}")
+    lines.append("\nПереключиться: <code>чат 2</code>. Слить всё в текущий: <code>объединить</code>")
     return "\n".join(lines) if len(lines) > 2 else "Пока нет ни одного чата с игроками."
 
 
@@ -445,6 +452,15 @@ async def dm_admin(msg: Message) -> None:
         if 1 <= n <= len(chats):
             game.set_setting("admin_chat", chats[n - 1][0])
         await msg.reply(chats_text())
+        return
+    if low in ("объединить", "слить", "склеить"):
+        main = game.admin_chat()
+        merged = [k for k, _ in game.chats() if k != main]
+        for k in merged:
+            game.merge_chat(k, main)
+        game.set_setting("main_chat", main)
+        game.db.execute("DELETE FROM settings WHERE key = 'admin_chat'")
+        await msg.reply(f"Слил в главный топ чатов: {len(merged)}.\n\n" + chats_text())
         return
     if low in ("топ", "top"):
         chat = game.admin_chat()
@@ -530,15 +546,14 @@ async def inline_chosen(res: ChosenInlineResult) -> None:
 # --- кнопки --------------------------------------------------------------------
 
 def callback_chat(cq: CallbackQuery) -> str:
-    if cq.message and cq.message.chat:
-        chat = str(cq.message.chat.id)
-        if cq.chat_instance:
-            game.remember_chat_instance(cq.chat_instance, chat)
+    """Один топ на чат для всех: настоящий id группы берётся из сообщения или из
+    inline_message_id; если его нет — всё идёт в главный чат."""
+    if cq.message and cq.message.chat and cq.message.chat.type in ("group", "supergroup"):
+        real = str(cq.message.chat.id)
     else:
-        chat = game.chat_for_instance(cq.chat_instance)
+        real = decode_inline_chat(cq.inline_message_id)
+    chat = game.resolve_chat(real, cq.chat_instance)
     game.touch_username(chat, cq.from_user.id, cq.from_user.username)
-    if is_owner(cq.from_user) and game.find(chat, cq.from_user.id):
-        game.set_setting("admin_chat", chat)
     return chat
 
 
