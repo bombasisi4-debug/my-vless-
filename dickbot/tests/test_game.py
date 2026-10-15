@@ -51,7 +51,8 @@ def test_seed_puts_owner_first_and_keeps_order():
     top = g.top(CHAT, 0, 100)
     assert top[0]["user_id"] == OWNER and top[0]["length"] == 15000
     assert [r["name"] for r in top[1:4]] == ["Оболдуй", "NoSock", "стасян"]
-    assert len(top) == 29
+    assert len(top) == 85  # 84 из сида (без старой строки владельца) + владелец
+    assert sum(1 for r in top if r["user_id"] == OWNER) == 1
 
 
 def test_seed_refuses_twice_without_force():
@@ -72,6 +73,9 @@ def test_seeded_player_claims_record_by_name_and_keeps_cm():
     assert g.player(CHAT, 556, "ааа", create=False)["length"] == 933
     # украшения в имени не мешают
     assert g.player(CHAT, 557, "SS Sasha SS", create=False)["length"] == 147
+    # одинаковые имена — не угадываем, нужен /link
+    assert g.player(CHAT, 558, "Ronili Hex", create=False) is None
+    assert g.player(CHAT, 559, "Ъуъ\u2060 ", create=False)["length"] == 47
 
 
 def test_grow_once_per_day_and_marks():

@@ -71,6 +71,7 @@ _HOMOGLYPHS = str.maketrans("аеорсухкмтвнАЕОРСУХКМТВН", 
 
 def normalize_name(s: str) -> str:
     s = unicodedata.normalize("NFKC", s or "").casefold().translate(_HOMOGLYPHS)
+    s = "".join(ch for ch in s if unicodedata.category(ch) != "Cf")  # невидимые символы
     return " ".join(s.split())
 
 

@@ -38,7 +38,7 @@ def load_env_file(path: Path) -> None:
 load_env_file(HERE / ".env")
 OWNER_ID = int(os.environ.get("OWNER_ID") or 0)
 OWNER_LENGTH = int(os.environ.get("OWNER_LENGTH") or 0)
-TOP_LIMIT = int(os.environ.get("TOP_LIMIT") or 50)
+TOP_LIMIT = int(os.environ.get("TOP_LIMIT") or 30)
 DB_PATH = os.environ.get("DB_PATH") or str(HERE / "data" / "bot.db")
 SEED_FILE = Path(os.environ.get("SEED_FILE") or HERE / "seed.json")
 
