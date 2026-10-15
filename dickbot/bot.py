@@ -6,6 +6,7 @@ import asyncio
 import json
 import logging
 import os
+import re
 import time
 from pathlib import Path
 
@@ -32,7 +33,17 @@ def load_env_file(path: Path) -> None:
             line = line.strip()
             if line and not line.startswith("#") and "=" in line:
                 k, v = line.split("=", 1)
-                os.environ.setdefault(k.strip(), v.strip())
+                os.environ.setdefault(k.strip(), v.strip().strip("\"'"))
+
+
+TOKEN_RE = re.compile(r"\d{5,}:[A-Za-z0-9_-]{30,}")
+
+
+def find_token(raw: str) -> str | None:
+    """Достаёт токен, даже если в панели его вставили с кавычками, пробелами
+    или целой строкой вида BOT_TOKEN=..."""
+    m = TOKEN_RE.search(raw or "")
+    return m.group(0) if m else None
 
 
 load_env_file(HERE / ".env")
@@ -472,9 +483,16 @@ COMMANDS = [
 async def main() -> None:
     global BOT_USERNAME
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name)s: %(message)s")
-    token = os.environ.get("BOT_TOKEN")
+    raw = os.environ.get("BOT_TOKEN", "")
+    if not raw.strip():
+        raise SystemExit("Не задан BOT_TOKEN: добавь его в Environment (или файл .env рядом с bot.py)")
+    token = find_token(raw)
     if not token:
-        raise SystemExit("Не задан BOT_TOKEN (переменная окружения или файл .env рядом с bot.py)")
+        raise SystemExit(
+            f"BOT_TOKEN задан, но это не похоже на токен (длина {len(raw)}, "
+            f"начинается с {raw[:4]!r}). Нужен вид 1234567890:AAAbbb... — "
+            "без кавычек, пробелов и без слов BOT_TOKEN= внутри значения."
+        )
     bot = Bot(token, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
     me = await bot.get_me()
     BOT_USERNAME = me.username
