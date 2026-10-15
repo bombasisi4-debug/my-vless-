@@ -7,6 +7,8 @@ import json
 import logging
 import os
 import re
+import socket
+import sys
 import time
 from pathlib import Path
 
@@ -480,9 +482,33 @@ COMMANDS = [
 ]
 
 
+def check_network(host: str = "api.telegram.org", port: int = 443) -> None:
+    """Пишет в консоль, видит ли сервер Telegram, — чтобы на хостинге было понятно, где застряли."""
+    try:
+        addrs = sorted({a[4][0] for a in socket.getaddrinfo(host, port, type=socket.SOCK_STREAM)})
+    except OSError as e:
+        logging.error("DNS: не могу найти %s (%s) — у сервера нет интернета или DNS", host, e)
+        return
+    logging.info("DNS: %s -> %s", host, ", ".join(addrs))
+    for ip in addrs:
+        t = time.monotonic()
+        try:
+            with socket.create_connection((ip, port), timeout=10):
+                logging.info("Связь с %s:%s есть (%.0f мс)", ip, port, (time.monotonic() - t) * 1000)
+        except OSError as e:
+            logging.error("Нет связи с %s:%s: %s", ip, port, e)
+
+
 async def main() -> None:
     global BOT_USERNAME
-    logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name)s: %(message)s")
+    logging.basicConfig(level=logging.INFO, stream=sys.stdout, force=True,
+                        format="%(asctime)s %(levelname)s %(name)s: %(message)s")
+    try:
+        sys.stdout.reconfigure(line_buffering=True)
+    except AttributeError:
+        pass
+    logging.info("Старт бота, проверяю связь с Telegram…")
+    check_network()
     raw = os.environ.get("BOT_TOKEN", "")
     if not raw.strip():
         raise SystemExit("Не задан BOT_TOKEN: добавь его в Environment (или файл .env рядом с bot.py)")
@@ -494,7 +520,8 @@ async def main() -> None:
             "без кавычек, пробелов и без слов BOT_TOKEN= внутри значения."
         )
     bot = Bot(token, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
-    me = await bot.get_me()
+    logging.info("Спрашиваю у Telegram, кто я…")
+    me = await bot.get_me(request_timeout=30)
     BOT_USERNAME = me.username
     if not owner_id():
         logging.warning("Владельца ещё нет — первый, кто напишет боту /start в личку, станет владельцем")
