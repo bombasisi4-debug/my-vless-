@@ -26,6 +26,7 @@ from aiogram.types import (
 
 import admin
 import texts as T
+from pyramid import AMOUNTS, Pyramids
 from game import INACTIVITY_DAYS, LOAN_PAYOUT_COEF, Game, GrowResult, decode_inline_chat, time_till_next_day
 
 HERE = Path(__file__).resolve().parent
@@ -61,6 +62,7 @@ SEED_FILE = Path(os.environ.get("SEED_FILE") or HERE / "seed.json")
 Path(DB_PATH).parent.mkdir(parents=True, exist_ok=True)
 game = Game(DB_PATH)
 game.owner_lookup = lambda: owner_id()
+pyramids = Pyramids(game)
 router = Router()
 BOT_USERNAME = "bot"
 
@@ -243,6 +245,16 @@ async def cleanup_worker(bot: Bot) -> None:
                 logging.info("Ежедневный налог в %s: %s чел., %s см", chat, payers, total)
         except Exception:
             logging.exception("Ошибка при сборе налога")
+        try:
+            for pyr_id in pyramids.collapse_idle():
+                pyr = pyramids.get(pyr_id)
+                if pyr["inline_id"]:
+                    try:
+                        await bot.edit_message_text(text=pyramids.card(pyr_id), inline_message_id=pyr["inline_id"])
+                    except Exception as e:
+                        logging.debug("pyramid card %s: %s", pyr_id, e)
+        except Exception:
+            logging.exception("Ошибка при обрушении пирамид")
         try:
             for row in game.due_cleanups(time.time()):
                 try:
@@ -469,6 +481,12 @@ async def dm_admin(msg: Message) -> None:
         game.db.execute("DELETE FROM settings WHERE key = 'admin_chat'")
         await msg.reply(f"Слил в главный топ чатов: {len(merged)}.\n\n" + chats_text())
         return
+    if low in ("пирамиды", "пирамида", "ммм"):
+        active = pyramids.active_list()
+        lines = [f"🔺 «{T.name(p['name'])}» — касса {p['fund']} см, выплачено {p['paid_out']} см, "
+                 f"основатель: {T.name((game.get(p['founder']) or {'name': '???'})['name'])}" for p in active]
+        await msg.reply("\n".join(lines) or "Действующих пирамид нет. Основать: <code>@" + BOT_USERNAME + " пирамида МММ</code>")
+        return
     if low in ("топ", "top"):
         chat = game.admin_chat()
         await msg.reply(render_top(chat, 0)[0] if chat else "Пока нет ни одного чата с игроками.")
@@ -525,6 +543,10 @@ async def inline(query: InlineQuery) -> None:
             await query.answer(admin_results(act), cache_time=0, is_personal=True, button=button)
             return
     results = []
+    low = q.casefold()
+    if low.startswith(("пирамида", "ммм", "mmm", "пирамиду")):
+        name = q.split(maxsplit=1)[1] if len(q.split(maxsplit=1)) > 1 else "МММ"
+        results.append(pyramid_invite(u, name))
     if q.isdigit() and int(q) > 0:
         text, markup = pvp_offer(u, int(q))
         results.append(article("pvp", T.INLINE_PVP_TITLE.format(bet=int(q)), text, markup))
@@ -534,7 +556,17 @@ async def inline(query: InlineQuery) -> None:
                                kb([("Загрузить", f"seed:{u.id}:{flag}")])))
     for kind, title in T.INLINE_TITLES.items():
         results.append(article(kind, title, T.INLINE_TEXT, kb([(T.INLINE_BUTTON, f"in:{kind}:{u.id}")])))
+    if not low.startswith(("пирамида", "ммм", "mmm", "пирамиду")):
+        results.append(pyramid_invite(u, "МММ"))
     await query.answer(results, cache_time=0, is_personal=True, button=button)
+
+
+def pyramid_invite(u: User, name: str) -> InlineQueryResultArticle:
+    token = pyramids.draft(u.id, name)
+    title = pyramids.take_draft(token)["name"]
+    text = T.PYR_INVITE.format(name=T.b(T.name(u.full_name)), title=T.name(title))
+    return article(f"pyr{token}", T.PYR_INLINE_TITLE.format(title=title), text,
+                   kb([(T.PYR_FOUND_BUTTON, f"pyr:new:{token}")]), description=T.PYR_INLINE_DESC)
 
 
 @router.chosen_inline_result()
@@ -660,6 +692,65 @@ async def cb_inline(cq: CallbackQuery) -> None:
     ban = banned_text(chat, u)
     text, markup, cat = (ban, None, "notice") if ban else RENDERERS[kind](chat, u)
     await edit(cq, text, markup, cat)
+
+
+def pyramid_kb(pyr_id: int) -> InlineKeyboardMarkup:
+    return kb(
+        [(T.PYR_INVEST.format(amount=a), f"pyr:inv:{pyr_id}:{a}") for a in AMOUNTS],
+        [(T.PYR_WHO, f"pyr:who:{pyr_id}"), (T.PYR_RUN, f"pyr:run:{pyr_id}")],
+    )
+
+
+@router.callback_query(F.data.startswith("pyr:"))
+async def cb_pyramid(cq: CallbackQuery) -> None:
+    parts = cq.data.split(":")
+    action, u = parts[1], cq.from_user
+    chat = callback_chat(cq)
+    ban = banned_text(chat, u)
+    if ban:
+        await answer(cq, ban, alert=True)
+        return
+    if action == "new":
+        draft = pyramids.take_draft(parts[2])
+        if not draft:
+            await answer(cq, "Эта заявка устарела — создай пирамиду заново", alert=True)
+            return
+        if draft["uid"] != u.id:
+            await answer(cq, T.ANOTHER_USER, alert=True)
+            return
+        founder = game.player(chat, u.id, u.full_name, create=True)
+        pyr_id, error = pyramids.create(chat, founder["id"], draft["name"], cq.inline_message_id)
+        if error:
+            await answer(cq, error, alert=True)
+            return
+        await answer(cq, "Пирамида открыта! Зазывай вкладчиков 🔺")
+        await edit(cq, pyramids.card(pyr_id), pyramid_kb(pyr_id), cat="event")
+        return
+    pyr_id = int(parts[2])
+    if action == "who":
+        await answer(cq, pyramids.investors_text(pyr_id), alert=True)
+        return
+    if action == "run":
+        me = game.find(chat, u.id)
+        fund, error = pyramids.run_away(pyr_id, me["id"] if me else -1)
+        if error:
+            await answer(cq, error, alert=True)
+            return
+        await answer(cq, f"Ты сбежал с кассой: {fund} см 🏃💨", alert=True)
+        await edit(cq, pyramids.card(pyr_id), cat="event")
+        return
+    if action == "inv":
+        me = game.player(chat, u.id, u.full_name, create=False)
+        if not me:
+            await answer(cq, T.PVP_NO_DICK, alert=True)
+            return
+        res = pyramids.invest(pyr_id, me, int(parts[3]))
+        if res.error:
+            await answer(cq, res.error, alert=True)
+            return
+        await answer(cq, res.toast)
+        pyr = pyramids.get(pyr_id)
+        await edit(cq, pyramids.card(pyr_id), pyramid_kb(pyr_id) if pyr["status"] == "active" else None, cat="event")
 
 
 @router.errors()
