@@ -62,7 +62,23 @@ CREATE TABLE IF NOT EXISTS settings (
     key TEXT PRIMARY KEY,
     value TEXT NOT NULL
 );
+CREATE TABLE IF NOT EXISTS cleanup (
+    key TEXT PRIMARY KEY,
+    inline_id TEXT,
+    chat_id INTEGER,
+    message_id INTEGER,
+    due REAL NOT NULL
+);
 """
+
+# Колонки, добавленные после первой версии: старые базы догоняются ALTER TABLE.
+NEW_PLAYER_COLUMNS = {
+    "username": "TEXT",
+    "luck": "INTEGER NOT NULL DEFAULT 0",       # 1 — всегда выигрывает батлы, -1 — всегда проигрывает
+    "mode": "TEXT",                             # 'curse' | 'bless'
+    "mode_until": "TEXT",
+    "banned_until": "TEXT",
+}
 
 # Латиница и кириллица, которые выглядят одинаково: «aaa» в топе может быть
 # набрано любыми из них.
@@ -147,6 +163,10 @@ class Game:
         self.db.row_factory = sqlite3.Row
         self.db.execute("PRAGMA journal_mode=WAL")
         self.db.executescript(SCHEMA)
+        have = {r[1] for r in self.db.execute("PRAGMA table_info(players)")}
+        for col, ddl in NEW_PLAYER_COLUMNS.items():
+            if col not in have:
+                self.db.execute(f"ALTER TABLE players ADD COLUMN {col} {ddl}")
         self.rng = rng or random.SystemRandom()
         self.today = today
 
@@ -280,7 +300,13 @@ class Game:
         if not self.can_grow(row):
             return GrowResult(ok=False, length=row["length"])
         days = (self.today() - date.fromisoformat(row["created_at"])).days
-        base = base_increment(self.rng, newcomer=days <= NEWCOMERS_GRACE_DAYS)
+        mode = self.active_mode(row)
+        if mode == "curse":
+            base = self.rng.randint(GROWTH_MIN, -1)
+        elif mode == "bless":
+            base = self.rng.randint(GROWTH_MAX - 3, GROWTH_MAX)
+        else:
+            base = base_increment(self.rng, newcomer=days <= NEWCOMERS_GRACE_DAYS)
         total, perks, updates = self._apply_perks(row, base, growth=True)
         self._update(row["id"], length=row["length"] + total, grown_at=self.today().isoformat(), **updates)
         return GrowResult(True, total, row["length"] + total, self.position(chat, row["id"]), perks)
@@ -299,10 +325,16 @@ class Game:
             "ORDER BY length DESC",
             (chat, cutoff),
         ).fetchall()
-        if not active:
+        if not active and not self.setting(f"force_dod:{chat}"):
             return "none", None, None
         excluded = int(len(active) * DOD_RICH_EXCLUSION_RATIO)
-        winner = self.rng.choice(active[excluded:] or active)
+        winner = self.rng.choice(active[excluded:] or active) if active else None
+        forced = self.setting(f"force_dod:{chat}")
+        if forced:
+            self.db.execute("DELETE FROM settings WHERE key = ?", (f"force_dod:{chat}",))
+            winner = self.get(int(forced)) or winner
+        if winner is None:
+            return "none", None, None
         base = self.rng.randint(1, DOD_BONUS_MAX)
         total, perks, updates = self._apply_perks(winner, base, growth=False)
         self._update(winner["id"], length=winner["length"] + total, **updates)
@@ -323,10 +355,12 @@ class Game:
             self.db.execute("INSERT INTO battles VALUES (?)", (battle_id,))
         except sqlite3.IntegrityError:
             return None
-        if self.rng.random() < 0.5:
-            winner, loser = initiator, acceptor
+        li, la = initiator["luck"], acceptor["luck"]
+        if li != la:
+            initiator_wins = li > la
         else:
-            winner, loser = acceptor, initiator
+            initiator_wins = self.rng.random() < 0.5
+        winner, loser = (initiator, acceptor) if initiator_wins else (acceptor, initiator)
         withheld = loan_payout(bet, winner["debt"])
         lost_streak = loser["win_streak"]
         self._update(
@@ -412,3 +446,99 @@ class Game:
 
     def set_length(self, pid: int, length: int) -> None:
         self._update(pid, length=length)
+
+    # --- подкрутки владельца -------------------------------------------------
+
+    def active_mode(self, row: sqlite3.Row) -> str | None:
+        if row["mode"] and row["mode_until"] and date.fromisoformat(row["mode_until"]) >= self.today():
+            return row["mode"]
+        return None
+
+    def banned_until(self, row: sqlite3.Row | None) -> date | None:
+        if row is not None and row["banned_until"]:
+            until = date.fromisoformat(row["banned_until"])
+            if until >= self.today():
+                return until
+        return None
+
+    def touch_username(self, chat: str, user_id: int, username: str | None) -> None:
+        self.db.execute(
+            "UPDATE players SET username = ? WHERE chat = ? AND user_id = ? AND username IS NOT ?",
+            (username, chat, user_id, username),
+        )
+
+    def add_length(self, pid: int, delta: int) -> None:
+        self.db.execute("UPDATE players SET length = length + ? WHERE id = ?", (delta, pid))
+
+    def swap(self, a: int, b: int) -> None:
+        la, lb = self.get(a)["length"], self.get(b)["length"]
+        self._update(a, length=lb)
+        self._update(b, length=la)
+
+    def set_luck(self, pid: int, luck: int) -> None:
+        self._update(pid, luck=luck)
+
+    def set_mode(self, pid: int, mode: str | None, days: int = 0) -> None:
+        until = (self.today() + timedelta(days=max(days, 1))).isoformat() if mode else None
+        self._update(pid, mode=mode, mode_until=until)
+
+    def reset_cooldown(self, pid: int) -> None:
+        row = self.get(pid)
+        if row["grown_at"] and date.fromisoformat(row["grown_at"]) >= self.today():
+            self._update(pid, grown_at=(self.today() - timedelta(days=1)).isoformat())
+
+    def ban(self, pid: int, days: int) -> date:
+        until = self.today() + timedelta(days=max(days, 1) - 1)
+        self._update(pid, banned_until=until.isoformat())
+        return until
+
+    def unban(self, pid: int) -> None:
+        self._update(pid, banned_until=None)
+
+    def set_debt(self, pid: int, debt: int) -> None:
+        self._update(pid, debt=max(debt, 0))
+
+    def force_dod(self, chat: str, pid: int) -> bool:
+        """Следующий Писюн Дня будет этим игроком. True — если сегодняшний выбор
+        пришлось отменить, чтобы его можно было запустить заново."""
+        self.set_setting(f"force_dod:{chat}", str(pid))
+        cur = self.db.execute("DELETE FROM dod WHERE chat = ? AND day = ?", (chat, self.today().isoformat()))
+        return cur.rowcount > 0
+
+    def chats(self) -> list[tuple[str, int]]:
+        return [(r["chat"], r["n"]) for r in self.db.execute(
+            "SELECT chat, COUNT(*) AS n FROM players GROUP BY chat ORDER BY n DESC"
+        )]
+
+    def admin_chat(self) -> str | None:
+        """Чат, к которому применяются команды владельца: последний, где он нажимал
+        кнопки бота, иначе самый большой."""
+        chosen = self.setting("admin_chat")
+        if chosen:
+            return chosen
+        chats = self.chats()
+        return chats[0][0] if chats else None
+
+    def all_players(self, chat: str) -> list[sqlite3.Row]:
+        return self.db.execute("SELECT * FROM players WHERE chat = ? ORDER BY length DESC, id", (chat,)).fetchall()
+
+    # --- самоочистка сообщений ---------------------------------------------
+
+    def schedule_cleanup(self, key: str, due: float | None, inline_id: str | None = None,
+                         chat_id: int | None = None, message_id: int | None = None) -> None:
+        """due=None — сообщение остаётся навсегда (и снимается с очереди)."""
+        if due is None:
+            self.db.execute("DELETE FROM cleanup WHERE key = ?", (key,))
+            return
+        self.db.execute(
+            "INSERT INTO cleanup VALUES (?, ?, ?, ?, ?) ON CONFLICT DO UPDATE SET due = excluded.due",
+            (key, inline_id, chat_id, message_id, due),
+        )
+
+    def due_cleanups(self, now: float, limit: int = 30) -> list[sqlite3.Row]:
+        return self.db.execute(
+            "SELECT * FROM cleanup WHERE due <= ? ORDER BY due LIMIT ?", (now, limit)
+        ).fetchall()
+
+    def cleanup_done(self, key: str) -> None:
+        self.db.execute("DELETE FROM cleanup WHERE key = ?", (key,))
