@@ -21,11 +21,12 @@ from aiogram.filters import Command, CommandObject, CommandStart
 from aiogram.types import (
     ErrorEvent, BotCommand, BotCommandScopeAllGroupChats, CallbackQuery, ChosenInlineResult, InlineKeyboardButton,
     InlineKeyboardMarkup, InlineQuery, InlineQueryResultArticle, InlineQueryResultsButton,
-    InputTextMessageContent, Message, User,
+    InputTextMessageContent, LabeledPrice, Message, PreCheckoutQuery, User,
 )
 
 import admin
 import texts as T
+import shop
 from pyramid import AMOUNTS, Pyramids
 from game import INACTIVITY_DAYS, LOAN_PAYOUT_COEF, Game, GrowResult, decode_inline_chat, time_till_next_day
 
@@ -84,6 +85,11 @@ def msg_chat(msg: Message) -> str:
 
 # --- ответы (общие для команд и инлайна) -------------------------------------
 
+def dname(row) -> str:
+    """Ник с донатным префиксом (без экранирования)."""
+    return f"{row['prefix']} {row['name']}" if row["prefix"] else row["name"]
+
+
 def perks_part(res: GrowResult) -> str:
     if not res.perks:
         return ""
@@ -116,7 +122,7 @@ def render_top(chat: str, page: int) -> Reply:
         return T.TOP_EMPTY, None, "notice"
     lines, any_inactive = [], False
     for i, r in enumerate(rows, start=page * TOP_LIMIT + 1):
-        line = T.TOP_LINE.format(n=i, name=T.name(r["name"]), length=r["length"])
+        line = T.TOP_LINE.format(n=i, name=T.name(dname(r)), length=r["length"])
         if game.is_inactive(r):
             any_inactive = True
             line += " [~]"
@@ -140,7 +146,7 @@ def render_dod(chat: str) -> Reply:
         return T.DOD_NO_CANDIDATES, None, "notice"
     if status == "already":
         return T.DOD_ALREADY.format(name=T.b(T.name(row["name"]))), None, "notice"
-    who = T.mention(row["user_id"], row["name"]) if row["user_id"] else T.b(T.name(row["name"]))
+    who = T.mention(row["user_id"], dname(row)) if row["user_id"] else T.b(T.name(dname(row)))
     text = T.DOD_RESULT.format(mention=who, growth=T.b(f"{res.total} см"), length=T.b(res.length))
     return text + "\n\n" + T.DOD_POSITION.format(pos=T.b(res.pos)) + perks_part(res), None, "event"
 
@@ -193,7 +199,7 @@ def render_battle(chat: str, data: str, acceptor: User) -> tuple[str | None, str
     if ban:
         return None, ban
     initiator = game.find(chat, uid)
-    if not initiator or initiator["length"] < bet:
+    if not initiator or (bet > 0 and initiator["length"] < bet):
         return None, T.PVP_NOT_ENOUGH_INITIATOR
     acc = game.player(chat, acceptor.id, acceptor.full_name, create=False)
     if not acc:
@@ -203,11 +209,11 @@ def render_battle(chat: str, data: str, acceptor: User) -> tuple[str | None, str
         return None, T.PVP_ALREADY_DONE
     w, l = res.winner, res.loser
     text = T.PVP_FINISH.format(
-        winner=T.b(T.name(w["name"])), wl=T.b(f"{w['length']} см"), ll=T.b(f"{l['length']} см"),
+        winner=T.b(T.name(dname(w))), wl=T.b(f"{w['length']} см"), ll=T.b(f"{l['length']} см"),
         bet=T.b(f"{bet} см"),
     )
-    text += "\n\n" + T.PVP_POS.format(name=T.b(T.name(w["name"])), pos=T.b(res.winner_pos))
-    text += "\n" + T.PVP_POS.format(name=T.b(T.name(l["name"])), pos=T.b(res.loser_pos))
+    text += "\n\n" + T.PVP_POS.format(name=T.b(T.name(dname(w))), pos=T.b(res.winner_pos))
+    text += "\n" + T.PVP_POS.format(name=T.b(T.name(dname(l))), pos=T.b(res.loser_pos))
     if res.withheld:
         text += "\n\n" + T.PVP_WITHHELD.format(payout=T.b(f"{res.withheld} см"))
     wr = lambda r: T.b(f"{r['wins'] * 100 / r['battles']:.2f}%")
@@ -296,6 +302,41 @@ async def send_reply(msg: Message, reply: Reply) -> None:
     schedule_message(await msg.reply(text, reply_markup=markup), cat)
 
 
+def shop_kb() -> InlineKeyboardMarkup:
+    rows, row = [], []
+    for item in shop.PREFIXES + shop.PACKS:
+        row.append((f"{item.title} · {item.stars}⭐", f"buy:{item.key}"))
+        if len(row) == 2:
+            rows.append(row)
+            row = []
+    if row:
+        rows.append(row)
+    return kb(*rows)
+
+
+async def send_shop(msg: Message) -> None:
+    await msg.answer(shop.catalog_text(), reply_markup=shop_kb())
+
+
+@router.message(CommandStart(deep_link=True, magic=F.args == "shop"))
+@router.message(Command("shop", "donate"))
+async def cmd_shop(msg: Message) -> None:
+    if msg.chat.type != "private":
+        await msg.reply(f"Магазин открывается в личке: https://t.me/{BOT_USERNAME}?start=shop")
+        return
+    await send_shop(msg)
+
+
+@router.message(Command("paysupport"))
+async def cmd_paysupport(msg: Message) -> None:
+    await msg.answer(T.PAYSUPPORT)
+
+
+@router.message(Command("terms"))
+async def cmd_terms(msg: Message) -> None:
+    await msg.answer(T.TERMS)
+
+
 @router.message(CommandStart())
 @router.message(Command("help"))
 async def cmd_help(msg: Message) -> None:
@@ -355,7 +396,7 @@ async def cmd_pvp(msg: Message, command: CommandObject) -> None:
     if not await group_guard(msg):
         return
     arg = (command.args or "").strip()
-    if not arg.isdigit() or int(arg) <= 0:
+    if not arg.isdigit():
         await send_reply(msg, (T.PVP_NO_ARGS, None, "notice"))
         return
     chat, bet = msg_chat(msg), int(arg)
@@ -457,11 +498,25 @@ def chats_text() -> str:
 @router.message(F.chat.type == "private", F.text, ~F.text.startswith("/"))
 async def dm_admin(msg: Message) -> None:
     """Админка в личке: всё то же, что в инлайне, но без следов в чате."""
+    text = msg.text.strip()
+    low = text.casefold()
+    if low.startswith(("магазин", "донат", "префикс", "shop")) and not (is_owner(msg.from_user) and low.startswith("префикс ")):
+        await send_shop(msg)
+        return
+    if low.startswith("оплата") and not is_owner(msg.from_user):
+        if owner_id():
+            u = msg.from_user
+            await msg.bot.send_message(
+                owner_id(), f"🆘 Вопрос по оплате от {T.name(u.full_name)} (id <code>{u.id}</code>, "
+                            f"@{u.username or '—'}):\n\n{T.name(text)}")
+        await msg.reply("Передал владельцу бота — он ответит в личке.")
+        return
     if not is_owner(msg.from_user):
         await msg.reply(T.HELP.format(bot=BOT_USERNAME))
         return
-    text = msg.text.strip()
-    low = text.casefold()
+    if low.startswith("возврат "):
+        await refund(msg, text.split(maxsplit=1)[1].strip())
+        return
     if low in ("чаты", "чат"):
         await msg.reply(chats_text())
         return
@@ -547,7 +602,7 @@ async def inline(query: InlineQuery) -> None:
     if low.startswith(("пирамида", "ммм", "mmm", "пирамиду")):
         name = q.split(maxsplit=1)[1] if len(q.split(maxsplit=1)) > 1 else "МММ"
         results.append(pyramid_invite(u, name))
-    if q.isdigit() and int(q) > 0:
+    if q.isdigit():
         text, markup = pvp_offer(u, int(q))
         results.append(article("pvp", T.INLINE_PVP_TITLE.format(bet=int(q)), text, markup))
     if q in ("seed", "seed force") and is_owner(u):
@@ -556,9 +611,21 @@ async def inline(query: InlineQuery) -> None:
                                kb([("Загрузить", f"seed:{u.id}:{flag}")])))
     for kind, title in T.INLINE_TITLES.items():
         results.append(article(kind, title, T.INLINE_TEXT, kb([(T.INLINE_BUTTON, f"in:{kind}:{u.id}")])))
+    is_shop = low.startswith(("донат", "магазин", "префикс", "звезд", "звёзд", "скин", "shop"))
+    if is_shop:
+        results.insert(0, shop_result())
     if not low.startswith(("пирамида", "ммм", "mmm", "пирамиду")):
         results.append(pyramid_invite(u, "МММ"))
+    if not is_shop:
+        results.append(shop_result())
     await query.answer(results, cache_time=0, is_personal=True, button=button)
+
+
+def shop_result() -> InlineQueryResultArticle:
+    button = InlineKeyboardMarkup(inline_keyboard=[[
+        InlineKeyboardButton(text=T.SHOP_OPEN, url=f"https://t.me/{BOT_USERNAME}?start=shop")
+    ]])
+    return article("shop", T.SHOP_INLINE_TITLE, T.SHOP_INLINE_TEXT, button, description=T.SHOP_INLINE_DESC)
 
 
 def pyramid_invite(u: User, name: str) -> InlineQueryResultArticle:
@@ -751,6 +818,65 @@ async def cb_pyramid(cq: CallbackQuery) -> None:
         await answer(cq, res.toast)
         pyr = pyramids.get(pyr_id)
         await edit(cq, pyramids.card(pyr_id), pyramid_kb(pyr_id) if pyr["status"] == "active" else None, cat="event")
+
+
+@router.callback_query(F.data.startswith("buy:"))
+async def cb_buy(cq: CallbackQuery) -> None:
+    item = shop.ITEMS.get(cq.data.split(":", 1)[1])
+    if not item:
+        await answer(cq, "Такого товара больше нет", alert=True)
+        return
+    await answer(cq)
+    description = (f"Префикс «{item.prefix}» перед ником в топе и батлах" if item.prefix
+                   else f"{item.cm} см к твоей пиписе")
+    await cq.bot.send_invoice(
+        chat_id=cq.from_user.id, title=item.title, description=description, payload=item.key,
+        currency="XTR", prices=[LabeledPrice(label=item.title, amount=item.stars)],
+    )
+
+
+@router.pre_checkout_query()
+async def pre_checkout(q: PreCheckoutQuery) -> None:
+    ok = q.invoice_payload in shop.ITEMS and game.admin_chat() is not None
+    await q.answer(ok=ok, error_message=None if ok else T.SHOP_NO_CHAT)
+
+
+@router.message(F.successful_payment)
+async def on_payment(msg: Message) -> None:
+    pay, u = msg.successful_payment, msg.from_user
+    item = shop.ITEMS.get(pay.invoice_payload)
+    chat = game.admin_chat()
+    if not game.record_payment(pay.telegram_payment_charge_id, u.id, u.full_name, pay.invoice_payload,
+                               pay.total_amount, chat, time.time()):
+        return  # повтор того же платежа
+    if not item or not chat:
+        await msg.answer(T.SHOP_NO_CHAT)
+        return
+    row = game.player(chat, u.id, u.full_name, create=True)
+    if item.prefix:
+        game.set_prefix(row["id"], item.prefix)
+        await msg.answer(T.SHOP_THANKS_PREFIX.format(prefix=T.name(item.prefix), name=T.name(u.full_name)))
+    else:
+        game.add_length(row["id"], item.cm)
+        await msg.answer(T.SHOP_THANKS_CM.format(cm=item.cm, length=game.get(row["id"])["length"]))
+    if owner_id() and owner_id() != u.id:
+        await msg.bot.send_message(owner_id(), f"💰 {T.name(u.full_name)} купил «{T.name(item.title)}» за {pay.total_amount}⭐")
+    logging.info("Оплата: %s купил %s за %s⭐", u.id, item.key, pay.total_amount)
+
+
+async def refund(msg: Message, charge_id: str) -> None:
+    p = game.payment(charge_id)
+    if not p:
+        await msg.reply("Не нашёл такой платёж. Список: <code>звезды</code>")
+        return
+    try:
+        await msg.bot.refund_star_payment(user_id=p["user_id"], telegram_payment_charge_id=charge_id)
+    except TelegramBadRequest as e:
+        await msg.reply(f"Telegram не дал вернуть: {T.name(e.message)}")
+        return
+    game.mark_refunded(charge_id)
+    await msg.reply(f"Вернул {p['stars']}⭐ пользователю {T.name(p['user_name'])}. "
+                    "Префикс/сантиметры при необходимости сними вручную.")
 
 
 @router.errors()

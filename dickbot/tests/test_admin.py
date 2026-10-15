@@ -152,3 +152,28 @@ def test_migration_adds_columns(tmp_path):
     g = G.Game(str(db))
     row = g.find("c", 1)
     assert row["luck"] == 0 and row["banned_until"] is None
+
+
+def test_prefix_admin_and_payment_dedupe():
+    g, _ = seeded()
+    run(g, "префикс я 1")
+    assert g.find(CHAT, OWNER)["prefix"] == "👑 Король"
+    run(g, 'префикс Оболдуй "🦄 Единорог"')
+    assert [r for r in g.all_players(CHAT) if r["name"] == "Оболдуй"][0]["prefix"] == "🦄 Единорог"
+    run(g, "префикс Оболдуй 🔥")
+    run(g, "префикс Оболдуй -")
+    assert [r for r in g.all_players(CHAT) if r["name"] == "Оболдуй"][0]["prefix"] is None
+    assert A.parse(g, CHAT, "префикс я 99", OWNER).error
+    assert A.parse(g, CHAT, "префикс я Король", OWNER).error   # свой текст — только в кавычках
+    assert g.record_payment("c1", 5, "x", "crown", 50, CHAT, 1.0)
+    assert not g.record_payment("c1", 5, "x", "crown", 50, CHAT, 1.0)
+    assert g.payments()[0] == 50
+
+
+def test_zero_bet_battle_for_negative_player():
+    g, _ = seeded()
+    neg = g.player(CHAT, 9, "amurabs", create=False)
+    assert neg["length"] < 0 and g.has_enough(CHAT, 9, 0) and not g.has_enough(CHAT, 9, 1)
+    ob = g.player(CHAT, 555, "Оболдуй", create=False)
+    res = g.battle(CHAT, "z", neg, ob, 0)
+    assert res.winner["length"] in (-10, 12754) and res.winner["wins"] == 1

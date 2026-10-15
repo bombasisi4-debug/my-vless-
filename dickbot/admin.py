@@ -11,6 +11,7 @@ import sqlite3
 from dataclasses import dataclass
 from typing import Callable
 
+import shop
 import texts as T
 from game import Game, letters_only, normalize_name
 
@@ -153,8 +154,26 @@ def parse(game: Game, chat: str | None, text: str, owner_id: int) -> Action | No
             return cleanup_status(game)
         return Action(title=f"🧹 {title}: " + (f"{minutes} мин" if minutes else "не чистить"), run=run_clean)
 
+    if cmd in ("префиксы", "скины"):
+        return Action(title="Список префиксов", info_only=True, run=shop.catalog_text)
+
+    if cmd in ("звезды", "звёзды", "донаты"):
+        def run_stars() -> str:
+            total, rows = game.payments()
+            lines = [f"⭐ Всего задонатили: <b>{total}</b>"]
+            for r in rows:
+                item = shop.ITEMS.get(r["item"])
+                mark = " (возвращено)" if r["refunded"] else ""
+                lines.append(f"— {T.name(r['user_name'])}: {item.title if item else r['item']} за {r['stars']}⭐{mark}\n"
+                             f"  <code>{r['charge_id']}</code>")
+            return "\n".join(lines)
+        return Action(title="Донаты", info_only=True, run=run_stars)
+
     if chat is None:
         return err("Пока нет ни одного чата с игроками")
+
+    if cmd in ("префикс", "скин"):
+        return parse_prefix(game, chat, rest, owner_id)
 
     if cmd in ("налог", "налоги", "tax"):
         return parse_tax(game, chat, rest)
@@ -330,6 +349,43 @@ def parse(game: Game, chat: str | None, text: str, owner_id: int) -> Action | No
         return Action(title="Топ чата", info_only=True, run=lambda: "")
 
     return None
+
+
+def parse_prefix(game: Game, chat: str, rest: str, owner_id: int) -> Action:
+    """префикс <кто> <номер | "свой текст" | эмодзи | ->"""
+    rest = rest.strip()
+    m = re.match(r'^(.+?)\s+["«](.+)["»]$', rest)
+    if m:
+        spec, prefix = m.group(1), m.group(2).strip()
+    else:
+        spec, _, last = rest.rpartition(" ")
+        if not spec:
+            return err('Формат: префикс <кто> <номер> — например: префикс я 1, или префикс 2 "🦄 Единорог"')
+        if last in ("-", "снять", "нет", "убрать"):
+            prefix = None
+        elif last.isdigit():
+            item = shop.by_number(int(last))
+            if not item:
+                return err(f"Нет префикса №{last}. Список: префиксы")
+            prefix = item.prefix
+        elif not any(ch.isalnum() for ch in last):
+            prefix = last  # одиночный эмодзи
+        else:
+            return err('Свой текст — в кавычках: префикс 2 "🦄 Единорог"')
+    row, e = find_target(game, chat, spec, owner_id)
+    if e:
+        return err(e)
+    shown = prefix or "без префикса"
+
+    def run_prefix() -> str:
+        game.set_prefix(row["id"], prefix)
+        return f"{T.name(pname(row))}: {T.name(shown)}"
+    gift = row["user_id"] != owner_id and prefix
+    return Action(
+        title=f"🎁 {pname(row)} → {shown}" if gift else f"{pname(row)} → {shown}", run=run_prefix,
+        announce=(lambda: T.ANN_PREFIX.format(name=T.b(T.name(pname(row))), prefix=T.b(T.name(prefix))))
+        if gift else None,
+    )
 
 
 TAX_AMOUNT = re.compile(r"^(\d+(?:[.,]\d+)?)\s*(%|см)?$")
